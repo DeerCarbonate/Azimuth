@@ -17,7 +17,7 @@ coolant: {
 }
     shoot: {
       type: ShootBarrel
-      firstShotDelay: 250
+      firstShotDelay: 150
       shotDelay: 4
       shots: 25
 	        barrels: [
@@ -42,7 +42,7 @@ shootSound: shootLancer
 shootType: {
       type: RailBulletType
       length: 185
-      damage: 90
+      damage: 70
 	  lifetime: 1
 	  hitColor: bff6b1
       pointEffectSpace: 3.1
@@ -222,10 +222,10 @@ shootType: {
 hasPower: false
 hasLiquids: false
 requirements: [
-  cobalt/90,
-  venerium/120
-  platinum/85
-  geliarin/10
+  platinum/200,
+  venerium/400
+  caterium/200
+  geliarin/60
 ]
 category: turret
 drawer: {
@@ -332,5 +332,21 @@ drawer: {
       }
     ]
   }
+  ]
+}
+research: {
+  parent: "relocator"
+  planet: "gelion"
+    "requirements": [
+	  "venerium/15000"
+	  "platinum/10000"
+	  "geliarin/5000"
+	  "caterium/2500"
+]
+objectives: [
+    {
+      type: SectorComplete
+      preset: "elev"
+    }
   ]
 }

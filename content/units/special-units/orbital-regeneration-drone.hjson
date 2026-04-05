@@ -204,7 +204,7 @@ weapons: [
       circleShooterRadius: 24
       circleShooterRadiusSmooth: 200
       circleShooterRotateSpeed: 4
-	  healAmount: 35
+	  healAmount: 45
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
