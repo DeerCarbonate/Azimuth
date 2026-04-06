@@ -17,7 +17,7 @@ coolant: {
 }
     shoot: {
       type: ShootBarrel
-      firstShotDelay: 200
+      firstShotDelay: 100
       shotDelay: 4
       shots: 25
 	        barrels: [
@@ -37,12 +37,12 @@ moveWhileCharging: true
 recoilAmount: 1.8
 restitution: 0.04
 rotateSpeed: 0.95
-range: 185
+range: 177
 shootSound: shootLancer
 shootType: {
       type: RailBulletType
       length: 185
-      damage: 70
+      damage: 54
 	  lifetime: 1
 	  hitColor: bff6b1
       pointEffectSpace: 3.1
@@ -147,7 +147,7 @@ shootType: {
           speed: 4.5
           lifetime: 70
           drag: 0.002
-          damage: 20
+          damage: 17
           pierce: true
           pierceBuilding: true
           pierceCap: 8
