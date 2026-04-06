@@ -1,5 +1,4 @@
 type: LogicBlock
-name: Zinc processor
 category: logic
 		research: {
     parent: "core-forum"
