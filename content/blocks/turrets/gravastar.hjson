@@ -257,7 +257,8 @@ drawer: {
       suffix: -blade,
       under: false,
       mirror: true,
-    progress: {
+      heatColor: bff6b180
+      progress: {
       type: warmup
       ops: [
         {
@@ -319,7 +320,7 @@ drawer: {
         baseLength: 0
         particles: 1
         length: 35
-        sizeFrom: 0
+        sizeFrom: 1.2
         sizeTo: 2.6
         colorFrom: bff6b140
         colorTo: b0b0b000
@@ -334,7 +335,7 @@ drawer: {
         baseLength: 0
         particles: 2
         length: 45
-        sizeFrom: 1.7
+        sizeFrom: 2.1
         sizeTo: 0
         colorFrom: bff6b140
         colorTo: b0b0b000
