@@ -137,16 +137,16 @@ shootType: {
                     }
                 ]
             }
-			        fragBullets: 1
+			      fragBullets: 1
         fragRandomSpread: 0.25
         fragOffsetMin: 5
         fragOffsetMax: 10
         fragVelocityMin: 0.7
         fragVelocityMax: 0.9
         fragBullet: {
-          speed: 4
+          speed: 4.5
           lifetime: 70
-          drag: 0.01
+          drag: 0.002
           damage: 20
           pierce: true
           pierceBuilding: true
@@ -183,9 +183,9 @@ shootType: {
           intervalDelay: 0
           intervalBullet: {
             createChance: 0.25
-            speed: 3
+            speed: 2.6
             lifetime: 30
-            drag: 0.007
+            drag: 0.005
             damage: 10
             pierce: true
             pierceBuilding: true
