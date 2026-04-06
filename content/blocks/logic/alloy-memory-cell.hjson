@@ -1,5 +1,4 @@
 type: MemoryBlock
-name: Alloy memory cell
 memoryCapacity: 72
 category: logic
 		research: {
