@@ -1,5 +1,4 @@
 type: LiquidTurret
-name: Toroid builder
 reload: 15
 range: 0
 liquidCapacity: 48
