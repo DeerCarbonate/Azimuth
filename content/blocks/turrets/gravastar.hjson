@@ -271,7 +271,6 @@ drawer: {
         }
       ]
     }
-  }
 	  x: 0,
 	  y: 0,
 	  moveRot: 0,
