@@ -17,7 +17,7 @@ coolant: {
 }
     shoot: {
       type: ShootBarrel
-      firstShotDelay: 150
+      firstShotDelay: 200
       shotDelay: 4
       shots: 25
 	        barrels: [
@@ -37,7 +37,7 @@ moveWhileCharging: true
 recoilAmount: 1.8
 restitution: 0.04
 rotateSpeed: 0.95
-range: 265
+range: 205
 shootSound: shootLancer
 shootType: {
       type: RailBulletType
@@ -252,21 +252,49 @@ drawer: {
       heatColor: ff4500,
       heatLayer: 1,
     }
-		{
-      type: RegionPart,
-      suffix: -blade,
-      under: false,
-      mirror: true,
-      heatProgress: heat,
-      progress: warmup,
-	  x: 0,
-	  y: 0,
-	  moveRot: 0,
-	  moveX: 2.1,
-	  moveY: 1,
-      heatColor: ff4500,
-      heatLayer: 1,
-    }
+{
+  type: RegionPart,
+  suffix: -blade,
+  under: false,
+  mirror: true,
+  outline: false,
+  blending: additive,
+  color: f5c400,
+  colorTo: f5c40000,
+  progress: {
+    type: heat
+    ops: [
+      {
+        op: compress
+        start: 0
+        end: 0.6
+      }
+      {
+        op: slope
+      }
+    ]
+  }
+}
+{
+  type: RegionPart,
+  suffix: -blade,
+  under: false,
+  mirror: true,
+  outline: false,
+  blending: additive,
+  color: bff6b100,
+  colorTo: bff6b1,
+  progress: {
+    type: heat
+    ops: [
+      {
+        op: compress
+        start: 0.4
+        end: 1
+      }
+    ]
+  }
+}
 	{
       type: RegionPart,
       suffix: -nade,
