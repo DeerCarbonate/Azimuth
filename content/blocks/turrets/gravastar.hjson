@@ -37,7 +37,7 @@ moveWhileCharging: true
 recoilAmount: 1.8
 restitution: 0.04
 rotateSpeed: 0.95
-range: 205
+range: 185
 shootSound: shootLancer
 shootType: {
       type: RailBulletType
@@ -252,49 +252,34 @@ drawer: {
       heatColor: ff4500,
       heatLayer: 1,
     }
-{
-  type: RegionPart,
-  suffix: -blade,
-  under: false,
-  mirror: true,
-  outline: false,
-  blending: additive,
-  color: f5c400,
-  colorTo: f5c40000,
-  progress: {
-    type: heat
-    ops: [
-      {
-        op: compress
-        start: 0
-        end: 0.6
-      }
-      {
-        op: slope
-      }
-    ]
+		{
+      type: RegionPart,
+      suffix: -blade,
+      under: false,
+      mirror: true,
+    progress: {
+      type: warmup
+      ops: [
+        {
+          op: blend
+          other: heat
+          amount: 0.5
+        }
+        {
+          op: mul
+          amount: 2
+        }
+      ]
+    }
   }
-}
-{
-  type: RegionPart,
-  suffix: -blade,
-  under: false,
-  mirror: true,
-  outline: false,
-  blending: additive,
-  color: bff6b100,
-  colorTo: bff6b1,
-  progress: {
-    type: heat
-    ops: [
-      {
-        op: compress
-        start: 0.4
-        end: 1
-      }
-    ]
-  }
-}
+	  x: 0,
+	  y: 0,
+	  moveRot: 0,
+	  moveX: 2.1,
+	  moveY: 1,
+      heatColor: ff4500,
+      heatLayer: 1,
+    }
 	{
       type: RegionPart,
       suffix: -nade,
