@@ -6,6 +6,7 @@ health: 500
 armor: 2
 range: 0
 itemCapacity: 0
+hidden: true
 speed: 1
 rotateShooting: false
 accel: 0.04

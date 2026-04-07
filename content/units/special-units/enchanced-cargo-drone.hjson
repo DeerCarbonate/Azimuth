@@ -5,6 +5,7 @@
 	type: tether
 	hitSize: 16.5
  healColor: bf92f988
+ hidden: true
 	health: 800
 	range: 0
 	itemCapacity: 40
