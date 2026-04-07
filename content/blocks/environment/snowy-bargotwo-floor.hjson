@@ -1,0 +1,7 @@
+type: Floor
+name: "Snowy-bargotwo floor"
+attributes: {
+	water: -0.65
+}
+variants: 3
+blendGroup: bargotwo-floor
