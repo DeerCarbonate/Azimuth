@@ -34,9 +34,47 @@ require("blocks");
 
 const groundSnake = require("ground-snake");
 
-const flagellantEnd = groundSnake.segment("flagellant-end", { offsetSegment: 16 }, {});
-const flagellantBody = groundSnake.segment("flagellant-body", { offsetSegment: 16 }, {});
+const groundSnake = require("ground-snake");
+
+const flagellantEnd = groundSnake.segment("flagellant-end", {
+    health: 3000,
+    armor: 20,
+    hitSize: 9,
+    speed: 1.6,
+    legCount: 4,
+    legLength: 9,
+    legBaseOffset: 3,
+    legSpeed: 0.25,
+    legGroupSize: 2,
+    allowLegStep: true,
+    offsetSegment: 16
+}, {});
+
+const flagellantBody = groundSnake.segment("flagellant-body", {
+    health: 1500,
+    armor: 15,
+    hitSize: 11,
+    speed: 1.6,
+    legCount: 6,
+    legLength: 11,
+    legBaseOffset: 4,
+    legSpeed: 0.28,
+    legGroupSize: 2,
+    allowLegStep: true,
+    offsetSegment: 16
+}, {});
+
 const flagellant = groundSnake.head("flagellant", {
+    health: 5000,
+    armor: 25,
+    hitSize: 14,
+    speed: 1.4,
+    legCount: 4,
+    legLength: 13,
+    legBaseOffset: 5,
+    legSpeed: 0.32,
+    legGroupSize: 2,
+    allowLegStep: true,
     body: flagellantBody,
     end: flagellantEnd,
     lengthSnake: 5
