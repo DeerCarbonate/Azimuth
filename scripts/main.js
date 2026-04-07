@@ -34,8 +34,6 @@ require("blocks");
 
 const groundSnake = require("ground-snake");
 
-const groundSnake = require("ground-snake");
-
 const flagellantEnd = groundSnake.segment("flagellant-end", {
     health: 3000,
     armor: 20,
