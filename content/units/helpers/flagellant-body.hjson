@@ -1,0 +1,14 @@
+  flying: false
+  hidden: true
+  faceTarget: false
+  omniMovement: true
+  health: 1500
+  armor: 15
+  hitSize: 11
+  speed: 1.6
+  legCount: 6
+  legLength: 11
+  legBaseOffset: 4
+  legSpeed: 0.28
+  legGroupSize: 2
+  allowLegStep: true
