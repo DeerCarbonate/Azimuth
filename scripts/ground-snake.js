@@ -208,5 +208,4 @@ function head(name, type, constructor) {
     registerClass(unit);
     return unit;
 }
-
 module.exports = { segment, head };
