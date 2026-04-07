@@ -1,8 +1,3 @@
-/**
- * ground-snake.js — наземная змея для Mindustry 156.2
- * Используется так же как library-snake, но flying: false + LegsUnit
- */
-
 const registerClass = unit => {
     EntityMapping.nameMap.put(unit.name, unit.constructor);
     unit.classId = -1;
@@ -37,21 +32,15 @@ const groundSegmentAI = () => extend(AIController, {
     }
 });
 
-function segment(name, type, constructor) {
-    if (type == undefined) type = {};
-    if (constructor == undefined) constructor = {};
+function segment(name, snakeParams, constructorExtra) {
+    if (snakeParams == undefined) snakeParams = {};
+    if (constructorExtra == undefined) constructorExtra = {};
 
-    type = Object.assign({
-        flying: false,
-        hidden: true,
-        faceTarget: false,
-        omniMovement: true,
-        engineSize: 0,
-        offsetSegment: 14,
-        getOffset() { return this.offsetSegment; }
-    }, type);
+    // Берём уже загруженный из HJSON юнит
+    const unit = Vars.content.unit(name);
 
-    const unit = extend(UnitType, name, type);
+    unit.offsetSegment = snakeParams.offsetSegment != null ? snakeParams.offsetSegment : 14;
+    unit.getOffset = function() { return unit.offsetSegment; };
 
     unit.aiController = groundSegmentAI;
     unit.logicControllable = false;
@@ -122,28 +111,23 @@ function segment(name, type, constructor) {
             this.idParent = read.i();
         },
         classId: () => unit.classId
-    }, constructor));
+    }, constructorExtra));
 
     registerClass(unit);
     return unit;
 }
 
-function head(name, type, constructor) {
-    if (type == undefined) type = {};
-    if (constructor == undefined) constructor = {};
+function head(name, snakeParams, constructorExtra) {
+    if (snakeParams == undefined) snakeParams = {};
+    if (constructorExtra == undefined) constructorExtra = {};
 
-    type = Object.assign({
-        flying: false,
-        faceTarget: false,
-        omniMovement: true,
-        circleTarget: true,
-        engineSize: 0,
-        lengthSnake: 3,
-        body: null,
-        end: null
-    }, type);
+    // Берём уже загруженный из HJSON юнит
+    const unit = Vars.content.unit(name);
 
-    const unit = extend(UnitType, name, type);
+    unit.offsetSegment = snakeParams.offsetSegment != null ? snakeParams.offsetSegment : 14;
+    unit.lengthSnake   = snakeParams.lengthSnake   != null ? snakeParams.lengthSnake   : 3;
+    unit.body          = snakeParams.body          != null ? snakeParams.body          : null;
+    unit.end           = snakeParams.end           != null ? snakeParams.end           : null;
 
     unit.aiController = () => new GroundAI();
 
@@ -192,7 +176,7 @@ function head(name, type, constructor) {
                 const isLast = (i + 1 === toCreate);
                 const seg = isLast ? unit.end.create(this.team) : unit.body.create(this.team);
 
-                Tmp.v1.trns(this.rotation + 180, seg.hitSize + unit.body.offsetSegment);
+                Tmp.v1.trns(this.rotation + 180, seg.hitSize + unit.offsetSegment);
                 seg.set(prev.x + Tmp.v1.x, prev.y + Tmp.v1.y);
                 seg.rotation = this.rotation;
                 seg.setParent(this.self);
@@ -221,7 +205,7 @@ function head(name, type, constructor) {
             this.setSneak = read.bool();
         },
         classId: () => unit.classId
-    }, constructor));
+    }, constructorExtra));
 
     registerClass(unit);
     return unit;
