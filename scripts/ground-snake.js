@@ -17,10 +17,8 @@ const groundSegmentAI = () => extend(AIController, {
         const {unit} = this;
         const segment = unit.getSegment();
         if (segment == null || segment.dead) return;
-
         const {x: unitX, y: unitY} = unit;
         const {x: nextX, y: nextY} = segment;
-
         Tmp.v1.trns(Angles.angle(unitX, unitY, nextX, nextY), -unit.getOffset());
         if (unit.getDstSegment() > unit.getOffset()) {
             Tmp.v2.trns(
@@ -38,9 +36,8 @@ function segment(name, type, constructor) {
     if (constructor == undefined) constructor = {};
 
     type = Object.assign({
-        flying: false,      // ← единственное отличие от оригинала
+        flying: false,   // ← единственное изменение
         hidden: true,
-        faceTarget: false,
         engineSize: 0,
         offsetSegment: 14,
         getOffset() { return this.offsetSegment; }
@@ -52,7 +49,7 @@ function segment(name, type, constructor) {
     unit.logicControllable = false;
     unit.playerControllable = false;
 
-    unit.constructor = () => extend(LegsUnit, Object.assign({  // ← LegsUnit вместо UnitEntity
+    unit.constructor = () => extend(UnitEntity, Object.assign({
         _offset: 0,
         _parent: null,
         _segment: null,
@@ -97,7 +94,7 @@ function segment(name, type, constructor) {
                 return this.super$speed();
             }
         },
-        // impulseNet убран — не нужен для наземных
+        impulseNet(vec) {},
         cap() { return this.count() + 1; },
         getOffset() { return this._offset; },
         setParent(pr) { if (pr != null) { this._parent = pr; this.idParent = pr.id; } },
@@ -128,8 +125,7 @@ function head(name, type, constructor) {
     if (constructor == undefined) constructor = {};
 
     type = Object.assign({
-        flying: false,      // ← единственное отличие от оригинала
-        faceTarget: false,
+        flying: false,   // ← единственное изменение
         engineSize: 0,
         lengthSnake: 1,
         body: null,
@@ -138,7 +134,7 @@ function head(name, type, constructor) {
 
     let unit = extend(UnitType, name, type);
 
-    unit.constructor = () => extend(LegsUnit, Object.assign({  // ← LegsUnit вместо UnitEntity
+    unit.constructor = () => extend(UnitEntity, Object.assign({
         _segments: [],
         totalSegments: 0,
         setSneak: false,
