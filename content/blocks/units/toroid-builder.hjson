@@ -21,6 +21,9 @@ fullOverride: azimut-toroid-full
 drawer: [{
     type: DrawTurret
     basePrefix: toro-
+	  iconOverride: [
+    -icon
+    ]
     parts: [
       {
         type: RegionPart 

@@ -37,8 +37,10 @@ const groundSnake = require("ground-snake");
 const flagellantEnd  = groundSnake.segment("flagellant-end",  { offsetSegment: 16 }, {});
 const flagellantBody = groundSnake.segment("flagellant-body", { offsetSegment: 16 }, {});
 const flagellant     = groundSnake.head("flagellant", {
-    offsetSegment: 16,
-    lengthSnake: 5,
     body: flagellantBody,
-    end: flagellantEnd
+    end: flagellantEnd,
+    lengthSnake: 5,
+    hitSize: 14,
+    speed: 1.4,
+    health: 5000
 }, {});
