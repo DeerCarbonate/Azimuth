@@ -6,3 +6,5 @@ clipSize: 90
 solid: false
 solidifies: false
 above: false
+shadowAlpha: 0.75
+shadowOffset: -3.1
