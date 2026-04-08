@@ -1,7 +1,7 @@
 type: TallBlock
-name: Ferrite web
+name: Ferrite small web
 emitLight: false
 variants: 2
-clipSize: 90
+clipSize: 56
 shadowAlpha: 0.75
 shadowOffset: -1.6
