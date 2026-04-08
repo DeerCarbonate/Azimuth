@@ -14,7 +14,7 @@
   hasPower: true
   pulse: true
  consumes: {
-  power: 0.45
+  power: 0.65
 }
   research: {
   parent: "byte"
