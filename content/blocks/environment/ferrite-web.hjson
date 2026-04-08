@@ -1,0 +1,8 @@
+type: TallBlock
+name: Ferrite web
+emitLight: false
+variants: 2
+clipSize: 90
+solid: false
+solidifies: false
+above: false
