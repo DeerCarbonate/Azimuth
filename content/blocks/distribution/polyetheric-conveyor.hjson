@@ -13,7 +13,7 @@
   arrowTimeScl: 2.75
   hasPower: true
   pulse: true
-  consumePower: 0.1
+  consumePower: 0.5
   research: {
   parent: "byte"
   planet: gelion
