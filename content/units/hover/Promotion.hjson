@@ -178,7 +178,10 @@ weapons: [
       skrinkX: 0
       recoil: 1.2
       splashDamage: 320
-      splashDamageRadius: 32
+      splashDamageRadius: 30
+      damage: 200
+      pierce: true
+      pierceCap: 2
       height: 32
       speed: 0.12
       width: 12
@@ -191,6 +194,8 @@ weapons: [
       keepVelocity: false
       collidesTiles: true
       collidesGround: true
+      absorbable: true
+      reflectable: false
       trailChance: 1
       trailInterval: 4
       trailRotation: true
