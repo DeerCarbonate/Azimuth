@@ -14,8 +14,10 @@
   pulse: true
   explosivenessScale: 0.2
   flammabilityScale: 0.2
-  liquidCapacity: 100
-  consumePower: 0
+  liquidCapacity: 60
+  consumes: {
+  power: 0.25
+}
   hasPower: false
   research: {
   parent: "directed-conduit"
