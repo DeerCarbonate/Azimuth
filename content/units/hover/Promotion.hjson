@@ -10,12 +10,12 @@ outlineColor: 251b21
 outlineRadius: 3
 alwaysUnlocked: false
 range: 100
-armor: 6
+armor: 7
 accel: 0.1
-health: 2400
+health: 2750
 hovering: true
 canDrown: false
-speed: 1.08
+speed: 1.1
 hitSize: 20
 drag: 0.05
 healColor: f0a4d988
