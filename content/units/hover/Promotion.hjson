@@ -181,7 +181,9 @@ weapons: [
       splashDamageRadius: 30
       damage: 200
       pierce: true
+      pierceBuilding: true
       pierceCap: 2
+      pierceDamageFactor: 0.2
       height: 32
       speed: 0.12
       width: 12
