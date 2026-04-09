@@ -4,13 +4,13 @@
 	health: 600
     armor: 1
 	drag: 0.085
-	speed: 1.8
+	speed: 2.2
 	range: 60
 	accel: 0.015
 	drag: 0.035
 	targetGround: true
 	targetAir: true
-	rotateSpeed: 1.5
+	rotateSpeed: 4.5
 	engineColor: bf92f9
 	trailColor: bf92f9
 	trailLength: 8
@@ -18,11 +18,14 @@
     itemCapacity: 80
 	controlSelectGlobal: false
 	mineTier: 2
-	mineSpeed: 3.5
+	mineSpeed: 4.5
 	isEnemy: false
 	drawCell: false
 	engineSize: 0
 	healColor: bf92f988
+	lowAltitude: true
+	loopSound: loopSmelter
+    loopSoundVolume: 0.8
 	deathExplosionEffect: {
 type: MultiEffect
 effects: [
@@ -76,3 +79,24 @@ interp: pow3Out
         }
 ]
 }
+abilities: [
+  {
+    type: SuppressionFieldAbility
+    display: false
+    active: false
+    color: bf92f9
+    layer: 90
+    orbRadius: 0
+    orbMidScl: 0
+    x: 0
+    y: 6
+    particleSize: 1.5
+    particleLen: 5.5
+    rotateScl: -1
+    particleColor: bf92f9
+  }
+  {
+    type: RegenAbility
+    percentAmount: 0.005
+  }
+]
