@@ -1,5 +1,5 @@
 {
-  "type": "TallBlock",
+  "type": "TallWall",
   "name": "Bargo ledge",
   "emitLight": false,
   "attributes": {
