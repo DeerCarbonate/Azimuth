@@ -1,4 +1,4 @@
-	type: flying
+	type: MinerUnit
 	outlineColor: 21202a
 	flying: true
 	health: 600
@@ -100,3 +100,35 @@ abilities: [
     percentAmount: 0.005
   }
 ]
+parts: [
+	  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+    layer: 90.1
+    color: bf92f9
+    growProgress: recoil
+    xScl: 0.25
+    yScl: 0.25
+    growX: -0.12
+    growY: -0.12
+    y: 6
+    weaponIndex: 0
+  }
+  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+    layer: 90.1
+    color: ffffff
+    growProgress: recoil
+    xScl: 0.1
+    yScl: 0.1
+    growX: 0.225
+    growY: 0.225
+    y: 6
+    weaponIndex: 0
+  }
+  ]
