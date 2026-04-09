@@ -1,14 +1,8 @@
-{
-	"color": "b3a8de",
-	"research": "geliarin",
-	"hardness": 2,
-	"charge": 0.05,
-	"explosiveness": 0.05,
-	"flammability": 0.0,
-	"radioactivity": 0.05,
-	"cost": 2.4,
-	"hiddenOnPlanets": [
-		serpulo
-		erekir
-	]
-}
+color: b3a8de
+research: geliarin
+hardness: 2
+charge: 0.05
+explosiveness: 0.05
+flammability: 0.0
+radioactivity: 0.05
+cost: 2.4
