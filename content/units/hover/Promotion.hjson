@@ -179,7 +179,6 @@ weapons: [
       recoil: 1.2
       splashDamage: 320
       splashDamageRadius: 30
-      damage: 200
       pierce: true
       pierceBuilding: true
       pierceCap: 2
