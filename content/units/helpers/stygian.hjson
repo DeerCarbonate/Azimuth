@@ -1,0 +1,78 @@
+	type: flying
+	outlineColor: 21202a
+	flying: true
+	health: 600
+    armor: 1
+	drag: 0.085
+	speed: 1.8
+	range: 60
+	accel: 0.015
+	drag: 0.035
+	targetGround: true
+	targetAir: true
+	rotateSpeed: 1.5
+	engineColor: bf92f9
+	trailColor: bf92f9
+	trailLength: 8
+	healColor: bf92f988
+    itemCapacity: 80
+	controlSelectGlobal: false
+	mineTier: 2
+	mineSpeed: 3.5
+	isEnemy: false
+	drawCell: false
+	engineSize: 0
+	healColor: bf92f988
+	deathExplosionEffect: {
+type: MultiEffect
+effects: [
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+          type: ParticleEffect
+          particles: 5
+          length: 120
+          lifetime: 360
+          sizeFrom: 1.7
+          sizeTo: 7.2
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: bf92f984
+          colorTo: b0b0b000
+          layer: 100.3
+	}
+}
+{
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 17
+sizeTo: 24
+colorTo: bf92f900
+baseRotation: 180
+interp: pow3Out
+}
+        {
+            type: ParticleEffect
+            lifetime: 55
+            baseLength: 2
+            length: 25
+            particles: 5
+            sizeFrom: 5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: bf92f984
+            colorTo: b0b0b000
+        }
+]
+}
