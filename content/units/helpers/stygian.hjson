@@ -1,4 +1,4 @@
-	type: MinerUnit
+	type: flying
 	outlineColor: 21202a
 	flying: true
 	health: 600
