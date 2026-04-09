@@ -307,7 +307,6 @@ drawer: {
   type: DrawTurret
   basePrefix: azimut-
   heatProgress: recoil
-  cooldown: 0.1
   iconOverride: [
     -icon
   ]
@@ -317,7 +316,6 @@ drawer: {
       suffix: -lade,
       under: true,
       mirror: true,
-      heatProgress: heat
       progress: warmup
 	  x: 0,
 	  y: 0,
