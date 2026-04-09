@@ -5,6 +5,7 @@ hitSize: 11
 health: 300
 armor: 1
 range: 0
+wobble: false
 itemCapacity: 0
 speed: 1
 rotateShooting: false
