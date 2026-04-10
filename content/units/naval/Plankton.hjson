@@ -53,8 +53,8 @@ bullet: {
 
     buildingDamageMultiplier: 1.15
 
-    splashDamageRadius: 25
-    splashDamage: 90
+    splashDamageRadius: 37
+    splashDamage: 120
 
     hitSound: energy-blade-hit
 shootEffect: [
