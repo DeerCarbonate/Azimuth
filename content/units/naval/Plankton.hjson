@@ -34,7 +34,9 @@ objectives: [
 }
 	weapons: [
 {
+    controllable: false
     shootOnDeath: true
+    alternate: false
     shootCone: 360
     mirror: false
     shake: 2.5
