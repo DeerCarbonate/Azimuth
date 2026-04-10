@@ -1,5 +1,5 @@
 size: 1
-speed: 20
+speed: 6
 squareSprite: false
 requirements: [
   cobalt/2
