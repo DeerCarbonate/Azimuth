@@ -27,7 +27,7 @@ effects: [
       amount: 2
       effect: {
           type: ParticleEffect
-          particles: 5
+          particles: 2
           length: 120
           lifetime: 290
           sizeFrom: 1.7
