@@ -16,6 +16,46 @@
 	trailScl: 1.4
 	waveTrailX: 4
 	waveTrailY: -3
+deathExplosionEffect: {
+type: MultiEffect
+effects: [
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+          type: ParticleEffect
+          particles: 5
+          length: 120
+          lifetime: 290
+          sizeFrom: 1.7
+          sizeTo: 7.2
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: a4f0d784
+          colorTo: b0b0b000
+          layer: 100.3
+        }
+}
+        {
+            type: ParticleEffect
+            lifetime: 55
+            baseLength: 2
+            length: 25
+            particles: 5
+            sizeFrom: 5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: a4f0d784
+            colorTo: b0b0b000
+        }
+]
+}
 		research: {
   parent: "naval-editor"
   planet: gelion
