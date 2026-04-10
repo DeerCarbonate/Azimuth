@@ -93,11 +93,11 @@ interp: pow3Out
                                 rotWithParent: true
                                 followParent: true
                                 lifetime: 35
-                                sizeFrom: 26
-                                sizeTo: 28
+                                sizeFrom: 22
+                                sizeTo: 29
                                 strokeFrom: 6
                                 strokeTo: 2
-                colorFrom: a4f0d780
+                colorFrom: a4f0d710
                 colorTo: 5fac9e00
                                 interp:pow3Out
                                 }
