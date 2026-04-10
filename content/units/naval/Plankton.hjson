@@ -54,7 +54,7 @@ bullet: {
     buildingDamageMultiplier: 1.15
 
     splashDamageRadius: 25
-    splashDamage: 70
+    splashDamage: 90
 
     hitSound: energy-blade-hit
 shootEffect: [
@@ -65,8 +65,8 @@ lifetime: 35
 particles: 1
 cone: 0
 region: azimut-shockwave
-sizeFrom: 20
-sizeTo: 23
+sizeFrom: 16
+sizeTo: 19
 colorTo: a4f0d700
 baseRotation: 180
 interp: pow3Out
@@ -78,8 +78,8 @@ interp: pow3Out
                                 rotWithParent: true
                                 followParent: true
                                 lifetime: 35
-                                sizeFrom: 26
-                                sizeTo: 28
+                                sizeFrom: 22
+                                sizeTo: 25
                                 strokeFrom: 6
                                 strokeTo: 2
                 colorFrom: a4f0d780
