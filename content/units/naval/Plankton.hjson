@@ -103,6 +103,7 @@ interp: pow3Out
                                 }
                         ]
     }
+}
 		{
 		    "name": Plankton-weapon,
 			"recoil": 1.3,
