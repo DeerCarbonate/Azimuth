@@ -4,23 +4,24 @@ health: 1650
 category: power
 powerProduction: 6.5
 generateEffect: none
-		research: {
-    parent: "energy-converter"
-    planet: gelion
-		"requirements": [
-		"cobalt/8000"
-		"platinum/5000"
-		"zinc/1150"
-		"geliarin/5000"
-		"venerium/8000
-		]
-	objectives: [
+research: {
+  parent: "energy-converter"
+  planet: gelion
+  requirements: [
+    "cobalt/8000",
+    "platinum/5000",
+    "zinc/1150",
+    "geliarin/5000",
+    "venerium/8000"
+  ]
+  objectives: [
     {
-type: SectorComplete
-preset: nine
+      type: SectorComplete
+      preset: nine
     }
   ]
 }
+
 requirements: [
   cobalt/250
   platinum/130
