@@ -4,6 +4,7 @@ health: 1650
 category: power
 powerProduction: 6.5
 generateEffect: none
+customShadow: true
 research: {
   parent: "energy-converter"
   planet: gelion
