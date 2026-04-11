@@ -137,6 +137,7 @@ weapons: [
       keepVelocity: false
       collidesAir: false
       splashDamageRadius: 2
+	  despawnEffect: none
       hitEffect: {
         type: ExplosionEffect
         lifetime: 15
