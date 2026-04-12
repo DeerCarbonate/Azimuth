@@ -166,8 +166,8 @@ interp: pow3Out
     sides: 2
     color1: a4f0d7
     radius: 0
-    radiusTo: 60
-    stroke: 7
+    radiusTo: 5
+    stroke: 4
     innerRadScl: 0.70
     y: 3
     progress: charge
@@ -178,7 +178,7 @@ interp: pow3Out
 shoot: {
     type: ShootSpread
     firstShotDelay: 15
-    shotDelay: 25
+    shotDelay: 3
     spread: 2
     shots: 2
     }
