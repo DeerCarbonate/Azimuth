@@ -200,16 +200,16 @@ shoot: {
 	despawnEffect: none
 	smokeEffect: [{
         type: ParticleEffect
-        colorFrom: a4f0d7
+        colorFrom: a4f0d780
         colorTo: b0b0b000
         particles: 3
-        cone: 21
+        cone: 12
         lifetime: 28
-        length: 23
+        length: 21
         interp: pow3Out
 		sizeInterp: pow2In
-        sizeFrom: 2.1
-        sizeTo: 0.3
+        sizeFrom: 2
+        sizeTo: 0.2
         }
 	    ]
       hitEffect: {
