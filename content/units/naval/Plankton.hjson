@@ -179,35 +179,36 @@ shoot: {
     trailColor: 5fac9e
     trailLength: 4
     trailWidth: 1.3
-	smokeEffect: colorSpark
-    hitEffect: none
     collidesTiles: true
     keepVelocity: false
     collidesAir: false
-	despawnEffect: {
-    type: WaveEffect
-    rotWithParent: true
-    followParent: true
-    lifetime: 12
-
-    sizeFrom: 0
-    sizeTo: 8
-
-    colorFrom: e5f9f140
-    colorTo: b3eed8
-    }
-
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: a4f0d7
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: a4f0d7
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: a4f0d7
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
+      }
 chargeEffect: {
     type: WaveEffect
     rotWithParent: true
     followParent: true
     lifetime: 15
-    offsetX: 2.1
     sizeFrom: 5
     sizeTo: 0
-
-    colorFrom: b3eed880
-    colorTo: e5f9f150
+	strokeFrom: 0
+	strokeTo: 3
+    colorFrom: b3eed800
+    colorTo: a4f0d780
 }
 			}
 		}
