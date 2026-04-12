@@ -1,79 +1,82 @@
-	type: naval
-	flying: false
-	outlineColor: 1b1c25
-	outlineRadius: 3
-	rotateSpeed: 3.6
-	alwaysUnlocked: false
-	range: 100
-	armor: 4
-	health: 850
-	speed: 1.35
-	hitSize: 11.2
-	healColor: a4f0d788
-	accel: 0.75
-	immunities: [ wet ]
-	trailLength: 12
-	trailScl: 1.4
-	waveTrailX: 4
-	waveTrailY: -3
+type: naval
+flying: false
+outlineColor: 1b1c25
+outlineRadius: 3
+rotateSpeed: 3.6
+alwaysUnlocked: false
+range: 100
+armor: 4
+health: 850
+speed: 1.35
+hitSize: 11.2
+healColor: a4f0d788
+accel: 0.75
+immunities: [wet]
+trailLength: 12
+trailScl: 1.4
+waveTrailX: 4
+waveTrailY: -3
+
 deathExplosionEffect: {
-type: MultiEffect
-effects: [
-{
+  type: MultiEffect
+  effects: [
+    {
       type: RadialEffect
-      rotationSpacing : 90
+      rotationSpacing: 90
       rotationOffset: 0
       lengthOffset: 2
       amount: 2
       effect: {
-          type: ParticleEffect
-          particles: 2
-          length: 120
-          lifetime: 290
-          sizeFrom: 1.7
-          sizeTo: 7.2
-          cone: 2
-          baseRotation: 73
-          useRotation:false
-          interp: pow5Out
-          colorFrom: a4f0d784
-          colorTo: b0b0b000
-          layer: 100.3
-        }
-}
-        {
-            type: ParticleEffect
-            lifetime: 55
-            baseLength: 2
-            length: 25
-            particles: 5
-            sizeFrom: 5
-            sizeTo: 0
-            interp: pow5Out
-            sizeInterp: pow5In
-            colorFrom: a4f0d784
-            colorTo: b0b0b000
-        }
-]
-}
-		research: {
-  parent: "naval-editor"
-  planet: gelion
-    "requirements": [
-	  "venerium/90"
-	  "cobalt/800"
-	  "platinum/260"
-	  "geliarin/70"
-]
-objectives: [
+        type: ParticleEffect
+        particles: 2
+        length: 120
+        lifetime: 290
+        sizeFrom: 1.7
+        sizeTo: 7.2
+        cone: 2
+        baseRotation: 73
+        useRotation: false
+        interp: pow5Out
+        colorFrom: a4f0d784
+        colorTo: b0b0b000
+        layer: 100.3
+      }
+    }
     {
-	type: SectorComplete
-	preset: twos
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 25
+      particles: 5
+      sizeFrom: 5
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: a4f0d784
+      colorTo: b0b0b000
     }
   ]
 }
-	weapons: [
-{
+
+research: {
+  parent: naval-editor
+  planet: gelion
+  requirements: [
+    venerium/90
+    cobalt/800
+    platinum/260
+    geliarin/70
+  ]
+  objectives: [
+    {
+      type: SectorComplete
+      preset: twos
+    }
+  ]
+}
+
+weapons: [
+  {
     controllable: false
     shootOnDeath: true
     alternate: false
@@ -82,136 +85,143 @@ objectives: [
     shake: 2.5
     x: 0
     y: 0
-
     reload: 1
 
-bullet: {
-    type: ExplosionBulletType
-    collidesAir: false
-    despawnShake: 1.2
-    maxRange: 6
-
-    buildingDamageMultiplier: 1.15
-
-    splashDamageRadius: 37
-    splashDamage: 120
-
-    hitSound: energy-blade-hit
-shootEffect: [
-{
-followParent: false
-length: 0
-lifetime: 35
-particles: 1
-cone: 0
-region: azimut-shockwave
-sizeFrom: 16
-sizeTo: 19
-colorTo: a4f0d700
-baseRotation: 180
-interp: pow3Out
-}
-]
-                            despawnEffect: [
-                                {
-                                type: WaveEffect
-                                rotWithParent: true
-                                followParent: true
-                                lifetime: 35
-                                sizeFrom: 22
-                                sizeTo: 25
-                                strokeFrom: 6
-                                strokeTo: 2
-                colorFrom: a4f0d780
-                colorTo: 5fac9e00
-                                interp:pow3Out
-                                }
-                        ]
-                            hitEffect: [
-                                {
-                                type: WaveEffect
-                                rotWithParent: true
-                                followParent: true
-                                lifetime: 35
-                                sizeFrom: 22
-                                sizeTo: 29
-                                strokeFrom: 6
-                                strokeTo: 2
-                colorFrom: a4f0d710
-                colorTo: 5fac9e00
-                                interp:pow3Out
-                                }
-                        ]
-    }
-}
-		{
-		    "name": Plankton-weapon,
-			"recoil": 1.3,
-            "shootY": 1.1,
-			"mirror": true,
-			"alternate": true,
-			"rotate": true,
-			"rotateSpeed": 3.6,
-			"reload": 120,
-			"inaccuracy": 3,
-			"shootSound": shootCyclone,
-			"controllable": true,
-			"aiControllable": true,
-			"y": -3.3
-			"x": 4.7
-		    velocityRnd:0.2
-	  parts: [
-  {
-    type: FlarePart
-    sides: 2
-    color1: a4f0d7
-    radius: 0
-    radiusTo: 5
-    stroke: 4
-    innerRadScl: 0.70
-    y: 3
-    progress: charge
-    layer: 101
-    weaponIndex: 0
-  }    
-  ]
-shoot: {
-    type: ShootSpread
-    firstShotDelay: 15
-    shotDelay: 3
-    spread: 2
-    shots: 2
-    }
     bullet: {
-    type: BasicBulletType
-    backColor: a4f0d7
-    frontColor: ffffff
-    height: 8
-    width: 6
-    lifetime: 53
-    damage: 24
-    speed: 4.8
-    trailColor: 5fac9e
-    trailLength: 4
-    trailWidth: 1.3
-    collidesTiles: true
-    keepVelocity: false
-    collidesAir: false
-	despawnEffect: none
-	smokeEffect: [{
-        type: ParticleEffect
-        colorFrom: a4f0d780
-        colorTo: b0b0b000
-        particles: 3
-        cone: 12
-        lifetime: 28
-        length: 21
-        interp: pow3Out
-		sizeInterp: pow2In
-        sizeFrom: 2
-        sizeTo: 0.2
+      type: ExplosionBulletType
+      collidesAir: false
+      despawnShake: 1.2
+      maxRange: 6
+      buildingDamageMultiplier: 1.15
+      splashDamageRadius: 37
+      splashDamage: 120
+      hitSound: energy-blade-hit
+
+      shootEffect: [
+        {
+          type: ParticleEffect
+          followParent: false
+          length: 0
+          lifetime: 35
+          particles: 1
+          cone: 0
+          region: azimut-shockwave
+          sizeFrom: 16
+          sizeTo: 19
+          colorTo: a4f0d700
+          baseRotation: 180
+          interp: pow3Out
         }
-	    ]
+      ]
+
+      despawnEffect: [
+        {
+          type: WaveEffect
+          rotWithParent: true
+          followParent: true
+          lifetime: 35
+          sizeFrom: 22
+          sizeTo: 25
+          strokeFrom: 6
+          strokeTo: 2
+          colorFrom: a4f0d780
+          colorTo: 5fac9e00
+          interp: pow3Out
+        }
+      ]
+
+      hitEffect: [
+        {
+          type: WaveEffect
+          rotWithParent: true
+          followParent: true
+          lifetime: 35
+          sizeFrom: 22
+          sizeTo: 29
+          strokeFrom: 6
+          strokeTo: 2
+          colorFrom: a4f0d710
+          colorTo: 5fac9e00
+          interp: pow3Out
+        }
+      ]
+    }
+  }
+
+  {
+    name: Plankton-weapon
+    recoil: 1.3
+    shootY: 1.1
+    mirror: true
+    alternate: true
+    rotate: true
+    rotateSpeed: 3.6
+    reload: 120
+    inaccuracy: 3
+    shootSound: shootCyclone
+    controllable: true
+    aiControllable: true
+    y: -3.3
+    x: 4.7
+    velocityRnd: 0.2
+
+    parts: [
+      {
+        type: FlarePart
+        sides: 2
+        color1: a4f0d7
+        radius: 0
+        radiusTo: 5
+        stroke: 4
+        innerRadScl: 0.70
+        y: 3
+        progress: charge
+        layer: 101
+        weaponIndex: 0
+      }
+    ]
+
+    shoot: {
+      type: ShootSpread
+      firstShotDelay: 15
+      shotDelay: 3
+      spread: 2
+      shots: 2
+    }
+
+    bullet: {
+      type: BasicBulletType
+      backColor: a4f0d7
+      frontColor: ffffff
+      height: 8
+      width: 6
+      lifetime: 53
+      damage: 24
+      speed: 4.8
+      trailColor: 5fac9e
+      trailLength: 4
+      trailWidth: 1.3
+      collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
+      despawnEffect: none
+
+      smokeEffect: [
+        {
+          type: ParticleEffect
+          colorFrom: a4f0d780
+          colorTo: b0b0b000
+          particles: 3
+          cone: 12
+          lifetime: 28
+          length: 21
+          interp: pow3Out
+          sizeInterp: pow2In
+          sizeFrom: 2
+          sizeTo: 0.2
+        }
+      ]
+
       hitEffect: {
         type: ExplosionEffect
         lifetime: 15
@@ -228,9 +238,6 @@ shoot: {
         sparkLen: 2
         sparks: 3
       }
-			}
-		}
-	]
-	
-	
-	
+    }
+  }
+]
