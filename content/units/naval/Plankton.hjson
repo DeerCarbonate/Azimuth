@@ -160,6 +160,21 @@ interp: pow3Out
 			"y": -3.3
 			"x": 4.7
 		    velocityRnd:0.2
+	  parts: [
+  {
+    type: FlarePart
+    sides: 2
+    color1: a4f0d7
+    radius: 0
+    radiusTo: 60
+    stroke: 7
+    innerRadScl: 0.70
+    y: 3
+    progress: charge
+    layer: 101
+    weaponIndex: 0
+  }    
+  ]
 shoot: {
     type: ShootSpread
     firstShotDelay: 15
@@ -174,7 +189,7 @@ shoot: {
     height: 8
     width: 6
     lifetime: 53
-    damage: 28
+    damage: 24
     speed: 4.8
     trailColor: 5fac9e
     trailLength: 4
@@ -182,6 +197,21 @@ shoot: {
     collidesTiles: true
     keepVelocity: false
     collidesAir: false
+	despawnEffect: none
+	smokeEffect: [{
+        type: ParticleEffect
+        colorFrom: a4f0d7
+        colorTo: b0b0b000
+        particles: 3
+        cone: 21
+        lifetime: 28
+        length: 23
+        interp: pow3Out
+		sizeInterp: pow2In
+        sizeFrom: 2.1
+        sizeTo: 0.3
+        }
+	    ]
       hitEffect: {
         type: ExplosionEffect
         lifetime: 15
@@ -198,18 +228,6 @@ shoot: {
         sparkLen: 2
         sparks: 3
       }
-chargeEffect: {
-    type: WaveEffect
-    rotWithParent: true
-    followParent: true
-    lifetime: 15
-    sizeFrom: 5
-    sizeTo: 0
-	strokeFrom: 0
-	strokeTo: 3
-    colorFrom: b3eed800
-    colorTo: a4f0d780
-}
 			}
 		}
 	]

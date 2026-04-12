@@ -117,6 +117,7 @@ weapons: [
       trailColor: f6afdd
       trailWidth: 1
       trailLength: 12
+	  smokeEffect: none
       shootEffect: {
         type: WaveEffect
         startDelay: 0
