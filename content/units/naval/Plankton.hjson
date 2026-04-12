@@ -201,11 +201,10 @@ weapons: [
       trailColor: 5fac9e
       trailLength: 4
       trailWidth: 1.3
-      collidesTiles: true
       keepVelocity: false
-      collidesAir: false
       despawnEffect: none
-
+      collidesTiles: true
+      collidesAir: false
       smokeEffect: [
         {
           type: ParticleEffect
