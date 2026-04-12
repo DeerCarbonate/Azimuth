@@ -11,9 +11,8 @@ requirements: [
   venerium/1
 ]
 health: 25
-leaks: true
+solid: false
 underBullets: true
 researchCostMultiplier: 0.5
 junctionReplacement: directed-liquid-junction
 rotBridgeReplacement: directed-liquid-bridge
-botColor: 3e3e3b
