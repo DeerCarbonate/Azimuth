@@ -152,7 +152,7 @@ interp: pow3Out
 			"alternate": true,
 			"rotate": true,
 			"rotateSpeed": 3.6,
-			"reload": 90,
+			"reload": 120,
 			"inaccuracy": 3,
 			"shootSound": shootCyclone,
 			"controllable": true,
