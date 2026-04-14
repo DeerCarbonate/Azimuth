@@ -199,7 +199,6 @@ type: BasicBulletType
  despawnEffect: none
  scaleLife: false
  height: 6
- drag: 0.1
  buildingDamageMultiplier: 0.3
  trailRotation:true
        hitEffect: {
