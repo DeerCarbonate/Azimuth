@@ -116,11 +116,11 @@ baseRotation: 0
  hitSound: none
  lifetime: 36
  speed: 5.2
- width: 10
+ width: 7
  despawnEffect: none
  scaleLife: false
- height: 16
- drag: 0.1
+ height: 13
+ drag: 0.06
  buildingDamageMultiplier: 0.3
  trailRotation:true
       hitEffect: {
@@ -146,7 +146,7 @@ baseRotation: 0
                     colorTo: 6898c300
                     particles: 1
                     cone: 360
-                    lifetime:13
+                    lifetime:45
                     length: 3
                     sizeFrom: 1.2
                     sizeTo: 1.2
@@ -158,7 +158,7 @@ baseRotation: 0
                     colorFrom: 6898c330
                     colorTo: 6898c300
                     particles: 1
-                    lifetime:17
+                    lifetime:35
                     cone: 360
                     length: 11
                     spin: 1.2
@@ -169,8 +169,8 @@ baseRotation: 0
                 ]
                 trailChance:0.95
                 trailInterval:6
-	  fragBullets: 9
-      fragRandomSpread: 75
+	  fragBullets: 5
+      fragRandomSpread: 90
       fragVelocityMin: 1.3
       fragVelocityMax: 1.6
 	  fragLifeMin: 1.2
@@ -194,10 +194,10 @@ type: BasicBulletType
  hitSound: none
  lifetime: 36
  speed: 5.2
- width: 10
+ width: 4
  despawnEffect: none
  scaleLife: false
- height: 16
+ height: 6
  drag: 0.1
  buildingDamageMultiplier: 0.3
  trailRotation:true
@@ -224,7 +224,7 @@ type: BasicBulletType
                     colorTo: 6898c300
                     particles: 1
                     cone: 360
-                    lifetime:13
+                    lifetime:45
                     length: 3
                     sizeFrom: 0.8
                     sizeTo: 0.8
@@ -236,7 +236,7 @@ type: BasicBulletType
                     colorFrom: 6898c330
                     colorTo: 6898c300
                     particles: 1
-                    lifetime:17
+                    lifetime:35
                     cone: 360
                     length: 11
                     spin: 1.2
