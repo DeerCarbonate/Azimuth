@@ -143,7 +143,7 @@ baseRotation: 0
  	                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: 6898c330
+                    colorFrom: 6898c380
                     colorTo: 6898c300
                     particles: 1
                     cone: 360
@@ -156,7 +156,7 @@ baseRotation: 0
                 {
                     type: ParticleEffect
                     region:large-bomb
-                    colorFrom: 6898c330
+                    colorFrom: 6898c380
                     colorTo: 6898c300
                     particles: 1
                     lifetime:35
@@ -168,8 +168,8 @@ baseRotation: 0
                     layer:100.2
                 }
                 ]
-                trailChance:0.95
-                trailInterval:6
+                trailChance:2
+                trailInterval:3.4
 	  fragBullets: 5
       fragRandomSpread: 90
       fragVelocityMin: 0.4
@@ -220,7 +220,7 @@ type: BasicBulletType
  	                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: 6898c330
+                    colorFrom: 6898c380
                     colorTo: 6898c300
                     particles: 1
                     cone: 360
@@ -233,7 +233,7 @@ type: BasicBulletType
                 {
                     type: ParticleEffect
                     region:large-bomb
-                    colorFrom: 6898c330
+                    colorFrom: 6898c380
                     colorTo: 6898c300
                     particles: 1
                     lifetime:35
@@ -245,8 +245,8 @@ type: BasicBulletType
                     layer:100.2
                 }
                 ]
-                trailChance:0.95
-                trailInterval:6
+                trailChance:2
+                trailInterval:3.4
 		}
 
 	  }
