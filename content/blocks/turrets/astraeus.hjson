@@ -105,6 +105,151 @@ baseRotation: 0
                         }
                     ]
       }
+	  geliarin: {
+	   type: BasicBulletType
+ collidesGround: true
+ frontColor: c3feff
+ backColor: 6898c3
+ hitColor: 6898c3
+ damage: 60
+ despawnSound: none
+ hitSound: none
+ lifetime: 36
+ speed: 5.2
+ width: 10
+ despawnEffect: none
+ scaleLife: false
+ height: 16
+ drag: 0.1
+ buildingDamageMultiplier: 0.3
+ trailRotation:true
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 16
+        waveColor: 6898c395
+        waveStroke: 1.6
+        waveRad: 7.3
+        smokeColor: 6898c395
+        smokeSizeBase: 0
+        smokeSize: 0
+        smokes: 0
+        sparkColor: 6898c395
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 4
+      }
+ 	                  trailEffect:[
+                {
+                    type: ParticleEffect
+                    colorFrom: 6898c330
+                    colorTo: 6898c300
+                    particles: 1
+                    cone: 360
+                    lifetime:13
+                    length: 3
+                    sizeFrom: 1.2
+                    sizeTo: 1.2
+                    layer:100.2
+                }
+                {
+                    type: ParticleEffect
+                    region:large-bomb
+                    colorFrom: 6898c330
+                    colorTo: 6898c300
+                    particles: 1
+                    lifetime:17
+                    cone: 360
+                    length: 11
+                    spin: 1.2
+                    sizeFrom: 2.1
+                    sizeTo: 0
+                    layer:100.2
+                }
+                ]
+                trailChance:0.95
+                trailInterval:6
+	  fragBullets: 9
+      fragRandomSpread: 75
+      fragVelocityMin: 1.3
+      fragVelocityMax: 1.6
+	  fragLifeMin: 1.2
+	  fragLifeMax: 1.4
+      fragBullet: {
+type: BasicBulletType
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 4
+        pierceDamageFactor: 0.01
+        drag: 0.02
+	    homingPower: 0.12
+        homingRange: 100
+        homingDelay: 0
+ collidesGround: true
+ frontColor: c3feff
+ backColor: 6898c3
+ hitColor: 6898c3
+ damage: 60
+ despawnSound: none
+ hitSound: none
+ lifetime: 36
+ speed: 5.2
+ width: 10
+ despawnEffect: none
+ scaleLife: false
+ height: 16
+ drag: 0.1
+ buildingDamageMultiplier: 0.3
+ trailRotation:true
+       hitEffect: {
+        type: ExplosionEffect
+        lifetime: 16
+        waveColor: 6898c395
+        waveStroke: 1.6
+        waveRad: 7.3
+        smokeColor: 6898c395
+        smokeSizeBase: 0
+        smokeSize: 0
+        smokes: 0
+        sparkColor: 6898c395
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 4
+      }
+ 	                  trailEffect:[
+                {
+                    type: ParticleEffect
+                    colorFrom: 6898c330
+                    colorTo: 6898c300
+                    particles: 1
+                    cone: 360
+                    lifetime:13
+                    length: 3
+                    sizeFrom: 0.8
+                    sizeTo: 0.8
+                    layer:100.2
+                }
+                {
+                    type: ParticleEffect
+                    region:large-bomb
+                    colorFrom: 6898c330
+                    colorTo: 6898c300
+                    particles: 1
+                    lifetime:17
+                    cone: 360
+                    length: 11
+                    spin: 1.2
+                    sizeFrom: 1.8
+                    sizeTo: 0
+                    layer:100.2
+                }
+                ]
+                trailChance:0.95
+                trailInterval:6
+		}
+
+	  }
 }
     shoot: {
       type: ShootBarrel
