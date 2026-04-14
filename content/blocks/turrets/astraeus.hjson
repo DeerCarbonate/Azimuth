@@ -107,6 +107,7 @@ baseRotation: 0
       }
 	  geliarin: {
 	   type: BasicBulletType
+	     reloadMultiplier:0.5
  collidesGround: true
  frontColor: c3feff
  backColor: 6898c3
@@ -120,7 +121,7 @@ baseRotation: 0
  despawnEffect: none
  scaleLife: false
  height: 13
- drag: 0.06
+ drag: 0.008
  buildingDamageMultiplier: 0.3
  trailRotation:true
       hitEffect: {
@@ -181,7 +182,7 @@ type: BasicBulletType
         pierceBuilding: true
         pierceCap: 4
         pierceDamageFactor: 0.01
-        drag: 0.02
+        drag: 0.001
 	    homingPower: 0.12
         homingRange: 100
         homingDelay: 0
@@ -192,7 +193,7 @@ type: BasicBulletType
  damage: 60
  despawnSound: none
  hitSound: none
- lifetime: 36
+ lifetime: 65
  speed: 5.2
  width: 4
  despawnEffect: none
