@@ -117,10 +117,10 @@ baseRotation: 0
  hitSound: none
  lifetime: 36
  speed: 5.2
- width: 7
+ width: 11
  despawnEffect: none
  scaleLife: false
- height: 13
+ height: 15
  drag: 0.008
  buildingDamageMultiplier: 0.3
  trailRotation:true
@@ -128,17 +128,17 @@ baseRotation: 0
         type: ExplosionEffect
         lifetime: 16
         waveColor: 6898c395
-        waveStroke: 1.6
-        waveRad: 7.3
+        waveStroke: 1.9
+        waveRad: 9.3
         smokeColor: 6898c395
         smokeSizeBase: 0
         smokeSize: 0
         smokes: 0
         sparkColor: 6898c395
-        sparkStroke: 1.6
-        sparkRad: 17.5
-        sparkLen: 2
-        sparks: 4
+        sparkStroke: 1.7
+        sparkRad: 18
+        sparkLen: 2.2
+        sparks: 5
       }
  	                  trailEffect:[
                 {
@@ -149,8 +149,8 @@ baseRotation: 0
                     cone: 360
                     lifetime:45
                     length: 3
-                    sizeFrom: 1.2
-                    sizeTo: 1.2
+                    sizeFrom: 2.1
+                    sizeTo: 1.8
                     layer:100.2
                 }
                 {
@@ -161,9 +161,9 @@ baseRotation: 0
                     particles: 1
                     lifetime:35
                     cone: 360
-                    length: 11
-                    spin: 1.2
-                    sizeFrom: 2.1
+                    length: 17
+                    spin: 1.8
+                    sizeFrom: 3.5
                     sizeTo: 0
                     layer:100.2
                 }
@@ -172,33 +172,33 @@ baseRotation: 0
                 trailInterval:3.4
 	  fragBullets: 5
       fragRandomSpread: 90
-      fragVelocityMin: 0.4
-      fragVelocityMax: 0.6
-	  fragLifeMin: 0.7
-	  fragLifeMax: 0.9
+      fragVelocityMin: 0.5
+      fragVelocityMax: 0.7
+	     fragLifeMin: 0.8
+	     fragLifeMax: 1
       fragBullet: {
 type: BasicBulletType
         pierce: true
         pierceBuilding: true
-        pierceCap: 4
+        pierceCap: 2
         pierceDamageFactor: 0.01
-        drag: 0.007
-	    homingPower: 0.12
+        drag: 0.004
+	       homingPower: 0.12
         homingRange: 200
         homingDelay: 0
  collidesGround: true
  frontColor: c3feff
  backColor: 6898c3
  hitColor: 6898c3
- damage: 60
+ damage: 25
  despawnSound: none
  hitSound: none
  lifetime: 65
  speed: 5.2
- width: 4
+ width: 7.5
  despawnEffect: none
  scaleLife: false
- height: 6
+ height: 9
  buildingDamageMultiplier: 0.3
  trailRotation:true
        hitEffect: {
@@ -226,8 +226,8 @@ type: BasicBulletType
                     cone: 360
                     lifetime:45
                     length: 3
-                    sizeFrom: 0.8
-                    sizeTo: 0.8
+                    sizeFrom: 1.8
+                    sizeTo: 1.8
                     layer:100.2
                 }
                 {
@@ -240,7 +240,7 @@ type: BasicBulletType
                     cone: 360
                     length: 11
                     spin: 1.2
-                    sizeFrom: 1.8
+                    sizeFrom: 2.2
                     sizeTo: 0
                     layer:100.2
                 }
