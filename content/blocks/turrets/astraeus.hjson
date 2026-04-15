@@ -201,8 +201,8 @@ baseRotation: 0
                     layer:100.2
                 }
                 ]
-                trailChance:2
-                trailInterval:3.4
+                trailChance:1
+                trailInterval:2
 	  fragBullets: 5
       fragRandomSpread: 90
       fragVelocityMin: 0.5
@@ -282,8 +282,8 @@ trailWidth: 1.4
                     layer:100.2
                 }
                 ]
-                trailChance:2
-                trailInterval:3.4
+                trailChance:1
+                trailInterval:2
 		}
 
 	  }
