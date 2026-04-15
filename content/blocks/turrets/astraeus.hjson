@@ -287,6 +287,173 @@ trailWidth: 1.4
 		}
 
 	  }
+	  zinc: {
+ type: BasicBulletType
+ reloadMultiplier:0.7
+ collidesGround: true
+ frontColor: bf92f9
+ backColor: bf92f9
+ hitColor: bf92f9
+ splashDamage: 50
+ splashDamageRadius: 60
+ damage: 20
+ despawnSound: none
+ hitSound: none
+ lifetime: 85
+ speed: 3.5
+ width: 18
+ despawnEffect: none
+ scaleLife: false
+ height: 18
+ buildingDamageMultiplier: 0.3
+ trailChance:2
+ trailInterval:3
+ trailRotation:true
+ weaveMag: 8
+ weaveScale: 12
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 16
+        waveColor: bf92f995
+        waveStroke: 2.7
+        waveRad: 18
+        smokeColor: bf92f995
+        smokeSizeBase: 0
+        smokeSize: 0
+        smokes: 0
+        sparkColor: bf92f995
+        sparkStroke: 1.8
+        sparkRad: 18
+        sparkLen: 4
+        sparks: 6
+      }
+shootEffect: [
+{
+followParent: false
+length: 0
+layer: 105
+lifetime: 12
+particles: 1
+cone: 0
+region: azimut-long-triangle
+sizeFrom: 28
+sizeTo: 0
+colorTo: bf92f975
+baseRotation: 0
+}
+]
+			      smokeEffect: [{
+        type: ParticleEffect
+        colorFrom: bf92f9
+        colorTo: 99999900
+        particles: 7
+        cone: 14
+        lifetime: 33
+        length: 46
+        interp: pow3Out
+		sizeInterp: pow2In
+        sizeFrom: 3.6
+        sizeTo: 0.3
+        }
+	    ]
+ trailEffect:[
+						{
+                            type: ParticleEffect
+                            lifetime: 18
+                            particles: 1
+                            offsetX:-5
+                            length: 40
+                            line: true
+                            strokeTo: 1.5
+                            lenFrom: 2
+                            lenTo: 5
+                            colorTo: bf92f900
+							colorFrom: bf92f995
+                            cone: 10
+                            baseRotation: 180
+                        }
+                    ]
+					  intervalBullet: {
+    type: BasicBulletType
+    speed: 3
+    damage: 35
+    width: 9
+    height: 15
+    pierceCap: 1
+    lifetime: 28
+    pierceBuilding: true
+    collidesGround: true
+    frontColor: bf92f9
+    backColor: bf92f9
+    hitColor: bf92f9
+    trailWidth: 2.1
+    trailLength: 5
+	trailColor: bf92f9
+    buildingDamageMultiplier: 0.3
+    homingPower: 0.1
+	      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 16
+        waveColor: bf92f995
+        waveStroke: 1.9
+        waveRad: 9.3
+        smokeColor: bf92f995
+        smokeSizeBase: 0
+        smokeSize: 0
+        smokes: 0
+        sparkColor: bf92f995
+        sparkStroke: 1.7
+        sparkRad: 18
+        sparkLen: 2.2
+        sparks: 5
+      }
+  }
+  bulletInterval: 3
+  intervalRandomSpread: 20
+  intervalBullets: 2
+  intervalAngle: 180
+  intervalSpread: 300
+  fragBullets: 15
+  fragVelocityMin: 0.3
+  fragVelocityMax: 0.9
+  fragLifeMin: 0.5
+    fragBullet:
+  {
+    type: BasicBulletType
+    speed: 3
+    damage: 35
+    width: 9
+    hitSize: 5
+    height: 15
+    pierceCap: 3
+    lifetime: 28
+    pierceBuilding: true
+    frontColor: bf92f9
+    backColor: bf92f9
+    hitColor: bf92f9
+    trailColor: bf92f9
+    trailWidth: 2.1
+    trailLength: 5
+    buildingDamageMultiplier: 0.3
+    homingPower: 0.1
+	      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 16
+        waveColor: bf92f995
+        waveStroke: 1.9
+        waveRad: 9.3
+        smokeColor: bf92f995
+        smokeSizeBase: 0
+        smokeSize: 0
+        smokes: 0
+        sparkColor: bf92f995
+        sparkStroke: 1.7
+        sparkRad: 18
+        sparkLen: 2.2
+        sparks: 5
+      }
+    }
+      }
 }
     shoot: {
       type: ShootBarrel
