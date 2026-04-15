@@ -305,7 +305,7 @@ trailWidth: 1.4
  damage: 20
  despawnSound: none
  hitSound: none
- lifetime: 140
+ lifetime: 100
  speed: 3.5
  width: 18
  despawnEffect: none
