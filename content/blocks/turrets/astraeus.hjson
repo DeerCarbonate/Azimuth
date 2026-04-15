@@ -418,31 +418,31 @@ baseRotation: 0
         sparks: 5
       }
   }
-  bulletInterval: 7.2
+  bulletInterval: 12
   intervalRandomSpread: 15
   intervalBullets: 2
   intervalAngle: 180
   intervalSpread: 300
   fragBullets: 15
-  fragVelocityMin: 0.3
-  fragVelocityMax: 0.9
-  fragLifeMin: 0.5
+  fragVelocityMin: 0.4
+  fragVelocityMax: 1.1
+  fragLifeMin: 0.7
     fragBullet:
   {
     type: BasicBulletType
     speed: 1.5
     damage: 35
-    width: 9
+    width: 6
     hitSize: 5
-    height: 15
+    height: 8
     pierceCap: 3
     lifetime: 120
     pierceBuilding: true
     frontColor: bf92f9
     backColor: bf92f9
     hitColor: bf92f9
-    trailWidth: 2.1
-    trailLength: 5
+    trailWidth: 1.2
+    trailLength: 17
 	trailColor: bf92f9
     buildingDamageMultiplier: 0.3
     homingPower: 0.1
