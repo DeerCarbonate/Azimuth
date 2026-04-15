@@ -400,6 +400,7 @@ baseRotation: 0
 	collidesTiles: true
     keepVelocity: false
     collidesAir: false
+	despawnEffect: none
 	      hitEffect: {
         type: ExplosionEffect
         lifetime: 16
@@ -417,8 +418,8 @@ baseRotation: 0
         sparks: 5
       }
   }
-  bulletInterval: 3
-  intervalRandomSpread: 20
+  bulletInterval: 1.2
+  intervalRandomSpread: 15
   intervalBullets: 2
   intervalAngle: 180
   intervalSpread: 300
@@ -429,13 +430,13 @@ baseRotation: 0
     fragBullet:
   {
     type: BasicBulletType
-    speed: 3
+    speed: 1.5
     damage: 35
     width: 9
     hitSize: 5
     height: 15
     pierceCap: 3
-    lifetime: 28
+    lifetime: 120
     pierceBuilding: true
     frontColor: bf92f9
     backColor: bf92f9
@@ -448,6 +449,9 @@ baseRotation: 0
 	collidesTiles: true
     keepVelocity: false
     collidesAir: false
+	weaveMag: 5
+    weaveScale: 4
+	despawnEffect: none
 	      hitEffect: {
         type: ExplosionEffect
         lifetime: 16
