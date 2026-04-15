@@ -124,6 +124,35 @@ baseRotation: 0
  drag: 0.008
  buildingDamageMultiplier: 0.3
  trailRotation:true
+shootEffect: [
+{
+followParent: false
+length: 0
+layer: 105
+lifetime: 12
+particles: 1
+cone: 0
+region: azimut-long-triangle
+sizeFrom: 28
+sizeTo: 0
+colorTo: 6898c375
+baseRotation: 0
+}
+]
+			      smokeEffect: [{
+        type: ParticleEffect
+        colorFrom: 6898c3
+        colorTo: 99999900
+        particles: 7
+        cone: 14
+        lifetime: 33
+        length: 46
+        interp: pow3Out
+		sizeInterp: pow2In
+        sizeFrom: 3.6
+        sizeTo: 0.3
+        }
+	    ]
       hitEffect: {
         type: ExplosionEffect
         lifetime: 16
