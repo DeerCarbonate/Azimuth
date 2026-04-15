@@ -124,6 +124,10 @@ baseRotation: 0
  drag: 0.008
  buildingDamageMultiplier: 0.3
  trailRotation:true
+ sprite: large-orb
+trailColor: 6898c3
+trailLength: 9
+trailWidth: 1.4
 shootEffect: [
 {
 followParent: false
@@ -207,19 +211,20 @@ baseRotation: 0
 	     fragLifeMax: 1
       fragBullet: {
 type: BasicBulletType
+sprite: large-orb
         pierce: true
         pierceBuilding: true
         pierceCap: 2
         pierceDamageFactor: 0.01
         drag: 0.004
-	       homingPower: 0.12
+	       homingPower: 0.1
         homingRange: 200
         homingDelay: 0
  collidesGround: true
  frontColor: c3feff
  backColor: 6898c3
  hitColor: 6898c3
- damage: 25
+ damage: 32
  despawnSound: none
  hitSound: none
  lifetime: 65
@@ -229,6 +234,9 @@ type: BasicBulletType
  scaleLife: false
  height: 9
  buildingDamageMultiplier: 0.3
+trailColor: 6898c3
+trailLength: 9
+trailWidth: 1.4
  trailRotation:true
        hitEffect: {
         type: ExplosionEffect
