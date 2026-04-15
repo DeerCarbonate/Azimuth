@@ -423,9 +423,9 @@ baseRotation: 0
       }
   }
   bulletInterval: 9
-  intervalRandomSpread: 20
+  intervalRandomSpread: 25
   intervalBullets: 2
-  intervalAngle: 225
+  intervalAngle: 180
   intervalSpread: 360
   fragBullets: 15
   fragVelocityMin: 0.4
