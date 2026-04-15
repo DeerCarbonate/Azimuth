@@ -418,7 +418,7 @@ baseRotation: 0
         sparks: 5
       }
   }
-  bulletInterval: 12
+  bulletInterval: 11
   intervalRandomSpread: 15
   intervalBullets: 2
   intervalAngle: 180
