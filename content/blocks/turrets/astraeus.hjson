@@ -238,6 +238,9 @@ trailColor: 6898c3
 trailLength: 9
 trailWidth: 1.4
  trailRotation:true
+       collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
        hitEffect: {
         type: ExplosionEffect
         lifetime: 16
@@ -289,7 +292,7 @@ trailWidth: 1.4
 	  }
 	  zinc: {
  type: BasicBulletType
- reloadMultiplier:0.7
+ reloadMultiplier:0.2
  collidesGround: true
  frontColor: bf92f9
  backColor: bf92f9
@@ -299,7 +302,7 @@ trailWidth: 1.4
  damage: 20
  despawnSound: none
  hitSound: none
- lifetime: 85
+ lifetime: 140
  speed: 3.5
  width: 18
  despawnEffect: none
@@ -309,8 +312,11 @@ trailWidth: 1.4
  trailChance:2
  trailInterval:3
  trailRotation:true
- weaveMag: 8
- weaveScale: 12
+ weaveMag: 1
+ weaveScale: 2
+       collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
       hitEffect: {
         type: ExplosionEffect
         lifetime: 16
@@ -391,6 +397,9 @@ baseRotation: 0
 	trailColor: bf92f9
     buildingDamageMultiplier: 0.3
     homingPower: 0.1
+	collidesTiles: true
+    keepVelocity: false
+    collidesAir: false
 	      hitEffect: {
         type: ExplosionEffect
         lifetime: 16
@@ -436,6 +445,9 @@ baseRotation: 0
     trailLength: 5
     buildingDamageMultiplier: 0.3
     homingPower: 0.1
+	collidesTiles: true
+    keepVelocity: false
+    collidesAir: false
 	      hitEffect: {
         type: ExplosionEffect
         lifetime: 16
