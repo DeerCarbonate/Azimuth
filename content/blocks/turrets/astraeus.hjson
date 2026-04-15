@@ -305,12 +305,12 @@ trailWidth: 1.4
  damage: 20
  despawnSound: none
  hitSound: none
- lifetime: 100
- speed: 3.5
- width: 18
+ lifetime: 95
+ speed: 2.8
+ width: 8
  despawnEffect: none
  scaleLife: false
- height: 18
+ height: 10
  buildingDamageMultiplier: 0.3
  trailChance:2
  trailInterval:3
@@ -322,7 +322,7 @@ trailWidth: 1.4
       collidesAir: false
       hitEffect: {
         type: ExplosionEffect
-        lifetime: 16
+        lifetime: 83
         waveColor: bf92f995
         waveStroke: 2.7
         waveRad: 18
@@ -386,8 +386,8 @@ baseRotation: 0
     type: BasicBulletType
     speed: 3
     damage: 35
-    width: 9
-    height: 15
+    width: 4
+    height: 7
     pierceCap: 1
     lifetime: 28
     pierceBuilding: true
@@ -407,7 +407,7 @@ baseRotation: 0
 	despawnEffect: none
 	      hitEffect: {
         type: ExplosionEffect
-        lifetime: 16
+        lifetime: 56
         waveColor: bf92f995
         waveStroke: 1.9
         waveRad: 9.3
@@ -423,14 +423,14 @@ baseRotation: 0
       }
   }
   bulletInterval: 9
-  intervalRandomSpread: 35
+  intervalRandomSpread: 20
   intervalBullets: 2
-  intervalAngle: 210
-  intervalSpread: 320
+  intervalAngle: 225
+  intervalSpread: 360
   fragBullets: 15
   fragVelocityMin: 0.4
   fragVelocityMax: 1.1
-  fragLifeMin: 0.7
+  fragLifeMin: 0.6
     fragBullet:
   {
     type: BasicBulletType
