@@ -1,4 +1,3 @@
-//localizedName: Lurcia
 generator: "PlanetGenerator"
 
 hiddenItems: [
@@ -49,7 +48,7 @@ startSector: 10
 atmosphereRadIn: 0
 atmosphereRadOut: 0
 atmosphereColor: 000000 
-iconColor: bad5cd     
+iconColor: b0b0b0
 icon: planet
 orbitRadius: 1.9 
 orbitTime: 2000
