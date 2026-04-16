@@ -26,7 +26,7 @@ mesh: [
     color2: 545560
     octaves: 5
     persistence: 0.38
-	mag: 6.8
+	mag: 6.4
   }
 ]
 orbitRadius: 15
