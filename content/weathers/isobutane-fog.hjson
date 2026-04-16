@@ -1,5 +1,5 @@
 type: ParticleWeather
-name: Ammonia fog
+name: Isobutane fog
 noiseColor: 886161
 drawNoise: true
 particleRegion: particle
