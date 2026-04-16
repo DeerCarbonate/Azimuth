@@ -20,7 +20,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 3.2
-    radius: 0.2
+    radius: 0.1855556
     seed: 62
     color1: 231f26
     color2: 231f26
@@ -36,9 +36,9 @@ allowLaunchToNumbered: false
 allowLaunchLoadout: false
 allowSectorInvasion: false
 startSector: 0
-orbitSpacing: 2
+orbitSpacing: 3
 radius: 0.2
-minZoom: 1
+minZoom: 0.40
 drawOrbit: true
 accessible: false
 updateLighting: true
