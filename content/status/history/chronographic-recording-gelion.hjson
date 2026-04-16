@@ -1,0 +1,7 @@
+research: {
+  parent: core-forum
+  objectives: [
+    cobalt
+  ]
+}
+alwaysUnlocked: true
