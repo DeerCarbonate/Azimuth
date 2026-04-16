@@ -1,0 +1,11 @@
+type: RainWeather
+color: 8f6e6e
+xspeed: 1.9
+yspeed: 5.4
+stroke: 1
+density: 2500
+sizeMin: 14
+sizeMax: 22
+splashTimeScale: 11
+liquid: isobutane
+force: 0
