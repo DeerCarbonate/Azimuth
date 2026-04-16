@@ -1,9 +1,3 @@
-name: Alveon
-localizedName: Alveon
-description:
-'''
-A red giant.
-'''
 mesh: {
     type: SunMesh
     planet: alveon
