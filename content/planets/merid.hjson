@@ -1,29 +1,5 @@
 generator: "PlanetGenerator"
 
-hiddenItems: [
-    "copper"
-    "lead"
-    "scrap"
-    "graphite"
-    "coal"
-    "titanium"
-    "thorium"
-    "silicon"
-    "plastanium"
-    "phase-fabric"
-    "sand"
-    "surge-alloy"
-    "spore-pod"
-    "blast-compound"
-    "pyratite"
-    "metaglass"
-    "beryllium"
-    "oxide"
-    "tungsten"
-    "carbide"
-    "fissile-matter"
-    "dormant-cyst"
-]
 clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchLoadout: false

@@ -1,0 +1,55 @@
+alwaysUnlocked: false
+mesh: [
+  {
+    type: SunMesh 
+    divisions: 3.2
+    octaves: 1
+    persistence: 0.5
+    scl: 0.65
+    pow: 1
+    mag: 1.2
+    colorScale: 1.35
+    colors: [
+	c6a75f,
+    b7864c,
+    a05f36,
+  	914027,
+  	7e1c1c
+    ]
+  }
+  {
+    type: NoiseMesh
+    divisions: 3.2
+    radius: 0.2
+    seed: 62
+    color1: 231f26
+    color2: 231f26
+    octaves: 1
+    persistence: 0.6
+	mag: 0.6
+  }
+]
+orbitRadius: 15
+sectorSize: 1
+allowLaunchSchematics: false
+allowLaunchToNumbered: false
+allowLaunchLoadout: false
+allowSectorInvasion: false
+startSector: 0
+orbitSpacing: 2
+radius: 0.2
+minZoom: 1
+drawOrbit: true
+accessible: false
+updateLighting: true
+sectorSeed: 52125
+bloom: true
+visible: true
+iconColor: ff6956FF
+hasAtmosphere: false
+allowWaveSimulation: false
+clearSectorOnLose: true
+allowWaves: true
+prebuildBase: false
+parent: alveon
+solarSystem: alveon

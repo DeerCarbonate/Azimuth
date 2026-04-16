@@ -31,7 +31,7 @@ bloom: true
 accessible: false
 parent: sun
 radius: 7.5
-
+iconColor: ffa133ff
 drawOrbit: false
 orbitRadius: 12000
 tidalLock: true
