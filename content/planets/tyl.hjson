@@ -20,13 +20,13 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 3.2
-    radius: 0.13
+    radius: 0.132
     seed: 62
     color1: 646673
     color2: 545560
     octaves: 5
-    persistence: 0.5
-	mag: 8
+    persistence: 0.38
+	mag: 6.8
   }
 ]
 orbitRadius: 15
