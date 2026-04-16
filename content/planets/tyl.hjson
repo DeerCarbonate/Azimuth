@@ -22,11 +22,11 @@ mesh: [
     divisions: 3.2
     radius: 0.189555555
     seed: 62
-    color1: 231f26
-    color2: 231f26
+    color1: 646673
+    color2: 545560
     octaves: 1
-    persistence: 0.6
-	mag: 0.6
+    persistence: 0.5
+	mag: 1.0
   }
 ]
 orbitRadius: 15
@@ -38,7 +38,7 @@ allowSectorInvasion: false
 startSector: 0
 orbitSpacing: 3
 radius: 0.2
-minZoom: 0.70
+minZoom: 0.10
 drawOrbit: true
 accessible: false
 updateLighting: true
