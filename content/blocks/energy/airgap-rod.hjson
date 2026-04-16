@@ -1,57 +1,80 @@
 type: GenericCrafter
-size: 4
+size: 2
 category: crafting
 squareSprite: false
 ignoreLiquidFullness: true
-hasShadow: false
+hasShadow: true
 requirements: [
  zinc/70
  caterium/40
  compound/50
  venerium/80
 ]
-craftTime: 200
+craftTime: 6000
 outputLiquid: power/0.25
-craftEffect: [{
-        type: RadialEffect
-      rotationSpacing : 90
+craftEffect: [
+  {
+    type: RadialEffect
+    rotationSpacing: 0
+    amount: 2
+    lengthOffset: 0
+    effect: {
+      type: RadialEffect
+      rotationSpacing: 0
       rotationOffset: 0
-      lengthOffset: 2
-      amount: 3
+      amount: 1
+      lengthOffset: 0
       effect: {
-          type: ParticleEffect
-          particles: 2
-          length: 90
-          lifetime: 550
-          sizeFrom: 1.7
-          sizeTo: 4.2
-          cone: 2
-          baseRotation: 73
-          useRotation:false
-          interp: pow5Out
-          colorFrom: 8d655754
-          colorTo: 271b1700
-          layer: 100.3
-          }
+        type: RadialEffect
+        rotationSpacing: 60
+        amount: 3
+        lengthOffset: 0.9
+        effect: {
+          particles: 1
+		  lifetime: 560
+          line: true
+          length: -36
+          baseLength: 36
+          cone: 20
+          useRotation: false
+          baseRotation: 90
+          lenFrom: 4
+          lenTo: 0
+          strokeFrom: 2.1
+          strokeTo: 4.6
+          colorFrom: ffffff50
+          colorTo: 8c98e803
+          interp: pow2
+          sizeInterp: pow3In
+          layer: 80
+        }
+      }
     }
+  }
 ]
-ambientSound: smelter
 drawer: {
   type: DrawMulti
   drawers: [
 	{
       type: DrawCircles
-      color: d1e3ff05
+      color: d1e3ff09
       strokeMax: 3
       radius: 0.2
       amount: 0.2
     }
     {
    type: DrawParticles
-   color: d1e3ff01
+   color: d1e3ff15
    alpha: 0.15
    particleRad: 7
    rotateScl: 55
+    }
+	{
+   type: DrawParticles
+   color: 8c98e815
+   alpha: 0.15
+   particleRad: 12
+   rotateScl: 75
     }
     {
       type: DrawDefault
