@@ -1,6 +1,6 @@
 type: GenericCrafter
 size: 4
-category: energy
+category: crafting
 squareSprite: false
 ignoreLiquidFullness: true
 hasShadow: false
