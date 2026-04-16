@@ -32,7 +32,7 @@ research: {
 objectives: [
     {
       type: SectorComplete
-      preset: "twos"
+      preset: "eight"
     }
   ]
 }
