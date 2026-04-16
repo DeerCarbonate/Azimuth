@@ -1,4 +1,5 @@
 type: ParticleWeather
+name: Isobutane snowy
 sound: windhowl
 soundVol: 0.2
 color: fde3d8
