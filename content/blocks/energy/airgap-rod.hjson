@@ -1,0 +1,60 @@
+type: GenericCrafter
+size: 4
+category: energy
+squareSprite: false
+ignoreLiquidFullness: true
+hasShadow: false
+requirements: [
+ zinc/70
+ caterium/40
+ compound/50
+ venerium/80
+]
+craftTime: 200
+outputLiquid: power/0.25
+craftEffect: [{
+        type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 3
+      effect: {
+          type: ParticleEffect
+          particles: 2
+          length: 90
+          lifetime: 550
+          sizeFrom: 1.7
+          sizeTo: 4.2
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: 8d655754
+          colorTo: 271b1700
+          layer: 100.3
+          }
+    }
+]
+ambientSound: smelter
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+      type: DrawCircles
+      color: d1e3ff05
+      strokeMax: 3
+      radius: 0.2
+      amount: 0.2
+    }
+    {
+   type: DrawParticles
+   color: d1e3ff01
+   alpha: 0.15
+   particleRad: 7
+   rotateScl: 55
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
