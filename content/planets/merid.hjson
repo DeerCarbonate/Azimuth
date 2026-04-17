@@ -44,7 +44,7 @@ mesh: [
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.570
+    radius: 0.610
     seed: 127
     color1: "6e708000"
     color2: "b9c4d800"
@@ -55,7 +55,7 @@ mesh: [
   {
     type: NoiseMesh
     divisions: 5
-    radius: 0.550
+    radius: 0.610
     seed: 127
     color1: "646673"
     color2: "545560"
