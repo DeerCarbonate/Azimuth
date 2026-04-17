@@ -32,7 +32,7 @@ cloudMesh: [
     bloom: true
     speed: 0.25
     divisions: 3.2
-    radius: 112
+    radius: 2
     color: b0b0b095
     octaves: 1
     persistence: 0.5
@@ -44,7 +44,7 @@ cloudMesh: [
     bloom: true
     speed: 0.25
     divisions: 3.2
-    radius: 120
+    radius: 2
     color: b7864c95
     octaves: 1
     persistence: 0.5
@@ -56,8 +56,8 @@ cloudMesh: [
     bloom: true 
     speed: 0.25
     divisions: 3.2
-    radius: 140
-    color: 7e1c1c490
+    radius: 2
+    color: 7e1c1c49
     octaves: 1
     persistence: 0.5
     scl: 6
