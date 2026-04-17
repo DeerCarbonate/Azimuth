@@ -46,7 +46,10 @@ sectorSeed: 52125
 bloom: true
 visible: true
 iconColor: ff6956FF
-hasAtmosphere: false
+hasAtmosphere: true
+atmosphereRadIn: 0.001
+atmosphereRadOut: 0.30
+atmosphereColor: ff6956
 allowWaveSimulation: false
 clearSectorOnLose: true
 allowWaves: true
