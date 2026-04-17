@@ -76,7 +76,7 @@ allowSectorInvasion: false
 startSector: 0
 orbitSpacing: 3
 radius: 0.25
-minZoom: 0.10
+minZoom: 1.5
 drawOrbit: true
 accessible: false
 updateLighting: true
@@ -87,7 +87,7 @@ iconColor: ff6956FF
 hasAtmosphere: true
 atmosphereRadIn: 0
 atmosphereRadOut: 0.25
-atmosphereColor: ff6956
+atmosphereColor: ff695610
 allowWaveSimulation: false
 clearSectorOnLose: true
 allowWaves: true
