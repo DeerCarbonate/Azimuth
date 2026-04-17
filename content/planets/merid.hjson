@@ -18,9 +18,9 @@ visible: true
 radius: 0.9
 minZoom: 0.40
 sectorSize: 0
-atmosphereRadIn: 0.007
+atmosphereRadIn: 0
 atmosphereRadOut: 0.15
-atmosphereColor: 7e7e86
+atmosphereColor: 7e7e8630
 iconColor: b1a741       
 landCloudColor: ed6542
 icon: planet
@@ -39,7 +39,7 @@ mesh: [
     octaves: 3
     persistence: 1.25
     scl: 1
-    mag: 0.3
+    mag: 0.02
  }
    {
     type: NoiseMesh
