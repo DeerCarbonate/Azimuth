@@ -39,12 +39,12 @@ mesh: [
     octaves: 3
     persistence: 1.25
     scl: 1
-    mag: 0.02
+    mag: 0.12
  }
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.680
+    radius: 0.720
     seed: 127
     color1: "6e708000"
     color2: "b9c4d800"
