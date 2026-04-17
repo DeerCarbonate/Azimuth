@@ -41,17 +41,5 @@ mesh: [
     scl: 1
     mag: 0.43
  }
-   {
-    type: NoiseMesh
-    divisions: 5
-    radius: 0.42655544
-    seed: 65544
-    color1: "6e7080"
-    color2: "b9c4d8"
-    octaves: 7
-    persistence: 0.6
-    mag: 8.4
-	   scl: 1
-  }
 ]
 alwaysUnlocked: true
