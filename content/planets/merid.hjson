@@ -32,8 +32,8 @@ mesh: [
     type: NoiseMesh
 	bloom: false
     seed: 127
-    color1: 87899b
-    color2: 606169
+    color1: "87899b"
+    color2: "606169"
     divisions: 5
     radius: 0.907
     octaves: 3
@@ -46,22 +46,22 @@ mesh: [
     divisions: 5
     radius: 0.570
     seed: 127
-    color1: 6e708000
-    color2: b9c4d800
+    color1: "6e708000"
+    color2: "b9c4d800"
     octaves: 5
     persistence: 0.95
-	mag: 6.2
+	mag: 3
   }
   {
     type: NoiseMesh
     divisions: 5
     radius: 0.550
     seed: 127
-    color1: 646673
-    color2: 545560
+    color1: "646673"
+    color2: "545560"
     octaves: 5
     persistence: 0.65
-	mag: 3.7
+	mag: 2.1
   }
 ]
 alwaysUnlocked: true
