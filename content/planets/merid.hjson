@@ -44,10 +44,10 @@ mesh: [
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.7323222
+    radius: 0.7199999
     seed: 127
-    color1: "6e708000"
-    color2: "b9c4d800"
+    color1: "6e7080"
+    color2: "b9c4d8"
     octaves: 7
     persistence: 0.6
     mag: 3
