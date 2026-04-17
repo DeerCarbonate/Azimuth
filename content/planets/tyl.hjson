@@ -47,8 +47,8 @@ bloom: true
 visible: true
 iconColor: ff6956FF
 hasAtmosphere: true
-atmosphereRadIn: 0.001
-atmosphereRadOut: 0.30
+atmosphereRadIn: 0.0001
+atmosphereRadOut: 0.10
 atmosphereColor: ff6956
 allowWaveSimulation: false
 clearSectorOnLose: true
