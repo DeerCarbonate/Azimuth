@@ -19,7 +19,7 @@ radius: 0.9
 minZoom: 0.40
 sectorSize: 0
 atmosphereRadIn: 0
-atmosphereRadOut: 0.09
+atmosphereRadOut: 0.14
 atmosphereColor: 7e7e8630
 iconColor: b1a741       
 landCloudColor: ed6542
@@ -35,7 +35,7 @@ mesh: [
     color1: "87899b"
     color2: "606169"
     divisions: 5
-    radius: 0.911111
+    radius: 0.899999999
     octaves: 6
     persistence: 0.6
     scl: 1
