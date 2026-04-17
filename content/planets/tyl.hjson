@@ -29,6 +29,44 @@ mesh: [
 	mag: 6.85
   }
 ]
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.25
+    divisions: 3.2
+    radius: 0.12
+    color: b0b0b059
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.85
+  }
+   {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.25
+    divisions: 3.2
+    radius: 0.20
+    color: b7864c59
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.85
+  }
+    {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.25
+    divisions: 3.2
+    radius: 0.24
+    color: 	7e1c1c59
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.85
+  }
+]
 orbitRadius: 15
 sectorSize: 1
 allowLaunchSchematics: false
