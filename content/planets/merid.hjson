@@ -19,7 +19,7 @@ radius: 0.9
 minZoom: 0.40
 sectorSize: 0
 atmosphereRadIn: 0
-atmosphereRadOut: 0.15
+atmosphereRadOut: 0.09
 atmosphereColor: 7e7e8630
 iconColor: b1a741       
 landCloudColor: ed6542
