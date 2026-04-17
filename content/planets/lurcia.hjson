@@ -9,7 +9,7 @@ prebuildBase: true
 parent: gelion
 solarSystem: alveon
 radius: 0.1
-minZoom: 0.20
+minZoom: 1.8
 sectorSize: 0.8
 startSector: 10
 atmosphereRadIn: 0
