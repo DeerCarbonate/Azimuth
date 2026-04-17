@@ -35,8 +35,8 @@ cloudMesh: [
     bloom: false
     speed: 0.65
     divisions: 3.2
-    radius: 0.14
-    color: b0b0b059
+    radius: 0.12
+    color: b0b0b045
     octaves: 1
     persistence: 0.5
     scl: 6
@@ -47,8 +47,8 @@ cloudMesh: [
     bloom: false
     speed: 0.65
     divisions: 3.2
-    radius: 0.26
-    color: b7864c59
+    radius: 0.24
+    color: b7864c45
     octaves: 1
     persistence: 0.5
     scl: 6
@@ -59,8 +59,8 @@ cloudMesh: [
     bloom: false
     speed: 0.65
     divisions: 3.2
-    radius: 0.33
-    color: 	7e1c1c59
+    radius: 0.31
+    color: 	7e1c1c45
     octaves: 1
     persistence: 0.5
     scl: 6
@@ -84,10 +84,7 @@ sectorSeed: 52125
 bloom: true
 visible: true
 iconColor: ff6956FF
-hasAtmosphere: true
-atmosphereRadIn: 0.02
-atmosphereRadOut: 0.15
-atmosphereColor: ff695655
+hasAtmosphere: false
 allowWaveSimulation: false
 clearSectorOnLose: true
 allowWaves: true
