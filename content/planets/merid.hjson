@@ -44,14 +44,14 @@ mesh: [
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.933333
+    radius: 0.8111234
     seed: 127
     color1: "6e708000"
     color2: "b9c4d800"
     octaves: 7
     persistence: 0.6
-	mag: 2
-	scl: 1
+    mag: 2
+	   scl: 1
   }
 ]
 alwaysUnlocked: true
