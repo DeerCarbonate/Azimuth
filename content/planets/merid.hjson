@@ -31,7 +31,7 @@ mesh: [
  //gray
     type: NoiseMesh
 	bloom: false
-    seed: 127
+    seed: 65544
     color1: "87899b"
     color2: "606169"
     divisions: 5
@@ -44,13 +44,13 @@ mesh: [
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.7199999
-    seed: 127
+    radius: 0.744444
+    seed: 65544
     color1: "6e7080"
     color2: "b9c4d8"
     octaves: 7
     persistence: 0.6
-    mag: 3
+    mag: 2
 	   scl: 1
   }
 ]
