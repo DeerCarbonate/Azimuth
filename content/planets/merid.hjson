@@ -44,7 +44,7 @@ mesh: [
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.760
+    radius: 0.7323222
     seed: 127
     color1: "6e708000"
     color2: "b9c4d800"
