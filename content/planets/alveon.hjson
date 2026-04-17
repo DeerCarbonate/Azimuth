@@ -26,6 +26,44 @@ B90065
 650048
     ]
 }
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.25
+    divisions: 3.2
+    radius: 32
+    color: b0b0b014
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.15
+  }
+   {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.25
+    divisions: 3.2
+    radius: 34
+    color: b7864c14
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.45
+  }
+    {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.25
+    divisions: 3.2
+    radius: 36
+    color: 7e1c1c414
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.35
+  }
+]
 lightColor: c9a965
 bloom: true
 accessible: false
