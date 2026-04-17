@@ -82,6 +82,7 @@ accessible: false
 updateLighting: true
 sectorSeed: 52125
 bloom: true
+lightColor: c9a96520
 visible: true
 iconColor: ff6956FF
 hasAtmosphere: false
