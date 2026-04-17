@@ -44,13 +44,13 @@ mesh: [
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.812555
+    radius: 0.8
     seed: 127
     color1: "6e708000"
     color2: "b9c4d800"
     octaves: 7
     persistence: 0.6
-    mag: 2
+    mag: 3
 	   scl: 1
   }
 ]
