@@ -33,38 +33,38 @@ cloudMesh: [
   {
     type: HexSkyMesh
     bloom: false
-    speed: 0.25
+    speed: 0.65
     divisions: 3.2
-    radius: 0.34
+    radius: 0.24
     color: b0b0b059
     octaves: 1
     persistence: 0.5
     scl: 6
-    thresh: 0.85
+    thresh: 0.15
   }
    {
     type: HexSkyMesh
     bloom: false
-    speed: 0.25
+    speed: 0.65
     divisions: 3.2
-    radius: 0.41
+    radius: 0.29
     color: b7864c59
     octaves: 1
     persistence: 0.5
     scl: 6
-    thresh: 0.85
+    thresh: 0.45
   }
     {
     type: HexSkyMesh
     bloom: false
-    speed: 0.25
+    speed: 0.65
     divisions: 3.2
-    radius: 0.65
+    radius: 0.34
     color: 	7e1c1c59
     octaves: 1
     persistence: 0.5
     scl: 6
-    thresh: 0.85
+    thresh: 0.35
   }
 ]
 orbitRadius: 15
