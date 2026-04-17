@@ -35,16 +35,16 @@ mesh: [
     color1: "87899b"
     color2: "606169"
     divisions: 5
-    radius: 0.899999999
+    radius: 0.855555555
     octaves: 6
     persistence: 0.6
     scl: 1
-    mag: 0.6
+    mag: 0.56
  }
    {
     type: NoiseMesh
     divisions: 5
-    radius: 0.5
+    radius: 0.6
     seed: 65544
     color1: "6e7080"
     color2: "b9c4d8"
