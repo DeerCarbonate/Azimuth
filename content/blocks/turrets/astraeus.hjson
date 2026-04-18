@@ -293,7 +293,7 @@ trailWidth: 1.4
 	  }
 	  zinc: {
  type: BasicBulletType
- reloadMultiplier:0.2
+ reloadMultiplier:1.15
  rangeChange: -10
  collidesGround: true
  sprite: large-orb
@@ -382,55 +382,10 @@ baseRotation: 0
                             baseRotation: 180
                         }
                     ]
-					  intervalBullet: {
-    type: BasicBulletType
-    speed: 3
-    damage: 35
-    width: 4
-    height: 7
-    pierceCap: 1
-    lifetime: 28
-    pierceBuilding: true
-    collidesGround: true
-    frontColor: bf92f9
-    backColor: bf92f9
-    hitColor: bf92f9
-    trailWidth: 2.1
-    trailLength: 5
-    sprite: large-orb
-	trailColor: bf92f9
-    buildingDamageMultiplier: 0.3
-    homingPower: 0.1
-	collidesTiles: true
-    keepVelocity: false
-    collidesAir: false
-	despawnEffect: none
-	      hitEffect: {
-        type: ExplosionEffect
-        lifetime: 56
-        waveColor: bf92f995
-        waveStroke: 1.9
-        waveRad: 9.3
-        smokeColor: bf92f995
-        smokeSizeBase: 0
-        smokeSize: 0
-        smokes: 0
-        sparkColor: bf92f995
-        sparkStroke: 1.7
-        sparkRad: 18
-        sparkLen: 2.2
-        sparks: 5
-      }
-  }
-  bulletInterval: 9
-  intervalRandomSpread: 25
-  intervalBullets: 2
-  intervalAngle: 180
-  intervalSpread: 360
-  fragBullets: 15
+  fragBullets: 3
   fragVelocityMin: 0.4
-  fragVelocityMax: 1.1
-  fragLifeMin: 0.6
+  fragVelocityMax: 0.8
+  fragLifeMin: 0.3
     fragBullet:
   {
     type: BasicBulletType
