@@ -112,11 +112,11 @@ baseRotation: 0
  frontColor: c3feff
  backColor: 6898c3
  hitColor: 6898c3
-rangeChange: -10
- damage: 60
+rangeChange: -25
+ damage: 55
  despawnSound: none
  hitSound: none
- lifetime: 36
+ lifetime: 35
  speed: 5.2
  width: 11
  despawnEffect: none
@@ -292,17 +292,17 @@ trailWidth: 1.4
 
 	  }
 	  zinc: {
- inaccuracy: 40
+ inaccuracy: 39
  type: BasicBulletType
  reloadMultiplier:1.15
- rangeChange: -20
+ rangeChange: -35
  collidesGround: true
  sprite: large-orb
  frontColor: bf92f9
  backColor: bf92f9
  hitColor: bf92f9
- splashDamage: 30
- splashDamageRadius: 10
+ splashDamage: 60
+ splashDamageRadius: 17
  damage: 30
  despawnSound: none
  hitSound: none
@@ -393,7 +393,7 @@ baseRotation: 0
     type: BasicBulletType
     speed: 1.5
     sprite: large-orb
-    damage: 35
+    damage: 55
     width: 6
     hitSize: 5
     height: 8
