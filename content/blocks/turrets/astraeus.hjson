@@ -292,6 +292,7 @@ trailWidth: 1.4
 
 	  }
 	  zinc: {
+ inaccuracy: 40
  type: BasicBulletType
  reloadMultiplier:1.15
  rangeChange: -20
@@ -300,14 +301,17 @@ trailWidth: 1.4
  frontColor: bf92f9
  backColor: bf92f9
  hitColor: bf92f9
- splashDamage: 50
- splashDamageRadius: 60
- damage: 20
+ splashDamage: 30
+ splashDamageRadius: 10
+ damage: 30
  despawnSound: none
  hitSound: none
  lifetime: 80
  speed: 2.8
  width: 8
+ trailWidth: 2.8
+ trailLength: 12
+	trailColor: bf92f950
  despawnEffect: none
  scaleLife: false
  height: 10
@@ -315,8 +319,6 @@ trailWidth: 1.4
  trailChance:2
  trailInterval:3
  trailRotation:true
- weaveMag: 4
- weaveScale: 7
        collidesTiles: true
       keepVelocity: false
       collidesAir: false
@@ -368,7 +370,7 @@ baseRotation: 0
  trailEffect:[
 						{
                             type: ParticleEffect
-                            lifetime: 18
+                            lifetime: 11
                             particles: 1
                             offsetX:-5
                             length: 40
@@ -382,9 +384,9 @@ baseRotation: 0
                             baseRotation: 180
                         }
                     ]
-  fragBullets: 3
+  fragBullets: 2
   fragVelocityMin: 0.4
-  fragVelocityMax: 0.8
+  fragVelocityMax: 0.7
   fragLifeMin: 0.3
     fragBullet:
   {
@@ -398,19 +400,19 @@ baseRotation: 0
     pierceCap: 3
     lifetime: 120
     pierceBuilding: true
-    frontColor: bf92f9
-    backColor: bf92f9
-    hitColor: bf92f9
-    trailWidth: 1.2
+    frontColor: bf92f970
+    backColor: bf92f970
+    hitColor: bf92f930
+    trailWidth: 1
     trailLength: 17
-	trailColor: bf92f9
+	   trailColor: bf92f950
     buildingDamageMultiplier: 0.3
     homingPower: 0.1
-	collidesTiles: true
+    	collidesTiles: true
     keepVelocity: false
     collidesAir: false
-	weaveMag: 5
-    weaveScale: 4
+    	weaveMag: 1
+    weaveScale: 1
 	despawnEffect: none
 	      hitEffect: {
         type: ExplosionEffect
