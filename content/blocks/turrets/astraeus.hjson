@@ -294,7 +294,7 @@ trailWidth: 1.4
 	  zinc: {
  type: BasicBulletType
  reloadMultiplier:1.15
- rangeChange: -10
+ rangeChange: -20
  collidesGround: true
  sprite: large-orb
  frontColor: bf92f9
@@ -305,7 +305,7 @@ trailWidth: 1.4
  damage: 20
  despawnSound: none
  hitSound: none
- lifetime: 95
+ lifetime: 80
  speed: 2.8
  width: 8
  despawnEffect: none
@@ -315,8 +315,8 @@ trailWidth: 1.4
  trailChance:2
  trailInterval:3
  trailRotation:true
- weaveMag: 1
- weaveScale: 2
+ weaveMag: 4
+ weaveScale: 7
        collidesTiles: true
       keepVelocity: false
       collidesAir: false
