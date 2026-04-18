@@ -93,8 +93,8 @@ weapons: [
       despawnShake: 1.2
       maxRange: 6
       buildingDamageMultiplier: 1.15
-      splashDamageRadius: 37
-      splashDamage: 120
+      splashDamageRadius: 29
+      splashDamage: 110
       hitSound: energy-blade-hit
 
       shootEffect: [
