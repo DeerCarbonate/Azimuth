@@ -1,4 +1,5 @@
 Events.on(ClientLoadEvent, () => {
+	if(Vars.state.planet.name != "azimut-gelion") return;
     const db = Vars.ui.database;
     var status = new Stat("TERRAstatus", StatCat.function);
     var wind = new Stat("TERRAwind", StatCat.function);
