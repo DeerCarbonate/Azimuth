@@ -1,6 +1,4 @@
 Events.on(ClientLoadEvent, () => {
-	if(Vars.state.planet == null || Vars.state.planet.name != "azimut-gelion") return;
-	
     const db = Vars.ui.database;
     var status = new Stat("TERRAstatus", StatCat.function);
     var wind = new Stat("TERRAwind", StatCat.function);
@@ -57,8 +55,10 @@ Events.on(ClientLoadEvent, () => {
         }
     });
 
-    db.shown(run(() => {
-        let scroll = db.cont.getChildren().get(1);
+    Vars.ui.database.shown(run(() => {
+        if(Vars.state.planet == null || Vars.state.planet.name != "azimut-gelion") return;
+        
+        let scroll = Vars.ui.database.cont.getChildren().get(1);
         let mainTable = scroll.getWidget();
 
         if(!mainTable || mainTable.find("exp-weather-section") != null) return;
