@@ -1,8 +1,9 @@
-color: d3d3f1
-research: sphalerite
-hardness: 1
-charge: 0.55
-explosiveness: 0.1
-flammability: 0.0
-radioactivity: 0.0
-cost: 2.4
+    color: d3d3f1
+    research: sphalerite
+    hardness: 1
+    charge: 0.55
+    explosiveness: 0.1
+    flammability: 0.0
+    radioactivity: 0.0
+    cost: 1.5
+	shownPlanets: [gelion]

@@ -1,8 +1,8 @@
-color: bad3d6
-research: core-forum
-hardness: 2
-charge: 0
-explosiveness: 0
-flammability: 0
-radioactivity: 0
-cost: 2.4
+	color: bad3d6
+	research: core-forum
+	hardness: 2
+	charge: 0
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 0
+	cost: 1
