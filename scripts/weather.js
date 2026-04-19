@@ -6,7 +6,7 @@ Events.on(ClientLoadEvent, () => {
     var attrs = new Stat("TERRAattrs", StatCat.function);
 
     Vars.content.getBy(ContentType.weather).each(w => {
-        if (!w.uiIcon || !w.uiIcon.found()) w.uiIcon = Core.atlas.find("clear");
+        if (!w.uiIcon || !w.uiIcon.found()) w.uiIcon = Core.atlas.find("exp-weather-null", Core.atlas.find("clear"));
 
         if (w.status && w.status != StatusEffects.none) {
             w.stats.add(status, extend(StatValue, {
@@ -55,10 +55,8 @@ Events.on(ClientLoadEvent, () => {
         }
     });
 
-    Vars.ui.database.shown(run(() => {
-        if(Vars.state.planet == null || Vars.state.planet.name != "azimut-gelion") return;
-        
-        let scroll = Vars.ui.database.cont.getChildren().get(1);
+    db.shown(run(() => {
+        let scroll = db.cont.getChildren().get(1);
         let mainTable = scroll.getWidget();
 
         if(!mainTable || mainTable.find("exp-weather-section") != null) return;
