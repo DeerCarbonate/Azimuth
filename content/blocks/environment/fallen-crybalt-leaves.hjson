@@ -1,0 +1,6 @@
+type: Floor
+name: "Fallen cribalt leaves"
+attributes: {
+	silic: 0.599999999999
+}
+variants: 6

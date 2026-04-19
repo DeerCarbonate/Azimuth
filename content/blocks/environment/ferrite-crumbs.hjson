@@ -1,0 +1,4 @@
+name: "Ferrite crumbs"
+type: OverlayFloor
+variants: 3
+hasShadow: false
