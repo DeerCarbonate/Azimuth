@@ -112,7 +112,7 @@ baseRotation: 0
  frontColor: c3feff
  backColor: 6898c3
  hitColor: 6898c3
-rangeChange: -25
+rangeChange: -35
  damage: 55
  despawnSound: none
  hitSound: none
@@ -295,7 +295,7 @@ trailWidth: 1.4
  inaccuracy: 39
  type: BasicBulletType
  reloadMultiplier:1.15
- rangeChange: -35
+ rangeChange: -75
  collidesGround: true
  sprite: large-orb
  frontColor: bf92f9
