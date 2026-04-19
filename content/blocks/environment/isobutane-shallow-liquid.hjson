@@ -1,13 +1,12 @@
 type: Floor
-name: Deep isobutane
-speedMultiplier: 0.26
+name: Shallow isobutane
+speedMultiplier: 0.43
 variants: 0
-cacheLayer: "mud"
+cacheLayer: mud
 drownTime: 130
 isLiquid: true
 liquidDrop: isobutane
 liquidMultiplier: 0.4
-albedo: 1
+albedo: 1.1
 shallow: true
 supportsOverlay: true
-emitLight: false
