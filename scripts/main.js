@@ -31,16 +31,4 @@ mod.meta.description =
 mod.meta.author = "[#c3961f]Deer[#876409]Carbonate";
 
 require("blocks");
-
-const groundSnake = require("ground-snake");
-
-const flagellantEnd  = groundSnake.segment("flagellant-end",  { offsetSegment: 16 }, {});
-const flagellantBody = groundSnake.segment("flagellant-body", { offsetSegment: 16 }, {});
-const flagellant     = groundSnake.head("flagellant", {
-    body: flagellantBody,
-    end: flagellantEnd,
-    lengthSnake: 5,
-    hitSize: 14,
-    speed: 1.4,
-    health: 5000
-}, {});
+require("weather");
