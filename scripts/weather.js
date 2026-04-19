@@ -1,5 +1,6 @@
 Events.on(ClientLoadEvent, () => {
-	if(Vars.state.planet.name != "azimut-gelion") return;
+	if(Vars.state.planet == null || Vars.state.planet.name != "azimut-gelion") return;
+	
     const db = Vars.ui.database;
     var status = new Stat("TERRAstatus", StatCat.function);
     var wind = new Stat("TERRAwind", StatCat.function);
@@ -7,7 +8,7 @@ Events.on(ClientLoadEvent, () => {
     var attrs = new Stat("TERRAattrs", StatCat.function);
 
     Vars.content.getBy(ContentType.weather).each(w => {
-        if (!w.uiIcon || !w.uiIcon.found()) w.uiIcon = Core.atlas.find("exp-weather-null", Core.atlas.find("clear"));
+        if (!w.uiIcon || !w.uiIcon.found()) w.uiIcon = Core.atlas.find("clear");
 
         if (w.status && w.status != StatusEffects.none) {
             w.stats.add(status, extend(StatValue, {
