@@ -54,7 +54,7 @@ weapons: [
     shootY: 0
     x: 0
     y: 0.3
-    reload: 30
+    reload: 253
     inaccuracy: 360
 	smokeEffect: none
     shoot: {
@@ -129,20 +129,20 @@ weapons: [
 	                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: bf92f9
-                    colorTo: bf92f996
+                    colorFrom: 5e6874
+                    colorTo: 5e687496
                     particles: 1
                     cone: 360
                     lifetime:120
                     length: 3
-                    sizeFrom: 8
+                    sizeFrom: 34
                     sizeTo: 0
                     layer:100.2
 					sizeChangeStart: 100
                 }
                 ]
                 trailChance: 1
-                trailInterval:60
+                trailInterval: 0.5
     }
 	}
 	}
@@ -155,7 +155,7 @@ weapons: [
     shootY: 0
     x: 0
     y: 0.3
-    reload: 30
+    reload: 453
     inaccuracy: 360
 	smokeEffect: none
     shoot: {
@@ -230,20 +230,20 @@ weapons: [
 	                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: bf92f930
-                    colorTo: bf92f926
+                    colorFrom: 35353a30
+                    colorTo: 35353a26
                     particles: 1
                     cone: 360
                     lifetime:120
                     length: 3
-                    sizeFrom: 8
+                    sizeFrom: 27
                     sizeTo: 0
                     layer:100.2
 					sizeChangeStart: 100
                 }
                 ]
                 trailChance: 1
-                trailInterval:60
+                trailInterval: 0.5
     }
 	}
 	}
