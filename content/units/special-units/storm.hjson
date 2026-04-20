@@ -137,12 +137,11 @@ weapons: [
                     length: 3
                     sizeFrom: 34
                     sizeTo: 0
-                    layer:100.2
-					sizeChangeStart: 100
+					sizeChangeStart: 80
                 }
                 ]
-                trailChance: 1
-                trailInterval: 300
+                trailChance: 0.3
+                trailInterval: 600
     }
 	}
 	}
@@ -238,12 +237,11 @@ weapons: [
                     length: 3
                     sizeFrom: 27
                     sizeTo: 0
-                    layer:100.2
-					sizeChangeStart: 100
+					sizeChangeStart: 80
                 }
                 ]
-                trailChance: 1
-                trailInterval: 300
+                trailChance: 0.3
+                trailInterval: 600
     }
 	}
 	}
