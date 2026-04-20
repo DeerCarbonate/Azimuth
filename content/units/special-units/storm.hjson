@@ -16,7 +16,7 @@ createScorch: false
 
 envDisabled: 0
 envEnabled: -1
-hidden: true
+hidden: false
 
 missileAccelTime: 10
 lifetime: 2400
