@@ -1,4 +1,4 @@
 name: "Ashium craters"
-type: OverlayFloor
+type: prop
 variants: 3
 hasShadow: false
