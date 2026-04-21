@@ -142,8 +142,8 @@ weapons: [
 					                sizeChangeStart: 70
                 }
                 ]
-                trailChance: 0.5
-                trailInterval: 3000
+                trailChance: 0.35
+                trailInterval: 6000
     }
 	}
 	}
@@ -240,6 +240,7 @@ weapons: [
                     length: 3
                     sizeFrom: 27
                     sizeTo: 0
+                    layer: 100.2
 					sizeChangeStart: 80
                 }
                 ]
