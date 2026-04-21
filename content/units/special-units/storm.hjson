@@ -24,7 +24,7 @@ rotateSpeed: 0.002
 fogRadius: 0
 maxRange: 0
 health: 20000
-speed: 0.7
+speed: 0.56
 armor: 1
 deathExplosionEffect: none
 loopSoundVolume: 0
@@ -136,13 +136,14 @@ weapons: [
                     cone: 360
                     lifetime:120
                     length: 3
-                    sizeFrom: 34
+                    sizeFrom: 30
                     sizeTo: 0
+                    layer: 100
 					                sizeChangeStart: 80
                 }
                 ]
-                trailChance: 0.2
-                trailInterval: 600
+                trailChance: 1
+                trailInterval: 5000
     }
 	}
 	}
