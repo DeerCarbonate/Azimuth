@@ -116,7 +116,7 @@ weapons: [
       trailLength: 0
 	  smokeEffect: none
 	  circleShooter: true
-      circleShooterRadius: 42
+      circleShooterRadius: 52
       circleShooterRadiusSmooth: 200
       circleShooterRotateSpeed: 3.2
 	  pierceArmor:true
@@ -130,20 +130,20 @@ weapons: [
 	                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: a9a9a970
-                    colorTo: 80808065
+                    colorFrom: a9a9a965
+                    colorTo: 80808050
                     particles: 1
                     cone: 360
                     lifetime:120
                     length: 3
-                    sizeFrom: 30
+                    sizeFrom: 21
                     sizeTo: 0
-                    layer: 100.2
-					                sizeChangeStart: 80
+                    layer: 100.3
+					                sizeChangeStart: 70
                 }
                 ]
                 trailChance: 0.5
-                trailInterval: 90
+                trailInterval: 3000
     }
 	}
 	}
