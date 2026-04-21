@@ -283,5 +283,18 @@ parts: [
     strokeTo: 8
     radius: 2.3
     radiusTo: 2.3
+            progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 1.2
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
   }
 ]
