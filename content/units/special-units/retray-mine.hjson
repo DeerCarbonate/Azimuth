@@ -280,7 +280,7 @@ parts: [
     layer: 109
     color: fcf0bd
     stroke: 8
-    strokeTo: 8
+    strokeTo: 0
     radius: 2.3
     radiusTo: 0
             progress: {
@@ -288,7 +288,7 @@ parts: [
             ops: [
                 {
                     op: delay
-                    amount: 1.3
+                    amount: 0.9
                 }
                 {
                     op: curve
