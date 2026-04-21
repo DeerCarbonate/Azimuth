@@ -274,7 +274,9 @@ parts: [
       }
       {
         op: mul
-        other: warmup
+        other: {
+          type: warmup
+        }
       }
     ]
   }
