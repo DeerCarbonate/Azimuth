@@ -260,26 +260,7 @@ shoot: {
 parts: [
   {
     type: HaloPart
-  type: HaloPart
-  progress: {
-    type: life
-    ops: [
-      {
-        op: delay
-        amount: 0.9
-      }
-      {
-        op: curve
-        interp: pow5In
-      }
-      {
-        op: mul
-        other: {
-          type: warmup
-        }
-      }
-    ]
-  }
+    progress: warmup
     tri: true
     shapes: 3
     color: fcf0bd
