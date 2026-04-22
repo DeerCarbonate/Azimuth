@@ -130,8 +130,8 @@ weapons: [
 	                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: a9a9a965
-                    colorTo: 80808050
+                    colorFrom: a9a9a916
+                    colorTo: 80808008
                     particles: 1
                     cone: 360
                     lifetime:120
@@ -142,8 +142,8 @@ weapons: [
 					                sizeChangeStart: 70
                 }
                 ]
-                trailChance: 0.35
-                trailInterval: 6000
+                trailChance: 0.08
+                trailInterval: 8000
     }
 	}
 	}
