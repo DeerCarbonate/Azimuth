@@ -1,17 +1,17 @@
 type: RainWeather
 name: Isobutane thunder
 color: 8f6e6e
-xspeed: 1.9
-yspeed: 5.4
+xspeed: 21
+yspeed: 5.2
 stroke: 1
-density: 2300
-sizeMin: 35
-sizeMax: 116
-splashTimeScale: 10
+density: 2800
+sizeMin: 14
+sizeMax: 22
+splashTimeScale: 11
 liquid: isobutane
 force: 0.02
-minAlpha: 0.04
-maxAlpha: 0.12
+minAlpha: 0.03
+maxAlpha: 0.10
 useWindVector: true
 noiseColor: 8f6e6e20
 drawNoise: true
