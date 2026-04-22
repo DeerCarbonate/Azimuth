@@ -435,8 +435,8 @@ weapons: [
 	                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: 80808020
-                    colorTo: 69696914
+                    colorFrom: 69696917
+                    colorTo: 69696913
                     particles: 1
                     cone: 360
                     lifetime:90
