@@ -446,7 +446,7 @@ weapons: [
 					sizeChangeStart: 55
                 }
                 ]
-                trailChance: 0.04
+                trailChance: 0.008
                 trailInterval: 600
     }
 	}
