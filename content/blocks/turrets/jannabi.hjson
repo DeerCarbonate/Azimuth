@@ -595,11 +595,11 @@ fragBullet: {
 		sizeInterp: pow5Out
 		cone: 360
 		colorFrom: f7e2da
-		colorTo: dda59d40
-		sizeFrom: 3
+		colorTo: dda59d60
+		sizeFrom: 4.5
 		sizeTo:0
 		sizeChangeStart: 45
-		spin: 4.5
+		spin: 4.2
 }
 		]
  bulletInterval: 1.6
@@ -639,10 +639,10 @@ fragBullet: {
 		  {
             particles: 1
             length: 0
-            lifetime: 45
+            lifetime: 35
             region: azimut-long-triangle
             sizeFrom: 30
-            sizeChangeStart: 35
+            sizeChangeStart: 28
             sizeTo: 0
 			colorFrom: efbbb4
             colorTo: dda59d00
