@@ -563,7 +563,7 @@ fragBullet: {
  frontColor: f7e2da
  backColor: dda59d
  hitColor: efbbb4
- damage: 240
+ damage: 340
  pierceArmor: true
  pierceCap: 8
  pierceDamageFactor: 0.02
@@ -580,7 +580,7 @@ fragBullet: {
  trailWidth: 1.6
  trailLength: 24
  sprite: mine-bullet
- trailChance: 0.12
+ trailChance: 0.3
  trailInterval: 5.2
  trailRotation:true
  knockback:8.5
