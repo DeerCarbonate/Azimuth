@@ -159,6 +159,7 @@ scaleLife: false
 buildingDamageMultiplier: 0.1
 trailChance:1
 trailInterval:1.6
+despawnEffect: none
 trailEffect: [
 {
 type: ParticleEffect 

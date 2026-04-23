@@ -106,13 +106,14 @@ baseRotation: 0
                     ]
       }
 	  geliarin: {
-	   type: BasicBulletType
-	     reloadMultiplier:0.5
+ shootSound: "shootBreachCarbide"
+ type: BasicBulletType
+ reloadMultiplier:0.5
  collidesGround: true
  frontColor: c3feff
  backColor: 6898c3
  hitColor: 6898c3
-rangeChange: -35
+ rangeChange: -35
  damage: 55
  despawnSound: none
  hitSound: none
@@ -143,6 +144,13 @@ sizeTo: 0
 colorTo: 6898c375
 baseRotation: 0
 }
+      {
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1.3
+          effect: none
+          sound: shootBreachCarbide
+        }
 ]
 			      smokeEffect: [{
         type: ParticleEffect
@@ -352,6 +360,13 @@ sizeTo: 0
 colorTo: bf92f975
 baseRotation: 0
 }
+      {
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1.3
+          effect: none
+          sound: blockExplodeElectric
+        }
 ]
 			      smokeEffect: [{
         type: ParticleEffect
