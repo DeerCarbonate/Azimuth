@@ -563,10 +563,10 @@ fragBullet: {
  frontColor: f7e2da
  backColor: dda59d
  hitColor: efbbb4
- damage: 400
+ damage: 480
  pierceArmor: true
- pierceCap: 8
- pierceDamageFactor: 0.02
+ pierceCap: 7
+ pierceDamageFactor: 0.015
  despawnSound: explosionAfflict
  hitSound: explosionAfflict
  lifetime: 28
