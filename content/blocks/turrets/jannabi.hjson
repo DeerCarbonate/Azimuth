@@ -563,7 +563,7 @@ fragBullet: {
  frontColor: f7e2da
  backColor: dda59d
  hitColor: efbbb4
- damage: 340
+ damage: 400
  pierceArmor: true
  pierceCap: 8
  pierceDamageFactor: 0.02
