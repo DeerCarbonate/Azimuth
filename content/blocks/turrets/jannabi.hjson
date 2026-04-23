@@ -555,6 +555,7 @@ fragBullet: {
 }
 	      octine: {
  type: BasicBulletType
+ rangeChange: 65
  reloadMultiplier:0.80
  collidesTiles: true
  collidesGround: true
@@ -562,27 +563,30 @@ fragBullet: {
  backColor: dda59d
  hitColor: efbbb4
  damage: 120
- pierceCap: 3
+ pierceCap: 8
+ pierceDamageFactor: 0.03
  despawnSound: explosionAfflict
  hitSound: explosionAfflict
- lifetime: 70
+ lifetime: 53
  speed: 14
- width: 10
+ width: 8
  scaleLife: false
- height: 18
+ height: 17
  ammoMultiplier: 6
  buildingDamageMultiplier: 0.1
  trailColor: dda59d
- trailWidth: 1.8
- trailLength: 20
+ trailWidth: 1.6
+ trailLength: 18
  sprite: bullet
  trailChance: 0.6
  trailInterval: 5.2
  trailRotation:true
+ despawnEffect: none
+ knockback:1.2
  trailEffect:[
  {
 		type: ParticleEffect
-		region: azimut-triangle
+		region: azimut-hollow-circle
 		particles: 2
 		length: 48
 		lifetime: 73
@@ -593,6 +597,7 @@ fragBullet: {
 		colorTo: dda59d
 		sizeFrom: 6.2
 		sizeTo:0
+		sizeChangeStart: 50
 }
 		]
  bulletInterval: 1.6
