@@ -150,6 +150,7 @@ baseRotation: 0
           maxPitch: 0.7
           effect: none
           sound: shootBreachCarbide
+		  volume: 0.3
         }
 		{
           type: SoundEffect
@@ -157,6 +158,7 @@ baseRotation: 0
           maxPitch: 1
           effect: none
           sound: shootDisperse
+		  volume: 0.2
         }
 ]
 			      smokeEffect: [{
@@ -373,7 +375,7 @@ baseRotation: 0
           maxPitch: 0.9
           effect: none
           sound: blockExplodeElectric
-		  volume: 0.4
+		  volume: 0.1
         }
 		      {
           type: SoundEffect
@@ -381,7 +383,7 @@ baseRotation: 0
           maxPitch: 1
           effect: none
           sound: mechShoot
-		  volume: 0.6
+		  volume: 0.3
         }
 ]
 			      smokeEffect: [{
