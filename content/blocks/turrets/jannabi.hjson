@@ -579,11 +579,11 @@ fragBullet: {
  trailWidth: 1.6
  trailLength: 24
  sprite: mine-bullet
- trailChance: 0.25
+ trailChance: 0.12
  trailInterval: 5.2
  trailRotation:true
  despawnEffect: none
- knockback:3.5
+ knockback:5.5
  trailEffect:[
  {
 		type: ParticleEffect
@@ -594,12 +594,12 @@ fragBullet: {
 		interp: circleOut
 		sizeInterp: pow5Out
 		cone: 360
-		colorFrom: f7e2da50
-		colorTo: dda59d30
-		sizeFrom: 2.3
+		colorFrom: f7e2da
+		colorTo: dda59d40
+		sizeFrom: 3
 		sizeTo:0
-		sizeChangeStart: 35
-		spin: 4
+		sizeChangeStart: 45
+		spin: 4.5
 }
 		]
  bulletInterval: 1.6
@@ -639,14 +639,30 @@ fragBullet: {
 		  {
             particles: 1
             length: 0
-            lifetime: 70
+            lifetime: 45
             region: azimut-long-triangle
-            sizeFrom: 65
-            sizeChangeStart: 60
+            sizeFrom: 30
+            sizeChangeStart: 35
             sizeTo: 0
 			colorFrom: efbbb4
-            colorTo: c3feff00
+            colorTo: dda59d00
           }
+		  	{
+			type: ParticleEffect
+			line: true
+			particles: 16
+			lifetime: 54
+			interp: circleOut
+			length: 120
+			cone: -30
+			strokeTo: 0
+			lightColor:efbbb4
+			lenFrom: 9
+			lenTo: 0
+			strokeFrom: 6
+            colorTo: dda59d00
+			colorFrom: efbbb495
+	}
 	]
 }
 }
