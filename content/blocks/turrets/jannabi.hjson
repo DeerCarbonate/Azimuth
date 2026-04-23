@@ -553,6 +553,98 @@ fragBullet: {
 	]
 }
 }
+	      octine: {
+ type: BasicBulletType
+ reloadMultiplier:0.80
+ collidesTiles: true
+ collidesGround: true
+ frontColor: f7e2da
+ backColor: dda59d
+ hitColor: efbbb4
+ damage: 120
+ pierceCap: 3
+ despawnSound: explosionAfflict
+ hitSound: explosionAfflict
+ lifetime: 70
+ speed: 14
+ width: 10
+ scaleLife: false
+ height: 18
+ ammoMultiplier: 6
+ buildingDamageMultiplier: 0.1
+ trailColor: dda59d
+ trailWidth: 1.8
+ trailLength: 20
+ sprite: bullet
+ trailChance: 0.6
+ trailInterval: 5.2
+ trailRotation:true
+ trailEffect:[
+ {
+		type: ParticleEffect
+		region: azimut-triangle
+		particles: 2
+		length: 48
+		lifetime: 73
+		interp: circleOut
+		sizeInterp: pow5Out
+		cone: 360
+		colorFrom: f7e2da
+		colorTo: dda59d
+		sizeFrom: 6.2
+		sizeTo:0
+}
+		]
+ bulletInterval: 1.6
+ intervalBullets: 1
+ intervalAngle: 180
+ intervalSpread: 0
+ intervalRandomSpread: 0
+					intervalBullet: {
+    type: LightningBulletType
+    collidesAir: false
+    lightningLength: 4
+	lightningLengthRand: 2
+	lightningColor: dda59d
+	buildingDamageMultiplier: 0.1
+	lifetime: 5
+	collidesAir: false
+	hittable: false
+	hitEffect: none
+      }
+ shootEffect: [
+        {
+          followParent: false
+          length: 0
+          lifetime: 16
+          particles: 1
+          cone: 0
+          region: azimut-despawn
+          sizeFrom: 60
+          sizeTo: 0
+          colorTo: 6898c3
+		  baseRotation: 90
+        }
+]
+   hitEffect: {
+    type: MultiEffect,
+    effects: [
+		{
+        type: WaveEffect
+        startDelay: 0
+        lifetime: 91
+        sizeFrom: 0
+        sizeTo: 25
+        strokeFrom: 2.5
+        strokeTo: 2.5
+        colorFrom: efbbb4
+        colorTo: dda59d
+        followParent: true
+        rotWithParent: true
+		}
+	]
+}
+}
 }
 requirements: [
   venerium/350
