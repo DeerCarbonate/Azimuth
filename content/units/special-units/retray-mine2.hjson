@@ -1,0 +1,334 @@
+type: missile
+template: MissileUnitType
+
+playerControllable: false
+allowedInPayloads: false
+outlineColor: 0c0c12
+outlineRadius: 2
+createWreck: false
+lowAltitude: true
+useUnitCap: false
+drawCell: false
+physics: false
+hitSize: 12
+flying: true
+createScorch: true
+hidden: true
+
+envDisabled: 0
+envEnabled: -1
+
+speed: 0
+rotateSpeed: 0
+
+lifetime: 700
+fogRadius: 0
+health: 700
+armor: 9
+loopSoundVolume: 0
+engineSize: 0
+trailLength: 0
+bounded: false
+
+deathExplosionEffect: {
+type: MultiEffect
+effects: [
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+          type: ParticleEffect
+          particles: 5
+          length: 120
+          lifetime: 290
+          sizeFrom: 1.7
+          sizeTo: 7.2
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: 74a48184
+          colorTo: 51725800
+          layer: 100.3
+	}
+}
+{
+followParent: false
+length: 0
+lifetime: 40
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 9
+sizeTo: 24
+colorTo: 51725800
+baseRotation: 180
+interp: pow3Out
+}
+        {
+            type: ParticleEffect
+            lifetime: 40
+            baseLength: 2
+            length: 25
+            particles: 5
+            sizeFrom: 5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: 74a48184
+            colorTo: 51725800
+        }
+			{
+			type: ParticleEffect
+			line: true
+			particles: 20
+			lifetime: 45
+			interp: circleOut
+			length: 90
+			strokeTo: 2.5
+			lightColor: fff5b0
+			lenFrom: 8
+			lenTo: 3
+			strokeFrom: 4.5
+            colorTo: 51725800
+			colorFrom: 74a48195
+            offset: 135
+			}
+]
+}
+
+weapons: [
+		{
+		    "name": retray-mine2-weapon,
+			"recoil": 0,
+            "shootY": 0,
+			"mirror": false,
+			"alternate": false,
+			"rotate": true,
+			"rotateSpeed": 3.6,
+			"reload": 12,
+			"inaccuracy": 3,
+			"shootSound": shootLocus,
+			"controllable": true,
+			"aiControllable": true,
+			"y": 0
+			"x": 0
+shoot: {
+    type: ShootSpread
+    firstShotDelay: 0
+    shotDelay: 0
+    spread: 0
+    shots: 1
+    }
+    bullet: {
+    type: RailBulletType
+    length: 185
+    damage: 24
+	lifetime: 1
+	hitColor: bff6b1
+    pointEffectSpace: 3.1
+	knockback: -0.8
+	despawnEffect: none
+    smokeEffect: none
+	  hitEffect: {
+	  followParent: false
+	  length: 0
+      lifetime: 8
+      particles: 1
+      cone: 0
+      region: azimut-despawn
+      sizeFrom: 32
+      sizeTo: 0
+      colorTo: bff6b100
+      baseRotation: 90
+	  }
+	  	              pointEffect: {
+                type: MultiEffect
+                    effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 15
+                        baseLength: 12
+                        particles: 1
+                        length: 25
+                        line: true
+                        lenFrom: 4
+                        lenTo: 0
+                        colorFrom: bff6b121
+                        colorTo: bff6b100
+                    }
+                    {
+                        type: ParticleEffect
+                        region: azimut-beam-rude
+                        lifetime: 60
+                        particles: 1
+                        length: 0
+                        cone: 0
+                        sizeFrom: 1.5
+                        sizeTo: 0
+                        interp: pow5Out
+                        sizeInterp: pow10In
+                        colorTo: bff6b100
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 150
+                        layer: 100
+                        offset: 0
+                        cone: 90
+                        lifetime: 15
+                        particles: 2
+                        baseLength: -4
+                        length: 45
+                        sizeFrom: 1.5
+                        sizeTo: 0
+                        length: 9
+                        colorFrom: bff6b100
+                        colorTo:bff6b100
+                        interp: pow3Out
+                        sizeInterp: pow3In
+                    }
+                ]
+            }
+			}
+		}
+  {
+    autoTarget: true
+    targetAir: true
+    targetGround: true
+    reload: 90
+    shootCone: 360
+    mirror: false
+    rotate: false
+    x: 0
+    y: 0
+
+    bullet: {
+      type: ExplosionBulletType
+      collidesAir: true
+      collidesGround: true
+
+      splashDamageRadius: 25
+      splashDamage: 370
+      buildingDamageMultiplier: 0.15
+
+      hitSound: explosion
+
+      shootEffect: [
+        {
+          type: ParticleEffect
+          followParent: false
+          colorFrom: 74a481
+          colorTo: 51725800
+          particles: 12
+          cone: 360
+          length: 80
+          sizeFrom: 5
+          sizeTo: 0
+          lifetime: 50
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          followParent: false
+          lifetime: 40
+          sizeFrom: 10
+          sizeTo: 70
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: 74a48180
+          colorTo: 51725800
+          interp: pow3Out
+        }
+      ]
+
+      hitEffect: [
+        {
+          type: ParticleEffect
+          colorFrom: 74a481
+          colorTo: 51725800
+          particles: 12
+          cone: 360
+          length: 80
+          sizeFrom: 5
+          sizeTo: 0
+          lifetime: 50
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          lifetime: 40
+          sizeFrom: 10
+          sizeTo: 70
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: 74a48180
+          colorTo: 51725800
+          interp: pow3Out
+        }
+      ]
+
+      despawnEffect: none
+    }
+  }
+]
+
+parts: [
+  {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 3
+    color: b5d0ba
+    layer: 110
+    haloRadius: 6
+    haloRadiusTo: 4.5
+    radius: 5
+    radiusTo: 8
+    triLength: 10
+    triLengthTo: 3
+    haloRotateSpeed: 2
+  }
+  {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 3
+    color: b5d0ba
+    layer: 110
+    haloRadius: 0
+    haloRadiusTo: 8
+    radius: 4
+    radiusTo: 6
+    triLength: 4
+    triLengthTo: 4
+    haloRotateSpeed: 1.2
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    layer: 109
+    color: b5d0ba
+    stroke: 8
+    strokeTo: 0
+    radius: 2.3
+    radiusTo: 0
+            progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.9
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+  }
+]

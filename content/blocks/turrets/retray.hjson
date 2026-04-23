@@ -200,6 +200,162 @@ fragBullet: {
 			}
 		}
     }
+	  titanite: {
+type: BasicBulletType
+width: 17
+height: 17
+speed: 1.7
+collidesTiles: true
+collidesGround: true
+lifetime: 85
+shrinkY:0
+shrinkX:0
+damage: 40
+frontColor: b5d0ba,
+backColor: 74a481,
+intervalBullets: 1
+bulletInterval: 1.6
+intervalSpread: 180
+drag: 0.06
+sprite: large-bomb
+spin: 2
+fragBullets: 2
+fragVelocityMin: 0.35
+fragVelocityMax: 2.25
+fragRandomSpread: 25
+fragSpread: 9
+buildingDamageMultiplier: 0.1
+hitEffect:none
+despawnEffect:none
+trailChance:1
+trailInterval:5
+trailEffect: {
+type: ParticleEffect 
+colorFrom: b5d0ba95
+colorTo: 74a48100
+drag: 0.4
+particles: 2
+cone: 360
+length: 12
+spin: 1
+sizeFrom: 1
+sizeTo: 2
+interp: exp5Out
+sizeInterp: exp5In
+lifetime: 120
+}
+					fragBullet: {
+type: BasicBulletType
+width: 10
+height: 10
+drag: 0.006
+speed: 2.1
+collidesGround: true
+lifetime: 170
+damage: 25
+frontColor: b5d0ba
+backColor: 74a481
+despawnEffect: none
+collidesTiles: true
+keepVelocity: false
+collidesAir: true
+weaveMag: 4
+weaveScale: 6
+pierceArmor: false
+hitEffect: none
+                trailEffect:[
+                {
+                    type: ParticleEffect
+                    colorFrom: 74a481
+                    colorTo: b0b0b000
+                    particles: 1
+                    cone: 360
+                    lifetime:50
+                    length: 3
+                    sizeFrom: 2
+                    sizeTo: 2
+                    layer:100.2
+                }
+                {
+                    type: ParticleEffect
+                    region:large-bomb
+                    colorFrom: b5d0ba
+                    colorTo: b0b0b000
+                    particles: 1
+                    lifetime:26
+                    cone: 360
+                    length: 15
+                    spin: 1.2
+                    sizeFrom: 4
+                    sizeTo: 0
+                    layer:100.2
+                }
+                ]
+                trailChance:1
+                trailInterval:6
+fragBullets: 1
+fragRandomSpread: 0
+fragSpread: 0
+hitEffect: [
+        {
+          type: WaveEffect
+          followParent: false
+          lifetime: 29.5
+          sizeFrom: 6
+          sizeTo: 3
+          strokeFrom: 6
+          strokeTo: 6
+          colorFrom: b5d0ba
+          colorTo: b5d0ba
+          interp: pow2Out
+        }
+		{
+          type: WaveEffect
+          followParent: false
+          lifetime: 29.5
+          sizeFrom: 5
+          sizeTo: 65
+          strokeFrom: 0
+          strokeTo: 2
+          colorFrom: b5d0ba40
+          colorTo: b5d0ba00
+          interp: pow3Out
+        }
+		]
+fragBullet: {
+type: BasicBulletType
+width: 0
+height: 0
+drag: 0
+speed: 0
+collidesGround: true
+lifetime: 29
+damage: 0
+pierce: true
+pierceCap: 10
+frontColor: b5d0ba00
+backColor: 74a48100
+despawnEffect: none
+hitEffect: none
+collidesTiles: true
+keepVelocity: false
+collidesAir: true
+weaveMag: 0
+weaveScale: 0
+pierceArmor: false
+fragBullets: 1
+fragRandomSpread: 0
+fragSpread: 0
+fragBullet: {
+        type: BulletType
+        spawnUnit: retray-mine2
+        keepVelocity: false
+        collidesAir: false
+        speed: 0
+            }
+			}
+		}
+    }
 }
 hasLiquids: true
 requirements: [
