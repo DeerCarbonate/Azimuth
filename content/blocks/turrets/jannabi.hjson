@@ -564,13 +564,14 @@ fragBullet: {
  backColor: dda59d
  hitColor: efbbb4
  damage: 240
+ pierceArmor: true
  pierceCap: 8
  pierceDamageFactor: 0.02
  despawnSound: explosionAfflict
  hitSound: explosionAfflict
  lifetime: 28
  speed: 18
- width: 4
+ width: 7.5
  scaleLife: false
  height: 22
  ammoMultiplier: 6
@@ -582,8 +583,7 @@ fragBullet: {
  trailChance: 0.12
  trailInterval: 5.2
  trailRotation:true
- despawnEffect: none
- knockback:5.5
+ knockback:8.5
  trailEffect:[
  {
 		type: ParticleEffect
@@ -594,12 +594,12 @@ fragBullet: {
 		interp: circleOut
 		sizeInterp: pow5Out
 		cone: 360
-		colorFrom: f7e2da
+		colorFrom: f7e2da94
 		colorTo: dda59d60
-		sizeFrom: 4.5
+		sizeFrom: 5
 		sizeTo:0
 		sizeChangeStart: 45
-		spin: 4.2
+		spin: 60
 }
 		]
  bulletInterval: 1.6
@@ -634,6 +634,38 @@ fragBullet: {
         }
 ]
    hitEffect: {
+    type: MultiEffect,
+    effects: [
+		  {
+            particles: 1
+            length: 0
+            lifetime: 35
+            region: azimut-long-triangle
+            sizeFrom: 30
+            sizeChangeStart: 28
+            sizeTo: 0
+			colorFrom: efbbb4
+            colorTo: dda59d00
+          }
+		  	{
+			type: ParticleEffect
+			line: true
+			particles: 16
+			lifetime: 54
+			interp: circleOut
+			length: 120
+			cone: -30
+			strokeTo: 0
+			lightColor:efbbb4
+			lenFrom: 9
+			lenTo: 0
+			strokeFrom: 6
+            colorTo: dda59d00
+			colorFrom: efbbb495
+	}
+	]
+}
+   despawnEffect: {
     type: MultiEffect,
     effects: [
 		  {
