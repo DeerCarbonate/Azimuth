@@ -265,9 +265,9 @@ parts: [
     shapes: 3
     color: fcf0bd
     layer: 110
-    haloRadius: 6.5
+    haloRadius: 6
     haloRadiusTo: 4.5
-    radius: 6
+    radius: 5
     radiusTo: 8
     triLength: 10
     triLengthTo: 3
