@@ -2,7 +2,7 @@ type: SolarGenerator
 size: 5
 health: 1650
 category: power
-powerProduction: 6.5
+powerProduction: 6
 generateEffect: none
 customShadow: true
 research: {
