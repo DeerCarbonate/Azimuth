@@ -1,4 +1,4 @@
-    color: ffffff
+    color: 74a481
     hardness: 1
     charge: 0
     explosiveness: 0
@@ -6,3 +6,4 @@
     radioactivity: 0
     cost: 1
 	shownPlanets: [gelion]
+    research: compound
