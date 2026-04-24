@@ -19,22 +19,34 @@
 	engineColor: bf92f9
 	trailColor: bf92f9
     engineSize: 2
-	trailLength: 0
+	trailLength: 5
 	healColor: bf92f988
 	shieldColor: bf92f910
 	strafePenalty: 0.17
 	engines: [
    {
     x: 2.1
-    y: -8.5
-    radius: 2.6
+    y: -9.5
+    radius: 2.2
     rotation: -85
    }
    {
     x: -2.5
-    y: -8.5
-    radius: 2.6
+    y: -9.5
+    radius: 2.2
     rotation: -85
+   }
+   {
+    x: 3.2
+    y: 2
+    radius: 2.2
+    rotation: 90
+   }
+   {
+    x: -3.2
+    y: 2
+    radius: 2.2
+    rotation: -90
    }
  ]
  weapons: [
