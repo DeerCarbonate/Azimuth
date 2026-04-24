@@ -25,28 +25,28 @@
 	strafePenalty: 0.17
 	engines: [
    {
-    x: 2.1
-    y: -9.5
+    x: 4.2
+    y: -10
     radius: 2.2
     rotation: -85
    }
    {
-    x: -2.5
-    y: -9.5
+    x: -4.2
+    y: -10
     radius: 2.2
     rotation: -85
    }
    {
-    x: 6.5
-    y: 1.7
+    x: 8
+    y: 1.6
     radius: 2.2
-    rotation: -90
+    rotation: 180
    }
    {
-    x: -6.5
-    y: 1.7
+    x: -8
+    y: 1.6
     radius: 2.2
-    rotation: 90
+    rotation: 180
    }
  ]
 parts: [
@@ -58,11 +58,11 @@ parts: [
 	hollow: true
     layer: 110
     radius: 0
-    radiusTo: 7
+    radiusTo: 5.5
     stroke: 0
 	strokeTo: 1.5
     rotateSpeed: 1.5
-	x: 10
+	x: 17
 	y: 2
   }
   {
@@ -73,11 +73,11 @@ parts: [
 	hollow: true
     layer: 110
     radius: 0
-    radiusTo: 7
+    radiusTo: 5.5
     stroke: 0
 	strokeTo: 1.5
     rotateSpeed: 1.5
-	x: -10
+	x: -17
 	y: 2
   }
 ]
@@ -85,7 +85,7 @@ parts: [
   {
     type: RepairBeamWeapon
     mirror: false
-    x: 10
+    x: 17
     y: 2
     shootY: 0
     shootSound: none
@@ -109,7 +109,7 @@ parts: [
   {
     type: RepairBeamWeapon
     mirror: false
-    x: -10
+    x: -17
     y: 2
     shootY: 0
     shootSound: none
