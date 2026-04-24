@@ -18,7 +18,7 @@ consumes: {
 }
 outputItem: titanite/3
 outputLiquid: isobutane/0.184
-hasLiquids: false
+hasLiquids: true
 		research: {
     parent: "silicon-cultivator"
     planet: gelion
