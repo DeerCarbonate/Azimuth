@@ -1,7 +1,7 @@
 type: GenericCrafter
 size: 3
 category: crafting
-squareSprite: true
+squareSprite: false
 health: 850
 requirements: [
   cobalt/100
@@ -10,6 +10,7 @@ requirements: [
   compound/40
 ]
 consumes: {
+  power: 2.7
   items: [
   raw-platinum/2
   sphalerite/1
@@ -42,14 +43,14 @@ drawer: {
     }
 	{
    type: DrawParticles
-   color: ebd9d50
+   color: 47685d50
    alpha: 0.25
    particleRad: 8
    rotateScl: 25
     }
    	{
      type: DrawGlowRegion
-	 color: e29045
+	 color: 47685d
     }
 	{
       type: DrawRegion
@@ -74,14 +75,14 @@ craftEffect: [{
           particles: 1
           length: 90
           lifetime: 1200
-          sizeFrom: 2.9
-          sizeTo: 7
+          sizeFrom: 2.5
+          sizeTo: 0
           cone: 2
           baseRotation: 73
           useRotation:false
           interp: pow5Out
-          colorFrom: 907d7454
-          colorTo: 433a3600
+          colorFrom: 47685d54
+          colorTo: b0b0b000
           layer: 100.3
           }
 }
