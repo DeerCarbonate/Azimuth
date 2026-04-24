@@ -1,18 +1,15 @@
 type: CoreBlock
-name: "Core: Network"
-description: The main base.
 size: 5
 squareSprite: false
-health: 10000
+health: 9500
+armor: 6
 itemCapacity: 9000
 unitCapModifier: 15
 unitType: akarius
 requirements: [
 cobalt/2250
 venerium/2250
-platinum/1150
-compound/500
-geliarin/500
+geliarin/1000
 ]
 category: effect
 hasItems: true

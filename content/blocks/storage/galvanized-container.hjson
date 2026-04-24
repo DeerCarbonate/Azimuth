@@ -1,6 +1,5 @@
 type: StorageBlock
 size: 2
-name: Galvanized container
 health: 230
 itemCapacity: 200
 category: effect

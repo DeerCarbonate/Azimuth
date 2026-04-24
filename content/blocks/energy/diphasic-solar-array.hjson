@@ -2,7 +2,7 @@ type: SolarGenerator
 size: 5
 health: 1650
 category: power
-powerProduction: 6
+powerProduction: 5.5
 generateEffect: none
 customShadow: true
 research: {
@@ -10,7 +10,7 @@ research: {
   planet: gelion
   requirements: [
     "cobalt/8000",
-    "platinum/5000",
+    "titanite/400",
     "zinc/1150",
     "geliarin/5000",
     "venerium/8000"
@@ -25,7 +25,7 @@ research: {
 
 requirements: [
   cobalt/250
-  platinum/130
+  titanite/85
   zinc/100
   geliarin/120
   venerium/190

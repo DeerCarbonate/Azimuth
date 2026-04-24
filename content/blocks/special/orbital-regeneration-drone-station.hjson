@@ -11,7 +11,7 @@ hasLiquids: true
 category: effect
 requirements: [
   geliarin/110
-  venerium/35
+  titanite/35
   caterium/120
   cobalt/85
 ]
@@ -32,7 +32,7 @@ research: {
   planet: gelion
     "requirements": [
 	  geliarin/7500
-	  venerium/12000
+	  titanite/1000
 	  caterium/1000
 	  cobalt/17000
 ]

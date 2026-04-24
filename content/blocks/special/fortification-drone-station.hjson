@@ -13,7 +13,7 @@ requirements: [
   compound/80
   zinc/80
   cobalt/170
-  platinum/85
+  titanite/60
 ]
 consumes: {
   power: 4

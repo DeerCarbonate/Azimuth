@@ -28,7 +28,7 @@ requirements: [
 	caterium/250
 	geliarin/120
 	venerium/260
-	platinum/450
+	titanite/450
 	cobalt/650
 ]
 research: {
@@ -37,10 +37,9 @@ research: {
     "requirements": [
 	  "venerium/6500"
 	  "cobalt/4500"
-	  "platinum/4400"
+	  "titanite/550"
 	  "geliarin/800"
 	  "caterium/600"
-	  "zinc/900"
 ]
 objectives: [
     {
