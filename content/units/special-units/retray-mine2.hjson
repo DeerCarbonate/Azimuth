@@ -102,14 +102,13 @@ interp: pow3Out
 
 weapons: [
 		{
-		    "name": retray-mine2-weapon,
 			"recoil": 0,
             "shootY": 0,
 			"mirror": false,
 			"alternate": false,
 			"rotate": true,
 			"rotateSpeed": 3.6,
-			"reload": 12,
+			"reload": 10,
 			"inaccuracy": 3,
 			"shootSound": shootLocus,
 			"controllable": true,
@@ -125,12 +124,12 @@ shoot: {
     }
     bullet: {
     type: RailBulletType
-    length: 185
-    damage: 24
+    length: 125
+    damage: 34
 	lifetime: 1
 	hitColor: bff6b1
-    pointEffectSpace: 3.1
-	knockback: -0.8
+    pointEffectSpace: 2.7
+	knockback: 1
 	despawnEffect: none
     smokeEffect: none
 	  hitEffect: {
@@ -162,12 +161,12 @@ shoot: {
                     }
                     {
                         type: ParticleEffect
-                        region: azimut-beam-rude
+                        region: azimut-beam
                         lifetime: 60
                         particles: 1
                         length: 0
                         cone: 0
-                        sizeFrom: 1.5
+                        sizeFrom: 1.3
                         sizeTo: 0
                         interp: pow5Out
                         sizeInterp: pow10In
