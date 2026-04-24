@@ -49,28 +49,85 @@
     rotation: -90
    }
  ]
+parts: [
+  {
+    type: ShapePart
+    progress: warmup
+    sides: 5
+    color: bf92f9
+	hollow: true
+    layer: 110
+    radius: 0
+    radiusTo: 10
+    stroke: 1.2
+	strokeTo: 1.7
+    rotateSpeed: 1.5
+	x: 7.5
+	y: 2
+  }
+  {
+    type: ShapePart
+    progress: warmup
+    sides: 5
+    color: bf92f9
+	hollow: true
+    layer: 110
+    radius: 0
+    radiusTo: 10
+    stroke: 1.2
+	strokeTo: 1.7
+    rotateSpeed: 1.5
+	x: -7.5
+	y: 2
+  }
+]
  weapons: [
   {
-    widthSinMag: 0.1
-    x: 6
-    y: -0.7
-    laserColor: bf92f9
-    mirror: true
     type: RepairBeamWeapon
-    rotate: false
-    targetBuildings: true
-    targetUnits: false
-    autoTarget: false
-    controllable: true
-    reload: 25
+    mirror: false
+    x: 7.5
+    y: 2
     shootY: 0
-    shootCone: 15
-    beamWidth: 0.65
-    repairSpeed: 3.7
-    fractionRepairSpeed: 0.08
+    shootSound: none
+    noAttack: true
+    autoTarget: true
+    targetUnits: true
+    targetBuildings: true
+    continuous: true
+    rotate: false
+    reload: 30
+    beamWidth: 0.60
+    widthSinMag: 0.10
+    repairSpeed: 4
+    fractionRepairSpeed: 0.04
+    healColor: bf92f9
+    laserColor: bf92f9
     bullet: {
-      type: BulletType
-      maxRange: 65
+      maxRange: 70
+    }
+  }
+  {
+    type: RepairBeamWeapon
+    mirror: false
+    x: -7.5
+    y: 2
+    shootY: 0
+    shootSound: none
+    noAttack: true
+    autoTarget: true
+    targetUnits: true
+    targetBuildings: true
+    continuous: true
+    rotate: false
+    reload: 30
+    beamWidth: 0.60
+    widthSinMag: 0.10
+    repairSpeed: 4
+    fractionRepairSpeed: 0.04
+    healColor: bf92f9
+    laserColor: bf92f9
+    bullet: {
+      maxRange: 70
     }
   }
 ]
