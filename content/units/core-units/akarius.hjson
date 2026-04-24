@@ -24,13 +24,13 @@
 	engines: [
    {
     x: 4.2
-    y: -10
+    y: -9.7
     radius: 2.2
     rotation: -85
    }
    {
     x: -4.2
-    y: -10
+    y: -9.7
     radius: 2.2
     rotation: -85
    }
@@ -38,7 +38,7 @@
     x: 8
     y: 0
     radius: 2.2
-    rotation: -180
+    rotation: 180
    }
    {
     x: -8
@@ -64,23 +64,6 @@ parts: [
 	y: 2
   }
   {
-    type: HaloPart
-    progress: warmup
-    tri: true
-    shapes: 3
-    color: b5d0ba
-    layer: 110
-    haloRadius: 0
-    haloRadiusTo: 2.5
-    radius: 0
-    radiusTo: 6
-    triLength: 0
-    triLengthTo: 4
-    haloRotateSpeed: 1.5
-    x: 17
-	y: 2
-  }
-  {
     type: ShapePart
     progress: warmup
     sides: 5
@@ -93,23 +76,6 @@ parts: [
 	strokeTo: 1.5
     rotateSpeed: 1.5
 	x: -17
-	y: 2
-  }
-  {
-    type: HaloPart
-    progress: warmup
-    tri: true
-    shapes: 3
-    color: b5d0ba
-    layer: 110
-    haloRadius: 0
-    haloRadiusTo: 2.5
-    radius: 0
-    radiusTo: 6
-    triLength: 0
-    triLengthTo: 4
-    haloRotateSpeed: 1.5
-    x: -17
 	y: 2
   }
 ]
