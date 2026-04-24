@@ -287,7 +287,7 @@ parts: [
     radiusTo: 10
     stroke: 1.2
 	strokeTo: 1.7
-    haloRotateSpeed: 1.2
+    rotateSpeed: 1.5
   }
   {
     type: HaloPart
