@@ -37,16 +37,16 @@
     rotation: -85
    }
    {
-    x: 3.2
-    y: 2
-    radius: 2.2
-    rotation: 90
-   }
-   {
-    x: -3.2
-    y: 2
+    x: 6.5
+    y: 1.7
     radius: 2.2
     rotation: -90
+   }
+   {
+    x: -6.5
+    y: 1.7
+    radius: 2.2
+    rotation: 90
    }
  ]
 parts: [
@@ -58,11 +58,11 @@ parts: [
 	hollow: true
     layer: 110
     radius: 0
-    radiusTo: 10
-    stroke: 1.2
-	strokeTo: 1.7
+    radiusTo: 7
+    stroke: 0
+	strokeTo: 1.5
     rotateSpeed: 1.5
-	x: 7.5
+	x: 10
 	y: 2
   }
   {
@@ -73,11 +73,11 @@ parts: [
 	hollow: true
     layer: 110
     radius: 0
-    radiusTo: 10
-    stroke: 1.2
-	strokeTo: 1.7
+    radiusTo: 7
+    stroke: 0
+	strokeTo: 1.5
     rotateSpeed: 1.5
-	x: -7.5
+	x: -10
 	y: 2
   }
 ]
@@ -85,7 +85,7 @@ parts: [
   {
     type: RepairBeamWeapon
     mirror: false
-    x: 7.5
+    x: 10
     y: 2
     shootY: 0
     shootSound: none
@@ -109,7 +109,7 @@ parts: [
   {
     type: RepairBeamWeapon
     mirror: false
-    x: -7.5
+    x: -10
     y: 2
     shootY: 0
     shootSound: none
