@@ -1,0 +1,88 @@
+type: GenericCrafter
+size: 3
+category: crafting
+squareSprite: true
+health: 850
+requirements: [
+  cobalt/100
+  platinum/120
+  geliarin/55
+  compound/40
+]
+consumes: {
+  items: [
+  raw-platinum/2
+  sphalerite/1
+  ]
+}
+outputItem: titanite/3
+hasLiquids: false
+		research: {
+    parent: "silicon-cultivator"
+    planet: gelion
+		"requirements": [
+		"cobalt/4000"
+		"platinum/4200"
+		"geliarin/1200"
+		"compound/1000"
+		]
+	objectives: [
+    {
+type: SectorComplete
+preset: nine
+    }
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+	{
+   type: DrawParticles
+   color: ebd9d50
+   alpha: 0.25
+   particleRad: 8
+   rotateScl: 25
+    }
+   	{
+     type: DrawGlowRegion
+	 color: e29045
+    }
+	{
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: 7
+      spinSprite: true
+    }
+    {    
+      type: DrawDefault
+    }
+  ]
+}
+researchCostMultiplier: 0.5
+craftEffect: [{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 4
+      amount: 4
+      effect: {
+          type: ParticleEffect
+          particles: 1
+          length: 90
+          lifetime: 1200
+          sizeFrom: 2.9
+          sizeTo: 7
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: 907d7454
+          colorTo: 433a3600
+          layer: 100.3
+          }
+}
+]
