@@ -125,7 +125,7 @@ shoot: {
     bullet: {
     type: RailBulletType
     length: 125
-    damage: 34
+    damage: 42
 	lifetime: 1
 	hitColor: bff6b1
     pointEffectSpace: 2.7
@@ -210,8 +210,8 @@ shoot: {
       collidesAir: true
       collidesGround: true
 
-      splashDamageRadius: 25
-      splashDamage: 370
+      splashDamageRadius: 30
+      splashDamage: 430
       buildingDamageMultiplier: 0.15
 
       hitSound: explosion
@@ -277,34 +277,32 @@ shoot: {
 
 parts: [
   {
-    type: HaloPart
+    type: ShapePart
     progress: warmup
-    tri: true
-    shapes: 3
+    sides: 6
     color: b5d0ba
+	hollow: true
     layer: 110
-    haloRadius: 6
-    haloRadiusTo: 4.5
-    radius: 5
-    radiusTo: 8
-    triLength: 10
-    triLengthTo: 3
-    haloRotateSpeed: 2
+    radius: 0
+    radiusTo: 10
+    stroke: 1.2
+	strokeTo: 1.7
+    haloRotateSpeed: 1.2
   }
   {
     type: HaloPart
     progress: warmup
     tri: true
-    shapes: 3
+    shapes: 6
     color: b5d0ba
     layer: 110
-    haloRadius: 0
-    haloRadiusTo: 8
+    haloRadius: 9
+    haloRadiusTo: 2
     radius: 4
     radiusTo: 6
     triLength: 4
     triLengthTo: 4
-    haloRotateSpeed: 1.2
+    haloRotateSpeed: 1
   }
   {
     type: ShapePart
