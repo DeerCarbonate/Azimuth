@@ -17,7 +17,7 @@ consumes: {
   ]
 }
 outputItem: titanite/3
-outputLiquid: isobutane/0.184
+outputLiquid: isobutane/0.188
 hasLiquids: true
 		research: {
     parent: "silicon-cultivator"
