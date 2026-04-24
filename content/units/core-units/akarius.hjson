@@ -25,26 +25,26 @@
    {
     x: 3.8
     y: -10
-    radius: 2.7
-    rotation: 90
+    radius: 3
+    rotation: 157.5
    }
    {
     x: -3.8
     y: -10
-    radius: 2.7
-    rotation: 180
+    radius: 3
+    rotation: 22.5
    }
    {
     x: 9
     y: 0
-    radius: 2.7
-    rotation: 0
+    radius: 2.5
+    rotation: -45
    }
    {
     x: -9
     y: 0
-    radius: 2.7
-    rotation: 0
+    radius: 2.5
+    rotation: -135
    }
  ]
 parts: [
