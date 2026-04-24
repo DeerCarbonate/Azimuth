@@ -26,25 +26,25 @@
     x: 3.8
     y: -10
     radius: 2.7
-    rotation: 0
+    rotation: 90
    }
    {
     x: -3.8
     y: -10
     radius: 2.7
-    rotation: 0
+    rotation: 180
    }
    {
     x: 9
     y: 0
     radius: 2.7
-    rotation: 90
+    rotation: 0
    }
    {
     x: -9
     y: 0
     radius: 2.7
-    rotation: -90
+    rotation: 0
    }
  ]
 parts: [
@@ -55,9 +55,9 @@ parts: [
     color: bf92f9
 	hollow: true
     layer: 110
-    radius: 0
-    radiusTo: 5.5
-    stroke: 0
+    radius: 5.5
+    radiusTo: 7.5
+    stroke: 1.5
 	strokeTo: 1.5
     rotateSpeed: 1.5
 	x: 0
