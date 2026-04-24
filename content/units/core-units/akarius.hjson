@@ -23,28 +23,28 @@
 	strafePenalty: 0.17
 	engines: [
    {
-    x: 4.2
-    y: -9.7
-    radius: 2.2
-    rotation: -85
+    x: 3.8
+    y: -10
+    radius: 2.7
+    rotation: 0
    }
    {
-    x: -4.2
-    y: -9.7
-    radius: 2.2
-    rotation: -85
+    x: -3.8
+    y: -10
+    radius: 2.7
+    rotation: 0
    }
    {
-    x: 8
+    x: 9
     y: 0
-    radius: 2.2
-    rotation: -180
+    radius: 2.7
+    rotation: 90
    }
    {
-    x: -8
+    x: -9
     y: 0
-    radius: 2.2
-    rotation: 180
+    radius: 2.7
+    rotation: -90
    }
  ]
 parts: [
@@ -60,55 +60,16 @@ parts: [
     stroke: 0
 	strokeTo: 1.5
     rotateSpeed: 1.5
-	x: 17
-	y: 2
-  }
-  {
-    type: ShapePart
-    progress: warmup
-    sides: 5
-    color: bf92f9
-	hollow: true
-    layer: 110
-    radius: 0
-    radiusTo: 5.5
-    stroke: 0
-	strokeTo: 1.5
-    rotateSpeed: 1.5
-	x: -17
-	y: 2
+	x: 0
+	y: -9
   }
 ]
  weapons: [
   {
     type: RepairBeamWeapon
     mirror: false
-    x: 17
-    y: 2
-    shootY: 0
-    shootSound: none
-    noAttack: true
-    autoTarget: true
-    targetUnits: true
-    targetBuildings: true
-    continuous: true
-    rotate: false
-    reload: 30
-    beamWidth: 0.60
-    widthSinMag: 0.10
-    repairSpeed: 4
-    fractionRepairSpeed: 0.04
-    healColor: bf92f9
-    laserColor: bf92f9
-    bullet: {
-      maxRange: 70
-    }
-  }
-  {
-    type: RepairBeamWeapon
-    mirror: false
-    x: -17
-    y: 2
+    x: 0
+    y: -9
     shootY: 0
     shootSound: none
     noAttack: true
