@@ -1,6 +1,5 @@
 	type: flying
 	outlineColor: 21202a
-	description: "Guard of the core network."
 	coreUnitDock: true
 	flying: true
 	health: 750
