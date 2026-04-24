@@ -224,7 +224,7 @@ hasLiquids: false
 requirements: [
   platinum/200,
   venerium/400
-  caterium/200
+  titanite/120
   geliarin/60
 ]
 category: turret
