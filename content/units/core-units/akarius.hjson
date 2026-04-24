@@ -3,24 +3,26 @@
 	description: "Guard of the core network."
 	coreUnitDock: true
 	flying: true
-	health: 450
+	health: 750
 	buildSpeed: 2.1
-	drag: 0.075
+	drag: 0.05
 	mineTier: 1
-    mineSpeed: 9
+    mineSpeed: 8.5
     buildRange: 225
- itemCapacity: 60
-	speed: 3.9
+    itemCapacity: 80
+	speed: 4.6
 	range: 90
-	accel: 0.36
+	accel: 0.21
 	targetGround: true
 	targetAir: true
-	rotateSpeed: 6.8
+	rotateSpeed: 6
 	engineColor: bf92f9
 	trailColor: bf92f9
- engineSize: 2
+    engineSize: 2
 	trailLength: 0
 	healColor: bf92f988
+	shieldColor: bf92f910
+	strafePenalty: 0.17
 	engines: [
    {
     x: 2.1
