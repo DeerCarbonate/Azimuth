@@ -16,34 +16,24 @@
 	targetAir: true
 	rotateSpeed: 4.7
 	engineColor: bf92f9
-    engineSize: 2
+    trailLength: 9.5
+    engineSize: 3.5
+	engineY: -3
 	healColor: bf92f988
 	shieldColor: bf92f910
 	strafePenalty: 0.17
 	engines: [
    {
-    x: 3.8
-    y: -10
-    radius: 3
-    rotation: 157.5
-   }
-   {
-    x: -3.8
-    y: -10
-    radius: 3
-    rotation: 22.5
-   }
-   {
     x: 9
     y: 0
     radius: 2.5
-    rotation: -45
+    rotation: 157.5
    }
    {
     x: -9
     y: 0
     radius: 2.5
-    rotation: -135
+    rotation: 22.5
    }
  ]
 parts: [
