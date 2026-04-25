@@ -12,6 +12,8 @@
 <h3 align="center">Azimuth adds a brand-new planet along with its own solar system and tech tree.
 The planet is called Gelion.</h3>
 <hr>
+<h2 align="center">On top of everything listed above, the mod is still actively being updated, and each update will bring even more content and mechanics. (I WILL finish this mod. I’m serious.)</h2>
+<hr>
 <h3 align="center">Overview</h3>
 <ul>
   <li>Crush enemy forces and turn the planet into a resource hub for your faction.</li>
@@ -44,8 +46,6 @@ The planet is called Gelion.</h3>
   <li>English (100% translated)</li>
   <li>Want to add your language? Feel free to submit a Pull Request!</li>
 </ul>
-<hr>
-<h2 align="center">On top of everything listed above, the mod is still actively being updated, and each update will bring even more content and mechanics. (I WILL finish this mod. I’m serious.)</h2>
 <hr>
 <h3 align="center">Acknowledgments</h3>
 <ul>
