@@ -12,7 +12,7 @@ requirements: [
 consumes: {
   power: 2.7
   items: [
-  raw-platinum/2
+  platinum/2
   sphalerite/1
   ]
 }
