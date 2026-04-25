@@ -90,7 +90,7 @@ parts: [
     shootY: 0
     x: 0
     y: 0.3
-    reload: 300
+    reload: 500
     inaccuracy: 360
 	smokeEffect: none
     shoot: {
@@ -126,7 +126,7 @@ parts: [
       fragRandomSpread: 0
       fragSpread: 0
 	  healColor: bf92f988
-	  healAmount: 32
+	  healAmount: 75
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
@@ -169,7 +169,7 @@ parts: [
       }
 	  	  fragBullet: {
       keepVelocity: false
-      lifetime: 300
+      lifetime: 500
       drag: 0
       damage: 0
       height: 5
@@ -187,7 +187,7 @@ parts: [
       circleShooterRadius: 20
       circleShooterRadiusSmooth: 10
       circleShooterRotateSpeed: 1.6
-	  healAmount: 45
+	  healAmount: 75
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
@@ -242,3 +242,9 @@ parts: [
 	 }
 	 ]
 }
+abilities: [
+{
+type:RegenAbility
+percentAmount:-0.01
+}
+]
