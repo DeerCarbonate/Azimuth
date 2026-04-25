@@ -245,6 +245,6 @@ parts: [
 abilities: [
 {
 type:RegenAbility
-percentAmount:-0.01
+percentAmount: 0.05
 }
 ]
