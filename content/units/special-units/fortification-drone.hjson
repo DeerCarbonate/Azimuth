@@ -123,9 +123,9 @@ abilities: [
 {
     type: StatusFieldAbility
     effect: fortified
-    duration: 9000
-    reload: 850
-    range: 180
+    duration: 800
+    reload: 250
+    range: 190
 	        applyEffect: {
             type: ParticleEffect
             lifetime: 50
