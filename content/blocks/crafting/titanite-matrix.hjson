@@ -2,7 +2,7 @@ type: GenericCrafter
 size: 3
 category: crafting
 squareSprite: false
-health: 850
+health: 450
 liquidCapacity: 80
 requirements: [
   cobalt/100
