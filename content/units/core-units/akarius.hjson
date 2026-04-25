@@ -63,12 +63,14 @@ parts: [
     y: 11.5
     shootY: 0
     shootSound: none
-    noAttack: true
     targetBuildings: true
+	targetUnits: false
+    controllable: true
+    autoTarget: false
     continuous: true
     rotate: false
     reload: 30
-    beamWidth: 0.85
+    beamWidth: 0.8
     widthSinMag: 0.10
     repairSpeed: 4
     fractionRepairSpeed: 0.04
