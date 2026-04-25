@@ -29,4 +29,4 @@
 <li>Also, if you really enjoyed the mod, you can give a star on my GitHub (THANKS a lot!)</li>
 </ul>
 
-<h2 align="center"><img width="2338" height="1100" alt="LOGOaz" src="https://github.com/user-attachments/assets/d90ac73d-aaf6-4e71-a757-5c7f3091f033" /></h2>
+<h2 align="center"><img width="2338" height="1100" alt="AZIMUTH-banner" src="https://github.com/user-attachments/assets/d90ac73d-aaf6-4e71-a757-5c7f3091f033" /></h2>
