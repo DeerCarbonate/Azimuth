@@ -197,7 +197,7 @@ parts: [
       pierceDamageFactor: 0.01
 	  hitEffect: none
 	  despawnEffect: none
-	  bulletInterval: 0.35
+	  bulletInterval: 5.5
       intervalRandomSpread: 20
       intervalBullets: 2
       intervalAngle: 180
