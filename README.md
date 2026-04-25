@@ -5,6 +5,8 @@
 
 <h2 align="center"><img width="640" height="320" alt="logo" src="sprites-override/ui/logo.png" /></h2>
 
+<hr>
+
 [![Discord Community](https://img.shields.io/badge/Discord_Community-JOIN-5865F2?logo=discord)](https://discord.gg/gyCfsa3kbf)
 
 <h3 align="center">Azimuth adds a brand-new planet along with its own solar system and tech tree.
