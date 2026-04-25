@@ -12,7 +12,7 @@
 <h3 align="center">Azimuth adds a brand-new planet along with its own solar system and tech tree.
 The planet is called Gelion.</h3>
 <hr>
-<h2 align="center">On top of everything listed above, the mod is still actively being updated, and each update will bring even more content and mechanics. (I WILL finish this mod. I’m serious.)</h2>
+<h2 align="center">On top of everything listed down below, the mod is still actively being updated, and each update will bring even more content and mechanics. (I WILL finish this mod. I’m serious.)</h2>
 <hr>
 <h3 align="center">Overview</h3>
 <ul>
