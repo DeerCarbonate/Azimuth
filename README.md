@@ -54,4 +54,4 @@ The planet is called Gelion.</h3>
 <li>Also, if you really enjoyed the mod, you can give a star on my GitHub (THANKS a lot!)</li>
 </ul>
 
-<h2 align="center"><img width="2560" height="1440" alt="AZIMUTH-banner" src="https://github.com/user-attachments/assets/74701dcc-b1be-4478-bcf3-74c2c95f55ff" />
+<h2 align="center"><img width="2560" height="1440" alt="AZIMUTH-banner" src="https://github.com/user-attachments/assets/74701dcc-b1be-4478-bcf3-74c2c95f55ff" /></h2>
