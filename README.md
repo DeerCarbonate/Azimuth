@@ -7,7 +7,8 @@
 
 [![Discord Community](https://img.shields.io/badge/Discord_Community-JOIN-5865F2?logo=discord)](https://discord.gg/gyCfsa3kbf)
 
-<h2 align="center">Azimuth adds the planet Gelion with its own technology tree, sectors, environments, and gameplay features.</h2>
+<h2 align="center">Azimuth adds a brand-new planet along with its own solar system and tech tree.
+The planet is called Gelion.</h2>
 
 
 
