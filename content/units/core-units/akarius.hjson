@@ -18,7 +18,9 @@
 	engineColor: bf92f9
     trailLength: 9.5
     engineSize: 3.5
-	engineY: -3
+	engineY: -9
+    trailColor: bf92f9
+	waveTrailY: -3.0
 	healColor: bf92f988
 	shieldColor: bf92f910
 	strafePenalty: 0.17
@@ -27,13 +29,13 @@
     x: 9
     y: 0
     radius: 2.5
-    rotation: 157.5
+    rotation: 22.5
    }
    {
     x: -9
     y: 0
     radius: 2.5
-    rotation: 22.5
+    rotation: 157.5
    }
  ]
 parts: [
@@ -50,7 +52,7 @@ parts: [
 	strokeTo: 1.5
     rotateSpeed: 1.5
 	x: 0
-	y: -9
+	y: 11.5
   }
 ]
  weapons: [
@@ -58,7 +60,7 @@ parts: [
     type: RepairBeamWeapon
     mirror: false
     x: 0
-    y: -9
+    y: 11.5
     shootY: 0
     shootSound: none
     noAttack: true
@@ -68,7 +70,7 @@ parts: [
     continuous: true
     rotate: false
     reload: 30
-    beamWidth: 0.60
+    beamWidth: 1
     widthSinMag: 0.10
     repairSpeed: 4
     fractionRepairSpeed: 0.04
