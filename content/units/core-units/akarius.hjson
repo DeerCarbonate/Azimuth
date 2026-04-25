@@ -197,7 +197,7 @@ parts: [
       pierceDamageFactor: 0.01
 	  hitEffect: none
 	  despawnEffect: none
-	  bulletInterval: 12.5
+	  bulletInterval: 21.5
       intervalRandomSpread: 20
       intervalBullets: 2
       intervalAngle: 180
@@ -207,9 +207,9 @@ parts: [
             collidesAir: true
             buildingDamageMultiplier: 0.01
             smokeEffect: none
-            frontColor: ffffff30
-			backColor: bf92f930
-			trailColor: bf92f910
+            frontColor: ffffff20
+			backColor: bf92f920
+			trailColor: bf92f908
 			healColor: bf92f988
             pierceArmor:true
             width:4
@@ -231,7 +231,7 @@ parts: [
 				                  trailEffect:[
                 {
                     type: ParticleEffect
-                    colorFrom: bf92f920
+                    colorFrom: bf92f910
                     colorTo: bf92f900
                     particles: 1
                     cone: 360
@@ -244,7 +244,7 @@ parts: [
                 {
                     type: ParticleEffect
                     region:large-bomb
-                    colorFrom: bf92f920
+                    colorFrom: bf92f910
                     colorTo: bf92f900
                     particles: 1
                     lifetime:17
