@@ -3,6 +3,7 @@ size: 3
 category: crafting
 squareSprite: false
 health: 850
+liquidCapacity: 80
 requirements: [
   cobalt/100
   platinum/120
@@ -10,14 +11,14 @@ requirements: [
   compound/40
 ]
 consumes: {
-  power: 2.7
+  power: 2.65
   items: [
   platinum/2
   sphalerite/1
   ]
 }
 outputItem: titanite/3
-outputLiquid: isobutane/0.188
+outputLiquid: isobutane/0.092
 hasLiquids: true
 		research: {
     parent: "silicon-cultivator"
