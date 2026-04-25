@@ -18,7 +18,7 @@
 	engineColor: bf92f9
     trailLength: 9.5
     engineSize: 3.5
-    engineOffset: 5.3
+    engineOffset: -12
     trailColor: bf92f9
 	waveTrailY: -5.3
 	healColor: bf92f988
@@ -68,7 +68,7 @@ parts: [
     continuous: true
     rotate: false
     reload: 30
-    beamWidth: 1
+    beamWidth: 0.85
     widthSinMag: 0.10
     repairSpeed: 4
     fractionRepairSpeed: 0.04
