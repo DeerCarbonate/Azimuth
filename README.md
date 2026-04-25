@@ -43,6 +43,8 @@ The planet is called Gelion.</h3>
   <li>Want to add your language? Feel free to submit a Pull Request!</li>
 </ul>
 
+<hr>
+
 <h2 align="center">On top of everything listed above, the mod is still actively being updated, and each update will bring even more content and mechanics. (I WILL finish this mod. I’m serious.)</h2>
 
 <h3 align="center">Acknowledgments</h3>
