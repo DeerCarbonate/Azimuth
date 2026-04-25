@@ -1,4 +1,4 @@
-# AZIMUTH 0.5: Is coming...
+<img width="2560" height="1440" alt="AZIMUTH-banner" src="https://github.com/user-attachments/assets/a68f1f3a-1b8a-4f53-942c-3f5a86d98678" /># AZIMUTH 0.5: Is coming...
 
 
 
@@ -29,4 +29,4 @@
 <li>Also, if you really enjoyed the mod, you can give a star on my GitHub (THANKS a lot!)</li>
 </ul>
 
-<h2 align="center"><img width="2338" height="1100" alt="AZIMUTH-banner" src="AZIMUTH-banner" /></h2>
+<h2 align="center"><img width="2560" height="1440" alt="AZIMUTH-banner" src="https://github.com/user-attachments/assets/74701dcc-b1be-4478-bcf3-74c2c95f55ff" />
