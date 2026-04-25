@@ -10,10 +10,6 @@
 <h3 align="center">Azimuth adds a brand-new planet along with its own solar system and tech tree.
 The planet is called Gelion.</h3>
 
-
-
-
-
 <h3 align="center">Overview</h3>
 <ul>
   <li>Crush enemy forces and turn the planet into a resource hub for your faction.</li>
@@ -33,7 +29,7 @@ The planet is called Gelion.</h3>
 
 <h3 align="center">Highlights</h3>
 <ul>
-  <li>Absolutely <h2>BRUTAL</h2> visual effects</li>
+  <li>Absolutely BRUTAL visual effects</li>
   <li>Highly polished and visually stunning campaign maps</li>
   <li>Every sprite (blocks & units) is higher quality than vanilla</li>
   <li>Deep unit design: Each unit has unique abilities, mechanics, and a distinct concept</li>
