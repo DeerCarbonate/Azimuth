@@ -18,7 +18,7 @@
 	engineColor: bf92f9
     trailLength: 9.5
     engineSize: 3.5
-	engineY: -9
+    engineOffset: 7.3
     trailColor: bf92f9
 	waveTrailY: -3.0
 	healColor: bf92f988
@@ -46,9 +46,9 @@ parts: [
     color: bf92f9
 	hollow: true
     layer: 110
-    radius: 5.5
-    radiusTo: 7.5
-    stroke: 1.5
+    radius: 0
+    radiusTo: 5.5
+    stroke: 0
 	strokeTo: 1.5
     rotateSpeed: 1.5
 	x: 0
@@ -64,8 +64,6 @@ parts: [
     shootY: 0
     shootSound: none
     noAttack: true
-    autoTarget: true
-    targetUnits: true
     targetBuildings: true
     continuous: true
     rotate: false
