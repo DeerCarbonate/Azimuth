@@ -18,9 +18,9 @@
 	engineColor: bf92f9
     trailLength: 9.5
     engineSize: 3.5
-    engineOffset: 7.3
+    engineOffset: 5.3
     trailColor: bf92f9
-	waveTrailY: -3.0
+	waveTrailY: -5.3
 	healColor: bf92f988
 	shieldColor: bf92f910
 	strafePenalty: 0.17
