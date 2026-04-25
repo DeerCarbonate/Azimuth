@@ -90,7 +90,7 @@ parts: [
     shootY: 0
     x: 0
     y: 0.3
-    reload: 500
+    reload: 250
     inaccuracy: 360
 	smokeEffect: none
     shoot: {
