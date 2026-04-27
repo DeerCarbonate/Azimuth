@@ -1,0 +1,41 @@
+size: 2
+health: 2800
+armor: 6
+requirements: [
+  compound/20
+  geliarin/18
+]
+research: {
+  parent: "yongsin"
+  planet: gelion
+    "requirements": [
+	  "compound/180"
+	  "geliarin/100"
+]
+objectives: [
+    {
+      type: OnSector
+      preset: "four"
+    }
+  ]
+}
+category: defense
+destroyBullet: {
+  instantDisappear: true
+  damage: 0
+  speed: 0
+  fragBullets: 5
+  fragBullet: {
+    type: BasicBulletType
+    speed: 4
+    lifetime: 30
+    pierce: true
+    width: 6
+    height: 7
+    pierceCap: 1
+    homingPower: 0.1
+    damage: 80
+    mixColorFrom: 21cee5
+    mixColorTo: 9af6ff
+  }
+}

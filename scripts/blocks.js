@@ -30,6 +30,8 @@ const compoundlargewall = extend(Wall, "compound-large-wall", {});
 
 const compoundhugewall = extend(Wall, "compound-huge-wall", {});
 
+const geliarindoor = extend(AutoDoor, "geliarin-door", {});
+
 const zincwall = extend(Wall, "zinc-wall", {});
 
 const zinclargewall = extend(Wall, "zinc-large-wall", {});
