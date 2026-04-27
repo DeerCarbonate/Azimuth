@@ -45,8 +45,8 @@ drillEffect: [
     sound: blockExplodeExplosive
     minPitch: 0.5
     maxPitch: 0.5
-    minVolume: 0.7
-    maxVolume: 0.9
+    minVolume: 0.3
+    maxVolume: 0.5
     effect: none
   }
   {
@@ -54,8 +54,8 @@ drillEffect: [
     sound: explosionArtillery
     minPitch: 0.9
     maxPitch: 0.9
-    minVolume: 0.8
-    maxVolume: 1
+    minVolume: 0.4
+    maxVolume: 0.6
     effect: none
   }
 ]
