@@ -159,8 +159,8 @@ baseRotation: 0
           maxPitch: 0.7
           effect: none
           sound: shootBreachCarbide
-          minVolume: 0.3
-          maxVolume: 0.4
+          minVolume: 0.4
+          maxVolume: 0.5
         }
 		{
           type: SoundEffect
@@ -386,8 +386,8 @@ baseRotation: 0
           maxPitch: 0.9
           effect: none
           sound: blockExplodeElectric
-          minVolume: 0.3
-          maxVolume: 0.4
+          minVolume: 0.2
+          maxVolume: 0.3
         }
 		      {
           type: SoundEffect
