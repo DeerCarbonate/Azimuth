@@ -15,7 +15,7 @@ targetGround: true
 moveWhileCharging: true
 recoilAmount: 1.8
 rotateSpeed: 2.7
-shootSound: shootDiffuse
+shootSound: none
 shootSoundVolume: 0.9
   ammoTypes: {
 cobalt: {
@@ -73,6 +73,15 @@ sizeTo: 0
 colorTo: fccabd75
 baseRotation: 0
 }
+      {
+          type: SoundEffect
+          minPitch: 0.8
+          maxPitch: 0.9
+          effect: none
+          sound: shootDiffuse
+          minVolume: 0.8
+          maxVolume: 0.9
+        }
 ]
 			      smokeEffect: [{
         type: ParticleEffect
@@ -107,7 +116,6 @@ baseRotation: 0
                     ]
       }
 	  geliarin: {
- shootSound: "shootBreachCarbide"
  type: BasicBulletType
  reloadMultiplier:0.5
  collidesGround: true
@@ -151,7 +159,8 @@ baseRotation: 0
           maxPitch: 0.7
           effect: none
           sound: shootBreachCarbide
-          shootSoundVolume: 0.1
+          minVolume: 0.3
+          maxVolume: 0.4
         }
 		{
           type: SoundEffect
@@ -159,7 +168,8 @@ baseRotation: 0
           maxPitch: 1
           effect: none
           sound: shootDisperse
-          shootSoundVolume: 0.1
+          minVolume: 0.33
+          maxVolume: 0.43
         }
 ]
 			      smokeEffect: [{
