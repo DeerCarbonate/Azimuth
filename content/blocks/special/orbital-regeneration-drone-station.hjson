@@ -1,8 +1,8 @@
 type: UnitCargoLoader
 squareSprite: false
 size: 3
-health: 2550
-armor: 5
+health: 2950
+armor: 6
 unitType: orbital-regeneration-drone
 itemCapacity: 0
 separateItemCapacity: true
@@ -11,10 +11,10 @@ hasPower: false
 hasLiquids: true
 category: effect
 requirements: [
-  geliarin/110
-  titanite/35
-  caterium/120
-  cobalt/85
+  geliarin/100
+  titanite/45
+  caterium/110
+  cobalt/130
 ]
 consumes: {
   power: 5
