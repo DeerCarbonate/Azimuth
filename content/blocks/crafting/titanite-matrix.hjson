@@ -46,10 +46,10 @@ drawer: {
 	{
       type: DrawLiquidTile
       drawLiquid: isobutane
-      padLeft: 0.3
-      padBottom: 0.3
-      padTop: 0.3
-      padRight: 0.3
+      padLeft: 1.3
+      padBottom: 1.3
+      padTop: 1.3
+      padRight: 1.3
     }
 	{
    type: DrawParticles
