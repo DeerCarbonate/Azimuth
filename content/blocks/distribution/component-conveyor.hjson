@@ -1,6 +1,4 @@
 type: PayloadConveyor
-name: Component Conveyor
-description: Transports components forward.
 category: units
 size: 4
 requirements: [
