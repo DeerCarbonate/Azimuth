@@ -1,7 +1,8 @@
 type: UnitCargoLoader
+databaseTag: station
 squareSprite: false
 size: 3
-health: 675
+health: 750
 unitType: fortification-drone
 itemCapacity: 0
 separateItemCapacity: true

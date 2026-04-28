@@ -1,4 +1,5 @@
 type: UnitCargoLoader
+databaseTag: station
 squareSprite: false
 size: 3
 health: 950
