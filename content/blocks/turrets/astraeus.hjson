@@ -168,8 +168,8 @@ baseRotation: 0
           maxPitch: 1
           effect: none
           sound: shootDisperse
-          minVolume: 0.33
-          maxVolume: 0.43
+          minVolume: 0.4
+          maxVolume: 0.5
         }
 ]
 			      smokeEffect: [{
@@ -386,17 +386,17 @@ baseRotation: 0
           maxPitch: 0.9
           effect: none
           sound: blockExplodeElectric
-          minVolume: 0.2
-          maxVolume: 0.25
+          minVolume: 0.3
+          maxVolume: 0.4
         }
 		      {
           type: SoundEffect
           minPitch: 0.7
           maxPitch: 1
           effect: none
-          sound: mechShoot
-          minVolume: 0.3
-          maxVolume: 0.4
+          sound: shootDiffuse
+          minVolume: 0.5
+          maxVolume: 0.6
         }
 ]
 			      smokeEffect: [{
