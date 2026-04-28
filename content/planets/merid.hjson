@@ -12,7 +12,7 @@ hasSectors: false
 solarSystem: alveon
 orbitRadius: 60
 orbitTime: 6000
-alwaysUnlocked: true
+alwaysUnlocked: false
 accessible: false 
 visible: true
 radius: 0.9
