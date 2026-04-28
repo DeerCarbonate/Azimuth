@@ -2,8 +2,8 @@ flying: true
 outlineColor: 21202a
 type: tether
 hitSize: 11
-health: 500
-armor: 2
+health: 900
+armor: 3
 range: 0
 itemCapacity: 0
 hidden: true

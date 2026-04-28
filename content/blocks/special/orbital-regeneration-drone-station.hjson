@@ -1,7 +1,8 @@
 type: UnitCargoLoader
 squareSprite: false
 size: 3
-health: 1100
+health: 2550
+armor: 5
 unitType: orbital-regeneration-drone
 itemCapacity: 0
 separateItemCapacity: true
