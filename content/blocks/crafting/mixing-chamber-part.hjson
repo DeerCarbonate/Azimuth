@@ -1,13 +1,14 @@
 type: HeatCrafter
+health: 400
 size: 3
 category: crafting
 rotate: false
 squareSprite: false
-liquidCapacity: 100
+liquidCapacity: 90
 liquidOutputDirections: [1]
 requirements: [
-  cobalt/65
-  venerium/55
+  cobalt/50
+  venerium/65
   platinum/25
 ]
 research: {
