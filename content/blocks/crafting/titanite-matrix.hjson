@@ -44,6 +44,14 @@ drawer: {
       suffix: -bottom
     }
 	{
+      type: DrawLiquidTile
+      drawLiquid: isobutane
+      padLeft: 0.3
+      padBottom: 0.3
+      padTop: 0.3
+      padRight: 0.3
+    }
+	{
    type: DrawParticles
    color: 47685d50
    alpha: 0.25
