@@ -24,9 +24,9 @@ cobalt: {
  frontColor: fccabd
  backColor: c36868
  hitColor: fccabd
- splashDamage: 30
- splashDamageRadius: 20
- damage: 47
+ splashDamage: 28
+ splashDamageRadius: 18
+ damage: 46
  despawnSound: none
  hitSound: none
  lifetime: 68
@@ -123,7 +123,7 @@ baseRotation: 0
  backColor: 6898c3
  hitColor: 6898c3
  rangeChange: -35
- damage: 55
+ damage: 60
  despawnSound: none
  hitSound: none
  lifetime: 35
@@ -329,9 +329,9 @@ trailWidth: 1.4
  frontColor: bf92f9
  backColor: bf92f9
  hitColor: bf92f9
- splashDamage: 60
+ splashDamage: 90
  splashDamageRadius: 17
- damage: 30
+ damage: 80
  despawnSound: none
  hitSound: none
  lifetime: 80
@@ -439,7 +439,7 @@ baseRotation: 0
     type: BasicBulletType
     speed: 1.5
     sprite: large-orb
-    damage: 55
+    damage: 65
     width: 6
     hitSize: 5
     height: 8
