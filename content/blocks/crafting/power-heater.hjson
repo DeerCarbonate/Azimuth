@@ -1,4 +1,5 @@
 type: HeatProducer
+health: 340
 size: 2
 heatOutput: 6
 research: {
