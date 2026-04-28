@@ -1,13 +1,16 @@
-// Взят пример из asterion
-// Пример: const "кодовое название предмета" = extend("Класс/type", "в кавычках название блока json", {});
-// Ресурсная логистика
 const cobaltduct = extend(Duct, "cobalt-duct", {});
 
 const geliarinduct = extend(StackConveyor, "geliarin-duct", {});
 
+const geliarinrouter = extend(StackRouter, "geliarin-router", {});
+
+const platinumduct = extend(Duct, "platinum-duct", {});
+
 const cobaltjunction = extend(Junction, "cobalt-junction", {});
 
 const cobaltductbridge = extend(DuctBridge, "cobalt-duct-bridge", {});
+
+const polyethericconveyor = extend(ItemBridge, "polyetheric-conveyor", {});
 
 const cobaltrouter = extend(Router, "cobalt-router", {});
 
