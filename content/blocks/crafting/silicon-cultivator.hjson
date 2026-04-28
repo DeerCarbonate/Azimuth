@@ -1,4 +1,5 @@
 type: AttributeCrafter
+health: 390
 size: 3
 baseEfficiency: 0
 minEfficiency: 1
@@ -21,9 +22,9 @@ research: {
 ]
 }
 requirements: [
- cobalt/55
- venerium/45
- platinum/15
+ cobalt/80
+ venerium/75
+ platinum/50
 ]
 consumes: {
   liquids: [
