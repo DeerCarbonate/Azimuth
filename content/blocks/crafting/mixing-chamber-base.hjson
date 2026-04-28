@@ -1,14 +1,15 @@
 type: GenericCrafter
+health: 400
 size: 3
 category: crafting
 rotate: false
 squareSprite: false
-liquidCapacity: 100
+liquidCapacity: 90
 research: {
   parent: "platinum-smelter"
   planet: gelion
     "requirements": [
-	  "venerium/90"
+	  "venerium/55"
 	  "cobalt/50"
 	  "platinum/40"
 ]
