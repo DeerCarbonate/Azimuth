@@ -1,4 +1,5 @@
 type: GenericCrafter
+health: 350
 size: 2
 category: crafting
 squareSprite: true
