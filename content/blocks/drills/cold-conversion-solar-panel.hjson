@@ -20,9 +20,9 @@ preset: twos
  ]
 }
 requirements: [
- cobalt/90
- venerium/40
- platinum/40
+ cobalt/55
+ venerium/35
+ platinum/35
 ]
 craftTime: 120
 hasLiquids: true
