@@ -1,4 +1,5 @@
 type: HeatCrafter
+health: 580
 size: 3
 itemCapacity: 30
 category: crafting
@@ -15,10 +16,10 @@ research: {
 ]
 }
 requirements: [
- cobalt/50
- platinum/45
- compound/55
- geliarin/10
+ cobalt/130
+ platinum/90
+ compound/120
+ geliarin/70
 ]
 consumes: {
   items: [
