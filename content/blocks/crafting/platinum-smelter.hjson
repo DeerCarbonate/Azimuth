@@ -49,23 +49,6 @@ craftEffect: [{
           layer: 100.3
           }
     }
-    {
-      type: ParticleEffect
-      offsetX: 0
-      offsetY: 0
-      particles: 2
-      length: 100
-      lifetime: 750
-      sizeFrom: 1.4
-      sizeTo: 6
-      cone: 2
-      baseRotation: 73
-      useRotation: false
-      interp: pow5Out
-      colorFrom: 8d655758
-      colorTo: 271b1700
-      layer: 100.3
-    }
 ]
 ambientSound: smelter
 drawer: {
