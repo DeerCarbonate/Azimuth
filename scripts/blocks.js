@@ -4,8 +4,6 @@ const geliarinduct = extend(StackConveyor, "geliarin-duct", {});
 
 const geliarinrouter = extend(StackRouter, "geliarin-router", {});
 
-const platinumduct = extend(Duct, "platinum-duct", {});
-
 const cobaltjunction = extend(Junction, "cobalt-junction", {});
 
 const cobaltductbridge = extend(DuctBridge, "cobalt-duct-bridge", {});
