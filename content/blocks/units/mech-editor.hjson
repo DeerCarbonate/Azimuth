@@ -25,7 +25,7 @@ plans: [
 		venerium/50
 		platinum/35
     	]
-    	time: 1200
+    	time: 1100
   	}
 	{
 	unit: Marshal
@@ -34,7 +34,7 @@ plans: [
 		platinum/90
 		compound/15
     	]
-    	time: 2120
+    	time: 1650
   	}
 ]
 

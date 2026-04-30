@@ -25,7 +25,7 @@ plans: [
 		platinum/35
 		cobalt/40
     	]
-    	time: 1050
+    	time: 1130
   	}
 	{
 	unit: Innovation
@@ -34,7 +34,7 @@ plans: [
 		cobalt/85
 		compound/20
     	]
-    	time: 2050
+    	time: 1680
   	}
 ]
 

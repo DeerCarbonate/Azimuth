@@ -25,7 +25,7 @@ plans: [
 		geliarin/25
 		platinum/50
     	]
-    	time: 1150
+    	time: 1200
   	}
 	{
 	unit: Octopus
@@ -34,7 +34,7 @@ plans: [
 		platinum/100
 		compound/25
     	]
-    	time: 2060
+    	time: 1690
   	}
 ]
 
