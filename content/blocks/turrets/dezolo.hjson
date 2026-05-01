@@ -125,39 +125,32 @@ venerium: {
   hitEffect: {
     type: MultiEffect
     effects: [
-      {
-        type: ParticleEffect
-        colorTo: fcf0bd00
-        colorFrom: ffffff95
-        particles: 8
-        cone: 7
-        length: 42
-        baseLength: 2
-        lightScl: 3
-        interp: circleOut
-        lightOpacity: 2
-        spin: 2
-        sizeFrom: 7.5
-        sizeTo: 0
-        offset: 1
-        lifetime: 20
-      }
-      {
-        type: ParticleEffect
-        line: true
-        particles: 16
-        lifetime: 54
-        interp: circleOut
-        length: 120
-        cone: -30
-        strokeTo: 0
-        lightColor: fff5b0
-        lenFrom: 9
-        lenTo: 0
-        strokeFrom: 6
-        colorTo: fcf0bd00
-        colorFrom: ffffff95
-      }
+		{
+          followParent: false
+          length: 0
+          lifetime: 16
+          particles: 1
+          cone: 0
+          region: azimut-shoothitscan
+          sizeFrom: 26
+          sizeTo: 0
+          colorTo: fcf0bd
+		  baseRotation: -215
+		  length: 8
+        }
+		{
+          followParent: false
+          length: 0
+          lifetime: 16
+          particles: 1
+          cone: 0
+          region: azimut-shoothitscan
+          sizeFrom: 26
+          sizeTo: 0
+          colorTo: fcf0bd
+		  baseRotation: 215
+		  length: 8
+        }
     ]
   }
 
