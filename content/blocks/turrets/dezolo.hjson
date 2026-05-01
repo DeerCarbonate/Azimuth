@@ -32,7 +32,7 @@ preset: twos
 cooldown: 1200
 shootCone: 9
 recoil: 2
-shootY: 1.4
+shootY: 4.6
 reload: 140
 range: 300
 targetAir: true
@@ -76,17 +76,17 @@ venerium: {
         length: 0
         lifetime: 24
         region: azimut-hitscan 
-        sizeFrom: 18
+        sizeFrom: 20
         sizeTo: 0
-        colorFrom: ffffff95
-        colorTo: fcf0bd50
+        colorFrom: fcf0bd70
+        colorTo: fcf0bd40
       }
 	  {
         particles: 1
         length: 0
         lifetime: 24
         region: azimut-hitscan 
-        sizeFrom: 13
+        sizeFrom: 14
         sizeTo: 0
         colorFrom: ffffff
         colorTo: fcf0bd
@@ -173,9 +173,8 @@ venerium: {
       lightScl: 3
       interp: circleOut
       lightOpacity: 2
-      spin: 2
       sizeFrom: 4.5
-      sizeTo: 0
+      sizeTo: 3.5
       offset: 1
       lifetime: 50
     }
