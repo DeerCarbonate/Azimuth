@@ -1,0 +1,11 @@
+type: Floor
+name: Dark shallow isobutane
+speedMultiplier: 0.43
+variants: 0
+cacheLayer: mud
+isLiquid: true
+liquidDrop: isobutane
+liquidMultiplier: 0.4
+albedo: 1.1
+shallow: true
+supportsOverlay: true

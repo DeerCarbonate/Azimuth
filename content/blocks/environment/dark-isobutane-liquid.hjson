@@ -1,0 +1,13 @@
+type: Floor
+name: Deep dark isobutane
+speedMultiplier: 0.26
+variants: 0
+cacheLayer: "mud"
+drownTime: 130
+isLiquid: true
+liquidDrop: isobutane
+liquidMultiplier: 0.4
+albedo: 1
+shallow: true
+supportsOverlay: true
+emitLight: false
