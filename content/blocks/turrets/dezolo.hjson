@@ -162,22 +162,42 @@ venerium: {
   }
 
   shootEffect: [
-    {
-      type: ParticleEffect
-      colorTo: fcf0bd00
-      colorFrom: ffffff95
-      particles: 16
-      cone: 5
-      length: 120
-      baseLength: 2
-      lightScl: 3
-      interp: circleOut
-      lightOpacity: 2
-      sizeFrom: 4.5
-      sizeTo: 3.5
-      offset: 1
-      lifetime: 50
-    }
+        {
+          followParent: false
+          length: 0
+          lifetime: 16
+          particles: 1
+          cone: 0
+          region: azimut-hitscan
+          sizeFrom: 45
+          sizeTo: 0
+          colorTo: fcf0bd
+		  baseRotation: 35
+        }
+		{
+          followParent: false
+          length: 0
+          lifetime: 16
+          particles: 1
+          cone: 0
+          region: azimut-hitscan
+          sizeFrom: 45
+          sizeTo: 0
+          colorTo: fcf0bd
+		  baseRotation: -35
+        }
+	    {
+          followParent: false
+          length: 0
+          lifetime: 16
+          particles: 1
+          cone: 0
+          region: azimut-despawn
+          sizeFrom: 25
+          sizeTo: 0
+          colorTo: fcf0bd
+		  baseRotation: 90
+        }
   ]
 }
   compound: {
