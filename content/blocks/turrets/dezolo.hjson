@@ -65,7 +65,7 @@ venerium: {
   colorTo: fcf0bd00
   width: 12
 
-  despawnEffect: none
+  hitEffect: none
   smokeEffect: none
 
   pointEffect: {
@@ -122,13 +122,13 @@ venerium: {
     buildingDamageMultiplier: 0.1
   }
 
-  hitEffect: {
+  despawnEffect: {
     type: MultiEffect
     effects: [
 		{
           followParent: false
           length: 0
-          lifetime: 16
+          lifetime: 35
           particles: 1
           cone: 0
           region: azimut-shoothitscan
@@ -141,7 +141,7 @@ venerium: {
 		{
           followParent: false
           length: 0
-          lifetime: 16
+          lifetime: 35
           particles: 1
           cone: 0
           region: azimut-shoothitscan
