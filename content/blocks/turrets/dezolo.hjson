@@ -95,10 +95,10 @@ venerium: {
     ]
   }
 
-  fragBullets: 14
+  fragBullets: 11
   fragRandomSpread: 13.5
-  fragVelocityMin: 0.3
-  fragVelocityMax: 3.4
+  fragVelocityMin: 0.5
+  fragVelocityMax: 2.8
   fragLifeMin: 0.2
   fragLifeMax: 2
   fragBullet: {
