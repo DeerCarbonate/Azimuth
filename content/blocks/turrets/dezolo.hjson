@@ -52,12 +52,12 @@ venerium: {
 
   hitColor: fcf0bd
   buildingDamageMultiplier: 0.1
-  pointEffectSpace: 28
+  pointEffectSpace: 22
 
   collidesGround: true
   collidesAir: true
   ammoMultiplier: 4
-  pierceCap: 0
+  pierce: false
 
   colorFrom: ffffff
   colorTo: fcf0bd00
@@ -70,41 +70,14 @@ venerium: {
     type: MultiEffect
     effects: [
       {
-        type: ParticleEffect
+        particles: 1
+        length: 0
         lifetime: 24
-        particles: 2
-        baseLength: 12
-        length: 30
-        line: true
-        lenFrom: 4
-        lenTo: 0
-        colorFrom: ffffff95
-        colorTo: fcf0bd00
-      }
-		  {
-            particles: 1
-            length: 0
-            lifetime: 24
-            region: azimut-hitscan 
-            sizeFrom: 18
-            sizeChangeStart: 18
-            sizeTo: 0
+        region: azimut-hitscan 
+        sizeFrom: 14
+        sizeTo: 0
         colorFrom: ffffff95
         colorTo: fcf0bd50
-          }
-      {
-        type: ParticleEffect
-        lifetime: 24
-        particles: 2
-        baseLength: -4
-        length: 9
-        cone: 90
-        sizeFrom: 0.9
-        sizeTo: 0
-        colorFrom: fcf0bd00
-        colorTo: fcf0bd00
-        interp: pow3Out
-        sizeInterp: pow3In
       }
     ]
   }
