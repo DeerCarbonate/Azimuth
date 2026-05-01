@@ -3,9 +3,9 @@ type: Drill
 health: 650
 category: production
 size: 3
-drillTime: 500
+drillTime: 470
 tier: 1
-liquidBoostIntensity: 1.35
+liquidBoostIntensity: 1.65
 consumes: {
   liquid: {
   liquid: power
