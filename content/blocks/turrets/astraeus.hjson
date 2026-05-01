@@ -540,7 +540,7 @@ research: {
   planet: "gelion"
     "requirements": [
 	  "platinum/9000"
-	  "zinc/2000"
+	  "zinc/30"
 	  "compound/1500"
 	  "cobalt/23000"
   ]
