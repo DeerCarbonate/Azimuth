@@ -57,7 +57,9 @@ venerium: {
   collidesGround: true
   collidesAir: true
   ammoMultiplier: 4
-  pierce: false
+  pierceBuilding: false
+  pierce: true
+  pierceCap: 1
 
   colorFrom: ffffff
   colorTo: fcf0bd00
@@ -65,22 +67,6 @@ venerium: {
 
   despawnEffect: none
   smokeEffect: none
-
-  pointEffect: {
-    type: MultiEffect
-    effects: [
-      {
-        particles: 1
-        length: 0
-        lifetime: 24
-        region: azimut-hitscan 
-        sizeFrom: 14
-        sizeTo: 0
-        colorFrom: ffffff95
-        colorTo: fcf0bd50
-      }
-    ]
-  }
 
   fragBullets: 14
   fragRandomSpread: 13.5
