@@ -68,6 +68,32 @@ venerium: {
   despawnEffect: none
   smokeEffect: none
 
+  pointEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        particles: 1
+        length: 0
+        lifetime: 24
+        region: azimut-hitscan 
+        sizeFrom: 18
+        sizeTo: 0
+        colorFrom: ffffff95
+        colorTo: fcf0bd50
+      }
+	  {
+        particles: 1
+        length: 0
+        lifetime: 24
+        region: azimut-hitscan 
+        sizeFrom: 13
+        sizeTo: 0
+        colorFrom: ffffff
+        colorTo: fcf0bd
+      }
+    ]
+  }
+
   fragBullets: 14
   fragRandomSpread: 13.5
   fragVelocityMin: 0.3
