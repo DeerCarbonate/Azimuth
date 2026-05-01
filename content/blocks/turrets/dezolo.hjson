@@ -87,7 +87,7 @@ venerium: {
             length: 0
             lifetime: 24
             region: azimut-hitscan
-            sizeFrom: 30
+            sizeFrom: 8
             sizeChangeStart: 18
             sizeTo: 0
         colorFrom: ffffff95
