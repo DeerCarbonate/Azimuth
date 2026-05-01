@@ -46,18 +46,16 @@ ammoTypes: {
 venerium: {
   type: RailBulletType
 
-  length: 278
+  length: 289
   damage: 125
   lifetime: 1
 
   hitColor: fcf0bd
   buildingDamageMultiplier: 0.1
-  pointEffectSpace: 8
+  pointEffectSpace: 18
 
   collidesGround: true
   collidesAir: true
-  pierceCap: 3
-  pierceDamageFactor: 1.0
   ammoMultiplier: 4
 
   colorFrom: ffffff
@@ -77,7 +75,7 @@ venerium: {
         baseLength: 12
         length: 30
         line: true
-        lenFrom: 6
+        lenFrom: 4
         lenTo: 0
         colorFrom: ffffff95
         colorTo: fcf0bd00
@@ -86,12 +84,12 @@ venerium: {
             particles: 1
             length: 0
             lifetime: 24
-            region: azimut-hitscan
-            sizeFrom: 8
+            region: azimut-hitscan 
+            sizeFrom: 12
             sizeChangeStart: 18
             sizeTo: 0
         colorFrom: ffffff95
-        colorTo: fcf0bd00
+        colorTo: fcf0bd50
           }
       {
         type: ParticleEffect
@@ -100,7 +98,7 @@ venerium: {
         baseLength: -4
         length: 9
         cone: 90
-        sizeFrom: 1.5
+        sizeFrom: 0.9
         sizeTo: 0
         colorFrom: fcf0bd00
         colorTo: fcf0bd00
