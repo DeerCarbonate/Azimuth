@@ -2,7 +2,7 @@ speedMultiplier: 0.98
 effectChance: 0.012
 opposites: [reactive]
 affinities: [emp]
-transitionDamage: 60
+transitionDamage: 12
 effect:
       {
         type: ParticleEffect

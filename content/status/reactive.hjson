@@ -1,6 +1,6 @@
 speedMultiplier: 0.92
 effectChance: 0.012
-transitionDamage: 80
+transitionDamage: 12
 affinities: [melting, burning, volatile]
 opposites: [inerted]
 damage: 2

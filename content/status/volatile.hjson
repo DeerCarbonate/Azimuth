@@ -1,5 +1,7 @@
 speedMultiplier: 0.96
 effectChance: 0.012
+transitionDamage: 10
+affinities: [burning, melting]
 effect:
       {
         type: ParticleEffect
