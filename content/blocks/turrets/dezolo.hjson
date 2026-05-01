@@ -74,7 +74,7 @@ venerium: {
       {
         particles: 1
         length: 0
-        lifetime: 24
+        lifetime: 35
         region: azimut-hitscan 
         sizeFrom: 20
         sizeTo: 0
@@ -84,7 +84,7 @@ venerium: {
 	  {
         particles: 1
         length: 0
-        lifetime: 24
+        lifetime: 35
         region: azimut-hitscan 
         sizeFrom: 14
         sizeTo: 0
@@ -173,6 +173,7 @@ venerium: {
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: 35
+		  y: 8
         }
 		{
           followParent: false
@@ -185,6 +186,7 @@ venerium: {
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: -35
+		  y: 8
         }
 	    {
           followParent: false
