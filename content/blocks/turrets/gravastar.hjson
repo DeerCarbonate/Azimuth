@@ -4,6 +4,7 @@ outlineColor: 0c0c12
 health: 4200
 alwaysUnlocked: false
 squareSprite: false
+liquidBoostIntensity: 1.35
 consumes: {
 power: 5.5
 liquids: [

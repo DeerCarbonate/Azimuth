@@ -6,6 +6,7 @@ ammoPerShot: 4
 alwaysUnlocked: false
 squareSprite: false
 liquidCapacity: 250
+liquidBoostIntensity: 1.75
 coolant: {
   type: ConsumeLiquid
   liquid: nitrogen
