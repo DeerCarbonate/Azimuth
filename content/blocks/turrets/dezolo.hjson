@@ -65,7 +65,7 @@ venerium: {
   colorTo: fcf0bd00
   width: 12
 
-  hitEffect: none
+  despawnEffect: none
   smokeEffect: none
 
   pointEffect: {
@@ -122,7 +122,7 @@ venerium: {
     buildingDamageMultiplier: 0.1
   }
 
-  despawnEffect: {
+  hitEffect: {
     type: MultiEffect
     effects: [
 		{
