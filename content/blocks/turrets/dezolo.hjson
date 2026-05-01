@@ -52,11 +52,12 @@ venerium: {
 
   hitColor: fcf0bd
   buildingDamageMultiplier: 0.1
-  pointEffectSpace: 18
+  pointEffectSpace: 28
 
   collidesGround: true
   collidesAir: true
   ammoMultiplier: 4
+  pierceCap: 0
 
   colorFrom: ffffff
   colorTo: fcf0bd00
@@ -85,7 +86,7 @@ venerium: {
             length: 0
             lifetime: 24
             region: azimut-hitscan 
-            sizeFrom: 12
+            sizeFrom: 18
             sizeChangeStart: 18
             sizeTo: 0
         colorFrom: ffffff95
