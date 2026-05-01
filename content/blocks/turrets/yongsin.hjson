@@ -20,7 +20,6 @@ shootSound: mechshoot
 shootSoundVolume: 0.15
 ammoPerShot: 2
 shootY: 7.8
-liquidBoostIntensity: 1.75
 coolant: {
   type: ConsumeLiquid
   liquid: power

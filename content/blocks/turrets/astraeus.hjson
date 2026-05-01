@@ -17,7 +17,6 @@ recoilAmount: 1.8
 rotateSpeed: 2.7
 shootSound: none
 shootSoundVolume: 0.9
-liquidBoostIntensity: 1.4
   ammoTypes: {
 cobalt: {
  type: BasicBulletType

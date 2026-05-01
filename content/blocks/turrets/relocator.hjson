@@ -19,7 +19,6 @@ shootSoundVolume: 0.55
 ammoPerShot: 1
 shootY: -4.6
 inaccuracy: 6
-liquidBoostIntensity: 1.5
 research: {
   parent: "dezolo"
   planet: "gelion"
