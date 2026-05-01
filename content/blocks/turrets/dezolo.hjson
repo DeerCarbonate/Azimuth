@@ -168,8 +168,8 @@ venerium: {
           lifetime: 16
           particles: 1
           cone: 0
-          region: azimut-hitscan
-          sizeFrom: 30
+          region: azimut-shoothitscan
+          sizeFrom: 26
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: 35
@@ -181,8 +181,8 @@ venerium: {
           lifetime: 16
           particles: 1
           cone: 0
-          region: azimut-hitscan
-          sizeFrom: 30
+          region: azimut-shoothitscan
+          sizeFrom: 26
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: -35
@@ -195,7 +195,7 @@ venerium: {
           particles: 1
           cone: 0
           region: azimut-despawn
-          sizeFrom: 25
+          sizeFrom: 35
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: 90
