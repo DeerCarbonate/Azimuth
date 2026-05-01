@@ -10,8 +10,8 @@ category: turret
 range: 175
 requirements: [
   cobalt/90
-  venerium/20
-  geliarin/40
+  venerium/60
+  geliarin/30
 ]
 research: {
   parent: "yongsin"
@@ -51,7 +51,7 @@ ammoTypes: {
     speed: 2.5
     lifetime: 70
     knockback: 0.4
-    status: slow
+    status: inerted
     statusDuration: 80
     damage: 4
     layer: 98
@@ -59,7 +59,7 @@ ammoTypes: {
     fragBullet: {
       type: LiquidBulletType
       liquid: ammonia
-      status: slow
+      status: inerted
       statusDuration: 80
       damage: 1
       puddleSize: 18
@@ -81,7 +81,7 @@ ammoTypes: {
     speed: 2.5
     lifetime: 70
     knockback: 0.6
-    status: slow
+    status: volatile
     statusDuration: 80
     damage: 2
     layer: 98
@@ -89,7 +89,7 @@ ammoTypes: {
     fragBullet: {
       type: LiquidBulletType
       liquid: iterin 
-      status: slow
+      status: volatile
       statusDuration: 80
       damage: 2
       puddleSize: 18
@@ -111,7 +111,7 @@ ammoTypes: {
     speed: 2.5
     lifetime: 70
     knockback: 0.7
-    status: slow
+    status: reactive
     statusDuration: 80
     damage: 7
     layer: 98
@@ -119,7 +119,7 @@ ammoTypes: {
     fragBullet: {
       type: LiquidBulletType
       liquid: cesium
-      status: slow
+      status: reactive
       statusDuration: 80
       damage: 1
       puddleSize: 18
@@ -158,16 +158,16 @@ ammoTypes: {
     speed: 2.5
     lifetime: 70
     knockback: 0.5
-    status: slow
-    statusDuration: 80
+    status: inerted
+    statusDuration: 100
     damage: 4
     layer: 98
     fragBullets: 1
     fragBullet: {
       type: LiquidBulletType
       liquid: swartzite
-      status: slow
-      statusDuration: 80
+      status: inerted
+      statusDuration: 100
       damage: 1
       puddleSize: 18
       despawnHit: true
@@ -188,7 +188,7 @@ ammoTypes: {
     speed: 2.5
     lifetime: 70
     knockback: 0.5
-    status: slow
+    status: volatile
     statusDuration: 80
     damage: 4
     layer: 98
@@ -196,7 +196,7 @@ ammoTypes: {
     fragBullet: {
       type: LiquidBulletType
       liquid: isobutane 
-      status: slow
+      status: volatile
       statusDuration: 80
       damage: 1
       puddleSize: 18
