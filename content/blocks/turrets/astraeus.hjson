@@ -543,11 +543,5 @@ research: {
 	  "zinc/2000"
 	  "compound/1500"
 	  "cobalt/23000"
-]
-objectives: [
-    {
-      type: SectorComplete
-      preset: "eight"
-    }
   ]
 }
