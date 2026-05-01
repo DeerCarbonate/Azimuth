@@ -1,0 +1,21 @@
+speedMultiplier: 0.98
+effectChance: 0.012
+opposites: [reactive]
+affinities: [emp]
+transitionDamage: 60
+effect:
+      {
+        type: ParticleEffect
+        cone: 5.2
+        lifetime: 12
+        baseLength: 0
+        particles: 3
+        length: 35
+        sizeFrom: 1.2
+        sizeTo: 2.6
+        colorFrom: cdcde150
+        colorTo: b0b0b000
+        interp: pow3Out
+        sizeInterp: pow2In
+        followParent: false
+      }

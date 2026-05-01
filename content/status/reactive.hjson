@@ -1,0 +1,22 @@
+speedMultiplier: 0.92
+effectChance: 0.012
+transitionDamage: 80
+affinities: [melting, burning, volatile]
+opposites: [inerted]
+damage: 2
+effect:
+      {
+        type: ParticleEffect
+        cone: 5.2
+        lifetime: 12
+        baseLength: 0
+        particles: 3
+        length: 35
+        sizeFrom: 1.2
+        sizeTo: 2.6
+        colorFrom: beaa9550
+        colorTo: 68574700
+        interp: pow3Out
+        sizeInterp: pow2In
+        followParent: false
+      }
