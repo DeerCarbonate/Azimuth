@@ -169,11 +169,11 @@ venerium: {
           particles: 1
           cone: 0
           region: azimut-hitscan
-          sizeFrom: 45
+          sizeFrom: 30
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: 35
-		  y: 8
+		  length: 8
         }
 		{
           followParent: false
@@ -182,11 +182,11 @@ venerium: {
           particles: 1
           cone: 0
           region: azimut-hitscan
-          sizeFrom: 45
+          sizeFrom: 30
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: -35
-		  y: 8
+		  length: 8
         }
 	    {
           followParent: false
