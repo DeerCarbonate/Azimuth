@@ -1,4 +1,4 @@
-type: GenericCrafter
+type: ConsumeGenerator
 size: 3
 category: crafting
 itemDuration: 120
