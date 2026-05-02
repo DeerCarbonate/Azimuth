@@ -1,0 +1,67 @@
+type: GenericCrafter
+health: 550
+size: 3
+category: power
+rotate: false
+squareSprite: false
+liquidCapacity: 60
+research: {
+  parent: "diphasic-solar-array"
+  planet: gelion
+    "requirements": [
+	  "titanite/60"
+	  "caterium/50"
+	  "platinum/40"
+]
+}
+requirements: [
+  titanite/95
+  caterium/80
+  platinum/55
+]
+consumes: {
+  items: [
+  raw-caterium/2
+  compound/1
+  ]
+}
+hasLiquids: true
+craftTime: 10
+craftEffect: none
+liquidOutputDirections: [1,3]
+outputLiquids: [
+  gas-swartzite/0.1
+  gas-swartzite/0.1
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+  	    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: gas-swartzite
+      padLeft: 0
+      padBottom: 0
+      padTop: 0
+      padRight: 0
+    }
+    {
+      type: DrawCircles
+      color: 9daebf10
+      strokeMax: 2.1
+      radius: 10
+      amount: 1.8
+    }
+	{
+      type: DrawDefault
+    }
+	 {
+      type: DrawRegion
+      suffix: -overlay
+      layer: 1
+    }
+  ]
+}
