@@ -10,6 +10,8 @@
 	health: 900
 	speed: 0.49
 	hitSize: 12.5
+	canBoost: true
+    boostSpeed: 0
  healColor: f0aba488
  stepSound: mechStepSmall
  stepSoundPitch: 0.9
