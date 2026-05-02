@@ -9,9 +9,8 @@ Core.app.addListener({
 
         Groups.unit.each(unit => {
             if (unit.type.name !== UNIT_NAME) return;
-            if (!unit.isFlying()) return;
             unit.disarmed = false;
-            unit.apply(StatusEffects.volatile, 2);
+            unit.apply(StatusEffects.volatile, 2); 
         });
     }
 });
