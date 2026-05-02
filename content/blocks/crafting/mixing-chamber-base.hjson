@@ -9,9 +9,9 @@ research: {
   parent: "platinum-smelter"
   planet: gelion
     "requirements": [
-	  "venerium/55"
-	  "cobalt/50"
-	  "platinum/40"
+  cobalt/95
+  venerium/80
+  platinum/55
 ]
 objectives: [
 {
@@ -27,11 +27,8 @@ requirements: [
 ]
 consumes: {
   liquids: [
-  gas-geliarin/0.955
+   gas-geliarin/0.955
 	]
-  items: [
-  cobalt/3
-  ]
 }
 hasLiquids: true
 craftTime: 190
@@ -47,7 +44,7 @@ drawer: {
     {
       type: DrawLiquidTile
       drawLiquid: gas-geliarin
-      padLeft: 0.3
+      padLeft: 0
       padBottom: 0
       padTop: 3.11
       padRight: 0.3

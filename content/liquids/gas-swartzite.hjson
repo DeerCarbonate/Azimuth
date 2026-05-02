@@ -1,0 +1,13 @@
+name: Gaseous swartzite
+description: f
+heatCapacity: 0
+explosiveness: 0
+temperature: 0.1
+coolant: false
+gas: true
+color: c5dbf100
+flammability: 0
+gasColor: dedede00
+barColor: dedede33
+incinerable: false
+lightColor: ffffff00
