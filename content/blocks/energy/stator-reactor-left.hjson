@@ -1,6 +1,6 @@
 type: ConsumeGenerator
 size: 3
-category: crafting
+category: power
 itemDuration: 120
 squareSprite: false
 liquidCapacity: 60
@@ -12,7 +12,7 @@ requirements: [
   ]
 consumes: {
   liquids: [
-  gas-swartzite/0.099999999
+  gas-swartzite/0.000099999
 	]
 	}
 outputsPower: true,

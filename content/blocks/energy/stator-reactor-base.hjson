@@ -26,7 +26,7 @@ consumes: {
   ]
 }
 hasLiquids: true
-craftTime: 10
+craftTime: 100
 craftEffect: none
 liquidOutputDirections: [2,0]
 outputLiquids: [
