@@ -28,7 +28,7 @@ consumes: {
 hasLiquids: true
 craftTime: 10
 craftEffect: none
-liquidOutputDirections: [1,3]
+liquidOutputDirections: [2,0]
 outputLiquids: [
   gas-swartzite/0.1
   gas-swartzite/0.1
