@@ -1,5 +1,5 @@
 	type: mech
-	flying: true
+	flying: false
 	targetAir: false
 	rotateSpeed: 2
 	omniMove: true
@@ -10,10 +10,6 @@
 	health: 900
 	speed: 0.49
 	hitSize: 12.5
-	canBoost: true
-	flyingLayer: 70
-   boostMultiplier: 0.0
-	riseSpeed: 0.05
     healColor: f0aba488
     stepSound: mechStepSmall
     stepSoundPitch: 0.9
@@ -22,14 +18,6 @@
 	mechFrontSway: 0.8
 	mechStepParticles: true
 	faceTarget: true
-	engines: [
-  {
-    x: 0
-    y: 0
-    rotation: 0
-    radius: 0
-  }
-  ]
 	research: {
 	parent: mech-editor
 	planet: gelion

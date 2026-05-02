@@ -32,4 +32,3 @@ mod.meta.author = "[#c3961f]Deer[#876409]Carbonate";
 
 require("blocks");
 require("weather");
-require("stationAbility");
