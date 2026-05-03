@@ -83,7 +83,7 @@ research: {
     "requirements": [
 	  "cobalt/10000"
 	  "compound/7000"
-	  "zinc/2500"
+	  "zinc/200"
 ]
 objectives: [
     {
