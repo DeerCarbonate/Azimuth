@@ -515,6 +515,30 @@ drawer: {
     -icon
   ]
     parts: [
+        {
+      type: RegionPart,
+      suffix: -lade,
+      under: false,
+      mirror: true,
+      progress: warmup
+      x: 0,
+      y: 0,
+      moveRot: -15
+      moveY: 0
+      moveX: 1.5
+    }
+      {
+      type: RegionPart,
+      suffix: -bnade,
+      under: false,
+      mirror: true,
+      progress: warmup
+      x: 0,
+      y: 0,
+      moveRot: -15
+      moveY: 0
+      moveX: 1.5
+    }
       {
         type: RegionPart
         suffix: -barrel-left
