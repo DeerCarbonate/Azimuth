@@ -517,7 +517,7 @@ drawer: {
     parts: [
         {
       type: RegionPart
-      suffix: -lade
+      suffix: -nade
       under: false
       mirror: true
       progress: warmup
