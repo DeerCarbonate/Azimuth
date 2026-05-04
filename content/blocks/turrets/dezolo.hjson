@@ -297,7 +297,7 @@ titanite: {
   type: RailBulletType
 
   length: 300
-  damage: 85
+  damage: 90
   lifetime: 1
   reloadMultiplier: 1.65
 
@@ -347,13 +347,13 @@ titanite: {
     ]
   }
 
-  fragBullets: 6
+  fragBullets: 2
   fragRandomSpread: 65
   fragBullet: {
   type: RailBulletType
 
   length: 80
-  damage: 10
+  damage: 20
   lifetime: 1
 
   hitColor: 74a481
