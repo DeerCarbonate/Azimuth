@@ -68,6 +68,7 @@ venerium: {
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
+  armorMultiplier: 4
 
   pointEffect: {
     type: MultiEffect
@@ -190,6 +191,7 @@ compound: {
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
+  armorMultiplier: 1.2
 
   pointEffect: {
     type: MultiEffect

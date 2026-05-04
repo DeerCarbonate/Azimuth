@@ -43,6 +43,7 @@ pierceDamageFactor: 0.002
  trailChance:2
  trailInterval:3
  trailRotation:true
+ armorMultiplier: 1.4
       hitEffect: {
         type: ExplosionEffect
         lifetime: 16
@@ -547,7 +548,7 @@ drawer: {
       moveRot: -45
       moveY: 0
       moveX: 1.9
-    }
+      }
       {
         type: RegionPart
         suffix: -barrel-left
