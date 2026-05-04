@@ -521,6 +521,7 @@ drawer: {
       under: false
       mirror: true
       progress: warmup
+	  heatProgress: warmup
       moveRot: -15
       moveY: 0
       moveX: 1.5
@@ -531,9 +532,21 @@ drawer: {
       under: false
       mirror: true
       progress: warmup
+	  heatProgress: warmup
       moveRot: -15
       moveY: 0
       moveX: 1.5
+    }
+	      {
+      type: RegionPart
+      suffix: -anade
+      under: true
+      mirror: true
+      progress: warmup
+	  heatProgress: warmup
+      moveRot: -45
+      moveY: 0
+      moveX: 1.9
     }
       {
         type: RegionPart
@@ -542,6 +555,7 @@ drawer: {
         under: true
 		moveY: -1.6
         progress: recoil
+		heatProgress: warmup
         recoilIndex: 0
       }    
       {
@@ -551,6 +565,7 @@ drawer: {
         under: true
 		moveY: -1.6
         progress: recoil
+		heatProgress: warmup
         recoilIndex: 1
       }  
 	]
