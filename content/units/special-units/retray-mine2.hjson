@@ -132,6 +132,8 @@ shoot: {
 	knockback: 1
 	despawnEffect: none
     smokeEffect: none
+    status: pierced
+	statusDuration: 160
 	  hitEffect: {
 	  followParent: false
 	  length: 0

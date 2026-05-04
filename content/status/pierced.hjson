@@ -1,11 +1,8 @@
-speedMultiplier: 0.92
+speedMultiplier: 0.88
 effectChance: 0.012
-transitionDamage: 20
-affinities: [melting, burning, volatile]
-opposites: [inerted]
-damage: 0.1
-effect:
-      {
+transitionDamage: 30
+affinities: [inerted]
+effect: {
         type: ParticleEffect
         cone: 5.2
         lifetime: 12
@@ -14,9 +11,9 @@ effect:
         length: 35
         sizeFrom: 1.2
         sizeTo: 2.6
-        colorFrom: beaa9550
-        colorTo: 68574700
+        colorFrom: aeff9850
+        colorTo: 8cde7500
         interp: pow3Out
         sizeInterp: pow2In
         followParent: false
-      }
+        }

@@ -311,6 +311,8 @@ titanite: {
   pierceBuilding: false
   pierce: true
   pierceCap: 1
+  status: pierced
+  statusDuration: 280
 
   colorFrom: ffffff
   colorTo: 74a48100
@@ -374,6 +376,8 @@ titanite: {
   smokeEffect: none
   hitEffect: none
   armorMultiplier: 1.8
+  status: pierced
+  statusDuration: 90
 
   pointEffect: {
     type: MultiEffect
