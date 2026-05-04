@@ -1,6 +1,6 @@
 speedMultiplier: 0.88
 effectChance: 0.012
-transitionDamage: 9
+transitionDamage: 5.2
 affinities: [inerted]
 effect: {
         type: ParticleEffect
