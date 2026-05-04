@@ -169,7 +169,7 @@ compound: {
   type: RailBulletType
 
   length: 300
-  damage: 200
+  damage: 190
   lifetime: 1
   reloadMultiplier: 0.8
 
@@ -288,6 +288,133 @@ compound: {
       sizeFrom: 35
       sizeTo: 0
       colorTo: a3a6ae
+      baseRotation: 90
+    }
+  ]
+}
+titanite: {
+  type: RailBulletType
+
+  length: 300
+  damage: 115
+  lifetime: 1
+  reloadMultiplier: 1.6
+
+  hitColor: 74a481
+  buildingDamageMultiplier: 0.1
+  pointEffectSpace: 22
+
+  collidesGround: true
+  collidesAir: true
+  ammoMultiplier: 4
+  pierceBuilding: false
+  pierce: true
+  pierceCap: 1
+
+  colorFrom: ffffff
+  colorTo: 74a48100
+  width: 12
+
+  despawnEffect: none
+  smokeEffect: none
+  hitEffect: none
+  armorMultiplier: 1.2
+
+  pointEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        particles: 1
+        length: 0
+        lifetime: 35
+        region: azimut-hitscan
+        sizeFrom: 20
+        sizeTo: 0
+        colorFrom: 74a48170
+        colorTo: 74a48140
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 35
+        region: azimut-hitscan
+        sizeFrom: 14
+        sizeTo: 0
+        colorFrom: ffffff
+        colorTo: 74a481
+      }
+    ]
+  }
+
+  fragBullets: 6
+  fragRandomSpread: 13.5
+  fragVelocityMin: 0.6
+  fragVelocityMax: 1.8
+  fragLifeMin: 0.5
+  fragLifeMax: 1.8
+  fragBullet: {
+    speed: 5
+    lifetime: 52
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
+    pierceDamageFactor: 0.01
+    drag: 0.02
+    damage: 31
+    sprite: mine-bullet
+    width: 10
+    height: 23
+    shrinkY: 0.25
+    shrinkX: 1
+    frontColor: 74a481
+    backColor: 00000000
+    hitColor: 74a481
+    trailColor: 517258
+    trailWidth: 0.4
+    trailLength: 17
+    despawnEffect: none
+    hitEffect: hitBulletColor
+    buildingDamageMultiplier: 0.1
+    homingPower: 0.12
+    homingRange: 100
+    homingDelay: 0
+  }
+
+  shootEffect: [
+    {
+      followParent: false
+      length: 8
+      lifetime: 16
+      particles: 1
+      cone: 0
+      region: azimut-shoothitscan
+      sizeFrom: 26
+      sizeTo: 0
+      colorTo: 74a481
+      baseRotation: 35
+    }
+    {
+      followParent: false
+      length: 8
+      lifetime: 16
+      particles: 1
+      cone: 0
+      region: azimut-shoothitscan
+      sizeFrom: 26
+      sizeTo: 0
+      colorTo: 74a481
+      baseRotation: -35
+    }
+    {
+      followParent: false
+      length: 0
+      lifetime: 16
+      particles: 1
+      cone: 0
+      region: azimut-despawn
+      sizeFrom: 35
+      sizeTo: 0
+      colorTo: 74a481
       baseRotation: 90
     }
   ]
