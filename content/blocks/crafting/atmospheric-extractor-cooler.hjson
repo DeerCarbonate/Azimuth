@@ -92,8 +92,7 @@ research: {
     "requirements": [
 	  "venerium/5000"
 	  "cobalt/6000"
-	  "zinc/1000"
-	  "caterium/100"
+	  "zinc/100"
 	  "compound/2000"
 ]
 objectives: [
