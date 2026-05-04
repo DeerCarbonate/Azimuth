@@ -296,9 +296,9 @@ titanite: {
   type: RailBulletType
 
   length: 300
-  damage: 115
+  damage: 95
   lifetime: 1
-  reloadMultiplier: 1.6
+  reloadMultiplier: 1.65
 
   hitColor: 74a481
   buildingDamageMultiplier: 0.1
@@ -347,37 +347,59 @@ titanite: {
   }
 
   fragBullets: 6
-  fragRandomSpread: 13.5
-  fragVelocityMin: 0.6
-  fragVelocityMax: 1.8
-  fragLifeMin: 0.5
-  fragLifeMax: 1.8
+  fragRandomSpread: 75
   fragBullet: {
-    speed: 5
-    lifetime: 52
-    pierce: true
-    pierceBuilding: true
-    pierceCap: 4
-    pierceDamageFactor: 0.01
-    drag: 0.02
-    damage: 31
-    sprite: mine-bullet
-    width: 10
-    height: 23
-    shrinkY: 0.25
-    shrinkX: 1
-    frontColor: 74a481
-    backColor: 00000000
-    hitColor: 74a481
-    trailColor: 517258
-    trailWidth: 0.4
-    trailLength: 17
-    despawnEffect: none
-    hitEffect: hitBulletColor
-    buildingDamageMultiplier: 0.1
-    homingPower: 0.12
-    homingRange: 100
-    homingDelay: 0
+  type: RailBulletType
+
+  length: 80
+  damage: 25
+  lifetime: 1
+
+  hitColor: 74a481
+  buildingDamageMultiplier: 0.1
+  pointEffectSpace: 16
+
+  collidesGround: true
+  collidesAir: true
+  pierceBuilding: false
+  pierce: true
+  pierceCap: 1
+
+  colorFrom: ffffff
+  colorTo: 74a48100
+  width: 12
+
+  despawnEffect: none
+  smokeEffect: none
+  hitEffect: none
+  armorMultiplier: 1.2
+
+  pointEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        particles: 1
+        length: 0
+        lifetime: 30
+        region: azimut-hitscan
+        sizeFrom: 16
+        sizeTo: 0
+        colorFrom: 74a48170
+        colorTo: 74a48140
+      }
+      {
+        particles: 1
+        length: 0
+        lifetime: 30
+        region: azimut-hitscan
+        sizeFrom: 10
+        sizeTo: 0
+        colorFrom: ffffff
+        colorTo: 74a481
+      }
+    ]
+  }
+
   }
 
   shootEffect: [
