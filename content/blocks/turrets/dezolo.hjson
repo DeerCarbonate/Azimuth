@@ -191,7 +191,7 @@ compound: {
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
-  armorMultiplier: 1.2
+  armorMultiplier: 1.6
 
   pointEffect: {
     type: MultiEffect
@@ -248,6 +248,7 @@ compound: {
     despawnEffect: none
     hitEffect: hitBulletColor
     buildingDamageMultiplier: 0.1
+    armorMultiplier: 1.6
     homingPower: 0.12
     homingRange: 100
     homingDelay: 0
@@ -296,7 +297,7 @@ titanite: {
   type: RailBulletType
 
   length: 300
-  damage: 95
+  damage: 85
   lifetime: 1
   reloadMultiplier: 1.65
 
@@ -347,12 +348,12 @@ titanite: {
   }
 
   fragBullets: 6
-  fragRandomSpread: 75
+  fragRandomSpread: 65
   fragBullet: {
   type: RailBulletType
 
   length: 80
-  damage: 25
+  damage: 10
   lifetime: 1
 
   hitColor: 74a481
@@ -363,7 +364,7 @@ titanite: {
   collidesAir: true
   pierceBuilding: false
   pierce: true
-  pierceCap: 1
+  pierceCap: 4
 
   colorFrom: ffffff
   colorTo: 74a48100
@@ -372,7 +373,7 @@ titanite: {
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
-  armorMultiplier: 1.2
+  armorMultiplier: 1.8
 
   pointEffect: {
     type: MultiEffect
