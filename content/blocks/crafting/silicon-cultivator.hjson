@@ -55,6 +55,33 @@ drawer: {
       radius: 5
       amount: 1.2
     }
+	{
+type: drawParticles
+color: 3b3b3d70
+alpha: 1
+particleSize: 1.6
+particles: 20
+particleRad: 10
+particleLife: 1400
+}
+{
+type: drawParticles
+color: 60616970
+alpha: 1
+particleSize: 1.2
+particles: 20
+particleRad: 10
+particleLife: 1200
+}
+{
+type: drawParticles
+color: 87899b70
+alpha: 1
+particleSize: 0.7
+particles: 40
+particleRad: 10
+particleLife: 1000
+}
     {
       type: DrawDefault
     }
