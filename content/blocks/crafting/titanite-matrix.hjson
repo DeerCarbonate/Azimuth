@@ -53,11 +53,38 @@ drawer: {
     }
 	{
    type: DrawParticles
-   color: 47685d50
+   color: afc9bc50
    alpha: 0.25
    particleRad: 8
    rotateScl: 25
     }
+		{
+type: drawParticles
+color: "3a5047"
+alpha: 1
+particleSize: 1.8
+particles: 20
+particleRad: 12.5
+particleLife: 600
+}
+{
+type: drawParticles
+color: "517258"
+alpha: 1
+particleSize: 1.4
+particles: 20
+particleRad: 12.5
+particleLife: 400
+}
+{
+type: drawParticles
+color: "74a481"
+alpha: 1
+particleSize: 0.9
+particles: 40
+particleRad: 12.5
+particleLife: 200
+}
    	{
      type: DrawGlowRegion
 	 color: 47685d
