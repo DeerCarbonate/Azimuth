@@ -29,7 +29,7 @@
         x: 0
         y: 0
         targetBuildings:true
-        inaccuracy:80
+        inaccuracy:60
         reload: 50
         shoot: {
             firstShotDelay: 12
