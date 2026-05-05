@@ -42,11 +42,6 @@ drawer: {
 	{
       type: DrawDefault
     }
-	 {
-      type: DrawRegion
-      suffix: -overlay
-      layer: 1
-    }
   ]
 }
         research: {

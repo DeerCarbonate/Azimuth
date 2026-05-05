@@ -60,11 +60,6 @@ drawer: {
 	{
       type: DrawDefault
     }
-	 {
-      type: DrawRegion
-      suffix: -overlay
-      layer: 1
-    }
   ]
 }
 researchCostMultiplier: 0.5
