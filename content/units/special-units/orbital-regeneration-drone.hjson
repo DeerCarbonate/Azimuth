@@ -257,7 +257,7 @@ weapons: [
     shootY: 0
     x: 0
     y: 0.3
-    reload: 30
+    reload: 10
     inaccuracy: 360
 	smokeEffect: none
     shoot: {
@@ -278,10 +278,10 @@ weapons: [
     shootSound: shootAtrax
     bullet: {
       keepVelocity: false
-      lifetime: 16.5
+      lifetime: 24
       damage: 0
       height: 5
-      speed: 8
+      speed: 4
       width: 4
       type: BasicBulletType
       frontColor: ffffff80
@@ -297,7 +297,7 @@ weapons: [
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
-	  homingRange:80
+	  homingRange: 180
       homingPower:0.5
       homingDelay:0.2
       shootEffect: {
