@@ -57,29 +57,29 @@ drawer: {
     }
 	{
 type: drawParticles
-color: "4e505130"
+color: "91a69b"
 alpha: 1
 particleSize: 1.8
 particles: 20
-particleRad: 13.5
+particleRad: 12.5
 particleLife: 1400
 }
 {
 type: drawParticles
-color: "7f819135"
+color: "afc9bc"
 alpha: 1
 particleSize: 1.4
 particles: 20
-particleRad: 13.5
+particleRad: 12.5
 particleLife: 1200
 }
 {
 type: drawParticles
-color: "87899b40"
+color: "d2e7e7"
 alpha: 1
 particleSize: 0.9
 particles: 40
-particleRad: 13.5
+particleRad: 12.5
 particleLife: 1000
 }
     {
