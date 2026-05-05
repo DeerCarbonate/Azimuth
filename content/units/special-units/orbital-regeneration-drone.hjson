@@ -275,7 +275,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: shootAtrax
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 24
