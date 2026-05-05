@@ -43,6 +43,20 @@ drawer: {
       padTop: 0
       padRight: 0
     }
+	{
+   type: DrawParticles
+   color: c6ace850
+   alpha: 0.25
+   particleRad: 8
+   rotateScl: 1
+    }
+    {
+   type: DrawParticles
+   color: ffffff50
+   alpha: 0.25
+   particleRad: 8
+   rotateScl: 1
+    }
     {
       type: DrawCircles
       color: 9daebf10
