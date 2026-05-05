@@ -32,13 +32,31 @@ drawer: {
       padTop: 0
       padRight: 0
     }
-    {
+	    {
       type: DrawCircles
       color: 9daebf10
       strokeMax: 2.1
       radius: 10
       amount: 1.8
     }
+			{
+type: drawParticles
+color: "c6ace8"
+alpha: 0.12
+particleSize: 3
+particles: 15
+particleRad: 12.5
+particleLife: 380
+}
+			{
+type: drawParticles
+color: "ffffff"
+alpha: 0.12
+particleSize: 3
+particles: 15
+particleRad: 12.5
+particleLife: 360
+}
 	{
       type: DrawDefault
     }
