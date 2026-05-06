@@ -66,8 +66,10 @@ interp: exp5Out
 sizeInterp: exp5In
 armorMultiplier: 3
 buildingDamageMultiplier: 0.3
-despawnSound: blockExplodeWall
-hitSound: blockExplodeWall
+despawnSound: unitExplode1
+hitSound: unitExplode1
+despawnSoundVolume: 0.3
+hitSoundVolume: 0.3
 }
 smokeEffect: [{
         type: ParticleEffect
@@ -166,6 +168,8 @@ trailInterval:1.6
 despawnEffect: none
 despawnSound: explosionCrawler
 hitSound: explosionCrawler
+despawnSoundVolume: 0.3
+hitSoundVolume: 0.3
 trailEffect: [
 {
 type: ParticleEffect 
