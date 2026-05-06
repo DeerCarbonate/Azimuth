@@ -16,8 +16,7 @@ targetAir: false
 moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1.25
-shootSound: mechshoot
-shootSoundVolume: 0.15
+shootSound: none
 ammoPerShot: 2
 shootY: 7.8
 coolant: {
@@ -66,10 +65,6 @@ interp: exp5Out
 sizeInterp: exp5In
 armorMultiplier: 3
 buildingDamageMultiplier: 0.3
-despawnSound: explosionCrawler
-hitSound: explosionCrawler
-despawnSoundVolume: 0.3
-hitSoundVolume: 0.3
 }
 smokeEffect: [{
         type: ParticleEffect
@@ -145,6 +140,15 @@ baseRotation: 90
 followParent: true
 rotWithParent: true
 }
+      {
+          type: SoundEffect
+          minPitch: 1
+          maxPitch: 1.1
+          effect: none
+          sound: mechshoot
+          minVolume: 0.9
+          maxVolume: 0.9
+        }
 ]
 }
     raw-caterium: {
@@ -166,10 +170,6 @@ buildingDamageMultiplier: 0.1
 trailChance:1
 trailInterval:1.6
 despawnEffect: none
-despawnSound: explosionCrawler
-hitSound: explosionCrawler
-despawnSoundVolume: 0.3
-hitSoundVolume: 0.3
 trailEffect: [
 {
 type: ParticleEffect 
@@ -305,6 +305,24 @@ baseRotation: 90
 followParent: true
 rotWithParent: true
 }
+      {
+          type: SoundEffect
+          minPitch: 1
+          maxPitch: 1.1
+          effect: none
+          sound: mechshoot
+          minVolume: 0.7
+          maxVolume: 0.7
+        }
+		      {
+          type: SoundEffect
+          minPitch: 1
+          maxPitch: 1.1
+          effect: none
+          sound: shootArtillerySap
+          minVolume: 0.2
+          maxVolume: 0.23
+        }
 ]
 }
 }
