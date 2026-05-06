@@ -66,8 +66,8 @@ interp: exp5Out
 sizeInterp: exp5In
 armorMultiplier: 3
 buildingDamageMultiplier: 0.3
-despawnSound: unitExplode1
-hitSound: unitExplode1
+despawnSound: explosionCrawler
+hitSound: explosionCrawler
 despawnSoundVolume: 0.3
 hitSoundVolume: 0.3
 }
