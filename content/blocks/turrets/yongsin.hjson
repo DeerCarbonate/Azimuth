@@ -319,7 +319,7 @@ rotWithParent: true
           minPitch: 1
           maxPitch: 1.1
           effect: none
-          sound: shootArtillerySap
+          sound: shootElude
           minVolume: 0.2
           maxVolume: 0.23
         }
