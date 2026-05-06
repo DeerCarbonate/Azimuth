@@ -146,8 +146,8 @@ rotWithParent: true
           maxPitch: 1.1
           effect: none
           sound: mechshoot
-          minVolume: 0.9
-          maxVolume: 0.9
+          minVolume: 0.25
+          maxVolume: 0.27
         }
 ]
 }
@@ -311,8 +311,8 @@ rotWithParent: true
           maxPitch: 1.1
           effect: none
           sound: mechshoot
-          minVolume: 0.7
-          maxVolume: 0.7
+          minVolume: 0.3
+          maxVolume: 0.35
         }
 		      {
           type: SoundEffect
