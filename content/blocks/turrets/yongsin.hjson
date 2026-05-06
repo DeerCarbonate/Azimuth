@@ -66,6 +66,8 @@ interp: exp5Out
 sizeInterp: exp5In
 armorMultiplier: 3
 buildingDamageMultiplier: 0.3
+despawnSound: blockExplodeWall
+hitSound: blockExplodeWall
 }
 smokeEffect: [{
         type: ParticleEffect
@@ -162,6 +164,8 @@ buildingDamageMultiplier: 0.1
 trailChance:1
 trailInterval:1.6
 despawnEffect: none
+despawnSound: explosionCrawler
+hitSound: explosionCrawler
 trailEffect: [
 {
 type: ParticleEffect 
