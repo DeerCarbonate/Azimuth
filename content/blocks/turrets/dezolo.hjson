@@ -311,8 +311,8 @@ compound: {
         }
 		{
           type: SoundEffect
-          minPitch: 1.8
-          maxPitch: 2
+          minPitch: 0.2
+          maxPitch: 0.25
           effect: none
           sound: shootSpectre
           minVolume: 0.65
@@ -482,8 +482,8 @@ titanite: {
         }
 		{
           type: SoundEffect
-          minPitch: 1.8
-          maxPitch: 2
+          minPitch: 0.2
+          maxPitch: 0.25
           effect: none
           sound: shootCyclone
           minVolume: 0.65
