@@ -41,7 +41,7 @@ moveWhileCharging: true
 recoilAmount: 1.8
 restitution: 0.04
 rotateSpeed: 2.205
-shootSound: energy-blade-launch
+shootSound: none
 ammoTypes: {
 venerium: {
   type: RailBulletType
@@ -162,6 +162,15 @@ venerium: {
           sizeTo: 0
           colorTo: fcf0bd
 		  baseRotation: 90
+        }
+		      {
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1
+          effect: none
+          sound: energy-blade-launch
+          minVolume: 0.98
+          maxVolume: 1
         }
   ]
 }
@@ -291,6 +300,24 @@ compound: {
       colorTo: a3a6ae
       baseRotation: 90
     }
+		{
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1
+          effect: none
+          sound: energy-blade-launch
+          minVolume: 0.92
+          maxVolume: 0.98
+        }
+		{
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1
+          effect: none
+          sound: shootSpectre
+          minVolume: 0.65
+          maxVolume: 0.67
+        }
   ]
 }
 titanite: {
@@ -444,6 +471,24 @@ titanite: {
       colorTo: 74a481
       baseRotation: 90
     }
+		{
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1
+          effect: none
+          sound: energy-blade-launch
+          minVolume: 0.92
+          maxVolume: 0.98
+        }
+		{
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1
+          effect: none
+          sound: shootCyclone
+          minVolume: 0.65
+          maxVolume: 0.67
+        }
   ]
 }
 }
