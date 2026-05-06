@@ -320,8 +320,8 @@ rotWithParent: true
           maxPitch: 1.1
           effect: none
           sound: shootElude
-          minVolume: 0.2
-          maxVolume: 0.23
+          minVolume: 0.8
+          maxVolume: 0.83
         }
 ]
 }
