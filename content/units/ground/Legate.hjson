@@ -117,7 +117,7 @@ objectives: [
 		fragVelocityMin: 2.3
 		fragVelocityMax: 2.3
 			fragOnHit: true
-	fragBullets: 5
+	fragBullets: 12
     fragLifeMin: 0.3
 	fragLifeMax: 1.8
     fragBullet: { 
@@ -137,7 +137,7 @@ objectives: [
 
     splashDamageRadius: 8
     lightOpacity: 0.5
-    splashDamage: 350
+    splashDamage: 8
     lightRadius: 30
     lifetime: 80
     damage: 20
@@ -204,6 +204,50 @@ smokeEffect: none
     sparkLen: 1
     sparks: 1
 		}
+		{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+          type: ParticleEffect
+          particles: 1
+          length: 120
+          lifetime: 200
+          sizeFrom: 1.5
+          sizeTo: 6.5
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: 5a5a5a25
+          colorTo: cc918b00
+          layer: 100.3
+	}
+}
+		{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+          type: ParticleEffect
+          particles: 1
+          length: 120
+          lifetime: 200
+          sizeFrom: 5.5
+          sizeTo: 1.2
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: 5a5a5a20
+          colorTo: cc918b00
+          layer: 100.3
+	}
+}
 	]
 }
 }
@@ -271,7 +315,7 @@ smokeEffect: none
 		}
 		{
         type: WaveEffect,
-        startDelay: 125,
+        startDelay: 105,
         lifetime: 25,
         sizeFrom: 11,
         sizeTo: 0,
