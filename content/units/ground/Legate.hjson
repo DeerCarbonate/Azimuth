@@ -115,6 +115,9 @@ objectives: [
 		despawnEffect: none
 		scaleLife: false
 	fragBullets: 1
+	fragOnHit: true
+fragOnDespawn: true
+fragOnAbsorb: true 
     fragBullet: { 
         type: BulletType
         spawnUnit: fire-missile
