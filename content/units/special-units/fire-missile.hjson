@@ -13,6 +13,7 @@ physics: false
 hitSize: 0
 flying: true
 createScorch: false
+deathSound: none
 
 envDisabled: 0
 envEnabled: -1
@@ -44,7 +45,7 @@ abilities: [
     maxTargets: 555
     damage: 2
     reload: 15
-    range: 120
+    range: 20
 	color: fff4a3
 	status: burning
 	statusDuration: 70
@@ -63,20 +64,7 @@ abilities: [
 	shootSound: none
 	effectRadius: 0
 	sectors: 0
-	hitEffect: {
-		type: ParticleEffect
-		region: azimut-hollow-circle
-		particles: 1
-		length: 48
-		lifetime: 79
-		interp: circleOut
-		sizeInterp: pow5Out
-		cone: 360
-		colorFrom: FFE066
-		colorTo: FFD24D
-		sizeFrom: 6.8
-		sizeTo:0
-	}
+	hitEffect: none
 }
 ]
 immunities: [ slow, spore-slowed, tarred]
