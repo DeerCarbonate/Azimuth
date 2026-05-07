@@ -118,8 +118,8 @@ objectives: [
 		fragVelocityMax: 2.6
 			fragOnHit: true
 	fragBullets: 11
-    fragLifeMin: 0.2
-	fragLifeMax: 0.65
+    fragLifeMin: 0.09
+	fragLifeMax: 0.28
     fragBullet: { 
     type: ArtilleryBulletType
     collidesTiles: false
