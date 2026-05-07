@@ -137,10 +137,10 @@ objectives: [
 
     splashDamageRadius: 8
     lightOpacity: 0.5
-    splashDamage: 7
+    splashDamage: 350
     lightRadius: 30
     lifetime: 80
-    damage: 350
+    damage: 20
     speed: 0
 	pierceCap: 300
 	pierceArmor: false
