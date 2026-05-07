@@ -97,7 +97,7 @@ objectives: [
         }
 	    ]
 		type: BasicBulletType
-		damage: 28
+		damage: 20
 		lifetime: 29
 		collidesTiles: true
 		keepVelocity: false
@@ -114,24 +114,233 @@ objectives: [
 		splashDamage: 18
 		despawnEffect: none
 		scaleLife: false
-		fragVelocityMin: 8
-		fragVelocityMax: 8
-		hitEffect: {
+		fragVelocityMin: 2.3
+		fragVelocityMax: 2.3
+			fragOnHit: true
+	fragBullets: 38
+    fragLifeMin: 0.3
+	fragLifeMax: 4.1
+    fragBullet: { 
+    type: ArtilleryBulletType
+    collidesTiles: false
+    collidesAir: true
+    despawnShake: 0
+    absorbable: false
+    hittable: false
+    height: 0
+    width: 0
+	trailEffect: none
+	backColor: ffffff00
+	frontColor: ffffff00
+
+    buildingDamageMultiplier: 1.5
+
+    splashDamageRadius: 8
+    lightOpacity: 0.5
+    splashDamage: 7
+    lightRadius: 30
+    lifetime: 80
+    damage: 6
+    speed: 0
+	pierceCap: 300
+	pierceArmor: false
+	
+	suppressionEffectChance: 0
+	
+    smokeEffect: none
+	despawnEffect: none
+	despawnSound: none
+	hitSound: none
+	hitEffect: none
+	fragOnHit: true
+	fragBullets: 1
+    fragLifeMin: 0.01
+	fragLifeMax: 0.26
+			fragBullet: {
+type: ArtilleryBulletType
+absorbable: false
+hittable: false
+speed: 8
+collidesGround: true 
+damage: 1
+backColor: cc918b
+frontColor: cc918b
+trailEffect: none
+backColor: ffffff00
+frontColor: ffffff00
+smokeEffect: none
+	despawnEffect: {
+	    type: MultiEffect,
+    effects: [
+	{
+    type: WaveEffect
+    rotWithParent: true
+    followParent: true
+    lifetime: 42
+    sizeFrom: 0
+    sizeTo: 7
+	strokeFrom: 1
+	strokeTo: 0
+    colorFrom: cc918b95
+    colorTo: cc918b00
+    }
+	{
     type: ExplosionEffect
-    lifetime: 12
-    waveColor: cc918b
-    waveStroke: 1.7
-    waveRad: 12
-    smokeColor: cc918b60
-    smokeSizeBase: 1
-    smokeSize: 3.5
-    smokes: 4
-    sparkColor: cc918b
-    sparkStroke: 1.4
-    sparkRad: 6.5
-    sparkLen: 4
-    sparks: 5
+
+    lifetime: 48
+
+    waveColor: cc918b80
+    waveStroke: 1.4
+    waveRad: 3
+
+    smokeColor: af776580
+    smokeSizeBase: 0
+    smokeSize: 1
+    smokes: 3
+
+    sparkColor: cc918b80
+    sparkStroke: 0.5
+    sparkRad: 3
+    sparkLen: 1
+    sparks: 4
 		}
+	]
+}
+}
+}
+  hitEffect: {
+    type: MultiEffect,
+    effects: [
+		{
+        type: WaveEffect,
+        startDelay: 0,
+        lifetime: 54,
+        sizeFrom: 7,
+        sizeTo: 19,
+        strokeFrom: 2,
+        strokeTo: 1,
+        colorFrom: cc918b40,
+        colorTo: af776500,
+        followParent: true,
+        rotWithParent: true,
+		interp: pow3Out
+		}
+		{
+        type: WaveEffect,
+        startDelay: 0,
+        lifetime: 55,
+        sizeFrom: 0,
+        sizeTo: 34,
+        strokeFrom: 3,
+        strokeTo: 0,
+        colorFrom: cc918b40,
+        colorTo: af776500,
+        followParent: true,
+        rotWithParent: true,
+		interp: pow3Out
+		}
+		{
+					type: ParticleEffect 
+					colorFrom: cc918b50
+					colorTo: af776510
+					particles: 27
+					length: 54
+					baseLength: 3
+					lightScl: 3
+					lightOpacity: 2
+					spin: 0
+					sizeFrom: 4
+					sizeTo: 0
+					offset: 1
+					lifetime: 150
+					interp: pow3Out
+		}
+		{
+        type: WaveEffect,
+        startDelay: 55,
+        lifetime: 70,
+        sizeFrom: 11,
+        sizeTo: 11,
+        strokeFrom: 21,
+        strokeTo: 21,
+        colorFrom: cc918b25,
+        colorTo: cc918b10,
+        followParent: true,
+        rotWithParent: true,
+		interp: pow3Out
+		}
+		{
+        type: WaveEffect,
+        startDelay: 125,
+        lifetime: 25,
+        sizeFrom: 11,
+        sizeTo: 0,
+        strokeFrom: 20,
+        strokeTo: 0,
+        colorFrom: cc918b10,
+        colorTo: cc918b0,
+        followParent: true,
+        rotWithParent: true,
+		interp: pow3Out
+		}
+		{
+        type: WaveEffect,
+        startDelay: 0,
+        lifetime: 55,
+        sizeFrom: 0,
+        sizeTo: 11,
+        strokeFrom: 0,
+        strokeTo: 20,
+        colorFrom: cc918b0,
+        colorTo: cc918b10,
+        followParent: true,
+        rotWithParent: true,
+		interp: pow3Out
+		}
+		{
+        type: WaveEffect,
+        startDelay: 0,
+        lifetime: 65,
+        sizeFrom: 0,
+        sizeTo: 21,
+        strokeFrom: 0,
+        strokeTo: 2,
+        colorFrom: cc918b0,
+        colorTo: cc918b,
+        followParent: true,
+        rotWithParent: true,
+		interp: pow3Out
+		}
+		{
+        type: WaveEffect,
+        startDelay: 55,
+        lifetime: 50,
+        sizeFrom: 21,
+        sizeTo: 21,
+        strokeFrom: 2,
+        strokeTo: 2,
+        colorFrom: cc918b0,
+        colorTo: cc918b,
+        followParent: true,
+        rotWithParent: true,
+	    interp: pow3Out
+		}
+		{
+        type: WaveEffect,
+        startDelay: 105,
+        lifetime: 45,
+        sizeFrom: 21,
+        sizeTo: 0,
+        strokeFrom: 2,
+        strokeTo: 0,
+        colorFrom: cc918b,
+        colorTo: cc918b0,
+        followParent: true,
+        rotWithParent: true,
+		interp: pow3Out
+		}
+	]
+}
 		}
 	}
 ]	
