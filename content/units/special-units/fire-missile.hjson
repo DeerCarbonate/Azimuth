@@ -1,4 +1,4 @@
-type: missile
+type: flying
 template: MissileUnitType
 controller: MissileAI
 isEnemy:false
@@ -69,6 +69,7 @@ abilities: [
 	shootSound: none
 	sectors: 0
 	hitEffect: none
+    effectRadius: 0
 }
 ]
 immunities: [ slow, spore-slowed, tarred]
