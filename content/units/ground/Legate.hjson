@@ -111,15 +111,15 @@ objectives: [
 		trailWidth: 1.6
 		trailLength: 7
 		splashDamageRadius: 8
-		splashDamage: 18
+		splashDamage: 12
 		despawnEffect: none
 		scaleLife: false
 		fragVelocityMin: 2.3
 		fragVelocityMax: 2.3
 			fragOnHit: true
-	fragBullets: 12
-    fragLifeMin: 0.3
-	fragLifeMax: 1.8
+	fragBullets: 11
+    fragLifeMin: 0.2
+	fragLifeMax: 0.9
     fragBullet: { 
     type: ArtilleryBulletType
     collidesTiles: false
@@ -140,7 +140,7 @@ objectives: [
     splashDamage: 8
     lightRadius: 30
     lifetime: 80
-    damage: 20
+    damage: 3
     speed: 0
 	pierceCap: 300
 	pierceArmor: false
@@ -213,8 +213,8 @@ smokeEffect: none
       effect: {
           type: ParticleEffect
           particles: 1
-          length: 120
-          lifetime: 200
+          length: 65
+          lifetime: 400
           sizeFrom: 1.5
           sizeTo: 6.5
           cone: 2
@@ -235,8 +235,8 @@ smokeEffect: none
       effect: {
           type: ParticleEffect
           particles: 1
-          length: 120
-          lifetime: 200
+          length: 60
+          lifetime: 400
           sizeFrom: 5.5
           sizeTo: 1.2
           cone: 2
