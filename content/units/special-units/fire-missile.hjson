@@ -61,7 +61,7 @@ abilities: [
 	sectorRad: 0
 	damageEffect: none
 	shootSound: none
-	effectRadius: none
+	effectRadius: 0
 	sectors: 0
 	hitEffect: {
 		type: ParticleEffect
