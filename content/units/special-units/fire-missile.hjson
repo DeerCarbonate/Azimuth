@@ -74,8 +74,8 @@ abilities: [
       sizeFrom: 0
       sizeTo: 1.7
       sizeInterp: slope
-      colorFrom: a27a7a
-      colorTo: 202125
+      colorFrom: ffc454
+      colorTo: 5a3d3d
 	  particles: 2
 	  lifetime: 40
     }
