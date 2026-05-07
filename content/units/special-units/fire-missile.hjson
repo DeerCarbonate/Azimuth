@@ -73,3 +73,43 @@ abilities: [
 }
 ]
 immunities: [ slow, spore-slowed, tarred]
+weapons: [
+{
+    reload: 135
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 0
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: true
+    }
+}
+]
