@@ -1,7 +1,6 @@
 researchCostMultiplier: 0.5
 size: 3
 outlineColor: 0c0c12
-outlineColor: 0c0c12
 health: 1120
 alwaysUnlocked: false
 squareSprite: false
@@ -48,23 +47,24 @@ collidesTiles: true
 collidesGround: true
 lifetime: 75
 damage: 100
-reloadMultiplier:1.3
-backColor: b9c4d8
-frontColor: ecf4fb
-hitEffect:{
-type: ParticleEffect  
-colorFrom: e5f9f1
-colorTo: b9c4d800
-particles: 12
-length: 50
-spin: 0
-sizeFrom: 2
-sizeTo: 5
-lifetime: 80
-interp: exp5Out
-sizeInterp: exp5In
+reloadMultiplier: 1.3
 armorMultiplier: 2.5
 buildingDamageMultiplier: 0.45
+backColor: b9c4d8
+frontColor: ecf4fb
+hitEffect: {
+  type: ParticleEffect  
+  colorFrom: e5f9f1
+  colorTo: b9c4d800
+  particles: 12
+  length: 50
+  spin: 0
+  sizeFrom: 2
+  sizeTo: 5
+  lifetime: 80
+  interp: exp5Out
+  sizeInterp: exp5In
+}
 smokeEffect: [{
         type: ParticleEffect
         colorFrom: ecf4fb85
@@ -78,25 +78,24 @@ smokeEffect: [{
         sizeFrom: 3.2
         sizeTo: 0.3
 }]
-despawnEffect:{
-type: ParticleEffect  
-colorFrom: e5f9f160
-colorTo: b9c4d830
-particles: 10
-length: 20
-baseLength: 3
-spin: 0
-sizeFrom: 5
-sizeTo: 0 
-lifetime: 69
-interp: exp10Out
+despawnEffect: {
+  type: ParticleEffect  
+  colorFrom: e5f9f160
+  colorTo: b9c4d830
+  particles: 10
+  length: 20
+  baseLength: 3
+  spin: 0
+  sizeFrom: 5
+  sizeTo: 0 
+  lifetime: 69
+  interp: exp10Out
 }
-trailChance:1
-trailInterval:1.6
+trailChance: 1
+trailInterval: 1.6
 trailEffect: [
 {
 type: ParticleEffect 
-lifetime: 60
 colorFrom: e5f9f195
 colorTo: b9c4d800
 particles: 2
@@ -110,15 +109,14 @@ lifetime: 50
 }
 {
 type: ParticleEffect 
-lifetime: 120
 colorFrom: e5f9f195
 colorTo: b9c4d800
-startDelay:2
+startDelay: 2
 particles: 1
 cone: 360
 length: 6
 sizeFrom: 2
-sizeTo:3
+sizeTo: 3
 interp: exp5Out
 sizeInterp: exp5In
 lifetime: 90
@@ -139,15 +137,15 @@ baseRotation: 90
 followParent: true
 rotWithParent: true
 }
-      {
-          type: SoundEffect
-          minPitch: 1
-          maxPitch: 1.1
-          effect: none
-          sound: mechshoot
-          minVolume: 0.25
-          maxVolume: 0.27
-        }
+{
+  type: SoundEffect
+  minPitch: 1
+  maxPitch: 1.1
+  effect: none
+  sound: mechshoot
+  minVolume: 0.25
+  maxVolume: 0.27
+}
 ]
 }
     raw-caterium: {
@@ -166,13 +164,12 @@ fragLifeMin: 1.2
 fragLifeMax: 2
 scaleLife: false
 buildingDamageMultiplier: 0.1
-trailChance:1
-trailInterval:1.6
+trailChance: 1
+trailInterval: 1.6
 despawnEffect: none
 trailEffect: [
 {
 type: ParticleEffect 
-lifetime: 60
 colorFrom: dacaaa95
 colorTo: 95765500
 particles: 2
@@ -186,15 +183,14 @@ lifetime: 35
 }
 {
 type: ParticleEffect 
-lifetime: 120
 colorFrom: dacaaa95
 colorTo: 95765500
-startDelay:2
+startDelay: 2
 particles: 1
 cone: 360
 length: 6
 sizeFrom: 2
-sizeTo:3
+sizeTo: 3
 interp: exp5Out
 sizeInterp: exp5In
 lifetime: 65
@@ -261,8 +257,6 @@ damage: 16
 backColor: 957655
 frontColor: dacaaa
 despawnEffect: none
-collidesTiles: true
-collidesGround: true
 fragBullets: 1
 fragVelocityMin: 1
 fragVelocityMax: 1
@@ -284,8 +278,8 @@ fragBullet: {
       pierceBuilding: false
       pierce: true
       pierceCap: 2
-      hitEffect:none
-      despawnEffect:none
+      hitEffect: none
+      despawnEffect: none
 	  buildingDamageMultiplier: 0.1
 		}
 	}
@@ -304,24 +298,24 @@ baseRotation: 90
 followParent: true
 rotWithParent: true
 }
-      {
-          type: SoundEffect
-          minPitch: 1
-          maxPitch: 1.1
-          effect: none
-          sound: mechshoot
-          minVolume: 0.3
-          maxVolume: 0.35
-        }
-		      {
-          type: SoundEffect
-          minPitch: 1
-          maxPitch: 1.1
-          effect: none
-          sound: shootElude
-          minVolume: 0.95
-          maxVolume: 0.98
-        }
+{
+  type: SoundEffect
+  minPitch: 1
+  maxPitch: 1.1
+  effect: none
+  sound: mechshoot
+  minVolume: 0.3
+  maxVolume: 0.35
+}
+{
+  type: SoundEffect
+  minPitch: 1
+  maxPitch: 1.1
+  effect: none
+  sound: shootElude
+  minVolume: 0.95
+  maxVolume: 0.98
+}
 ]
 }
 }
