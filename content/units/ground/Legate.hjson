@@ -119,7 +119,7 @@ objectives: [
 			fragOnHit: true
 	fragBullets: 5
     fragLifeMin: 0.3
-	fragLifeMax: 4.1
+	fragLifeMax: 1.8
     fragBullet: { 
     type: ArtilleryBulletType
     collidesTiles: false
@@ -140,7 +140,7 @@ objectives: [
     splashDamage: 7
     lightRadius: 30
     lifetime: 80
-    damage: 6
+    damage: 350
     speed: 0
 	pierceCap: 300
 	pierceArmor: false
@@ -320,7 +320,7 @@ smokeEffect: none
         strokeFrom: 2,
         strokeTo: 2,
         colorFrom: cc918b00,
-        colorTo: cc918b,
+        colorTo: cc918b30,
         followParent: true,
         rotWithParent: true,
 	    interp: pow3Out
