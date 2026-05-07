@@ -10,10 +10,11 @@ createWreck: false
 lowAltitude: true
 useUnitCap: false
 physics: false
-hitSize: 0
+hitSize: 0.00007
 flying: true
 createScorch: false
 deathSound: none
+shadow: false
 
 envDisabled: 0
 envEnabled: -1
