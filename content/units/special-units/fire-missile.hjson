@@ -75,7 +75,7 @@ abilities: [
 immunities: [ slow, spore-slowed, tarred]
 weapons: [
 {
-    reload: 135
+    reload: 60
     x: 0
     y: 0
     rotate: false
@@ -87,6 +87,10 @@ weapons: [
     top: false
     alwaysShooting: true
     useAttackRange: false
+		shoot: {
+    type: ShootSpread
+    firstShotDelay: 135
+    }
     bullet: {
         type: BasicBulletType
         damage: 0
