@@ -114,12 +114,12 @@ objectives: [
 		splashDamage: 12
 		despawnEffect: none
 		scaleLife: false
-		fragVelocityMin: 2.6
-		fragVelocityMax: 2.6
+		fragVelocityMin: 0.25
+		fragVelocityMax: 1.4
 			fragOnHit: true
 	fragBullets: 11
     fragLifeMin: 0.09
-	fragLifeMax: 0.28
+	fragLifeMax: 0.9
     fragBullet: { 
     type: ArtilleryBulletType
     collidesTiles: false
