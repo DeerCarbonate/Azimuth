@@ -114,7 +114,6 @@ objectives: [
 		splashDamage: 12
 		despawnEffect: none
 		scaleLife: false
-	    fragOnHit: true
 	fragBullets: 1
     fragBullet: { 
         type: BulletType

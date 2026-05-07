@@ -50,13 +50,13 @@ abilities: [
     maxTargets: 555
     damage: 2
     reload: 15
-    range: 17
+    range: 17.5
 	color: fff4a3
 	status: burning
 	statusDuration: 70
     x: 0
     y: 0
-	sameTypeHealMult: 0.03
+	sameTypeHealMult: 0
     healPercent: 0
 	healEffect: none
 	effect: none
@@ -70,14 +70,14 @@ abilities: [
 	sectors: 0
     effectRadius: 0
 	hitEffect: {
-      particles: 2
-      lifetime: 40
       length: 8
       sizeFrom: 0
       sizeTo: 1.7
       sizeInterp: slope
-      colorFrom: cc918b
-      colorTo: b0b0b0
+      colorFrom: a27a7a
+      colorTo: 202125
+	  particles: 2
+	  lifetime: 40
     }
 }
 ]
