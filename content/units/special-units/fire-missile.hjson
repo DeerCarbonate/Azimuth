@@ -14,7 +14,7 @@ hitSize: 1
 flying: true
 createScorch: false
 deathSound: none
-hasShadow: false
+shadowElevation: -1
 targetable: false
 hittable: false
 
@@ -59,6 +59,7 @@ abilities: [
 	sameTypeHealMult: 0
     healPercent: 0
 	healEffect: none
+	healColor: b0b0b000
 	effect: none
 	continuous: false
 	rotate: false
