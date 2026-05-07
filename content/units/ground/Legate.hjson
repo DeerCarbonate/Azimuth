@@ -97,7 +97,7 @@ objectives: [
         }
 	    ]
 		type: BasicBulletType
-		damage: 20
+		damage: 17
 		lifetime: 29
 		collidesTiles: true
 		keepVelocity: false
@@ -114,144 +114,18 @@ objectives: [
 		splashDamage: 12
 		despawnEffect: none
 		scaleLife: false
-		fragVelocityMin: 0.25
-		fragVelocityMax: 1.4
-			fragOnHit: true
-	fragBullets: 11
-    fragLifeMin: 0.09
-	fragLifeMax: 0.9
-    fragBullet: { 
-    type: ArtilleryBulletType
-    collidesTiles: false
-    collidesAir: true
-    despawnShake: 0
-    absorbable: false
-    hittable: false
-    height: 0
-    width: 0
-	trailEffect: none
-	backColor: ffffff00
-	frontColor: ffffff00
-
-    buildingDamageMultiplier: 1.5
-
-    splashDamageRadius: 8
-    lightOpacity: 0.5
-    splashDamage: 8
-    lightRadius: 30
-    lifetime: 80
-    damage: 3
-    speed: 0
-	pierceCap: 300
-	pierceArmor: false
-	
-	suppressionEffectChance: 0
-	
-    smokeEffect: none
-	despawnEffect: none
-	despawnSound: none
-	hitSound: none
-	hitEffect: none
-	fragOnHit: true
+	    fragOnHit: true
 	fragBullets: 1
-    fragLifeMin: 0.01
-	fragLifeMax: 0.26
-			fragBullet: {
-type: ArtilleryBulletType
-absorbable: false
-hittable: false
-speed: 8
-collidesGround: true 
-damage: 1
-backColor: cc918b
-frontColor: cc918b
-trailEffect: none
-backColor: ffffff00
-frontColor: ffffff00
-smokeEffect: none
-	despawnEffect: {
-	    type: MultiEffect,
-    effects: [
-	{
-    type: WaveEffect
-    rotWithParent: true
-    followParent: true
-    lifetime: 40
-    sizeFrom: 0
-    sizeTo: 7
-	strokeFrom: 1
-	strokeTo: 0
-    colorFrom: cc918b60
-    colorTo: cc918b00
-    }
-	{
-    type: ExplosionEffect
-
-    lifetime: 40
-
-    waveColor: cc918b50
-    waveStroke: 1.7
-    waveRad: 3
-
-    smokeColor: af776550
-    smokeSizeBase: 0
-    smokeSize: 1
-    smokes: 2
-
-    sparkColor: cc918b50
-    sparkStroke: 0.5
-    sparkRad: 3
-    sparkLen: 1
-    sparks: 1
-		}
-		{
-      type: RadialEffect
-      rotationSpacing : 90
-      rotationOffset: 0
-      lengthOffset: 2
-      amount: 1
-      effect: {
-          type: ParticleEffect
-          particles: 1
-          length: 65
-          lifetime: 400
-          sizeFrom: 1.5
-          sizeTo: 6.5
-          cone: 2
-          baseRotation: 73
-          useRotation:false
-          interp: pow5Out
-          colorFrom: 5a5a5a25
-          colorTo: cc918b00
-          layer: 100.3
+    fragBullet: { 
+        type: BulletType
+        spawnUnit: fire-missile
+        keepVelocity: false
+        collidesAir: false
+        speed: 0
+	    collidesGround:false
+		pierce: true
+		pierceBuilding: true
 	}
-}
-		{
-      type: RadialEffect
-      rotationSpacing : 90
-      rotationOffset: 0
-      lengthOffset: 2
-      amount: 1
-      effect: {
-          type: ParticleEffect
-          particles: 1
-          length: 60
-          lifetime: 400
-          sizeFrom: 5.5
-          sizeTo: 1.2
-          cone: 2
-          baseRotation: 73
-          useRotation:false
-          interp: pow5Out
-          colorFrom: 5a5a5a20
-          colorTo: cc918b00
-          layer: 100.3
-	}
-}
-	]
-}
-}
-}
   hitEffect: {
     type: MultiEffect,
     effects: [
