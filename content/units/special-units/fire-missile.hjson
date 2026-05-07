@@ -50,7 +50,7 @@ abilities: [
     maxTargets: 555
     damage: 2
     reload: 15
-    range: 20
+    range: 17
 	color: fff4a3
 	status: burning
 	statusDuration: 70
@@ -68,8 +68,17 @@ abilities: [
 	damageEffect: none
 	shootSound: none
 	sectors: 0
-	hitEffect: none
     effectRadius: 0
+	hitEffect: {
+      particles: 2
+      lifetime: 40
+      length: 8
+      sizeFrom: 0
+      sizeTo: 1.7
+      sizeInterp: slope
+      colorFrom: cc918b
+      colorTo: b0b0b0
+    }
 }
 ]
 immunities: [ slow, spore-slowed, tarred]
