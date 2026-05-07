@@ -63,9 +63,8 @@ sizeTo: 5
 lifetime: 80
 interp: exp5Out
 sizeInterp: exp5In
-armorMultiplier: 3
-buildingDamageMultiplier: 0.3
-}
+armorMultiplier: 2.5
+buildingDamageMultiplier: 0.45
 smokeEffect: [{
         type: ParticleEffect
         colorFrom: ecf4fb85
