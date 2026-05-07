@@ -46,7 +46,7 @@ objectives: [
 		alternate: false
 		rotate: true
 		rotateSpeed: 1.6
-		reload: 63
+		reload: 120
 		inaccuracy: 2
 		shootSound: shootDuo
 		controllable: true
@@ -114,12 +114,12 @@ objectives: [
 		splashDamage: 12
 		despawnEffect: none
 		scaleLife: false
-		fragVelocityMin: 2.3
-		fragVelocityMax: 2.3
+		fragVelocityMin: 2.6
+		fragVelocityMax: 2.6
 			fragOnHit: true
 	fragBullets: 11
     fragLifeMin: 0.2
-	fragLifeMax: 0.9
+	fragLifeMax: 0.65
     fragBullet: { 
     type: ArtilleryBulletType
     collidesTiles: false
@@ -209,7 +209,7 @@ smokeEffect: none
       rotationSpacing : 90
       rotationOffset: 0
       lengthOffset: 2
-      amount: 2
+      amount: 1
       effect: {
           type: ParticleEffect
           particles: 1
@@ -231,7 +231,7 @@ smokeEffect: none
       rotationSpacing : 90
       rotationOffset: 0
       lengthOffset: 2
-      amount: 2
+      amount: 1
       effect: {
           type: ParticleEffect
           particles: 1
