@@ -10,11 +10,13 @@ createWreck: false
 lowAltitude: true
 useUnitCap: false
 physics: false
-hitSize: 0.00007
+hitSize: 1
 flying: true
 createScorch: false
 deathSound: none
-shadow: false
+hasShadow: false
+targetable: false
+hittable: false
 
 envDisabled: 0
 envEnabled: -1
@@ -32,6 +34,8 @@ deathExplosionEffect: none
 loopSoundVolume: 0
 bounded: false
 drawCell: false
+shadowElevation: 0
+drawShields: false
 
 trailColor: fff4a3
 trailLength: 0
@@ -63,7 +67,6 @@ abilities: [
 	sectorRad: 0
 	damageEffect: none
 	shootSound: none
-	effectRadius: 0
 	sectors: 0
 	hitEffect: none
 }
