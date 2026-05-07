@@ -117,7 +117,7 @@ objectives: [
 		fragVelocityMin: 2.3
 		fragVelocityMax: 2.3
 			fragOnHit: true
-	fragBullets: 38
+	fragBullets: 5
     fragLifeMin: 0.3
 	fragLifeMax: 4.1
     fragBullet: { 
@@ -176,33 +176,33 @@ smokeEffect: none
     type: WaveEffect
     rotWithParent: true
     followParent: true
-    lifetime: 42
+    lifetime: 40
     sizeFrom: 0
     sizeTo: 7
 	strokeFrom: 1
 	strokeTo: 0
-    colorFrom: cc918b95
+    colorFrom: cc918b60
     colorTo: cc918b00
     }
 	{
     type: ExplosionEffect
 
-    lifetime: 48
+    lifetime: 40
 
-    waveColor: cc918b80
-    waveStroke: 1.4
+    waveColor: cc918b50
+    waveStroke: 1.7
     waveRad: 3
 
-    smokeColor: af776580
+    smokeColor: af776550
     smokeSizeBase: 0
     smokeSize: 1
-    smokes: 3
+    smokes: 2
 
-    sparkColor: cc918b80
+    sparkColor: cc918b50
     sparkStroke: 0.5
     sparkRad: 3
     sparkLen: 1
-    sparks: 4
+    sparks: 1
 		}
 	]
 }
