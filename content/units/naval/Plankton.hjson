@@ -196,7 +196,7 @@ weapons: [
       height: 8
       width: 6
       lifetime: 53
-      damage: 24
+      damage: 38
       speed: 4.8
       trailColor: 5fac9e
       trailLength: 4
