@@ -48,7 +48,7 @@ collidesGround: true
 lifetime: 75
 damage: 100
 reloadMultiplier: 1.3
-armorMultiplier: 2.5
+armorMultiplier: 1.8
 buildingDamageMultiplier: 0.45
 backColor: b9c4d8
 frontColor: ecf4fb
