@@ -113,7 +113,7 @@ objectives: [
 		splashDamageRadius: 8
 		splashDamage: 12
 		despawnEffect: none
-		scaleLife: false
+		scaleLife: true
 	    fragBullets: 1
 	    fragOnHit: true
         fragOnDespawn: true
