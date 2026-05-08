@@ -68,6 +68,7 @@ abilities: [
 	damageEffect: none
 	shootSound: none
 	sectors: 0
+	effectRadius: 0
 	hitEffect: {
       length: 8
       sizeFrom: 0
@@ -81,3 +82,47 @@ abilities: [
 }
 ]
 immunities: [ slow, wet, spore-slowed, tarred]
+weapons: [
+{
+    reload: 5000
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+		  shoot: {
+    type: ShootSpread
+    firstShotDelay: 135
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 0
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: true
+    }
+}
+]
