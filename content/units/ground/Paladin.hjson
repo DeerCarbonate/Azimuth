@@ -31,7 +31,7 @@ faceTarget: true
 squareShape: true
 drownTimeMultiplier: 3
 		research: {
-  parent: mech-adjuster
+  parent: Marshal
   planet: gelion
     requirements: [
 	  venerium/4000
