@@ -173,7 +173,8 @@ hitEffect: {
       sizeTo: 0
       offset: 1
       lifetime: 110
-      interp: pow3Out
+      interp: circleOut
+      sizeInterp: pow5In
     }
     {
       type: WaveEffect,
