@@ -18,7 +18,7 @@ trailScl: 2.5
 waveTrailX: 5.5
 waveTrailY: -9
 		research: {
-  parent: naval-adjuster
+  parent: Octopus 
   planet: gelion
     requirements: [
 	  cobalt/4000
