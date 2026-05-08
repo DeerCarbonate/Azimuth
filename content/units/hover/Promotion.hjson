@@ -20,7 +20,7 @@ hitSize: 20
 drag: 0.05
 healColor: f0a4d988
 		research: {
-  parent: hover-adjuster
+  parent: Innovation
   planet: gelion
     requirements: [
 	  cobalt/2500
