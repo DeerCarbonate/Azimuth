@@ -47,7 +47,7 @@ abilities: [
     {
     type: EnergyFieldAbility
     maxTargets: 555
-    damage: 2
+    damage: 4
     reload: 15
     range: 17.5
 	color: fff4a3
