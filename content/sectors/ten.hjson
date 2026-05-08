@@ -3,7 +3,7 @@ planet: gelion
 name: ten
 sector: 20
 research: {
-parent: eight
+parent: nine
 requiresUnlock: false
 objectives: [
 hover-adjuster
