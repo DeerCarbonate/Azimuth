@@ -161,9 +161,9 @@ hitEffect: {
     }
     {
       type: ParticleEffect
-      colorFrom: cc918b30
+      colorFrom: cc918b95
       colorTo: af776510
-      particles: 27
+      particles: 20
       length: 54
       baseLength: 3
       lightScl: 3
@@ -172,7 +172,7 @@ hitEffect: {
       sizeFrom: 4
       sizeTo: 0
       offset: 1
-      lifetime: 135
+      lifetime: 110
       interp: pow3Out
     }
     {
