@@ -121,14 +121,9 @@ objectives: [
     fragBullet: { 
     type: BulletType
     spawnUnit: fire-missile
-    keepVelocity: false
-    speed: 0
-    collides: false
-    collidesTiles: false
+	keepVelocity: false
     collidesAir: false
-    collidesGround: false
-    pierce: true
-    pierceBuilding: true
+	speed: 0
 	}
 hitEffect: {
   type: MultiEffect,
