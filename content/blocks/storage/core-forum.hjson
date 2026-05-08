@@ -7,9 +7,9 @@ itemCapacity: 4150
 unitCapModifier: 10
 unitType: adder
 requirements: [
-cobalt/950
-venerium/750
-platinum/650
+cobalt/850
+venerium/650
+platinum/350
 ]
 category: effect
 hasItems: true
