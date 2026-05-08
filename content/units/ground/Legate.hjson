@@ -97,7 +97,7 @@ objectives: [
         }
 	    ]
 		type: BasicBulletType
-		damage: 17
+		damage: 26
 		lifetime: 29
 		collidesTiles: true
 		keepVelocity: false
