@@ -32,3 +32,17 @@ mod.meta.author = "[#c3961f]Deer[#876409]Carbonate";
 
 require("blocks");
 require("weather");
+let legateBullet = null;
+
+Core.app.post(() => {
+    const legate = Vars.content.unit("legate");
+    if(legate && legate.weapons.size > 0){
+        legateBullet = legate.weapons.get(0).bullet;
+    }
+});
+
+Events.on(BulletHitBuildingEvent, (e) => {
+    if(legateBullet && e.bullet.type === legateBullet){
+        Vars.content.unit("fire-missile").spawn(e.bullet.team, e.bullet.x, e.bullet.y);
+    }
+});

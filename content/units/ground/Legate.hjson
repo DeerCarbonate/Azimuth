@@ -115,7 +115,7 @@ objectives: [
 		despawnEffect: none
 		scaleLife: false
 	    fragBullets: 1
-	    fragOnHit: true
+	    fragOnHit: false
         fragOnDespawn: true
         fragOnAbsorb: true 
     fragBullet: { 
