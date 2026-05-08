@@ -23,7 +23,6 @@ envEnabled: -1
 hidden: true
 
 missileAccelTime: 0
-lifetime: 135
 rotateSpeed: 0
 fogRadius: 0
 maxRange: 0
@@ -82,10 +81,10 @@ abilities: [
     }
 }
 ]
-immunities: [ slow, spore-slowed, tarred]
+immunities: [ slow, wet, spore-slowed, tarred]
 weapons: [
 {
-    reload: 60
+    reload: 695948473839
     x: 0
     y: 0
     rotate: false
