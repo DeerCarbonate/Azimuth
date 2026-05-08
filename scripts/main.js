@@ -32,12 +32,17 @@ mod.meta.author = "[#c3961f]Deer[#876409]Carbonate";
 
 require("blocks");
 require("weather");
+const BulletHitBuildingEvent = mindustry.game.EventType.BulletHitBuildingEvent;
+
 let legateBullet = null;
 
 Core.app.post(() => {
     const legate = Vars.content.unit("legate");
     if(legate && legate.weapons.size > 0){
         legateBullet = legate.weapons.get(0).bullet;
+        Log.info("[AZIMUTH] legateBullet loaded: " + legateBullet);
+    } else {
+        Log.warn("[AZIMUTH] legate unit not found or has no weapons!");
     }
 });
 
