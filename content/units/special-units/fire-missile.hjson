@@ -68,6 +68,7 @@ abilities: [
 	damageEffect: none
 	shootSound: none
 	sectors: 0
+    effectRadius: 0
 	hitEffect: {
       length: 8
       sizeFrom: 0
