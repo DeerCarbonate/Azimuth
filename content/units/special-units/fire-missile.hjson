@@ -4,8 +4,8 @@ controller: MissileAI
 isEnemy:false
 playerControllable: false
 allowedInPayloads: false
-outlineColor: 1b1c25
-outlineRadius: 3
+outlineColor: 1b1c2500
+outlineRadius: 0
 createWreck: false
 lowAltitude: true
 useUnitCap: false
@@ -17,6 +17,7 @@ deathSound: none
 shadowElevation: -1
 targetable: false
 hittable: false
+deathShake: 0
 
 envDisabled: 0
 envEnabled: -1
@@ -26,14 +27,13 @@ missileAccelTime: 0
 rotateSpeed: 0
 fogRadius: 0
 maxRange: 0
-health: 20000
+health: 100
 speed: 0
-armor: 50
+armor: 0
 deathExplosionEffect: none
 loopSoundVolume: 0
 bounded: false
 drawCell: false
-shadowElevation: 0
 drawShields: false
 
 trailColor: fff4a3
@@ -84,7 +84,7 @@ abilities: [
 immunities: [ slow, wet, spore-slowed, tarred]
 weapons: [
 {
-    reload: 695948473839
+    reload: 5000
     x: 0
     y: 0
     rotate: false
@@ -96,7 +96,7 @@ weapons: [
     top: false
     alwaysShooting: true
     useAttackRange: false
-		shoot: {
+		  shoot: {
     type: ShootSpread
     firstShotDelay: 135
     }
