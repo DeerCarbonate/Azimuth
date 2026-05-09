@@ -191,8 +191,8 @@ category: turret
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 0.95
-    growY: 0.95
+    growX: 0.75
+    growY: 0.75
     y: 11
     weaponIndex: 0
   }
@@ -207,8 +207,8 @@ category: turret
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 0.7
-    growY: 0.7
+    growX: 0.5
+    growY: 0.5
     y: 11
     weaponIndex: 0
   }
