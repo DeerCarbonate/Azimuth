@@ -99,7 +99,7 @@ objectives: [
 	    ]
 shootType: {
     type: ContinuousFlameBulletType
-    drawSize: 190
+    drawSize: 170
     hitShake: 0
     length: 190
     width: 4
@@ -113,8 +113,8 @@ shootType: {
  pierceCap: 3
 	
     lifetime: 12
-    damage: 160
-    armorMultiplier: 1.5
+    damage: 190
+    armorMultiplier: 1.2
 	laserAbsorb:true
 }
 shoot: {
