@@ -136,7 +136,6 @@ category: turret
       interp: slope
         }
 	}
-	    parts: [
       {
         type: FlarePart
         sides: 2
@@ -150,6 +149,5 @@ category: turret
         layer: 101
         weaponIndex: 0
       }
-    ]
   ]
 }
