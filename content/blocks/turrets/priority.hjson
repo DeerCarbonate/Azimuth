@@ -59,27 +59,27 @@ objectives: [
           {
           followParent: false
           length: 0
-          lifetime: 13
+          lifetime: 14
           particles: 1
           cone: 0
           region: azimut-shoothitscan
-          sizeFrom: 26
+          sizeFrom: 28
           sizeTo: 0
           colorTo: fccabd
-		  baseRotation: -35
+		  baseRotation: -65
 		  length: 8
         }
 		{
           followParent: false
           length: 0
-          lifetime: 13
+          lifetime: 14
           particles: 1
           cone: 0
           region: azimut-shoothitscan
-          sizeFrom: 26
+          sizeFrom: 28
           sizeTo: 0
           colorTo: fccabd
-		  baseRotation: 35
+		  baseRotation: 65
 		  length: 8
         }
 		]
