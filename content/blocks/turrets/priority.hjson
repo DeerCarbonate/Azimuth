@@ -11,7 +11,7 @@ reload: 220
 range: 210
 targetAir: true
 moveWhileCharging: true
-shootY: 11
+shootY: 10
 targetGround: true
 recoilAmount: 1.8
 restitution: 0.04
@@ -127,18 +127,14 @@ category: turret
   color2: fccabd50
   y: 11
   followRotation: true
-  stroke: 3.2
+  stroke: 3.7
   radius: 0
-  radiusTo: 22
+  radiusTo: 28
   rotation: 0
   rotMove: 0
   moveY: 20
-  progress: {
-      type: charge
-      op: curve
-      interp: slope
-        }
-	}
+  progress: charge
+  } 
 			{
   type: FlarePart
   color1: c3686820
@@ -211,6 +207,56 @@ category: turret
     growY: 0.5
     y: 11
     weaponIndex: 0
+  }
+    {
+    type: EffectSpawnerPart
+    x: 3.7
+    y: -12.5
+    effectRot: 280
+    debugDraw: true
+    mirror: true
+    effectChance: 3.6
+    progress: {
+      type: recoil
+      ops: [
+        {
+          op: curve
+          interp: pow2Out
+        }
+      ]
+    }
+    effect: [
+      {
+        type: ParticleEffect
+        cone: 5.2
+        lifetime: 14
+        baseLength: 0
+        particles: 2
+        length: 25
+        sizeFrom: 0
+        sizeTo: 2.2
+        colorFrom: fccabd08
+        colorTo: b0b0b000
+        interp: pow3Out
+        sizeInterp: pow2In
+        followParent: false
+      }
+      {
+        type: ParticleEffect
+        cone: 5.2
+        lifetime: 23
+        baseLength: 0
+        particles: 4
+        length: 35
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: fccabd08
+        colorTo: b0b0b000
+        interp: pow3Out
+        sizeInterp: pow2Out
+        followParent: false
+      }
+    ]
   }
   ]
 }
