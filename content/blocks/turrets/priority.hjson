@@ -55,6 +55,32 @@ objectives: [
 					offset: 1
 					lifetime: 21
   }
+          {
+          followParent: false
+          length: 0
+          lifetime: 13
+          particles: 1
+          cone: 0
+          region: azimut-shoothitscan
+          sizeFrom: 26
+          sizeTo: 0
+          colorTo: fccabd
+		  baseRotation: -35
+		  length: 8
+        }
+		{
+          followParent: false
+          length: 0
+          lifetime: 13
+          particles: 1
+          cone: 0
+          region: azimut-shoothitscan
+          sizeFrom: 26
+          sizeTo: 0
+          colorTo: fccabd
+		  baseRotation: 35
+		  length: 8
+        }
   			      smokeEffect: [{
         type: ParticleEffect
         colorFrom: d8868680
