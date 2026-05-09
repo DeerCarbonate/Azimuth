@@ -8,7 +8,7 @@ shootCone: 9
 squareSprite: false
 recoil: 3
 reload: 220
-range: 195
+range: 185
 targetAir: true
 moveWhileCharging: true
 shootY: 10
@@ -71,13 +71,13 @@ objectives: [
 	    ]
 shootType: {
     type: ContinuousFlameBulletType
-    drawSize: 200
+    drawSize: 190
     hitShake: 0
-    length: 200
+    length: 190
     width: 4
 	hitColor:ec7458
 	colors:[ec745840,ec74585570,ec74585590,fccabd,ffffff]
-	flareColor: fccabd00
+	flareColor: fccabd
     ammoMultiplier: 1
 	buildingDamageMultiplier: 0.3
 	pierceArmor: false
@@ -87,46 +87,7 @@ shootType: {
     lifetime: 12
     damage: 160
     armorMultiplier: 1.5
-	
 	laserAbsorb:true
-		fragBullets: 4
-        fragRandomSpread: 12
-        fragOffsetMin: 3
-        fragOffsetMax: 6
-        fragVelocityMin: 4.2
-        fragVelocityMax: 7.5
-		  fragBullet: {
-          speed: 5
-          lifetime: 10
-          drag: -0.002
-          damage: 11
-          pierce: false
-          pierceBuilding: false
-          pierceCap: 0
-          hittable: true
-          absorbable: true
-          reflectable: true
-          sprite: circle-bullet
-          width: 4
-          height: 17
-          shrinkY: 1
-          frontColor: ffffff
-          backColor: c36868
-          trailColor: c36868
-          trailLength: 9
-          trailWidth: 0.8
-          despawnEffect: none
-          hitEffect: {
-            particles: 3
-            length: 6
-            lifetime: 25
-            sizeFrom: 3
-            sizeTo: 0
-            colorFrom: ffffff
-            colorTo: c36868
-            sizeInterp: pow2In
-          }
-}
 }
 shoot: {
   firstShotDelay: 25
