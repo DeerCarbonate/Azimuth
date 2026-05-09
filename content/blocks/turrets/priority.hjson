@@ -116,7 +116,7 @@ category: turret
 	  x: 0,
 	  y: 0,
 	  moveY: -3.2,
-      heatColor: fccabd10,
+      heatColor: fccabd35,
     }
 		{
   type: FlarePart
