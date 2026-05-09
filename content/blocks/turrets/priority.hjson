@@ -111,12 +111,12 @@ category: turret
       suffix: -middle,
       under: false,
       mirror: false,
-      heatProgress: heat,
+      heatProgress: warmup,
       progress: recoil,
 	  x: 0,
 	  y: 0,
 	  moveY: -3.2,
-      heatColor: ff4500,
+      heatColor: fccabd,
       heatLayer: 1,
     }
 		{
