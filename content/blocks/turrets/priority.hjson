@@ -11,6 +11,7 @@ reload: 220
 range: 210
 targetAir: true
 moveWhileCharging: true
+shootY: 11
 targetGround: true
 recoilAmount: 1.8
 restitution: 0.04
@@ -19,6 +20,8 @@ shootSound: mechsshoot
 shootSoundVolume: 0.5
 maxHeatEfficiency: 2
 heatRequirement: 6
+loopSound: loopFire
+loopSoundVolume: 1.1
 research: {
   parent: "yongsin"
   planet: "gelion"
@@ -177,5 +180,37 @@ category: turret
         layer: 101
         weaponIndex: 0
       }
+	  	  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+	under: false
+    layer: 60
+    color: cc918b03
+    growProgress: warmup
+    xScl: 0
+    yScl: 0
+    growX: 18
+    growY: 18
+    y: 11
+    weaponIndex: 0
+  }
+  	  	  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+	under: false
+    layer: 60
+    color: cc918b05
+    growProgress: warmup
+    xScl: 0
+    yScl: 0
+    growX: 13
+    growY: 13
+    y: 11
+    weaponIndex: 0
+  }
   ]
 }
