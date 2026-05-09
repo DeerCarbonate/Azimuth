@@ -7,7 +7,7 @@
 	outlineRadius: 3
 	alwaysUnlocked: false
 	armor: 6
-	health: 900
+	health: 910
 	speed: 0.49
 	hitSize: 12.5
     healColor: f0aba488
@@ -18,6 +18,7 @@
 	mechFrontSway: 0.8
 	mechStepParticles: true
 	faceTarget: true
+	immunities: [burning]
 	research: {
 	parent: mech-editor
 	planet: gelion

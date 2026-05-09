@@ -47,9 +47,9 @@ abilities: [
     {
     type: EnergyFieldAbility
     maxTargets: 555
-    damage: 4
+    damage: 5
     reload: 15
-    range: 17.5
+    range: 18
 	color: fff4a3
 	status: burning
 	statusDuration: 70
