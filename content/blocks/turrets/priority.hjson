@@ -210,12 +210,12 @@ category: turret
   }
     {
     type: EffectSpawnerPart
-    x: 3.7
-    y: -12.5
-    effectRot: 280
+    x: 5.1
+    y: -10.5
+    effectRot: 255
     debugDraw: true
     mirror: true
-    effectChance: 3.6
+    effectChance: 3.6 
     progress: {
       type: recoil
       ops: [
