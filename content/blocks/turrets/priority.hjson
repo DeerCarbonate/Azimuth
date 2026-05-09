@@ -93,10 +93,10 @@ shootType: {
         fragRandomSpread: 12
         fragOffsetMin: 3
         fragOffsetMax: 6
-        fragVelocityMin: 0.7
-        fragVelocityMax: 0.9
+        fragVelocityMin: 4.2
+        fragVelocityMax: 7.5
 		  fragBullet: {
-          speed: 3
+          speed: 5
           lifetime: 10
           drag: -0.002
           damage: 11
@@ -113,7 +113,7 @@ shootType: {
           frontColor: ffffff
           backColor: c36868
           trailColor: c36868
-          trailLength: 15
+          trailLength: 9
           trailWidth: 0.8
           despawnEffect: none
           hitEffect: {
