@@ -91,7 +91,7 @@ shootType: {
 	laserAbsorb:true
 }
 shoot: {
-  firstShotDelay: 55
+  firstShotDelay: 25
 }
 requirements: [
   cobalt/100,
