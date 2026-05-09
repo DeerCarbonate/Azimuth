@@ -265,7 +265,7 @@ category: turret
     effectRot: 225
     debugDraw: true
     mirror: true
-    effectChance: 3.6 
+    effectChance: 1.5
     progress: {
       type: recoil
       ops: [
@@ -282,13 +282,13 @@ category: turret
 		line: true
         lifetime: 23
         baseLength: 0
-        particles: 4
+        particles: 1
 	    length: 90
-		strokeFrom: 4
+		strokeFrom: 3
 	    strokeTo: 0
-	    lenFrom: 8
+	    lenFrom: 5
 		lenTo: 0
-        colorFrom: fccabd08
+        colorFrom: fccabd30
         colorTo: b0b0b000
 		interp: circleOut
         sizeInterp: pow5Out
