@@ -135,6 +135,20 @@ category: turret
   moveY: 20
   progress: charge
   } 
+  		{
+  type: FlarePart
+  color1: c3686820
+  color2: fccabd40
+  y: 11
+  followRotation: true
+  stroke: 3.7
+  radius: 0
+  radiusTo: 38
+  rotation: 0
+  rotMove: 0
+  moveY: 20
+  progress: charge
+  } 
 			{
   type: FlarePart
   color1: c3686820
