@@ -141,24 +141,32 @@ category: turret
         sides: 2
         color1: fccabd
         radius: 0
-        radiusTo: 18
+        radiusTo: 34
         stroke: 2
         innerRadScl: 0.60
         y: 12
-        progress: charge
+  progress: {
+      type: charge
+      op: curve
+      interp: slope
+        }
         layer: 101
         weaponIndex: 0
       }
 	  {
         type: FlarePart
         sides: 2
-        color1: fccabd10
+        color1: fccabd15
         radius: 0
-        radiusTo: 20
+        radiusTo: 38
         stroke: 3
         innerRadScl: 0.60
         y: 12
-        progress: charge
+  progress: {
+      type: charge
+      op: curve
+      interp: slope
+        }
         layer: 101
         weaponIndex: 0
       }
