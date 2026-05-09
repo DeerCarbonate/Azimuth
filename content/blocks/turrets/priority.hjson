@@ -136,6 +136,24 @@ category: turret
       interp: slope
         }
 	}
+			{
+  type: FlarePart
+  color1: c3686820
+  color2: fccabd50
+  y: 12
+  followRotation: true
+  stroke: 6
+  radius: 0
+  radiusTo: 30
+  rotation: 0
+  rotMove: 20
+  moveY: 20
+  progress: {
+      type: charge
+      op: curve
+      interp: slope
+        }
+	}
       {
         type: FlarePart
         sides: 2
