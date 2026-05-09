@@ -8,7 +8,7 @@ shootCone: 9
 squareSprite: false
 recoil: 3
 reload: 220
-range: 210
+range: 195
 targetAir: true
 moveWhileCharging: true
 shootY: 10
@@ -71,13 +71,13 @@ objectives: [
 	    ]
 shootType: {
     type: ContinuousFlameBulletType
-    drawSize: 230
+    drawSize: 200
     hitShake: 0
-    length: 230
+    length: 200
     width: 4
 	hitColor:ec7458
 	colors:[ec745840,ec74585570,ec74585590,fccabd,ffffff]
-	flareColor: fccabd
+	flareColor: fccabd00
     ammoMultiplier: 1
 	buildingDamageMultiplier: 0.3
 	pierceArmor: false
@@ -89,6 +89,44 @@ shootType: {
     armorMultiplier: 1.5
 	
 	laserAbsorb:true
+		fragBullets: 4
+        fragRandomSpread: 12
+        fragOffsetMin: 3
+        fragOffsetMax: 6
+        fragVelocityMin: 0.7
+        fragVelocityMax: 0.9
+		  fragBullet: {
+          speed: 3
+          lifetime: 10
+          drag: -0.002
+          damage: 11
+          pierce: false
+          pierceBuilding: false
+          pierceCap: 0
+          hittable: true
+          absorbable: true
+          reflectable: true
+          sprite: circle-bullet
+          width: 4
+          height: 17
+          shrinkY: 1
+          frontColor: ffffff
+          backColor: c36868
+          trailColor: c36868
+          trailLength: 15
+          trailWidth: 0.8
+          despawnEffect: none
+          hitEffect: {
+            particles: 3
+            length: 6
+            lifetime: 25
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: ffffff
+            colorTo: c36868
+            sizeInterp: pow2In
+          }
+}
 }
 shoot: {
   firstShotDelay: 25
@@ -221,94 +259,6 @@ category: turret
     growY: 0.5
     y: 11
     weaponIndex: 0
-  }
-    {
-    type: EffectSpawnerPart
-    x: 6.3
-    y: -9.3
-    effectRot: 225
-    debugDraw: true
-    mirror: true
-    effectChance: 3.6 
-    progress: {
-      type: recoil
-      ops: [
-        {
-          op: curve
-          interp: pow2Out
-        }
-      ]
-    }
-    effect: [
-      {
-        type: ParticleEffect
-        cone: 5.2
-        lifetime: 14
-        baseLength: 0
-        particles: 2
-        length: 25
-        sizeFrom: 0
-        sizeTo: 2.2
-        colorFrom: fccabd08
-        colorTo: b0b0b000
-        interp: pow3Out
-        sizeInterp: pow2In
-        followParent: false
-      }
-      {
-        type: ParticleEffect
-        cone: 5.2
-        lifetime: 23
-        baseLength: 0
-        particles: 4
-        length: 35
-        sizeFrom: 1.5
-        sizeTo: 0
-        colorFrom: fccabd08
-        colorTo: b0b0b000
-        interp: pow3Out
-        sizeInterp: pow2Out
-        followParent: false
-      }
-    ]
-  }
-      {
-    type: EffectSpawnerPart
-    x: 6.3
-    y: -9.3
-    effectRot: 225
-    debugDraw: true
-    mirror: true
-    effectChance: 0.6
-    progress: {
-      type: recoil
-      ops: [
-        {
-          op: curve
-          interp: pow2Out
-        }
-      ]
-    }
-    effect: [
-      {
-        type: ParticleEffect
-        cone: 7.4
-		line: true
-        lifetime: 23
-        baseLength: 0
-        particles: 1
-	    length: 32
-		strokeFrom: 2
-	    strokeTo: 0
-	    lenFrom: 4
-		lenTo: 0
-        colorFrom: fccabd30
-        colorTo: b0b0b000
-		interp: circleOut
-        sizeInterp: pow5Out
-        followParent: false
-      }
-    ]
   }
   ]
 }
