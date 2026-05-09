@@ -111,12 +111,12 @@ category: turret
       suffix: -middle,
       under: false,
       mirror: false,
-      heatProgress: warmup,
+      heatProgress: heat,
       progress: recoil,
 	  x: 0,
 	  y: 0,
 	  moveY: -3.2,
-      heatColor: fccabd35,
+      heatColor: fccabd40,
     }
 		{
   type: FlarePart
