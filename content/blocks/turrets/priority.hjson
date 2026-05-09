@@ -7,7 +7,7 @@ cooldown: 1200
 shootCone: 9
 squareSprite: false
 recoil: 3
-reload: 130
+reload: 300
 range: 210
 targetAir: true
 moveWhileCharging: true
@@ -17,6 +17,7 @@ restitution: 0.04
 rotateSpeed: 2.205
 shootSound: mechsshoot
 shootSoundVolume: 0.5
+maxEfficiency: 2
 heatRequirement: 6
 research: {
   parent: "yongsin"
