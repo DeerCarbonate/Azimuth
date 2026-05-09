@@ -146,13 +146,10 @@ category: turret
   radius: 0
   radiusTo: 30
   rotation: 0
-  rotMove: 20
+  rotMove: 0
   moveY: 20
-  progress: {
-      type: charge
-      op: curve
-      interp: slope
-        }
+  progress: warmup
+  weaponIndex: 0
 	}
       {
         type: FlarePart
@@ -163,14 +160,9 @@ category: turret
         stroke: 2
         innerRadScl: 0.60
         y: 12
-  progress: {
-      type: charge
-      op: curve
-      interp: slope
-        }
-        layer: 101
+		progress: warmup
+		layer: 101
         weaponIndex: 0
-      }
 	  {
         type: FlarePart
         sides: 2
@@ -180,11 +172,7 @@ category: turret
         stroke: 3
         innerRadScl: 0.60
         y: 12
-  progress: {
-      type: charge
-      op: curve
-      interp: slope
-        }
+		progress: warmup
         layer: 101
         weaponIndex: 0
       }
