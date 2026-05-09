@@ -7,7 +7,7 @@ cooldown: 1200
 shootCone: 9
 squareSprite: false
 recoil: 3
-reload: 300
+reload: 220
 range: 210
 targetAir: true
 moveWhileCharging: true
@@ -17,7 +17,7 @@ restitution: 0.04
 rotateSpeed: 2.205
 shootSound: mechsshoot
 shootSoundVolume: 0.5
-maxEfficiency: 2
+maxHeatEfficiency: 2
 heatRequirement: 6
 research: {
   parent: "yongsin"
@@ -82,7 +82,8 @@ shootType: {
  pierceCap: 3
 	
     lifetime: 12
-    damage: 112
+    damage: 160
+    armorMultiplier: 1.5
 	
 	laserAbsorb:true
 }
