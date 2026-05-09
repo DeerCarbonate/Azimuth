@@ -111,7 +111,7 @@ category: turret
       suffix: -middle,
       under: false,
       mirror: false,
-      heatProgress: heat,
+      heatProgress: warmup,
       progress: recoil,
 	  x: 0,
 	  y: 0,
@@ -136,5 +136,20 @@ category: turret
       interp: slope
         }
 	}
+	    parts: [
+      {
+        type: FlarePart
+        sides: 2
+        color1: fccabd
+        radius: 0
+        radiusTo: 6
+        stroke: 18
+        innerRadScl: 0.60
+        y: 3
+        progress: charge
+        layer: 101
+        weaponIndex: 0
+      }
+    ]
   ]
 }
