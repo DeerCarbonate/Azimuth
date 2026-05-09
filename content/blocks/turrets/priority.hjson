@@ -163,6 +163,7 @@ category: turret
 		progress: warmup
 		layer: 101
         weaponIndex: 0
+      }
 	  {
         type: FlarePart
         sides: 2
