@@ -21,7 +21,7 @@ shootSoundVolume: 0.5
 maxHeatEfficiency: 2
 heatRequirement: 6
 loopSound: loopFire
-loopSoundVolume: 0.7
+loopSoundVolume: 0.57
 research: {
   parent: "yongsin"
   planet: "gelion"
@@ -91,7 +91,7 @@ shootType: {
 	laserAbsorb:true
 }
 shoot: {
-  firstShotDelay: 30
+  firstShotDelay: 55
 }
 requirements: [
   cobalt/100,
@@ -129,9 +129,9 @@ category: turret
   followRotation: true
   stroke: 6
   radius: 0
-  radiusTo: 45
+  radiusTo: 25
   rotation: 0
-  rotMove: 45
+  rotMove: 0
   moveY: 20
   progress: {
       type: charge
@@ -187,12 +187,12 @@ category: turret
     outline: false
 	under: false
     layer: 60
-    color: cc918b03
+    color: cc918b05
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 1.3
-    growY: 1.3
+    growX: 0.95
+    growY: 0.95
     y: 11
     weaponIndex: 0
   }
@@ -203,12 +203,12 @@ category: turret
     outline: false
 	under: false
     layer: 60
-    color: cc918b05
+    color: cc918b07
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 1
-    growY: 1
+    growX: 0.7
+    growY: 0.7
     y: 11
     weaponIndex: 0
   }
