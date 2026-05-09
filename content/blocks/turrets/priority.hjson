@@ -169,8 +169,8 @@ category: turret
         sides: 2
         color1: fccabd
         radius: 0
-        radiusTo: 14
-        stroke: 2
+        radiusTo: 6
+        stroke: 2.5
         innerRadScl: 0.60
         y: 11
 		progress: warmup
@@ -182,8 +182,8 @@ category: turret
         sides: 2
         color1: fccabd15
         radius: 0
-        radiusTo: 18
-        stroke: 3
+        radiusTo: 8
+        stroke: 3.5
         innerRadScl: 0.60
         y: 11
 		progress: warmup
