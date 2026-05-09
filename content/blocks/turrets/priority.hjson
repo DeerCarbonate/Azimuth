@@ -122,13 +122,13 @@ category: turret
   type: FlarePart
   color1: c3686850
   color2: fccabd70
-  y: 12
+  y: 11
   followRotation: true
   stroke: 6
   radius: 0
   radiusTo: 45
   rotation: 0
-  rotMove: 10
+  rotMove: 45
   moveY: 20
   progress: {
       type: charge
@@ -140,11 +140,11 @@ category: turret
   type: FlarePart
   color1: c3686820
   color2: fccabd50
-  y: 12
+  y: 11
   followRotation: true
   stroke: 6
   radius: 0
-  radiusTo: 30
+  radiusTo: 10
   rotation: 0
   rotMove: 0
   moveY: 20
@@ -156,10 +156,10 @@ category: turret
         sides: 2
         color1: fccabd
         radius: 0
-        radiusTo: 34
+        radiusTo: 14
         stroke: 2
         innerRadScl: 0.60
-        y: 12
+        y: 11
 		progress: warmup
 		layer: 101
         weaponIndex: 0
@@ -169,10 +169,10 @@ category: turret
         sides: 2
         color1: fccabd15
         radius: 0
-        radiusTo: 38
+        radiusTo: 18
         stroke: 3
         innerRadScl: 0.60
-        y: 12
+        y: 11
 		progress: warmup
         layer: 101
         weaponIndex: 0
