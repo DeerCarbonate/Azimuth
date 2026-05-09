@@ -283,7 +283,7 @@ category: turret
         lifetime: 23
         baseLength: 0
         particles: 1
-	    length: 90
+	    length: 32
 		strokeFrom: 2
 	    strokeTo: 0
 	    lenFrom: 4
