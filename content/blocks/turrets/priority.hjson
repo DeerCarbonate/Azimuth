@@ -38,7 +38,8 @@ objectives: [
     }
   ]
 }
-  shootEffect: {
+  shootEffect: [
+  {
 					type: ParticleEffect 
 					colorFrom: fccabd
 					colorTo: ec74584000
@@ -81,6 +82,7 @@ objectives: [
 		  baseRotation: 35
 		  length: 8
         }
+		]
   			      smokeEffect: [{
         type: ParticleEffect
         colorFrom: d8868680
