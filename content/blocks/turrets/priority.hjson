@@ -210,9 +210,9 @@ category: turret
   }
     {
     type: EffectSpawnerPart
-    x: 5.1
-    y: -10.5
-    effectRot: 255
+    x: 6.3
+    y: -9.3
+    effectRot: 225
     debugDraw: true
     mirror: true
     effectChance: 3.6 
@@ -254,6 +254,44 @@ category: turret
         colorTo: b0b0b000
         interp: pow3Out
         sizeInterp: pow2Out
+        followParent: false
+      }
+    ]
+  }
+      {
+    type: EffectSpawnerPart
+    x: 6.3
+    y: -9.3
+    effectRot: 225
+    debugDraw: true
+    mirror: true
+    effectChance: 3.6 
+    progress: {
+      type: recoil
+      ops: [
+        {
+          op: curve
+          interp: pow2Out
+        }
+      ]
+    }
+    effect: [
+      {
+        type: ParticleEffect
+        cone: 7.4
+		line: true
+        lifetime: 23
+        baseLength: 0
+        particles: 4
+	    length: 90
+		strokeFrom: 4
+	    strokeTo: 0
+	    lenFrom: 8
+		lenTo: 0
+        colorFrom: fccabd08
+        colorTo: b0b0b000
+		interp: circleOut
+        sizeInterp: pow5Out
         followParent: false
       }
     ]
