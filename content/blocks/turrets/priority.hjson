@@ -21,7 +21,7 @@ shootSoundVolume: 0.5
 maxHeatEfficiency: 2
 heatRequirement: 6
 loopSound: loopFire
-loopSoundVolume: 1.1
+loopSoundVolume: 0.7
 research: {
   parent: "yongsin"
   planet: "gelion"
