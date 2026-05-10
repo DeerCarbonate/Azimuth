@@ -165,22 +165,19 @@ weapons: [
     x: 1.95
     y: 7.1
     reload: 45
-    velocityRnd: 0.3
+    velocityRnd: 0.13
     shoot: {
-      type: ShootBarrel
+      type: ShootSpread
       shots: 6
-      barrels: [
-        1, 1, 0
-        -1, 1, 0
-      ]
+      spread: 23
     }
     ejectEffect: none
     shootSound: shootSalvo
     bullet: {
       recoil: 0.02
       keepVelocity: false
-      lifetime: 60
-      drag: -0.034
+      lifetime: 63
+      drag: -0.040
       damage: 15
       height: 7
       speed: 0.7
