@@ -169,7 +169,7 @@ weapons: [
     shoot: {
       type: ShootSpread
       shots: 6
-      spread: 23
+      spread: 18
     }
     ejectEffect: none
     shootSound: shootSalvo
@@ -184,12 +184,12 @@ weapons: [
       sprite: azimut-deathcatcher
       width: 6
       type: BasicBulletType
-      homingPower: 0.02
+      homingPower: 0.09
       homingRange: 50
-      homingDelay: 17
+      homingDelay: 16
       frontColor: ffffff
-      backColor: 6a3fa4
-      trailColor: 6a3fa4
+      backColor: d690d3
+      trailColor: d690d3
       trailWidth: 1.15
       trailLength: 8.5
       smokeEffect: {
@@ -203,7 +203,7 @@ weapons: [
     lenFrom: 3.5
     lenTo: 0
     colorFrom: f6afdd
-    colorTo: 6a3fa4
+    colorTo: d690d3
     cone: 15
 	   interp: pow2
     sizeInterp: pow3In
