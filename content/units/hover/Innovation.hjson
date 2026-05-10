@@ -164,7 +164,7 @@ weapons: [
     shake: 0
     x: 1.95
     y: 7.1
-    reload: 45
+    reload: 75
     velocityRnd: 0.13
     shoot: {
       type: ShootSpread
@@ -195,17 +195,17 @@ weapons: [
       smokeEffect: {
     type: ParticleEffect
     lifetime: 26
-    particles: 2
-    length: 21
+    particles: 1
+    length: 29
     line: true
-	strokefrom: 1
-    strokeTo: 1.4
+	   strokefrom: 1
+    strokeTo: 0
     lenFrom: 3.5
     lenTo: 0
-    colorFrom: f6afdd95
-    colorTo: f6afdd20
-    cone: 25
-	interp: pow2
+    colorFrom: f6afdd
+    colorTo: f6afdd
+    cone: 15
+	   interp: pow2
     sizeInterp: pow3In
     }
 	  shootEffect: none
