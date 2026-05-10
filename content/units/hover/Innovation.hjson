@@ -168,9 +168,7 @@ weapons: [
     velocityRnd: 0.3
     shoot: {
       type: ShootBarrel
-      firstShotDelay: 30
-      shotDelay: 3.2
-      shots: 3
+      shots: 6
       barrels: [
         1, 1, 0
         -1, 1, 0
@@ -182,10 +180,11 @@ weapons: [
       recoil: 0.02
       keepVelocity: false
       lifetime: 60
-      drag: -0.012
+      drag: -0.034
       damage: 15
       height: 7
-      speed: 1.7
+      speed: 0.7
+      sprite: azimut-deathcatcher
       width: 6
       type: BasicBulletType
       homingPower: 0.02
