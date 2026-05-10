@@ -188,10 +188,10 @@ weapons: [
       homingRange: 50
       homingDelay: 17
       frontColor: ffffff
-      backColor: f6afdd
-      trailColor: f6afdd
-      trailWidth: 1.2
-      trailLength: 8
+      backColor: 6a3fa4
+      trailColor: 6a3fa4
+      trailWidth: 1.15
+      trailLength: 8.5
       smokeEffect: {
     type: ParticleEffect
     lifetime: 26
@@ -203,7 +203,7 @@ weapons: [
     lenFrom: 3.5
     lenTo: 0
     colorFrom: f6afdd
-    colorTo: f6afdd
+    colorTo: 6a3fa4
     cone: 15
 	   interp: pow2
     sizeInterp: pow3In
