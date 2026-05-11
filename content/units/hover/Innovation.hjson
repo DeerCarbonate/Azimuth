@@ -176,7 +176,7 @@ weapons: [
       recoil: 0.02
       lifetime: 63
       drag: -0.040
-      damage: 10
+      damage: 14
       height: 7
       speed: 0.7
       sprite: azimut-deathcatcher

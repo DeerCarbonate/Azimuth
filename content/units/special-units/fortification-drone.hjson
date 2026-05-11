@@ -78,8 +78,8 @@ parts: [
     circle: true
     hollow: true
     layer: 110
-    color: 6793f1
-    radius: 150
+    color: 6793f120
+    radius: 160
   }
     {
     type: HaloPart
@@ -123,7 +123,7 @@ abilities: [
 {
     type: StatusFieldAbility
     effect: fortified
-    duration: 800
+    duration: 2500
     reload: 250
     range: 190
 	        applyEffect: {
