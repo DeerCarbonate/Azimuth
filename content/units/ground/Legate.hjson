@@ -107,10 +107,10 @@ objectives: [
 		height: 7.5
 		speed: 6.1
 		backColor: af7765
-		frontColor: cc918b
+		frontColor: ffffff
 		trailColor: af7765
 		trailWidth: 1.6
-		trailLength: 7
+		trailLength: 5.5
 		splashDamageRadius: 8
 		splashDamage: 12
 		despawnEffect: none
@@ -119,6 +119,7 @@ objectives: [
 	    fragOnHit: true
         fragOnDespawn: true
         fragOnAbsorb: true 
+		sprite: azimut-blob
     fragBullet: { 
     type: BulletType
     spawnUnit: fire-missile
