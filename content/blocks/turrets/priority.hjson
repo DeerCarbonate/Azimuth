@@ -64,9 +64,9 @@ objectives: [
           particles: 1
           cone: 0
           region: azimut-shoothitscan
-          sizeFrom: 28
+          sizeFrom: 34
           sizeTo: 0
-          colorTo: fccabd
+          colorTo: ec7458
 		  baseRotation: -65
 		  length: 8
         }
@@ -77,9 +77,9 @@ objectives: [
           particles: 1
           cone: 0
           region: azimut-shoothitscan
-          sizeFrom: 28
+          sizeFrom: 34
           sizeTo: 0
-          colorTo: fccabd
+          colorTo: ec7458
 		  baseRotation: 65
 		  length: 8
         }
