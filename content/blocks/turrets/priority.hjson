@@ -84,12 +84,12 @@ objectives: [
         }
 		{
           type: SoundEffect
-          minPitch: 0.2
-          maxPitch: 0.3
+          minPitch: 0.55
+          maxPitch: 0.65
           effect: none
           sound: mechsshoot
-          minVolume: 0.45
-          maxVolume: 0.47
+          minVolume: 0.65
+          maxVolume: 0.65
         }
 		]
   			      smokeEffect: [{
