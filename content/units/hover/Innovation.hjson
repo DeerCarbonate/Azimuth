@@ -168,7 +168,7 @@ weapons: [
       type: ShootSpread
       shots: 6
       spread: 18
-	  firstShootDelay: 45
+	  firstShotDelay: 45
     }
     ejectEffect: none
     shootSound: shootSalvo
@@ -276,5 +276,39 @@ weapons: [
         sparks: 3
       }
     }
+  parts:[
+  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+	under: false
+    layer: 60
+    color: d690d310
+    growProgress: warmup
+    xScl: 0
+    yScl: 0
+    growX: 0.75
+    growY: 0.75
+    y: 11
+    weaponIndex: 0
+  }
+  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+	under: false
+    layer: 60
+    color: d690d305
+    growProgress: warmup
+    xScl: 0
+    yScl: 0
+    growX: 0.95
+    growY: 0.95
+    y: 11
+    weaponIndex: 0
+  }
+  ]
 }
 ]
