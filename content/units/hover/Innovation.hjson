@@ -243,7 +243,7 @@ weapons: [
 chargeEffect: [
   {
     type: RadialEffect
-    lengthOffset: 52
+    lengthOffset: 35
     amount: 6
     rotationSpacing: 60
     effect: {
@@ -253,16 +253,17 @@ chargeEffect: [
       colorTo: d690d3
       particles: 1
       cone: 3
-      length: -54
+      length: -37
       sizeFrom: 2.6
       sizeTo: 1
       interp: pow3Out
       line: true
+      followParent: true
     }
   }
   {
     type: RadialEffect
-    lengthOffset: 52
+    lengthOffset: 35
     amount: 6
     rotationSpacing: 60
     rotationOffset: 15
@@ -275,16 +276,17 @@ chargeEffect: [
       colorTo: d690d3
       particles: 1
       cone: 3
-      length: -54
+      length: -37
       sizeFrom: 2.6
       sizeTo: 1
       interp: pow3Out
       line: true
+      followParent: true
     }
   }
   {
     type: RadialEffect
-    lengthOffset: 52
+    lengthOffset: 35
     amount: 6
     rotationSpacing: 60
     rotationOffset: 30
@@ -297,16 +299,17 @@ chargeEffect: [
       colorTo: d690d3
       particles: 1
       cone: 3
-      length: -54
+      length: -37
       sizeFrom: 3
       sizeTo: 1
       interp: pow3Out
       line: true
+      followParent: true
     }
   }
   {
     type: RadialEffect
-    lengthOffset: 52
+    lengthOffset: 35
     amount: 6
     rotationSpacing: 60
     rotationOffset: 45
@@ -319,11 +322,12 @@ chargeEffect: [
       colorTo: d690d3
       particles: 1
       cone: 3
-      length: -54
+      length: -37
       sizeFrom: 3
       sizeTo: 1
       interp: pow3Out
       line: true
+      followParent: true
     }
   }
 ]
