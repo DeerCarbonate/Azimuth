@@ -17,8 +17,6 @@ recoilAmount: 1.8
 restitution: 0.04
 rotateSpeed: 2.205
 shootSound: none
-chargeSound: chargeLancer
-chargeSoundVolume: 0.25
 maxHeatEfficiency: 2
 heatRequirement: 6
 loopSound: loopFire
