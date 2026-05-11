@@ -327,7 +327,6 @@ chargeEffect: [
     }
   }
 ]
-	]
 	  despawnEffect: none
       hitEffect: {
         type: ExplosionEffect
