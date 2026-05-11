@@ -204,8 +204,8 @@ weapons: [
     strokeTo: 0
     lenFrom: 4.5
     lenTo: 0
-    colorFrom: f6afdd
-    colorTo: f6afdd
+    colorFrom: ffffff
+    colorTo: ffffff
     cone: 15
 	   interp: pow2
     sizeInterp: pow3In
