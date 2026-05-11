@@ -254,7 +254,7 @@ weapons: [
     colorFrom: d690d300
     colorTo: d690d300
     cone: 15
-	interp: pow2in
+	interp: pow3In
     sizeInterp: circleOut
     }
 	]
