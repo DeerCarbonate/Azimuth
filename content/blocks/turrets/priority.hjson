@@ -17,8 +17,8 @@ recoilAmount: 1.8
 restitution: 0.04
 rotateSpeed: 2.205
 shootSound: none
-chargeSound: chargeVela
-chargeSoundVolume: 0.35
+chargeSound: chargeLancer
+chargeSoundVolume: 0.25
 maxHeatEfficiency: 2
 heatRequirement: 6
 loopSound: loopFire
@@ -85,12 +85,12 @@ objectives: [
         }
 		{
           type: SoundEffect
-          minPitch: 0.55
-          maxPitch: 0.65
+          minPitch: 0.9
+          maxPitch: 0.98
           effect: none
           sound: mechsshoot
-          minVolume: 0.65
-          maxVolume: 0.65
+          minVolume: 0.45
+          maxVolume: 0.45
         }
 		]
   			      smokeEffect: [{
