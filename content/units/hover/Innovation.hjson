@@ -284,13 +284,13 @@ weapons: [
     outline: false
 	under: false
     layer: 60
-    color: d690d310
+    color: d690d307
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 0.75
-    growY: 0.75
-    y: 11
+    growX: 0.25
+    growY: 0.25
+    y: 0
     weaponIndex: 0
   }
   {
@@ -300,15 +300,28 @@ weapons: [
     outline: false
 	under: false
     layer: 60
-    color: d690d305
+    color: d690d303
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 0.95
-    growY: 0.95
-    y: 11
+    growX: 0.45
+    growY: 0.45
+    y: 0
     weaponIndex: 0
   }
+  	  {
+        type: FlarePart
+        sides: 2
+        color1: d690d3
+        radius: 0
+        radiusTo: 12
+        stroke: 3.5
+        innerRadScl: 0.60
+        y: 11
+		progress: charge
+        layer: 101
+        weaponIndex: 0
+      }
   ]
 }
 ]
