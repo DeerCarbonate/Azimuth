@@ -75,7 +75,7 @@ preset: sixth
 	rotate: true
 	rotateSpeed: 5
 	reload: 62
- velocityRnd:0.2
+    velocityRnd:0.2
 	shootSound: shootCleroi
 	shootY: 4
 	shootStatus: ram
@@ -135,7 +135,7 @@ colorFrom: cc918b
 cone: 15
         }
 		type: BasicBulletType
-		damage: 16
+		damage: 18
 		lifetime: 44
 		width: 9
 		height: 9
