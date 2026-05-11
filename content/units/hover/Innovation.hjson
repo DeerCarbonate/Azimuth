@@ -155,21 +155,20 @@ parts: [
 ]
 weapons: [
   {
-    name: Innovation-weapon
     recoil: 0.008
-    alternate: true
-    under: true
+    under: false
     layerOffset: -0.02
     shootY: 2.5
     shake: 0
     x: 0
-    y: 7.1
+    y: 0.3
     reload: 75
     velocityRnd: 0.13
     shoot: {
       type: ShootSpread
       shots: 6
       spread: 18
+	  firstShootDelay: 45
     }
     ejectEffect: none
     shootSound: shootSalvo
@@ -210,7 +209,8 @@ weapons: [
 	   interp: pow2
     sizeInterp: pow3In
     }
-      shootEffect: {
+      shootEffect: [
+	  {
     type: ParticleEffect
     lifetime: 26
     particles: 1
@@ -226,6 +226,38 @@ weapons: [
 	   interp: pow2
     sizeInterp: pow3In
     }
+    {
+        type: WaveEffect
+        startDelay: 0
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 18
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: d690d330
+        colorTo: d690d300
+        followParent: true
+        rotWithParent: true
+      }
+	]
+	chargeEffect: [
+	  {
+    type: ParticleEffect
+    lifetime: 26
+    particles: 1
+    length: 29
+    line: true
+	strokefrom: 1
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: d690d300
+    colorTo: d690d300
+    cone: 15
+	interp: pow2in
+    sizeInterp: circleOut
+    }
+	]
 	  despawnEffect: none
       hitEffect: {
         type: ExplosionEffect
@@ -245,84 +277,4 @@ weapons: [
       }
     }
 }
-  {
-    name: Innovation-weaponn
-    alternate: false
-    mirror: false 
-    rotateSpeed: 60
-    layerOffset: -0.001
-    shootY: 0
-    x: 0
-    y: 0.3
-    reload: 1200
-    inaccuracy: 360
-    velocityRnd: 0.3
-    shoot: {
-      type: ShootMulti
-	  source: {
-      firstShotDelay: 0
-      shots: 4
-	      }
-	  dest: [
-	  {
-	  type: ShootPattern
-		shots: 3
-		shotDelay: 15
-	}
-	]
-	}
-    ejectEffect: none
-    shootSound: shootSegment
-    bullet: {
-      keepVelocity: false
-      lifetime: 90
-      drag: -0.01
-      damage: 32
-      height: 5
-      speed: 0.9
-      width: 4
-      type: BasicBulletType
-      homingPower: 0.07
-      homingRange: 50
-      homingDelay: 6
-      frontColor: ffffff
-      backColor: f6afdd
-      trailColor: f6afdd
-      trailWidth: 0.9
-      trailLength: 8
-      shootEffect: {
-        type: WaveEffect
-        startDelay: 0
-        lifetime: 45
-        sizeFrom: 0
-        sizeTo: 12
-        strokeFrom: 5
-        strokeTo: 2
-        colorFrom: f6afdd30
-        colorTo: f6afdd00
-        followParent: true
-        rotWithParent: true
-      }
-      despawnEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 16
-        sizeFrom: 0
-        sizeTo: 7
-        colorFrom: f6afdd
-        colorTo: f6afdd00
-      }
-      hitEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 16
-        sizeFrom: 0
-        sizeTo: 7
-        colorFrom: f6afdd
-        colorTo: f6afdd00
-      }
-    }
-	}
 ]
