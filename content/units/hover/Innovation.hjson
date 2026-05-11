@@ -155,7 +155,7 @@ parts: [
 ]
 weapons: [
   {
-    recoil: 0.25
+    recoil: 1.6
     under: false
     layerOffset: -0.02
     shootY: 0
@@ -240,97 +240,6 @@ weapons: [
         rotWithParent: true
       }
 	]
-chargeEffect: [
-  {
-    type: RadialEffect
-    lengthOffset: 35
-    amount: 6
-    rotationSpacing: 60
-    effect: {
-      type: ParticleEffect
-      lifetime: 50
-      colorFrom: d690d300
-      colorTo: d690d3
-      particles: 1
-      cone: 3
-      length: -37
-      sizeFrom: 2.6
-      sizeTo: 1
-      interp: pow3Out
-      line: true
-      followParent: true
-    }
-  }
-  {
-    type: RadialEffect
-    lengthOffset: 35
-    amount: 6
-    rotationSpacing: 60
-    rotationOffset: 15
-    effect: {
-      type: ParticleEffect
-      startDelay: 15
-      lifetime: 50
-      randLength: false
-      colorFrom: d690d300
-      colorTo: d690d3
-      particles: 1
-      cone: 3
-      length: -37
-      sizeFrom: 2.6
-      sizeTo: 1
-      interp: pow3Out
-      line: true
-      followParent: true
-    }
-  }
-  {
-    type: RadialEffect
-    lengthOffset: 35
-    amount: 6
-    rotationSpacing: 60
-    rotationOffset: 30
-    effect: {
-      type: ParticleEffect
-      startDelay: 30
-      lifetime: 50
-      randLength: false
-      colorFrom: d690d300
-      colorTo: d690d3
-      particles: 1
-      cone: 3
-      length: -37
-      sizeFrom: 3
-      sizeTo: 1
-      interp: pow3Out
-      line: true
-      followParent: true
-    }
-  }
-  {
-    type: RadialEffect
-    lengthOffset: 35
-    amount: 6
-    rotationSpacing: 60
-    rotationOffset: 45
-    effect: {
-      type: ParticleEffect
-      startDelay: 15
-      lifetime: 30
-      randLength: false
-      colorFrom: d690d300
-      colorTo: d690d3
-      particles: 1
-      cone: 3
-      length: -37
-      sizeFrom: 3
-      sizeTo: 1
-      interp: pow3Out
-      line: true
-      followParent: true
-    }
-  }
-]
 	  despawnEffect: none
       hitEffect: {
         type: ExplosionEffect
@@ -357,12 +266,12 @@ chargeEffect: [
     outline: false
 	under: false
     layer: 60
-    color: d690d312
+    color: d690d321
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 0.25
-    growY: 0.25
+    growX: 0.10
+    growY: 0.10
     y: 0
     weaponIndex: 0
   }
@@ -373,12 +282,12 @@ chargeEffect: [
     outline: false
 	under: false
     layer: 60
-    color: d690d307
+    color: d690d312
     growProgress: warmup
     xScl: 0
     yScl: 0
-    growX: 0.45
-    growY: 0.45
+    growX: 0.20
+    growY: 0.20
     y: 0
     weaponIndex: 0
   }
