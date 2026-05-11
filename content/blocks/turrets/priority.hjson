@@ -18,6 +18,7 @@ restitution: 0.04
 rotateSpeed: 2.205
 shootSound: none
 chargeSound: chargeVela
+chargeSoundVolume: 0.35
 maxHeatEfficiency: 2
 heatRequirement: 6
 loopSound: loopFire
