@@ -14,7 +14,7 @@ outlineColor: 251b21
 outlineRadius: 3
 alwaysUnlocked: false
 rotateSpeed: 1
-armor: 1
+armor: 3
 accel: 0.09
 health: 550
 hovering: false
@@ -90,166 +90,169 @@ parts: [
 ]
 weapons: [
   {
-    name: Innovation-weapon
-    mirror: false 
-    recoil: 0
-    alternate: false
+    recoil: 1.6
+    under: false
     layerOffset: -0.02
-    shootY: 2.5
+    shootY: 0
     shake: 0
-    x: 1.95
-    y: 7.1
-    reload: 85
-    velocityRnd: 0.3
-    ignoreRotation: true
+    x: 0
+    y: 0
+    reload: 40
+    velocityRnd: 0.13
     shoot: {
-      type: ShootBarrel
-      firstShotDelay: 40
-      shotDelay: 5.3
-      shots: 3
-      barrels: [
-        1, 1, 0
-        -1, 1, 0
-      ]
+      type: ShootSpread
+      shots: 6
+      spread: 18
+	  firstShotDelay: 18
+	  shotDelay: 12
     }
     ejectEffect: none
     shootSound: shootSalvo
     bullet: {
-      ignoreRotation: true
-      recoil: 0
-      keepVelocity: false
-      lifetime: 60
-      drag: -0.012
-      damage: 15
+      recoil: 0.02
+      lifetime: 63
+      drag: -0.040
+      damage: 14
       height: 7
-      speed: 1.5
+      speed: 0.7
+      sprite: azimut-deathcatcher
       width: 6
       type: BasicBulletType
-      homingPower: 0.04
-      homingRange: 90
-      homingDelay: 3
+      homingPower: 0.09
+      homingRange: 50
+      homingDelay: 16
       frontColor: ffffff
-      backColor: f6afdd
-      trailColor: f6afdd
-      trailWidth: 1.1
-      trailLength: 8
+      backColor: d690d3
+      trailColor: d690d360
+      trailWidth: 1.15
+      trailLength: 8.5
+	  collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
       smokeEffect: {
     type: ParticleEffect
     lifetime: 26
-    particles: 2
-    length: 21
+    particles: 1
+    length: 29
     line: true
-	strokefrom: 1
-    strokeTo: 1.4
-    lenFrom: 3.5
+	   strokefrom: 1
+    strokeTo: 0
+    lenFrom: 4.5
     lenTo: 0
-    colorFrom: f6afdd95
-    colorTo: f6afdd20
-    cone: 25
-	interp: pow2
+    colorFrom: ffffff40
+    colorTo: ffffff40
+    cone: 15
+	   interp: pow2
     sizeInterp: pow3In
     }
-	  shootEffect: none
-      despawnEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 22
-        sizeFrom: 0
-        sizeTo: 12
-        colorFrom: f6afdd
-        colorTo: f6afdd00
-      }
-      hitEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 22
-        sizeFrom: 0
-        sizeTo: 8
-        colorFrom: f6afdd
-        colorTo: f6afdd00
-      }
-    }
-}
-  {
-    name: Innovation-weaponn
-    alternate: false
-    mirror: false 
-    rotateSpeed: 60
-    layerOffset: -0.001
-    shootY: 0
-    x: 0
-    y: 0.3
-    reload: 260
-    inaccuracy: 360
-    velocityRnd: 0.3
-    shoot: {
-      type: ShootMulti
-	  source: {
-      firstShotDelay: 0
-      shots: 4
-	      }
-	  dest: [
+      shootEffect: [
 	  {
-	  type: ShootPattern
-		shots: 3
-		shotDelay: 15
-	}
-	]
-	}
-    ejectEffect: none
-    shootSound: shootSegment
-    bullet: {
-      keepVelocity: false
-      lifetime: 90
-      drag: -0.01
-      damage: 32
-      height: 5
-      speed: 0.9
-      width: 4
-      type: BasicBulletType
-      homingPower: 0.07
-      homingRange: 50
-      homingDelay: 6
-      frontColor: ffffff
-      backColor: f6afdd
-      trailColor: f6afdd
-      trailWidth: 0.9
-      trailLength: 8
-      shootEffect: {
+    type: ParticleEffect
+    lifetime: 26
+    particles: 1
+    length: 29
+    line: true
+	strokefrom: 1
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: d690d340
+    colorTo: d690d340
+    cone: 15
+	   interp: pow2
+    sizeInterp: pow3In
+    }
+    {
         type: WaveEffect
         startDelay: 0
-        lifetime: 45
+        lifetime: 25
         sizeFrom: 0
-        sizeTo: 12
-        strokeFrom: 5
-        strokeTo: 2
-        colorFrom: f6afdd30
-        colorTo: f6afdd00
+        sizeTo: 18
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: d690d330
+        colorTo: d690d300
         followParent: true
         rotWithParent: true
       }
-      despawnEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 16
-        sizeFrom: 0
-        sizeTo: 7
-        colorFrom: f6afdd
-        colorTo: f6afdd00
-      }
+	]
+	  despawnEffect: none
       hitEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 16
-        sizeFrom: 0
-        sizeTo: 7
-        colorFrom: f6afdd
-        colorTo: f6afdd00
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: fbace3
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: fbace3
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: fbace3
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
       }
     }
-	}
+  parts:[
+  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+	under: false
+    layer: 60
+    color: d690d308
+    growProgress: warmup
+    xScl: 0
+    yScl: 0
+    growX: 0.10
+    growY: 0.10
+    y: 0
+    weaponIndex: 0
+  }
+  {
+    type: RegionPart
+    name: circle
+    blending: additive
+    outline: false
+	under: false
+    layer: 60
+    color: d690d305
+    growProgress: warmup
+    xScl: 0
+    yScl: 0
+    growX: 0.20
+    growY: 0.20
+    y: 0
+    weaponIndex: 0
+  }
+  	  {
+        type: FlarePart
+        sides: 2
+        color1: d690d360
+        radius: 0
+        radiusTo: 10
+        stroke: 3.5
+        innerRadScl: 0.60
+        y: 0
+		progress: charge
+        layer: 101
+        weaponIndex: 0
+      }
+	  {
+        type: FlarePart
+        sides: 2
+        color1: d690d315
+        radius: 0
+        radiusTo: 18
+        stroke: 3.5
+        innerRadScl: 0.60
+        y: 0
+		progress: charge
+        layer: 101
+        weaponIndex: 0
+      }
+  ]
+}
 ]
