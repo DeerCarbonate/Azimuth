@@ -155,20 +155,20 @@ parts: [
 ]
 weapons: [
   {
-    recoil: 0.08
+    recoil: 0.25
     under: false
     layerOffset: -0.02
     shootY: 0
     shake: 0
     x: 0
     y: 0
-    reload: 75
+    reload: 100
     velocityRnd: 0.13
     shoot: {
       type: ShootSpread
       shots: 6
       spread: 18
-	  firstShotDelay: 10
+	  firstShotDelay: 18
     }
     ejectEffect: none
     shootSound: shootSalvo
@@ -176,7 +176,7 @@ weapons: [
       recoil: 0.02
       lifetime: 63
       drag: -0.040
-      damage: 15
+      damage: 14
       height: 7
       speed: 0.7
       sprite: azimut-deathcatcher
@@ -240,23 +240,93 @@ weapons: [
         rotWithParent: true
       }
 	]
-	chargeEffect: [
-	  {
-    type: ParticleEffect
-    lifetime: 26
-    particles: 1
-    length: 29
-    line: true
-	strokefrom: 1
-    strokeTo: 0
-    lenFrom: 4.5
-    lenTo: 0
-    colorFrom: d690d300
-    colorTo: d690d300
-    cone: 15
-	interp: pow3In
-    sizeInterp: circleOut
+chargeEffect: [
+  {
+    type: RadialEffect
+    lengthOffset: 52
+    amount: 6
+    rotationSpacing: 60
+    effect: {
+      type: ParticleEffect
+      lifetime: 50
+      colorFrom: d690d300
+      colorTo: d690d3
+      particles: 1
+      cone: 3
+      length: -54
+      sizeFrom: 2.6
+      sizeTo: 1
+      interp: pow3Out
+      line: true
     }
+  }
+  {
+    type: RadialEffect
+    lengthOffset: 52
+    amount: 6
+    rotationSpacing: 60
+    rotationOffset: 15
+    effect: {
+      type: ParticleEffect
+      startDelay: 15
+      lifetime: 50
+      randLength: false
+      colorFrom: d690d300
+      colorTo: d690d3
+      particles: 1
+      cone: 3
+      length: -54
+      sizeFrom: 2.6
+      sizeTo: 1
+      interp: pow3Out
+      line: true
+    }
+  }
+  {
+    type: RadialEffect
+    lengthOffset: 52
+    amount: 6
+    rotationSpacing: 60
+    rotationOffset: 30
+    effect: {
+      type: ParticleEffect
+      startDelay: 30
+      lifetime: 50
+      randLength: false
+      colorFrom: d690d300
+      colorTo: d690d3
+      particles: 1
+      cone: 3
+      length: -54
+      sizeFrom: 3
+      sizeTo: 1
+      interp: pow3Out
+      line: true
+    }
+  }
+  {
+    type: RadialEffect
+    lengthOffset: 52
+    amount: 6
+    rotationSpacing: 60
+    rotationOffset: 45
+    effect: {
+      type: ParticleEffect
+      startDelay: 15
+      lifetime: 30
+      randLength: false
+      colorFrom: d690d300
+      colorTo: d690d3
+      particles: 1
+      cone: 3
+      length: -54
+      sizeFrom: 3
+      sizeTo: 1
+      interp: pow3Out
+      line: true
+    }
+  }
+]
 	]
 	  despawnEffect: none
       hitEffect: {
