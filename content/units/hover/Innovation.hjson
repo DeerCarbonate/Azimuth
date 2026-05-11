@@ -156,13 +156,13 @@ parts: [
 weapons: [
   {
     name: Innovation-weapon
-    recoil: 0.002
+    recoil: 0.008
     alternate: true
     under: true
     layerOffset: -0.02
     shootY: 2.5
     shake: 0
-    x: 1.95
+    x: 0
     y: 7.1
     reload: 75
     velocityRnd: 0.13
@@ -175,7 +175,6 @@ weapons: [
     shootSound: shootSalvo
     bullet: {
       recoil: 0.02
-      keepVelocity: false
       lifetime: 63
       drag: -0.040
       damage: 15
@@ -192,6 +191,9 @@ weapons: [
       trailColor: d690d3
       trailWidth: 1.15
       trailLength: 8.5
+	  collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
       smokeEffect: {
     type: ParticleEffect
     lifetime: 26
@@ -200,36 +202,46 @@ weapons: [
     line: true
 	   strokefrom: 1
     strokeTo: 0
-    lenFrom: 3.5
+    lenFrom: 4.5
     lenTo: 0
     colorFrom: f6afdd
+    colorTo: f6afdd
+    cone: 15
+	   interp: pow2
+    sizeInterp: pow3In
+    }
+      shootEffect: {
+    type: ParticleEffect
+    lifetime: 26
+    particles: 1
+    length: 29
+    line: true
+	strokefrom: 1
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: d690d3
     colorTo: d690d3
     cone: 15
 	   interp: pow2
     sizeInterp: pow3In
     }
-	  shootEffect: none
-      despawnEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 34
-        sizeFrom: 0
-        sizeTo: 12
-        colorFrom: f6afdd90
-        colorTo: f6afdd00
-        interp: pow3Out
-      }
+	  despawnEffect: none
       hitEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 34
-        sizeFrom: 0
-        sizeTo: 12
-        colorFrom: f6afdd90
-        colorTo: f6afdd00
-        interp: pow3Out
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: fbace3
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: fbace3
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: fbace3
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
       }
     }
 }

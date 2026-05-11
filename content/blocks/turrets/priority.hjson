@@ -193,7 +193,7 @@ category: turret
 	}
       {
         type: FlarePart
-        sides: 2
+        sides: 4
         color1: fccabd
         radius: 0
         radiusTo: 6
@@ -202,19 +202,6 @@ category: turret
         y: 11
 		progress: warmup
 		layer: 101
-        weaponIndex: 0
-      }
-	  {
-        type: FlarePart
-        sides: 2
-        color1: fccabd15
-        radius: 0
-        radiusTo: 8
-        stroke: 3.5
-        innerRadScl: 0.60
-        y: 11
-		progress: warmup
-        layer: 101
         weaponIndex: 0
       }
 	  	  {

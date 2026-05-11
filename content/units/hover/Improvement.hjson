@@ -102,7 +102,6 @@ weapons: [
       spread: 5
     }
     bullet: {
-      keepVelocity: false
       lifetime: 110
       drag: -0.015
       damage: 19
