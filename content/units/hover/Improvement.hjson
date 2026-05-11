@@ -112,8 +112,8 @@ weapons: [
       homingPower: 0.08
       homingDelay: 15
       frontColor: ffffff
-      backColor: f6afdd
-      trailColor: f6afdd
+      backColor: d690d3
+      trailColor: d690d3
       trailWidth: 1
       trailLength: 12
 	  smokeEffect: none
@@ -125,8 +125,8 @@ weapons: [
         sizeTo: 3
         strokeFrom: 0
         strokeTo: 3
-        colorFrom: f6afdd
-        colorTo: f6afdd00
+        colorFrom: d690d3
+        colorTo: d690d300
         followParent: true
         rotWithParent: true
         interp: exp5Out

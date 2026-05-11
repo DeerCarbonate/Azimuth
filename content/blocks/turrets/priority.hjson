@@ -16,8 +16,8 @@ targetGround: true
 recoilAmount: 1.8
 restitution: 0.04
 rotateSpeed: 2.205
-shootSound: mechsshoot
-shootSoundVolume: 0.5
+shootSound: none
+chargeSound: chargeVela
 maxHeatEfficiency: 2
 heatRequirement: 6
 loopSound: loopFire
@@ -82,6 +82,15 @@ objectives: [
 		  baseRotation: 65
 		  length: 8
         }
+		{
+          type: SoundEffect
+          minPitch: 0.2
+          maxPitch: 0.3
+          effect: none
+          sound: mechsshoot
+          minVolume: 0.45
+          maxVolume: 0.47
+        }
 		]
   			      smokeEffect: [{
         type: ParticleEffect
@@ -105,12 +114,12 @@ shootType: {
     width: 4
 	hitColor:ec7458
 	colors:[ec745840,ec74585570,ec74585590,fccabd,ffffff]
-	flareColor: fccabd
+	drawFlare: false
     ammoMultiplier: 1
 	buildingDamageMultiplier: 0.3
 	pierceArmor: false
- pierce: True
- pierceCap: 3
+    pierce: True
+    pierceCap: 3
 	
     lifetime: 12
     damage: 190
