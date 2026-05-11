@@ -155,7 +155,7 @@ parts: [
 ]
 weapons: [
   {
-    recoil: 0.008
+    recoil: 0.08
     under: false
     layerOffset: -0.02
     shootY: 0
@@ -168,7 +168,7 @@ weapons: [
       type: ShootSpread
       shots: 6
       spread: 18
-	  firstShotDelay: 45
+	  firstShotDelay: 10
     }
     ejectEffect: none
     shootSound: shootSalvo
@@ -325,9 +325,9 @@ weapons: [
 	  {
         type: FlarePart
         sides: 2
-        color1: d690d310
+        color1: d690d315
         radius: 0
-        radiusTo: 14
+        radiusTo: 18
         stroke: 3.5
         innerRadScl: 0.60
         y: 0
