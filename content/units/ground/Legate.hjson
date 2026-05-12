@@ -119,7 +119,7 @@ objectives: [
 	    fragOnHit: true
         fragOnDespawn: true
         fragOnAbsorb: true 
-		sprite: azimut-blob
+		sprite: azimut-slicer
     fragBullet: { 
     type: BulletType
     spawnUnit: fire-missile
