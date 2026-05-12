@@ -29,6 +29,9 @@ consumes: {
   liquids: [
    gas-geliarin/0.955
 	]
+items: [
+cobalt/3
+]
 }
 hasLiquids: true
 craftTime: 190
