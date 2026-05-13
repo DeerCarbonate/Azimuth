@@ -102,18 +102,19 @@ parts: [
     strokeTo: 6.3
     radius: 3
     radiusTo: 3
-	rotateSpeed: 1.5
+	rotateSpeed: 0.5
   }
     {
     type: ShapePart
     hollow: true
+	sides: 7
     layer: 109
     color: efe671
     stroke: 1.5
     strokeTo: 1.5
     radius: 20
     radiusTo: 20
-	rotateSpeed: 2
+	rotateSpeed: 0.7
   }
 ]
 abilities: [
