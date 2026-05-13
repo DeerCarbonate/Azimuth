@@ -86,7 +86,7 @@ parts: [
     hollow: true
     sides: 7
     layer: 109
-    color: b5d0ba
+    color: efe671
     stroke: 6.3
     strokeTo: 6.3
     radius: 2
@@ -97,11 +97,11 @@ parts: [
     hollow: true
     sides: 5
     layer: 109
-    color: b5d0ba
+    color: efe671
     stroke: 6.3
     strokeTo: 6.3
-    radius: 2
-    radiusTo: 2
+    radius: 3
+    radiusTo: 3
 	rotateSpeed: 1.5
   }
     {
@@ -109,9 +109,9 @@ parts: [
     hollow: true
     circle: true
     layer: 109
-    color: b5d0ba
-    stroke: 8
-    strokeTo: 0
+    color: efe671
+    stroke: 6.3
+    strokeTo: 6.3
     radius: 20
     radiusTo: 20
 	rotateSpeed: 2
