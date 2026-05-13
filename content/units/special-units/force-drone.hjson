@@ -107,11 +107,10 @@ parts: [
     {
     type: ShapePart
     hollow: true
-    circle: true
     layer: 109
     color: efe671
-    stroke: 6.3
-    strokeTo: 6.3
+    stroke: 1.5
+    strokeTo: 1.5
     radius: 20
     radiusTo: 20
 	rotateSpeed: 2
