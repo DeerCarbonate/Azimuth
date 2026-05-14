@@ -139,12 +139,12 @@ parts: [
     layer: 110
     haloRadius: 20
     haloRadiusTo: 20
-    radius: 4
-    radiusTo: 4
-    triLength: 3
-    triLengthTo: 3
+    radius: 5
+    radiusTo: 5
+    triLength: 5.5
+    triLengthTo: 5.5
     haloRotateSpeed: 0.75
-    shapeRotation: -90
+    shapeRotation: -180
   }
 ]
 abilities: [
