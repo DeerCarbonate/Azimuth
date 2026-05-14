@@ -95,14 +95,14 @@ parts: [
     {
     type: ShapePart
     hollow: true
-    sides: 5
+    sides: 7
     layer: 109
     color: efe671
     stroke: 6.3
     strokeTo: 6.3
     radius: 3
     radiusTo: 3
-	rotateSpeed: 0.5
+   	rotateSpeed: 0.95
   }
     {
     type: ShapePart
@@ -119,16 +119,16 @@ parts: [
     type: HaloPart
     progress: warmup
     tri: true
-    shapes: 5
+    shapes: 4
     color: efe671
     layer: 110
     haloRadius: 9
     haloRadiusTo: 9
-    radius: 6
-    radiusTo: 6
-    triLength: 4
+    radius: 5
+    radiusTo: 5
+    triLength: 3
     triLengthTo: 4
-    haloRotateSpeed: 0.25
+    haloRotateSpeed: 0.75
   }
 ]
 abilities: [
