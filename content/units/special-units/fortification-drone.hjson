@@ -123,13 +123,13 @@ abilities: [
 {
     type: StatusFieldAbility
     effect: fortified
-    duration: 2500
+    duration: 2800
     reload: 250
-    range: 190
+    range: 170
 	        applyEffect: {
             type: ParticleEffect
             lifetime: 50
-            region: azimut-hollow-circle
+            region:        azimut-hollow-circle
             sizeFrom: 2.5
             sizeTo: 0
             colorFrom: 6793f100
