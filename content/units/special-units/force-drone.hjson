@@ -124,10 +124,10 @@ parts: [
     layer: 110
     haloRadius: 9
     haloRadiusTo: 9
-    radius: 5
-    radiusTo: 5
-    triLength: 2.5
-    triLengthTo: 2.5
+    radius: 4
+    radiusTo: 4
+    triLength: 3.5
+    triLengthTo: 3.5
     haloRotateSpeed: 0.75
   }
     {
@@ -139,11 +139,12 @@ parts: [
     layer: 110
     haloRadius: 20
     haloRadiusTo: 20
-    radius: -5
-    radiusTo: -5
-    triLength: -2.5
-    triLengthTo: -2.5
+    radius: 4
+    radiusTo: 4
+    triLength: 3
+    triLengthTo: 3
     haloRotateSpeed: 0.75
+    shapeRotation: -90
   }
 ]
 abilities: [
