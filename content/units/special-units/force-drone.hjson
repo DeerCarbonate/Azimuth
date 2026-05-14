@@ -126,8 +126,23 @@ parts: [
     haloRadiusTo: 9
     radius: 5
     radiusTo: 5
-    triLength: 3
-    triLengthTo: 4
+    triLength: 2.5
+    triLengthTo: 2.5
+    haloRotateSpeed: 0.75
+  }
+    {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 4
+    color: efe671
+    layer: 110
+    haloRadius: 20
+    haloRadiusTo: 20
+    radius: -5
+    radiusTo: -5
+    triLength: -2.5
+    triLengthTo: -2.5
     haloRotateSpeed: 0.75
   }
 ]
