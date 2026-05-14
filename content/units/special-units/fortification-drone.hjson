@@ -125,7 +125,7 @@ abilities: [
     effect: fortified
     duration: 2800
     reload: 250
-    range: 166.5
+    range: 165
 	        applyEffect: {
             type: ParticleEffect
             lifetime: 50
