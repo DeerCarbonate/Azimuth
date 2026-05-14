@@ -90,7 +90,7 @@ parts: [
     layer: 110
     haloRadius: 20.1
     haloRadiusTo: 6.0
-    radius: 3
+    radius: 5
     radiusTo: 6
     triLength: 6
     triLengthTo: 1
@@ -106,9 +106,9 @@ parts: [
     layer: 110
     haloRadius: 20.1
     haloRadiusTo: 6.0
-    radius: 4.5
+    radius: 5
     radiusTo: 6.5
-    triLength: 7
+    triLength: 7.5
     triLengthTo: 1
     haloRotateSpeed: 0.5
   }
