@@ -132,7 +132,7 @@ parts: [
     strokeTo: 1.5
     rotateSpeed: 1.5
     x: 0
-    y: 20
+    y: 30
   }
   {
     type: ShapePart
@@ -147,8 +147,8 @@ parts: [
     stroke: 0
     strokeTo: 1.5
     rotateSpeed: 1.5
-    x: 14
-    y: 14
+    x: 21
+    y: 21
   }
   {
     type: ShapePart
@@ -163,7 +163,7 @@ parts: [
     stroke: 0
     strokeTo: 1.5
     rotateSpeed: 1.5
-    x: 20
+    x: 30
     y: 0
   }
   {
@@ -179,8 +179,8 @@ parts: [
     stroke: 0
     strokeTo: 1.5
     rotateSpeed: 1.5
-    x: 14
-    y: -14
+    x: 21
+    y: -21
   }
   {
     type: ShapePart
@@ -196,7 +196,7 @@ parts: [
     strokeTo: 1.5
     rotateSpeed: 1.5
     x: 0
-    y: -20
+    y: -30
   }
   {
     type: ShapePart
@@ -211,8 +211,8 @@ parts: [
     stroke: 0
     strokeTo: 1.5
     rotateSpeed: 1.5
-    x: -14
-    y: -14
+    x: -21
+    y: -21
   }
   {
     type: ShapePart
@@ -227,7 +227,7 @@ parts: [
     stroke: 0
     strokeTo: 1.5
     rotateSpeed: 1.5
-    x: -20
+    x: -30
     y: 0
   }
   {
@@ -243,8 +243,8 @@ parts: [
     stroke: 0
     strokeTo: 1.5
     rotateSpeed: 1.5
-    x: -14
-    y: 14
+    x: -21
+    y: 21
   }
 ]
 
@@ -254,7 +254,7 @@ weapons: [
     name: cull-b
     mirror: false
     x: 0
-    y: 20
+    y: 30
     shootY: 0
     shootCone: 45
     shootSound: none
@@ -265,22 +265,22 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
   {
     type: RepairBeamWeapon
     name: cull-b
     mirror: false
-    x: 14
-    y: 14
+    x: 21
+    y: 21
     shootY: 0
     shootCone: 45
     shootSound: none
@@ -291,21 +291,21 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
   {
     type: RepairBeamWeapon
     name: cull-b
     mirror: false
-    x: 20
+    x: 30
     y: 0
     shootY: 0
     shootCone: 45
@@ -317,22 +317,22 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
   {
     type: RepairBeamWeapon
     name: cull-b
     mirror: false
-    x: 14
-    y: -14
+    x: 21
+    y: -21
     shootY: 0
     shootCone: 45
     shootSound: none
@@ -343,14 +343,14 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
   {
@@ -358,7 +358,7 @@ weapons: [
     name: cull-b
     mirror: false
     x: 0
-    y: -20
+    y: -30
     shootY: 0
     shootCone: 45
     shootSound: none
@@ -369,22 +369,22 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
   {
     type: RepairBeamWeapon
     name: cull-b
     mirror: false
-    x: -14
-    y: -14
+    x: -21
+    y: -21
     shootY: 0
     shootCone: 45
     shootSound: none
@@ -395,21 +395,21 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
   {
     type: RepairBeamWeapon
     name: cull-b
     mirror: false
-    x: -20
+    x: -30
     y: 0
     shootY: 0
     shootCone: 45
@@ -421,22 +421,22 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
   {
     type: RepairBeamWeapon
     name: cull-b
     mirror: false
-    x: -14
-    y: 14
+    x: -21
+    y: 21
     shootY: 0
     shootCone: 45
     shootSound: none
@@ -447,14 +447,14 @@ weapons: [
     continuous: true
     rotate: false
     reload: 0.002
-    beamWidth: 0.4
+    beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 4
-    fractionRepairSpeed: 0.001
+    repairSpeed: 2.5
+    fractionRepairSpeed: 0.0007
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 130
+      maxRange: 120
     }
   }
 ]
