@@ -123,7 +123,7 @@ parts: [
     progress: warmup
     weaponIndex: 0
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -139,7 +139,7 @@ parts: [
     progress: warmup
     weaponIndex: 1
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -155,7 +155,7 @@ parts: [
     progress: warmup
     weaponIndex: 2
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -171,7 +171,7 @@ parts: [
     progress: warmup
     weaponIndex: 3
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -187,7 +187,7 @@ parts: [
     progress: warmup
     weaponIndex: 4
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -203,7 +203,7 @@ parts: [
     progress: warmup
     weaponIndex: 5
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -219,7 +219,7 @@ parts: [
     progress: warmup
     weaponIndex: 6
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -235,7 +235,7 @@ parts: [
     progress: warmup
     weaponIndex: 7
     sides: 5
-    color: bf92f9
+    color: bf92f935
     hollow: true
     layer: 110
     radius: 0
@@ -269,10 +269,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
   {
@@ -295,10 +295,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
   {
@@ -321,10 +321,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
   {
@@ -347,10 +347,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
   {
@@ -373,10 +373,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
   {
@@ -399,10 +399,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
   {
@@ -425,10 +425,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
   {
@@ -451,10 +451,10 @@ weapons: [
     widthSinMag: 0.05
     repairSpeed: 2.5
     fractionRepairSpeed: 0.0007
-    healColor: bf92f9
-    laserColor: bf92f9
+    healColor: bf92f935
+    laserColor: bf92f935
     bullet: {
-      maxRange: 120
+      maxRange: 150
     }
   }
 ]
