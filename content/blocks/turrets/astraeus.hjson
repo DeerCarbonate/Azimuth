@@ -332,7 +332,7 @@ trailWidth: 1.4
  hitColor: bf92f9
  splashDamage: 90
  splashDamageRadius: 17
- damage: 80
+ damage: 70
  despawnSound: none
  hitSound: none
  lifetime: 80
@@ -501,10 +501,10 @@ coolant: {
   amount: 0.09
 }
 requirements: [
-  cobalt/200,
+  cobalt/230,
   platinum/120
-  compound/100
-  zinc/90
+  compound/110
+  zinc/120
 ]
 category: turret
 recoils: 2
@@ -578,6 +578,6 @@ research: {
 	  "platinum/9000"
 	  "zinc/30"
 	  "compound/1500"
-	  "cobalt/23000"
+	  "cobalt/10000"
   ]
 }
