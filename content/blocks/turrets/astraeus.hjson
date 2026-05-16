@@ -568,75 +568,7 @@ drawer: {
         progress: recoil
 		heatProgress: warmup
         recoilIndex: 1
-      }
-    {
-    type: ShapePart
-	progress: warmup
-    hollow: true
-	circle: true
-    layer: 109
-    color: fccabd
-    stroke: 1
-    strokeTo: 1
-    radius: 10
-    radiusTo: 10
-	x: 10
-	y: 7
-	under: true
-  }	  
-      {
-    type: ShapePart
-	progress: warmup
-    hollow: true
-	circle: true
-    layer: 109
-    color: fccabd
-    stroke: 1
-    strokeTo: 1
-    radius: 10
-    radiusTo: 10
-	x: -10
-	y: 7
-    under: true
-  }
-    {
-    type: HaloPart
-    progress: warmup
-    tri: true
-    shapes: 4
-    color: fccabd
-    layer: 110
-    haloRadius: 10
-    haloRadiusTo: 10
-    radius: 3
-    radiusTo: 3
-    triLength: 5
-    triLengthTo: 5
-    haloRotateSpeed: 0.75
-    shapeRotation: 90
-	x: 10
-    y: 7
-    under: true
-  }  
-      {
-    type: HaloPart
-    progress: warmup
-    tri: true
-    shapes: 4
-    color: fccabd
-    layer: 110
-    haloRadius: 10
-    haloRadiusTo: 10
-    radius: 3
-    radiusTo: 3
-    triLength: 5
-    triLengthTo: 5
-    haloRotateSpeed: -0.75
-    shapeRotation: -90
-	x: -10
-    y: 7
-	under: true
-  } 
+      }  
 	]
 }
 research: {
