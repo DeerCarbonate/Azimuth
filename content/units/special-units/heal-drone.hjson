@@ -267,8 +267,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
@@ -293,8 +293,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
@@ -319,8 +319,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
@@ -345,8 +345,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
@@ -371,8 +371,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
@@ -397,8 +397,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
@@ -423,8 +423,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
@@ -449,8 +449,8 @@ weapons: [
     reload: 0.002
     beamWidth: 0.6
     widthSinMag: 0.05
-    repairSpeed: 2.5
-    fractionRepairSpeed: 0.0007
+    repairSpeed: 1.8
+    fractionRepairSpeed: 0.0004
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
