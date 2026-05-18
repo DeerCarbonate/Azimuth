@@ -23,7 +23,7 @@ legContinuousMove: true
 accel: 0.5
 armor: 11
 stepShake: 0.1
-health: 4700
+health: 4600
 speed: 0.46
 healColor: f0aba488
 hitSize: 18
@@ -50,8 +50,8 @@ preset: eight
 	abilities: [
     {
     type: ShieldRegenFieldAbility
-    reload: 800
-    amount: 80
+    reload: 850
+    amount: 85
     range: 16
     max: 280
     }
@@ -86,7 +86,7 @@ weapons: [
     bullet: {
       type: RailBulletType
       length: 160
-      damage: 20
+      damage: 25
 	  lifetime: 1
 	  hitColor: cc918b
       pointEffectSpace: 3.875
@@ -207,7 +207,7 @@ weapons: [
 	width: 4
     pierceCap: 2
     lifetime: 36
-    damage: 32
+    damage: 40
     toColor: cc918b
     lightColor: cc918b
     lightOpacity: 0.7
