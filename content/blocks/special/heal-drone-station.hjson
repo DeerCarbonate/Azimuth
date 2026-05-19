@@ -38,8 +38,8 @@ research: {
   ]
   objectives: [
     {
-      type: SectorComplete
-      preset: twos
+      type: OnSector
+      preset: "twos"
     }
   ]
 }

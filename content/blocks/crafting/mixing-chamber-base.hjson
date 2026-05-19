@@ -14,10 +14,10 @@ research: {
   platinum/55
 ]
 objectives: [
-{
-type: SectorComplete
-preset: first
-  }
+    {
+      type: OnSector
+      preset: "twos"
+    }
  ]
 }
 requirements: [

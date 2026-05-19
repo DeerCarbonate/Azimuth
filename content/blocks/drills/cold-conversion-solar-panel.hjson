@@ -13,10 +13,10 @@ research: {
 	  "geliarin/100"
 ]
 objectives: [
-{
-type: SectorComplete
-preset: twos
-  }
+    {
+      type: OnSector
+      preset: "twos"
+    }
  ]
 }
 requirements: [
