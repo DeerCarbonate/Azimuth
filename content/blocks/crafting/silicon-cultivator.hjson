@@ -20,6 +20,12 @@ research: {
 	  cobalt/500
 	  platinum/150
 ]
+objectives: [
+    {
+      type: OnSector
+      preset: "threes"
+    }
+ ]
 }
 requirements: [
  cobalt/80
