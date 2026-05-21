@@ -1,8 +1,8 @@
 type: CoreBlock
 size: 4
 squareSprite: false
-health: 2300
-armor: 2
+health: 2700
+armor: 3
 itemCapacity: 4150
 unitCapModifier: 10
 unitType: adder
