@@ -2,7 +2,7 @@ type: Floor
 name: Deep isobutane
 speedMultiplier: 0.26
 variants: 0
-cacheLayer: "mud"
+cacheLayer: "tar"
 drownTime: 130
 isLiquid: true
 liquidDrop: isobutane
