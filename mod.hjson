@@ -113,4 +113,13 @@ Specials thanks to: ace1020spawn, Kivet/БОБ, Alpotat, KOSTOLOM, Fate of Adras
   stator-reactor-base
   stator-reactor-left
   stator-reactor-right
+  mech-editor
+  naval-editor
+  hover-editor
+  mech-adjuster
+  naval-adjuster
+  hover-adjuster
+  component-conveyor
+  component-assembler
+  toroid-builder
   ]
