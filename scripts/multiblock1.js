@@ -1,3 +1,4 @@
+Events.on(ContentLoadEvent, () => {
 const block = Vars.content.block("azimut-mixing-chamber-base");
 block.buildType = () => extend(GenericCrafter.GenericCrafterBuild, block, {
     draw(){
@@ -15,3 +16,4 @@ block.buildType = () => extend(GenericCrafter.GenericCrafterBuild, block, {
         }
     }
 }); 
+});
