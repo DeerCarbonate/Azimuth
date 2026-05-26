@@ -1,4 +1,4 @@
-Events.on(ContentLoadEvent, () => {
+Events.on(ClientLoadEvent, () => {
 const block = Vars.content.block("azimut-mixing-chamber-base");
 block.buildType = () => extend(GenericCrafter.GenericCrafterBuild, block, {
     draw(){
