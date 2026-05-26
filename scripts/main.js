@@ -31,4 +31,5 @@ mod.meta.description =
 mod.meta.author = "[#c3961f]Deer[#876409]Carbonate";
 
 require("blocks");
+require("multiblock1");
 require("weather");
