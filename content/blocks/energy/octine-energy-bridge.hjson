@@ -30,13 +30,13 @@ destroyBullet:{
     type: ArtilleryBulletType
     height: 0
     width: 13
-    damage: 10
+    damage: 30
 	buildingDamageMultiplier: 1.5
     reloadMultiplier: 1
     ammoMultiplier: 4
 
-    splashDamageRadius: 10
-    splashDamage: 30
+    splashDamageRadius: 18
+    splashDamage: 60
     fragBullets: 4
     lifetime: 0
     speed: 0
@@ -67,11 +67,10 @@ fragBullet: {
     shrinkY: 1
     height: 10
     width: 6
-
-    buildingDamageMultiplier: 1.2
+    buildingDamageMultiplier: 1.4
     pierceCap: 2
     lifetime: 18
-    damage: 12
+    damage: 16
     speed: 2.8
     drag: 0.005
     hitEffect: none
