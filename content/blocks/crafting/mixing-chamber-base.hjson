@@ -2,7 +2,7 @@ type: GenericCrafter
 health: 400
 size: 3
 category: crafting
-rotate: true
+rotate: false
 squareSprite: false
 liquidCapacity: 90
 research: {
