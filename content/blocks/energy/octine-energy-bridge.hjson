@@ -1,0 +1,95 @@
+type: PowerNode
+size: 1
+health: 160
+laserRange: 9.5
+laserColor1: ffffff00
+laserColor2: 7565c900
+laser: octine-energy-bridge-laser
+laserEnd: octine-energy-bridge-laser-end
+maxNodes: 6
+  requirements: [
+    compound/10
+	octine/2
+	]
+category: power
+        research: {
+    parent: "energy-bridge"
+    planet: gelion
+                "requirements": [
+                "octine/50"
+                "titanite/150"
+                ]
+        objectives: [
+    {
+type: SectorComplete
+preset: ten
+    }
+  ]
+}
+destroyBullet:{
+    type: ArtilleryBulletType
+    height: 0
+    width: 13
+    damage: 10
+	buildingDamageMultiplier: 1.5
+    reloadMultiplier: 1
+    ammoMultiplier: 4
+
+    splashDamageRadius: 10
+    splashDamage: 30
+    fragBullets: 4
+    lifetime: 0
+    speed: 0
+    fragVelocityMin:0.3
+    fragVelocityMax:0.7
+    fragLifeMin:0.2
+    fragLifeMax:2
+    despawnEffect: {
+           type: ExplosionEffect
+           lifetime: 12
+           waveColor: e8bd8c60
+           waveStroke: 3
+           waveRad: 20
+           smokeColor: c9656520
+           smokeSizeBase: 8
+           smokeSize: 5.5
+           smokes: 7
+           sparkColor: c96565
+           sparkStroke: 1.5
+           sparkRad: 12
+           sparkLen: 3
+           sparks: 3
+       }
+    hitEffect: none
+fragBullet: {
+    type: BasicBulletType
+    collidesAir: false
+    shrinkY: 1
+    height: 10
+    width: 6
+
+    buildingDamageMultiplier: 1.2
+    pierceCap: 2
+    lifetime: 18
+    damage: 12
+    speed: 2.8
+    drag: 0.005
+    hitEffect: none
+    despawnEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 12
+        lifetime: 20
+        strokeFrom: 2
+        strokeTo: 1
+        colorFrom: c96565
+        colorTo: c9656500
+    }
+
+    trailColor: c96565
+    trailLength: 2.5
+    trailWidth: 1.25
+
+    frontColor: c96565
+    backColor: c9656570
+}}
