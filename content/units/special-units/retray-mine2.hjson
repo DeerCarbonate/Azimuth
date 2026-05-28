@@ -24,7 +24,7 @@ rotateSpeed: 0
 lifetime: 700
 fogRadius: 0
 health: 700
-armor: 9
+armor: 7
 loopSoundVolume: 0
 engineSize: 0
 trailLength: 0
@@ -125,7 +125,8 @@ shoot: {
     bullet: {
     type: RailBulletType
     length: 125
-    damage: 42
+    damage: 38
+    buildingDamageMultiplier: 0.1
 	lifetime: 1
 	hitColor: bff6b1
     pointEffectSpace: 2.7
@@ -133,7 +134,7 @@ shoot: {
 	despawnEffect: none
     smokeEffect: none
     status: pierced
-	statusDuration: 160
+	statusDuration: 240
 	  hitEffect: {
 	  followParent: false
 	  length: 0
