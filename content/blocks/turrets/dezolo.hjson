@@ -47,7 +47,7 @@ venerium: {
   type: RailBulletType
 
   length: 289
-  damage: 125
+  damage: 120
   lifetime: 1
 
   hitColor: fcf0bd
@@ -68,7 +68,7 @@ venerium: {
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
-  armorMultiplier: 3.5
+  armorMultiplier: 2.8
 
   pointEffect: {
     type: MultiEffect
@@ -122,6 +122,7 @@ venerium: {
     despawnEffect: none
     hitEffect: hitBulletColor
     buildingDamageMultiplier: 0.1
+    armorMultiplier: 5.5
   }
 
   shootEffect: [
@@ -326,7 +327,7 @@ titanite: {
   length: 300
   damage: 110
   lifetime: 1
-  reloadMultiplier: 1.65
+  reloadMultiplier: 1.75
 
   hitColor: 74a481
   buildingDamageMultiplier: 0.1
@@ -348,7 +349,7 @@ titanite: {
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
-  armorMultiplier: 1.2
+  armorMultiplier: 0.8
 
   pointEffect: {
     type: MultiEffect
