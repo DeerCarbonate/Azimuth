@@ -213,8 +213,8 @@ shoot: {
       collidesAir: true
       collidesGround: true
 
-      splashDamageRadius: 30
-      splashDamage: 430
+      splashDamageRadius: 35
+      splashDamage: 650
       buildingDamageMultiplier: 0.15
 
       hitSound: explosion
