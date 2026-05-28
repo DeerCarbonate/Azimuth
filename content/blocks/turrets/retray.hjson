@@ -207,6 +207,7 @@ height: 17
 speed: 1.7
 collidesTiles: true
 collidesGround: true
+reloadMultiplier: 0.8
 lifetime: 85
 shrinkY:0
 shrinkX:0
@@ -359,9 +360,9 @@ fragBullet: {
 }
 hasLiquids: true
 requirements: [
-  cobalt/500
-  platinum/270
-  caterium/120
+  cobalt/530
+  platinum/280
+  caterium/190
 ]
 category: turret
 drawer: {
