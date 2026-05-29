@@ -1,7 +1,7 @@
 type: PowerNode
 size: 1
 health: 160
-laserRange: 9.5
+laserRange: 11
 laserColor1: ffffff00
 laserColor2: 7565c900
 laser: octine-energy-bridge-laser
