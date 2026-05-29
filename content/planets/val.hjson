@@ -67,3 +67,4 @@ cloudMesh: [
     scl: 6
     thresh: 0.15
   }
+]
