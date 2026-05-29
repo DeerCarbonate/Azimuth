@@ -46,8 +46,8 @@ mesh: [
     seed: 65544
     color1: "fefefe08"
     color2: "fefefe08"
-    divisions: 4.1
-    radius: 0.35
+    divisions: 4.4
+    radius: 0.106
     octaves: 6
     persistence: 0.21
     scl: 1.2
@@ -59,7 +59,7 @@ mesh: [
     seed: 65544
     color1: "fefefe08"
     color2: "fefefe08"
-    divisions: 4.1
+    divisions: 4.4
     radius: 0.25
     octaves: 3
     persistence: 1.2
