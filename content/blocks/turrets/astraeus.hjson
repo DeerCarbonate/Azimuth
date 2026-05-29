@@ -498,7 +498,7 @@ hasLiquids: true
 coolant: {
   type: ConsumeLiquid
   liquid: nitrogen
-  amount: 0.09
+  amount: 3
 }
 requirements: [
   cobalt/230,

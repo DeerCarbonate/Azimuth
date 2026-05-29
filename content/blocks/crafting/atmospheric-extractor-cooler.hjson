@@ -23,7 +23,7 @@ consumes: {
 hasLiquids: true
 craftTime: 190
 craftEffect: none
-outputLiquid: swartzite/0.14
+outputLiquid: swartzite/6
 drawer: {
   type: DrawMulti
   drawers: [

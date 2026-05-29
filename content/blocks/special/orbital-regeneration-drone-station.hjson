@@ -20,8 +20,8 @@ requirements: [
 consumes: {
   power: 5
   liquids: [
-    iterin/0.1
-	cesium/0.6
+    iterin/2
+	cesium/1
   ]
 }
 polyStroke: 1.5

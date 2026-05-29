@@ -11,8 +11,8 @@ requirements: [
 ]
 consumes: {
   liquids: [
-  isobutane/0.36
-  iterin/0.17
+  isobutane/16
+  iterin/4
 	]
 }
 outputItem: solid-fuel/1

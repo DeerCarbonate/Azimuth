@@ -3,11 +3,11 @@ name: "Ammonia"
 
 speedMultiplier: 0.68
 variants: 0
-cacheLayer: "mud" //tar, mud, water, arkycite
+cacheLayer: "mud"
 drownTime: 170
 isLiquid: true
 liquidDrop: ammonia
-liquidMultiplier: 0.6
+liquidMultiplier: 0.3
 albedo: 4
 shallow: true
 supportsOverlay: true

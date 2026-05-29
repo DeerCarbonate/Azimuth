@@ -19,8 +19,8 @@ requirements: [
 consumes: {
 	power: 5
   liquids: [
-    swartzite/0.3
-    iterin/0.1
+    swartzite/4
+    iterin/2
   ]
 }
 polyStroke: 1.5

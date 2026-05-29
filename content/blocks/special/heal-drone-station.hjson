@@ -18,8 +18,8 @@ requirements: [
 ]
 consumes: {
   liquids: [
-    power/0.14
-    iterin/0.1
+    power/4
+    iterin/2
   ]
 }
 polyStroke: 1.5

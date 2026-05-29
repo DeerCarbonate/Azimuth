@@ -39,7 +39,7 @@ plans: [
 ]
 
 consumes: {
-	liquid: power/0.145
+	liquid: power/8
 }
 configurable: true
 requirements: [

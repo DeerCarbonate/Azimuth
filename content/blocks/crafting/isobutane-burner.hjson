@@ -25,10 +25,10 @@ requirements: [
 ]
 consumes: {
   liquids: [
-  isobutane/0.092
+  isobutane/4
 	]
 }
-outputLiquid: power/0.07
+outputLiquid: power/4
 hasLiquids: true
 liquidCapacity: 60
 craftEffect: [{
@@ -76,4 +76,3 @@ drawer: {
     }
   ]
 }
-researchCostMultiplier: 0.5

@@ -5,7 +5,7 @@ variants: 0
 cacheLayer: mud
 isLiquid: true
 liquidDrop: isobutane
-liquidMultiplier: 0.4
+liquidMultiplier: 0.334
 albedo: 1.1
 shallow: true
 supportsOverlay: true

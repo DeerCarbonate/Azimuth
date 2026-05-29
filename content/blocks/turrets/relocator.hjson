@@ -38,7 +38,7 @@ objectives: [
 coolant: {
   type: ConsumeLiquid
   liquid: power
-  amount: 0.06
+  amount: 1
 }
 shoot: {
 	type: shootSpread

@@ -33,7 +33,7 @@ consumes: {
   raw-platinum/5
   ]
   liquids: [
-  isobutane/0.18
+  isobutane/12
   cesium/0.05
 	]
 }

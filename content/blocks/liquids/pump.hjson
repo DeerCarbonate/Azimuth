@@ -7,8 +7,7 @@ requirements: [
   cobalt/25
   venerium/20
 ]
-pumpAmount: 0.12
-researchCostMultiplier: 0.3
+pumpAmount: 0.1
 drawer: {
   type: DrawMulti
   drawers: [

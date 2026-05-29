@@ -19,7 +19,7 @@ requirements: [
 consumes: {
   power: 4
   liquids: [
-    cesium/0.6
+    cesium/1
   ]
 }
 polyStroke: 1.5

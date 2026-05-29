@@ -23,7 +23,7 @@ requirements: [
 ]
 consumes: {
   liquids: [
-  power/0.03
+  power/2
 	]
 }
 category: crafting

@@ -11,14 +11,14 @@ requirements: [
   compound/40
 ]
 consumes: {
-  power: 2.65
+  power: 1.2
   items: [
   platinum/2
   sphalerite/1
   ]
 }
 outputItem: titanite/3
-outputLiquid: isobutane/0.092
+outputLiquid: isobutane/4
 hasLiquids: true
 		research: {
     parent: "silicon-cultivator"
