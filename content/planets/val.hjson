@@ -60,10 +60,10 @@ mesh: [
     color1: "fefefe08"
     color2: "fefefe08"
     divisions: 4.1
-    radius: 0.50
-    octaves: 6
-    persistence: 0.21
-    scl: 1.2
+    radius: 0.25
+    octaves: 3
+    persistence: 1.2
+    scl: 1.5
     mag: 4.5
 	}
 ]
