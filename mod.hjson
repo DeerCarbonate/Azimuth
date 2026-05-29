@@ -1,159 +1,135 @@
-<<<<<<< HEAD
+{
   name: azimut
-  displayName: [[]#d2fffe]Azimuth[[]]
-  subtitle: [[]#c9c1eb]20.000 bugfixes and commits[]
-  description: [[]#d3f2f4]Hybrid[] mod primarily built around a gradually branching campaign that expands in multiple directions.
-=======
-  name: "azimut",
   displayName: "[[]#d2fffe]Azimuth[[]]"
-  subtitle: "[[]#c9c1eb]20.000 bugfixes and commits[]"
-  "description": "A hybrid mod primarily built around Erekir and its linear progression system. The mod introduces new gameplay mechanics that are tightly integrated into the campaign and accompany you throughout the entire playthrough.
-The mod also has a Discord server — you can find the link in the README file on the GitHub page.
->>>>>>> parent of ee15f577 (0.5 update)
-
-THIS MOD IS STILL IN DEVELOPMENT!
-At the moment, development is approximately 52% complete and features 12 fully polished sectors.
-
-////////////////////////////////
-
-Land on a subcryogenic terra, gradually warming under its star, known as Gelion.
-Your objective is to eliminate enemy forces on the planet, secure rare resources, and continue your expansion across the galaxy.
-
-Limited space and complex logistics present a serious challenge. Plan your production wisely!
-
-If you enjoy the mod, consider giving it a star! >~<
-Thanks for playing!
-
-<<<<<<< HEAD
+  subtitle: "[[]#c9c1eb]20.000 bugfixes and commits[[]]"
+  description: '''
+[[]#d3f2f4]Hybrid[[]] mod primarily built around a gradually branching campaign that expands in multiple directions.
+The mod adds a new planet, [[]#f7e9af]Gelion[[]], featuring its own campaign, star system, research tree, and gameplay mechanics.
+The planet offers over 90 blocks to research, 12 units [[]#ffd37f]each with their own unique abilities[[]], 12 campaign sectors, more than [[]#ffd37f]6 new mechanics[[]], and plenty of room for map creation.
+On top of that, the campaign also stands out with absolutely [[]#e65c5c]BRUTAL[[]] visual effects. Every texture was made with care and dedication.
+[[]#e65c5c]THIS MOD IS STILL IN DEVELOPMENT![[]]
+[[]#ffd37f]The current completion percentage is approximately 57%, with plenty of room to grow![[]]
+Help me develop the mod! Join the [[]#768bff]Azimuth Discord server[[]] using the [[]#ffd37f]link in the README file on the mod's official GitHub page.[[]]
+//////////////////////////////////
 Land on a [[]#c9c1eb]sub-cryonic[[]] terra slowly heating up beneath its [[]#e99696]unstable star[[]]. The celestial body is suffering from [[]#ffbe93]global warming[[]] — glaciers are melting, atmospheric pressure is rising, and temperatures continue to climb.
 [[]#e99696]Exterminate the enemy faction[[]]. Turn the planet into a temporary source of raw materials. [[]#d1e3ff]Witness a world that will soon become[[]] [[]#506381]ash[[]].
-
 If you enjoyed the mod, please consider giving it a star!
 [[]#c9c1eb]Thank you for playing.[[]]
-
 //////////////////////////////////
-
 Developers:
-
 Code: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
 Sprites: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
 Maps: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
 Localization: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
-
 Special Thanks:
-
 Music: [[]purple]ACE[[]] — "the last fight", "in orbit", "create", "smth far away"; [[]#ffe1a4]garretski[[]] — "Azimuth", "Rhumb".
 Maps: [[]#ce7e5c]Kivet/БОБ[[]] — "Cold Harbor"; [[]#fce4e0]Fate of Adrastus[[]] — "Tight Caverns"; [[]#84f491]Alpotat[[]] — assistance with the map "Arrival".
 Code: [[]#A4A4A4]KO[[]][[]#6D6D6D]STO[[]][[]white]LOM[[]]
+'''
   author: DeerCarbonate
-  version: 0.42
-  minGameVersion: 158
-=======
-Specials thanks to: ace1020spawn, Kivet/БОБ, Alpotat, KOSTOLOM, Fate of Adrastus, garretski"
-  "author": "DeerCarbonate",
-  "version": "0.42",
-  "minGameVersion": "158",
->>>>>>> parent of ee15f577 (0.5 update)
+  version: "0.42"
+  minGameVersion: "158"
   mods: []
   contentOrder: [
-  cobalt
-  venerium
-  raw-platinum
-  platinum
-  geliarin
-  compound
-  solid-fuel
-  sphalerite
-  zinc
-  titanite
-  raw-caterium
-  caterium
-  information-cell
-  byte
-  octine
-  mestaline-steel
-  polyether-resin
-  polonium
-  isobutane
-  ammonia
-  power
-  iterin
-  cesium
-  nitrogen
-  swartzite
-  ram
-  tow
-  charge
-  fortified
-  volatile
-  inerted
-  reactive
-  pierced
-  emp
-  Legate
-  Marshal
-  Paladin
-  Improvement
-  Innovation
-  Promotion
-  Plankton
-  Octopus
-  Whale
-  adder
-  akarius
-  toroid
-  first
-  twos
-  threes
-  four
-  sixth
-  fifth
-  seven
-  eight
-  nine
-  ten
-  elev
-  twelw
-  platinum-smelter
-  isobutane-burner
-  power-heater
-  heat-courier
-  mixing-chamber-base
-  mixing-chamber-part
-  silicon-cultivator
-  solid-fuel-mixer
-  exothermic-chamber
-  sphalerite-refiner
-  titanite-matrix
-  atmospheric-extractor-base
-  atmospheric-extractor-collector
-  atmospheric-extractor-cooler
-  static-refiner
-  decoder
-  mechanical-quarry
-  cold-conversion-solar-panel
-  relic-drill
-  terraformer
-  heal-drone-station
-  orbital-regeneration-drone-station
-  force-drone-station
-  fortification-drone-station
-  energy-bridge
-  octine-energy-bridge
-  galvanized-power-bank
-  energy-converter
-  zinc-polyetheric-reactor
-  diphasic-solar-array
-  stator-reactor-base
-  stator-reactor-left
-  stator-reactor-right
-  mech-editor
-  naval-editor
-  hover-editor
-  mech-adjuster
-  naval-adjuster
-  hover-adjuster
-  component-conveyor
-  component-assembler
-  toroid-builder
+    cobalt
+    venerium
+    raw-platinum
+    platinum
+    geliarin
+    compound
+    solid-fuel
+    sphalerite
+    zinc
+    titanite
+    raw-caterium
+    caterium
+    information-cell
+    byte
+    octine
+    mestaline-steel
+    polyether-resin
+    polonium
+    isobutane
+    ammonia
+    power
+    iterin
+    cesium
+    nitrogen
+    swartzite
+    ram
+    tow
+    charge
+    fortified
+    volatile
+    inerted
+    reactive
+    pierced
+    emp
+    Legate
+    Marshal
+    Paladin
+    Improvement
+    Innovation
+    Promotion
+    Plankton
+    Octopus
+    Whale
+    adder
+    akarius
+    toroid
+    first
+    twos
+    threes
+    four
+    sixth
+    fifth
+    seven
+    eight
+    nine
+    ten
+    elev
+    twelw
+    platinum-smelter
+    isobutane-burner
+    power-heater
+    heat-courier
+    mixing-chamber-base
+    mixing-chamber-part
+    silicon-cultivator
+    solid-fuel-mixer
+    exothermic-chamber
+    sphalerite-refiner
+    titanite-matrix
+    atmospheric-extractor-base
+    atmospheric-extractor-collector
+    atmospheric-extractor-cooler
+    static-refiner
+    decoder
+    mechanical-quarry
+    cold-conversion-solar-panel
+    relic-drill
+    terraformer
+    heal-drone-station
+    orbital-regeneration-drone-station
+    force-drone-station
+    fortification-drone-station
+    energy-bridge
+    octine-energy-bridge
+    galvanized-power-bank
+    energy-converter
+    zinc-polyetheric-reactor
+    diphasic-solar-array
+    stator-reactor-base
+    stator-reactor-left
+    stator-reactor-right
+    mech-editor
+    naval-editor
+    hover-editor
+    mech-adjuster
+    naval-adjuster
+    hover-adjuster
+    component-conveyor
+    component-assembler
+    toroid-builder
   ]
+}
