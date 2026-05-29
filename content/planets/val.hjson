@@ -49,11 +49,11 @@ mesh: [
     color1: "fefefe08"
     color2: "fefefe08"
     divisions: 4.1
-    radius: 0.45
+    radius: 0.15
     octaves: 6
-    persistence: 0.39
+    persistence: 0.21
     scl: 1.2
-    mag: 7.3
+    mag: 7.8
  }
 ]
 cloudMesh: [
