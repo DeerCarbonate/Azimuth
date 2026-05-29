@@ -19,7 +19,7 @@ radius: 0.6
 minZoom: 0.40
 sectorSize: 0
 atmosphereRadIn: 0
-atmosphereRadOut: 0.014
+atmosphereRadOut: 0.018
 atmosphereColor: d3cfe910
 iconColor: d3cfe9
 landCloudColor: d3cfe9
@@ -32,8 +32,8 @@ mesh: [
     type: NoiseMesh
 	bloom: false
     seed: 65544
-    color1: "aad8ef00"
-    color2: "aac5ef00"
+    color1: "8f97a540"
+    color2: "ececec30"
     divisions: 4.1
     radius: 0.6
     octaves: 6
@@ -42,3 +42,28 @@ mesh: [
     mag: 0.24
  }
 ]
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.45
+    divisions: 4.1
+    radius: 0.68
+    color: aac5ef80
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.15
+  }
+  {
+    type: HexSkyMesh
+    bloom: false
+    speed: 0.45
+    divisions: 4.1
+    radius: 0.65
+    color: aac5ef30
+    octaves: 1
+    persistence: 0.5
+    scl: 6
+    thresh: 0.15
+  }
