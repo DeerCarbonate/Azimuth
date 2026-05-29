@@ -9,12 +9,12 @@ liquidCapacity: 250
 coolant: {
   type: ConsumeLiquid
   liquid: nitrogen
-  amount: 5
+  amount: 0.0833
 }
 consumes: {
 power: 4
 liquids: [
-ammonia/3
+ammonia/0.0500
 ]
 }
 hasPower: true

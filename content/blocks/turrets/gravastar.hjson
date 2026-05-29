@@ -6,13 +6,13 @@ squareSprite: false
 consumes: {
 power: 5.5
 liquids: [
-iterin/3
+iterin/0.0500
 ]
 }
 coolant: {
   type: ConsumeLiquid
   liquid: swartzite
-  amount: 2
+  amount: 0.0333
 }
     shoot: {
       type: ShootBarrel

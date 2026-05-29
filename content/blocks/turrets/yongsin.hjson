@@ -21,7 +21,7 @@ shootY: 7.8
 coolant: {
   type: ConsumeLiquid
   liquid: power
-  amount: 1
+  amount: 0.0167
 }
 research: {
   parent: "core-forum"

@@ -8,7 +8,7 @@ squareSprite: false
 coolant: {
   type: ConsumeLiquid
   liquid: power
-  amount: 1
+  amount: 0.0167
 }
 shoot: {
   firstShotDelay: 15

@@ -19,7 +19,7 @@ consumes: {
   raw-caterium/6
   ]
   liquids: [
-  ammonia/4
+  ammonia/0.0667
 	]
 	power: 2
 }
@@ -27,8 +27,8 @@ craftTime: 210
 outputItem: caterium/8
 liquidOutputDirections: [1,3]
 outputLiquids: [
-	cesium/4
-	nitrogen/10
+	cesium/0.0667
+	nitrogen/0.1667
 ]
 craftEffect: none
 ambientSound: smelter

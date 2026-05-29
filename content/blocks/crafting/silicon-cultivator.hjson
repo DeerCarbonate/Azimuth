@@ -34,8 +34,8 @@ requirements: [
 ]
 consumes: {
   liquids: [
-  ammonia/1
-  power/1
+  ammonia/0.0167
+  power/0.0167
 	]
 }
 craftTime: 240

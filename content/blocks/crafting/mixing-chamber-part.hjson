@@ -22,7 +22,7 @@ research: {
 }
 consumes: {
   liquids: [
-  ammonia/2
+  ammonia/0.0333
 	]
 }
 heatRequirement: 6

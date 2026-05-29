@@ -16,7 +16,7 @@ items: [
   solid-fuel/1
 ]
   liquids: [
-    nitrogen/5
+    nitrogen/0.0833
   ]
 }
 ambientSound: loopFlux

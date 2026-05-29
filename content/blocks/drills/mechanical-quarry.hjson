@@ -9,7 +9,7 @@ liquidBoostIntensity: 1.65
 consumes: {
   liquid: {
   liquid: power
-  amount: 1
+  amount: 0.0167
   booster: true
   optional: true
  }

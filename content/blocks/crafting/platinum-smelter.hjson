@@ -22,7 +22,7 @@ consumes: {
   raw-platinum/3
   ]
   liquids: [
-  isobutane/4
+  isobutane/0.0667
 	]
 }
 craftTime: 120

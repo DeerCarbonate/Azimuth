@@ -10,7 +10,7 @@ droneConstructTime: 550
 category: units
 consumes: {
 	liquids: [
-	  swartzite/3
+	  swartzite/0.0500
 	]
 		power: 3
 }

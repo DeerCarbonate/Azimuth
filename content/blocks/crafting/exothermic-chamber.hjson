@@ -13,7 +13,7 @@ consumes: {
   solid-fuel/1
   ]
 }
-outputLiquid: power/4
+outputLiquid: power/0.0667
 hasLiquids: false
 		research: {
     parent: "solid-fuel-mixer"
