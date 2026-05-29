@@ -33,7 +33,7 @@ mesh: [
 	bloom: false
     seed: 65544
     color1: "8f97a590"
-    color2: "e9d9ba12"
+    color2: "706b6112"
     divisions: 4.1
     radius: 0.6
     octaves: 6
