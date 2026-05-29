@@ -28,7 +28,6 @@ bloom: false
 allowLaunchToNumbered: false    
 mesh: [
  {
- //gray
     type: NoiseMesh
 	bloom: false
     seed: 65544
@@ -42,7 +41,6 @@ mesh: [
     mag: 0.24
  }
   {
- //white
     type: NoiseMesh
 	bloom: false
     seed: 65544
@@ -56,7 +54,6 @@ mesh: [
     mag: 7.8
  }
    {
- //white-low
     type: NoiseMesh
 	bloom: false
     seed: 65544
