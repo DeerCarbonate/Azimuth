@@ -1,0 +1,44 @@
+generator: "PlanetGenerator"
+
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+
+allowWaveSimulation: true
+prebuildBase: true
+parent: alveon
+hasAtmosphere: true
+hasSectors: false
+solarSystem: alveon
+orbitRadius: 100
+orbitTime: 10700
+alwaysUnlocked: false
+accessible: false 
+visible: true
+radius: 0.6
+minZoom: 0.40
+sectorSize: 0
+atmosphereRadIn: 0
+atmosphereRadOut: 0.14
+atmosphereColor: 7e7e8630
+iconColor: d3cfe9
+landCloudColor: d3cfe9
+icon: planet
+bloom: false
+allowLaunchToNumbered: false    
+mesh: [
+ {
+ //gray
+    type: NoiseMesh
+	bloom: false
+    seed: 65544
+    color1: "87899b00"
+    color2: "60616900"
+    divisions: 5
+    radius: 0.6
+    octaves: 6
+    persistence: 0.6
+    scl: 1
+    mag: 0.43
+ }
+]
