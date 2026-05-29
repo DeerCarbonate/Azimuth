@@ -16,7 +16,7 @@ alwaysUnlocked: false
 accessible: false 
 visible: true
 radius: 0.6
-minZoom: 0.40
+minZoom: 1
 sectorSize: 0
 atmosphereRadIn: 0
 atmosphereRadOut: 0.09
@@ -40,6 +40,20 @@ mesh: [
     persistence: 0.39
     scl: 1
     mag: 0.24
+ }
+  {
+ //white
+    type: NoiseMesh
+	bloom: false
+    seed: 65544
+    color1: "fefefe08"
+    color2: "fefefe08"
+    divisions: 4.1
+    radius: 0.45
+    octaves: 6
+    persistence: 0.39
+    scl: 1.2
+    mag: 7.3
  }
 ]
 cloudMesh: [
