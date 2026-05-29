@@ -1,20 +1,30 @@
+<<<<<<< HEAD
   name: azimut
   displayName: [[]#d2fffe]Azimuth[[]]
   subtitle: [[]#c9c1eb]20.000 bugfixes and commits[]
   description: [[]#d3f2f4]Hybrid[] mod primarily built around a gradually branching campaign that expands in multiple directions.
+=======
+  name: "azimut",
+  displayName: "[[]#d2fffe]Azimuth[[]]"
+  subtitle: "[[]#c9c1eb]20.000 bugfixes and commits[]"
+  "description": "A hybrid mod primarily built around Erekir and its linear progression system. The mod introduces new gameplay mechanics that are tightly integrated into the campaign and accompany you throughout the entire playthrough.
+The mod also has a Discord server — you can find the link in the README file on the GitHub page.
+>>>>>>> parent of ee15f577 (0.5 update)
 
-The mod adds a new planet, [[]#f7e9af]Gelion[[]], featuring its own campaign, star system, research tree, and gameplay mechanics.
-The planet offers over 90 blocks to research, 12 units [[]#ffd37f]each with their own unique abilities[[]], 12 campaign sectors, more than [[]#ffd37f]6 new mechanics[[]], and plenty of room for map creation.
+THIS MOD IS STILL IN DEVELOPMENT!
+At the moment, development is approximately 52% complete and features 12 fully polished sectors.
 
-On top of that, the campaign also stands out with absolutely [[]#e65c5c]BRUTAL[[]] visual effects. Every texture was made with care and dedication.
+////////////////////////////////
 
-[[]#e65c5c]THIS MOD IS STILL IN DEVELOPMENT![[]]
-[[]#ffd37f]The current completion percentage is approximately 57%, with plenty of room to grow![[]]
+Land on a subcryogenic terra, gradually warming under its star, known as Gelion.
+Your objective is to eliminate enemy forces on the planet, secure rare resources, and continue your expansion across the galaxy.
 
-Help me develop the mod! Join the [[]#768bff]Azimuth Discord server[[]] using the [[]#ffd37f]link in the README file on the mod’s official GitHub page.[[]]
+Limited space and complex logistics present a serious challenge. Plan your production wisely!
 
-//////////////////////////////////
+If you enjoy the mod, consider giving it a star! >~<
+Thanks for playing!
 
+<<<<<<< HEAD
 Land on a [[]#c9c1eb]sub-cryonic[[]] terra slowly heating up beneath its [[]#e99696]unstable star[[]]. The celestial body is suffering from [[]#ffbe93]global warming[[]] — glaciers are melting, atmospheric pressure is rising, and temperatures continue to climb.
 [[]#e99696]Exterminate the enemy faction[[]]. Turn the planet into a temporary source of raw materials. [[]#d1e3ff]Witness a world that will soon become[[]] [[]#506381]ash[[]].
 
@@ -38,6 +48,12 @@ Code: [[]#A4A4A4]KO[[]][[]#6D6D6D]STO[[]][[]white]LOM[[]]
   author: DeerCarbonate
   version: 0.42
   minGameVersion: 158
+=======
+Specials thanks to: ace1020spawn, Kivet/БОБ, Alpotat, KOSTOLOM, Fate of Adrastus, garretski"
+  "author": "DeerCarbonate",
+  "version": "0.42",
+  "minGameVersion": "158",
+>>>>>>> parent of ee15f577 (0.5 update)
   mods: []
   contentOrder: [
   cobalt
