@@ -40,32 +40,6 @@ mesh: [
     scl: 1
     mag: 0.24
  }
-  {
-    type: NoiseMesh
-	bloom: false
-    seed: 65544
-    color1: "fefefe08"
-    color2: "fefefe08"
-    divisions: 4.4
-    radius: 0.146
-    octaves: 6
-    persistence: 0.21
-    scl: 1.2
-    mag: 7.8
- }
-   {
-    type: NoiseMesh
-	bloom: false
-    seed: 65544
-    color1: "fefefe08"
-    color2: "fefefe08"
-    divisions: 4.4
-    radius: 0.43
-    octaves: 3
-    persistence: 1.2
-    scl: 1.5
-    mag: 4.5
-	}
 ]
 cloudMesh: [
   {
