@@ -33,7 +33,7 @@ mesh: [
 	bloom: false
     seed: 65544
     color1: "8f97a590"
-    color2: "80c4e612"
+    color2: "e9d9ba12"
     divisions: 4.1
     radius: 0.6
     octaves: 6
@@ -48,7 +48,7 @@ cloudMesh: [
     bloom: false
     speed: 0.45
     divisions: 4.1
-    radius: 0.12
+    radius: 0.09
     color: aac5ef90
     octaves: 1
     persistence: 0.5
@@ -60,7 +60,7 @@ cloudMesh: [
     bloom: false
     speed: 0.48
     divisions: 4.1
-    radius: 0.21
+    radius: 0.12
     color: aac5ef70
     octaves: 1
     persistence: 0.46
