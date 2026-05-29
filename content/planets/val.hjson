@@ -68,6 +68,7 @@ mesh: [
     persistence: 0.21
     scl: 1.2
     mag: 4.5
+	}
 ]
 cloudMesh: [
   {
