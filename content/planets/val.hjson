@@ -32,8 +32,8 @@ mesh: [
     type: NoiseMesh
 	bloom: false
     seed: 65544
-    color1: "8f97a540"
-    color2: "ececec30"
+    color1: "0090d930"
+    color2: "ececec90"
     divisions: 4.1
     radius: 0.6
     octaves: 6
@@ -49,7 +49,7 @@ cloudMesh: [
     speed: 0.45
     divisions: 4.1
     radius: 0.12
-    color: aac5ef80
+    color: aac5ef90
     octaves: 1
     persistence: 0.5
     scl: 6
@@ -61,7 +61,7 @@ cloudMesh: [
     speed: 0.48
     divisions: 4.1
     radius: 0.21
-    color: aac5ef30
+    color: aac5ef70
     octaves: 1
     persistence: 0.46
     scl: 6
