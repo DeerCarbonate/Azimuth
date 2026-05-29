@@ -27,7 +27,7 @@ consumes: {
 hasLiquids: true
 craftTime: 150
 craftEffect: none
-outputLiquid: nitrogen/0.0833
+outputLiquid: nitrogen/0.083333333333333333333333333333333333
 drawer: {
   type: DrawMulti
   drawers: [

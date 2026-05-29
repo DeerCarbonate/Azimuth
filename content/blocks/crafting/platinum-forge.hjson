@@ -34,7 +34,7 @@ consumes: {
   ]
   liquids: [
   isobutane/0.2000
-  cesium/0.0333
+  cesium/0.033333333333333333333333
 	]
 }
 craftTime: 60

@@ -18,7 +18,7 @@ consumes: {
 hasLiquids: true
 craftTime: 200
 craftEffect: none
-outputLiquid: ammonia/0.0333
+outputLiquid: ammonia/0.033333333333333333
 drawer: {
   type: DrawMulti
   drawers: [
