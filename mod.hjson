@@ -2,30 +2,39 @@
   name: azimut
   displayName: "[[]#d2fffe]Azimuth[[]]"
   subtitle: "[[]#c9c1eb]20.000 bugfixes and commits[[]]"
-  description: '''
-[[]#d3f2f4]Hybrid[[]] mod primarily built around a gradually branching campaign that expands in multiple directions.
-The mod adds a new planet, [[]#f7e9af]Gelion[[]], featuring its own campaign, star system, research tree, and gameplay mechanics.
-The planet offers over 90 blocks to research, 12 units [[]#ffd37f]each with their own unique abilities[[]], 12 campaign sectors, more than [[]#ffd37f]6 new mechanics[[]], and plenty of room for map creation.
-On top of that, the campaign also stands out with absolutely [[]#e65c5c]BRUTAL[[]] visual effects. Every texture was made with care and dedication.
-[[]#e65c5c]THIS MOD IS STILL IN DEVELOPMENT![[]]
-[[]#ffd37f]The current completion percentage is approximately 57%, with plenty of room to grow![[]]
-Help me develop the mod! Join the [[]#768bff]Azimuth Discord server[[]] using the [[]#ffd37f]link in the README file on the mod's official GitHub page.[[]]
-//////////////////////////////////
-Land on a [[]#c9c1eb]sub-cryonic[[]] terra slowly heating up beneath its [[]#e99696]unstable star[[]]. The celestial body is suffering from [[]#ffbe93]global warming[[]] — glaciers are melting, atmospheric pressure is rising, and temperatures continue to climb.
-[[]#e99696]Exterminate the enemy faction[[]]. Turn the planet into a temporary source of raw materials. [[]#d1e3ff]Witness a world that will soon become[[]] [[]#506381]ash[[]].
-If you enjoyed the mod, please consider giving it a star!
-[[]#c9c1eb]Thank you for playing.[[]]
-//////////////////////////////////
-Developers:
-Code: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
-Sprites: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
-Maps: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
-Localization: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
-Special Thanks:
-Music: [[]purple]ACE[[]] — "the last fight", "in orbit", "create", "smth far away"; [[]#ffe1a4]garretski[[]] — "Azimuth", "Rhumb".
-Maps: [[]#ce7e5c]Kivet/БОБ[[]] — "Cold Harbor"; [[]#fce4e0]Fate of Adrastus[[]] — "Tight Caverns"; [[]#84f491]Alpotat[[]] — assistance with the map "Arrival".
-Code: [[]#A4A4A4]KO[[]][[]#6D6D6D]STO[[]][[]white]LOM[[]]
-'''
+  description:
+    [[]#d3f2f4]Hybrid[[]] mod primarily built around a gradually branching campaign that expands in multiple directions.
+	
+    The mod adds a new planet, [[]#f7e9af]Gelion[[]], featuring its own campaign, star system, research tree, and gameplay mechanics.
+    The planet offers over 90 blocks to research, 12 units [[]#ffd37f]each with their own unique abilities[[]], 12 campaign sectors, more than [[]#ffd37f]6 new mechanics[[]], and plenty of room for map creation.
+	
+    On top of that, the campaign also stands out with absolutely [[]#e65c5c]BRUTAL[[]] visual effects. Every texture was made with care and dedication.
+	
+    [[]#e65c5c]THIS MOD IS STILL IN DEVELOPMENT![[]]
+    [[]#ffd37f]The current completion percentage is approximately 57%, with plenty of room to grow![[]]
+	
+    Help me develop the mod! Join the [[]#768bff]Azimuth Discord server[[]] using the [[]#ffd37f]link in the README file on the mod's official GitHub page.[[]]
+	
+    //////////////////////////////////
+	
+    Land on a [[]#c9c1eb]sub-cryonic[[]] terra slowly heating up beneath its [[]#e99696]unstable star[[]]. The celestial body is suffering from [[]#ffbe93]global warming[[]] — glaciers are melting, atmospheric pressure is rising, and temperatures continue to climb.
+    [[]#e99696]Exterminate the enemy faction[[]]. Turn the planet into a temporary source of raw materials. [[]#d1e3ff]Witness a world that will soon become[[]] [[]#506381]ash[[]].
+	
+    If you enjoyed the mod, please consider giving it a star!
+    [[]#c9c1eb]Thank you for playing.[[]] 
+	
+    //////////////////////////////////
+	
+    Developers:
+    Code: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
+    Sprites: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
+    Maps: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
+    Localization: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
+	
+    Special Thanks:
+    Music: [[]purple]ACE[[]] — "the last fight", "in orbit", "create", "smth far away"; [[]#ffe1a4]garretski[[]] — "Azimuth", "Rhumb".
+    Maps: [[]#ce7e5c]Kivet/БОБ[[]] — "Cold Harbor"; [[]#fce4e0]Fate of Adrastus[[]] — "Tight Caverns"; [[]#84f491]Alpotat[[]] — assistance with the map "Arrival".
+    Code: [[]#A4A4A4]KO[[]][[]#6D6D6D]STO[[]][[]white]LOM[[]]
   author: DeerCarbonate
   version: "0.42"
   minGameVersion: "158"
