@@ -19,8 +19,8 @@ radius: 0.6
 minZoom: 0.40
 sectorSize: 0
 atmosphereRadIn: 0
-atmosphereRadOut: 0.14
-atmosphereColor: 7e7e8630
+atmosphereRadOut: 0.014
+atmosphereColor: d3cfe910
 iconColor: d3cfe9
 landCloudColor: d3cfe9
 icon: planet
@@ -32,13 +32,13 @@ mesh: [
     type: NoiseMesh
 	bloom: false
     seed: 65544
-    color1: "87899b00"
-    color2: "60616900"
+    color1: "bed1d600"
+    color2: "a7accb00"
     divisions: 5
-    radius: 0.6
+    radius: 0.58888888888
     octaves: 6
     persistence: 0.6
     scl: 1
-    mag: 0.43
+    mag: 1.3
  }
 ]
