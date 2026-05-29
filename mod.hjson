@@ -1,7 +1,7 @@
-  name: "azimut"
-  displayName: "[[]#d2fffe]Azimuth[[]]"
-  subtitle: "[[]#c9c1eb]20.000 bugfixes and commits[]"
-  "description": "[[]#d3f2f4]Hybrid[] mod primarily built around a gradually branching campaign that expands in multiple directions.
+  name: azimut
+  displayName: [[]#d2fffe]Azimuth[[]]
+  subtitle: [[]#c9c1eb]20.000 bugfixes and commits[]
+  description: [[]#d3f2f4]Hybrid[] mod primarily built around a gradually branching campaign that expands in multiple directions.
 
 The mod adds a new planet, [[]#f7e9af]Gelion[[]], featuring its own campaign, star system, research tree, and gameplay mechanics.
 The planet offers over 90 blocks to research, 12 units [[]#ffd37f]each with their own unique abilities[[]], 12 campaign sectors, more than [[]#ffd37f]6 new mechanics[[]], and plenty of room for map creation.
@@ -35,10 +35,9 @@ Special Thanks:
 Music: [[]purple]ACE[[]] — "the last fight", "in orbit", "create", "smth far away"; [[]#ffe1a4]garretski[[]] — "Azimuth", "Rhumb".
 Maps: [[]#ce7e5c]Kivet/БОБ[[]] — "Cold Harbor"; [[]#fce4e0]Fate of Adrastus[[]] — "Tight Caverns"; [[]#84f491]Alpotat[[]] — assistance with the map "Arrival".
 Code: [[]#A4A4A4]KO[[]][[]#6D6D6D]STO[[]][[]white]LOM[[]]
-"
-  "author": "DeerCarbonate",
-  "version": "0.42",
-  "minGameVersion": "158",
+  author: DeerCarbonate
+  version: 0.42
+  minGameVersion: 158
   mods: []
   contentOrder: [
   cobalt
