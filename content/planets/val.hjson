@@ -32,13 +32,13 @@ mesh: [
     type: NoiseMesh
 	bloom: false
     seed: 65544
-    color1: "bed1d600"
-    color2: "a7accb00"
-    divisions: 5
+    color1: "aad8ef00"
+    color2: "aac5ef00"
+    divisions: 4.1
     radius: 0.6
     octaves: 6
-    persistence: 0.6
+    persistence: 0.39
     scl: 1
-    mag: 0.0024
+    mag: 0.24
  }
 ]
