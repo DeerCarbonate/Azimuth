@@ -49,12 +49,25 @@ mesh: [
     color1: "fefefe08"
     color2: "fefefe08"
     divisions: 4.1
-    radius: 0.15
+    radius: 0.35
     octaves: 6
     persistence: 0.21
     scl: 1.2
     mag: 7.8
  }
+   {
+ //white
+    type: NoiseMesh
+	bloom: false
+    seed: 65544
+    color1: "fefefe08"
+    color2: "fefefe08"
+    divisions: 4.1
+    radius: 0.50
+    octaves: 6
+    persistence: 0.21
+    scl: 1.2
+    mag: 4.5
 ]
 cloudMesh: [
   {
