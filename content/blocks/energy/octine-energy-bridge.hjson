@@ -13,11 +13,11 @@ maxNodes: 6
 	]
 category: power
         research: {
-    parent: "energy-bridge"
+    parent: "energy-deconverter"
     planet: gelion
                 "requirements": [
                 "octine/50"
-                "titanite/150"
+                "compound/150"
                 ]
         objectives: [
     {
