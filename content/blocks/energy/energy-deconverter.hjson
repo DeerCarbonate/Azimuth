@@ -1,0 +1,43 @@
+type: GenericCrafter
+health: 320
+size: 2
+category: power
+squareSprite: false
+research: {
+  parent: "energy-converter"
+  planet: gelion
+    "requirements": [
+	  "octine/30"
+	  "geliarin/800"
+	  "caterium/800"
+	  "venerium/1200"
+]
+}
+requirements: [
+  octine/30
+  venerium/70
+  caterium/50
+  geliarin/45
+]
+consumes: {
+  power: 2
+}
+outputLiquid: power/0.13333333333333333333333333333333333333
+hasLiquids: true
+liquidCapacity: 60
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {    
+      type: DrawDefault
+    }
+	{
+     type: DrawGlowRegion
+	 color: ff3e01
+    }
+  ]
+}
