@@ -2,7 +2,6 @@ type: Pump
 size: 2
 category: liquid
 squareSprite: false
-research: mechanical-quarry
 requirements: [
   cobalt/25
   venerium/20
@@ -41,4 +40,17 @@ drawer: {
       type: DrawDefault
     }
   ]
+}
+research: {
+  parent: mechanical-quarry
+  objectives: [
+    {
+      type: OnSector
+      preset: first
+    }
+  ]
+      requirements: [
+	  venerium/20
+	  cobalt/20
+]
 }
