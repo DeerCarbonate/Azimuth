@@ -6,10 +6,10 @@ research: {
   parent: "naval-editor"
   planet: gelion
     "requirements": [
-	  "venerium/20"
-	  "cobalt/120"
-	  "platinum/115"
-	  "geliarin/35"
+	  "venerium/150"
+	  "cobalt/170"
+	  "platinum/130"
+	  "geliarin/90"
 ]
 objectives: [
     {
@@ -39,7 +39,7 @@ plans: [
 ]
 
 consumes: {
-	liquid: power/0.1333
+	liquid: power/0.133333333333333333333333333333333333333333
 }
 configurable: true
 requirements: [

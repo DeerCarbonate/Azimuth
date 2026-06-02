@@ -1,25 +1,91 @@
 type: flying
-health: 6950
+health: 6600
+range: 160
 hitSize: 23
 flying: true
-speed: 1.95
+drawCell: false
+speed: 2.4
 accel: 0.04
 drag: 0.013
 loopSound: loopHover
 loopSoundVolume: 0.8
 healColor: f0a4d988
-armor: 12
+armor: 13
 rotateSpeed: 2.95
 outlineColor: 251b21
-targetair: true
+targetair: false
 faceTarget: true
 engineOffset: 10.2
 engineColor: f6afdd
 engineColorInner: FFFFFF
 engineSize: 5
 trailColor: f6afdd
-trailLength: 9
+trailLength: 12
 lowAltitude: true
+weapons: [{
+    baseRotation: 180
+    shootCone: 360
+    alternate: false
+    y: 155
+    shootSound: none
+    shootStatus: charge
+    shootStatusDuration: 40
+	shootY: 155
+	reload: 200
+       shoot: {
+      type: ShootSpread
+      firstShotDelay: 40
+      shotDelay: 0.21
+      spread: 0
+      shots: 46
+    }
+    bullet: {
+      type: BulletType
+      recoil: 0.057
+      instantDisappear: true
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+	}
+}
+  {
+    x: 0
+    y: 24
+    shootY: -12
+    reload: 1
+	minShootVelocity: 4.85
+    mirror: false
+    controllable: false
+    autoTarget: true
+    shootCone: 360
+    targetInterval: 1
+    targetSwitchInterval: 1
+    shootSound: none
+    bullet: {
+      type: ContinuousFlameBulletType
+      flareLength: 0
+      length: 80
+      width: 12
+      damage: 58
+      pierce: true
+	  pierceCap: 2
+      pierceArmor: false
+      hitEffect: none
+      despawnEffect: none
+      hitColor: E67676
+	  continuous: true
+	  knockback: 0.1
+      colors: [
+               D4505000,
+               E6767600,
+               EEAAAA00,
+               FFC7C700
+              ]
+      lightColor: D4505000
+    }
+  }
+  ]
 	parts: [
 		{
 			type: HoverPart
@@ -32,97 +98,64 @@ lowAltitude: true
 			color: fbace310
 			y: -1.2
 		}
-	]
-weapons: [{
-name: Development-weapon
-mirror: true
-top: false
-alternate: false
-rotate: false
-x: 7.5
-y: -5.5
-reload: 85
-layerOffset: -0.001
-baseRotation: -140
-velocityRnd: 0.4
-ignoreRotation: true
-shootCone: 360
-shoot: {
-	type: ShootMulti
-	source: {
-    type: ShootSpread
-    firstShotDelay: 12
-    spread: 0.2
-    shots: 1
-    }
-	dest: [
+				{
+        type: HaloPart
+        tri: true
+        y: 3
+        triLength: 16
+        shapes: 1
+		moveY: 18
+        radius: 0
+        radiusTo: 9.6
+        color: fbace3
+        shapeRotation: 0
+        layer: 100
+        progress: charge
+		weaponIndex: 1
+      }
+	  				{
+        type: HaloPart
+        tri: true
+        y: 3
+        triLength: 19
+        shapes: 1
+		moveY: 18
+        radius: 0
+        radiusTo: 10.2
+        color: fbace335
+        shapeRotation: 0
+        layer: 100
+        progress: charge
+		weaponIndex: 1
+      }
 	{
-	type: ShootPattern
-		shots: 6
-		shotDelay: 2.4
-	}
+      type: RegionPart
+      suffix: -caro
+      under: true
+      mirror: true
+      progress: warmup
+	  y: 1
+	  xScl: 0
+	  yScl: 0
+	  growX: 1
+	  growY: 1
+      growProgress: warmup
+    }
 	]
-	}
-    inaccuracy: 12
-    recoil: 1.5
-    shootSound: malignShoot
-    shootEffect: none
-    bullet: {
-        type: BasicBulletType
-        damage: 35
-        drag: 0.028
-        homing: true
-        speed: 7.05
-        sprite: large-bomb
-        lifetime: 120
-        backColor: f6afdd
-        frontColor: ffffff
-        width: 14
-        height: 38
-        recoil: 0.34
-        weaveMag: 1
-        weaveScale: 1
-        homingPower: 0.21
-        homingDelay: 0.01
-		splashDamageRadius: 25
-		splashDamage: 45
-		hitEffect: blastExplosion
-		shootEffect: {
-		type: ParticleEffect
-			colorFrom: f6afdd
-			colorTo: f6afdd00
-			particles: 12
-			cone: 12
-			length: 24
-			baseLength: 5
-			lightScl: 3
-			lightOpacity: 2
-			spin: 1
-			sizeFrom: 3.5
-			sizeTo: 0
-		}
-despawnEffect: {
-type: ParticleEffect 
-lifetime: 120
-colorFrom: f6afdd
-colorTo: f6afdd00
-drag: 0.7
-particles: 12
-cone: 360
-length: 6
-baseLength: 1
-lightScl: 3
-lightOpacity: 2
-spin: 0
-sizeFrom: 2
-sizeTo: 0 
-offset: 1
-interp: exp5Out
-sizeInterp: exp5In
-}
-hitColor: f6afdd
-trailLength: 19
-trailColor: f6afdd
-}
-}
+abilities: [
+  {
+    type: ShieldArcAbility
+    regen: 3
+    max: 300
+    angle: 140
+    radius: 17
+    cooldown: 150
+    whenShooting: true
+    angleOffset: 0
+    y: 1
+	x: 0
+    width: 4
+    display: false
+	drawArc: false
+  }
 ]

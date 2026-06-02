@@ -6,10 +6,10 @@ research: {
   parent: "core-forum"
   planet: gelion
     "requirements": [
-	  "venerium/100"
-	  "cobalt/20"
+	  "venerium/210"
+	  "cobalt/90"
 	  "platinum/90"
-	  "geliarin/25"
+	  "geliarin/65"
 ]
 objectives: [
     {

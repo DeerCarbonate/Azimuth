@@ -1,7 +1,7 @@
 	type: flying
 	outlineColor: 21202a
 	flying: true
-	health: 400
+	health: 350
  armor: 1
 	buildSpeed: 0.7
 	drag: 0.085
@@ -22,7 +22,7 @@
     {
     type: EnergyFieldAbility
     maxTargets: 1
-    damage: 40
+    damage: 12
     reload: 150
     range: 170
 	color: bf92f9
@@ -30,7 +30,7 @@
     x: 0
     y: 0
 	sameTypeHealMult: 0.08
-    healPercent: 0.8
+    healPercent: 0.9
 	healEffect: none
 	effect: none
 	continuous: false

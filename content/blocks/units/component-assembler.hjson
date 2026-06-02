@@ -11,7 +11,7 @@ requirements: [
 hasPower: true
 consumes: {
 	liquids: [
-	  ammonia/0.0333
+	  ammonia/0.033333333333333333333333333333333333333333333
 	]
 	power: 2
 }

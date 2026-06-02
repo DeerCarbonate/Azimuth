@@ -6,10 +6,10 @@ research: {
   parent: "mech-editor"
   planet: gelion
     "requirements": [
-	  "venerium/140"
-	  "cobalt/250"
-	  "platinum/100"
-	  "geliarin/80"
+	  "venerium/170"
+	  "cobalt/150"
+	  "platinum/95"
+	  "geliarin/75"
 ]
 objectives: [
     {
