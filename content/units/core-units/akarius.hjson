@@ -3,7 +3,7 @@
 	coreUnitDock: true
 	flying: true
 	health: 750
-	buildSpeed: 1.85
+	buildSpeed: 1.8
 	drag: 0.05
 	mineTier: 1
     mineSpeed: 8.5

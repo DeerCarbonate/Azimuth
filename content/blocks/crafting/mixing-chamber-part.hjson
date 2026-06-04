@@ -2,7 +2,7 @@ type: HeatCrafter
 health: 400
 size: 3
 category: crafting
-rotate: false
+rotate: true
 squareSprite: false
 liquidCapacity: 90
 liquidOutputDirections: [1]
@@ -58,15 +58,9 @@ drawer: {
       spinSprite: true
     }
     {
-      type: DrawLiquidTile
+      type: DrawLiquidRegion
+      suffix: -liquid
       drawLiquid: gas-geliarin
-      padLeft: 0.3
-      padBottom: 3.11
-      padTop: 0
-      padRight: 0.3
-    }
-    {
-      type: DrawDefault
     }
 	  {
 		type: DrawHeatInput

@@ -21,15 +21,15 @@ shootY: 7.8
 coolant: {
   type: ConsumeLiquid
   liquid: power
-  amount: 0.0167
+  amount: 0.03333333333333333333333333333333333333333333
 }
 research: {
   parent: "core-forum"
   planet: "gelion"
     "requirements": [
-	  "venerium/130"
-	  "cobalt/130"
-	  "platinum/85"
+	  "venerium/30"
+	  "cobalt/30"
+	  "platinum/5"
 	]
 }
 shoot: {
@@ -126,7 +126,7 @@ shootEffect: [
 {
 followParent: false
 length: 0
-lifetime: 10
+lifetime: 16
 particles: 1
 cone: 0
 region: azimut-despawn
@@ -134,8 +134,6 @@ sizeFrom: 22
 sizeTo: 0
 colorTo: b9c4d8
 baseRotation: 90
-followParent: true
-rotWithParent: true
 }
 {
   type: SoundEffect
@@ -149,24 +147,33 @@ rotWithParent: true
 ]
 }
     raw-caterium: {
+	    shootPattern: {
+        type: ShootSpread
+        shots: 1
+    }
 type: BasicBulletType
-width: 11
-height: 17
-speed: 2.8
+width: 14
+height: 21
+speed: 2.1
 collidesTiles: true
 collidesGround: true
-lifetime: 65
-damage: 105
+lifetime: 93
+reloadMultiplier: 0.75
+damage: 60
+splashDamage: 220
+splashDamageRadius: 35
+rangeChange: -25
 backColor: 957655
 frontColor: dacaaa
-fragBullets: 6
+fragBullets: 11
 fragLifeMin: 1.2
 fragLifeMax: 2
 scaleLife: false
 buildingDamageMultiplier: 0.1
-trailChance: 1
-trailInterval: 1.6
+trailChance: 0.25
+trailInterval: 0.9
 despawnEffect: none
+armorMultiplier: 2.5
 trailEffect: [
 {
 type: ParticleEffect 
@@ -176,7 +183,7 @@ particles: 2
 cone: 360
 length: 9
 sizeFrom: 0
-sizeTo: 3
+sizeTo: 5
 interp: exp5Out
 sizeInterp: exp5In
 lifetime: 35
@@ -189,8 +196,8 @@ startDelay: 2
 particles: 1
 cone: 360
 length: 6
-sizeFrom: 2
-sizeTo: 3
+sizeFrom: 3.4
+sizeTo: 5.5
 interp: exp5Out
 sizeInterp: exp5In
 lifetime: 65
@@ -218,7 +225,7 @@ particles: 1
 cone: 0
 region: azimut-shockwave
 sizeFrom: 0
-sizeTo: 20
+sizeTo: 40
 colorTo: dacaaa00
 baseRotation: 180
 interp: pow3Out
@@ -227,7 +234,7 @@ interp: pow3Out
   type: ParticleEffect
   particles: 11
   lifetime: 45
-  length: 30
+  length: 55
   baseLength: 0
   cone: 360
   sizeFrom: 0
@@ -253,7 +260,7 @@ speed: 3.2
 collidesTiles: true
 collidesGround: true
 lifetime: 35
-damage: 16
+damage: 24
 backColor: 957655
 frontColor: dacaaa
 despawnEffect: none
@@ -267,6 +274,7 @@ pierce: true
 pierceCap: 7
 buildingDamageMultiplier: 0.1
 hitEffect: none
+armorMultiplier: 4
 fragBullet: {
       type: LaserBulletType
       colors: [dacaaa, d9cdaf, a59c85, 957655, 6a5843]
@@ -274,29 +282,28 @@ fragBullet: {
       width: 2.7
       sideAngle: 4
       sideWidth: 3.2
-      damage: 19
+      damage: 44
       pierceBuilding: false
       pierce: true
       pierceCap: 2
       hitEffect: none
       despawnEffect: none
 	  buildingDamageMultiplier: 0.1
+	  armorMultiplier: 4
 		}
 	}
 	shootEffect: [
 {
 followParent: false
 length: 0
-lifetime: 10
+lifetime: 25
 particles: 1
 cone: 0
-region: azimut-despawn
-sizeFrom: 22
+region: azimut-shootbig
+sizeFrom: 27
 sizeTo: 0
 colorTo: dacaaa
-baseRotation: 90
-followParent: true
-rotWithParent: true
+baseRotation: 270
 }
 {
   type: SoundEffect
@@ -315,6 +322,15 @@ rotWithParent: true
   sound: shootElude
   minVolume: 0.95
   maxVolume: 0.98
+}
+{
+  type: SoundEffect
+  minPitch: 0.7
+  maxPitch: 0.9
+  effect: none
+  sound: shootArtillerySapBig
+  minVolume: 0.6
+  maxVolume: 0.69
 }
 ]
 }

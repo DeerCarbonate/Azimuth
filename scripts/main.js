@@ -7,5 +7,7 @@ mod.meta.displayName =
 
 mod.meta.author = "[#c3961f]Deer[#876409]Carbonate";
 
+require("multiblock1");
+require("multiblock2");
 require("blocks");
 require("weather");

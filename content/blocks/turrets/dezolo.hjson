@@ -8,7 +8,7 @@ squareSprite: false
 coolant: {
   type: ConsumeLiquid
   liquid: power
-  amount: 0.0167
+  amount: 0.0500
 }
 shoot: {
   firstShotDelay: 15
@@ -17,10 +17,10 @@ research: {
   parent: "priority"
   planet: "gelion"
     "requirements": [
-	  "venerium/240"
-	  "cobalt/120"
-	  "platinum/200"
-	  "geliarin/70"
+	  "venerium/100"
+	  "cobalt/80"
+	  "platinum/40"
+	  "geliarin/10"
 ]
 objectives: [
     {

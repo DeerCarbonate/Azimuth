@@ -31,10 +31,10 @@ research: {
   parent: yongsin
   planet: gelion
   requirements: [
-    venerium/800
-    cobalt/900
-    platinum/650
-    geliarin/100
+    venerium/40
+    cobalt/40
+    platinum/20
+    geliarin/5
   ]
   objectives: [
     {

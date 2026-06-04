@@ -2,7 +2,7 @@ type: GenericCrafter
 health: 400
 size: 3
 category: crafting
-rotate: false
+rotate: true
 squareSprite: false
 liquidCapacity: 90
 research: {
@@ -45,12 +45,9 @@ drawer: {
       suffix: -bottom
     }
     {
-      type: DrawLiquidTile
+      type: DrawLiquidRegion
+      suffix: -liquid
       drawLiquid: gas-geliarin
-      padLeft: 0
-      padBottom: 0
-      padTop: 3.11
-      padRight: 0.3
     }
     {
       type: DrawCircles
@@ -65,14 +62,6 @@ drawer: {
       strokeMax: 1.4
       radius: 9
       amount: 1.5
-    }
-	{
-      type: DrawDefault
-    }
-	 {
-      type: DrawRegion
-      suffix: -overlay
-      layer: 1
     }
   ]
 }

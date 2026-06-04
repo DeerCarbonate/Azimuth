@@ -7,10 +7,9 @@ research: {
   parent: "isobutane-burner"
   planet: gelion
     "requirements": [
-	  "venerium/300"
-	  "cobalt/300"
-	  "platinum/300"
-	  "geliarin/100"
+	  "venerium/80"
+	  "cobalt/80"
+	  "platinum/40"
 ]
 objectives: [
     {

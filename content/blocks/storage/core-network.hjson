@@ -22,14 +22,12 @@ alwaysUnlocked: false
                 "requirements": [
                 "cobalt/10000"
                 "venerium/10000"
-				"compound/3000"
 				"geliarin/3000"
-				"platinum/5000"
                 ]
         objectives: [
     {
 type: SectorComplete
-preset: eight
+preset: fifth
     }
   ]
 }
