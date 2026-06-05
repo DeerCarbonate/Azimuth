@@ -127,6 +127,7 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     terraformer
     heal-drone-station
     orbital-regeneration-drone-station
+	construction-drone-station
     force-drone-station
     fortification-drone-station
     energy-bridge

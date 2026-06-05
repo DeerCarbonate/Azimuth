@@ -1,0 +1,162 @@
+flying: true
+outlineColor: 21202a
+type: tether
+hitSize: 11
+health: 250
+armor: 2
+range: 0
+hidden: true
+itemCapacity: 0
+speed: 1
+rotateShooting: false
+accel: 0.04
+drag: 0.02
+defaultController: CargoAI
+isEnemy: false
+allowedInPayloads: false
+logicControllable: false
+playerControllable: false
+engineSize: 0
+drawCell: false
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      rotationSpacing: 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+        type: ParticleEffect
+        particles: 5
+        length: 120
+        lifetime: 360
+        sizeFrom: 1.7
+        sizeTo: 7.2
+        cone: 2
+        baseRotation: 73
+        useRotation: false
+        interp: pow5Out
+        colorFrom: c5c9db84
+        colorTo: b0b0b000
+        layer: 100.3
+      }
+    }
+    {
+      followParent: false
+      length: 0
+      lifetime: 35
+      particles: 1
+      cone: 0
+      region: azimut-shockwave
+      sizeFrom: 17
+      sizeTo: 24
+      colorTo: c5c9db00
+      baseRotation: 180
+      interp: pow3Out
+    }
+    {
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 25
+      particles: 5
+      sizeFrom: 5
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: c5c9db84
+      colorTo: b0b0b000
+    }
+  ]
+}
+
+parts: [
+  {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 1
+    color: c5c9db
+    layer: 110
+    haloRadius: 14
+    haloRadiusTo: 6.0
+    radius: 5
+    radiusTo: 6
+    triLength: 6
+    triLengthTo: 1
+    haloRotateSpeed: -0.55
+    shapeRotation: 180
+  }
+  {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 1
+    color: c5c9db
+    layer: 110
+    haloRadius: 14
+    haloRadiusTo: 6.0
+    radius: 5
+    radiusTo: 6
+    triLength: 6
+    triLengthTo: 1
+    haloRotateSpeed: 0.45
+    shapeRotation: 180
+  }
+    {
+    type: HaloPart
+    progress: charge
+    tri: true
+    shapes: 2
+    color: c5c9db15
+    layer: 110
+    haloRadius: 20
+    haloRadiusTo: 0
+    radius: 5
+    radiusTo: 6
+    triLength: 6
+    triLengthTo: 1
+    haloRotateSpeed: -0.45
+    shapeRotation: 180
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    layer: 109
+    color: c5c9db
+    stroke: 6.3
+    strokeTo: 6.3
+    radius: 2
+    radiusTo: 2
+  }
+   {
+    type: ShapePart
+    radius: 14
+    radiusTo: 6
+    stroke: 1.5
+    strokeTo: 1.5
+    layer: 110
+    circle: true
+    hollow: true
+    color: c5c9db
+   }
+]
+abilities: [
+  {
+    type: UnitSpawnAbility
+    unit: azimut-construction-mini-drone
+    spawnTime: 3600
+    spawnX: 12
+    spawnY: 0
+  }
+  {
+    type: UnitSpawnAbility
+    unit: azimut-construction-mini-drone
+    spawnTime: 3600
+    spawnX: -12
+    spawnY: 0
+  }
+  ]

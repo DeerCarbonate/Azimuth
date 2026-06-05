@@ -1,0 +1,92 @@
+	type: flying
+	outlineColor: 21202a
+	flying: true
+	health: 120
+    armor: 1
+	buildSpeed: 0.4
+	drag: 0.095
+    buildRange: 170
+	speed: 4
+	range: 80
+	accel: 0.037
+	hitSize: 1
+	targetGround: true
+	targetAir: true
+	rotateSpeed: 9.2
+    engineColor: fff4a3
+    engineSize: 0
+    engineOffset: 3
+	trailColor: bf92f900
+	healColor: c5c9db88
+    itemCapacity: 0
+    hidden: true
+	drawCell: false
+	abilities: [
+  {
+    effect: {
+      type: ParticleEffect
+      colorFrom: c5c9db
+      colorTo: 48517090
+      lifetime: 30
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 3.5
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: 0
+  }
+  ]
+  weapons: [
+{
+    reload: 5000
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+		  shoot: {
+    type: ShootSpread
+    firstShotDelay: 3600
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 0
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: true
+    }
+}
+]

@@ -1,0 +1,45 @@
+type: UnitCargoLoader
+databaseTag: station
+squareSprite: false
+size: 3
+health: 430
+unitType: construction-drone
+itemCapacity: 0
+separateItemCapacity: true
+hasItems: true
+hasPower: false
+hasLiquids: true
+category: effect
+requirements: [
+  cobalt/170
+  geliarin/80
+  compound/110
+  platinum/130
+]
+consumes: {
+  liquids: [
+    ammonia/0.066666666666666666666666666666666666666
+    iterin/0.0333333333333333333333333333333333333333333333333
+  ]
+}
+polyStroke: 1.5
+polyRadius: 11
+polySides: 6
+polyRotateSpeed: -0.8
+polyColor: c5c9db30
+research: {
+  parent: heal-drone-station
+  planet: gelion
+  requirements: [
+    cobalt/500
+    compound/150
+    platinum/500
+    geliarin/300
+  ]
+  objectives: [
+    {
+      type: OnSector
+      preset: "four"
+    }
+  ]
+}
