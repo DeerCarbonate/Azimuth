@@ -1,5 +1,3 @@
-    name: Reinforced cargo drone
-    description: "Evenly distributes resources across unloading points."
     flying: true
 	outlineColor: 21202a
 	type: tether

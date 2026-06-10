@@ -1,0 +1,136 @@
+	outlineColor: 21202a
+	coreUnitDock: true
+	buildSpeed: 2.4
+	drag: 0.12
+	mineTier: 2
+    mineSpeed: 8.7
+	armor: 4
+    buildRange: 230
+    itemCapacity: 150
+	accel: 0.20
+	targetGround: true
+	targetAir: true
+	rotateSpeed: 8
+    engineSize: 0
+	healColor: bf92f988
+	shieldColor: bf92f910
+	omniMovement: true
+	rotateMoveFirst: true
+	strafePenalty: 0.14
+	faceTarget: false
+		abilities: [
+    {
+    type: EnergyFieldAbility
+    maxTargets: 8
+    damage: 0
+    reload: 7.4
+    range: 65
+	color: bf92f9
+	statusDuration: 0
+    x: 0
+    y: 0
+	sameTypeHealMult: 0.07
+    healPercent: 0.9
+	healEffect: none
+	effect: none
+	continuous: false
+	rotate: false
+	hitBuildings: false
+	hitUnits: true
+	sectorRad: 0
+    healEffect: none
+	hitEffect: none
+    shootSound: none
+    effect: none
+	continuous: false
+	sectors: 0
+    effectRadius: 0
+	damageEffect: none
+	hitColor: b0b0b000
+}
+]
+	weapons: [
+	{
+	mirror: false
+	x: 0
+	y: 0
+	rotate: true
+	rotateSpeed: 12
+	reload: 14
+    velocityRnd:0.15
+	shootSound: shootMerui
+    controllable: true
+	layer: 116
+		bullet: {
+			  smokeEffect: [{
+        type: ParticleEffect
+        colorFrom: bf92f990
+        colorTo: 665c9f00
+        particles: 2
+        cone: 24
+        lifetime: 31
+        length: 34
+        interp: pow3Out
+		sizeInterp: pow2In
+        sizeFrom: 2.8
+        sizeTo: 0.3
+        }
+	    ]
+shootEffect: {
+type: ParticleEffect
+lifetime: 18
+particles: 2
+offsetX: 0
+length: 20
+line: true
+strokeFrom: 1.7
+strokeTo: 0.9
+lenFrom: 4
+lenTo: 0 
+colorTo: 665c9f09
+colorFrom: bf92f9
+cone: 15
+        }
+		type: BasicBulletType
+		damage: 18
+		sprite: azimut-slicer
+		lifetime: 90
+		width: 6
+		height: 7
+		speed: 2.7
+		backColor: 665c9f
+		frontColor: bf92f9
+		trailColor: 665c9f
+		healColor: bf92f980
+		trailWidth: 1.7
+		trailLength: 8
+		damage: 14
+		lifetime: 28
+		despawnEffect: none
+		collidesTiles: true
+		keepVelocity: false
+		collidesAir: true
+		buildingDamageMultiplier: 0.01
+		pierceArmor:true
+		healAmount:11
+		collidesTeam:true
+	hitEffect: {
+    type: ExplosionEffect
+    lifetime: 45
+    waveColor: 665c9f
+    waveStroke: 1.2
+    waveRad: 8.5
+    smokeColor: 665c9f60
+    smokeSizeBase: 0
+    smokeSize: 5.5
+    smokes: 2
+    sparkColor: 665c9f
+    sparkStroke: 1.6
+    sparkRad: 14.5
+    sparkLen: 2
+    sparks: 2
+    int: pow3out
+		}
+		}
+	}
+]	

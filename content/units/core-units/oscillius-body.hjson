@@ -1,0 +1,39 @@
+	outlineColor: 21202a
+	healColor: bf92f988
+	shieldColor: bf92f910
+	hidden: true
+    faceTarget: false
+	abilities: [
+	{
+type:RegenAbility
+percentAmount:-0.03
+}
+]
+weapons: [
+  {
+    type: RepairBeamWeapon
+    name: cull-b
+	x: 0
+	y: 0
+    mirror: false
+    shootY: 0
+    shootCone: 45
+    shootSound: none
+    noAttack: true
+    autoTarget: true
+    targetUnits: false
+    targetBuildings: true
+    continuous: true
+    rotate: false
+    reload: 0.002
+    beamWidth: 0.55
+    widthSinMag: 0.04
+    repairSpeed: 1.2
+    fractionRepairSpeed: 0.0008
+    healColor: bf92f9
+    laserColor: bf92f9
+    bullet: {
+      maxRange: 80
+    }
+  }
+]

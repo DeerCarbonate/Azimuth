@@ -4,5 +4,6 @@
     explosiveness: 0.8
     flammability: 0
     radioactivity: 0.2
-    cost: 1
+    cost: 2
 	shownPlanets: [gelion]
+    research: zinc

@@ -1,4 +1,5 @@
 type: hover
+range: 85
 useEngineElevation: false
 shadowElevation: 0.3
 engineOffset: -1.75

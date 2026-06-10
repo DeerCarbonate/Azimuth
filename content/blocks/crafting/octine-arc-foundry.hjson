@@ -1,0 +1,158 @@
+type: HeatCrafter
+size: 3
+category: crafting
+squareSprite: false
+health: 800
+itemCapacity: 50
+heatRequirement: 6
+overheatScale: 1
+maxEfficiency: 3
+craftTime: 170
+requirements: [
+  geliarin/100
+  venerium/250
+  caterium/150
+  zinc/80
+]
+consumes: {
+  power: 2
+  items: [
+  caterium/5
+  geliarin/3
+  ]
+}
+outputItem: octine/3
+hasLiquids: false
+		research: {
+    parent: "sphalerite-refiner"
+    planet: gelion
+		"requirements": [
+		"geliarin/2000"
+		"caterium/4200"
+		"venerium/6500"
+		"zinc/1500"
+		]
+	objectives: [
+    {
+type: SectorComplete
+preset: twelw
+    }
+  ]
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawCrucibleFlame
+    } 
+		{
+   type: DrawParticles
+   color: efbbb4
+   alpha: 0.15
+   particleRad: 9
+   rotateScl: 15
+   }
+	{
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -2.5
+      spinSprite: true
+	  rotation: 45
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -1.5
+      spinSprite: true
+	  rotation: 0
+    }
+    {    
+      type: DrawDefault
+    }
+    {
+		type: DrawHeatInput
+		suffix: -heat
+	} 
+  ]
+}
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      lifetime: 90
+      offsetX: 7
+      offsetY: 7
+      particles: 4
+      line: false
+      cone: 0
+      useRotation: false
+      baseRotation: 90
+	  sizeFrom: 2
+	  sizeTo: 0
+      colorFrom: efbbb400
+      colorTo: 89535560
+      interp: pow2
+      sizeInterp: pow3In
+      layer: 80
+    }
+	{
+      type: ParticleEffect
+      lifetime: 90
+      offsetX: -7
+      offsetY: 7
+      particles: 4
+      line: false
+      cone: 0
+      useRotation: false
+      baseRotation: 90
+	  sizeFrom: 2
+	  sizeTo: 0
+      colorFrom: efbbb400
+      colorTo: 89535560
+      interp: pow2
+      sizeInterp: pow3In
+      layer: 80
+    }
+    {
+      type: ParticleEffect
+      lifetime: 90
+      offsetX: 7
+      offsetY: -7
+      particles: 4
+      line: false
+      cone: 0
+      useRotation: false
+      baseRotation: 90
+	  sizeFrom: 2
+	  sizeTo: 0
+      colorFrom: efbbb400
+      colorTo: 89535560
+      interp: pow2
+      sizeInterp: pow3In
+      layer: 80
+    }
+  {
+      type: ParticleEffect
+      lifetime: 90
+      offsetX: -7
+      offsetY: -7
+      particles: 4
+      line: false
+      cone: 0
+      useRotation: false
+      baseRotation: 90
+	  sizeFrom: 2
+	  sizeTo: 0
+      colorFrom: efbbb400
+      colorTo: 89535560
+      interp: pow2
+      sizeInterp: pow3In
+      layer: 80
+    }
+	]
+}

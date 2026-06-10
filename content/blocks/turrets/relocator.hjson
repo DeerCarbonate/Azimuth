@@ -38,7 +38,7 @@ objectives: [
 coolant: {
   type: ConsumeLiquid
   liquid: power
-  amount: 0.0167
+  amount: 0.066666666666666666666666666666666666666666666
 }
 shoot: {
 	type: shootSpread
@@ -47,6 +47,146 @@ shoot: {
 	shotDelay: 7
 }
   ammoTypes: {
+  	    octine: {
+		shootPattern: {
+	type: ShootMulti
+	source: {
+    type: ShootSpread
+    firstShotDelay: 15
+    spread: 4
+    shots: 4
+    }
+	dest: [
+	{
+	type: ShootPattern
+		shots: 2
+		shotDelay: 30
+	}
+	]
+	}
+type: BasicBulletType
+drag: 0.024
+reloadMultiplier: 0.7
+sprite: large-orb
+width: 11
+height: 17
+rangeChange: -40
+speed: 6
+collidesTiles: true
+collidesGround: true
+lifetime: 45
+damage: 40
+pierce: true
+pierceBuilding: true
+pierceCap: 3
+pierceDamageFactor: 0.005
+backColor: dda59d
+frontColor: f7e2da
+trailColor: dda59d
+trailLength: 7
+trailWidth: 1.7
+despawnEffect: none
+collidesTiles: true
+keepVelocity: false
+collidesAir: true
+fragBullets: 2
+fragVelocityMin: 0.8
+fragVelocityMax: 1.6
+buildingDamageMultiplier: 0.1
+                trailChance:0.65
+                trailInterval:6
+				                  trailEffect:[
+                {
+                    type: ParticleEffect
+                    colorFrom: f7e2da80
+                    colorTo: dda59d00
+                    particles: 1
+                    cone: 360
+                    lifetime:13
+                    length: 3
+                    sizeFrom: 1.8
+                    sizeTo: 1.2
+                    layer:100.2
+                }
+                {
+                    type: ParticleEffect
+                    region:large-bomb
+                    colorFrom: f7e2da70
+                    colorTo: dda59d00
+                    particles: 1
+                    lifetime:17
+                    cone: 360
+                    length: 11
+                    spin: 1.2
+                    sizeFrom: 2.7
+                    sizeTo: 0
+                    layer:100.2
+                }
+                ]
+					fragBullet: {
+type: BasicBulletType
+homingRange: 70
+homingPower: 0.08
+homingDelay: 1
+sprite: azimut-slicer
+width: 6
+height: 10
+drag: 0.014
+hitEffect:none
+despawnEffect:none
+speed: 1.6
+collidesGround: true
+lifetime: 45
+damage: 30
+backColor: dda59d
+frontColor: f7e2da
+trailColor: dda59d40
+trailLength: 8
+trailWidth: 1.2
+despawnEffect: none
+collidesTiles: true
+keepVelocity: false
+collidesAir: true   
+pierceArmor: false 
+buildingDamageMultiplier: 0.3
+	hitEffect: [
+	{
+    type: ExplosionEffect
+    lifetime: 35
+    waveColor: dda59d30
+    waveStroke: 3
+    waveRad: 8
+    smokeColor: dda59d60
+    smokeSizeBase: 0
+    smokeSize: 4
+    smokes: 3
+    sparkColor: dda59d30
+    sparkStroke: 1.9
+    sparkRad: 12.5
+    sparkLen: 3
+    sparks: 3
+	}
+	]
+}
+	hitEffect: [
+	{
+    type: ExplosionEffect
+    lifetime: 50
+    waveColor: dda59d
+    waveStroke: 5.5
+    waveRad: 15
+    smokeColor: dda59d60
+    smokeSizeBase: 0
+    smokeSize: 5
+    smokes: 4
+    sparkColor: dda59d
+    sparkStroke: 2
+    sparkRad: 12.5
+    sparkLen: 4
+    sparks: 5
+	}
+	]
+	}
     platinum: {
 type: BasicBulletType
 homingRange: 90

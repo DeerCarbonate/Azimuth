@@ -9,7 +9,7 @@
 	speed: 4
 	range: 80
 	accel: 0.037
-	hitSize: 1
+	hitSize: 3
 	targetGround: true
 	targetAir: true
 	rotateSpeed: 9.2
@@ -21,6 +21,7 @@
     itemCapacity: 0
     hidden: true
 	drawCell: false
+	defaultCommand: assist
 	abilities: [
   {
     effect: {
@@ -45,6 +46,28 @@
     y: 0
     x: 0
   }
+	{
+	  type: "SuppressionFieldAbility"
+	  reload: 100
+	  range: 0
+	  orbRadius: 0
+	  orbMidScl: 0
+	  orbSinScl: 0
+	  orbSinMag: 0
+	  color: cce0ff00
+	  layer: 110
+	  x: 0
+	  y: 0
+	  particleColor: 48517050
+	  particles: 3
+	  particleSize: 0.8
+	  particleLen: 7.5
+	  particleLife: 200
+	  rotateScl: 1.5
+	  active: true
+	  effectColor: 48517050
+	  applyParticleChance: 4
+	}
   ]
   weapons: [
 {

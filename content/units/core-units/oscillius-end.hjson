@@ -1,0 +1,11 @@
+	outlineColor: 21202a
+	healColor: bf92f988
+	shieldColor: bf92f910
+	hidden: true
+    faceTarget: false
+		abilities: [
+	{
+type:RegenAbility
+percentAmount:-0.03
+}
+]

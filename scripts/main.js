@@ -11,3 +11,26 @@ require("multiblock1");
 require("multiblock2");
 require("blocks");
 require("construct");
+
+const librarySnake = require("library-snake");
+
+const oscilliusSnakeEnd = librarySnake.segment("oscillius-end", {
+    hitSize:9,
+    offsetSegment: -2.7,
+    health: 800
+}, {});
+
+const oscilliusSnakeBody = librarySnake.segment("oscillius-body", {
+    hitSize:9,
+    offsetSegment: -2.7,
+    health: 900
+}, {});
+
+const oscilliusSnake = librarySnake.head("oscillius", {
+    body: oscilliusSnakeBody,
+    end: oscilliusSnakeEnd,
+    lengthSnake:3,
+    hitSize:9,
+    speed: 4.6,
+    health: 700
+}, {});
