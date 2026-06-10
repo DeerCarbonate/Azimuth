@@ -1,6 +1,7 @@
 	type: flying
 	outlineColor: 21202a
 	flying: true
+ defaultCommand: assist
 	health: 120
     armor: 1
 	buildSpeed: 0.4
@@ -21,7 +22,6 @@
     itemCapacity: 0
     hidden: true
 	drawCell: false
-	defaultCommand: assist
 	abilities: [
   {
     effect: {

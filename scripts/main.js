@@ -34,3 +34,4 @@ const oscilliusSnake = librarySnake.head("oscillius", {
     speed: 4.6,
     health: 700
 }, {});
+require("blocks");
