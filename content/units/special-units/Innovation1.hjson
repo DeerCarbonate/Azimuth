@@ -23,6 +23,38 @@ canDrown: true
 hitSize: 14
 drag: 0.02
 healColor: f0a4d988
+shieldColor: f0a4d988
+deathExplosionEffect: {
+type: MultiEffect
+effects: [
+{
+followParent: false
+length: 0
+lifetime: 25
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 16
+sizeTo: 19
+colorTo: f6afdd00
+baseRotation: 180
+interp: pow3Out
+}
+        {
+            type: ParticleEffect
+            lifetime: 55
+            baseLength: 2
+            length: 25
+            particles: 5
+            sizeFrom: 5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: 5a5a5a84
+            colorTo: b0b0b000
+        }
+]
+}
 abilities: [
   {
     effect: {

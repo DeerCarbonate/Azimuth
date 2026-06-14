@@ -37,6 +37,8 @@ engineColor: 5fac9e
 engineSize: 1.2
 engineOffset: 3
 engineLayer: 100
+shieldColor: a4f0d788
+healColor: a4f0d788
 abilities: [
     {
     type: EnergyFieldAbility

@@ -11,12 +11,68 @@ accel: 0.75
 speed: 0.9
 hitSize: 18
 healColor: a4f0d788
+shieldColor: a4f0d788
 faceTarget: false
-immunities: [ wet ]
+immunities: [wet, volatile]
 trailLength: 25
 trailScl: 2.5
 waveTrailX: 5.5
 waveTrailY: -9
+	deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      rotationSpacing: 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 1
+      effect: {
+        type: ParticleEffect
+        particles: 5
+        length: 130
+        lifetime: 340
+        sizeFrom: 1.7
+        sizeTo: 7.2
+        cone: 2
+        baseRotation: 73
+        useRotation: false
+        interp: pow5Out
+        colorFrom: a4f0d784
+        colorTo: b0b0b000
+        layer: 100.3
+      }
+    }
+    {
+      type: ParticleEffect
+      lifetime: 60
+      baseLength: 2
+      length: 35
+      particles: 11
+      sizeFrom: 5
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: a4f0d784
+      colorTo: b0b0b000
+    }
+	    {
+          type: ParticleEffect
+          followParent: false
+          length: 0
+          lifetime: 60
+          particles: 1
+          cone: 0
+          region: azimut-shockwave
+          sizeFrom: 23
+          sizeTo: 27
+		  colorFrom: a4f0d7
+          colorTo: b0b0b000
+          baseRotation: 180
+          interp: pow3Out
+        }
+  ]
+}
 		research: {
   parent: Octopus 
   planet: gelion

@@ -1,7 +1,7 @@
 {
   name: azimut
   displayName: "[[]#d2fffe]Azimuth[[]]"
-  subtitle: "[[]#c9c1eb]20.000 bugfixes and commits[[]]"
+  subtitle: "[[]#c9c1eb]Going into 0.5 update..[[]]"
   description: '''
 [[]#d3f2f4]Hybrid[[]] mod primarily built around a gradually branching campaign that expands in multiple directions.
 
@@ -111,6 +111,7 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     platinum-smelter
     isobutane-burner
     power-heater
+	parsion-heater
     heat-courier
     mixing-chamber-base
     mixing-chamber-part

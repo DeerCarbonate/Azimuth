@@ -11,3 +11,5 @@ albedo: 1
 shallow: true
 supportsOverlay: true
 emitLight: false
+status: azimut-volatile
+statusDuration: 170

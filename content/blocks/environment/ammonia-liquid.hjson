@@ -14,4 +14,6 @@ supportsOverlay: true
 placeableOn: true
 emitLight: true
 lightRadius: 91
-lightColor: "ceddd4c2" //b6cebf7a
+lightColor: "ceddd4c2"
+status: azimut-inerted
+statusDuration: 165

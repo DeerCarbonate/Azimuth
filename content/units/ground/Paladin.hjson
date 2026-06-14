@@ -3,6 +3,7 @@ flying: false
 rotateSpeed: 1.8
 hovering: true
 targetAir: true
+range: 150
 stepSound: walkerStep
 outlineColor: 22251b
 outlineRadius: 3
@@ -23,13 +24,69 @@ legContinuousMove: true
 accel: 0.5
 armor: 11
 stepShake: 0.1
-health: 4600
-speed: 0.46
+health: 4650
+speed: 0.465
+shieldColor: f0aba488
 healColor: f0aba488
 hitSize: 18
 faceTarget: true
 squareShape: true
-drownTimeMultiplier: 3
+drownTimeMultiplier: 2.7
+	deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      rotationSpacing: 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 1
+      effect: {
+        type: ParticleEffect
+        particles: 1
+        length: 130
+        lifetime: 250
+        sizeFrom: 1.6
+        sizeTo: 4.7
+        cone: 2
+        baseRotation: 73
+        useRotation: false
+        interp: pow5Out
+        colorFrom: cc918b40
+        colorTo: b0b0b000
+        layer: 100.3
+      }
+    }
+    {
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 40
+      particles: 2
+      sizeFrom: 5
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: cc918b84
+      colorTo: b0b0b000
+    }
+	    {
+          type: ParticleEffect
+          followParent: false
+          length: 0
+          lifetime: 50
+          particles: 1
+          cone: 0
+          region: azimut-shockwave
+          sizeFrom: 6
+          sizeTo: 9
+		  colorFrom: cc918b20
+          colorTo: b0b0b000
+          baseRotation: 180
+          interp: pow3Out
+        }
+  ]
+}
 		research: {
   parent: Marshal
   planet: gelion
@@ -59,8 +116,8 @@ preset: eight
 weapons: [
   {
     name: Paladin-weapon
-    x: 9.78
-    y: -3.5
+    x: 10
+    y: -3.7
     shootY: 10.85
     shootX: 1.26
     recoil: 1.5
@@ -68,36 +125,55 @@ weapons: [
     mirror: false
     alternate: false
     rotate: true
-    rotateSpeed: 2
-    reload: 120
+    rotateSpeed: 1.8
+    reload: 260
     inaccuracy: 0
-    shootSound: energy-blade-launch
+    shootSound: none
     shoot: {
       type: ShootBarrel
-      firstShotDelay: 12
-      shotDelay: 4
-      shots: 8
+      firstShotDelay: 24
+      shotDelay: 0
+      shots: 1
 	        barrels: [
                 0, 0.1, 0,
                 0, 0.5, 0,
                 0, 0.9, 0,
             ]
     }
+					parts: [
+		            {
+                type: FlarePart
+                radius: 0
+                radiusTo: 5
+                stroke: 2.8
+				x: 1.26
+				y: 10.85
+                color1: af7765
+                color2: f0aba4
+                rotation: 45
+                rotMove: 370
+                followRotation: false
+                progress: {
+                    type: charge
+                    interp: pow3out
+                }
+            }
+		]
     bullet: {
       type: RailBulletType
-      length: 160
-      damage: 25
+      length: 160 
+      damage: 280
 	  lifetime: 1
 	  hitColor: cc918b
-      pointEffectSpace: 3.875
-	  knockback: 0.3
+      pointEffectSpace: 3.9
+	  knockback: 6.5
 	  despawnEffect: none
       smokeEffect: none
 	  
 	  hitEffect: {
 	  followParent: false
 	  length: 0
-      lifetime: 8
+      lifetime: 50
       particles: 1
       cone: 0
       region: azimut-despawn
@@ -110,12 +186,12 @@ weapons: [
         type: ParticleEffect
         colorFrom: cc918b
         colorTo: ffbfad00
-        particles: 2
+        particles: 12
         cone: 20
-        lifetime: 65
-        length: 30
+        lifetime: 35
+        length: 27
         interp: pow2In
-        sizeFrom: 3.2
+        sizeFrom: 1.8  
         sizeTo: 0
       }
 	  {
@@ -129,6 +205,64 @@ weapons: [
        lenTo: 0
        colorFrom: cc918b
       }
+	  {
+          followParent: false
+          length: 0
+          lifetime: 50
+          particles: 1
+          cone: 0
+          region: azimut-shoothitscan
+          sizeFrom: 30
+          sizeTo: 25
+          colorTo: ffbfad00
+		  baseRotation: 35
+		  length: 7.9
+		  spin: 0.8
+        }
+		{
+          followParent: false
+          length: 0
+          lifetime: 50
+          particles: 1
+          cone: 0
+          region: azimut-shoothitscan
+          sizeFrom: 30
+          sizeTo: 25
+          colorTo: ffbfad00
+		  baseRotation: -35
+		  length: 7.9
+		  spin: -0.8
+        }
+	    {
+          followParent: false
+          length: 0
+          lifetime: 50
+          particles: 1
+          cone: 0
+          region: azimut-despawn
+          sizeFrom: 40
+          sizeTo: 35
+          colorTo: ffbfad00
+		  baseRotation: 90
+        }
+		{
+          type: SoundEffect
+          minPitch: 0.6
+          maxPitch: 0.7
+          effect: none
+          sound: shootSpectre
+          minVolume: 0.8
+          maxVolume: 0.9
+        }
+		{
+          type: SoundEffect
+          minPitch: 0.7
+          maxPitch: 1
+          effect: none
+          sound: shootAfflict
+          minVolume: 0.8
+          maxVolume: 0.9
+        }
 	  ]
       pierceBuilding: false
       pierce: true
@@ -151,12 +285,12 @@ weapons: [
                     {
                         type: ParticleEffect
                         region: azimut-beam
-                        lifetime: 40
+                        lifetime: 180
                         particles: 1
                         length: 0
                         cone: 0
-                        sizeFrom: 2
-                        sizeTo: 0
+                        sizeFrom: 1.95
+                        sizeTo: 1.95
                         interp: pow5Out
                         sizeInterp: pow10In
                         colorTo: cc918b00
@@ -184,77 +318,108 @@ weapons: [
     }
   }
   {
-    x: -11
-    y: -4.6
-	shootY: 9
+    x: 9.8
+    y: 5.2
+	shootY: 6
     rotate: true
-    rotateSpeed: 3.5
-    rotationLimit: 120
+    rotateSpeed: 1.7
+    rotationLimit: 110
     name: Paladin-weapontwo
-    reload: 80
+    reload: 40
     rotate: true
-    mirror: false
+    mirror: true
     alternate: false
     shootSound: shotguns
-    shoot: {
-      type: ShootSpread
-	  shots: 1
+	shootSoundVolume: 0.08
+    layerOffset: -0.01
+		shoot: {
+	type: ShootMulti
+	source: {
+    type: ShootSpread
+    firstShotDelay: 15
+    spread: 12
+    shots: 2
     }
-    bullet: {
-    type: ShrapnelBulletType
-    pierce: false
-    length: 85
-	width: 4
-    pierceCap: 2
-    lifetime: 36
-    damage: 40
-    toColor: cc918b
-    lightColor: cc918b
-    lightOpacity: 0.7
-    lightRadius: 32.5
-	serrations: 1
-	serrationWidth: 5
-	despawnEffect: none
-	hitEffect: none
-	smokeEffect: none
-	shootEffect: none
+	dest: [
+	{
+	type: ShootPattern
+		shots: 2
+		shotDelay: 15
+	}
+	]
+	}
+bullet: {
+	smokeEffect: {
+        type: ParticleEffect
+        colorFrom: d8868690
+        colorTo: 99999900
+        particles: 2
+        cone: 24
+        lifetime: 31
+        length: 34
+        interp: pow3Out
+		sizeInterp: pow2In
+        sizeFrom: 2.8
+        sizeTo: 0.3
     }
-  }
-  {
-    x: -6.5
-    y: 4.6
-	shootY: 9
-    rotate: true
-    rotateSpeed: 3.6
-    rotationLimit: 120
-    name: Paladin-weapontwo
-    reload: 80
-    rotate: true
-    mirror: false
-    alternate: false
-    shootSound: shotguns
-    shoot: {
-      type: ShootSpread
-	  shots: 1
+	shootEffect: {
+	type: ParticleEffect
+	lifetime: 18
+	particles: 2
+	offsetX: 0
+	length: 20
+	line: true
+	strokeFrom: 1.7
+	strokeTo: 0.9
+	lenFrom: 4
+	lenTo: 0 
+	colorTo: ffbfad09
+	colorFrom: cc918b
+	cone: 15
     }
-    bullet: {
-    type: ShrapnelBulletType
-    pierce: false
-    length: 85
-	width: 4
-    pierceCap: 2
-    lifetime: 36
-    damage: 32
-    toColor: cc918b
-    lightColor: cc918b
-    lightOpacity: 0.7
-    lightRadius: 32.5     
-	serrations: 1
-	serrationWidth: 3	
-	despawnEffect: none
-	hitEffect: none
-	smokeEffect: none
-	shootEffect: none
-    }
+type: BasicBulletType
+homingRange: 5
+homingPower: 0.02
+homingDelay: 1
+sprite: azimut-slicer
+width: 5
+height: 9
+drag: 0.003
+hitEffect:none
+despawnEffect:none
+speed: 1.9
+collidesGround: true
+lifetime: 120
+damage: 12
+backColor: ffbfad
+frontColor: cc918b
+trailColor: ffbfad40
+trailLength: 8
+trailWidth: 1.2
+despawnEffect: none
+collidesTiles: true
+keepVelocity: false
+collidesAir: true   
+pierceArmor: false 
+buildingDamageMultiplier: 0.3
+	hitEffect: [
+	{
+    type: ExplosionEffect
+    lifetime: 35
+    waveColor: ffbfad30
+    waveStroke: 3
+    waveRad: 8
+    smokeColor: ffbfad60
+    smokeSizeBase: 0
+    smokeSize: 4
+    smokes: 3
+    sparkColor: ffbfad30
+    sparkStroke: 1.9
+    sparkRad: 12.5
+    sparkLen: 3
+    sparks: 3
+	}
+	]
+}
   }
 ]

@@ -18,6 +18,8 @@ logicControllable: false
 playerControllable: false
 engineSize: 0
 drawCell: false
+shieldColor: c5c9db88
+healColor: c5c9db88
 deathExplosionEffect: {
   type: MultiEffect
   effects: [
@@ -71,7 +73,6 @@ deathExplosionEffect: {
     }
   ]
 }
-
 parts: [
   {
     type: HaloPart

@@ -9,13 +9,14 @@ accel: 0.75
 armor: 28
 health: 21200
 speed: 0.69
+shieldColor: a4f0d788
 healColor: a4f0d788
 size: 480
 hitSize: 55.0
 hitboxSize: 20.0
 trailLength: 128
 trailWidth: 1200
-immunities: [ burning, melting, shocked, wet ]
+immunities: [wet, volatile]
 description: Fires an extremely powerful artillery shell that splits over 6 minutes at the end of their lifespan they create a huge explosion. and fires slowing explosive projectiles.
 weapons: [
     {

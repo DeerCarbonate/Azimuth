@@ -10,12 +10,68 @@
 	speed: 1.07
 	accel: 0.75
 	hitSize: 14.2
-	immunities: [ wet ]
+	immunities: [wet, volatile]
 	trailLength: 19
 	trailScl: 2.1
 	waveTrailX: 5
 	waveTrailY: -7
     healColor: a4f0d788
+	shieldColor: a4f0d788
+		deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      rotationSpacing: 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+        type: ParticleEffect
+        particles: 1
+        length: 120
+        lifetime: 300
+        sizeFrom: 1.7
+        sizeTo: 7.2
+        cone: 2
+        baseRotation: 73
+        useRotation: false
+        interp: pow5Out
+        colorFrom: 5fac9e84
+        colorTo: b0b0b000
+        layer: 100.3
+      }
+    }
+    {
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 30
+      particles: 8
+      sizeFrom: 5
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: 5fac9e84
+      colorTo: b0b0b000
+    }
+	    {
+          type: ParticleEffect
+          followParent: false
+          length: 0
+          lifetime: 45
+          particles: 1
+          cone: 0
+          region: azimut-shockwave
+          sizeFrom: 18
+          sizeTo: 22
+		  colorFrom: 5fac9e
+          colorTo: b0b0b000
+          baseRotation: 180
+          interp: pow3Out
+        }
+  ]
+}
 	abilities: [
 {
     type: StatusFieldAbility

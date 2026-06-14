@@ -18,6 +18,8 @@ logicControllable: false
 playerControllable: false
 engineSize: 0
 drawCell: false
+healColor: bf92f988
+shieldColor: bf92f988
 deathExplosionEffect: {
   type: MultiEffect
   effects: [

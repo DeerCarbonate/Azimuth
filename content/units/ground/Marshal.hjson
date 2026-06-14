@@ -8,13 +8,69 @@
 	health: 2050
 	speed: 0.46
 	hitSize: 14
- stepSound: walkerStepSmall
+    stepSound: walkerStepSmall
 	mechLegColor: 0f1405
 	mechFrontSway: 0.4
 	mechStepParticles: true
 	faceTarget: true
- canBoost: false
+    canBoost: false
+	shieldColor: f0aba488
 	healColor: f0aba488
+	deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      rotationSpacing: 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+        type: ParticleEffect
+        particles: 3
+        length: 120
+        lifetime: 310
+        sizeFrom: 1.7
+        sizeTo: 7.2
+        cone: 2
+        baseRotation: 73
+        useRotation: false
+        interp: pow5Out
+        colorFrom: f0aba484
+        colorTo: b0b0b000
+        layer: 100.3
+      }
+    }
+    {
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 25
+      particles: 7
+      sizeFrom: 5
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: f0aba484
+      colorTo: b0b0b000
+    }
+	    {
+          type: ParticleEffect
+          followParent: false
+          length: 0
+          lifetime: 45
+          particles: 1
+          cone: 0
+          region: azimut-shockwave
+          sizeFrom: 18
+          sizeTo: 22
+		  colorFrom: f0aba4
+          colorTo: b0b0b000
+          baseRotation: 180
+          interp: pow3Out
+        }
+  ]
+}
 	abilities: [
     {
     type: ShieldRegenFieldAbility

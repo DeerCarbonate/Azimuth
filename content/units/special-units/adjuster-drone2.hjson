@@ -22,6 +22,8 @@ armor: 3
 drawCell: false
 itemCapacity: 0
 engineOffset: 3
+shieldColor: cce0ff88
+healColor: cce0ff88
 abilities: [
 	{
 	  type: "SuppressionFieldAbility"

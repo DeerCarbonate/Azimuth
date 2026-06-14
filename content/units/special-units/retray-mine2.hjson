@@ -29,6 +29,8 @@ loopSoundVolume: 0
 engineSize: 0
 trailLength: 0
 bounded: false
+healColor: 74a48188
+shieldColor: 74a48188
 
 deathExplosionEffect: {
 type: MultiEffect

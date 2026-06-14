@@ -37,6 +37,8 @@ engineColor: 8edfc1
 engineSize: 1.7
 engineOffset: 3
 engineLayer: 100
+shieldColor: 8edfc188
+healColor: 8edfc188
 
 immunities: [ slow, spore-slowed, tarred]
 

@@ -18,10 +18,42 @@
     engineSize: 0
     engineOffset: 3
 	trailColor: bf92f900
-	healColor: c5c9db88
+    shieldColor: c5c9db88
+    healColor: c5c9db88
     itemCapacity: 0
     hidden: true
 	drawCell: false
+	deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      followParent: false
+      length: 0
+      lifetime: 35
+      particles: 1
+      cone: 0
+      region: azimut-shockwave
+      sizeFrom: 4
+      sizeTo: 6
+      colorTo: 48517000
+      baseRotation: 180
+      interp: pow3Out
+    }
+    {
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 15
+      particles: 2
+      sizeFrom: 2
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: c5c9db84
+      colorTo: 48517000
+    }
+  ]
+}
 	abilities: [
   {
     effect: {

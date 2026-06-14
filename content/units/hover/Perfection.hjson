@@ -12,6 +12,7 @@ rotateSpeed: 2
 outlineColor: 251b21
 targetair: true
 healColor: f0a4d988
+shieldColor: f0a4d988
 faceTarget: true
 engineOffset: 12.4
 engineColor: f6afdd

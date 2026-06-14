@@ -39,6 +39,7 @@
 	"hitboxSize": [9.0, 9.0],
 	"mass": 3.92,
 	"faceTarget": true
+	shieldColor: f0aba488
 	healColor: f0aba488
 	"squareShape": true,
 	"canBoost": false,

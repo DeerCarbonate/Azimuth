@@ -9,8 +9,9 @@
 	health: 9800
 	speed: 0.7
 	healColor: a4f0d788
+	shieldColor: a4f0d788
 	hitSize: 29
-	immunities: [ burning, melting, wet ]
+    immunities: [wet, volatile]
 	trailLength: 56
 	waveTrailX: 15.5
     waveTrailY: -19

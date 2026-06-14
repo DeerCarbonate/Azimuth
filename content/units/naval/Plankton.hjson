@@ -10,13 +10,13 @@ health: 810
 speed: 1.35
 hitSize: 11.2
 healColor: a4f0d788
+shieldColor: a4f0d788
 accel: 0.75
-immunities: [wet]
+immunities: [wet, volatile]
 trailLength: 12
 trailScl: 1.4
 waveTrailX: 4
 waveTrailY: -3
-
 deathExplosionEffect: {
   type: MultiEffect
   effects: [
@@ -57,7 +57,6 @@ deathExplosionEffect: {
     }
   ]
 }
-
 research: {
   parent: naval-editor
   planet: gelion

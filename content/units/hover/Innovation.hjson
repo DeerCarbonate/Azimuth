@@ -19,6 +19,7 @@ canDrown: false
 hitSize: 14
 drag: 0.03
 healColor: f0a4d988
+shieldColor: f0a4d988
 deathExplosionEffect: {
 type: MultiEffect
 effects: [
@@ -51,8 +52,8 @@ lifetime: 35
 particles: 1
 cone: 0
 region: azimut-shockwave
-sizeFrom: 17
-sizeTo: 24
+sizeFrom: 20
+sizeTo: 23
 colorTo: f6afdd00
 baseRotation: 180
 interp: pow3Out

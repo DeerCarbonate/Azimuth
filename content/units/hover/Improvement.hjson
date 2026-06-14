@@ -1,5 +1,5 @@
 type: hover
-range: 85
+range: 95
 useEngineElevation: false
 shadowElevation: 0.3
 engineOffset: -1.75
@@ -17,8 +17,64 @@ hovering: true
 speed: 1.5
 hitSize: 11
 healColor: f0a4d988
+shieldColor: f0a4d988
 canDrown: false
 drag: 0.03
+deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: RadialEffect
+      rotationSpacing: 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+        type: ParticleEffect
+        particles: 2
+        length: 120
+        lifetime: 290
+        sizeFrom: 1.7
+        sizeTo: 7.2
+        cone: 2
+        baseRotation: 73
+        useRotation: false
+        interp: pow5Out
+        colorFrom: f6afdd84
+        colorTo: b0b0b000
+        layer: 100.3
+      }
+    }
+    {
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 25
+      particles: 5
+      sizeFrom: 5
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: f6afdd84
+      colorTo: b0b0b000
+    }
+	    {
+          type: ParticleEffect
+          followParent: false
+          length: 0
+          lifetime: 35
+          particles: 1
+          cone: 0
+          region: azimut-shockwave
+          sizeFrom: 16
+          sizeTo: 19
+		  colorFrom: f6afdd
+          colorTo: b0b0b000
+          baseRotation: 180
+          interp: pow3Out
+        }
+  ]
+}
 abilities: [
   {
     effect: {

@@ -15,6 +15,7 @@
 	trailColor: bf92f9
 	trailLength: 8
 	healColor: bf92f988
+	shieldColor: bf92f988
     itemCapacity: 80
 	controlSelectGlobal: false
 	mineTier: 2

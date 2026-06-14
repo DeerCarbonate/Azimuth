@@ -9,3 +9,5 @@ liquidMultiplier: 0.334
 albedo: 1.1
 shallow: true
 supportsOverlay: true
+status: azimut-volatile
+statusDuration: 110
