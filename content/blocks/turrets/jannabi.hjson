@@ -555,7 +555,7 @@ fragBullet: {
 }
 	      octine: {
  type: BasicBulletType
- rangeChange: 100
+ rangeChange: 94
  reloadMultiplier:1.15
  collidesTiles: true
  keepVelocity: false
