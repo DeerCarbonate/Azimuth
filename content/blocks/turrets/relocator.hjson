@@ -249,7 +249,7 @@ buildingDamageMultiplier: 0.1
 	    zinc: {
 type: BasicBulletType
 drag: 0.03
-reloadMultiplier: 0.45
+reloadMultiplier: 0.32
 sprite: large-orb
 width: 10
 rangeChange: 70
