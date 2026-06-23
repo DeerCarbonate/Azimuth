@@ -338,19 +338,19 @@ sphalerite: {
 shootPattern: {
   shots: 12
 }
-velocityRnd:0.8
-inaccuracy: 23
+velocityRnd:0.7
+inaccuracy: 55
 type: BasicBulletType
 width: 7
 height: 9
-speed: 3.8
-drag: -0.018
+speed: 6.5
+drag: 0.095
 collidesTiles: true
 collidesGround: true
 lifetime: 46
 reloadMultiplier: 1.6
-damage: 14
-rangeChange: 35
+damage: 20
+rangeChange: 50
 backColor: 684293
 frontColor: d3d3f1
 scaleLife: false
@@ -359,10 +359,10 @@ despawnEffect: none
 homing: true
 homingPower: 0.04
 homingRange: 60
-homingDelay: 26
-armorMultiplier: 3
+homingDelay: 28
+armorMultiplier: 3.5
 trailWidth: 1.3
-trailLength: 4
+trailLength: 1.5
 trailColor: 68429385
 smokeEffect: [{
         type: ParticleEffect
