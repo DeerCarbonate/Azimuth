@@ -344,7 +344,7 @@ type: BasicBulletType
 width: 7
 height: 9
 speed: 6.5
-drag: 0.095
+drag: 0.009
 collidesTiles: true
 collidesGround: true
 lifetime: 46
@@ -381,32 +381,32 @@ hitEffect: [
 {
 followParent: false
 length: 0
-lifetime: 45
+lifetime: 35
 particles: 1
 cone: 0
 region: azimut-shockwave
 sizeFrom: 0
-sizeTo: 10
+sizeTo: 7
 colorFrom: d3d3f170
 colorTo: d3d3f100
 baseRotation: 180
-interp: pow3Out
+interp: pow3in
 }
 ]
 despawnEffect: [
 {
 followParent: false
 length: 0
-lifetime: 45
+lifetime: 35
 particles: 1
 cone: 0
 region: azimut-shockwave
 sizeFrom: 0
-sizeTo: 10
+sizeTo: 7
 colorFrom: d3d3f170
 colorTo: d3d3f100
 baseRotation: 180
-interp: pow3Out
+interp: pow3in
 }
 ]
 	shootEffect: [
