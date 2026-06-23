@@ -334,6 +334,38 @@ baseRotation: 270
 }
 ]
 }
+sphalerite: {
+shootPattern: {
+  shots: 15
+}
+velocityRnd:0.8
+type: BasicBulletType
+width: 7
+height: 9
+speed: 1.8
+drag: -0.12
+collidesTiles: true
+collidesGround: true
+lifetime: 70
+reloadMultiplier: 1.6
+damage: 18
+splashDamage: 220
+splashDamageRadius: 35
+rangeChange: -25
+backColor: 684293
+frontColor: d3d3f1
+scaleLife: false
+buildingDamageMultiplier: 0.1
+despawnEffect: none
+homing: true
+homingPower: 0.1
+homingRange: 60
+homingDelay: 50
+armorMultiplier: 3
+trailWidth: 8
+trailLength: 2.8
+trailColor: 684293
+}
 }
 requirements: [
   cobalt/90
