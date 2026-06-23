@@ -390,7 +390,7 @@ sizeTo: 7
 colorFrom: d3d3f170
 colorTo: d3d3f100
 baseRotation: 180
-interp: pow3in
+interp: pow3Out
 }
 ]
 despawnEffect: [
@@ -406,7 +406,7 @@ sizeTo: 7
 colorFrom: d3d3f170
 colorTo: d3d3f100
 baseRotation: 180
-interp: pow3in
+interp: pow3Out
 }
 ]
 	shootEffect: [
