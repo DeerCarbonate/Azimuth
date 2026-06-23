@@ -344,28 +344,54 @@ type: BasicBulletType
 width: 7
 height: 9
 speed: 4.5
-drag: -0.03
+drag: -0.02
 collidesTiles: true
 collidesGround: true
-lifetime: 42
+lifetime: 53
 reloadMultiplier: 1.6
-damage: 18
-splashDamage: 220
-splashDamageRadius: 35
-rangeChange: -25
+damage: 9
+rangeChange: 30
 backColor: 684293
 frontColor: d3d3f1
 scaleLife: false
 buildingDamageMultiplier: 0.1
 despawnEffect: none
 homing: true
-homingPower: 0.1
+homingPower: 0.12
 homingRange: 60
-homingDelay: 50
+homingDelay: 26
 armorMultiplier: 3
 trailWidth: 0.9
 trailLength: 2.8
-trailColor: 684293
+trailColor: 68429340
+smokeEffect: [{
+        type: ParticleEffect
+        colorFrom: d3d3f185
+        colorTo: b0b0b000
+        particles: 8
+        cone: 28
+        lifetime: 65
+        length: 45
+        interp: pow4Out
+		sizeInterp: pow2In
+        sizeFrom: 3.2
+        sizeTo: 0.3
+}]
+hitEffect: [
+{
+followParent: false
+length: 0
+lifetime: 45
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 0
+sizeTo: 10
+colorTo: d3d3f100
+baseRotation: 180
+interp: pow3Out
+}
+]
 	shootEffect: [
 {
 followParent: false
