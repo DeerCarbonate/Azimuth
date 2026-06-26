@@ -490,6 +490,7 @@ baseRotation: 0
       ]
     }
  type: BasicBulletType
+ reloadMultiplier: 0.90
  collidesGround: true
  frontColor: f7e2da
  backColor: 60313b
@@ -501,19 +502,32 @@ baseRotation: 0
  hitSound: none
  lifetime: 68
  speed: 5.2
- width: 12
+ width: 13
  despawnEffect: none
  scaleLife: false
- height: 12
-pierce: true
-pierceBuilding: true
-pierceCap: 2
-pierceDamageFactor: 0.002
+ height: 22
  buildingDamageMultiplier: 0.3
  trailChance:2
  trailInterval:3
  trailRotation:true
- armorMultiplier: 1.4
+  parts: [
+      {
+        type: FlarePart
+        sides: 3
+        color1: c3b3f8
+        radius: 0
+        radiusTo: 30
+        stroke: 4.5
+        innerRadScl: 0.9
+        progress: {
+          type: life
+          op: curve
+          interp: pow3In
+        }
+        layer: 101
+      }
+    ]
+ inaccuracy: 0.2
       hitEffect: [{
         type: ExplosionEffect
         lifetime: 16
@@ -530,32 +544,6 @@ pierceDamageFactor: 0.002
         sparkLen: 2
         sparks: 4
       }
-		  {
-            particles: 1
-            length: 0
-            lifetime: 70
-            region: azimut-sized-triangle
-            sizeFrom: 45
-            sizeChangeStart: 45
-            sizeTo: 60
-            colorTo: c3feff00
-            startDelay:5
-            spin:2
-            baseRotation: 0
-          }
-          		  {
-            particles: 1
-            length: 0
-            lifetime: 70
-            region: azimut-sized-triangle
-            sizeFrom: 45
-            sizeChangeStart: 45
-            sizeTo: 60
-            colorTo: c3feff00
-            startDelay:5
-            spin:2
-            baseRotation: 90
-          }
       ]
 shootEffect: [
 {
@@ -573,10 +561,19 @@ baseRotation: 0
 }
       {
           type: SoundEffect
+          minPitch: 1.5
+          maxPitch: 1.7
+          effect: none
+          sound: shootDiffuse
+          minVolume: 0.6
+          maxVolume: 0.7
+        }
+        {
+          type: SoundEffect
           minPitch: 0.8
           maxPitch: 0.9
           effect: none
-          sound: shootDiffuse
+          sound: shootRipple
           minVolume: 0.8
           maxVolume: 0.9
         }
