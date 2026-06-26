@@ -479,7 +479,7 @@ baseRotation: 0
       }
     }
       }
-      octinium: {
+      octine: {
             shootPattern: {
       type: ShootBarrel
       shots: 2
