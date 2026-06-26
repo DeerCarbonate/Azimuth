@@ -490,14 +490,15 @@ baseRotation: 0
       ]
     }
  type: BasicBulletType
+ sprite: deathcatcher
  reloadMultiplier: 0.90
  collidesGround: true
  frontColor: f7e2da
  backColor: 60313b
  hitColor: f7e2da
- splashDamage: 28
- splashDamageRadius: 18
- damage: 46
+ splashDamage: 30
+ splashDamageRadius: 19
+ damage: 50
  despawnSound: none
  hitSound: none
  lifetime: 68
@@ -510,17 +511,21 @@ baseRotation: 0
  trailChance:2
  trailInterval:3
  trailRotation:true
+ homingPower: 0.07
+ homingRange: 40
+ homingDelay: 50
   parts: [
       {
 progress: {
   type: life
   ops: [
     {
-      op: inv
+      op: curve
+      interp: pow2Out
     }
     {
       op: curve
-      interp: pow3Out
+      interp: slope
     }
   ]
 }
@@ -528,11 +533,11 @@ progress: {
         sides: 4
         color1: f7e2da
         radius: 0
-        radiusTo: 13
-        stroke: 5
-        innerRadScl: 1.3
+        radiusTo: 11
+        stroke: 5.5
+        innerRadScl: 1.5
         layer: 101
-        rotMove: 120
+        rotMove: 130
         y: -5
       }
     ]
@@ -589,7 +594,7 @@ baseRotation: 0
 ]
 			      smokeEffect: [{
         type: ParticleEffect
-        colorFrom: d88686
+        colorFrom: f7e2da
         colorTo: 99999900
         particles: 7
         cone: 14
