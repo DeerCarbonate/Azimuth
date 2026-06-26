@@ -1,4 +1,3 @@
-researchCostMultiplier: 0.5
 size: 4
 outlineColor: 0c0c12
 health: 4000
@@ -491,18 +490,18 @@ baseRotation: 0
     }
  type: BasicBulletType
  sprite: azimut-deathcatcher
- reloadMultiplier: 0.8
+ reloadMultiplier: 0.75
  collidesGround: true
  frontColor: f7e2da
  backColor: 60313b
  hitColor: f7e2da
  splashDamage: 30
  splashDamageRadius: 19
- damage: 50
+ damage: 80
  despawnSound: none
  hitSound: none
- lifetime: 68
- speed: 5.2
+ lifetime: 74
+ speed: 4.8
  width: 13
  despawnEffect: none
  scaleLife: false
@@ -511,9 +510,9 @@ baseRotation: 0
  trailChance:2
  trailInterval:3
  trailRotation:true
- homingPower: 0.07
- homingRange: 40
- homingDelay: 45
+ homingPower: 0.04
+ homingRange: 5
+ homingDelay: 30
   parts: [
       {
 progress: {
@@ -535,9 +534,9 @@ progress: {
         radius: 0
         radiusTo: 11
         stroke: 5.5
-        innerRadScl: 1.5
+        innerRadScl: 3
         layer: 101
-        rotMove: 130
+        rotMove: 120
         y: -5
       }
     ]
@@ -546,14 +545,14 @@ progress: {
         type: ExplosionEffect
         lifetime: 16
         waveColor: f7e2da95
-        waveStroke: 1.6
-        waveRad: 7.3
+        waveStroke: 2
+        waveRad: 15
         smokeColor: f7e2da95
-        smokeSizeBase: 0
-        smokeSize: 0
-        smokes: 0
+        smokeSizeBase: 1
+        smokeSize: 2
+        smokes: 2
         sparkColor: f7e2da95
-        sparkStroke: 1.6
+        sparkStroke: 1.9
         sparkRad: 17.5
         sparkLen: 2
         sparks: 4
@@ -646,10 +645,10 @@ coolant: {
   amount: 0.0500
 }
 requirements: [
-  cobalt/230,
-  platinum/120
-  compound/110
-  zinc/120
+  cobalt/280,
+  platinum/130
+  compound/120
+  zinc/130
 ]
 category: turret
 recoils: 2
