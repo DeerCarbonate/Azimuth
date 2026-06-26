@@ -139,6 +139,7 @@ baseRotation: 0
 trailColor: 6898c3
 trailLength: 9
 trailWidth: 1.4
+    armorMultiplier: 1.4
 shootEffect: [
 {
 followParent: false
@@ -249,6 +250,7 @@ sprite: large-orb
 	       homingPower: 0.1
         homingRange: 200
         homingDelay: 0
+            armorMultiplier: 2.1
  collidesGround: true
  frontColor: c3feff
  backColor: 6898c3
@@ -347,6 +349,7 @@ trailWidth: 1.4
  trailChance:2
  trailInterval:3
  trailRotation:true
+     armorMultiplier: 1.2
        collidesTiles: true
       keepVelocity: false
       collidesAir: false
@@ -459,6 +462,7 @@ baseRotation: 0
     collidesAir: false
     	weaveMag: 1
     weaveScale: 1
+    armorMultiplier: 2
 	despawnEffect: none
 	      hitEffect: {
         type: ExplosionEffect
@@ -492,13 +496,14 @@ baseRotation: 0
  sprite: azimut-deathcatcher
  reloadMultiplier: 0.75
  armorMultiplier: 0.5
+ ammoMultiplier: 1.5
  collidesGround: true
  frontColor: efbbb4
  backColor: 60313b
  hitColor: efbbb4
  splashDamage: 30
  splashDamageRadius: 19
- damage: 90
+ damage: 70
  despawnSound: none
  hitSound: none
  lifetime: 74
