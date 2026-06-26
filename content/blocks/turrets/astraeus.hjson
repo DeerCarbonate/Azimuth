@@ -491,13 +491,14 @@ baseRotation: 0
  type: BasicBulletType
  sprite: azimut-deathcatcher
  reloadMultiplier: 0.75
+ armorMultiplier: 0.5
  collidesGround: true
  frontColor: efbbb4
  backColor: 60313b
  hitColor: efbbb4
  splashDamage: 30
  splashDamageRadius: 19
- damage: 80
+ damage: 90
  despawnSound: none
  hitSound: none
  lifetime: 74
