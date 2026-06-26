@@ -532,11 +532,10 @@ progress: {
         sides: 4
         color1: f7e2da
         radius: 0
-        radiusTo: 11
-        stroke: 5.5
-        innerRadScl: 3
+        radiusTo: 10
+        stroke: 5.7
+        spinSpeed: 2.5
         layer: 101
-        rotMove: 120
         y: -5
       }
     ]
@@ -547,10 +546,10 @@ progress: {
         waveColor: f7e2da95
         waveStroke: 2
         waveRad: 15
-        smokeColor: f7e2da95
+        smokeColor: b0b0b040
         smokeSizeBase: 1
-        smokeSize: 2
-        smokes: 2
+        smokeSize: 4
+        smokes: 3
         sparkColor: f7e2da95
         sparkStroke: 1.9
         sparkRad: 17.5
