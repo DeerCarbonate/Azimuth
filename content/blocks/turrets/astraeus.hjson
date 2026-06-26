@@ -512,19 +512,20 @@ baseRotation: 0
  trailRotation:true
   parts: [
       {
-        type: FlarePart
-        sides: 3
-        color1: c3b3f8
-        radius: 0
-        radiusTo: 30
-        stroke: 4.5
-        innerRadScl: 0.9
-        progress: {
+                progress: {
           type: life
           op: curve
           interp: pow3In
         }
+        type: FlarePart
+        sides: 4
+        color1: f7e2da
+        radius: 0
+        radiusTo: 13
+        stroke: 5
+        innerRadScl: 1.3
         layer: 101
+        rotMove: 7
       }
     ]
  inaccuracy: 0.2
