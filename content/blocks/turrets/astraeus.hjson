@@ -490,8 +490,8 @@ baseRotation: 0
       ]
     }
  type: BasicBulletType
- sprite: deathcatcher
- reloadMultiplier: 0.90
+ sprite: azimut-deathcatcher
+ reloadMultiplier: 0.8
  collidesGround: true
  frontColor: f7e2da
  backColor: 60313b
@@ -513,7 +513,7 @@ baseRotation: 0
  trailRotation:true
  homingPower: 0.07
  homingRange: 40
- homingDelay: 50
+ homingDelay: 45
   parts: [
       {
 progress: {
