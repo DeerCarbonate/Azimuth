@@ -496,7 +496,7 @@ baseRotation: 0
  sprite: azimut-deathcatcher
  reloadMultiplier: 0.75
  armorMultiplier: 0.5
- ammoMultiplier: 1.5
+ ammoMultiplier: 3
  collidesGround: true
  frontColor: efbbb4
  backColor: 60313b
