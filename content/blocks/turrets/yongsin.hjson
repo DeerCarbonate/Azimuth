@@ -334,6 +334,140 @@ baseRotation: 270
 }
 ]
 }
+    sphalerite: {
+	    shootPattern: {
+        type: ShootSpread
+        shots: 2
+    }
+inaccuracy: 80
+type: BasicBulletType
+width: 11
+height: 18
+speed: 2.7
+collidesTiles: true
+collidesGround: true
+lifetime: 93
+reloadMultiplier: 0.75
+damage: 45
+splashDamage: 90
+splashDamageRadius: 25
+rangeChange: 10
+backColor: 7e63a8
+frontColor: b3a8de
+scaleLife: false
+buildingDamageMultiplier: 0.1
+trailLength: 9
+trailColor: b3a8de
+trailWidth: 1
+despawnEffect: none
+armorMultiplier: 2.5
+homing: true
+homingPower: 0.06
+homingRange: 10
+homingDelay: 25
+  parts: [
+      {
+progress: {
+  type: life
+  ops: [
+    {
+      op: curve
+      interp: pow2Out
+    }
+    {
+      op: curve
+      interp: slope
+    }
+  ]
+}
+        type: FlarePart
+        sides: 4
+        color1: b3a8de
+        radius: 0
+        radiusTo: 10
+        stroke: 3.5
+        spinSpeed: 2.5
+        layer: 101
+        y: -4
+      }
+    ]
+smokeEffect: [{
+        type: ParticleEffect
+        colorFrom: b3a8de85
+        colorTo: b0b0b000
+        particles: 8
+        cone: 28
+        lifetime: 65
+        length: 45
+        interp: pow4Out
+		sizeInterp: pow2In
+        sizeFrom: 3.2
+        sizeTo: 0.3
+}]
+hitEffect: [
+{
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 0
+sizeTo: 14
+colorTo: b3a8de00
+baseRotation: 180
+interp: pow3Out
+}
+{
+  type: ParticleEffect
+  particles: 11
+  lifetime: 45
+  length: 55
+  baseLength: 0
+  cone: 360
+  sizeFrom: 0
+  sizeTo: 0
+  strokeFrom: 2
+  strokeTo: 2
+  colorFrom: b3a8de80
+  colorTo: b3a8de00
+  line: true
+  interp: pow3Out
+}
+]
+	shootEffect: [
+{
+followParent: false
+length: 0
+lifetime: 25
+particles: 1
+cone: 0
+region: azimut-shootbig
+sizeFrom: 27
+sizeTo: 0
+colorTo: b3a8de
+baseRotation: 270
+}
+{
+  type: SoundEffect
+  minPitch: 1
+  maxPitch: 1.1
+  effect: none
+  sound: mechshoot
+  minVolume: 0.3
+  maxVolume: 0.35
+}
+{
+  type: SoundEffect
+  minPitch: 0.6
+  maxPitch: 0.7
+  effect: none
+  sound: shootArtillerySapBig
+  minVolume: 0.5
+  maxVolume: 0.6
+}
+]
+    }
 }
 requirements: [
   cobalt/90
