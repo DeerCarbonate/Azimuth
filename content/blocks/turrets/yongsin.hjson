@@ -348,9 +348,9 @@ collidesTiles: true
 collidesGround: true
 lifetime: 93
 reloadMultiplier: 0.75
-damage: 45
-splashDamage: 90
-splashDamageRadius: 25
+damage: 50
+splashDamage: 110
+splashDamageRadius: 30
 rangeChange: 10
 backColor: 7e63a8
 frontColor: b3a8de
