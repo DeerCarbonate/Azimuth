@@ -22,7 +22,7 @@ legSpeed: 0.35
 legGroupSize: 1
 legContinuousMove: true
 accel: 0.5
-armor: 11
+armor: 9
 stepShake: 0.1
 health: 4650
 speed: 0.465
@@ -166,7 +166,7 @@ weapons: [
 	  lifetime: 1
 	  hitColor: cc918b
       pointEffectSpace: 3.9
-	  knockback: 6.5
+	  knockback: 4.5
 	  despawnEffect: none
       smokeEffect: none
 	  
