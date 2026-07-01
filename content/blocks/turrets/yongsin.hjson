@@ -365,6 +365,8 @@ homing: true
 homingPower: 0.06
 homingRange: 10
 homingDelay: 25
+status: blinded
+statusDuration: 340
   parts: [
       {
 progress: {
