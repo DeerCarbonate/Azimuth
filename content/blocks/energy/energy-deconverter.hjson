@@ -7,16 +7,14 @@ research: {
   parent: "energy-converter"
   planet: gelion
     "requirements": [
-	  "octine/30"
 	  "geliarin/800"
-	  "caterium/800"
+	  "cobalt/800"
 	  "venerium/1200"
 ]
 }
 requirements: [
-  octine/30
   venerium/70
-  caterium/50
+  cobalt/50
   geliarin/45
 ]
 consumes: {
