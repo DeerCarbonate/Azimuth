@@ -213,6 +213,31 @@ weapons: [
       }
     }
   }
+  {
+    display:false
+    rotationLimit: 20
+    mirror:true
+	rotate: true
+    alternate:true
+    baseRotation: 80
+    rotateSpeed: 1.8
+    shootCone: 60
+    shoot: {
+        firstShotDelay: 160
+        shotDelay: 7
+        shots: 6
+        }
+    reload: 300
+    bullet:{
+    speed:1
+    damage:0
+    collides:false
+    rangeOverride:260
+    lifetime:0
+    width:0
+    recoil:0.6
+    }
+}
 ]
 research: {
   parent: hover-editor

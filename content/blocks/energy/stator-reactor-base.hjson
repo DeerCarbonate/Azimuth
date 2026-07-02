@@ -21,8 +21,8 @@ requirements: [
 ]
 consumes: {
   items: [
-  raw-caterium/8
-  compound/4
+  raw-caterium/6
+  compound/3
   ]
 }
 hasLiquids: true
