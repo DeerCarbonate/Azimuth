@@ -1,6 +1,6 @@
 size: 4
 outlineColor: 0c0c12
-health: 4000
+health: 3000
 alwaysUnlocked: false
 squareSprite: false
 cooldown: 1200
