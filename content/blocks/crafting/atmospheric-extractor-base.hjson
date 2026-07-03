@@ -103,11 +103,10 @@ research: {
   parent: "silicon-cultivator"
   planet: gelion
     "requirements": [
-	  "venerium/5000"
-	  "cobalt/6000"
-	  "platinum/3000"
-	  "zinc/1000"
-	  "platinum/3000"
+	  "venerium/500"
+	  "cobalt/600"
+	  "platinum/30"
+	  "zinc/20"
 ]
 objectives: [
     {
