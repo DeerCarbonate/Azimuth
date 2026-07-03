@@ -36,11 +36,11 @@ requirements: [
     parent: "relic-drill"
     planet: gelion
                 "requirements": [
-                "venerium/10000"
-                "platinum/8000"
-                "geliarin/800"
-                "compound/1200"
-				"zinc/600"
+                "venerium/100"
+                "platinum/80"
+                "geliarin/20"
+                "compound/50"
+				"zinc/20"
                 ]
         objectives: [
     {
