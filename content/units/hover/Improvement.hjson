@@ -176,6 +176,7 @@ weapons: [
       pierce: true
       pierceBuilding: true 
       pierceCap: 2
+      pierceDamageFactor: 0.5
 	  smokeEffect: none
       shootEffect: {
         type: WaveEffect
