@@ -14,9 +14,9 @@ interp: linear
     planet: gelion
 	parent: cobalt-duct
 	requirements: [
-	  venerium/10000
-	  cobalt/10000
-	  compound/1200
+	  venerium/100
+	  cobalt/100
+	  compound/50
 	]
 	objectives: [
     {
