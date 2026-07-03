@@ -161,7 +161,7 @@ weapons: [
     bullet: {
       lifetime: 110
       drag: -0.015
-      damage: 11
+      damage: 10
       height: 4
       speed: 1.1
       width: 4
@@ -173,6 +173,9 @@ weapons: [
       trailColor: d690d3
       trailWidth: 1
       trailLength: 12
+      pierce: true
+      pierceBuilding: true 
+      pierceCap: 2
 	  smokeEffect: none
       shootEffect: {
         type: WaveEffect
