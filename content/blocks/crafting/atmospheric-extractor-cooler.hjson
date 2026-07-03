@@ -90,10 +90,10 @@ research: {
   parent: "atmospheric-extractor-base"
   planet: gelion
     "requirements": [
-	  "venerium/5000"
-	  "cobalt/6000"
-	  "zinc/100"
-	  "compound/2000"
+	  "venerium/50"
+	  "cobalt/60"
+	  "zinc/5"
+	  "compound/20"
 ]
 objectives: [
     {
