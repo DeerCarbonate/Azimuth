@@ -985,11 +985,10 @@ research: {
   parent: "yongsin"
   planet: "gelion"
     "requirements": [
-	  "venerium/15000"
-	  "platinum/10000"
-	  "geliarin/5000"
-	  "zinc/2500"
-	  "compound/2500"
+	  "venerium/1500"
+	  "platinum/1000"
+	  "geliarin/500"
+	  "zinc/25"
 ]
 objectives: [
     {
