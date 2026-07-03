@@ -175,7 +175,7 @@ weapons: [
       trailLength: 12
       pierce: true
       pierceBuilding: true 
-      pierceCap: 2
+      pierceCap: 3
       pierceDamageFactor: 0.5
 	  smokeEffect: none
       shootEffect: {
