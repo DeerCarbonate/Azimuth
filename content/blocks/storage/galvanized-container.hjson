@@ -12,8 +12,8 @@ squareSprite: false
     parent: "cobalt-duct-bridge"
     planet: gelion
                 "requirements": [
-                "cobalt/5000"
-                "zinc/800"
+                "cobalt/500"
+                "zinc/5"
                 ]
         objectives: [
     {
