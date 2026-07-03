@@ -724,9 +724,9 @@ research: {
   parent: "priority"
   planet: "gelion"
     "requirements": [
-	  "platinum/9000"
+	  "platinum/300"
 	  "zinc/30"
-	  "compound/1500"
-	  "cobalt/10000"
+	  "compound/150"
+	  "cobalt/300"
   ]
 }
