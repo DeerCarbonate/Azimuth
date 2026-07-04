@@ -159,7 +159,7 @@ weapons: [
       spread: 5
     }
     bullet: {
-      lifetime: 110
+      lifetime: 100
       drag: -0.015
       damage: 12
       height: 4.5
