@@ -1,5 +1,5 @@
 type: hover
-range: 160
+range: 210
 useEngineElevation: false
 shadowElevation: 0.3
 engineOffset: -1.75
@@ -161,13 +161,13 @@ weapons: [
     bullet: {
       lifetime: 110
       drag: -0.015
-      damage: 11
+      damage: 12
       height: 4.5
       speed: 1.1
       width: 4.5
       type: BasicBulletType
-      homingPower: 0.1
-      homingDelay: 10
+      homingPower: 0.12
+      homingDelay: 9
       frontColor: ffffff
       backColor: d690d3
       trailColor: d690d3
