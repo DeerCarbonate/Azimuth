@@ -126,7 +126,7 @@ weapons: [
     }
 }
 {
-    reload: 40
+    reload: 42
     x: 0
     y: 0
     rotate: false
@@ -138,21 +138,23 @@ weapons: [
     top: false
     alwaysShooting: true
     useAttackRange: false
-	velocityRnd: 2
-	inaccuracy: 2
+	velocityRnd: 3
+	inaccuracy: 360
 		  shoot: {
     type: ShootSpread
-	shots: 7
+	shots: 9
     }
     bullet: {
         type: BasicBulletType
         damage: 0
-        speed: 1
+        speed: 3
         lifetime: 10
         
         hittable: false
         absorbable: false
         reflectable: false
+		width: 0
+		length: 0
         
         collides: false
         collidesAir: false
@@ -172,7 +174,7 @@ weapons: [
       sizeInterp: slope
       colorFrom: ffc454
       colorTo: 5a3d3d
-	  particles: 2
+	  particles: 1
 	  lifetime: 40
     }
     }
