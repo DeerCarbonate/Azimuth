@@ -142,7 +142,6 @@ weapons: [
 	inaccuracy: 2
 		  shoot: {
     type: ShootSpread
-    firstShotDelay: 135
 	shots: 7
     }
     bullet: {
@@ -165,8 +164,7 @@ weapons: [
         smokeEffect: none
         
         keepVelocity: false
-        
-        killShooter: true
+		
 		despawnEffect: {
       length: 8
       sizeFrom: 0
