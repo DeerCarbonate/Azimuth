@@ -407,10 +407,10 @@ weapons: [
       length: 0
       lifetime: 15.5
       region: azimut-corcle
-      sizeFrom: 17
-	  sizeTo: 45
+      sizeFrom: 12
+	  sizeTo: 24
 	  colorFrom: ffc45400
-      colorTo: ffc45440
+      colorTo: ffc45410
 	  interp: pow3Out
      }
 	 {
@@ -419,11 +419,11 @@ weapons: [
       length: 0
       lifetime: 130
       region: azimut-corcle
-      sizeFrom: 45
-	  sizeTo: 17
+      sizeFrom: 24
+	  sizeTo: 12
 	  sizeChangeStart: 70
-	  colorFrom: ffc45440
-      colorTo: ffc45430
+	  colorFrom: ffc45410
+      colorTo: ffc45400
 	  interp: pow3Out
      }
 	 ]
