@@ -186,15 +186,15 @@ deathExplosionEffect: {
 hitEffect: {
   type: MultiEffect,
   effects: [
-    {
+      {
       type: WaveEffect
       startDelay: 0
-      lifetime: 110
-      sizeFrom: 11
+      lifetime: 10
+      sizeFrom: 8
       sizeTo: 11
-      strokeFrom: 21
-      strokeTo: 21
-      colorFrom: cc918b20
+      strokeFrom: 23
+      strokeTo: 23
+      colorFrom: cc918b00
       colorTo: cc918b20
       followParent: true
       rotWithParent: true
@@ -203,9 +203,23 @@ hitEffect: {
 	{
       type: WaveEffect
       startDelay: 0
-      lifetime: 110
-      sizeFrom: 13
+      lifetime: 10
+      sizeFrom: 9
       sizeTo: 13
+      strokeFrom: 25
+      strokeTo: 25
+      colorFrom: cc918b00
+      colorTo: cc918b20
+      followParent: true
+      rotWithParent: true
+      interp: pow3Out
+    }
+    {
+      type: WaveEffect
+      startDelay: 10
+      lifetime: 110
+      sizeFrom: 11
+      sizeTo: 11
       strokeFrom: 23
       strokeTo: 23
       colorFrom: cc918b20
@@ -214,14 +228,28 @@ hitEffect: {
       rotWithParent: true
       interp: pow3Out
     }
+	{
+      type: WaveEffect
+      startDelay: 10
+      lifetime: 110
+      sizeFrom: 13
+      sizeTo: 13
+      strokeFrom: 25
+      strokeTo: 25
+      colorFrom: cc918b20
+      colorTo: cc918b20
+      followParent: true
+      rotWithParent: true
+      interp: pow3Out
+    }
     {
       type: WaveEffect
-      startDelay: 110
+      startDelay: 120
       lifetime: 20
       sizeFrom: 11
       sizeTo: 11
-      strokeFrom: 21
-      strokeTo: 21
+      strokeFrom: 23
+      strokeTo: 23
       colorFrom: cc918b20
       colorTo: cc918b00
       followParent: true
@@ -230,12 +258,12 @@ hitEffect: {
     }
     {
       type: WaveEffect
-      startDelay: 110
+      startDelay: 120
       lifetime: 20
       sizeFrom: 13
       sizeTo: 13
-      strokeFrom: 23
-      strokeTo: 23
+      strokeFrom: 25
+      strokeTo: 25
       colorFrom: cc918b20
       colorTo: cc918b00
       followParent: true
