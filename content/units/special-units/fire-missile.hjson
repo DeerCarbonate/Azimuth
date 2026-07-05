@@ -125,4 +125,58 @@ weapons: [
         killShooter: true
     }
 }
+{
+    reload: 40
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+	velocityRnd: 2
+	inaccuracy: 2
+		  shoot: {
+    type: ShootSpread
+    firstShotDelay: 135
+	shots: 7
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 1
+        lifetime: 10
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: true
+		despawnEffect: {
+      length: 8
+      sizeFrom: 0
+      sizeTo: 1.7
+      sizeInterp: slope
+      colorFrom: ffc454
+      colorTo: 5a3d3d
+	  particles: 2
+	  lifetime: 40
+    }
+    }
+}
 ]

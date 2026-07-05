@@ -190,12 +190,12 @@ hitEffect: {
       type: WaveEffect
       startDelay: 0
       lifetime: 20.3
-      sizeFrom: 8
+      sizeFrom: 10
       sizeTo: 11
       strokeFrom: 21.7
       strokeTo: 21.7
       colorFrom: cc918b00
-      colorTo: cc918b20
+      colorTo: cc918b15
       followParent: true
       rotWithParent: true
       interp: pow3Out
@@ -204,12 +204,12 @@ hitEffect: {
       type: WaveEffect
       startDelay: 0
       lifetime: 20.3
-      sizeFrom: 9
+      sizeFrom: 10
       sizeTo: 13
       strokeFrom: 23.2
       strokeTo: 23.2
       colorFrom: cc918b00
-      colorTo: cc918b20
+      colorTo: cc918b15
       followParent: true
       rotWithParent: true
       interp: pow3Out
@@ -222,8 +222,8 @@ hitEffect: {
       sizeTo: 11
       strokeFrom: 21.7
       strokeTo: 21.7
-      colorFrom: cc918b20
-      colorTo: cc918b20
+      colorFrom: cc918b15
+      colorTo: cc918b15
       followParent: true
       rotWithParent: true
       interp: pow3Out
@@ -236,8 +236,8 @@ hitEffect: {
       sizeTo: 13
       strokeFrom: 23.2
       strokeTo: 23.2
-      colorFrom: cc918b20
-      colorTo: cc918b20
+      colorFrom: cc918b15
+      colorTo: cc918b15
       followParent: true
       rotWithParent: true
       interp: pow3Out
@@ -250,7 +250,7 @@ hitEffect: {
       sizeTo: 11
       strokeFrom: 21.7
       strokeTo: 21.7
-      colorFrom: cc918b20
+      colorFrom: cc918b15
       colorTo: cc918b00
       followParent: true
       rotWithParent: true
@@ -264,7 +264,7 @@ hitEffect: {
       sizeTo: 13
       strokeFrom: 23.2
       strokeTo: 23.2
-      colorFrom: cc918b20
+      colorFrom: cc918b15
       colorTo: cc918b00
       followParent: true
       rotWithParent: true
@@ -276,10 +276,10 @@ hitEffect: {
       length: 0
       lifetime: 20.3
       region: azimut-corcle
-      sizeFrom: 0
-	  sizeTo: 30
+      sizeFrom: 10
+	  sizeTo: 28
 	  colorFrom: cc918b00
-      colorTo: cc918b20
+      colorTo: cc918b03
 	  interp: pow3Out
      }
 	 {
@@ -288,10 +288,10 @@ hitEffect: {
       length: 0
       lifetime: 110
       region: azimut-corcle
-      sizeFrom: 30
-	  sizeTo: 30
-	  colorFrom: cc918b20
-      colorTo: cc918b20
+      sizeFrom: 28
+	  sizeTo: 28
+	  colorFrom: cc918b03
+      colorTo: cc918b03
 	  interp: pow3Out
      }
 	 {
@@ -300,9 +300,9 @@ hitEffect: {
       length: 0
       lifetime: 40.3
       region: azimut-corcle
-      sizeFrom: 30
+      sizeFrom: 28
 	  sizeTo: 10
-	  colorFrom: cc918b20
+	  colorFrom: cc918b03
       colorTo: cc918b00
 	  interp: pow3Out
      }
