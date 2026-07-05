@@ -275,7 +275,7 @@ hitEffect: {
       startDelay:0
       length: 0
       lifetime: 20.3
-      region: azimut-bog-corcle
+      region: azimut-corcle
       sizeFrom: 0
 	  sizeTo: 30
 	  colorFrom: cc918b00
@@ -287,7 +287,7 @@ hitEffect: {
       startDelay:20
       length: 0
       lifetime: 110
-      region: azimut-bog-corcle
+      region: azimut-corcle
       sizeFrom: 30
 	  sizeTo: 30
 	  colorFrom: cc918b20
@@ -299,7 +299,7 @@ hitEffect: {
       startDelay:130
       length: 0
       lifetime: 40.3
-      region: azimut-bog-corcle
+      region: azimut-corcle
       sizeFrom: 30
 	  sizeTo: 10
 	  colorFrom: cc918b20
