@@ -18,6 +18,7 @@ shadowElevation: -1
 targetable: false
 hittable: false
 deathShake: 0
+wobble: false
 
 envDisabled: 0
 envEnabled: -1
@@ -288,8 +289,71 @@ weapons: [
       lenTo: 8.2
       strokeFrom: 2
       strokeTo: 0.8
-      colorFrom: ffe4af98
-      colorTo: 271b1700
+      colorFrom: ffc45498
+      colorTo: f1545400
+      interp: pow2
+      sizeInterp: pow3In
+      layer: 80
+    }
+    }
+}
+{
+    reload: 42
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+	velocityRnd: 3
+	inaccuracy: 360
+		  shoot: {
+    type: ShootSpread
+	shots: 5
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 1.2
+        lifetime: 10
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+		width: 0
+		length: 0
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+		
+		despawnEffect: {
+      type: ParticleEffect
+      lifetime: 100
+      particles: 1
+      line: true
+      length: 42
+      cone: 0
+      useRotation: false
+      baseRotation: 90
+      lenFrom: 0
+      lenTo: 8.2
+      strokeFrom: 3
+      strokeTo: 1.2
+      colorFrom: b0b0b040
+      colorTo: b0b0b000
       interp: pow2
       sizeInterp: pow3In
       layer: 80
