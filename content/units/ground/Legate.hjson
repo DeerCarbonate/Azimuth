@@ -189,11 +189,11 @@ hitEffect: {
       {
       type: WaveEffect
       startDelay: 0
-      lifetime: 10
+      lifetime: 20
       sizeFrom: 8
       sizeTo: 11
-      strokeFrom: 23
-      strokeTo: 23
+      strokeFrom: 22
+      strokeTo: 22
       colorFrom: cc918b00
       colorTo: cc918b20
       followParent: true
@@ -203,11 +203,11 @@ hitEffect: {
 	{
       type: WaveEffect
       startDelay: 0
-      lifetime: 10
+      lifetime: 20
       sizeFrom: 9
       sizeTo: 13
-      strokeFrom: 25
-      strokeTo: 25
+      strokeFrom: 24
+      strokeTo: 24
       colorFrom: cc918b00
       colorTo: cc918b20
       followParent: true
@@ -216,12 +216,12 @@ hitEffect: {
     }
     {
       type: WaveEffect
-      startDelay: 10
+      startDelay: 20
       lifetime: 110
       sizeFrom: 11
       sizeTo: 11
-      strokeFrom: 23
-      strokeTo: 23
+      strokeFrom: 22
+      strokeTo: 22
       colorFrom: cc918b20
       colorTo: cc918b20
       followParent: true
@@ -230,12 +230,12 @@ hitEffect: {
     }
 	{
       type: WaveEffect
-      startDelay: 10
+      startDelay: 20
       lifetime: 110
       sizeFrom: 13
       sizeTo: 13
-      strokeFrom: 25
-      strokeTo: 25
+      strokeFrom: 24
+      strokeTo: 24
       colorFrom: cc918b20
       colorTo: cc918b20
       followParent: true
@@ -244,12 +244,12 @@ hitEffect: {
     }
     {
       type: WaveEffect
-      startDelay: 120
-      lifetime: 20
+      startDelay: 130
+      lifetime: 40
       sizeFrom: 11
       sizeTo: 11
-      strokeFrom: 23
-      strokeTo: 23
+      strokeFrom: 22
+      strokeTo: 22
       colorFrom: cc918b20
       colorTo: cc918b00
       followParent: true
@@ -258,12 +258,12 @@ hitEffect: {
     }
     {
       type: WaveEffect
-      startDelay: 120
-      lifetime: 20
+      startDelay: 130
+      lifetime: 40
       sizeFrom: 13
       sizeTo: 13
-      strokeFrom: 25
-      strokeTo: 25
+      strokeFrom: 24
+      strokeTo: 24
       colorFrom: cc918b20
       colorTo: cc918b00
       followParent: true
