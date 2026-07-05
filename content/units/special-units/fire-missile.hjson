@@ -360,4 +360,73 @@ weapons: [
     }
     }
 }
+{
+    reload: 170
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+	inaccuracy: 360
+		  shoot: {
+    type: ShootSpread
+	shots: 1
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 0
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+		width: 0
+		length: 0
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+		
+		despawnEffect: [{
+      particles: 1
+      startDelay:3
+      length: 0
+      lifetime: 15.5
+      region: azimut-corcle
+      sizeFrom: 17
+	  sizeTo: 45
+	  colorFrom: ffc45400
+      colorTo: ffc45440
+	  interp: pow3Out
+     }
+	 {
+	       particles: 1
+      startDelay:18
+      length: 0
+      lifetime: 130
+      region: azimut-corcle
+      sizeFrom: 45
+	  sizeTo: 17
+	  sizeChangeStart: 70
+	  colorFrom: ffc45440
+      colorTo: ffc45430
+	  interp: pow3Out
+     }
+	 ]
+    }
+}
 ]
