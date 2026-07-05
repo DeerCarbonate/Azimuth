@@ -189,7 +189,7 @@ hitEffect: {
       {
       type: WaveEffect
       startDelay: 0
-      lifetime: 20.5
+      lifetime: 20.3
       sizeFrom: 8
       sizeTo: 11
       strokeFrom: 21.7
@@ -203,11 +203,11 @@ hitEffect: {
 	{
       type: WaveEffect
       startDelay: 0
-      lifetime: 20.5
+      lifetime: 20.3
       sizeFrom: 9
       sizeTo: 13
-      strokeFrom: 23.7
-      strokeTo: 23.7
+      strokeFrom: 23.2
+      strokeTo: 23.2
       colorFrom: cc918b00
       colorTo: cc918b20
       followParent: true
@@ -217,7 +217,7 @@ hitEffect: {
     {
       type: WaveEffect
       startDelay: 20
-      lifetime: 110.5
+      lifetime: 110.3
       sizeFrom: 11
       sizeTo: 11
       strokeFrom: 21.7
@@ -231,11 +231,11 @@ hitEffect: {
 	{
       type: WaveEffect
       startDelay: 20
-      lifetime: 110.5
+      lifetime: 110.3
       sizeFrom: 13
       sizeTo: 13
-      strokeFrom: 23.7
-      strokeTo: 23.7
+      strokeFrom: 23.2
+      strokeTo: 23.2
       colorFrom: cc918b20
       colorTo: cc918b20
       followParent: true
@@ -245,7 +245,7 @@ hitEffect: {
     {
       type: WaveEffect
       startDelay: 130
-      lifetime: 40.5
+      lifetime: 40.3
       sizeFrom: 11
       sizeTo: 11
       strokeFrom: 21.7
@@ -259,17 +259,50 @@ hitEffect: {
     {
       type: WaveEffect
       startDelay: 130
-      lifetime: 40.5
+      lifetime: 40.3
       sizeFrom: 13
       sizeTo: 13
-      strokeFrom: 23.7
-      strokeTo: 23.7
+      strokeFrom: 23.2
+      strokeTo: 23.2
       colorFrom: cc918b20
       colorTo: cc918b00
       followParent: true
       rotWithParent: true
       interp: pow3Out
     }
+	{
+      particles: 1
+      startDelay:0
+      length: 0
+      lifetime: 20.3
+      region: azimut-bog-corcle
+      sizeFrom: 0
+	  sizeTo: 55
+	  colorFrom: cc918b00
+      colorTo: cc918b20
+     }
+	 {
+      particles: 1
+      startDelay:20
+      length: 0
+      lifetime: 110
+      region: azimut-bog-corcle
+      sizeFrom: 55
+	  sizeTo: 55
+	  colorFrom: cc918b20
+      colorTo: cc918b20
+     }
+	 {
+      particles: 1
+      startDelay:130
+      length: 0
+      lifetime: 40.3
+      region: azimut-bog-corcle
+      sizeFrom: 55
+	  sizeTo: 30
+	  colorFrom: cc918b20
+      colorTo: cc918b00
+     }
   ]
 	}
 	}
