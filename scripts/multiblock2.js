@@ -22,15 +22,12 @@ Events.on(ClientLoadEvent, () => {
     const oldDrawer = partBlock.drawer;
     partBlock.drawer = extend(Packages.mindustry.world.draw.DrawMulti, [oldDrawer, planDrawer], {});
 
- partBlock.buildType = () => extend(HeatCrafter.HeatCrafterBuild, partBlock, {
-    draw(){
-        this.super$draw();
-        Draw.z(Layer.block + 0.5);
-        Draw.rect(partRegions[this.rotation], this.x, this.y);
-        Draw.z(Layer.block);
-    },
-    drawBuilding(){
-        this.super$drawBuilding();
-        Draw.rect(partRegions[this.rotation], this.x, this.y);
-    }
+    partBlock.buildType = () => extend(HeatCrafter.HeatCrafterBuild, partBlock, {
+        draw(){
+            this.super$draw();
+            Draw.z(Layer.block + 0.5);
+            Draw.rect(partRegions[this.rotation], this.x, this.y);
+            Draw.z(Layer.block);
+        }
+    });
 });
