@@ -28,7 +28,7 @@ Events.on(ClientLoadEvent, () => {
     const oldDrawer = block.drawer;
     block.drawer = extend(Packages.mindustry.world.draw.DrawMulti, [oldDrawer, planDrawer], {});
 
- block.buildType = () => extend(GenericCrafter.GenericCrafterBuild, block, {
+block.buildType = () => extend(GenericCrafter.GenericCrafterBuild, block, {
     draw(){
         this.super$draw();
         Draw.z(Layer.block + 0.5);
@@ -38,6 +38,7 @@ Events.on(ClientLoadEvent, () => {
         Draw.z(Layer.block);
     },
     drawBuilding(){
+        this.super$drawBuilding();
         Draw.rect(baseRegions[this.rotation], this.x, this.y);
     }
 });

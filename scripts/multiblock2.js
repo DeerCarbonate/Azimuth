@@ -30,6 +30,7 @@ Events.on(ClientLoadEvent, () => {
         Draw.z(Layer.block);
     },
     drawBuilding(){
+        this.super$drawBuilding();
         Draw.rect(partRegions[this.rotation], this.x, this.y);
     }
 });
