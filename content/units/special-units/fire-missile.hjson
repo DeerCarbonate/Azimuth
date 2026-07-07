@@ -257,7 +257,7 @@ weapons: [
         type: BasicBulletType
         damage: 0
         speed: 1.2
-        lifetime: 10
+        lifetime: 9
         
         hittable: false
         absorbable: false
