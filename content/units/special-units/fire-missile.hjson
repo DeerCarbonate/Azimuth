@@ -420,10 +420,10 @@ weapons: [
       lifetime: 130
       region: azimut-corcle
       sizeFrom: 24
-	  sizeTo: 12
-	  sizeChangeStart: 70
-	  colorFrom: ffc45410
-      colorTo: ffc45400
+	  sizeTo: 0
+	  sizeChangeStart: 90
+	  colorFrom: ffc45415
+      colorTo: ffc45415
 	  interp: pow3Out
      }
 	 ]
@@ -485,7 +485,7 @@ weapons: [
     }
 }
 {
-    reload: 105
+    reload: 85
     x: 0
     y: 0
     rotate: false
@@ -531,10 +531,10 @@ weapons: [
       sizeFrom: 0
       sizeTo: 6.2
       sizeInterp: slope
-      colorFrom: f1545440
-      colorTo: f1545430
+      colorFrom: f1545430
+      colorTo: f1545420
 	  particles: 1
-	  lifetime: 100
+	  lifetime: 80
      }
 	 ]
     }
