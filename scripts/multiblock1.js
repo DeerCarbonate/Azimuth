@@ -28,18 +28,16 @@ Events.on(ClientLoadEvent, () => {
     const oldDrawer = block.drawer;
     block.drawer = extend(Packages.mindustry.world.draw.DrawMulti, [oldDrawer, planDrawer], {});
 
-    block.buildType = () => extend(GenericCrafter.GenericCrafterBuild, block, {
-        draw(){
-            this.super$draw();
-            Draw.z(Layer.block + 0.5);
-            Draw.rect(baseRegions[this.rotation], this.x, this.y);
-            Draw.z(Layer.block - 0.5);
-            Draw.rect(overlayRegions[this.rotation], this.x, this.y);
-            Draw.z(Layer.block);
-        },
-        drawBuilding(){
-            Draw.rect(baseRegions[this.rotation], this.x, this.y);
-            this.super$drawBuilding();
-        }
-    });
+ block.buildType = () => extend(GenericCrafter.GenericCrafterBuild, block, {
+    draw(){
+        this.super$draw();
+        Draw.z(Layer.block + 0.5);
+        Draw.rect(baseRegions[this.rotation], this.x, this.y);
+        Draw.z(Layer.block - 0.5);
+        Draw.rect(overlayRegions[this.rotation], this.x, this.y);
+        Draw.z(Layer.block);
+    },
+    drawBuilding(){
+        Draw.rect(baseRegions[this.rotation], this.x, this.y);
+    }
 });
