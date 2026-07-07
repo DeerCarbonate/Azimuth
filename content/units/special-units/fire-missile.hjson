@@ -319,7 +319,7 @@ weapons: [
     bullet: {
         type: BasicBulletType
         damage: 0
-        speed: 
+        speed: 1.5
         lifetime: 10
         
         hittable: false
