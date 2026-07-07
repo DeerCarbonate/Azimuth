@@ -443,6 +443,7 @@ weapons: [
     alwaysShooting: true
     useAttackRange: false
 	inaccuracy: 360
+	velocityRnd: 3
 		  shoot: {
     type: ShootSpread
 	shots: 5
@@ -450,7 +451,7 @@ weapons: [
     bullet: {
         type: BasicBulletType
         damage: 0
-        speed: 0
+        speed: 1.5
         lifetime: 1
         
         hittable: false
@@ -479,6 +480,61 @@ weapons: [
       colorTo: 5a3d3d30
 	  particles: 1
 	  lifetime: 75
+     }
+	 ]
+    }
+}
+{
+    reload: 90
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+	inaccuracy: 360
+	velocityRnd: 3
+		  shoot: {
+    type: ShootSpread
+	shots: 5
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 1.5
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+		width: 0
+		length: 0
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+		
+		despawnEffect: [{
+      length: 8
+      sizeFrom: 0
+      sizeTo: 5.5
+      sizeInterp: slope
+      colorFrom: f1545440
+      colorTo: b0b0b030
+	  particles: 1
+	  lifetime: 80
      }
 	 ]
     }
