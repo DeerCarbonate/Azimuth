@@ -28,6 +28,10 @@ Events.on(ClientLoadEvent, () => {
             Draw.z(Layer.block + 0.5);
             Draw.rect(partRegions[this.rotation], this.x, this.y);
             Draw.z(Layer.block);
+        },
+        drawBuilding(){
+            Draw.rect(partRegions[this.rotation], this.x, this.y);
+            this.super$drawBuilding();
         }
     });
 });
