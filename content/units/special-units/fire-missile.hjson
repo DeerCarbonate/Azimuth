@@ -319,7 +319,7 @@ weapons: [
     bullet: {
         type: BasicBulletType
         damage: 0
-        speed: 1.2
+        speed: 
         lifetime: 10
         
         hittable: false
@@ -451,7 +451,7 @@ weapons: [
     bullet: {
         type: BasicBulletType
         damage: 0
-        speed: 1.5
+        speed: 2.7
         lifetime: 1
         
         hittable: false
@@ -485,7 +485,7 @@ weapons: [
     }
 }
 {
-    reload: 90
+    reload: 125
     x: 0
     y: 0
     rotate: false
@@ -506,7 +506,7 @@ weapons: [
     bullet: {
         type: BasicBulletType
         damage: 0
-        speed: 1.5
+        speed: 3
         lifetime: 1
         
         hittable: false
@@ -534,7 +534,7 @@ weapons: [
       colorFrom: f1545440
       colorTo: b0b0b030
 	  particles: 1
-	  lifetime: 80
+	  lifetime: 120
      }
 	 ]
     }
