@@ -81,9 +81,9 @@ research: {
   parent: "core-forum"
   planet: gelion
     "requirements": [
-	  "cobalt/10000"
-	  "compound/7000"
-	  "zinc/200"
+	  "cobalt/10"
+	  "compound/70"
+	  "zinc/5"
 ]
 objectives: [
     {
