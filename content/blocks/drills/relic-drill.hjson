@@ -15,9 +15,9 @@ liquidBoostIntensity: 1.5
 consumes: {
 power: 0.6
   liquid: {
-  liquid: azimut-swartzite
+  liquid: swartzite
   amount: 0.01666666666666666666666666666666
-  boost: true
+  booster: true
   optional: true
  }
 }
