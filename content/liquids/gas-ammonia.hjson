@@ -1,0 +1,13 @@
+name: Gaseous ammonia
+description: Bebebe
+heatCapacity: 0
+explosiveness: 0
+temperature: 0.1
+coolant: false
+gas: true
+color: b9dba800
+flammability: 0
+gasColor: b9dba800
+barColor: b9dba833
+incinerable: false
+lightColor: ffffff00

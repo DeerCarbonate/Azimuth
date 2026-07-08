@@ -1,0 +1,52 @@
+type: GenericCrafter
+health: 250
+size: 2
+category: crafting
+rotate: true
+squareSprite: true
+liquidCapacity: 45
+research: {
+  parent: "isobutane-burner"
+  planet: gelion
+    "requirements": [
+  venerium/60
+  platinum/45
+  geliarin/30
+]
+objectives: [
+    {
+      type: OnSector
+      preset: "four"
+    }
+ ]
+}
+requirements: [
+  venerium/35
+  platinum/40
+  geliarin/25
+]
+consumes: {
+  liquids: [
+   gas-ammonia/0.955
+	]
+items: [
+venerium/1
+]
+}
+hasLiquids: true
+craftEffect: none
+outputLiquid: power/0.066666666666666
+drawer: {
+  type: DrawMulti
+  drawers: [
+  	    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidRegion
+      suffix: -liquid
+      drawLiquid: gas-ammonia
+    }
+  ]
+}
