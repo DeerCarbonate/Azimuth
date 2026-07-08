@@ -16,7 +16,7 @@ consumes: {
   liquid: {
   liquid: swartzite
   amount: 0.01666666666666666666666666666666
-  booster: true
+  boost: true
   optional: true
  }
 }
