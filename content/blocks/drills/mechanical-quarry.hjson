@@ -5,7 +5,7 @@ category: production
 size: 3
 drillTime: 470
 tier: 1
-liquidBoostIntensity: 1.5
+liquidBoostIntensity: 1.35
 consumes: {
   liquid: {
   liquid: power
