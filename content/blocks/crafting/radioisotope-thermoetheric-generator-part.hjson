@@ -26,11 +26,6 @@ requirements: [
   platinum/50
   geliarin/20
 ]
-consumes: {
-  liquids: [
-  ammonia/0.066666666666666666666666666666666666666
-	]
-}
 hasLiquids: true
 craftEffect: none
 outputLiquid: gas-ammonia/1
