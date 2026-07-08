@@ -41,6 +41,13 @@ drawer: {
       suffix: -liquid
       drawLiquid: gas-ammonia
     }
+    {
+   type: DrawParticles
+   color: 92af8a
+   alpha: 0.45
+   particleRad: 6
+   rotateScl: 125
+   }
   ]
 }
 destroyBullet:{

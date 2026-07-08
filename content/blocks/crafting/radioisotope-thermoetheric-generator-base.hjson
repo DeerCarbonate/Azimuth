@@ -43,6 +43,9 @@ drawer: {
       type: DrawRegion
       suffix: -bottom
     }
+	{
+      type: DrawCrucibleFlame
+    } 
     {
       type: DrawLiquidRegion
       suffix: -liquid
