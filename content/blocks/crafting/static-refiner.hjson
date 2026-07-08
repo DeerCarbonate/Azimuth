@@ -82,12 +82,12 @@ drawer: {
     parent: "mixing-chamber-part"
     planet: gelion
                 "requirements": [
-                "venerium/30000"
-				"cobalt/30000"
-                "platinum/20000"
-                "geliarin/10000"
-                "compound/8000"
-				"zinc/100"
+               "venerium/300"
+			             	"cobalt/300"
+                "platinum/200"
+                "geliarin/100"
+                "compound/50"
+				             "zinc/10"
                 ]
         objectives: [
     {
