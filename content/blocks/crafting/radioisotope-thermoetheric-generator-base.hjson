@@ -61,13 +61,13 @@ destroyBullet:{
 
     splashDamageRadius: 18
     splashDamage: 70
-    fragBullets: 4
+    fragBullets: 6
     lifetime: 0
     speed: 0
-    fragVelocityMin:0.3
-    fragVelocityMax:0.7
-    fragLifeMin:0.2
-    fragLifeMax:2
+    fragVelocityMin:0.5
+    fragVelocityMax:0.8
+    fragLifeMin:0.4
+    fragLifeMax:2.2
     despawnEffect: {
            type: ExplosionEffect
            lifetime: 12
