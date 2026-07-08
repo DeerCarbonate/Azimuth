@@ -13,6 +13,7 @@ hasLiquids: true
 drillSound: none
 liquidBoostIntensity: 1.5
 consumes: {
+power: 0.6
   liquid: {
   liquid: azimut-swartzite
   amount: 0.01666666666666666666666666666666
@@ -70,9 +71,6 @@ drillEffect: [
 ]
 }
 ]
-consumes: {
-  power: 0.6
-}
 drillSoundVolume: 1.2
 category: production
 requirements: [
