@@ -35,7 +35,7 @@ venerium/1
 }
 hasLiquids: true
 craftEffect: none
-outputLiquid: power/0.13333333333333333333333333333333333
+outputLiquid: power/0.1
 drawer: {
   type: DrawMulti
   drawers: [
