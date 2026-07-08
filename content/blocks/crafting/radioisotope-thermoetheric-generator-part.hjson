@@ -43,3 +43,69 @@ drawer: {
     }
   ]
 }
+destroyBullet:{
+    type: ArtilleryBulletType
+    height: 0
+    width: 13
+    damage: 30
+	buildingDamageMultiplier: 1.5
+    reloadMultiplier: 1
+    ammoMultiplier: 4
+
+    splashDamageRadius: 18
+    splashDamage: 70
+    fragBullets: 4
+    lifetime: 0
+    speed: 0
+    fragVelocityMin:0.3
+    fragVelocityMax:0.7
+    fragLifeMin:0.2
+    fragLifeMax:2
+    despawnEffect: {
+           type: ExplosionEffect
+           lifetime: 12
+           waveColor: efe67160
+           waveStroke: 3
+           waveRad: 20
+           smokeColor: b0b0b020
+           smokeSizeBase: 8
+           smokeSize: 5.5
+           smokes: 7
+           sparkColor: efe671
+           sparkStroke: 1.5
+           sparkRad: 12
+           sparkLen: 3
+           sparks: 3
+       }
+    hitEffect: none
+fragBullet: {
+    type: BasicBulletType
+    collidesAir: false
+    shrinkY: 1
+    height: 10
+    width: 6
+    buildingDamageMultiplier: 1.4
+    pierceCap: 2
+    lifetime: 18
+    damage: 24
+    speed: 2.8
+    drag: 0.005
+    hitEffect: none
+    despawnEffect: {
+        type: WaveEffect
+        sizeFrom: 0
+        sizeTo: 12
+        lifetime: 20
+        strokeFrom: 2
+        strokeTo: 1
+        colorFrom: efe671
+        colorTo: efe67100
+    }
+
+    trailColor: efe671
+    trailLength: 2.5
+    trailWidth: 1.25
+
+    frontColor: efe671
+    backColor: efe67170
+}}
