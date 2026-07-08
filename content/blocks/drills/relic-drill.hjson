@@ -2,7 +2,7 @@ type: BurstDrill
 canOverdrive: false
 size: 3
 squareSprite: false
-drillTime: 295
+drillTime: 280
 invertedTime: 460
 itemCapacity: 30
 dumpTime: 7
@@ -14,7 +14,7 @@ drillSound: none
 liquidBoostIntensity: 1.5
 consumes: {
   liquid: {
-  liquid: swartzite
+  liquid: azimut-swartzite
   amount: 0.01666666666666666666666666666666
   boost: true
   optional: true
