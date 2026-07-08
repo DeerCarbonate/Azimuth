@@ -12,10 +12,10 @@ Events.on(ClientLoadEvent, () => {
         Core.atlas.find("azimut-radioisotope-thermoetheric-generator-base-3"),
     ];
     const overlayRegions = [
-        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-overlay-0"),
-        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-overlay-1"),
-        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-overlay-2"),
-        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-overlay-3"),
+        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-base-overlay-0"),
+        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-base-overlay-1"),
+        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-base-overlay-2"),
+        Core.atlas.find("azimut-radioisotope-thermoetheric-generator-base-overlay-3"),
     ];
 
     const planDrawer = extend(Packages.mindustry.world.draw.DrawBlock, {
