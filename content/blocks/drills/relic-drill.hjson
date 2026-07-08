@@ -11,6 +11,15 @@ shake: 4
 arrows: 0
 hasLiquids: true
 drillSound: none
+liquidBoostIntensity: 1.5
+consumes: {
+  liquid: {
+  liquid: swartzite
+  amount: 0.01666666666666666666666666666666
+  booster: true
+  optional: true
+ }
+}
 drillEffect: [
   {
     type: RadialEffect
