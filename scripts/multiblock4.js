@@ -22,7 +22,7 @@ Events.on(ClientLoadEvent, () => {
     const oldDrawer = partBlock.drawer;
     partBlock.drawer = extend(Packages.mindustry.world.draw.DrawMulti, [oldDrawer, planDrawer], {});
 
-    partBlock.buildType = () => extend(HeatCrafter.HeatCrafterBuild, partBlock, {
+    partBlock.buildType = () => extend(GenericCrafter.GenericCrafterBuild, partBlock, {
         draw(){
             this.super$draw();
             Draw.z(Layer.block + 0.5);
