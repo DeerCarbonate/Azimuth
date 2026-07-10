@@ -24,10 +24,10 @@ hasLiquids: true
     parent: "silicon-cultivator"
     planet: gelion
 		"requirements": [
-		"cobalt/4000"
-		"platinum/4200"
-		"geliarin/1200"
-		"compound/1000"
+		"cobalt/400"
+		"platinum/420"
+		"geliarin/120"
+		"compound/10"
 		]
 	objectives: [
     {
