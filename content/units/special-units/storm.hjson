@@ -42,6 +42,31 @@ abilities: [
 type:RegenAbility
 percentAmount: 200
 }
+    {
+    type: EnergyFieldAbility
+    maxTargets: 1200
+    damage: 2
+    reload: 12
+    range: 200
+	color: b0b0b0
+    x: 0
+    y: 0
+	sameTypeHealMult: 0
+    healPercent: 0
+	healEffect: none
+	healColor: b0b0b000
+	effect: none
+	continuous: false
+	rotate: false
+	hitBuildings: true
+	hitUnits: true
+	sectorRad: 0
+	damageEffect: none
+	shootSound: none
+	sectors: 0
+    effectRadius: 0
+	hitEffect: none
+}
 ]
 immunities: [ slow, spore-slowed, tarred]
 weapons: [

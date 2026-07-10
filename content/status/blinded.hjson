@@ -1,3 +1,4 @@
 disarm: false
 speedMultiplier: 0.7
+reloadMultiplier: 1.15
 effect: none
