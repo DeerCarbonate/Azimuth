@@ -43,10 +43,10 @@ consumes: {
 }
 configurable: true
 requirements: [
- 	cobalt/200
+ cobalt/110
 	platinum/100
-	venerium/75
-	geliarin/25
+	venerium/120
+	geliarin/45
 ]
 category: units
 
