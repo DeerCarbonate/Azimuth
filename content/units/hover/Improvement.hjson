@@ -213,31 +213,6 @@ weapons: [
       }
     }
   }
-  {
-    baseRotation: 180
-    shootCone: 360
-    alternate: false
-    y: 85
-    shootSound: none
-	shootY: 155
-	reload: 300
-       shoot: {
-      type: ShootSpread
-      firstShotDelay: 10
-      shotDelay: 0.21
-      spread: 0
-      shots: 15
-    }
-    bullet: {
-      type: BulletType
-      recoil: -0.057
-      instantDisappear: true
-      shootEffect: none
-      smokeEffect: none
-      hitEffect: none
-      despawnEffect: none
-	}
-}
 ]
 research: {
   parent: hover-editor
