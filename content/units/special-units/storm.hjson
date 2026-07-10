@@ -10,7 +10,7 @@ lowAltitude: true
 useUnitCap: false
 drawCell: false
 physics: false
-hitSize: 0
+hitSize: 1
 flying: true
 createScorch: false
 shadowElevation: -1
@@ -46,7 +46,7 @@ percentAmount: 200
     {
     type: EnergyFieldAbility
     maxTargets: 1200
-    damage: 2
+    damage: 3
     reload: 12
     range: 220
 	color: b0b0b0
@@ -202,7 +202,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
@@ -304,7 +304,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
@@ -405,7 +405,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
@@ -506,7 +506,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
@@ -607,7 +607,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
@@ -708,7 +708,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
@@ -809,7 +809,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
@@ -910,7 +910,7 @@ weapons: [
 	]
 	}
     ejectEffect: none
-    shootSound: nobe
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 3
