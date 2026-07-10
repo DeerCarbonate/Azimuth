@@ -13,6 +13,7 @@ physics: false
 hitSize: 0
 flying: true
 createScorch: false
+shadowElevation: -1
 
 envDisabled: 0
 envEnabled: -1
@@ -47,7 +48,7 @@ percentAmount: 200
     maxTargets: 1200
     damage: 2
     reload: 12
-    range: 200
+    range: 220
 	color: b0b0b0
     x: 0
     y: 0
@@ -66,6 +67,7 @@ percentAmount: 200
 	sectors: 0
     effectRadius: 0
 	hitEffect: none
+	status: none
 }
 ]
 immunities: [ slow, spore-slowed, tarred]
