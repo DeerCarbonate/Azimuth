@@ -1,5 +1,5 @@
 type: hover
-range: 190
+range: 175
 useEngineElevation: false
 shadowElevation: 0.3
 engineOffset: -1.75
@@ -226,11 +226,11 @@ weapons: [
       firstShotDelay: 10
       shotDelay: 0.21
       spread: 0
-      shots: 18
+      shots: 15
     }
     bullet: {
       type: BulletType
-      recoil: 0.057
+      recoil: -0.057
       instantDisappear: true
       shootEffect: none
       smokeEffect: none
