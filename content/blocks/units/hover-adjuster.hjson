@@ -25,21 +25,21 @@ plans: [
 	}
 ]
 requirements: [
-	caterium/250
+	caterium/220
 	geliarin/120
-	venerium/260
-	titanite/330
-	cobalt/650
+	venerium/350
+	titanite/180
+	cobalt/600
 ]
 research: {
   parent: "hover-editor"
   planet: gelion
     "requirements": [
-	  "venerium/6500"
-	  "cobalt/4500"
-	  "titanite/550"
-	  "geliarin/800"
-	  "caterium/600"
+	  "venerium/650"
+	  "cobalt/450"
+	  "titanite/50"
+	  "geliarin/80"
+	  "caterium/60"
 ]
 objectives: [
     {
