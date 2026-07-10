@@ -12,35 +12,34 @@ consumes: {
 	liquids: [
 	  swartzite/0.0500
 	]
-	power: 3
+	power: 2.5
 }
 plans: [
 	{
 	unit: "Paladin" //Tier 1 assembler
 	requirements: [
 	    azimut-Legate/1
-		azimut-venerium-large-wall/4
+		azimut-venerium-large-wall/3
 	]
-	time: 2860
+	time: 2650
 	}
 ]
 requirements: [
-	caterium/250
-	geliarin/150
-	venerium/550
-	platinum/550
-	cobalt/450
+	caterium/230
+	geliarin/130
+	venerium/570
+	platinum/280
+	cobalt/100
 ]
 research: {
   parent: "mech-editor"
   planet: gelion
     "requirements": [
-	  "venerium/8500"
-	  "cobalt/8500"
-	  "platinum/2500"
-	  "geliarin/1000"
-	  "caterium/200"
-	  "zinc/600"
+	  "venerium/850"
+	  "cobalt/850"
+	  "platinum/250"
+	  "geliarin/100"
+	  "caterium/10"
 ]
 objectives: [
     {
