@@ -12,34 +12,34 @@ consumes: {
 	liquids: [
 	  swartzite/0.0500
 	]
-		power: 3
+		power: 2.5
 }
 plans: [
 	{
 	unit: "Whale" //Tier 1 assembler
 	requirements: [
 	    azimut-Plankton/1
-		azimut-compound-large-wall/4
+		azimut-compound-large-wall/3
 	]
-	time: 2900
+	time: 2650
 	}
 ]
 requirements: [
-	caterium/290
+	caterium/250
 	geliarin/200
-	venerium/420
-	platinum/520
-	cobalt/750
+	zinc/140
+	platinum/160
+	cobalt/400
 ]
 research: {
   parent: "naval-editor"
   planet: gelion
     "requirements": [
-	  "venerium/6500"
-	  "cobalt/4500"
-	  "platinum/4400"
-	  "geliarin/800"
-	  "caterium/600"
+	  "zinc/50"
+	  "cobalt/450"
+	  "platinum/440"
+	  "geliarin/80"
+	  "caterium/60"
 ]
 objectives: [
     {
