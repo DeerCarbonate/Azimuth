@@ -217,10 +217,10 @@ weapons: [
     baseRotation: 180
     shootCone: 360
     alternate: false
-    y: 45
+    y: 85
     shootSound: none
 	shootY: 155
-	reload: 200
+	reload: 300
        shoot: {
       type: ShootSpread
       firstShotDelay: 10
