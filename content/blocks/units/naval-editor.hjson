@@ -25,7 +25,7 @@ plans: [
 		geliarin/25
 		platinum/50
     	]
-    	time: 1200
+    	time: 1050
   	}
 	{
 	unit: Octopus
@@ -34,7 +34,7 @@ plans: [
 		platinum/100
 		compound/25
     	]
-    	time: 1690
+    	time: 1600
   	}
 ]
 
@@ -43,10 +43,10 @@ consumes: {
 }
 configurable: true
 requirements: [
- 	cobalt/280
-	platinum/200
-	venerium/190
-	geliarin/95
+ 	cobalt/120
+	platinum/90
+	venerium/40
+	geliarin/35
 ]
 category: units
 
