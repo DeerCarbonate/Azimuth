@@ -25,7 +25,7 @@ plans: [
 		venerium/50
 		platinum/35
     	]
-    	time: 1100
+    	time: 1070
   	}
 	{
 	unit: Marshal
@@ -34,7 +34,7 @@ plans: [
 		platinum/90
 		compound/15
     	]
-    	time: 1650
+    	time: 1600
   	}
 ]
 
@@ -43,10 +43,10 @@ consumes: {
 }
 configurable: true
 requirements: [
- 	cobalt/250
-	platinum/120
-	venerium/120
-	geliarin/35
+ 	cobalt/85
+	platinum/100
+	venerium/100
+	geliarin/30
 ]
 category: units
 
