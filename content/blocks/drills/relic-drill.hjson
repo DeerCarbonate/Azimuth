@@ -83,8 +83,8 @@ requirements: [
     parent: "mechanical-quarry"
     planet: gelion
                 "requirements": [
-                "venerium/6500"
-                "platinum/3000"
+                "venerium/650"
+                "platinum/300"
                 "geliarin/530"
                 "compound/130"
                 ]
