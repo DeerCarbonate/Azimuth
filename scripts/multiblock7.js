@@ -6,10 +6,10 @@ Events.on(ClientLoadEvent, () => {
     partBlock.fullIcon = Core.atlas.find("azimut-atmospheric-extractor-cooler-full");
 
     const partRegions = [
+        Core.atlas.find("azimut-atmospheric-extractor-cooler-1"),
         Core.atlas.find("azimut-atmospheric-extractor-cooler-2"),
         Core.atlas.find("azimut-atmospheric-extractor-cooler-3"),
         Core.atlas.find("azimut-atmospheric-extractor-cooler-0"),
-        Core.atlas.find("azimut-atmospheric-extractor-cooler-1"),
     ];
 
     const planDrawer = extend(Packages.mindustry.world.draw.DrawBlock, {
