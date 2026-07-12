@@ -77,9 +77,6 @@ drawer: {
       particleLife: 520
     }
 	{
-      type: DrawDefault
-    }
-	{
 	  type: DrawHeatInput
 	  suffix: -heat
 	} 

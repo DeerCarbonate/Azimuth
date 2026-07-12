@@ -88,9 +88,6 @@ drawer: {
       rotation: 45
       spinSprite: true
     }
-	{
-      type: DrawDefault
-    }
   ]
 }
 researchCostMultiplier: 0.5

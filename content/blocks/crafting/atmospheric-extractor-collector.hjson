@@ -34,9 +34,6 @@ drawer: {
       padTop: 0.7
       padRight: 0.7
     }
-	{
-      type: DrawDefault
-    }
   ]
 }
 researchCostMultiplier: 0.5
