@@ -5,6 +5,7 @@ itemDuration: 120
 squareSprite: false
 liquidCapacity: 60
 health: 550
+rotate: true
 requirements: [
 	  "titanite/60"
 	  "caterium/50"
@@ -57,9 +58,6 @@ particles: 3
 particleRad: 12.5
 particleLife: 360
 }
-	{
-      type: DrawDefault
-    }
   ]
 }
         research: {

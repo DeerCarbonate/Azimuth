@@ -2,7 +2,7 @@ type: GenericCrafter
 health: 550
 size: 3
 category: power
-rotate: false
+rotate: true
 squareSprite: false
 liquidCapacity: 60
 research: {
@@ -70,9 +70,6 @@ drawer: {
       strokeMax: 1.4
       radius: 9
       amount: 1.5
-    }
-	{
-      type: DrawDefault
     }
   ]
 }
