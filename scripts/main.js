@@ -11,6 +11,9 @@ require("multiblock1");
 require("multiblock2");
 require("multiblock3");
 require("multiblock4");
+require("multiblock5");
+require("multiblock6");
+require("multiblock7");
 require("blocks");
 require("construct");
 
