@@ -1,7 +1,7 @@
 type: GenericCrafter
 size: 3
 category: crafting
-rotate: false
+rotate: true
 squareSprite: false
 liquidCapacity: 20
 requirements: [
@@ -90,11 +90,6 @@ drawer: {
     }
 	{
       type: DrawDefault
-    }
-	 {
-      type: DrawRegion
-      suffix: -overlay
-      layer: 1
     }
   ]
 }

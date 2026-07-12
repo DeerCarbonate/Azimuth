@@ -1,7 +1,7 @@
 type: HeatCrafter
 size: 3
 category: crafting
-rotate: false
+rotate: true
 squareSprite: false
 liquidCapacity: 20
 heatRequirement: 6
@@ -85,7 +85,6 @@ drawer: {
 	} 
   ]
 }
-researchCostMultiplier: 0.5
 research: {
   parent: "atmospheric-extractor-base"
   planet: gelion
