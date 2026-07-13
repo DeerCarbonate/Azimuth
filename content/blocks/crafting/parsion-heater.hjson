@@ -26,7 +26,7 @@ requirements: [
   octine/65
 ]
 consumes: {
-  power: 2.5
+  power: 0.3
   liquids: [
   swartzite/0.033333333333333333333333333
 	]

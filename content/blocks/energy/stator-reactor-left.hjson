@@ -17,7 +17,7 @@ consumes: {
 	]
 	}
 outputsPower: true,
-powerProduction: 12.5
+powerProduction: 11
 drawer: {
   type: DrawMulti
   drawers: [
