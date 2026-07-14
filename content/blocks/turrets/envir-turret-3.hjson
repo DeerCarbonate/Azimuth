@@ -45,7 +45,7 @@ parts:
     type: EffectSpawnerPart
     x: 11.3
     y: -18.7
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -78,7 +78,7 @@ parts:
     type: EffectSpawnerPart
     x: -7.4
     y: 14.2
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -111,7 +111,7 @@ parts:
     type: EffectSpawnerPart
     x: 20.1
     y: 6.8
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -144,7 +144,7 @@ parts:
     type: EffectSpawnerPart
     x: -15.9
     y: -3.4
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -177,7 +177,7 @@ parts:
     type: EffectSpawnerPart
     x: 3.7
     y: 21.5
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -210,7 +210,7 @@ parts:
     type: EffectSpawnerPart
     x: -22.3
     y: 9.1
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -243,7 +243,7 @@ parts:
     type: EffectSpawnerPart
     x: 8.6
     y: -11.2
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -276,7 +276,7 @@ parts:
     type: EffectSpawnerPart
     x: -4.8
     y: -20.6
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -309,7 +309,7 @@ parts:
     type: EffectSpawnerPart
     x: 17.4
     y: -6.3
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -342,7 +342,7 @@ parts:
     type: EffectSpawnerPart
     x: -13.2
     y: 19.8
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -375,7 +375,7 @@ parts:
     type: EffectSpawnerPart
     x: 22.7
     y: -16.4
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -408,7 +408,7 @@ parts:
     type: EffectSpawnerPart
     x: -1.6
     y: -8.9
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -441,7 +441,7 @@ parts:
     type: EffectSpawnerPart
     x: 6.2
     y: 3.7
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -474,7 +474,7 @@ parts:
     type: EffectSpawnerPart
     x: -18.5
     y: -13.1
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -507,7 +507,7 @@ parts:
     type: EffectSpawnerPart
     x: 14.9
     y: 22.3
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -540,7 +540,7 @@ parts:
     type: EffectSpawnerPart
     x: -9.3
     y: 1.5
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -573,7 +573,7 @@ parts:
     type: EffectSpawnerPart
     x: 2.4
     y: -22.8
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
@@ -606,7 +606,7 @@ parts:
     type: EffectSpawnerPart
     x: -20.7
     y: 16.4
-    effectRot: 285
+    effectRot: 240
     mirror: false
     effectChance: 0.0009
     progress: recoil
