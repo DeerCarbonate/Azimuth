@@ -188,24 +188,23 @@ weapons: [
 	display: false
     x: 0
     y: 0
-    reload: 40
+    reload: 25
 	rotate: true
 	rotateSpeed: 3.6
     velocityRnd: 0.13
 	controllable: true
 	aiControllable: true
-	inaccuracy: 360
+	inacurracy: 3
     shoot: {
       type: ShootSpread
-      shots: 2
-      spread: 360
+      shots: 1
     }
     ejectEffect: none
     shootSound: shootSalvo
     bullet: {
       lifetime: 90
       drag: -0.025
-      damage: 110
+      damage: 90
       height: 10
       speed: 0.6
       sprite: azimut-deathcatcher
@@ -216,7 +215,7 @@ weapons: [
       homingDelay: 30
       frontColor: ffffff
       backColor: efbbb4
-      trailColor: efbbb470
+      trailColor: efbbb4
       trailWidth: 1.15
       trailLength: 8
 	  collidesTiles: true
