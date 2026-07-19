@@ -110,7 +110,8 @@ weapons: [
     reload: 90
     shootCone: 360
     mirror: false
-    rotate: false
+    rotate: true
+	rotateSpeed: 3.6
     x: 0
     y: 0
 
