@@ -192,12 +192,14 @@ weapons: [
     y: 0
     reload: 100
     velocityRnd: 0.13
+	controllable: true
+	aiControllable: true
     shoot: {
       type: ShootSpread
       shots: 6
       spread: 360
 	  firstShotDelay: 18
-	  shotDelay: 3
+	  shotDelay: 8
     }
     ejectEffect: none
     shootSound: shootSalvo
