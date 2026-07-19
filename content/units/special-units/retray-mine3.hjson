@@ -188,7 +188,7 @@ weapons: [
 	display: false
     x: 0
     y: 0
-    reload: 100
+    reload: 10
 	rotate: true
 	rotateSpeed: 3.6
     velocityRnd: 0.13
@@ -197,25 +197,23 @@ weapons: [
 	inaccuracy: 360
     shoot: {
       type: ShootSpread
-      shots: 24
+      shots: 2
       spread: 360
-	  firstShotDelay: 18
-	  shotDelay: 2
     }
     ejectEffect: none
     shootSound: shootSalvo
     bullet: {
-      lifetime: 69
+      lifetime: 90
       drag: -0.030
       damage: 110
       height: 10
-      speed: 0.7
+      speed: 0.6
       sprite: azimut-deathcatcher
       width: 9
       type: BasicBulletType
-      homingPower: 0.1
+      homingPower: 0.15
       homingRange: 50
-      homingDelay: 10
+      homingDelay: 40
       frontColor: ffffff
       backColor: efbbb4
       trailColor: efbbb4
