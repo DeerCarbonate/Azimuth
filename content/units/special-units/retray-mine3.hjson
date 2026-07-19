@@ -322,7 +322,6 @@ weapons: [
       circleShooterRadiusSmooth: 200
       circleShooterRotateSpeed: 3
 	  pierceArmor:true
-	  collidesTeam:true
 	  pierce: true
       pierceBuilding: false
       pierceCap: 8
@@ -359,6 +358,63 @@ weapons: [
                 ]
                 trailChance:0.65
                 trailInterval:6
+			    fragBullets: 1
+				fragRandomSpread: 0
+				fragSpread: 0
+				fragBullet: {
+				      keepVelocity: false
+      lifetime: 50
+      drag: 0
+      damage: 60
+      height: 7
+      speed: 2
+      width: 6
+      type: BasicBulletType
+      frontColor: ffffff80
+      backColor: efbbb480
+      trailColor: efbbb430
+	  healColor: efbbb488
+      trailWidth: 0.87
+      trailLength: 10
+	  smokeEffect: none
+	  pierceArmor:true
+      pierceDamageFactor: 0.01
+	  hitEffect: none
+	  despawnEffect: none
+	  homing: true
+	  homingPower: 1
+	  homingRange: 80
+	                  trailEffect:[
+                {
+                    type: ParticleEffect
+                    colorFrom: efbbb430
+                    colorTo: efbbb400
+                    particles: 1
+                    cone: 360
+                    lifetime:13
+                    length: 3
+                    sizeFrom: 1.2
+                    sizeTo: 1.2
+                    layer:100.2
+                }
+                {
+                    type: ParticleEffect
+                    region:large-bomb
+                    colorFrom: efbbb430
+                    colorTo: efbbb400
+                    particles: 1
+                    lifetime:17
+                    cone: 360
+                    length: 11
+                    spin: 1.2
+                    sizeFrom: 2.1
+                    sizeTo: 0
+                    layer:100.2
+                }
+                ]
+                trailChance:0.65
+                trailInterval:6
+				}
     }
 	}
 ]
