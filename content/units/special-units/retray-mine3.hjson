@@ -207,7 +207,7 @@ weapons: [
     bullet: {
       lifetime: 63
       drag: -0.035
-      damage: 20
+      damage: 28
       height: 7
       speed: 0.7
       sprite: azimut-deathcatcher
@@ -287,7 +287,7 @@ parts: [
 	hollow: true
     layer: 110
     radius: 0
-    radiusTo: 9
+    radiusTo: 11
     stroke: 1.2
 	strokeTo: 1.7
     rotateSpeed: 1.5
@@ -317,12 +317,28 @@ parts: [
     color: efbbb4
     layer: 110
     haloRadius: 2
-    haloRadiusTo: 12
+    haloRadiusTo: 13
     radius: 6
     radiusTo: 4
     triLength: 4
     triLengthTo: 4
     haloRotateSpeed: -1
+	weaponIndex: 2
+  }
+  {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 2
+    color: efbbb450
+    layer: 110
+    haloRadius: 2
+    haloRadiusTo: 15
+    radius: 6
+    radiusTo: 4
+    triLength: 4
+    triLengthTo: 4
+    haloRotateSpeed: -0.5
 	weaponIndex: 2
   }
   {
