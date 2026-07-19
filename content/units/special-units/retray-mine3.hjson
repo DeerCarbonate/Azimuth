@@ -1,0 +1,362 @@
+type: missile
+template: MissileUnitType
+
+playerControllable: false
+allowedInPayloads: false
+outlineColor: 0c0c12
+outlineRadius: 2
+createWreck: false
+lowAltitude: true
+useUnitCap: false
+drawCell: false
+physics: false
+hitSize: 12
+flying: true
+createScorch: true
+hidden: true
+
+envDisabled: 0
+envEnabled: -1
+
+speed: 0
+rotateSpeed: 0
+
+lifetime: 700
+fogRadius: 0
+health: 650
+armor: 6
+loopSoundVolume: 0
+engineSize: 0
+trailLength: 0
+bounded: false
+healColor: efbbb488
+shieldColor: efbbb488
+
+deathExplosionEffect: {
+type: MultiEffect
+effects: [
+{
+      type: RadialEffect
+      rotationSpacing : 90
+      rotationOffset: 0
+      lengthOffset: 2
+      amount: 2
+      effect: {
+          type: ParticleEffect
+          particles: 5
+          length: 120
+          lifetime: 290
+          sizeFrom: 1.7
+          sizeTo: 7.2
+          cone: 2
+          baseRotation: 73
+          useRotation:false
+          interp: pow5Out
+          colorFrom: efbbb484
+          colorTo: 89535500
+          layer: 100.3
+	}
+}
+{
+followParent: false
+length: 0
+lifetime: 40
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 9
+sizeTo: 24
+colorTo: 89535500
+baseRotation: 180
+interp: pow3Out
+}
+        {
+            type: ParticleEffect
+            lifetime: 40
+            baseLength: 2
+            length: 25
+            particles: 5
+            sizeFrom: 5
+            sizeTo: 0
+            interp: pow5Out
+            sizeInterp: pow5In
+            colorFrom: efbbb484
+            colorTo: 89535500
+        }
+			{
+			type: ParticleEffect
+			line: true
+			particles: 20
+			lifetime: 45
+			interp: circleOut
+			length: 90
+			strokeTo: 2.5
+			lightColor: fff5b0
+			lenFrom: 8
+			lenTo: 3
+			strokeFrom: 4.5
+            colorTo: 89535500
+			colorFrom: efbbb495
+            offset: 135
+			}
+]
+}
+
+weapons: [
+  {
+    autoTarget: true
+    targetAir: true
+    targetGround: true
+    reload: 90
+    shootCone: 360
+    mirror: false
+    rotate: false
+    x: 0
+    y: 0
+
+    bullet: {
+      type: ExplosionBulletType
+      collidesAir: true
+      collidesGround: true
+
+      splashDamageRadius: 25
+      splashDamage: 200
+      buildingDamageMultiplier: 0.15
+
+      hitSound: explosion
+
+      shootEffect: [
+        {
+          type: ParticleEffect
+          followParent: false
+          colorFrom: efbbb4
+          colorTo: 89535500
+          particles: 12
+          cone: 360
+          length: 80
+          sizeFrom: 5
+          sizeTo: 0
+          lifetime: 50
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          followParent: false
+          lifetime: 40
+          sizeFrom: 10
+          sizeTo: 70
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: efbbb480
+          colorTo: 89535500
+          interp: pow3Out
+        }
+      ]
+
+      hitEffect: [
+        {
+          type: ParticleEffect
+          colorFrom: efbbb4
+          colorTo: 89535500
+          particles: 12
+          cone: 360
+          length: 80
+          sizeFrom: 5
+          sizeTo: 0
+          lifetime: 50
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          lifetime: 40
+          sizeFrom: 10
+          sizeTo: 70
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: efbbb480
+          colorTo: 89535500
+          interp: pow3Out
+        }
+      ]
+
+      despawnEffect: none
+    }
+  }
+    {
+    recoil: 1.6
+    under: false
+    layerOffset: -0.02
+    shootY: 0
+    shake: 0
+    x: 0
+    y: 0
+    reload: 100
+    velocityRnd: 0.13
+    shoot: {
+      type: ShootSpread
+      shots: 6
+      spread: 360
+	  firstShotDelay: 18
+	  shotDelay: 3
+    }
+    ejectEffect: none
+    shootSound: shootSalvo
+    bullet: {
+      recoil: 0.02
+      lifetime: 63
+      drag: -0.040
+      damage: 14
+      height: 7
+      speed: 0.7
+      sprite: azimut-deathcatcher
+      width: 6
+      type: BasicBulletType
+      homingPower: 0.09
+      homingRange: 50
+      homingDelay: 16
+      frontColor: ffffff
+      backColor: efbbb4
+      trailColor: efbbb4
+      trailWidth: 1.15
+      trailLength: 8.5
+	  collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
+      smokeEffect: {
+    type: ParticleEffect
+    lifetime: 26
+    particles: 1
+    length: 29
+    line: true
+	   strokefrom: 1
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: ffffff
+    colorTo: ffffff
+    cone: 15
+	   interp: pow2
+    sizeInterp: pow3In
+    }
+      shootEffect: [
+	  {
+    type: ParticleEffect
+    lifetime: 26
+    particles: 1
+    length: 29
+    line: true
+	strokefrom: 1
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: efbbb4
+    colorTo: efbbb4
+    cone: 15
+	   interp: pow2
+    sizeInterp: pow3In
+    }
+    {
+        type: WaveEffect
+        startDelay: 0
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 18
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: efbbb430
+        colorTo: efbbb400
+        followParent: true
+        rotWithParent: true
+      }
+	]
+	  despawnEffect: none
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: efbbb4
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: efbbb4
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: efbbb4
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
+      }
+    }
+  ]
+}
+]
+
+parts: [
+  {
+    type: ShapePart
+    progress: warmup
+    sides: 5
+    color: efbbb4
+	hollow: true
+    layer: 110
+    radius: 0
+    radiusTo: 9
+    stroke: 1.2
+	strokeTo: 1.7
+    rotateSpeed: 1.5
+  }
+  {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 2
+    color: efbbb4
+    layer: 110
+    haloRadius: 9
+    haloRadiusTo: 2
+    radius: 4
+    radiusTo: 6
+    triLength: 4
+    triLengthTo: 4
+    haloRotateSpeed: 0.5
+  }
+    {
+    type: HaloPart
+    progress: warmup
+    tri: true
+    shapes: 2
+    color: efbbb4
+    layer: 110
+    haloRadius: 2
+    haloRadiusTo: 12
+    radius: 6
+    radiusTo: 4
+    triLength: 4
+    triLengthTo: 4
+    haloRotateSpeed: -1
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    layer: 109
+    color: efbbb4
+    stroke: 8
+    strokeTo: 0
+    radius: 2.3
+    radiusTo: 0
+            progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.9
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+  }
+]
