@@ -197,7 +197,7 @@ weapons: [
 	inaccuracy: 360
     shoot: {
       type: ShootSpread
-      shots: 6
+      shots: 4
       spread: 360
 	  firstShotDelay: 18
 	  shotDelay: 8
@@ -207,7 +207,7 @@ weapons: [
     bullet: {
       lifetime: 63
       drag: -0.035
-      damage: 28
+      damage: 34
       height: 7
       speed: 0.7
       sprite: azimut-deathcatcher
@@ -300,7 +300,7 @@ parts: [
     shapes: 2
     color: efbbb4
     layer: 110
-    haloRadius: 9
+    haloRadius: 7
     haloRadiusTo: 2
     radius: 4
     radiusTo: 6
