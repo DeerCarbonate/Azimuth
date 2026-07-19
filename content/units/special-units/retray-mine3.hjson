@@ -197,7 +197,7 @@ weapons: [
 	inaccuracy: 360
     shoot: {
       type: ShootSpread
-      shots: 4
+      shots: 2
       spread: 360
 	  firstShotDelay: 18
 	  shotDelay: 8
@@ -205,13 +205,15 @@ weapons: [
     ejectEffect: none
     shootSound: shootSalvo
     bullet: {
-      lifetime: 63
-      drag: -0.035
-      damage: 34
-      height: 7
+      lifetime: 69
+      drag: -0.030
+      damage: 110
+	  splashDamage: 80
+	  splashDamageRadius: 9
+      height: 10
       speed: 0.7
       sprite: azimut-deathcatcher
-      width: 6
+      width: 9
       type: BasicBulletType
       homingPower: 0.1
       homingRange: 50
@@ -263,17 +265,17 @@ weapons: [
         type: ExplosionEffect
         lifetime: 15
         waveColor: efbbb4
-        waveStroke: 1.2
-        waveRad: 2.5
+        waveStroke: 1.6
+        waveRad: 4
         smokeColor: efbbb4
         smokeSizeBase: 0
-        smokeSize: 5.5
+        smokeSize: 6
         smokes: 0
         sparkColor: efbbb4
         sparkStroke: 1.6
-        sparkRad: 17.5
-        sparkLen: 2
-        sparks: 3
+        sparkRad: 19
+        sparkLen: 3
+        sparks: 6
       }
     }
 }
@@ -300,7 +302,7 @@ parts: [
     shapes: 2
     color: efbbb4
     layer: 110
-    haloRadius: 7
+    haloRadius: 6
     haloRadiusTo: 2
     radius: 4
     radiusTo: 6
