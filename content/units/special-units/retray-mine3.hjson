@@ -367,7 +367,7 @@ weapons: [
       drag: 0
       damage: 60
       height: 7
-      speed: 3.5
+      speed: 15
       width: 6
       type: BasicBulletType
       frontColor: ffffff80
@@ -381,9 +381,6 @@ weapons: [
       pierceDamageFactor: 0.01
 	  hitEffect: none
 	  despawnEffect: none
-	  homing: true
-	  homingPower: 1
-	  homingRange: 200
 	                  trailEffect:[
                 {
                     type: ParticleEffect
