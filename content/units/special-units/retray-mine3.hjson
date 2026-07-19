@@ -194,6 +194,7 @@ weapons: [
     velocityRnd: 0.13
 	controllable: true
 	aiControllable: true
+	inaccuracy: 360
     shoot: {
       type: ShootSpread
       shots: 6
