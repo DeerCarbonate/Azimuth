@@ -183,11 +183,8 @@ weapons: [
     }
   }
     {
-    recoil: 1.6
-    under: false
-    layerOffset: -0.02
-    shootY: 0
-    shake: 0
+	shootY: 0
+	display: false
     x: 0
     y: 0
     reload: 100
