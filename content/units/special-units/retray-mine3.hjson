@@ -277,6 +277,8 @@ weapons: [
     {
     alwaysShooting: true
     alternate: false
+	controllable:false
+    autoTarget:true
     mirror: false 
     rotateSpeed: 60
     layerOffset: -0.001
@@ -367,7 +369,7 @@ weapons: [
       drag: 0
       damage: 60
       height: 7
-      speed: 15
+      speed: 7
       width: 6
       type: BasicBulletType
       frontColor: ffffff80
@@ -380,6 +382,8 @@ weapons: [
 	  pierceArmor:true
       pierceDamageFactor: 0.01
 	  hitEffect: none
+	  homing: true
+	  homingPower: 0.08
 	  despawnEffect: none
 	                  trailEffect:[
                 {
