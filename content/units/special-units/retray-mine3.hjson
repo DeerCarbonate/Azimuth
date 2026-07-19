@@ -188,7 +188,7 @@ weapons: [
 	display: false
     x: 0
     y: 0
-    reload: 10
+    reload: 50
 	rotate: true
 	rotateSpeed: 3.6
     velocityRnd: 0.13
@@ -216,9 +216,9 @@ weapons: [
       homingDelay: 40
       frontColor: ffffff
       backColor: efbbb4
-      trailColor: efbbb4
+      trailColor: efbbb470
       trailWidth: 1.15
-      trailLength: 8.5
+      trailLength: 8
 	  collidesTiles: true
       keepVelocity: false
       collidesAir: false
