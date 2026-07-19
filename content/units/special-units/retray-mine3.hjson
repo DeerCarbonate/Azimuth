@@ -287,10 +287,8 @@ weapons: [
         sparks: 3
       }
     }
-  ]
 }
 ]
-
 parts: [
   {
     type: ShapePart
