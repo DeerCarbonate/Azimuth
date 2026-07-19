@@ -188,7 +188,7 @@ weapons: [
 	display: false
     x: 0
     y: 0
-    reload: 50
+    reload: 40
 	rotate: true
 	rotateSpeed: 3.6
     velocityRnd: 0.13
@@ -204,7 +204,7 @@ weapons: [
     shootSound: shootSalvo
     bullet: {
       lifetime: 90
-      drag: -0.030
+      drag: -0.025
       damage: 110
       height: 10
       speed: 0.6
@@ -213,7 +213,7 @@ weapons: [
       type: BasicBulletType
       homingPower: 0.15
       homingRange: 50
-      homingDelay: 40
+      homingDelay: 30
       frontColor: ffffff
       backColor: efbbb4
       trailColor: efbbb470
