@@ -212,7 +212,7 @@ weapons: [
       type: BasicBulletType
       homingPower: 0.15
       homingRange: 50
-      homingDelay: 30
+      homingDelay: 10
       frontColor: ffffff
       backColor: efbbb4
       trailColor: efbbb4
@@ -274,6 +274,93 @@ weapons: [
       }
     }
 }
+    {
+    alwaysShooting: true
+    alternate: false
+    mirror: false 
+    rotateSpeed: 60
+    layerOffset: -0.001
+    shootY: 0
+    x: 0
+    y: 0
+    reload: 120
+    inaccuracy: 360
+	smokeEffect: none
+    shoot: {
+      type: ShootMulti
+	  source: {
+      firstShotDelay: 0
+      shots: 1
+	      }
+	  dest: [
+	  {
+	  type: ShootPattern
+		shots: 1
+	}
+	]
+	}
+    ejectEffect: none
+    shootSound: shootAtrax
+    bullet: {
+      keepVelocity: false
+      lifetime: 300
+      drag: 0
+      damage: 40
+      height: 7
+      speed: 2
+      width: 6
+      type: BasicBulletType
+      frontColor: ffffff80
+      backColor: efbbb480
+      trailColor: efbbb430
+	  healColor: efbbb488
+      trailWidth: 0.87
+      trailLength: 10
+	  smokeEffect: none
+	  circleShooter: true
+      circleShooterRadius: 24
+      circleShooterRadiusSmooth: 200
+      circleShooterRotateSpeed: 3
+	  pierceArmor:true
+	  collidesTeam:true
+	  pierce: true
+      pierceBuilding: false
+      pierceCap: 8
+      pierceDamageFactor: 0.01
+	  hitEffect: none
+	  despawnEffect: none
+	                  trailEffect:[
+                {
+                    type: ParticleEffect
+                    colorFrom: efbbb430
+                    colorTo: efbbb400
+                    particles: 1
+                    cone: 360
+                    lifetime:13
+                    length: 3
+                    sizeFrom: 1.2
+                    sizeTo: 1.2
+                    layer:100.2
+                }
+                {
+                    type: ParticleEffect
+                    region:large-bomb
+                    colorFrom: efbbb430
+                    colorTo: efbbb400
+                    particles: 1
+                    lifetime:17
+                    cone: 360
+                    length: 11
+                    spin: 1.2
+                    sizeFrom: 2.1
+                    sizeTo: 0
+                    layer:100.2
+                }
+                ]
+                trailChance:0.65
+                trailInterval:6
+    }
+	}
 ]
 parts: [
   {
