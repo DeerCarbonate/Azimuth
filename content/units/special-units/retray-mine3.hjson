@@ -363,11 +363,11 @@ weapons: [
 				fragSpread: 0
 				fragBullet: {
 				      keepVelocity: false
-      lifetime: 50
+      lifetime: 130
       drag: 0
       damage: 60
       height: 7
-      speed: 2
+      speed: 3.5
       width: 6
       type: BasicBulletType
       frontColor: ffffff80
@@ -383,7 +383,7 @@ weapons: [
 	  despawnEffect: none
 	  homing: true
 	  homingPower: 1
-	  homingRange: 80
+	  homingRange: 200
 	                  trailEffect:[
                 {
                     type: ParticleEffect
