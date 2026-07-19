@@ -205,18 +205,17 @@ weapons: [
     ejectEffect: none
     shootSound: shootSalvo
     bullet: {
-      recoil: 0.02
       lifetime: 63
-      drag: -0.040
-      damage: 14
+      drag: -0.035
+      damage: 20
       height: 7
       speed: 0.7
       sprite: azimut-deathcatcher
       width: 6
       type: BasicBulletType
-      homingPower: 0.09
+      homingPower: 0.1
       homingRange: 50
-      homingDelay: 16
+      homingDelay: 10
       frontColor: ffffff
       backColor: efbbb4
       trailColor: efbbb4
@@ -292,6 +291,7 @@ parts: [
     stroke: 1.2
 	strokeTo: 1.7
     rotateSpeed: 1.5
+	weaponIndex: 2
   }
   {
     type: HaloPart
@@ -307,6 +307,7 @@ parts: [
     triLength: 4
     triLengthTo: 4
     haloRotateSpeed: 0.5
+	weaponIndex: 2
   }
     {
     type: HaloPart
@@ -322,6 +323,7 @@ parts: [
     triLength: 4
     triLengthTo: 4
     haloRotateSpeed: -1
+	weaponIndex: 2
   }
   {
     type: ShapePart
