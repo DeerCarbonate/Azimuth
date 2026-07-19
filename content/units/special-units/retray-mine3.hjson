@@ -189,6 +189,8 @@ weapons: [
     x: 0
     y: 0
     reload: 100
+	rotate: true
+	rotateSpeed: 3.6
     velocityRnd: 0.13
 	controllable: true
 	aiControllable: true
@@ -255,19 +257,6 @@ weapons: [
 	   interp: pow2
     sizeInterp: pow3In
     }
-    {
-        type: WaveEffect
-        startDelay: 0
-        lifetime: 25
-        sizeFrom: 0
-        sizeTo: 18
-        strokeFrom: 3
-        strokeTo: 0
-        colorFrom: efbbb430
-        colorTo: efbbb400
-        followParent: true
-        rotWithParent: true
-      }
 	]
 	  despawnEffect: none
       hitEffect: {
