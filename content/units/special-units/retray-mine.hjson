@@ -177,7 +177,7 @@ shoot: {
       collidesGround: true
 
       splashDamageRadius: 25
-      splashDamage: 370
+      splashDamage: 210
       buildingDamageMultiplier: 0.15
 
       hitSound: explosion
@@ -252,7 +252,7 @@ shoot: {
     shootSound: laserShoot
     bullet: {
       maxRange: 75
-      bulletDamage: 10
+      bulletDamage: 5
       shootEffect: sparkShoot
       hitEffect: pointHit
     }

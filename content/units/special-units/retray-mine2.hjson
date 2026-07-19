@@ -132,7 +132,6 @@ shoot: {
 	lifetime: 1
 	hitColor: bff6b1
     pointEffectSpace: 2.7
-	knockback: 1
 	despawnEffect: none
     smokeEffect: none
     status: pierced
@@ -215,8 +214,8 @@ shoot: {
       collidesAir: true
       collidesGround: true
 
-      splashDamageRadius: 35
-      splashDamage: 650
+      splashDamageRadius: 30
+      splashDamage: 300
       buildingDamageMultiplier: 0.15
 
       hitSound: explosion
