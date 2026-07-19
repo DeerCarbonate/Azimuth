@@ -204,7 +204,7 @@ weapons: [
     bullet: {
       lifetime: 90
       drag: -0.025
-      damage: 90
+      damage: 120
       height: 10
       speed: 0.6
       sprite: azimut-deathcatcher
