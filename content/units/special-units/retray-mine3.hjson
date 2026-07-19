@@ -197,10 +197,10 @@ weapons: [
 	inaccuracy: 360
     shoot: {
       type: ShootSpread
-      shots: 2
+      shots: 24
       spread: 360
 	  firstShotDelay: 18
-	  shotDelay: 8
+	  shotDelay: 2
     }
     ejectEffect: none
     shootSound: shootSalvo
@@ -208,8 +208,6 @@ weapons: [
       lifetime: 69
       drag: -0.030
       damage: 110
-	  splashDamage: 80
-	  splashDamageRadius: 9
       height: 10
       speed: 0.7
       sprite: azimut-deathcatcher
