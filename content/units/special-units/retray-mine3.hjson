@@ -307,7 +307,7 @@ weapons: [
       keepVelocity: false
       lifetime: 300
       drag: 0
-      damage: 40
+      damage: 100
       height: 7
       speed: 2
       width: 6
@@ -367,7 +367,7 @@ weapons: [
 				      keepVelocity: false
       lifetime: 130
       drag: 0
-      damage: 120
+      damage: 150
       height: 7
       speed: 7
       width: 6
@@ -383,8 +383,8 @@ weapons: [
       pierceDamageFactor: 0.01
 	  hitEffect: none
 	  homing: true
-	  homingPower: 0.08
-	  homingRange: 200
+	  homingPower: 0.15
+	  homingRange: 300
 	  despawnEffect: none
 	                  trailEffect:[
                 {
