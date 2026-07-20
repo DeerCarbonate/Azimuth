@@ -222,7 +222,10 @@ weapons: [
 	  fragBullets: 2
 	  fragAngle: 180
       fragRandomSpread: 30
-	  fragBullets: {
+	  fragOnHit: true
+      fragOnDespawn: true
+      fragOnAbsorb: true 
+	  fragBullet: {
 	  	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
