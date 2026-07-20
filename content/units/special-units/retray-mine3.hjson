@@ -53,6 +53,7 @@ deathExplosionEffect: [{
           colorTo: 89535500
           layer: 100.3
 	}
+}
        {
           type: ParticleEffect
           followParent: false
