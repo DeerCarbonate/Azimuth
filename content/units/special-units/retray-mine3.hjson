@@ -120,90 +120,22 @@ weapons: [
     firstShotDelay: 90
     }
     bullet: {
-      type: ExplosionBulletType
-      collidesAir: true
-      collidesGround: true
-
-      splashDamageRadius: 25
-      splashDamage: 250
-      buildingDamageMultiplier: 0.15
-
-      hitSound: explosion
-
-      shootEffect: [
-        {
-          type: ParticleEffect
-          followParent: false
-          colorFrom: efbbb4
-          colorTo: 89535500
-          particles: 12
-          cone: 360
-          length: 80
-          sizeFrom: 5
-          sizeTo: 0
-          lifetime: 50
-          interp: pow3Out
-        }
-        {
-          type: WaveEffect
-          followParent: false
-          lifetime: 40
-          sizeFrom: 10
-          sizeTo: 70
-          strokeFrom: 5
-          strokeTo: 0
-          colorFrom: efbbb480
-          colorTo: 89535500
-          interp: pow3Out
-        }
-      ]
-
-      hitEffect: [
-        {
-          type: ParticleEffect
-          colorFrom: efbbb4
-          colorTo: 89535500
-          particles: 12
-          cone: 360
-          length: 80
-          sizeFrom: 5
-          sizeTo: 0
-          lifetime: 50
-          interp: pow3Out
-        }
-        {
-          type: WaveEffect
-          lifetime: 40
-          sizeFrom: 10
-          sizeTo: 70
-          strokeFrom: 5
-          strokeTo: 0
-          colorFrom: efbbb480
-          colorTo: 89535500
-          interp: pow3Out
-        }
-      ]
-
-      despawnEffect: none
-	  fragBullets: 1
-	  fragOnHit: true
-      fragOnDespawn: true
-      fragOnAbsorb: true 
-	  fragBullet: {
 	  sprite: large-orb
+      shrinkY: 0
+      shrinkX: 0
 	  lifetime: 100
       damage: 400
-      height: 18
-      speed: 3
-      width: 18
+      height: 17
+      speed: 4.5
+      width: 17
       type: BasicBulletType
       homingPower: 0.7
       homingDelay: 0
 	  homingRange: 1000
 	  homing: true
       frontColor: ffffff
-      backColor: d690d3
-      trailColor: d690d3
+      backColor: efbbb4
+      trailColor: efbbb4
       trailWidth: 2
       trailLength: 6
 	  smokeEffect: none
@@ -211,6 +143,7 @@ weapons: [
       keepVelocity: false
       collidesAir: false
       splashDamageRadius: 2
+	  drag: -0.02
 	  despawnEffect: none
 	        hitEffect: {
         type: ExplosionEffect
@@ -230,7 +163,6 @@ weapons: [
       }
 	  }
     }
-  }
 ]
 parts: [
   {
