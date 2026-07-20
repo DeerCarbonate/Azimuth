@@ -282,7 +282,7 @@ weapons: [
 	  fragOnHit: true
       fragOnDespawn: true
       fragOnAbsorb: true 
-    fragBullet: { 
+    fragBullet: {
     type: BulletType
     spawnUnit: retray-mine3
 	keepVelocity: false
@@ -291,6 +291,7 @@ weapons: [
 	}
 	  }
     }
+	}
 ]
 parts: [
   {
