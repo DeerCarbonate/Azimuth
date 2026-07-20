@@ -168,7 +168,7 @@ weapons: [
       shrinkY: 0
       shrinkX: 0
 	  lifetime: 23
-      damage: 400
+      damage: 450
       height: 17
       speed: 4
       width: 17
@@ -229,7 +229,7 @@ weapons: [
 	  	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
-	  lifetime: 43
+	  lifetime: 50
       damage: 40
       height: 6
       speed: 3
@@ -244,7 +244,7 @@ weapons: [
 	  collidesTiles: true
       keepVelocity: false
       collidesAir: false
-	  drag: 0.03
+	  drag: 0.01
 	  	       despawnEffect: {
         type: ExplosionEffect
         lifetime: 15
