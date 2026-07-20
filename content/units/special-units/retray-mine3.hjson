@@ -277,7 +277,18 @@ weapons: [
         sparkLen: 2
         sparks: 3
       }
-	  }
+	  fragBullets: 1
+      fragRandomSpread: 0
+	  fragOnHit: true
+      fragOnDespawn: true
+      fragOnAbsorb: true 
+    fragBullet: { 
+    type: BulletType
+    spawnUnit: retray-mine3
+	keepVelocity: false
+    collidesAir: false
+	speed: 0
+	}
 	  }
     }
 ]
