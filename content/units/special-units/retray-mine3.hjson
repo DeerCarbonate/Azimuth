@@ -56,7 +56,55 @@ effects: [
           colorTo: 89535500
           layer: 100.3
 	}
-}
+       {
+          type: ParticleEffect
+          followParent: false
+          colorFrom: efbbb4
+          colorTo: 89535500
+          particles: 12
+          cone: 360
+          length: 80
+          sizeFrom: 5
+          sizeTo: 0
+          lifetime: 50
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          followParent: false
+          lifetime: 40
+          sizeFrom: 10
+          sizeTo: 70
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: efbbb480
+          colorTo: 89535500
+          interp: pow3Out
+        }
+        {
+          type: ParticleEffect
+          colorFrom: efbbb4
+          colorTo: 89535500
+          particles: 12
+          cone: 360
+          length: 80
+          sizeFrom: 5
+          sizeTo: 0
+          lifetime: 50
+          interp: pow3Out
+        }
+        {
+          type: WaveEffect
+          lifetime: 40
+          sizeFrom: 10
+          sizeTo: 70
+          strokeFrom: 5
+          strokeTo: 0
+          colorFrom: efbbb480
+          colorTo: 89535500
+          interp: pow3Out
+        }
+	}
 {
 followParent: false
 length: 0
@@ -104,7 +152,7 @@ interp: pow3Out
 
 weapons: [
   {
-    range: 400
+    range: 200
     autoTarget: true
     targetAir: true
     targetGround: true
@@ -234,6 +282,29 @@ parts: [
     radius: 2.3
     radiusTo: 0
             progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.9
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
+  }
+    {
+    type: ShapePart
+    circle: true
+    hollow: true
+    layer: 110
+    color: efbbb420
+    radius: 200
+	radiusTo: 0
+    strokeTo: 0
+	            progress: {
             type: life
             ops: [
                 {
