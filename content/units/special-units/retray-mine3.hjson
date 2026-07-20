@@ -167,10 +167,10 @@ weapons: [
 	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
-	  lifetime: 100
+	  lifetime: 40
       damage: 400
       height: 17
-      speed: 4.5
+      speed: 4
       width: 17
       type: BasicBulletType
       homingPower: 0.7
@@ -186,8 +186,7 @@ weapons: [
 	  collidesTiles: true
       keepVelocity: false
       collidesAir: false
-      splashDamageRadius: 2
-	  drag: -0.02
+	  drag: -0.015
 	  despawnEffect: none
 	        hitEffect: {
         type: ExplosionEffect
