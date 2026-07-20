@@ -212,7 +212,7 @@ weapons: [
       type: BasicBulletType
       homingPower: 0.15
       homingRange: 50
-      homingDelay: 10
+      homingDelay: 3
       frontColor: ffffff
       backColor: efbbb4
       trailColor: efbbb4
