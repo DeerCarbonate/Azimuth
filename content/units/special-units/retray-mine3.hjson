@@ -107,7 +107,7 @@ weapons: [
     autoTarget: true
     targetAir: true
     targetGround: true
-    reload: 90
+    reload: 5
     shootCone: 360
     mirror: false
     rotate: true
