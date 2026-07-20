@@ -184,97 +184,6 @@ weapons: [
     }
   }
     {
-	shootY: 0
-	display: false
-    x: 0
-    y: 0
-    reload: 25
-	rotate: true
-	rotateSpeed: 3.6
-    velocityRnd: 0.13
-	controllable: true
-	aiControllable: true
-	inacurracy: 3
-    shoot: {
-      type: ShootSpread
-      shots: 1
-    }
-    ejectEffect: none
-    shootSound: shootSalvo
-    bullet: {
-      lifetime: 90
-      drag: -0.025
-      damage: 120
-      height: 10
-      speed: 0.6
-      sprite: azimut-deathcatcher
-      width: 9
-      type: BasicBulletType
-      homingPower: 0.15
-      homingRange: 50
-      homingDelay: 3
-      frontColor: ffffff
-      backColor: efbbb4
-      trailColor: efbbb4
-      trailWidth: 1.15
-      trailLength: 8
-	  collidesTiles: true
-      keepVelocity: false
-      collidesAir: false
-      smokeEffect: {
-    type: ParticleEffect
-    lifetime: 26
-    particles: 1
-    length: 29
-    line: true
-	   strokefrom: 1
-    strokeTo: 0
-    lenFrom: 4.5
-    lenTo: 0
-    colorFrom: ffffff
-    colorTo: ffffff
-    cone: 15
-	   interp: pow2
-    sizeInterp: pow3In
-    }
-      shootEffect: [
-	  {
-    type: ParticleEffect
-    lifetime: 26
-    particles: 1
-    length: 29
-    line: true
-	strokefrom: 1
-    strokeTo: 0
-    lenFrom: 4.5
-    lenTo: 0
-    colorFrom: efbbb4
-    colorTo: efbbb4
-    cone: 15
-	   interp: pow2
-    sizeInterp: pow3In
-    }
-	]
-	  despawnEffect: none
-      hitEffect: {
-        type: ExplosionEffect
-        lifetime: 15
-        waveColor: efbbb4
-        waveStroke: 1.6
-        waveRad: 4
-        smokeColor: efbbb4
-        smokeSizeBase: 0
-        smokeSize: 6
-        smokes: 0
-        sparkColor: efbbb4
-        sparkStroke: 1.6
-        sparkRad: 19
-        sparkLen: 3
-        sparks: 6
-      }
-    }
-}
-    {
     alwaysShooting: true
     alternate: false
 	controllable:false
@@ -285,7 +194,7 @@ weapons: [
     shootY: 0
     x: 0
     y: 0
-    reload: 120
+    reload: 70
     inaccuracy: 360
 	smokeEffect: none
     shoot: {
@@ -305,7 +214,7 @@ weapons: [
     shootSound: shootAtrax
     bullet: {
       keepVelocity: false
-      lifetime: 300
+      lifetime: 600
       drag: 0
       damage: 100
       height: 7
@@ -369,7 +278,7 @@ weapons: [
       drag: 0
       damage: 150
       height: 7
-      speed: 7
+      speed: 1.2
       width: 6
       type: BasicBulletType
       frontColor: ffffff80
@@ -433,7 +342,6 @@ parts: [
     stroke: 1.2
 	strokeTo: 1.7
     rotateSpeed: 1.5
-	weaponIndex: 2
   }
   {
     type: HaloPart
@@ -449,7 +357,6 @@ parts: [
     triLength: 4
     triLengthTo: 4
     haloRotateSpeed: 0.5
-	weaponIndex: 2
   }
     {
     type: HaloPart
@@ -465,7 +372,6 @@ parts: [
     triLength: 4
     triLengthTo: 4
     haloRotateSpeed: -1
-	weaponIndex: 2
   }
   {
     type: HaloPart
@@ -481,7 +387,6 @@ parts: [
     triLength: 4
     triLengthTo: 4
     haloRotateSpeed: -0.5
-	weaponIndex: 2
   }
   {
     type: ShapePart
