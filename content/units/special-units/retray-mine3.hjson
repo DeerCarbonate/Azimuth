@@ -160,17 +160,17 @@ weapons: [
     y: 0
 	shoot: {
     type: ShootSpread
-    firstShotDelay: 90
+    firstShotDelay: 60
     }
     bullet: {
 	killShooter: true
 	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
-	  lifetime: 23
+	  lifetime: 32
       damage: 450
       height: 17
-      speed: 4
+      speed: 2.7
       width: 17
       type: BasicBulletType
       homingPower: 0.7
