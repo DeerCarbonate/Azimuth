@@ -167,7 +167,7 @@ weapons: [
 	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
-	  lifetime: 40
+	  lifetime: 23
       damage: 400
       height: 17
       speed: 4
