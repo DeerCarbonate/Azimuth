@@ -148,7 +148,7 @@ interp: pow3Out
 
 weapons: [
   {
-    range: 200
+    range: 60
     autoTarget: true
     targetAir: true
     targetGround: true
@@ -193,17 +193,17 @@ weapons: [
         type: ExplosionEffect
         lifetime: 15
         waveColor: fbace3
-        waveStroke: 1.2
-        waveRad: 2.5
+        waveStroke: 2.5
+        waveRad: 7
         smokeColor: fbace3
         smokeSizeBase: 0
         smokeSize: 5.5
         smokes: 0
         sparkColor: fbace3
-        sparkStroke: 1.6
-        sparkRad: 17.5
-        sparkLen: 2
-        sparks: 3
+        sparkStroke: 1.8
+        sparkRad: 25
+        sparkLen: 2.5
+        sparks: 6
       }
 	  }
     }
@@ -297,7 +297,7 @@ parts: [
     hollow: true
     layer: 110
     color: efbbb420
-    radius: 200
+    radius: 100
 	radiusTo: 0
     strokeTo: 0
 	            progress: {
