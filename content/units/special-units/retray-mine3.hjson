@@ -23,8 +23,8 @@ rotateSpeed: 0
 
 lifetime: 700
 fogRadius: 0
-health: 650
-armor: 6
+health: 670
+armor: 4
 loopSoundVolume: 0
 engineSize: 0
 trailLength: 0
@@ -168,7 +168,7 @@ weapons: [
       shrinkY: 0
       shrinkX: 0
 	  lifetime: 32
-      damage: 450
+      damage: 500
       height: 17
       speed: 2.7
       width: 17
