@@ -229,10 +229,10 @@ weapons: [
 	  	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
-	  lifetime: 23
-      damage: 100
+	  lifetime: 43
+      damage: 40
       height: 6
-      speed: 4
+      speed: 3
       width: 6
       type: BasicBulletType
       frontColor: ffffff
@@ -244,7 +244,7 @@ weapons: [
 	  collidesTiles: true
       keepVelocity: false
       collidesAir: false
-	  drag: 0.09
+	  drag: 0.03
 	  	       despawnEffect: {
         type: ExplosionEffect
         lifetime: 15
@@ -278,17 +278,34 @@ weapons: [
         sparks: 3
       }
 	  fragBullets: 1
-      fragRandomSpread: 0
+	  fragAngle: 180
+      fragRandomSpread: 15
 	  fragOnHit: true
       fragOnDespawn: true
       fragOnAbsorb: true 
-    fragBullet: {
-    type: BulletType
-    spawnUnit: retray-mine3
-	keepVelocity: false
-    collidesAir: false
-	speed: 0
-	}
+	  fragBullet: {
+	  sprite: large-orb
+      shrinkY: 0
+      shrinkX: 0
+	  lifetime: 43
+      damage: 25
+      height: 5
+      speed: 2.5
+      width: 4
+      type: BasicBulletType
+      frontColor: ffffff
+      backColor: efbbb4
+      trailColor: efbbb4
+      trailWidth: 0.5
+      trailLength: 4
+	  smokeEffect: none
+	  collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
+	  drag: 0.02
+	  homing: true
+	  homingPower: 0.07
+	  homingRange: 70
 	  }
     }
 	}
