@@ -365,7 +365,7 @@ weapons: [
 				fragSpread: 0
 				fragBullet: {
 				      keepVelocity: false
-      lifetime: 130
+      lifetime: 80
       drag: 0
       damage: 150
       height: 7
