@@ -104,7 +104,7 @@ interp: pow3Out
 
 weapons: [
   {
-    range: 700
+    range: 400
     autoTarget: true
     targetAir: true
     targetGround: true
@@ -114,12 +114,12 @@ weapons: [
 	rotateSpeed: 3.6
     x: 0
     y: 0
-	killShooter: true
 	shoot: {
     type: ShootSpread
     firstShotDelay: 90
     }
     bullet: {
+	killShooter: true
 	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
