@@ -144,7 +144,6 @@ interp: pow3Out
 			colorFrom: efbbb495
             offset: 135
 			}
-}
 ]
 
 weapons: [
