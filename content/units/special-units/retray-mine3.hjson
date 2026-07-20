@@ -32,10 +32,7 @@ bounded: false
 healColor: efbbb488
 shieldColor: efbbb488
 
-deathExplosionEffect: {
-type: MultiEffect
-effects: [
-{
+deathExplosionEffect: [{
       type: RadialEffect
       rotationSpacing : 90
       rotationOffset: 0
@@ -104,7 +101,6 @@ effects: [
           colorTo: 89535500
           interp: pow3Out
         }
-	}
 {
 followParent: false
 length: 0
@@ -147,8 +143,8 @@ interp: pow3Out
 			colorFrom: efbbb495
             offset: 135
 			}
-]
 }
+]
 
 weapons: [
   {
