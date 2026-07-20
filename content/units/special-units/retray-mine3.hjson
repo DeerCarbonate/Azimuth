@@ -229,9 +229,9 @@ weapons: [
       trailLength: 10
 	  smokeEffect: none
 	  circleShooter: true
-      circleShooterRadius: 24
+      circleShooterRadius: 44
       circleShooterRadiusSmooth: 200
-      circleShooterRotateSpeed: 3
+      circleShooterRotateSpeed: 3.5
 	  pierceArmor:true
 	  pierce: true
       pierceBuilding: false
@@ -278,7 +278,7 @@ weapons: [
       drag: 0
       damage: 150
       height: 7
-      speed: 1.2
+      speed: 2
       width: 6
       type: BasicBulletType
       frontColor: ffffff80
@@ -292,8 +292,8 @@ weapons: [
       pierceDamageFactor: 0.01
 	  hitEffect: none
 	  homing: true
-	  homingPower: 0.15
-	  homingRange: 300
+	  homingPower: 0.5
+	  homingRange: 800
 	  despawnEffect: none
 	                  trailEffect:[
                 {
