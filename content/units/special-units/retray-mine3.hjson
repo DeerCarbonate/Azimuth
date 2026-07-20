@@ -14,7 +14,6 @@ hitSize: 12
 flying: true
 createScorch: true
 hidden: true
-range: 100
 
 envDisabled: 0
 envEnabled: -1
@@ -188,23 +187,94 @@ weapons: [
       keepVelocity: false
       collidesAir: false
 	  drag: -0.015
-	  despawnEffect: none
-	        hitEffect: {
+	       despawnEffect: {
         type: ExplosionEffect
         lifetime: 15
-        waveColor: fbace3
+        waveColor: efbbb4
         waveStroke: 2.5
         waveRad: 7
-        smokeColor: fbace3
+        smokeColor: efbbb4
         smokeSizeBase: 0
         smokeSize: 5.5
         smokes: 0
-        sparkColor: fbace3
+        sparkColor: efbbb4
         sparkStroke: 1.8
         sparkRad: 25
         sparkLen: 2.5
         sparks: 6
       }
+	        hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: efbbb4
+        waveStroke: 2.5
+        waveRad: 7
+        smokeColor: efbbb4
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: efbbb4
+        sparkStroke: 1.8
+        sparkRad: 25
+        sparkLen: 2.5
+        sparks: 6
+      }
+	  fragBullet: 2
+	  fragAngle: 180
+      fragRandomSpread: 30
+	  fragBullets: {
+	  	  sprite: large-orb
+      shrinkY: 0
+      shrinkX: 0
+	  lifetime: 23
+      damage: 100
+      height: 6
+      speed: 4
+      width: 6
+      type: BasicBulletType
+      frontColor: ffffff
+      backColor: efbbb4
+      trailColor: efbbb4
+      trailWidth: 1
+      trailLength: 8
+	  smokeEffect: none
+	  collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
+	  drag: 0.09
+	  	       despawnEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: efbbb4
+        waveStroke: 2
+        waveRad: 3
+        smokeColor: efbbb4
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: efbbb4
+        sparkStroke: 1.8
+        sparkRad: 15
+        sparkLen: 2
+        sparks: 3
+      }
+	        hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: efbbb4
+        waveStroke: 2
+        waveRad: 3
+        smokeColor: efbbb4
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: efbbb4
+        sparkStroke: 1.8
+        sparkRad: 15
+        sparkLen: 2
+        sparks: 3
+      }
+	  }
 	  }
     }
 ]
