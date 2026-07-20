@@ -219,7 +219,7 @@ weapons: [
         sparkLen: 2.5
         sparks: 6
       }
-	  fragBullet: 2
+	  fragBullets: 2
 	  fragAngle: 180
       fragRandomSpread: 30
 	  fragBullets: {
