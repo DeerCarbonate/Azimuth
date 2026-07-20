@@ -277,36 +277,6 @@ weapons: [
         sparkLen: 2
         sparks: 3
       }
-	  fragBullets: 1
-	  fragAngle: 180
-      fragRandomSpread: 15
-	  fragOnHit: true
-      fragOnDespawn: true
-      fragOnAbsorb: true 
-	  fragBullet: {
-	  sprite: large-orb
-      shrinkY: 0
-      shrinkX: 0
-	  lifetime: 43
-      damage: 25
-      height: 5
-      speed: 2.5
-      width: 4
-      type: BasicBulletType
-      frontColor: ffffff
-      backColor: efbbb4
-      trailColor: efbbb4
-      trailWidth: 0.5
-      trailLength: 4
-	  smokeEffect: none
-	  collidesTiles: true
-      keepVelocity: false
-      collidesAir: false
-	  drag: 0.02
-	  homing: true
-	  homingPower: 0.07
-	  homingRange: 70
-	  }
     }
 	}
 }
