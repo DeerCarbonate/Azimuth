@@ -107,21 +107,24 @@ weapons: [
     autoTarget: true
     targetAir: true
     targetGround: true
-    reload: 5
-    shootCone: 360
+    reload: 500
     mirror: false
     rotate: true
 	rotateSpeed: 3.6
     x: 0
     y: 0
-
+	killShooter: true
+	shoot: {
+    type: ShootSpread
+    firstShotDelay: 90
+    }
     bullet: {
       type: ExplosionBulletType
       collidesAir: true
       collidesGround: true
 
       splashDamageRadius: 25
-      splashDamage: 200
+      splashDamage: 250
       buildingDamageMultiplier: 0.15
 
       hitSound: explosion
@@ -181,153 +184,51 @@ weapons: [
       ]
 
       despawnEffect: none
+	  fragBullets: 1
+	  fragOnHit: true
+      fragOnDespawn: true
+      fragOnAbsorb: true 
+	  fragBullet: {
+	  sprite: large-orb
+	  lifetime: 100
+      damage: 400
+      height: 18
+      speed: 3
+      width: 18
+      type: BasicBulletType
+      homingPower: 0.7
+      homingDelay: 0
+	  homing: true
+      frontColor: ffffff
+      backColor: d690d3
+      trailColor: d690d3
+      trailWidth: 2
+      trailLength: 6
+	  smokeEffect: none
+	  collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
+      splashDamageRadius: 2
+	  despawnEffect: none
+	        hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: fbace3
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: fbace3
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: fbace3
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
+      }
+	  }
     }
   }
-    {
-    alwaysShooting: true
-    alternate: false
-	controllable:false
-    autoTarget:true
-    mirror: false 
-    rotateSpeed: 60
-    layerOffset: -0.001
-    shootY: 0
-    x: 0
-    y: 0
-    reload: 70
-    inaccuracy: 360
-	smokeEffect: none
-    shoot: {
-      type: ShootMulti
-	  source: {
-      firstShotDelay: 0
-      shots: 1
-	      }
-	  dest: [
-	  {
-	  type: ShootPattern
-		shots: 1
-	}
-	]
-	}
-    ejectEffect: none
-    shootSound: shootAtrax
-    bullet: {
-      keepVelocity: false
-      lifetime: 600
-      drag: 0
-      damage: 100
-      height: 7
-      speed: 2
-      width: 6
-      type: BasicBulletType
-      frontColor: ffffff80
-      backColor: efbbb480
-      trailColor: efbbb430
-	  healColor: efbbb488
-      trailWidth: 0.87
-      trailLength: 10
-	  smokeEffect: none
-	  circleShooter: true
-      circleShooterRadius: 44
-      circleShooterRadiusSmooth: 200
-      circleShooterRotateSpeed: 3.5
-	  pierceArmor:true
-	  pierce: true
-      pierceBuilding: false
-      pierceCap: 8
-      pierceDamageFactor: 0.01
-	  hitEffect: none
-	  despawnEffect: none
-	                  trailEffect:[
-                {
-                    type: ParticleEffect
-                    colorFrom: efbbb430
-                    colorTo: efbbb400
-                    particles: 1
-                    cone: 360
-                    lifetime:13
-                    length: 3
-                    sizeFrom: 1.2
-                    sizeTo: 1.2
-                    layer:100.2
-                }
-                {
-                    type: ParticleEffect
-                    region:large-bomb
-                    colorFrom: efbbb430
-                    colorTo: efbbb400
-                    particles: 1
-                    lifetime:17
-                    cone: 360
-                    length: 11
-                    spin: 1.2
-                    sizeFrom: 2.1
-                    sizeTo: 0
-                    layer:100.2
-                }
-                ]
-                trailChance:0.65
-                trailInterval:6
-			    fragBullets: 1
-				fragRandomSpread: 0
-				fragSpread: 0
-				fragBullet: {
-				      keepVelocity: false
-      lifetime: 80
-      drag: 0
-      damage: 150
-      height: 7
-      speed: 2
-      width: 6
-      type: BasicBulletType
-      frontColor: ffffff80
-      backColor: efbbb480
-      trailColor: efbbb430
-	  healColor: efbbb488
-      trailWidth: 0.87
-      trailLength: 10
-	  smokeEffect: none
-	  pierceArmor:true
-      pierceDamageFactor: 0.01
-	  hitEffect: none
-	  homing: true
-	  homingPower: 0.5
-	  homingRange: 800
-	  despawnEffect: none
-	                  trailEffect:[
-                {
-                    type: ParticleEffect
-                    colorFrom: efbbb430
-                    colorTo: efbbb400
-                    particles: 1
-                    cone: 360
-                    lifetime:13
-                    length: 3
-                    sizeFrom: 1.2
-                    sizeTo: 1.2
-                    layer:100.2
-                }
-                {
-                    type: ParticleEffect
-                    region:large-bomb
-                    colorFrom: efbbb430
-                    colorTo: efbbb400
-                    particles: 1
-                    lifetime:17
-                    cone: 360
-                    length: 11
-                    spin: 1.2
-                    sizeFrom: 2.1
-                    sizeTo: 0
-                    layer:100.2
-                }
-                ]
-                trailChance:0.65
-                trailInterval:6
-				}
-    }
-	}
 ]
 parts: [
   {
