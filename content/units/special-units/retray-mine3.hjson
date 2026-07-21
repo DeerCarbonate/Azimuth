@@ -229,10 +229,10 @@ weapons: [
 	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
-	  lifetime: 50
+	  lifetime: 60
       damage: 40
       height: 6
-      speed: 3
+      speed: 2.5
       width: 6
       type: BasicBulletType
       frontColor: ffffff
@@ -244,12 +244,12 @@ weapons: [
 	  collidesTiles: true
       keepVelocity: false
       collidesAir: false
-	  drag: -0.01
+	  drag: -0.009
 	  pierce: true
       pierceCap: 4
 	  homing: true
-	  homingDelay: 12
-	  homingPower: 0.5
+	  homingDelay: 14
+	  homingPower: 0.2
 	  homingRange: 80
 	  	       despawnEffect: {
         type: ExplosionEffect
