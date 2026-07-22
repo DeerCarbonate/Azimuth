@@ -168,7 +168,8 @@ weapons: [
       shrinkY: 0
       shrinkX: 0
 	  lifetime: 32
-      damage: 500
+      damage: 600
+	  armorMultiplier: -1.5
       height: 17
       speed: 2.7
       width: 17
