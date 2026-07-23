@@ -177,12 +177,12 @@ weapons: [
     rotateSpeed: 999
     targetSwitchInterval: 1.5
     targetInterval: 1.2 
-    reload: 500
+    reload: 498.5
     shootSound: laserShoot
 	beamEffect: chainLightning
 	color: f6afdd80
     bullet: {
-      maxRange: 18
+      maxRange: 17
       bulletDamage: 1
       shootEffect: none
       hitEffect: none
