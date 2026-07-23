@@ -182,7 +182,7 @@ weapons: [
 	beamEffect: chainLightning
 	color: f6afdd80
     bullet: {
-      maxRange: 60
+      maxRange: 18
       bulletDamage: 1
       shootEffect: none
       hitEffect: none
