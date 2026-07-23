@@ -167,9 +167,9 @@ weapons: [
 	  sprite: large-orb
       shrinkY: 0
       shrinkX: 0
-	  lifetime: 39
-      damage: 600
-	  armorMultiplier: -1.5
+	  lifetime: 42
+      damage: 630
+	  armorMultiplier: -2.5
       height: 17
       speed: 2.1
       width: 17

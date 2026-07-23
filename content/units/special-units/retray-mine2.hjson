@@ -24,7 +24,7 @@ rotateSpeed: 0
 lifetime: 700
 fogRadius: 0
 health: 700
-armor: 7
+armor: 5
 loopSoundVolume: 0
 engineSize: 0
 trailLength: 0
@@ -127,7 +127,7 @@ shoot: {
     bullet: {
     type: RailBulletType
     length: 125
-    damage: 38
+    damage: 32
     buildingDamageMultiplier: 0.1
 	lifetime: 1
 	hitColor: bff6b1
