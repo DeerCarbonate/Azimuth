@@ -158,12 +158,12 @@ abilities: [
     regen: 1
     max: 1
     angle: 55
-    radius: 130
+    radius: 360
     cooldown: 500
     whenShooting: false
     angleOffset: 0
-    y: 0
-    width: 4
+    y: -24
+    width: 6
     display: false
     chanceDeflect: 1
   }
@@ -186,24 +186,6 @@ weapons: [
       bulletDamage: 1
       shootEffect: none
       hitEffect: none
-    }
-  }
-  {
-    type: PointDefenseWeapon
-    x: 0
-    y: -1
-    shake: 2
-    rotate: true
-    rotateSpeed: 999
-    targetSwitchInterval: 1.5
-    targetInterval: 1.2
-    reload: 10
-    shootSound: laserShoot
-    bullet: {
-      maxRange: 75
-      bulletDamage: 18
-      shootEffect: sparkShoot
-      hitEffect: pointHit
     }
   }
   {
