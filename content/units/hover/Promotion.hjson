@@ -166,6 +166,7 @@ abilities: [
     width: 6
     display: false
     chanceDeflect: 1
+	blockUnits: false
   }
 ]
 weapons: [
