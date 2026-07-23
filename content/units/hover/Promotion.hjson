@@ -159,7 +159,7 @@ abilities: [
     max: 1
     angle: 360
     radius: 18
-    cooldown: 500
+    cooldown: 400
     whenShooting: false
     angleOffset: 0
     y: 0
@@ -177,12 +177,12 @@ weapons: [
     rotateSpeed: 999
     targetSwitchInterval: 1.5
     targetInterval: 1.2 
-    reload: 498.5
+    reload: 399.5
     shootSound: laserShoot
 	beamEffect: chainLightning
 	color: f6afdd80
     bullet: {
-      maxRange: 17
+      maxRange: 15
       bulletDamage: 1
       shootEffect: none
       hitEffect: none
