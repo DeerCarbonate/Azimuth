@@ -24,7 +24,7 @@ legContinuousMove: true
 accel: 0.5
 armor: 9
 stepShake: 0.1
-health: 4700
+health: 4600
 speed: 0.465
 shieldColor: f0aba488
 healColor: f0aba488
@@ -129,12 +129,15 @@ weapons: [
     shootStatus: detached
     shootStatusDuration: 20
     shootSound: none
+	shootEffect: none
+	smokeEffect: none
     bullet:{
         type: BasicBulletType
         height: 0
         width: 0
         shootEffect:none
         despawnEffect:none
+		hitEffect: none
         smokeEffect:none
         lifetime: 0
         damage: 0
