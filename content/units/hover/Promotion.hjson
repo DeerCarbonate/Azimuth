@@ -153,24 +153,39 @@ abilities: [
     y: -0.9
     x: 0
   }
+    {
+    type: ShieldArcAbility
+    regen: 1
+    max: 1
+    angle: 55
+    radius: 130
+    cooldown: 500
+    whenShooting: false
+    angleOffset: 0
+    y: 0
+    width: 4
+    display: false
+    chanceDeflect: 1
+  }
 ]
 weapons: [
   {
     type: PointDefenseWeapon
     x: 0
     y: -1
-    shake: 2
     rotate: true
     rotateSpeed: 999
     targetSwitchInterval: 1.5
     targetInterval: 1.2 
-    reload: 10
+    reload: 500
     shootSound: laserShoot
+	beamEffect: chainLightning
+	color: f6afdd80
     bullet: {
-      maxRange: 75
-      bulletDamage: 18
-      shootEffect: sparkShoot
-      hitEffect: pointHit
+      maxRange: 60
+      bulletDamage: 1
+      shootEffect: none
+      hitEffect: none
     }
   }
   {
