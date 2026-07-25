@@ -339,7 +339,7 @@ baseRotation: 270
         type: ShootSpread
         shots: 2
     }
-inaccuracy: 80
+inaccuracy: 60
 type: BasicBulletType
 width: 11
 height: 18
@@ -348,7 +348,7 @@ collidesTiles: true
 collidesGround: true
 lifetime: 93
 reloadMultiplier: 0.75
-damage: 50
+damage: 65
 splashDamage: 110
 splashDamageRadius: 30
 rangeChange: 10
