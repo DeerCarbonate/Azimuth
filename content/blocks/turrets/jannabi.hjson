@@ -408,6 +408,7 @@ shoot: {
 	  ]
 	  }
 	      caterium: {
+		  // thx Undaria (Calamity mod) for units (which forms EMP field)
  type: BasicBulletType
  reloadMultiplier:0.47
  collidesTiles: true
