@@ -15,6 +15,7 @@
 	faceTarget: true
     canBoost: false
 	shieldColor: f0aba488
+	immunities: [burning]
 	healColor: f0aba488
 	deathExplosionEffect: {
   type: MultiEffect
