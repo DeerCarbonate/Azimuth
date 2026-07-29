@@ -159,7 +159,7 @@ abilities: [
     max: 1
     angle: 360
     radius: 18
-    cooldown: 400
+    cooldown: 320
     whenShooting: false
     angleOffset: 0
     y: 0
@@ -169,25 +169,6 @@ abilities: [
   }
 ]
 weapons: [
-  {
-    type: PointDefenseWeapon
-    x: 0
-    y: -1
-    rotate: true
-    rotateSpeed: 999
-    targetSwitchInterval: 1.5
-    targetInterval: 1.2 
-    reload: 399.5
-    shootSound: laserShoot
-	beamEffect: chainLightning
-	color: f6afdd80
-    bullet: {
-      maxRange: 15
-      bulletDamage: 1
-      shootEffect: none
-      hitEffect: none
-    }
-  }
   {
     baseRotation: 0
     mirror: false
@@ -230,11 +211,8 @@ weapons: [
       shrinkY: 0
       skrinkX: 0
       recoil: 1.2
-      splashDamage: 320
+      splashDamage: 410
       splashDamageRadius: 30
-      pierce: true
-      pierceBuilding: true
-      pierceCap: 2
       pierceDamageFactor: 0.2
       height: 32
       speed: 0.12
