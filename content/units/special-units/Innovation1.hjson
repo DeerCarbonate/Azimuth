@@ -135,7 +135,7 @@ weapons: [
     alwaysShooting: true
     useAttackRange: false
 	shootStatus: fortified
-    shootStatusDuration: 70
+    shootStatusDuration: 110
 		  shoot: {
     type: ShootSpread
     firstShotDelay: 0
@@ -179,7 +179,7 @@ weapons: [
     alwaysShooting: true
     useAttackRange: false
 	shootStatus: charge
-    shootStatusDuration: 70
+    shootStatusDuration: 110
 		  shoot: {
     type: ShootSpread
     firstShotDelay: 0
