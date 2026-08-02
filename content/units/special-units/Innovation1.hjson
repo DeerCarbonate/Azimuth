@@ -13,7 +13,7 @@ hidden: true
 outlineColor: 251b21
 outlineRadius: 3
 alwaysUnlocked: false
-rotateSpeed: 1
+rotateSpeed: 2
 armor: 3
 accel: 0.09
 health: 550
@@ -135,7 +135,7 @@ weapons: [
     alwaysShooting: true
     useAttackRange: false
 	shootStatus: fortified
-    shootStatusDuration: 150
+    shootStatusDuration: 70
 		  shoot: {
     type: ShootSpread
     firstShotDelay: 0
@@ -179,7 +179,7 @@ weapons: [
     alwaysShooting: true
     useAttackRange: false
 	shootStatus: charge
-    shootStatusDuration: 150
+    shootStatusDuration: 70
 		  shoot: {
     type: ShootSpread
     firstShotDelay: 0
