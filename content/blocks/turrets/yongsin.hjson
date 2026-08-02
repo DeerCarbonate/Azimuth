@@ -9,7 +9,7 @@ shootCone: 9
 recoil: 3
 reload: 180
 range: 200
-inaccuracy: 0.1
+inaccuracy: 0.25
 velocityRnd: 0.25
 targetAir: false
 moveWhileCharging: true
