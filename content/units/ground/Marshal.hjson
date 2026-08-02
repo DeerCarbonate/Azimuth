@@ -5,7 +5,7 @@
 	outlineRadius: 3
 	alwaysUnlocked: false
 	armor: 8
-	health: 2050
+	health: 2000
 	speed: 0.46
 	hitSize: 14
     stepSound: walkerStepSmall
