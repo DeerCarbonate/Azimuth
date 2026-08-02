@@ -9,8 +9,8 @@ alwaysUnlocked: false
 
 targetAir: false
 accel: 0.5
-armor: 16
-health: 9400
+armor: 17
+health: 10050
 speed: 0.36
 shieldColor: f0aba488
 healColor: f0aba488
