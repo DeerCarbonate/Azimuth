@@ -121,6 +121,94 @@ parts: [
   }
 ]
 weapons: [
+{
+    reload: 10000
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+	shootStatus: fortified
+    shootStatusDuration: 150
+		  shoot: {
+    type: ShootSpread
+    firstShotDelay: 0
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 0
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: false
+    }
+}
+{
+    reload: 10000
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+	shootStatus: charge
+    shootStatusDuration: 150
+		  shoot: {
+    type: ShootSpread
+    firstShotDelay: 0
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 0
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: false
+    }
+}
   {
     recoil: 1.6
     under: false
