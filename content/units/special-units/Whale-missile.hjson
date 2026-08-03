@@ -30,10 +30,10 @@ homingDelay: 30
 deathExplosionEffect: none
 loopSoundVolume: 0.5
 
-trailColor: 5fac9e
+trailColor: a4f0d7
 trailLength: 18
 trailWidth: 1
-engineColor: 5fac9e
+engineColor: a4f0d7
 engineSize: 1.2
 engineOffset: 3
 engineLayer: 100
@@ -52,6 +52,7 @@ abilities: [
 	sameTypeHealMult: 0.03
     statusDuration: 0
     healPercent: 0.1
+	sectors: 2
 		hitEffect: {
 		type: ParticleEffect
 		region: azimut-triangle
@@ -82,6 +83,33 @@ parts: [
      strokeTo: 2
      radius: 4
 	 radiusTo: 4
+      }
+	  {
+    type: HaloPart
+    tri: true
+    shapes: 2
+    color: b5d0ba
+    layer: 110
+    haloRadius: 7
+    haloRadiusTo: 7
+    radius: 4
+    radiusTo: 4
+    triLength: 4
+    triLengthTo: 0
+    haloRotateSpeed: -1
+	            progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.9
+                }
+                {
+                    op: curve
+                    interp: pow5In
+                }
+            ]
+        }
       }
     ]
 

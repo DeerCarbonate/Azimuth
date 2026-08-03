@@ -190,9 +190,9 @@ weapons: [
       homingPower: 0.02
       homingRange: 50
       homingDelay: 17
-      frontColor: a4f0d7
-      backColor: 5fac9e
-      trailColor: 5fac9e
+      frontColor: ffffff
+      backColor: a4f0d7
+      trailColor: a4f0d7
       trailWidth: 0.7
       trailLength: 6
       shootEffect: {
@@ -204,7 +204,7 @@ weapons: [
         strokeFrom: 0
         strokeTo: 3
         colorFrom: a4f0d7
-        colorTo: 5fac9e00
+        colorTo: a4f0d700
         followParent: true
         rotWithParent: true
       }
@@ -216,7 +216,7 @@ weapons: [
         sizeFrom: 0
         sizeTo: 4
         colorFrom: a4f0d7
-        colorTo: 5fac9e00
+        colorTo: a4f0d700
       }
       hitEffect: {
         type: WaveEffect
@@ -226,7 +226,7 @@ weapons: [
         sizeFrom: 0
         sizeTo: 4
         colorFrom: a4f0d7
-        colorTo: 5fac9e00
+        colorTo: a4f0d700
       }
     }
 }
