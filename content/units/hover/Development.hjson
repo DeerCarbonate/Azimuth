@@ -147,7 +147,7 @@ abilities: [
   {
     type: ShieldArcAbility
     regen: 3
-    max: 300
+    max: 200
     angle: 140
     radius: 17
     cooldown: 150
@@ -158,5 +158,6 @@ abilities: [
     width: 4
     display: false
 	drawArc: false
+	chanceDeflect: 1
   }
 ]
