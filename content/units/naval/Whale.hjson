@@ -183,7 +183,7 @@ weapons: [
       keepVelocity: false
       lifetime: 60
       drag: -0.024
-      damage: 16
+      damage: 17
       height: 9
       speed: 1.4
       width: 5
