@@ -170,6 +170,7 @@ weapons: [
     ignoreRotation: true
     inaccuracy: 6
 	baseRotation: -15
+	smokeEffect: none
     shoot: {
       type: ShootSpread
       shotDelay: 2.3
@@ -195,19 +196,7 @@ weapons: [
       trailColor: a4f0d7
       trailWidth: 0.7
       trailLength: 6
-      shootEffect: {
-        type: WaveEffect
-        startDelay: 0
-        lifetime: 15
-        sizeFrom: 0
-        sizeTo: 1.5
-        strokeFrom: 0
-        strokeTo: 3
-        colorFrom: a4f0d7
-        colorTo: a4f0d700
-        followParent: true
-        rotWithParent: true
-      }
+	  shootEffect: none
       despawnEffect: {
         type: WaveEffect
         rotWithParent: true
