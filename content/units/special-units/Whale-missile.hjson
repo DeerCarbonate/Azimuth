@@ -31,8 +31,8 @@ deathExplosionEffect: none
 loopSoundVolume: 0.5
 
 trailColor: a4f0d7
-trailLength: 12
-trailWidth: 1.2
+trailLength: 10
+trailWidth: 4.5
 engineColor: a4f0d7
 engineSize: 1.2
 engineOffset: 3
@@ -113,11 +113,11 @@ parts: [
     shapes: 2
     color: b5d0ba20
     layer: 110
-    haloRadius: 8
-    haloRadiusTo: 8
-    radius: 5
-    radiusTo: 5
-    triLength: 5
+    haloRadius: 9
+    haloRadiusTo: 9
+    radius: 4.5
+    radiusTo: 4.5
+    triLength: 4.5
     triLengthTo: 0
     haloRotateSpeed: -1.5
 	            progress: {
@@ -136,11 +136,11 @@ parts: [
     shapes: 2
     color: b5d0ba20
     layer: 110
-    haloRadius: 8
-    haloRadiusTo: 8
-    radius: 5
-    radiusTo: 5
-    triLength: 5
+    haloRadius: 10
+    haloRadiusTo: 10
+    radius: 4
+    radiusTo: 4
+    triLength: 4
     triLengthTo: 0
     haloRotateSpeed: -2
 	            progress: {
