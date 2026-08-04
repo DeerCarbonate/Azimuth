@@ -223,9 +223,33 @@ parts: [
     layer: 110
     color: b5d0ba20
     radius: 0
-	radiusTo: 17.6
+	radiusTo: 16.5
 	strokeFrom: 2
-    strokeTo: 18
+    strokeTo: 24
+	            progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.25
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+  }
+    	      {
+    type: ShapePart
+    circle: true
+    hollow: true
+    layer: 110
+    color: b5d0ba20
+    radius: 0
+	radiusTo: 18.5
+	strokeFrom: 2
+    strokeTo: 8
 	            progress: {
             type: life
             ops: [
