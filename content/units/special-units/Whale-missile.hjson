@@ -157,7 +157,7 @@ parts: [
     type: HaloPart
     tri: true
     shapes: 5
-    color: b5d0ba15
+    color: b5d0ba
     layer: 110
     haloRadius: 0
     haloRadiusTo: 16
