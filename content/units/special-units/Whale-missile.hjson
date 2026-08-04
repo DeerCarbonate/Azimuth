@@ -90,7 +90,7 @@ parts: [
     shapes: 2
     color: b5d0ba
     layer: 110
-    haloRadius: 8
+    haloRadius: 6.5
     haloRadiusTo: 0
     radius: 5
     radiusTo: 5
@@ -117,7 +117,7 @@ parts: [
     shapes: 2
     color: b5d0ba20
     layer: 110
-    haloRadius: 10
+    haloRadius: 8.5
     haloRadiusTo: 0
     radius: 4.5
     radiusTo: 4.5
@@ -144,7 +144,7 @@ parts: [
     shapes: 2
     color: b5d0ba20
     layer: 110
-    haloRadius: 12
+    haloRadius: 10.5
     haloRadiusTo: 0
     radius: 4
     radiusTo: 4
@@ -202,6 +202,30 @@ parts: [
 	radiusTo: 17.6
 	strokeFrom: 2
     strokeTo: 2
+	            progress: {
+            type: life
+            ops: [
+                {
+                    op: delay
+                    amount: 0.25
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+  }
+  	      {
+    type: ShapePart
+    circle: true
+    hollow: true
+    layer: 110
+    color: b5d0ba20
+    radius: 0
+	radiusTo: 17.6
+	strokeFrom: 2
+    strokeTo: 18
 	            progress: {
             type: life
             ops: [
