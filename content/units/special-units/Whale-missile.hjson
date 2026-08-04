@@ -91,7 +91,7 @@ parts: [
     color: b5d0ba
     layer: 110
     haloRadius: 8
-    haloRadiusTo: 8
+    haloRadiusTo: 0
     radius: 5
     radiusTo: 5
     triLength: 5
@@ -106,7 +106,7 @@ parts: [
                 }
 								{
                     op: delay
-                    amount: -0.25
+                    amount: 0.25
                 }
             ]
         }
@@ -118,7 +118,7 @@ parts: [
     color: b5d0ba20
     layer: 110
     haloRadius: 10
-    haloRadiusTo: 10
+    haloRadiusTo: 0
     radius: 4.5
     radiusTo: 4.5
     triLength: 4.5
@@ -133,7 +133,7 @@ parts: [
                 }
 								{
                     op: delay
-                    amount: -0.25
+                    amount: 0.25
                 }
             ]
         }
@@ -145,7 +145,7 @@ parts: [
     color: b5d0ba20
     layer: 110
     haloRadius: 12
-    haloRadiusTo: 12
+    haloRadiusTo: 0
     radius: 4
     radiusTo: 4
     triLength: 4
@@ -160,7 +160,7 @@ parts: [
                 }
 				{
                     op: delay
-                    amount: -0.25
+                    amount: 0.25
                 }
             ]
         }
@@ -192,34 +192,30 @@ parts: [
             ]
         }
       }
-	  	  	  {
-    type: HaloPart
-    tri: true
-    shapes: 6
-    color: b5d0ba
+	      {
+    type: ShapePart
+    circle: true
+    hollow: true
     layer: 110
-    haloRadius: 0
-    haloRadiusTo: 16
-    radius: 5
-    radiusTo: 5
-    triLength: 3
-    triLengthTo: 5
-    haloRotateSpeed: -1.5
-	shapeRotation: 180
+    color: b5d0ba
+    radius: 16.6
+	radiusTo: 0
+	strokeFrom: 0
+    strokeTo: 2
 	            progress: {
             type: life
             ops: [
                 {
-                    op: curve
-                    interp: pow2In
-                }
-				{
                     op: delay
                     amount: 0.25
                 }
+                {
+                    op: curve
+                    interp: pow2In
+                }
             ]
         }
-      }
+  }
     ]
 
 weapons: [
