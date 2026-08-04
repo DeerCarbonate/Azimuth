@@ -442,8 +442,12 @@ interp: pow3Out
       collidesAir: false
 	  sprite: azimut-hitsliceb
 	  drag: 0.01
+	  homing: true
+	  homingPower: 0.1
+	  homingDelay: 9
+	  homingRange: 20
 	  waveMag: 8
-	  waveScl: 100000
+	  waveScl: 12
       hitEffect: {
         type: ExplosionEffect
         lifetime: 15
