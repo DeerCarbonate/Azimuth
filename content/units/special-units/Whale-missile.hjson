@@ -156,26 +156,26 @@ parts: [
 	  	  {
     type: HaloPart
     tri: true
-    shapes: 5
+    shapes: 6
     color: b5d0ba
     layer: 110
     haloRadius: 0
     haloRadiusTo: 17
     radius: 0
-    radiusTo: 4
+    radiusTo: 5
     triLength: 0
-    triLengthTo: 4
-    haloRotateSpeed: 2.5
+    triLengthTo: 5
+    haloRotateSpeed: -1.5
 	            progress: {
             type: life
             ops: [
                 {
                     op: curve
-                    interp: pow5In
+                    interp: pow2In
                 }
 				{
                     op: delay
-                    amount: 0.35
+                    amount: 0.25
                 }
             ]
         }
