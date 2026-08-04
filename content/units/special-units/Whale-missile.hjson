@@ -389,7 +389,7 @@ interp: pow3Out
             lifetime: 35
             region: azimut-parallel
             sizeFrom: 44
-            sizeTo: 0
+            sizeTo: 44
             colorFrom: a4f0d780
             colorTo: 5fac9e00
 			interp:pow3Out
@@ -401,10 +401,10 @@ interp: pow3Out
             lifetime: 35
             region: azimut-parallel
             sizeFrom: 44
-            sizeTo: 0
+            sizeTo: 44
             colorFrom: a4f0d780
             colorTo: 5fac9e00
-			baseRotation: 45
+			baseRotation: 65
 			interp:pow3Out
           }
 		  		  {
@@ -414,10 +414,10 @@ interp: pow3Out
             lifetime: 35
             region: azimut-parallel
             sizeFrom: 44
-            sizeTo: 0
+            sizeTo: 44
             colorFrom: a4f0d780
             colorTo: 5fac9e00
-			baseRotation: 315
+			baseRotation: 295
 			interp:pow3Out
           }
 		  ]
