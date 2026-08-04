@@ -355,7 +355,6 @@ interp: pow3Out
     firstShotDelay: 180
     }
     bullet: {
-        type: BasicBulletType
     type: ExplosionBulletType
     collidesAir: false
     despawnShake: 1.2
@@ -404,7 +403,7 @@ interp: pow3Out
             sizeTo: 44
             colorFrom: a4f0d780
             colorTo: 5fac9e00
-			baseRotation: 65
+			baseRotation: 55
 			interp:pow3Out
           }
 		  		  {
@@ -417,10 +416,52 @@ interp: pow3Out
             sizeTo: 44
             colorFrom: a4f0d780
             colorTo: 5fac9e00
-			baseRotation: 295
+			baseRotation: 305
 			interp:pow3Out
           }
 		  ]
+		fragBullets: 6
+		fragSpread: 60
+		fragRandomSpread: 0
+		fragAngle: 0
+		fragBullet: {
+		      type: BasicBulletType
+      backColor: a4f0d7
+      frontColor: ffffff
+      height: 8
+      width: 6
+      lifetime: 53
+      damage: 38
+      speed: 4.8
+      trailColor: 5fac9e
+      trailLength: 4
+      trailWidth: 1.3
+      keepVelocity: false
+      despawnEffect: none
+      collidesTiles: true
+      collidesAir: false
+	  sprite: azimut-hitsliceb
+	  drag: 0.01
+	  waveMag: 8
+	  waveScl: 100000
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: a4f0d7
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: a4f0d7
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: a4f0d7
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
+      }
+    }
+		}
     }
 }
     ]
