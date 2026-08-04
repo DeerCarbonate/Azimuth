@@ -192,7 +192,6 @@ colorFrom: cc918b
 cone: 15
         }
 		type: BasicBulletType
-		damage: 18
 		lifetime: 44
 		width: 9
 		height: 9
@@ -202,7 +201,7 @@ cone: 15
 		trailColor: cc918b
 		trailWidth: 1.7
 		trailLength: 8
-		damage: 27
+		damage: 21
 		lifetime: 26
 		width: 10
 		height: 12
