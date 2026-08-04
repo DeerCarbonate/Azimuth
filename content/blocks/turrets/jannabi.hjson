@@ -570,7 +570,7 @@ fragBullet: {
  pierceDamageFactor: 0.015
  despawnSound: explosionAfflict
  hitSound: explosionAfflict
- lifetime: 30
+ lifetime: 31.5
  speed: 18
  width: 7.5
  scaleLife: false
