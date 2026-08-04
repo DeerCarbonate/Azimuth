@@ -11,7 +11,7 @@ loopSound: loopHover
 loopSoundVolume: 0.8
 shieldColor: f0a4d988
 healColor: f0a4d988
-armor: 13
+armor: 14
 rotateSpeed: 2.95
 outlineColor: 251b21
 targetair: false
@@ -68,7 +68,7 @@ weapons: [{
       flareLength: 0
       length: 80
       width: 12
-      damage: 58
+      damage: 66
       pierce: true
 	  pierceCap: 2
       pierceArmor: false
