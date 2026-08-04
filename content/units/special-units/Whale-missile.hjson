@@ -172,7 +172,7 @@ parts: [
     color: b5d0ba
     layer: 110
     haloRadius: 0
-    haloRadiusTo: 17
+    haloRadiusTo: 18
     radius: 5
     radiusTo: 5
     triLength: 3
@@ -198,9 +198,9 @@ parts: [
     hollow: true
     layer: 110
     color: b5d0ba
-    radius: 16.6
-	radiusTo: 0
-	strokeFrom: 0
+    radius: 0
+	radiusTo: 17.6
+	strokeFrom: 2
     strokeTo: 2
 	            progress: {
             type: life
