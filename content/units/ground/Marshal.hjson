@@ -201,7 +201,7 @@ cone: 15
 		trailColor: cc918b
 		trailWidth: 1.7
 		trailLength: 8
-		damage: 21
+		damage: 24
 		lifetime: 26
 		width: 10
 		height: 12
