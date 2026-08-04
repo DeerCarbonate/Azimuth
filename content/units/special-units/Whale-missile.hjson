@@ -388,8 +388,7 @@ interp: pow3Out
             length: 0
             lifetime: 35
             region: azimut-parallel
-            sizeFrom: 33
-            sizeChangeStart: 18
+            sizeFrom: 44
             sizeTo: 0
             colorFrom: a4f0d780
             colorTo: 5fac9e00
@@ -400,8 +399,7 @@ interp: pow3Out
             length: 0
             lifetime: 35
             region: azimut-parallel
-            sizeFrom: 33
-            sizeChangeStart: 18
+            sizeFrom: 44
             sizeTo: 0
             colorFrom: a4f0d780
             colorTo: 5fac9e00
@@ -413,12 +411,11 @@ interp: pow3Out
             length: 0
             lifetime: 35
             region: azimut-parallel
-            sizeFrom: 33
-            sizeChangeStart: 18
+            sizeFrom: 44
             sizeTo: 0
             colorFrom: a4f0d780
             colorTo: 5fac9e00
-			baseRotation: 90
+			baseRotation: 315
           }
 		  ]
     }
