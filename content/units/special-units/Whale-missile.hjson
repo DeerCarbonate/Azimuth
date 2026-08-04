@@ -160,12 +160,12 @@ parts: [
     color: b5d0ba
     layer: 110
     haloRadius: 0
-    haloRadiusTo: 16
+    haloRadiusTo: 17
     radius: 0
     radiusTo: 4
     triLength: 0
     triLengthTo: 4
-    haloRotateSpeed: 1.2
+    haloRotateSpeed: 2.5
 	            progress: {
             type: life
             ops: [
@@ -175,7 +175,7 @@ parts: [
                 }
 				{
                     op: delay
-                    amount: 0.8
+                    amount: 0.35
                 }
             ]
         }
