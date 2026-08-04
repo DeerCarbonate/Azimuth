@@ -23,7 +23,7 @@ lifetime: 150
 rotateSpeed: 0.8
 fogRadius: 8
 maxRange: 20
-health: 120
+health: 80
 speed: 3
 armor: 1
 homingDelay: 30
@@ -52,19 +52,19 @@ abilities: [
 	sameTypeHealMult: 0.03
     statusDuration: 0
     healPercent: 0.1
-	sectors: 2
+	sectors: 0
 		hitEffect: {
 		type: ParticleEffect
 		region: azimut-triangle
 		particles: 1
-		length: 45
-		lifetime: 67
+		length: 30
+		lifetime: 60
 		interp: circleOut
 		sizeInterp: pow5Out
 		cone: 360
 		colorFrom: a4f0d7
 		colorTo: 5fac9e90
-		sizeFrom: 4.3
+		sizeFrom: 4.5
 		sizeTo: 0
 	}
 }
@@ -113,8 +113,8 @@ parts: [
     shapes: 2
     color: b5d0ba20
     layer: 110
-    haloRadius: 9
-    haloRadiusTo: 9
+    haloRadius: 10
+    haloRadiusTo: 10
     radius: 4.5
     radiusTo: 4.5
     triLength: 4.5
@@ -136,8 +136,8 @@ parts: [
     shapes: 2
     color: b5d0ba20
     layer: 110
-    haloRadius: 10
-    haloRadiusTo: 10
+    haloRadius: 12
+    haloRadiusTo: 12
     radius: 4
     radiusTo: 4
     triLength: 4
@@ -172,10 +172,10 @@ bullet: {
     despawnShake: 1.2
     maxRange: 6
 
-    buildingDamageMultiplier: 1.15
+    buildingDamageMultiplier: 1.25
 
-    splashDamageRadius: 30
-    splashDamage: 90
+    splashDamageRadius: 35
+    splashDamage: 85
 
     hitSound: energy-blade-hit
 shootEffect: [
