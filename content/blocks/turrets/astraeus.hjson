@@ -8,7 +8,7 @@ restitution: 0.04
 inaccuracy: 2
 recoil: 1.1
 reload: 10
-range: 350
+range: 330
 targetAir: true
 targetGround: true
 moveWhileCharging: true
@@ -28,7 +28,7 @@ cobalt: {
  damage: 46
  despawnSound: none
  hitSound: none
- lifetime: 68
+ lifetime: 62
  speed: 5.2
  width: 12
  despawnEffect: none
@@ -126,7 +126,7 @@ baseRotation: 0
  damage: 60
  despawnSound: none
  hitSound: none
- lifetime: 35
+ lifetime: 33
  speed: 5.2
  width: 11
  despawnEffect: none
@@ -258,7 +258,7 @@ sprite: large-orb
  damage: 37
  despawnSound: none
  hitSound: none
- lifetime: 65
+ lifetime: 61
  speed: 5.2
  width: 7.5
  despawnEffect: none
@@ -336,7 +336,7 @@ trailWidth: 1.4
  damage: 70
  despawnSound: none
  hitSound: none
- lifetime: 80
+ lifetime: 78
  speed: 2.8
  width: 8
  trailWidth: 2.8
@@ -506,7 +506,7 @@ baseRotation: 0
  damage: 70
  despawnSound: none
  hitSound: none
- lifetime: 74
+ lifetime: 71
  speed: 4.8
  width: 13
  despawnEffect: none
