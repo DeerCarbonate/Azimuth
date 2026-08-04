@@ -156,12 +156,12 @@ parts: [
 	  	  {
     type: HaloPart
     tri: true
-    shapes: 6
+    shapes: 5
     color: b5d0ba15
     layer: 110
     haloRadius: 0
     haloRadiusTo: 16
-    radius: 4
+    radius: 0
     radiusTo: 4
     triLength: 0
     triLengthTo: 4
@@ -173,9 +173,9 @@ parts: [
                     op: curve
                     interp: pow5In
                 }
-				                {
+				{
                     op: delay
-                    amount: 0.9
+                    amount: 0.8
                 }
             ]
         }
