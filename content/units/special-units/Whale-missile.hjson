@@ -430,9 +430,9 @@ interp: pow3Out
       frontColor: ffffff
       height: 8
       width: 6
-      lifetime: 53
+      lifetime: 54
       damage: 38
-      speed: 4.8
+      speed: 4
       trailColor: 5fac9e
       trailLength: 4
       trailWidth: 1.3
@@ -441,9 +441,9 @@ interp: pow3Out
       collidesTiles: true
       collidesAir: false
 	  sprite: azimut-hitsliceb
-	  drag: 0.01
+	  drag: 0.006
 	  homing: true
-	  homingPower: 0.1
+	  homingPower: 0.15
 	  homingDelay: 4
 	  homingRange: 60
 	  waveMag: 8
