@@ -104,6 +104,10 @@ parts: [
                     op: curve
                     interp: pow5In
                 }
+								{
+                    op: delay
+                    amount: -0.25
+                }
             ]
         }
       }
@@ -126,6 +130,10 @@ parts: [
                 {
                     op: curve
                     interp: pow5In
+                }
+								{
+                    op: delay
+                    amount: -0.25
                 }
             ]
         }
@@ -150,6 +158,10 @@ parts: [
                     op: curve
                     interp: pow5In
                 }
+				{
+                    op: delay
+                    amount: -0.25
+                }
             ]
         }
       }
@@ -161,11 +173,39 @@ parts: [
     layer: 110
     haloRadius: 0
     haloRadiusTo: 17
-    radius: 0
+    radius: 5
     radiusTo: 5
-    triLength: 0
+    triLength: 3
     triLengthTo: 5
     haloRotateSpeed: -1.5
+	            progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow2In
+                }
+				{
+                    op: delay
+                    amount: 0.25
+                }
+            ]
+        }
+      }
+	  	  	  {
+    type: HaloPart
+    tri: true
+    shapes: 6
+    color: b5d0ba
+    layer: 110
+    haloRadius: 0
+    haloRadiusTo: 16
+    radius: 5
+    radiusTo: 5
+    triLength: 3
+    triLengthTo: 5
+    haloRotateSpeed: -1.5
+	shapeRotation: 180
 	            progress: {
             type: life
             ops: [
