@@ -165,6 +165,8 @@ parts: [
     radiusTo: 4
     triLength: 0
     triLengthTo: 4
+    haloRotateSpeed: 1.2
+	            progress: {
             type: life
             ops: [
                 {
