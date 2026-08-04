@@ -444,8 +444,8 @@ interp: pow3Out
 	  drag: 0.01
 	  homing: true
 	  homingPower: 0.1
-	  homingDelay: 9
-	  homingRange: 20
+	  homingDelay: 4
+	  homingRange: 60
 	  waveMag: 8
 	  waveScl: 12
       hitEffect: {
