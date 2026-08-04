@@ -19,12 +19,12 @@ envDisabled: 0
 envEnabled: -1
 
 missileAccelTime: 10
-lifetime: 150
+lifetime: 180
 rotateSpeed: 0.8
 fogRadius: 8
 maxRange: 20
 health: 80
-speed: 3
+speed: 2.5
 armor: 1
 homingDelay: 30
 deathExplosionEffect: none
