@@ -19,7 +19,7 @@ envDisabled: 0
 envEnabled: -1
 
 missileAccelTime: 10
-lifetime: 180
+lifetime: 181
 rotateSpeed: 0.8
 fogRadius: 8
 maxRange: 20
@@ -334,6 +334,93 @@ interp: pow3Out
 				interp:pow3Out
 				}
 			]
+    }
+}
+{
+    reload: 5000
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+	shootOnDeath: false
+		  shoot: {
+    type: ShootSpread
+    firstShotDelay: 180
+    }
+    bullet: {
+        type: BasicBulletType
+    type: ExplosionBulletType
+    collidesAir: false
+    despawnShake: 1.2
+    maxRange: 6
+
+    buildingDamageMultiplier: 1.5
+
+    splashDamageRadius: 38
+    splashDamage: 115
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        despawnEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: true
+		shootEffect:[{
+            particles: 1
+            spin:-1.5
+            length: 0
+            lifetime: 35
+            region: azimut-parallel
+            sizeFrom: 33
+            sizeChangeStart: 18
+            sizeTo: 0
+            colorFrom: a4f0d780
+            colorTo: 5fac9e00
+          }
+		  {
+            particles: 1
+            spin:-1.5
+            length: 0
+            lifetime: 35
+            region: azimut-parallel
+            sizeFrom: 33
+            sizeChangeStart: 18
+            sizeTo: 0
+            colorFrom: a4f0d780
+            colorTo: 5fac9e00
+			baseRotation: 45
+          }
+		  		  {
+            particles: 1
+            spin:-1.5
+            length: 0
+            lifetime: 35
+            region: azimut-parallel
+            sizeFrom: 33
+            sizeChangeStart: 18
+            sizeTo: 0
+            colorFrom: a4f0d780
+            colorTo: 5fac9e00
+			baseRotation: 90
+          }
+		  ]
     }
 }
     ]
