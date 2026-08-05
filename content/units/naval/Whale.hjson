@@ -182,15 +182,12 @@ weapons: [
     bullet: {
       keepVelocity: false
       lifetime: 60
-      drag: -0.024
-      damage: 17
+      drag: 0.024
+      damage: 10
       height: 9
-      speed: 1.4
+      speed: 3.5
       width: 5
       type: BasicBulletType
-      homingPower: 0.02
-      homingRange: 50
-      homingDelay: 17
       frontColor: ffffff
       backColor: a4f0d7
       trailColor: a4f0d7
@@ -198,24 +195,36 @@ weapons: [
       trailLength: 6
 	  shootEffect: none
       despawnEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 22
-        sizeFrom: 0
-        sizeTo: 4
-        colorFrom: a4f0d7
-        colorTo: a4f0d700
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: a4f0d7
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: a4f0d7
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: a4f0d7
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
       }
       hitEffect: {
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 22
-        sizeFrom: 0
-        sizeTo: 4
-        colorFrom: a4f0d7
-        colorTo: a4f0d700
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: a4f0d7
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: a4f0d7
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: a4f0d7
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
       }
     }
 }

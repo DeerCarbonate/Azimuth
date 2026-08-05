@@ -43,7 +43,7 @@ abilities: [
     {
     type: EnergyFieldAbility
     maxTargets: 7
-    damage: 20
+    damage: 18
     reload: 10
     range: 83
 	color: a4f0d7
@@ -285,8 +285,8 @@ bullet: {
 
     buildingDamageMultiplier: 1.25
 
-    splashDamageRadius: 35
-    splashDamage: 85
+    splashDamageRadius: 30
+    splashDamage: 75
 
     hitSound: energy-blade-hit
 shootEffect: [
