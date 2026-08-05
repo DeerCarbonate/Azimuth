@@ -182,10 +182,10 @@ weapons: [
     bullet: {
       keepVelocity: false
       lifetime: 60
-      drag: 0.024
+      drag: 0.022
       damage: 10
       height: 9
-      speed: 3.5
+      speed: 4
       width: 5
       type: BasicBulletType
       frontColor: ffffff
