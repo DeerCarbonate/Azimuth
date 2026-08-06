@@ -23,7 +23,7 @@ lifetime: 181
 rotateSpeed: 0.8
 fogRadius: 8
 maxRange: 20
-health: 80
+health: 65
 speed: 2.5
 armor: 1
 homingDelay: 30
