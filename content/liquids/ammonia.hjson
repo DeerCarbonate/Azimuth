@@ -1,24 +1,14 @@
-{
-  "color": "ceddd4",
-  "barColor": "ceddd4",
-  "gasColor": "b6cebf92",
-research: {
-  parent: "venerium"
-}
-  "temperature": 0.2,
-  "flammability": 0.0,
-  "explosiveness": 0.0,
-  "liquid": true,
-  "explosive": false,
-   coolant: true
-  "liquid": {
-    "cap": 3,
-    "explosive": true,
-    "flammable": false,
-    "viscosity": 0.6,
-    "heatCapacity": 0.7,
+  color: "ceddd4"
+  barColor: "ceddd4"
+  gasColor: "b6cebf92"
+  research: {
+    parent: "venerium"
   }
-  "hiddenOnPlanets": [
-		"serpulo",
-	]
-}
+  temperature: 0.2
+  flammability: 0.0
+  explosiveness: 0.0
+  coolant: true
+  cap: 3
+  flammable: false
+  viscosity: 0.6
+  heatCapacity: 0.7

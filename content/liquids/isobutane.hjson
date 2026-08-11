@@ -1,20 +1,8 @@
-  "color": "9a6a58",
-  "barColor": "663f3f",
-  "gasColor": "9a6a5892",
-  "research": "venerium",
-  "temperature": 0.3,
-  "flammability": 0.45,
-  "explosiveness": 0.0,
-  "liquid": true,
-  "explosive": false,
-  "liquid": {
-    "cap": 3,
-    "explosive": true,
-    "flammable": true,
-    "viscosity": 0.6,
-	"heatCapacity": 0.5,
-  }
-  "hiddenOnPlanets": [
-		"serpulo",
-		"erekir",
-	]
+  color: 9a6a58
+  barColor: 663f3f
+  gasColor: 9a6a5892
+  research: venerium
+  temperature: 0.3
+  flammability: 0.45
+  explosiveness: 0.0
+  liquid: true

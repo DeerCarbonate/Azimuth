@@ -58,21 +58,21 @@ deathExplosionEffect: {
       colorFrom: f6afdd84
       colorTo: b0b0b000
     }
-	    {
-          type: ParticleEffect
-          followParent: false
-          length: 0
-          lifetime: 35
-          particles: 1
-          cone: 0
-          region: azimut-shockwave
-          sizeFrom: 16
-          sizeTo: 19
-		  colorFrom: f6afdd
-          colorTo: b0b0b000
-          baseRotation: 180
-          interp: pow3Out
-        }
+    {
+      type: ParticleEffect
+      followParent: false
+      length: 0
+      lifetime: 35
+      particles: 1
+      cone: 0
+      region: azimut-shockwave
+      sizeFrom: 16
+      sizeTo: 19
+      colorFrom: f6afdd
+      colorTo: b0b0b000
+      baseRotation: 180
+      interp: pow3Out
+    }
   ]
 }
 abilities: [
@@ -154,7 +154,7 @@ weapons: [
     x: 0
     y: 1.95
     shoot: {
-      type: shootSpread
+      type: ShootSpread
       shots: 5
       spread: 5
     }
@@ -173,7 +173,7 @@ weapons: [
       trailColor: d690d3
       trailWidth: 0.9
       trailLength: 12
-	  smokeEffect: none
+      smokeEffect: none
       shootEffect: {
         type: WaveEffect
         startDelay: 0
@@ -188,13 +188,12 @@ weapons: [
         rotWithParent: true
         interp: exp5Out
         sizeInterp: exp5In
-        despawnEffect: none
       }
       collidesTiles: true
       keepVelocity: false
       collidesAir: false
       splashDamageRadius: 2
-	  despawnEffect: none
+      despawnEffect: none
       hitEffect: {
         type: ExplosionEffect
         lifetime: 15

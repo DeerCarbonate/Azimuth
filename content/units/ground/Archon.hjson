@@ -41,7 +41,7 @@ weapons: [
     x: 0
     y: 0
     shootY: 1.2
-	
+
     mirror: false
     alternate: false
 
@@ -65,91 +65,91 @@ weapons: [
     }
 
     parts: [
-	  {
-    type: FlarePart
-    sides: 2
-    color1: 00000000
-    radius: 0
-    radiusTo: 30
-    stroke: 24
-    y: -0.1
-    progress: charge
-    layer: 101
-    weaponIndex: 0
-  }
-  {
-    type: FlarePart
-    sides: 2
-    color1: cc918bbb
-    radius: 4
-    radiusTo: 60
-    stroke: 7
-    innerRadScl: 0.70
-    y: -0.1
-    progress: charge
-    layer: 101
-    weaponIndex: 0
-  }
-	  {
-    type: RegionPart
-    name: circle
-    blending: additive
-    outline: false
-	   under: true
-    layer: 60
-    color: cc918b
-    growProgress: recoil
-    xScl: 0.19
-    yScl: 0.19
-    growX: -0.12
-    growY: -0.12
-    y: -0.1
-    weaponIndex: 0
-  }
-  {
-    type: RegionPart
-    name: circle
-    blending: additive
-    outline: false
-	under: true
-    layer: 60
-    color: ffffff
-    growProgress: recoil
-    xScl: 0.1
-    yScl: 0.1
-    growX: -0.07
-    growY: -0.07
-    y: -0.1
-    weaponIndex: 0
-  }
-  {
-    suffix: -s
-    mirror: true
-    outlineColor: 22251b
-    outlineRadius: 0
-	under: true
-    progress: {
-      type: warmup
-      ops: [
-		  {
-		     op: delay
-			 amount: 0.23
-		  }
-		  {
-		     op: curve
-			 interp: pow3In
-	      }
-		  {
-		     op: curve
-			 interp: pow3Out
-		  }
-      ]
-    }
-    moveY: -1
-    moveX: -3.7
-    moveRot: 0
-    x: 0
-    y: 0,
+      {
+        type: FlarePart
+        sides: 2
+        color1: 00000000
+        radius: 0
+        radiusTo: 30
+        stroke: 24
+        y: -0.1
+        progress: charge
+        layer: 101
+        weaponIndex: 0
+      }
+      {
+        type: FlarePart
+        sides: 2
+        color1: cc918bbb
+        radius: 4
+        radiusTo: 60
+        stroke: 7
+        innerRadScl: 0.70
+        y: -0.1
+        progress: charge
+        layer: 101
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: circle
+        blending: additive
+        outline: false
+        under: true
+        layer: 60
+        color: cc918b
+        growProgress: recoil
+        xScl: 0.19
+        yScl: 0.19
+        growX: -0.12
+        growY: -0.12
+        y: -0.1
+        weaponIndex: 0
+      }
+      {
+        type: RegionPart
+        name: circle
+        blending: additive
+        outline: false
+        under: true
+        layer: 60
+        color: ffffff
+        growProgress: recoil
+        xScl: 0.1
+        yScl: 0.1
+        growX: -0.07
+        growY: -0.07
+        y: -0.1
+        weaponIndex: 0
+      }
+      {
+        suffix: -s
+        mirror: true
+        outlineColor: 22251b
+        outlineRadius: 0
+        under: true
+        progress: {
+          type: warmup
+          ops: [
+            {
+              op: delay
+              amount: 0.23
+            }
+            {
+              op: curve
+              interp: pow3In
+            }
+            {
+              op: curve
+              interp: pow3Out
+            }
+          ]
+        }
+        moveY: -1
+        moveX: -3.7
+        moveRot: 0
+        x: 0
+        y: 0
 
         children: [
           {
@@ -197,21 +197,21 @@ weapons: [
       sprite: circle-bullet
 
       shootEffect: {
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 45
-				sizeFrom: 7
-				sizeTo: 80
-				strokeFrom: 8
-				strokeTo: 5
-   colorTo: f0aba400
-				interp:pow3Out
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 45
+        sizeFrom: 7
+        sizeTo: 80
+        strokeFrom: 8
+        strokeTo: 5
+        colorTo: f0aba400
+        interp: pow3Out
       }
       damage: 70
       shootSound: explosionNavanax
-	  hitSound: explosionArtillery
-	  recoil: 0.8
+      hitSound: explosionArtillery
+      recoil: 0.8
 
       pierce: true
       pierceBuilding: true
@@ -245,241 +245,253 @@ weapons: [
         speed: 0
         collides: false
         hitEffect: none
-        despawnEffect: [
-          {
-            type: RadialEffect
-            lengthOffset: 52
-            amount: 6
-            rotationSpacing: 60
-            effect: {
-              type: ParticleEffect
-              lifetime: 50
-              colorFrom: f6afdd00
-              colorTo: f6afdd
-              particles: 1
-              cone: 3
-              length: -54
-              sizeFrom: 2.6
-              sizeTo: 1
-              interp: pow3Out
+        despawnEffect: {
+          type: MultiEffect
+          effects: [
+            {
+              type: RadialEffect
+              lengthOffset: 52
+              amount: 6
+              rotationSpacing: 60
+              effect: {
+                type: ParticleEffect
+                lifetime: 50
+                colorFrom: f6afdd00
+                colorTo: f6afdd
+                particles: 1
+                cone: 3
+                length: -54
+                sizeFrom: 2.6
+                sizeTo: 1
+                interp: pow3Out
+              }
             }
-          }
-          {
-            type: RadialEffect
-            lengthOffset: 52
-            amount: 6
-            rotationSpacing: 60
-            rotationOffset: 15
-            effect: {
-              type: ParticleEffect
-              startDelay: 15
-              lifetime: 50
-              randLength: false
-              colorFrom: f6afdd00
-              colorTo: f6afdd
-              particles: 1
-              cone: 3
-              length: -54
-              sizeFrom: 2.6
-              sizeTo: 1
-              interp: pow3Out
+            {
+              type: RadialEffect
+              lengthOffset: 52
+              amount: 6
+              rotationSpacing: 60
+              rotationOffset: 15
+              effect: {
+                type: ParticleEffect
+                startDelay: 15
+                lifetime: 50
+                randLength: false
+                colorFrom: f6afdd00
+                colorTo: f6afdd
+                particles: 1
+                cone: 3
+                length: -54
+                sizeFrom: 2.6
+                sizeTo: 1
+                interp: pow3Out
+              }
             }
-          }
-          {
-            type: RadialEffect
-            lengthOffset: 52
-            amount: 6
-            rotationSpacing: 60
-            rotationOffset: 30
-            effect: {
-              type: ParticleEffect
-              startDelay: 30
-              lifetime: 50
-              randLength: false
-              colorFrom: f6afdd00
-              colorTo: f6afdd
-              particles: 1
-              cone: 3
-              length: -54
-              sizeFrom: 3
-              sizeTo: 1
-              interp: pow3Out
+            {
+              type: RadialEffect
+              lengthOffset: 52
+              amount: 6
+              rotationSpacing: 60
+              rotationOffset: 30
+              effect: {
+                type: ParticleEffect
+                startDelay: 30
+                lifetime: 50
+                randLength: false
+                colorFrom: f6afdd00
+                colorTo: f6afdd
+                particles: 1
+                cone: 3
+                length: -54
+                sizeFrom: 3
+                sizeTo: 1
+                interp: pow3Out
+              }
             }
-          }
-          {
-            type: RadialEffect
-            lengthOffset: 52
-            amount: 6
-            rotationSpacing: 60
-            rotationOffset: 45
-            effect: {
-              type: ParticleEffect
-              startDelay: 15
-              lifetime: 30
-              randLength: false
-              colorFrom: f6afdd00
-              colorTo: f6afdd
-              particles: 1
-              cone: 3
-              length: -54
-              sizeFrom: 3
-              sizeTo: 1
-              interp: pow3Out
+            {
+              type: RadialEffect
+              lengthOffset: 52
+              amount: 6
+              rotationSpacing: 60
+              rotationOffset: 45
+              effect: {
+                type: ParticleEffect
+                startDelay: 15
+                lifetime: 30
+                randLength: false
+                colorFrom: f6afdd00
+                colorTo: f6afdd
+                particles: 1
+                cone: 3
+                length: -54
+                sizeFrom: 3
+                sizeTo: 1
+                interp: pow3Out
+              }
             }
-          }
-        ]
+          ]
+        }
       }
 
       collidesTiles: true
       collidesGround: true
 
-      despawnEffect: [
-        {
-          particles: 1
-          length: 0
-          lifetime: 83
-          sizeFrom: 16.1
-          sizeTo: 16.1
-          colorFrom: f0aba4
-          colorTo: f0aba4
-          startDelay: 0
-        }
-        {
-          particles: 1
-          length: 0
-          lifetime: 83
-          region: azimut-shockwave
-          sizeFrom: 80
-          sizeTo: 0
-          colorFrom: f0aba400
-          startDelay: 5
-        }
-        {
-          particles: 1
-          length: 0
-          lifetime: 65
-          region: azimut-shockwave
-          sizeFrom: 0
-          sizeTo: 160
-          colorTo: f0aba400
-          startDelay: 79
-		  interp:pow3Out
-        }
-		{
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 65
-				sizeFrom: 7
-				sizeTo: 160
-				strokeFrom: 10
-				strokeTo: 10
-                colorTo: f0aba400
-				interp:pow3Out
-				startDelay: 79
-		}
-        {
-          particles: 1
-          length: 0
-          lifetime: 65
-          sizeFrom: 16.1
-          sizeTo: 0
-          colorFrom: f0aba4
-          colorTo: f0aba488
-          startDelay: 79
-        }
-        {
-          particles: 1
-          length: 0
-          lifetime: 65
-          sizeFrom: 16.1
-          sizeTo: 0
-          colorFrom: f0aba4
-          colorTo: f0aba488
-          startDelay: 79
-        }
-		{
-  type: ParticleEffect
-  particles: 16
-  lifetime: 70
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 83
+            sizeFrom: 16.1
+            sizeTo: 16.1
+            colorFrom: f0aba4
+            colorTo: f0aba4
+            startDelay: 0
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 83
+            region: azimut-shockwave
+            sizeFrom: 80
+            sizeTo: 0
+            colorFrom: f0aba400
+            startDelay: 5
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 65
+            region: azimut-shockwave
+            sizeFrom: 0
+            sizeTo: 160
+            colorTo: f0aba400
+            startDelay: 79
+            interp: pow3Out
+          }
+          {
+            type: WaveEffect
+            rotWithParent: true
+            followParent: true
+            lifetime: 65
+            sizeFrom: 7
+            sizeTo: 160
+            strokeFrom: 10
+            strokeTo: 10
+            colorTo: f0aba400
+            interp: pow3Out
+            startDelay: 79
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 65
+            sizeFrom: 16.1
+            sizeTo: 0
+            colorFrom: f0aba4
+            colorTo: f0aba488
+            startDelay: 79
+          }
+          {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 65
+            sizeFrom: 16.1
+            sizeTo: 0
+            colorFrom: f0aba4
+            colorTo: f0aba488
+            startDelay: 79
+          }
+          {
+            type: ParticleEffect
+            particles: 16
+            lifetime: 70
 
-  length: 75
-  baseLength: 0
+            length: 75
+            baseLength: 0
 
-  cone: 360
+            cone: 360
 
-  sizeFrom: 0
-  sizeTo: 0
+            sizeFrom: 0
+            sizeTo: 0
 
-  strokeFrom: 4
-  strokeTo: 4
+            strokeFrom: 4
+            strokeTo: 4
 
-  colorFrom: f0aba4
-  colorTo: f0aba400
+            colorFrom: f0aba4
+            colorTo: f0aba400
 
-  line: true
-  interp: pow3Out
+            line: true
+            interp: pow3Out
 
-  startDelay: 79
+            startDelay: 79
+          }
+        ]
       }
-
-      ]
 
       trailChance: 1
       trailRotation: true
       trailInterval: 4.2
 
-      trailEffect: [
-        {
-          type: ParticleEffect
-          lifetime: 170
-          colorFrom: ffbfad
-          colorTo: af776500
-          particles: 1
-          cone: 360
-          length: 8
-          baseLength: 1
-          lightScl: 3
-          lightOpacity: 2
-          spin: 0
-          sizeFrom: 6.5
-          sizeTo: 0.9
-          offset: 1
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-        {
-          type: ParticleEffect
-          lifetime: 170
-          colorFrom: ffbfad
-          colorTo: af776500
-          particles: 1
-          cone: 360
-          length: 8
-          baseLength: 1
-          lightScl: 3
-          lightOpacity: 2
-          spin: 0
-          sizeFrom: 6.5
-          sizeTo: 0.9
-          offset: 1
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-      ]
+      trailEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            lifetime: 170
+            colorFrom: ffbfad
+            colorTo: af776500
+            particles: 1
+            cone: 360
+            length: 8
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6.5
+            sizeTo: 0.9
+            offset: 1
+            interp: exp5Out
+            sizeInterp: exp5In
+          }
+          {
+            type: ParticleEffect
+            lifetime: 170
+            colorFrom: ffbfad
+            colorTo: af776500
+            particles: 1
+            cone: 360
+            length: 8
+            baseLength: 1
+            lightScl: 3
+            lightOpacity: 2
+            spin: 0
+            sizeFrom: 6.5
+            sizeTo: 0.9
+            offset: 1
+            interp: exp5Out
+            sizeInterp: exp5In
+          }
+        ]
+      }
 
       fragBullets: 1
-	  fragOnHit: false
+      fragOnHit: false
       fragOnDespawn: true
       fragOnAbsorb: false
-
 
       fragBullet: {
         type: BasicBulletType
         sprite: circle-bullet
-		despawnHit: true
-	    hitSound: explosionReactor2
-		buildingDamageMultiplier: 0.6
+        despawnHit: true
+        hitSound: explosionReactor2
+        buildingDamageMultiplier: 0.6
 
         splashDamage: 280
         splashDamageRadius: 71
@@ -512,51 +524,51 @@ weapons: [
         homingPower: 0
         homingDelay: 0
         homingRange: 0
-		
-	  pierce: true
-      pierceBuilding: true
-      pierceCap: 25
-	  
-      fragBullets: 19
-      fragLifeMin: 1
-      fragLifeMax: 2
-	  fragOnDespawn: true
-	  fragBullet: {
-        type: BasicBulletType
-        sprite: circle-bullet
-		buildingDamageMultiplier: 0.6
 
-        damage: 80
-        lifetime: 120
-        speed: 1.63
+        pierce: true
+        pierceBuilding: true
+        pierceCap: 25
 
-        trailWidth: 1.8
-        trailLength: 34
-		
-        weaveMag: 3
-        weaveScale: 7
+        fragBullets: 19
+        fragLifeMin: 1
+        fragLifeMax: 2
+        fragOnDespawn: true
+        fragBullet: {
+          type: BasicBulletType
+          sprite: circle-bullet
+          buildingDamageMultiplier: 0.6
 
-        backColor: ffbfad
-        frontColor: ffbfad
-        trailColor: ffbfad
+          damage: 80
+          lifetime: 120
+          speed: 1.63
 
-        width: 8
-        height: 8
+          trailWidth: 1.8
+          trailLength: 34
 
-        shrinkInterp: linear
-        shrinkX: 0.35
-        shrinkY: 0.35
+          weaveMag: 3
+          weaveScale: 7
 
-        hitEffect: none
-        despawnEffect: none
+          backColor: ffbfad
+          frontColor: ffbfad
+          trailColor: ffbfad
 
-        collidesTiles: true
-        collidesGround: true
+          width: 8
+          height: 8
 
-        homingPower: 0.08
-        homingDelay: 0.08
-        homingRange: 70
-      }
+          shrinkInterp: linear
+          shrinkX: 0.35
+          shrinkY: 0.35
+
+          hitEffect: none
+          despawnEffect: none
+
+          collidesTiles: true
+          collidesGround: true
+
+          homingPower: 0.08
+          homingDelay: 0.08
+          homingRange: 70
+        }
       }
     }
   }

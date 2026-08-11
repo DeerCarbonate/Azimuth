@@ -1,313 +1,312 @@
-	type: mech
-	flying: false
-	targetAir: false
-	rotateSpeed: 2
-	omniMove: true
-	outlineColor: 22251b
-	outlineRadius: 3
-	alwaysUnlocked: false
-	armor: 6
-	health: 910
-	speed: 0.49
-	hitSize: 12.5
-    healColor: f0aba488
-	shieldColor: f0aba488
-    stepSound: mechStepSmall
-    stepSoundPitch: 0.9
-    stepSoundVolume: 0.65
-	mechLegColor: 0f1405
-	mechFrontSway: 0.8
-	mechStepParticles: true
-	faceTarget: true
-	immunities: [burning]
-	research: {
-	parent: mech-editor
-	planet: gelion
+  type: mech
+  flying: false
+  targetAir: false
+  rotateSpeed: 2
+  omniMove: true
+  outlineColor: 22251b
+  outlineRadius: 3
+  alwaysUnlocked: false
+  armor: 6
+  health: 910
+  speed: 0.49
+  hitSize: 12.5
+  healColor: f0aba488
+  shieldColor: f0aba488
+  stepSound: mechStepSmall
+  stepSoundPitch: 0.9
+  stepSoundVolume: 0.65
+  mechLegColor: 0f1405
+  mechFrontSway: 0.8
+  mechStepParticles: true
+  faceTarget: true
+  immunities: [burning]
+  research: {
+    parent: mech-editor
+    planet: gelion
     requirements: [
-    venerium/120
-    cobalt/90
-    platinum/200
-]
-objectives: [
-    {
-      type: OnSector
-      preset: twos
-    }
-  ]
-}
-deathExplosionEffect: {
-  type: MultiEffect
-  effects: [
-    {
-      type: RadialEffect
-      rotationSpacing: 90
-      rotationOffset: 0
-      lengthOffset: 2
-      amount: 2
-      effect: {
+      venerium/120
+      cobalt/90
+      platinum/200
+    ]
+    objectives: [
+      {
+        type: OnSector
+        preset: twos
+      }
+    ]
+  }
+  deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+      {
+        type: RadialEffect
+        rotationSpacing: 90
+        rotationOffset: 0
+        lengthOffset: 2
+        amount: 2
+        effect: {
+          type: ParticleEffect
+          particles: 2
+          length: 120
+          lifetime: 290
+          sizeFrom: 1.7
+          sizeTo: 7.2
+          cone: 2
+          baseRotation: 73
+          useRotation: false
+          interp: pow5Out
+          colorFrom: cc918b84
+          colorTo: b0b0b000
+          layer: 100.3
+        }
+      }
+      {
         type: ParticleEffect
-        particles: 2
-        length: 120
-        lifetime: 290
-        sizeFrom: 1.7
-        sizeTo: 7.2
-        cone: 2
-        baseRotation: 73
-        useRotation: false
+        lifetime: 55
+        baseLength: 2
+        length: 25
+        particles: 5
+        sizeFrom: 5
+        sizeTo: 0
         interp: pow5Out
+        sizeInterp: pow5In
         colorFrom: cc918b84
         colorTo: b0b0b000
-        layer: 100.3
+      }
+      {
+        type: ParticleEffect
+        followParent: false
+        length: 0
+        lifetime: 35
+        particles: 1
+        cone: 0
+        region: azimut-shockwave
+        sizeFrom: 16
+        sizeTo: 19
+        colorFrom: cc918b
+        colorTo: b0b0b000
+        baseRotation: 180
+        interp: pow3Out
+      }
+    ]
+  }
+  weapons: [
+    {
+      name: Legate-weapon
+      x: 2.5
+      y: -4
+      shootY: 1.1
+      recoil: 1.5
+      rotationLimit: 120
+      mirror: false
+      alternate: false
+      rotate: true
+      rotateSpeed: 1.6
+      reload: 120
+      inaccuracy: 2
+      shootSound: shootDuo
+      controllable: true
+      aiControllable: true
+      shake: 0
+      parts: [
+        {
+          type: RegionPart
+          suffix: -barrel
+          under: true
+          mirror: false
+          heatProgress: recoil
+          progress: recoil
+          x: 0
+          y: 0
+          moveY: -1.2
+          heatColor: f0aba4
+        }
+      ]
+      bullet: {
+        shootEffect: {
+          type: ParticleEffect
+          colorFrom: cc918b
+          colorTo: ffbfad
+          particles: 3
+          cone: 12
+          length: 14
+          baseLength: 6
+          sizeFrom: 1.5
+          sizeTo: 0
+          offset: 1
+          lifetime: 8
+        }
+        smokeEffect: {
+          type: ParticleEffect
+          colorFrom: d88686
+          colorTo: 99999900
+          particles: 3
+          cone: 21
+          lifetime: 28
+          length: 23
+          interp: pow3Out
+          sizeInterp: pow2In
+          sizeFrom: 2.1
+          sizeTo: 0.3
+        }
+        type: BasicBulletType
+        damage: 32
+        lifetime: 29
+        collidesTiles: true
+        keepVelocity: false
+        collidesAir: false
+        width: 7.5
+        height: 7.5
+        speed: 6.1
+        backColor: af7765
+        frontColor: ffffff
+        trailColor: af7765
+        trailWidth: 1.6
+        trailLength: 5.5
+        splashDamageRadius: 8
+        splashDamage: 12
+        despawnEffect: none
+        scaleLife: false
+        fragBullets: 1
+        fragOnHit: true
+        fragOnDespawn: true
+        fragOnAbsorb: true
+        sprite: azimut-slicer
+        fragBullet: {
+          type: BulletType
+          spawnUnit: fire-missile
+          keepVelocity: false
+          collidesAir: false
+          speed: 0
+        }
+        hitEffect: {
+          type: MultiEffect
+          effects: [
+            {
+              type: WaveEffect
+              startDelay: 0
+              lifetime: 20.3
+              sizeFrom: 10
+              sizeTo: 11
+              strokeFrom: 21.7
+              strokeTo: 21.7
+              colorFrom: cc918b00
+              colorTo: cc918b15
+              followParent: true
+              rotWithParent: true
+              interp: pow3Out
+            }
+            {
+              type: WaveEffect
+              startDelay: 0
+              lifetime: 20.3
+              sizeFrom: 10
+              sizeTo: 13
+              strokeFrom: 23.2
+              strokeTo: 23.2
+              colorFrom: cc918b00
+              colorTo: cc918b15
+              followParent: true
+              rotWithParent: true
+              interp: pow3Out
+            }
+            {
+              type: WaveEffect
+              startDelay: 20
+              lifetime: 110.3
+              sizeFrom: 11
+              sizeTo: 11
+              strokeFrom: 21.7
+              strokeTo: 21.7
+              colorFrom: cc918b15
+              colorTo: cc918b15
+              followParent: true
+              rotWithParent: true
+              interp: pow3Out
+            }
+            {
+              type: WaveEffect
+              startDelay: 20
+              lifetime: 110.3
+              sizeFrom: 13
+              sizeTo: 13
+              strokeFrom: 23.2
+              strokeTo: 23.2
+              colorFrom: cc918b15
+              colorTo: cc918b15
+              followParent: true
+              rotWithParent: true
+              interp: pow3Out
+            }
+            {
+              type: WaveEffect
+              startDelay: 130
+              lifetime: 40.3
+              sizeFrom: 11
+              sizeTo: 11
+              strokeFrom: 21.7
+              strokeTo: 21.7
+              colorFrom: cc918b15
+              colorTo: cc918b00
+              followParent: true
+              rotWithParent: true
+              interp: pow3Out
+            }
+            {
+              type: WaveEffect
+              startDelay: 130
+              lifetime: 40.3
+              sizeFrom: 13
+              sizeTo: 13
+              strokeFrom: 23.2
+              strokeTo: 23.2
+              colorFrom: cc918b15
+              colorTo: cc918b00
+              followParent: true
+              rotWithParent: true
+              interp: pow3Out
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              startDelay: 0
+              length: 0
+              lifetime: 20.3
+              region: azimut-corcle
+              sizeFrom: 10
+              sizeTo: 28
+              colorFrom: cc918b00
+              colorTo: cc918b03
+              interp: pow3Out
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              startDelay: 20
+              length: 0
+              lifetime: 110
+              region: azimut-corcle
+              sizeFrom: 28
+              sizeTo: 28
+              colorFrom: cc918b03
+              colorTo: cc918b03
+              interp: pow3Out
+            }
+            {
+              type: ParticleEffect
+              particles: 1
+              startDelay: 130
+              length: 0
+              lifetime: 40.3
+              region: azimut-corcle
+              sizeFrom: 28
+              sizeTo: 10
+              colorFrom: cc918b03
+              colorTo: cc918b00
+              interp: pow3Out
+            }
+          ]
+        }
       }
     }
-    {
-      type: ParticleEffect
-      lifetime: 55
-      baseLength: 2
-      length: 25
-      particles: 5
-      sizeFrom: 5
-      sizeTo: 0
-      interp: pow5Out
-      sizeInterp: pow5In
-      colorFrom: cc918b84
-      colorTo: b0b0b000
-    }
-	    {
-          type: ParticleEffect
-          followParent: false
-          length: 0
-          lifetime: 35
-          particles: 1
-          cone: 0
-          region: azimut-shockwave
-          sizeFrom: 16
-          sizeTo: 19
-		  colorFrom: cc918b
-          colorTo: b0b0b000
-          baseRotation: 180
-          interp: pow3Out
-        }
   ]
-}
-	weapons: [
-		{
-		name: Legate-weapon
-		x: 2.5
-		y: -4
-		shootY: 1.1
-		recoil: 1.5
-		cooldowntime: 120
-		rotationLimit: 120
-		mirror: false
-		alternate: false
-		rotate: true
-		rotateSpeed: 1.6
-		reload: 120
-		inaccuracy: 2
-		shootSound: shootDuo
-		controllable: true
-		aiControllable: true
-		layer: 110
-		shake: 0
-		parts: [
-		    {
-      type: RegionPart,
-      suffix: -barrel,
-      under: true,
-      mirror: false,
-      heatProgress: recoil
-      progress: recoil
-	  x: 0,
-	  y: 0,
-	  moveY: -1.2
-      heatColor: f0aba4,
-      heatLayer: 1,
-    }
-		]
-		bullet: {
-		shootEffect: {
-		type: ParticleEffect 
-			colorFrom: cc918b
-			colorTo: ffbfad
-			particles: 3
-			cone: 12
-			length: 14
-			baseLength: 6
-			sizeFrom: 1.5
-			sizeTo: 0 
-			offset: 1
-			lifetime: 8
-		}
-			      smokeEffect: [{
-        type: ParticleEffect
-        colorFrom: d88686
-        colorTo: 99999900
-        particles: 3
-        cone: 21
-        lifetime: 28
-        length: 23
-        interp: pow3Out
-		sizeInterp: pow2In
-        sizeFrom: 2.1
-        sizeTo: 0.3
-        }
-	    ]
-		type: BasicBulletType
-		damage: 32
-		lifetime: 29
-		collidesTiles: true
-		keepVelocity: false
-		collidesAir: false
-		width: 7.5
-		height: 7.5
-		speed: 6.1
-		backColor: af7765
-		frontColor: ffffff
-		trailColor: af7765
-		trailWidth: 1.6
-		trailLength: 5.5
-		splashDamageRadius: 8
-		splashDamage: 12
-		despawnEffect: none
-		scaleLife: false
-	    fragBullets: 1
-	    fragOnHit: true
-        fragOnDespawn: true
-        fragOnAbsorb: true 
-		sprite: azimut-slicer
-    fragBullet: { 
-    type: BulletType
-    spawnUnit: fire-missile
-	keepVelocity: false
-    collidesAir: false
-	speed: 0
-	}
-hitEffect: {
-  type: MultiEffect,
-  effects: [
-      {
-      type: WaveEffect
-      startDelay: 0
-      lifetime: 20.3
-      sizeFrom: 10
-      sizeTo: 11
-      strokeFrom: 21.7
-      strokeTo: 21.7
-      colorFrom: cc918b00
-      colorTo: cc918b15
-      followParent: true
-      rotWithParent: true
-      interp: pow3Out
-    }
-	{
-      type: WaveEffect
-      startDelay: 0
-      lifetime: 20.3
-      sizeFrom: 10
-      sizeTo: 13
-      strokeFrom: 23.2
-      strokeTo: 23.2
-      colorFrom: cc918b00
-      colorTo: cc918b15
-      followParent: true
-      rotWithParent: true
-      interp: pow3Out
-    }
-    {
-      type: WaveEffect
-      startDelay: 20
-      lifetime: 110.3
-      sizeFrom: 11
-      sizeTo: 11
-      strokeFrom: 21.7
-      strokeTo: 21.7
-      colorFrom: cc918b15
-      colorTo: cc918b15
-      followParent: true
-      rotWithParent: true
-      interp: pow3Out
-    }
-	{
-      type: WaveEffect
-      startDelay: 20
-      lifetime: 110.3
-      sizeFrom: 13
-      sizeTo: 13
-      strokeFrom: 23.2
-      strokeTo: 23.2
-      colorFrom: cc918b15
-      colorTo: cc918b15
-      followParent: true
-      rotWithParent: true
-      interp: pow3Out
-    }
-    {
-      type: WaveEffect
-      startDelay: 130
-      lifetime: 40.3
-      sizeFrom: 11
-      sizeTo: 11
-      strokeFrom: 21.7
-      strokeTo: 21.7
-      colorFrom: cc918b15
-      colorTo: cc918b00
-      followParent: true
-      rotWithParent: true
-      interp: pow3Out
-    }
-    {
-      type: WaveEffect
-      startDelay: 130
-      lifetime: 40.3
-      sizeFrom: 13
-      sizeTo: 13
-      strokeFrom: 23.2
-      strokeTo: 23.2
-      colorFrom: cc918b15
-      colorTo: cc918b00
-      followParent: true
-      rotWithParent: true
-      interp: pow3Out
-    }
-	{
-      particles: 1
-      startDelay:0
-      length: 0
-      lifetime: 20.3
-      region: azimut-corcle
-      sizeFrom: 10
-	  sizeTo: 28
-	  colorFrom: cc918b00
-      colorTo: cc918b03
-	  interp: pow3Out
-     }
-	 {
-      particles: 1
-      startDelay:20
-      length: 0
-      lifetime: 110
-      region: azimut-corcle
-      sizeFrom: 28
-	  sizeTo: 28
-	  colorFrom: cc918b03
-      colorTo: cc918b03
-	  interp: pow3Out
-     }
-	 {
-      particles: 1
-      startDelay:130
-      length: 0
-      lifetime: 40.3
-      region: azimut-corcle
-      sizeFrom: 28
-	  sizeTo: 10
-	  colorFrom: cc918b03
-      colorTo: cc918b00
-	  interp: pow3Out
-     }
-  ]
-	}
-	}
-}
-]	

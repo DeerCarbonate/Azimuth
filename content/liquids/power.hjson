@@ -8,9 +8,6 @@ color: c5dbf100
 gasColor: c5dbf100
 barColor: c5dbf133
 lightColor: ffffff00
-  "liquid": {
-	"heatCapacity": 0.05,
-  }
 research: {
   parent: "isobutane"
 }

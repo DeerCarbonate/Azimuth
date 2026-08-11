@@ -1,23 +1,23 @@
-	type: mech
-	rotateSpeed: 2
-	omniMove": true
-	outlineColor: 22251b
-	outlineRadius: 3
-	alwaysUnlocked: false
-	armor: 8
-	health: 2000
-	speed: 0.46
-	hitSize: 14
-    stepSound: walkerStepSmall
-	mechLegColor: 0f1405
-	mechFrontSway: 0.4
-	mechStepParticles: true
-	faceTarget: true
-    canBoost: false
-	shieldColor: f0aba488
-	immunities: [burning]
-	healColor: f0aba488
-	deathExplosionEffect: {
+type: mech
+rotateSpeed: 2
+omniMove: true
+outlineColor: 22251b
+outlineRadius: 3
+alwaysUnlocked: false
+armor: 8
+health: 2000
+speed: 0.46
+hitSize: 14
+stepSound: walkerStepSmall
+mechLegColor: 0f1405
+mechFrontSway: 0.4
+mechStepParticles: true
+faceTarget: true
+canBoost: false
+shieldColor: f0aba488
+immunities: [burning]
+healColor: f0aba488
+deathExplosionEffect: {
   type: MultiEffect
   effects: [
     {
@@ -55,114 +55,114 @@
       colorFrom: f0aba484
       colorTo: b0b0b000
     }
-	    {
-          type: ParticleEffect
-          followParent: false
-          length: 0
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: azimut-shockwave
-          sizeFrom: 18
-          sizeTo: 22
-		  colorFrom: f0aba4
-          colorTo: b0b0b000
-          baseRotation: 180
-          interp: pow3Out
-        }
+    {
+      type: ParticleEffect
+      followParent: false
+      length: 0
+      lifetime: 45
+      particles: 1
+      cone: 0
+      region: azimut-shockwave
+      sizeFrom: 18
+      sizeTo: 22
+      colorFrom: f0aba4
+      colorTo: b0b0b000
+      baseRotation: 180
+      interp: pow3Out
+    }
   ]
 }
-	abilities: [
-    {
+abilities: [
+  {
     type: ShieldRegenFieldAbility
     reload: 1100
     amount: 30
     range: 12
     max: 60
-	        applyEffect: {
-            type: ParticleEffect
-            lifetime: 60
-            region: azimut-hollow-circle
-            sizeFrom: 2.8
-            sizeTo: 0
-            colorFrom: ffd37f10
-            colorTo: ffd37f
-            length: -35
-            baseLength: 35
-            particles: 5
-            interp: pow10In
-            sizeInterp: pow10In
-        }
+    applyEffect: {
+      type: ParticleEffect
+      lifetime: 60
+      region: azimut-hollow-circle
+      sizeFrom: 2.8
+      sizeTo: 0
+      colorFrom: ffd37f10
+      colorTo: ffd37f
+      length: -35
+      baseLength: 35
+      particles: 5
+      interp: pow10In
+      sizeInterp: pow10In
     }
-	]
-	parts: [
-		{
-        type: RegionPart
-        suffix: -heat
-        progress: warmup
-        blending: additive
-        color: 30fdf3
-        layerOffset: -0.1
-        outline: false
-		}
-	]
-		research: {
+  }
+]
+parts: [
+  {
+    type: RegionPart
+    suffix: -heat
+    progress: warmup
+    blending: additive
+    color: 30fdf3
+    layerOffset: -0.1
+    outline: false
+  }
+]
+research: {
   parent: Legate
   planet: gelion
-    requirements: [
-	  venerium/4000
-	  cobalt/3500
-	  platinum/2500
-]
-	objectives: [
+  requirements: [
+    venerium/4000
+    cobalt/3500
+    platinum/2500
+  ]
+  objectives: [
     {
-type: SectorComplete
-preset: sixth
+      type: SectorComplete
+      preset: sixth
     }
   ]
 }
-	weapons: [
-	{
-	name: Marshal-weapon
-	x: 6.5
-	y: -4.3
-	rotationLimit: 70
-	mirror: true
-	alternate: true
-	rotate: true
-	rotateSpeed: 5
-	reload: 62
-    velocityRnd:0.2
-	shootSound: shootCleroi
-	shootY: 4
-	shootStatus: ram
+weapons: [
+  {
+    name: Marshal-weapon
+    x: 6.5
+    y: -4.3
+    rotationLimit: 70
+    mirror: true
+    alternate: true
+    rotate: true
+    rotateSpeed: 5
+    reload: 62
+    velocityRnd: 0.2
+    shootSound: shootCleroi
+    shootY: 4
+    shootStatus: ram
     shootStatusDuration: 60
-	shoot: {
-		type: ShootSpread
-		firstShotDelay: 50
-		shots: 3
-	}
-				parts: [
-		            {
-                type: FlarePart
-                radius: 0
-                radiusTo: 8
-                stroke: 2.8
-				x: 0.9
-				y: -0.5
-                color1: af7765
-                color2: f0aba4
-                rotation: 40
-                rotMove: 75
-                followRotation: false
-                progress: {
-                    type: charge
-                    interp: pow3out
-                }
-            }
-		]
-		bullet: {
-			  smokeEffect: [{
+    shoot: {
+      type: ShootSpread
+      firstShotDelay: 50
+      shots: 3
+    }
+    parts: [
+      {
+        type: FlarePart
+        radius: 0
+        radiusTo: 8
+        stroke: 2.8
+        x: 0.9
+        y: -0.5
+        color1: af7765
+        color2: f0aba4
+        rotation: 40
+        rotMove: 75
+        followRotation: false
+        progress: {
+          type: charge
+          interp: pow3Out
+        }
+      }
+    ]
+    bullet: {
+      smokeEffect: {
         type: ParticleEffect
         colorFrom: d8868690
         colorTo: 99999900
@@ -171,68 +171,58 @@ preset: sixth
         lifetime: 31
         length: 34
         interp: pow3Out
-		sizeInterp: pow2In
+        sizeInterp: pow2In
         sizeFrom: 2.8
         sizeTo: 0.3
-        }
-	    ]
-shootEffect: {
-type: ParticleEffect
-lifetime: 18
-particles: 2
-offsetX: 0
-length: 20
-line: true
-strokeFrom: 1.7
-strokeTo: 0.9
-lenFrom: 4
-lenTo: 0 
-colorTo: ffbfad09
-colorFrom: cc918b
-cone: 15
-        }
-		type: BasicBulletType
-		lifetime: 44
-		width: 9
-		height: 9
-		speed: 3.6
-		backColor: ffbfad
-		frontColor: cc918b
-		trailColor: cc918b
-		trailWidth: 1.7
-		trailLength: 8
-		damage: 24
-		lifetime: 26
-		width: 10
-		height: 12
-		speed: 4.8
-		backColor: ffbfad
-		frontColor: cc918b
-		trailColor: cc918b
-		trailWidth: 1.2
-		trailLength: 4.5
-		despawnEffect: none
-		collidesTiles: true
-		keepVelocity: false
-		collidesAir: true
-		splashDamageRadius: 7
-	hitEffect: {
-    type: ExplosionEffect
-    lifetime: 45
-    waveColor: cc918b
-    waveStroke: 1.2
-    waveRad: 8.5
-    smokeColor: cc918b60
-    smokeSizeBase: 0
-    smokeSize: 5.5
-    smokes: 2
-    sparkColor: cc918b
-    sparkStroke: 1.6
-    sparkRad: 14.5
-    sparkLen: 2
-    sparks: 2
-    int: pow3out
-		}
-		}
-	}
-]	
+      }
+      shootEffect: {
+        type: ParticleEffect
+        lifetime: 18
+        particles: 2
+        offsetX: 0
+        length: 20
+        line: true
+        strokeFrom: 1.7
+        strokeTo: 0.9
+        lenFrom: 4
+        lenTo: 0
+        colorTo: ffbfad09
+        colorFrom: cc918b
+        cone: 15
+      }
+      type: BasicBulletType
+      lifetime: 26
+      width: 10
+      height: 12
+      speed: 4.8
+      backColor: ffbfad
+      frontColor: cc918b
+      trailColor: cc918b
+      trailWidth: 1.2
+      trailLength: 4.5
+      damage: 24
+      despawnEffect: none
+      collidesTiles: true
+      keepVelocity: false
+      collidesAir: true
+      splashDamageRadius: 7
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 45
+        waveColor: cc918b
+        waveStroke: 1.2
+        waveRad: 8.5
+        smokeColor: cc918b60
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 2
+        sparkColor: cc918b
+        sparkStroke: 1.6
+        sparkRad: 14.5
+        sparkLen: 2
+        sparks: 2
+        interp: pow3Out
+      }
+    }
+  }
+]

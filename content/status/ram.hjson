@@ -9,7 +9,6 @@ effect: {
         particles: 2
         lifetime: 35
         length: 30
-        int: pow2out
         sizeFrom: 3.2
         sizeTo: 0
 }
