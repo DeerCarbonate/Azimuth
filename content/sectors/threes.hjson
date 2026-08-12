@@ -3,6 +3,7 @@ captureWave: 0
 planet: gelion
 name: threes
 sector: 46
+outline: false
 research: {
 parent: twos
 requiresUnlock: false

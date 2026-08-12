@@ -4,6 +4,7 @@ addStartingItems: false
 startWaveTimeMultiplier: 6
 useAI: false
 showSectorLandInfo: true
+outline: false
 planet: gelion
 name: first
 sector: 2

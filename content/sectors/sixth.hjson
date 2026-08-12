@@ -3,6 +3,7 @@ difficulty: 3
 planet: gelion
 name: sixth
 sector: 42
+outline: false
 research: {
 parent: threes
 requiresUnlock: false

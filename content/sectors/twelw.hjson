@@ -2,6 +2,7 @@ difficulty: 4
 planet: gelion
 name: twelw
 sector: 25
+outline: false
 research: {
 parent: nine
 requiresUnlock: false

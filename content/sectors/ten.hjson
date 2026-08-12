@@ -2,6 +2,7 @@ difficulty: 0
 planet: gelion
 name: ten
 sector: 20
+outline: false
 research: {
 parent: nine
 requiresUnlock: false

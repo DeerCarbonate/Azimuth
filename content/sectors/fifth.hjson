@@ -3,6 +3,7 @@ difficulty: 3
 planet: gelion
 name: fifth
 sector: 18
+outline: false
 research: {
 parent: sixth
 requiresUnlock: false

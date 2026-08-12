@@ -2,6 +2,7 @@ difficulty: 5
 planet: gelion
 name: elev
 sector: 23
+outline: false
 research: {
 parent: eight
 requiresUnlock: false
