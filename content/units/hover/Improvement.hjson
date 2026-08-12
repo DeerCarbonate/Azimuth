@@ -142,7 +142,7 @@ weapons: [
     layerOffset: -0.0001
     rotateSpeed: 1000
     rotate: true
-    reload: 1400
+    reload: 2100
     display: false
     recoil: 0
     shake: 0
@@ -154,11 +154,6 @@ weapons: [
     shootSound: none
     shootEffect: none
     smokeEffect: none
-    shoot: {
-    type: ShootSpread
-    firstShotDelay: 0
-    shots: 1
-    }
     bullet: {
       type: BasicBulletType
       height: 0
@@ -188,11 +183,6 @@ weapons: [
     shootSound: none
     shootEffect: none
     smokeEffect: none
-    shoot: {
-    type: ShootSpread
-    firstShotDelay: 700
-    shots: 1
-    }
     bullet: {
       type: BasicBulletType
       height: 0
