@@ -138,6 +138,71 @@ parts: [
   }
 ]
 weapons: [
+    {
+    layerOffset: -0.0001
+    rotateSpeed: 1000
+    rotate: true
+    reload: 500
+    display: false
+    recoil: 0
+    shake: 0
+    x: 0
+    y: 0
+    alwaysShooting: true
+    shootStatus: core-acceleration
+    shootStatusDuration: 450
+    shootSound: none
+    shootEffect: none
+    smokeEffect: none
+    bullet: {
+      type: BasicBulletType
+      height: 0
+      width: 0
+      shootEffect: none
+      despawnEffect: none
+      hitEffect: none
+      smokeEffect: none
+      lifetime: 0
+      damage: 0
+      speed: 0
+    }
+  }
+      {
+    layerOffset: -0.0001
+    rotateSpeed: 1000
+    rotate: true
+    reload: 500
+    display: false
+    recoil: 0
+    shake: 0
+    x: 0
+    y: 0
+    alwaysShooting: true
+    shootStatus: core-instability
+    shootStatusDuration: 450
+    shootSound: none
+    shootEffect: none
+    smokeEffect: none
+        shoot: {
+      type: ShootSpread
+      firstShotDelay: 500
+      shotDelay: 0
+      spread: 0
+      shots: 1
+    }
+    bullet: {
+      type: BasicBulletType
+      height: 0
+      width: 0
+      shootEffect: none
+      despawnEffect: none
+      hitEffect: none
+      smokeEffect: none
+      lifetime: 0
+      damage: 0
+      speed: 0
+    }
+  }
   {
     name: improvement-weapon
     layerOffset: -0.01

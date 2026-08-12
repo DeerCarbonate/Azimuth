@@ -1,0 +1,4 @@
+disarm: false
+reloadMultiplier: 0.95
+healthMultiplier: 1.1
+effect: none
