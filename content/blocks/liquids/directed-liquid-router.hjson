@@ -4,7 +4,7 @@ size: 1
 solid: false
 underBullets: true
 health: 45
-liquidCapacity: 20
+liquidCapacity: 4
 liquidPadding: 2
 category: liquid
 research: {
