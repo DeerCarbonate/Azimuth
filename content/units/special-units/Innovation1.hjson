@@ -24,6 +24,7 @@ hitSize: 14
 drag: 0.02
 healColor: f0a4d988
 shieldColor: f0a4d988
+targetAir: false
 deathExplosionEffect: {
 type: MultiEffect
 effects: [

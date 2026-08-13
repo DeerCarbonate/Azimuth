@@ -20,6 +20,7 @@ healColor: f0a4d988
 shieldColor: f0a4d988
 canDrown: false
 drag: 0.03
+targetAir: false
 deathExplosionEffect: {
   type: MultiEffect
   effects: [
