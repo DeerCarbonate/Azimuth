@@ -3,7 +3,7 @@ squareSprite: false
 health: 850
 size: 3
 hasLiquids: true
-liquidCapacity: 2700
+liquidCapacity: 210
 category: liquid
 requirements: [
     "venerium/170",
