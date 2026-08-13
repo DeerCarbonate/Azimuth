@@ -18,7 +18,7 @@ trailLength: 25
 trailScl: 2.5
 waveTrailX: 5.5
 waveTrailY: -9
-range: 450
+range: 380
 	deathExplosionEffect: {
   type: MultiEffect
   effects: [
