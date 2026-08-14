@@ -19,7 +19,7 @@ envDisabled: 0
 envEnabled: -1
 
 missileAccelTime: 10
-lifetime: 156
+lifetime: 161
 rotateSpeed: 0.8
 fogRadius: 8
 maxRange: 20
@@ -352,7 +352,7 @@ interp: pow3Out
 	shootOnDeath: false
 		  shoot: {
     type: ShootSpread
-    firstShotDelay: 155
+    firstShotDelay: 160
     }
     bullet: {
     type: ExplosionBulletType
