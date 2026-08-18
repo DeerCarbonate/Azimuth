@@ -112,17 +112,14 @@ progress: {
   type: charge
   ops: [
     {
-      op: add
-      other: {
-        type: charge
-      }
-    }
-    {
-      op: clamp
+      op: sustain
+      offset: 0
+      grow: 0.3
+      sustain: 0.6
     }
     {
       op: curve
-      interp: pow5Out
+      interp: pow2Out
     }
   ]
 }
@@ -280,6 +277,7 @@ progress: {
 	  growX: 1
 	  growY: 1
       growProgress: warmup
+      layer: 75
     }
 	]
 abilities: [
