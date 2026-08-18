@@ -99,21 +99,22 @@ weapons: [{
 			color: fbace310
 			y: -1.2
 		}
-	  				{
-        type: HaloPart
-        tri: true
-        y: 4
-        triLength: 15
-        shapes: 1
-		    moveY: 0
-        radius: 0
-        radiusTo: 9
-        color: fbace3
-        shapeRotation: 0
-        layer: 100
-        progress: charge
-		weaponIndex: 1
-      }
+{
+  type: HaloPart
+  tri: true
+  y: 4.6
+  shapes: 1
+  moveY: 0
+  color: fbace3
+  shapeRotation: 0
+  layer: 100
+  progress: charge
+  weaponIndex: 1
+  radius: 9
+  radiusTo: 2
+  triLength: 2
+  triLengthTo: 15
+}
 	{
       type: RegionPart
       suffix: -caro
