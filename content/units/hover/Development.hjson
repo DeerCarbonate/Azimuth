@@ -183,6 +183,74 @@ progress: {
   triLength: 6
   triLengthTo: 11
 }
+{
+  type: HaloPart
+  tri: true
+  y: -28
+  x: 12
+  shapes: 1
+  moveY: 0
+  color: fbace370
+  shapeRotation: -220
+  layer: 100
+progress: {
+  type: charge
+  ops: [
+    {
+      op: add
+      other: {
+        type: recoil
+      }
+    }
+    {
+      op: clamp
+    }
+    {
+      op: curve
+      interp: pow2Out
+    }
+  ]
+}
+  weaponIndex: 1
+  radius: 0
+  radiusTo: 5
+  triLength: 6
+  triLengthTo: 11
+}
+{
+  type: HaloPart
+  tri: true
+  y: -28
+  x: -12
+  shapes: 1
+  moveY: 0
+  color: fbace370
+  shapeRotation: 220
+  layer: 100
+progress: {
+  type: charge
+  ops: [
+    {
+      op: add
+      other: {
+        type: recoil
+      }
+    }
+    {
+      op: clamp
+    }
+    {
+      op: curve
+      interp: pow2Out
+    }
+  ]
+}
+  weaponIndex: 1
+  radius: 0
+  radiusTo: 5
+  triLength: 6
+  triLengthTo: 11
+}
 	{
       type: RegionPart
       suffix: -caro
