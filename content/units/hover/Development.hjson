@@ -109,17 +109,20 @@ weapons: [{
   shapeRotation: 0
   layer: 100
 progress: {
-  type: charge
+  type: recoil
   ops: [
     {
-      op: sustain
-      offset: 0
-      grow: 0.3
-      sustain: 0.6
+      op: add
+      other: {
+        type: charge
+      }
+    }
+    {
+      op: clamp
     }
     {
       op: curve
-      interp: pow2Out
+      interp: pow3Out
     }
   ]
 }
@@ -277,7 +280,7 @@ progress: {
 	  growX: 1
 	  growY: 1
       growProgress: warmup
-      layer: 75
+      layer: 95
     }
 	]
 abilities: [
