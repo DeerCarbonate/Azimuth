@@ -125,7 +125,21 @@ weapons: [{
   color: fbace370
   shapeRotation: -110
   layer: 100
-  progress: charge
+  progress: {
+  type: charge
+  ops: [
+    {
+      op: max
+      other: {
+        type: recoil
+      }
+    }
+    {
+      op: curve
+      interp: pow3Out
+    }
+  ]
+}
   weaponIndex: 1
   radius: 0
   radiusTo: 5
@@ -142,7 +156,21 @@ weapons: [{
   color: fbace370
   shapeRotation: 110
   layer: 100
-  progress: charge
+  progress: {
+  type: charge
+  ops: [
+    {
+      op: max
+      other: {
+        type: recoil
+      }
+    }
+    {
+      op: curve
+      interp: pow3Out
+    }
+  ]
+}
   weaponIndex: 1
   radius: 0
   radiusTo: 5
