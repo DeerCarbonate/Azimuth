@@ -215,7 +215,7 @@ weapons: [
 
       pierce: true
       pierceBuilding: true
-      pierceCap: 4
+      pierceCap: 15
       absorbable: true
       hittable: true
 
