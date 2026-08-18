@@ -125,14 +125,17 @@ weapons: [{
   color: fbace370
   shapeRotation: -110
   layer: 100
-  progress: {
+progress: {
   type: charge
   ops: [
     {
-      op: max
+      op: add
       other: {
         type: recoil
       }
+    }
+    {
+      op: clamp
     }
     {
       op: curve
@@ -156,14 +159,17 @@ weapons: [{
   color: fbace370
   shapeRotation: 110
   layer: 100
-  progress: {
+progress: {
   type: charge
   ops: [
     {
-      op: max
+      op: add
       other: {
         type: recoil
       }
+    }
+    {
+      op: clamp
     }
     {
       op: curve
