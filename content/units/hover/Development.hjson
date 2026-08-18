@@ -497,15 +497,6 @@ abilities: [
 	shootSound: none
 	sectors: 0
     effectRadius: 0
-	hitEffect: {
-      length: 8
-      sizeFrom: 0
-      sizeTo: 4
-      sizeInterp: slope
-      colorFrom: b0b0b050
-      colorTo: b0b0b030
-	  particles: 2
-	  lifetime: 35
-    }
+	hitEffect: none
 }
 ]
