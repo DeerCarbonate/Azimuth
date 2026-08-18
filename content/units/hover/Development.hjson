@@ -107,7 +107,7 @@ weapons: [{
   moveY: 0
   color: fbace3
   shapeRotation: 0
-  layer: 100
+  layer: 60.9
   progress: charge
   weaponIndex: 1
   radius: 8
@@ -124,7 +124,7 @@ weapons: [{
   moveY: 0
   color: fbace3
   shapeRotation: -110
-  layer: 100
+  layer: 60.9
 progress: {
   type: charge
   ops: [
@@ -158,7 +158,7 @@ progress: {
   moveY: 0
   color: fbace3
   shapeRotation: 110
-  layer: 100
+  layer: 60.9
 progress: {
   type: charge
   ops: [
@@ -192,7 +192,7 @@ progress: {
   moveY: 0
   color: fbace3
   shapeRotation: -170
-  layer: 100
+  layer: 60.9
 progress: {
   type: charge
   ops: [
@@ -226,7 +226,7 @@ progress: {
   moveY: 0
   color: fbace3
   shapeRotation: 170
-  layer: 100
+  layer: 60.9
 progress: {
   type: charge
   ops: [
@@ -255,14 +255,14 @@ progress: {
     type: ShapePart
     hollow: true
     circle: true
-    layer: 109
+    layer: 60.9
     color: fbace3
     stroke: 0
-    strokeTo: 2
-    radius: 2
-    radiusTo: 8
-    x: -14
-    y: -14
+    strokeTo: 1.8
+    radius: 9
+    radiusTo: 9
+    x: -18
+    y: -9
     progress: {
   type: charge
   ops: [
@@ -286,14 +286,14 @@ progress: {
     type: ShapePart
     hollow: true
     circle: true
-    layer: 109
+    layer: 60.9
     color: fbace3
     stroke: 0
-    strokeTo: 2
-    radius: 2
-    radiusTo: 8
-    x: 14
-    y: -14
+    strokeTo: 1.8
+    radius: 9
+    radiusTo: 9
+    x: 18
+    y: -9
     progress: {
   type: charge
   ops: [
