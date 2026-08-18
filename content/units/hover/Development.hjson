@@ -122,7 +122,7 @@ progress: {
     }
     {
       op: curve
-      interp: pow3Out
+      interp: pow5Out
     }
   ]
 }
@@ -156,7 +156,7 @@ progress: {
     }
     {
       op: curve
-      interp: pow3Out
+      interp: pow5Out
     }
   ]
 }
@@ -190,7 +190,7 @@ progress: {
     }
     {
       op: curve
-      interp: pow3Out
+      interp: pow5Out
     }
   ]
 }
@@ -224,7 +224,7 @@ progress: {
     }
     {
       op: curve
-      interp: pow2Out
+      interp: pow5Out
     }
   ]
 }
@@ -258,7 +258,7 @@ progress: {
     }
     {
       op: curve
-      interp: pow2Out
+      interp: pow5Out
     }
   ]
 }
