@@ -117,12 +117,12 @@ weapons: [{
 	  				{
         type: HaloPart
         tri: true
-        y: 3
-        triLength: 19
+        y: 2.35
+        triLength: 15
         shapes: 1
-		moveY: 18
+		    moveY: 0
         radius: 0
-        radiusTo: 10.2
+        radiusTo: 9
         color: fbace335
         shapeRotation: 0
         layer: 100
