@@ -42,7 +42,7 @@ weapons: [{
     }
     bullet: {
       type: BulletType
-      recoil: 0.057
+      recoil: 0.063
       instantDisappear: true
       shootEffect: none
       smokeEffect: none
@@ -439,8 +439,8 @@ abilities: [
       {
     type: EnergyFieldAbility
     maxTargets: 5
-    damage: 6
-    reload: 5
+    damage: 8
+    reload: 9
     range: 10
 	color: fff4a3
 	status: none
@@ -469,7 +469,7 @@ abilities: [
       colorFrom: b0b0b050
       colorTo: b0b0b030
 	  particles: 2
-	  lifetime: 55
+	  lifetime: 35
     }
 }
 ]
