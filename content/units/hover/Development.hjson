@@ -102,7 +102,7 @@ weapons: [{
 {
   type: HaloPart
   tri: true
-  y: 4.6
+  y: 4.9
   shapes: 1
   moveY: 0
   color: fbace3
@@ -110,10 +110,10 @@ weapons: [{
   layer: 100
   progress: charge
   weaponIndex: 1
-  radius: 9
-  radiusTo: 2
+  radius: 9.5
+  radiusTo: 9.5
   triLength: 2
-  triLengthTo: 15
+  triLengthTo: 8
 }
 	{
       type: RegionPart
