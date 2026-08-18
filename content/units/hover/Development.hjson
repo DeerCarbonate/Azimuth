@@ -110,8 +110,8 @@ weapons: [{
   layer: 100
   progress: charge
   weaponIndex: 1
-  radius: 9
-  radiusTo: 9
+  radius: 8.5
+  radiusTo: 8.5
   triLength: 0
   triLengthTo: 9.5
 }
