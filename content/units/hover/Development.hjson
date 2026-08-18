@@ -107,8 +107,25 @@ weapons: [{
   moveY: 0
   color: fbace3
   shapeRotation: 0
-  layer: 95
-  progress: charge
+  layer: 100
+progress: {
+  type: charge
+  ops: [
+    {
+      op: add
+      other: {
+        type: charge
+      }
+    }
+    {
+      op: clamp
+    }
+    {
+      op: curve
+      interp: pow3Out
+    }
+  ]
+}
   weaponIndex: 1
   radius: 8
   radiusTo: 8
@@ -124,7 +141,7 @@ weapons: [{
   moveY: 0
   color: fbace3
   shapeRotation: -110
-  layer: 95
+  layer: 100
 progress: {
   type: charge
   ops: [
@@ -158,7 +175,7 @@ progress: {
   moveY: 0
   color: fbace3
   shapeRotation: 110
-  layer: 95
+  layer: 100
 progress: {
   type: charge
   ops: [
@@ -186,13 +203,13 @@ progress: {
 {
   type: HaloPart
   tri: true
-  y: -26
-  x: 12
+  y: -23
+  x: 13
   shapes: 1
   moveY: 0
   color: fbace3
-  shapeRotation: -170
-  layer: 95
+  shapeRotation: -155
+  layer: 100
 progress: {
   type: charge
   ops: [
@@ -220,13 +237,13 @@ progress: {
 {
   type: HaloPart
   tri: true
-  y: -26
-  x: -12
+  y: -23
+  x: -13
   shapes: 1
   moveY: 0
   color: fbace3
-  shapeRotation: 170
-  layer: 95
+  shapeRotation: 155
+  layer: 100
 progress: {
   type: charge
   ops: [
@@ -251,68 +268,6 @@ progress: {
   triLength: 6
   triLengthTo: 11
 }
-  {
-    type: ShapePart
-    hollow: true
-    circle: true
-    layer: 95
-    color: fbace3
-    stroke: 0
-    strokeTo: 1.5
-    radius: 9
-    radiusTo: 9
-    x: -15
-    y: -8
-    progress: {
-  type: charge
-  ops: [
-    {
-      op: add
-      other: {
-        type: recoil
-      }
-    }
-    {
-      op: clamp
-    }
-    {
-      op: curve
-      interp: pow2Out
-    }
-  ]
-}
-  }
-    {
-    type: ShapePart
-    hollow: true
-    circle: true
-    layer: 95
-    color: fbace3
-    stroke: 0
-    strokeTo: 1.5
-    radius: 9
-    radiusTo: 9
-    x: 15
-    y: -8
-    progress: {
-  type: charge
-  ops: [
-    {
-      op: add
-      other: {
-        type: recoil
-      }
-    }
-    {
-      op: clamp
-    }
-    {
-      op: curve
-      interp: pow2Out
-    }
-  ]
-}
-  }
 	{
       type: RegionPart
       suffix: -caro
