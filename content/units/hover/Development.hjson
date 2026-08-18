@@ -109,7 +109,7 @@ weapons: [{
   shapeRotation: 0
   layer: 100
 progress: {
-  type: recoil
+  type: charge
   ops: [
     {
       op: add
@@ -267,6 +267,142 @@ progress: {
   radiusTo: 5
   triLength: 0
   triLengthTo: 9
+}
+{
+  type: HaloPart
+  tri: true
+  y: -18
+  x: 20
+  shapes: 1
+  moveY: 0
+  color: fbace3
+  shapeRotation: 70
+  layer: 100
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: recoil
+        }
+      }
+      {
+        op: clamp
+      }
+      {
+        op: curve
+        interp: pow5Out
+      }
+    ]
+  }
+  weaponIndex: 1
+  radius: 5
+  radiusTo: 5
+  triLength: 0
+  triLengthTo: 4
+}
+{
+  type: HaloPart
+  tri: true
+  y: -18
+  x: -20
+  shapes: 1
+  moveY: 0
+  color: fbace3
+  shapeRotation: -70
+  layer: 100
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: recoil
+        }
+      }
+      {
+        op: clamp
+      }
+      {
+        op: curve
+        interp: pow5Out
+      }
+    ]
+  }
+  weaponIndex: 1
+  radius: 5
+  radiusTo: 5
+  triLength: 0
+  triLengthTo: 4
+}
+{
+  type: HaloPart
+  tri: true
+  y: -23
+  x: 13
+  shapes: 1
+  moveY: 0
+  color: fbace3
+  shapeRotation: 25
+  layer: 100
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: recoil
+        }
+      }
+      {
+        op: clamp
+      }
+      {
+        op: curve
+        interp: pow5Out
+      }
+    ]
+  }
+  weaponIndex: 1
+  radius: 5
+  radiusTo: 5
+  triLength: 0
+  triLengthTo: 4
+}
+{
+  type: HaloPart
+  tri: true
+  y: -23
+  x: -13
+  shapes: 1
+  moveY: 0
+  color: fbace3
+  shapeRotation: -25
+  layer: 100
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: recoil
+        }
+      }
+      {
+        op: clamp
+      }
+      {
+        op: curve
+        interp: pow5Out
+      }
+    ]
+  }
+  weaponIndex: 1
+  radius: 5
+  radiusTo: 5
+  triLength: 0
+  triLengthTo: 4
 }
 	{
       type: RegionPart
