@@ -123,7 +123,7 @@ weapons: [{
   shapes: 1
   moveY: 0
   color: fbace370
-  shapeRotation: 70
+  shapeRotation: -25
   layer: 100
   progress: charge
   weaponIndex: 1
@@ -135,12 +135,12 @@ weapons: [{
 {
   type: HaloPart
   tri: true
-  y: -12
-  x: -16.5
+  y: -16
+  x: -18
   shapes: 1
   moveY: 0
   color: fbace370
-  shapeRotation: -70
+  shapeRotation: 25
   layer: 100
   progress: charge
   weaponIndex: 1
