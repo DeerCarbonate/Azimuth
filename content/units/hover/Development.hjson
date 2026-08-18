@@ -190,8 +190,8 @@ progress: {
   x: 12
   shapes: 1
   moveY: 0
-  color: fbace370
-  shapeRotation: -175
+  color: fbace3
+  shapeRotation: -170
   layer: 100
 progress: {
   type: charge
@@ -224,8 +224,8 @@ progress: {
   x: -12
   shapes: 1
   moveY: 0
-  color: fbace370
-  shapeRotation: 175
+  color: fbace3
+  shapeRotation: 170
   layer: 100
 progress: {
   type: charge
@@ -251,6 +251,68 @@ progress: {
   triLength: 6
   triLengthTo: 11
 }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    layer: 109
+    color: fbace3
+    stroke: 0
+    strokeTo: 6
+    radius: 2
+    radiusTo: 2
+    x: -9
+    y: -20
+    progress: {
+  type: charge
+  ops: [
+    {
+      op: add
+      other: {
+        type: recoil
+      }
+    }
+    {
+      op: clamp
+    }
+    {
+      op: curve
+      interp: pow2Out
+    }
+  ]
+}
+  }
+    {
+    type: ShapePart
+    hollow: true
+    circle: true
+    layer: 109
+    color: fbace3
+    stroke: 0
+    strokeTo: 6
+    radius: 2
+    radiusTo: 2
+    x: 9
+    y: -20
+    progress: {
+  type: charge
+  ops: [
+    {
+      op: add
+      other: {
+        type: recoil
+      }
+    }
+    {
+      op: clamp
+    }
+    {
+      op: curve
+      interp: pow2Out
+    }
+  ]
+}
+  }
 	{
       type: RegionPart
       suffix: -caro
