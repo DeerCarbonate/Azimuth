@@ -186,12 +186,12 @@ progress: {
 {
   type: HaloPart
   tri: true
-  y: -28
+  y: -26
   x: 12
   shapes: 1
   moveY: 0
   color: fbace370
-  shapeRotation: -220
+  shapeRotation: -175
   layer: 100
 progress: {
   type: charge
@@ -220,12 +220,12 @@ progress: {
 {
   type: HaloPart
   tri: true
-  y: -28
+  y: -26
   x: -12
   shapes: 1
   moveY: 0
   color: fbace370
-  shapeRotation: 220
+  shapeRotation: 175
   layer: 100
 progress: {
   type: charge
