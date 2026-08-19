@@ -899,13 +899,12 @@ parts: [
     radiusTo: 40
     rotation: 0
     rotMove: 150
-    progress: {
+progress: {
   type: charge
   ops: [
     {
       op: curve
-      offset: 0
-      duration: 1
+      interp: pow2Out
     }
   ]
 }
@@ -921,13 +920,12 @@ parts: [
     radiusTo: 40
     rotation: 45
     rotMove: 75
-    progress: {
+progress: {
   type: charge
   ops: [
     {
       op: curve
-      offset: 0
-      duration: 1
+      interp: pow2Out
     }
   ]
 }
