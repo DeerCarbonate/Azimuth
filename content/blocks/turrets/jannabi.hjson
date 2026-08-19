@@ -899,10 +899,7 @@ parts: [
     radiusTo: 40
     rotation: 0
     rotMove: 150
-    progress: {
-      type: charge
-      op: curve
-    }
+    progress: charge
   }
   {
     type: FlarePart
@@ -915,10 +912,7 @@ parts: [
     radiusTo: 40
     rotation: 45
     rotMove: 75
-    progress: {
-      type: charge
-      op: curve
-    }
+    progress: charge
   }
   {
     type: EffectSpawnerPart
