@@ -119,13 +119,11 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     isobutane-shallow-liquid
     dark-isobutane-liquid
     dark-isobutane-shallow-liquid
-    venerium-crumbs
     venerium-floor
     veneriumtwo-floor
     venerium-env-wall
     venerium-crystall-big
     venerium-boulder
-    ferrite-crumbs
     ferrite-floor
     ferritetwo-floor
     ferrite-accumulation
@@ -143,17 +141,47 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     icy-floor
     icy-red-snow-floor
     icy-ashium-floor
-    broken-red-ice
     red-ice-ledge
     snowy-ashium-floor
     snowy-bargotwo-floor
-    snow-crumbs
     red-snow-floor
     snowdrift-floor
     red-snow-wall
     snowy-ledge
     snowy-corall
-    snowy-boulder
+    red-snow-boulder
+    ashium-floor
+    ashiumtwo-floor
+    ashium-wall
+    ashium-rock-big
+    ashium-craters
+    ashium-boulder
+    fallen-ashium-leaves
+    small-ashium-tree
+    blooming-ashium-tree
+    cerlin-floor
+    cerlin-wall
+    cerlin-boulder
+    cribalt-floor
+    cribalttwo-floor
+    cribalt-wall
+    fallen-crybalt-leaves
+    crybalt-smalltree
+    crybalt-tree
+    dead-branch
+    cribalt-boulder
+    venerium-crumbs
+    ferrite-crumbs
+    icy-floor
+    snow-crumbs
+    ashium-litter
+    crybalt-litter
+    ore-cobalt
+    ore-cobalt(wall)
+    ore-venerium
+    ore-raw-platinum
+    ore-sphalerite
+    ore-caterium(wall)
     platinum-smelter
     isobutane-burner
 	radioisotope-thermoetheric-generator-base
