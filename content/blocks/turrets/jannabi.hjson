@@ -904,6 +904,8 @@ parts: [
   ops: [
     {
       op: curve
+      offset: 0
+      duration: 1
     }
   ]
 }
@@ -924,6 +926,8 @@ parts: [
   ops: [
     {
       op: curve
+      offset: 0
+      duration: 1
     }
   ]
 }
