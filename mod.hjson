@@ -229,5 +229,15 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     component-conveyor
     component-assembler
     toroid-builder
+    venerium-wall
+    venerium-large-wall
+    venerium-huge-wall
+    compound-wall
+    compound-large-wall
+    compound-huge-wall
+    geliarin-door
+    zinc-wall
+    zinc-large-wall
+    zinc-huge-wall
   ]
 }

@@ -1,3 +1,4 @@
+type: wall
 health: 640
 size: 1
 requirements: [

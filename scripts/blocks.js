@@ -18,26 +18,6 @@ const cobaltoverflowgate = extend(OverflowDuct, "cobalt-overflow-gate", {});
 
 const invertedcobaltgateway = extend(OverflowDuct, "inverted-cobalt-overflow-gate", {});
 
-// Стены
-const veneriumwall = extend(Wall, "venerium-wall", {});
-
-const veneriumlargewall = extend(Wall, "venerium-large-wall", {});
-
-const veneriumhugewall = extend(Wall, "venerium-huge-wall", {});
-
-const compoundwall = extend(Wall, "compound-wall", {});
-
-const compoundlargewall = extend(Wall, "compound-large-wall", {});
-
-const compoundhugewall = extend(Wall, "compound-huge-wall", {});
-
-const geliarindoor = extend(AutoDoor, "geliarin-door", {});
-
-const zincwall = extend(Wall, "zinc-wall", {});
-
-const zinclargewall = extend(Wall, "zinc-large-wall", {});
-
-const zinchugewall = extend(Wall, "zinc-huge-wall", {});
 
 // Турели
 const yongsin = extend(ItemTurret, "yongsin", {});
