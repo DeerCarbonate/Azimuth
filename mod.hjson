@@ -193,7 +193,7 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     cobalt-overflow-gate
     inverted-cobalt-overflow-gate
     cargo-loader-load
-    cargo-unloader-load
+    cargo-unloader-unload
     cobalt-unloader
     platinum-smelter
     isobutane-burner
