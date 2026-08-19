@@ -1,5 +1,4 @@
 type: Floor
-name: "Icy-ashium floor"
 attributes: {
 	water: -0.65
 }

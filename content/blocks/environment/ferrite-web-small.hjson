@@ -1,5 +1,4 @@
 type: TallBlock
-name: Ferrite small web
 emitLight: false
 variants: 2
 clipSize: 56

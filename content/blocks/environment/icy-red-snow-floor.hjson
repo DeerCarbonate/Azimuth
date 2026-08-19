@@ -1,5 +1,4 @@
 type: Floor
-name: "Icy red snow floor"
 attributes: {
 	water: -0.65
 }

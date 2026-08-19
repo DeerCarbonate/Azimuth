@@ -1,5 +1,4 @@
 type: Floor
-name: "Ashiumtwo floor"
 attributes: {
 	water: -0.65
 }

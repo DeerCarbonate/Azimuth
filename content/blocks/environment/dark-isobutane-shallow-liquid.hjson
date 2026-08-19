@@ -1,5 +1,4 @@
 type: Floor
-name: Dark shallow isobutane
 speedMultiplier: 0.43
 variants: 0
 cacheLayer: mud

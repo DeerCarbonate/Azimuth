@@ -1,7 +1,7 @@
 {
 "wallOre":true,
 "type":"OreBlock",
-"playerUnmineable":true,
+"playerUnmineable":false,
 "itemDrop":"cobalt",
 "mapColor":"a89963",
 "useColor":true,

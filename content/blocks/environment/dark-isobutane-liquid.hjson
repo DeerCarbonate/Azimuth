@@ -1,5 +1,4 @@
 type: Floor
-name: Dark deep isobutane
 speedMultiplier: 0.26
 variants: 0
 cacheLayer: "mud"

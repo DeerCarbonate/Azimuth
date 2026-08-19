@@ -1,6 +1,4 @@
-{
-  "type": "TallBlock",
-  "name": "Ashium rock (Big)",
+  "type": TallBlock
   "emitLight": false,
   "attributes": {
     "heat": 0.2,
@@ -10,4 +8,3 @@
   "clipSize": 160,
   "shadowAlpha": 0.8,
   "shadowOffset": -3.1
-}

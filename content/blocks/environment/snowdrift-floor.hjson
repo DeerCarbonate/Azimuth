@@ -1,5 +1,4 @@
 type: Floor
-name: "Snowdrift floor"
 attributes: {
 	water: -0.65
 }

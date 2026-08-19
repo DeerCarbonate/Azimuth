@@ -1,5 +1,4 @@
 type: Floor
-name: "Venerium floor"
 attributes: {
 	water: -0.65
 }

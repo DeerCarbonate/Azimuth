@@ -1,6 +1,4 @@
 type: Floor
-name: "Ammonia"
-
 speedMultiplier: 0.68
 variants: 0
 cacheLayer: "mud"

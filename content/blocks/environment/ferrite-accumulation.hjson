@@ -1,5 +1,4 @@
 type: Floor
-name: "Accumulated ferrite floor"
 attributes: {
 	silic: 0.33333333333333333
 }
