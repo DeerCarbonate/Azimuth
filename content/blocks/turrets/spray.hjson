@@ -1,3 +1,4 @@
+type: LiquidTurret
 health: 900
 size: 2
 reload: 2

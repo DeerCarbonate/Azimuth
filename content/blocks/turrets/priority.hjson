@@ -1,9 +1,9 @@
+type: PowerTurret
 outlineColor: 0c0c12
 researchCostMultiplier: 0.5
 size: 3
 health: 1850
 alwaysUnlocked: false
-cooldown: 1200
 shootCone: 9
 squareSprite: false
 recoil: 3
@@ -13,8 +13,6 @@ targetAir: true
 moveWhileCharging: true
 shootY: 10
 targetGround: true
-recoilAmount: 1.8
-restitution: 0.04
 rotateSpeed: 2.205
 shootSound: none
 maxHeatEfficiency: 2
@@ -138,8 +136,6 @@ category: turret
   drawer: {
   type: DrawTurret
   basePrefix: azimut-
-  heatProgress: recoil
-  cooldown: 0.1
   iconOverride: [
     -icon
   ]
@@ -167,7 +163,6 @@ category: turret
   radiusTo: 28
   rotation: 0
   rotMove: 0
-  moveY: 20
   progress: charge
   } 
   		{
@@ -181,7 +176,6 @@ category: turret
   radiusTo: 38
   rotation: 0
   rotMove: 0
-  moveY: 20
   progress: charge
   } 
 			{
@@ -195,7 +189,6 @@ category: turret
   radiusTo: 10
   rotation: 0
   rotMove: 0
-  moveY: 20
   progress: warmup
   weaponIndex: 0
 	}

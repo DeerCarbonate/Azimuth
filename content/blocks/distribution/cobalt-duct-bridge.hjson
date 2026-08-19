@@ -1,3 +1,4 @@
+type: DuctBridge
 size: 1
 health: 80
 squareSprite: false

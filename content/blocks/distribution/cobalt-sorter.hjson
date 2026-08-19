@@ -1,3 +1,4 @@
+type: sorter
 health: 80
 category: distribution
 requirements: [

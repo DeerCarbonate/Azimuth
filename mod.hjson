@@ -182,6 +182,19 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     ore-raw-platinum
     ore-sphalerite
     ore-caterium(wall)
+    cobalt-duct
+    geliarin-duct
+    geliarin-router
+    cobalt-junction
+    cobalt-duct-bridge
+    polyetheric-conveyor
+    cobalt-router
+    cobalt-sorter
+    cobalt-overflow-gate
+    inverted-cobalt-overflow-gate
+    cargo-loader-load
+    cargo-unloader-load
+    cobalt-unloader
     platinum-smelter
     isobutane-burner
 	radioisotope-thermoetheric-generator-base
@@ -239,5 +252,16 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     zinc-wall
     zinc-large-wall
     zinc-huge-wall
+    yongsin
+    priority
+    dezolo
+    relocator
+    jannabi
+    astraeus
+    retray
+    gravastar
+    seraphim
+    zinc-processor
+    alloy-memory-cell
   ]
 }

@@ -1,3 +1,4 @@
+type: ItemTurret
 name: Seraphim
 description: Fires projectiles with spread over a long distance.
 researchCostMultiplier: 0.5

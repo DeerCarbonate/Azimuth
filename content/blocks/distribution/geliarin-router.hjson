@@ -1,3 +1,4 @@
+type: StackRouter
 category: distribution
 requirements: [
   geliarin/2

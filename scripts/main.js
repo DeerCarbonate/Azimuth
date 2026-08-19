@@ -17,7 +17,6 @@ require("multiblock7");
 require("multiblock8");
 require("multiblock9");
 require("multiblock10");
-require("blocks");
 require("construct");
 
 const librarySnake = require("library-snake");

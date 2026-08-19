@@ -1,3 +1,4 @@
+type: StackConveyor
 speed: 0.095
 itemCapacity: 5
 health: 90

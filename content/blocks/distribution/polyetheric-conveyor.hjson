@@ -1,3 +1,4 @@
+  type: ItemBridge
   category: distribution
   health: 100
   requirements: [

@@ -1,3 +1,4 @@
+type: duct
 underBullets: true
 itemCapacity: 3
 category: distribution
