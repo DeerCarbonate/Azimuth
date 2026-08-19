@@ -232,7 +232,6 @@ drawer: {
 	  moveY: -0.06,
 	  moveX: 1.9,
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	]
 }

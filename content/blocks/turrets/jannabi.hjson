@@ -6,7 +6,6 @@ squareSprite: false
 outlineColor: 0c0c12
 health: 3600
 alwaysUnlocked: false
-cooldown: 1200
 shootCone: 9
 recoil: 3.2
 shootY: -5.4
@@ -15,7 +14,6 @@ range: 450
 targetAir: false
 moveWhileCharging: true
 targetGround: true
-recoilAmount: 2.3
 rotateSpeed: 1
 shootSound: laser4
 chargeSound: chargeLancer
@@ -711,8 +709,6 @@ category: turret
 drawer: {
   type: DrawTurret
   basePrefix: azimut-
-  heatProgress: recoil
-  cooldown: 0.1
   iconOverride: [
     -icon
   ]
@@ -772,7 +768,6 @@ parts: [
     mirror: true
     heatProgress: heat
     heatColor: ff4500
-    heatLayer: 1
     moves: [
       {
         progress: {
@@ -825,7 +820,6 @@ parts: [
   mirror: false
   heatProgress: heat
   heatColor: ff4500
-  heatLayer: 1
   y: -2
   moves: [
     {
@@ -905,11 +899,9 @@ parts: [
     radiusTo: 40
     rotation: 0
     rotMove: 150
-    moveY: 20
     progress: {
       type: charge
       op: curve
-      interp: pow2Out
     }
   }
   {
@@ -923,12 +915,9 @@ parts: [
     radiusTo: 40
     rotation: 45
     rotMove: 75
-    moveY: 21
-    baseRotation: 45
     progress: {
       type: charge
       op: curve
-      interp: pow2Out
     }
   }
   {

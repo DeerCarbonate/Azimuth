@@ -30,7 +30,6 @@ preset: first
     }
   ]
 }
-cooldown: 1200
 shootCone: 9
 recoil: 2
 shootY: 4.6
@@ -39,8 +38,6 @@ range: 300
 targetAir: true
 targetGround: true
 moveWhileCharging: true
-recoilAmount: 1.8
-restitution: 0.04
 rotateSpeed: 2.205
 shootSound: none
 ammoTypes: {
@@ -61,11 +58,6 @@ venerium: {
   pierceBuilding: false
   pierce: true
   pierceCap: 1
-
-  colorFrom: ffffff
-  colorTo: fcf0bd00
-  width: 12
-
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
@@ -194,10 +186,6 @@ compound: {
   pierceBuilding: false
   pierce: true
   pierceCap: 1
-
-  colorFrom: ffffff
-  colorTo: a3a6ae00
-  width: 12
 
   despawnEffect: none
   smokeEffect: none
@@ -343,10 +331,6 @@ titanite: {
   status: pierced
   statusDuration: 280
 
-  colorFrom: ffffff
-  colorTo: 74a48100
-  width: 12
-
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
@@ -396,10 +380,6 @@ titanite: {
   pierceBuilding: false
   pierce: true
   pierceCap: 4
-
-  colorFrom: ffffff
-  colorTo: 74a48100
-  width: 12
 
   despawnEffect: none
   smokeEffect: none
@@ -506,8 +486,6 @@ category: turret
 drawer: {
   type: DrawTurret
   basePrefix: azimut-
-  heatProgress: charge
-  cooldown: 0.1
   iconOverride: [
     -icon
   ]
@@ -525,7 +503,6 @@ drawer: {
 	  moveX: 4.5,
 	  moveY: -1,
       heatColor: ff4500,
-      heatLayer: 1,
     }
 		{
       type: RegionPart,
@@ -540,7 +517,6 @@ drawer: {
 	  moveX: 8.5,
 	  moveY: -1,
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	{
       type: RegionPart,
@@ -554,7 +530,6 @@ drawer: {
 	  moveRot: -4,
 	  moveY: -1,
       heatColor: ff4500,
-      heatLayer: 1,
     }
   ]
 }

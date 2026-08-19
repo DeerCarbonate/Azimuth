@@ -195,6 +195,15 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     cargo-loader-load
     cargo-unloader-unload
     cobalt-unloader
+    pump
+    galvanized-pump
+    directed-conduit
+    directed-liquid-junction
+    directed-liquid-bridge
+    galvanized-pipeline
+    directed-liquid-router
+    small-liquid-cylinder
+    large-liquid-tank
     platinum-smelter
     isobutane-burner
 	radioisotope-thermoetheric-generator-base
@@ -213,11 +222,14 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     atmospheric-extractor-collector
     atmospheric-extractor-cooler
     static-refiner
+    platinum-forge
+    octine-arc-foundry
     decoder
     mechanical-quarry
     cold-conversion-solar-panel
     relic-drill
     terraformer
+    galvanized-container
     heal-drone-station
     orbital-regeneration-drone-station
 	construction-drone-station
@@ -264,5 +276,6 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     seraphim
     zinc-processor
     alloy-memory-cell
+    illuminator
   ]
 }

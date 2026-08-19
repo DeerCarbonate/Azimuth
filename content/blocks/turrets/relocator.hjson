@@ -5,7 +5,6 @@ outlineColor: 0c0c12
 outlineColor: 0c0c12
 squareSprite: false
 health: 1750
-cooldown: 1200
 shootCone: 9
 recoil: 3.2
 reload: 97
@@ -363,8 +362,6 @@ category: turret
 drawer: {
   type: DrawTurret
   basePrefix: azimut-
-  heatProgress: recoil
-  cooldown: 0.1
   iconOverride: [
     -icon
   ]
@@ -382,7 +379,6 @@ drawer: {
 	  moveY: 0
 	  moveX: 1.5
       heatColor: ff4500,
-      heatLayer: 1,
     }
     {
       type: RegionPart,
@@ -395,7 +391,6 @@ drawer: {
 	  y: 0,
 	  moveY: -3.5
       heatColor: 4e6e63,
-      heatLayer: 1,
     }
 	{
       type: RegionPart,
@@ -408,7 +403,6 @@ drawer: {
 	  y: 0,
 	  moveY: -3.5
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	{
       type: RegionPart,
@@ -421,7 +415,6 @@ drawer: {
 	  y: 0,
 	  moveY: -5.5
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	{
       type: RegionPart,
@@ -434,7 +427,6 @@ drawer: {
 	  y: 0,
 	  moveY: -7.5
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	]
 }

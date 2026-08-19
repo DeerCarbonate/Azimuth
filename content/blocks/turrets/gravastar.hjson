@@ -26,7 +26,6 @@ coolant: {
                 0, -11, 0,
             ]
     }
-cooldown: 1200
 shootCone: 9
 recoil: 1.2
 shootY: 1.4
@@ -34,8 +33,6 @@ reload: 10
 targetAir: true
 targetGround: true
 moveWhileCharging: true
-recoilAmount: 1.8
-restitution: 0.04
 rotateSpeed: 0.95
 range: 177
 shootSound: shootLancer
@@ -231,8 +228,6 @@ category: turret
 drawer: {
   type: DrawTurret
   basePrefix: azimut-
-  heatProgress: charge
-  cooldown: 0.1
   iconOverride: [
     -icon
   ]
@@ -250,7 +245,6 @@ drawer: {
 	  moveX: 2.1,
 	  moveY: -2,
       heatColor: ff4500,
-      heatLayer: 1,
     }
 		{
       type: RegionPart,
@@ -278,7 +272,6 @@ drawer: {
 	  moveX: 2.1,
 	  moveY: 1,
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	{
       type: RegionPart,
@@ -293,7 +286,6 @@ drawer: {
 	  moveY: -8.8,
 	  moveX: 2.1
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	  {
     type: EffectSpawnerPart

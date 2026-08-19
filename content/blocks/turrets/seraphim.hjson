@@ -138,7 +138,6 @@ requirements: [
 category: turret
 drawer: {
   type: DrawTurret
-  heatProgress: charge
   basePrefix: azimut-
     iconOverride: [
     -icon
@@ -156,12 +155,10 @@ drawer: {
           progress: {
             type: recoil
             op: curve
-            interp: pow5In
           }
           growProgress: {
             type: recoil
             op: curve
-            interp: pow5In
           }
 		    children: [
             {
@@ -175,7 +172,6 @@ drawer: {
 			            progress: {
             type: recoil
             op: curve
-            interp: pow5In
              }
             }
 			]

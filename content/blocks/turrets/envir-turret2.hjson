@@ -17,9 +17,7 @@ outlineIcon: false
 moveWhileCharging: true
 hasShadow: false
 targetable: false
-enviroment: true
 breakable: false
-recoilAmount: 0
 rotateSpeed: 0
 shootSound: none
 smokeEffect: none

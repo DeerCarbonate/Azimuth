@@ -115,7 +115,7 @@ shootType: {
     ammoMultiplier: 1
 	buildingDamageMultiplier: 0.3
 	pierceArmor: false
-    pierce: True
+    pierce: true
     pierceCap: 3
 	
     lifetime: 12

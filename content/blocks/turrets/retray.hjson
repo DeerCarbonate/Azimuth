@@ -21,11 +21,9 @@ ammonia/0.0500
 hasPower: true
 shoot: {
   type: ShootBarrel
-  barrels: 2
   shots: 2
   shotDelay: 10
   barrelOffset: 1
-  alternate: true
   barrels: [
     6, 7.7, 0
     -6, 7.7, 0,
@@ -39,8 +37,6 @@ range: 550
 targetAir: true
 moveWhileCharging: true
 targetGround: true
-recoilAmount: 1.8
-restitution: 0.9
 rotateSpeed: 1
 shootSound: Alt
 shootSoundVolume: 0.3
@@ -78,7 +74,6 @@ trailEffect: {
 type: ParticleEffect 
 colorFrom: ffffff95
 colorTo: fcf0bd00
-drag: 0.4
 particles: 2
 cone: 360
 length: 12
@@ -235,7 +230,6 @@ trailEffect: {
 type: ParticleEffect 
 colorFrom: b5d0ba95
 colorTo: 74a48100
-drag: 0.4
 particles: 2
 cone: 360
 length: 12
@@ -391,7 +385,6 @@ trailEffect: {
 type: ParticleEffect 
 colorFrom: ffffff95
 colorTo: efbbb400
-drag: 0.4
 particles: 2
 cone: 360
 length: 12
@@ -525,8 +518,6 @@ category: turret
 drawer: {
   type: DrawTurret
   basePrefix: azimut-
-  heatProgress: charge
-  cooldown: 0.1
   iconOverride: [
     -icon
   ]
@@ -544,7 +535,6 @@ drawer: {
 	  moveX: 0.3,
 	  moveY: -0.9,
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	{
       type: RegionPart,
@@ -559,7 +549,6 @@ drawer: {
 	  moveX: 0
 	  moveY: -1.2,
       heatColor: ff4500,
-      heatLayer: 1,
     }
   ]
 }

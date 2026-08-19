@@ -5,7 +5,6 @@ outlineColor: 0c0c12
 health: 1120
 alwaysUnlocked: false
 squareSprite: false
-cooldown: 1200
 shootCone: 9
 recoil: 3
 reload: 180
@@ -362,7 +361,6 @@ trailColor: b3a8de
 trailWidth: 1
 despawnEffect: none
 armorMultiplier: 2.5
-homing: true
 homingPower: 0.06
 homingRange: 10
 homingDelay: 25
@@ -481,7 +479,6 @@ category: turret
 drawer: {
   type: DrawTurret
   basePrefix: azimut-
-  heatProgress: recoil
   iconOverride: [
     -icon
   ]
@@ -498,7 +495,6 @@ drawer: {
 	  moveY: -0.1,
 	  moveX: -2,
       heatColor: ff4500,
-      heatLayer: 1,
     }
 	]
 }
