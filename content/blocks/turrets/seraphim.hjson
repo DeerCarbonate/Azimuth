@@ -158,6 +158,8 @@ drawer: {
         ops: [
           {
             op: curve
+            offset: 0
+            duration: 1
           }
         ]
       }
@@ -166,6 +168,8 @@ drawer: {
         ops: [
           {
             op: curve
+            offset: 0
+            duration: 1
           }
         ]
       }
@@ -183,6 +187,8 @@ drawer: {
             ops: [
               {
                 op: curve
+                offset: 0
+                duration: 1
               }
             ]
           }
