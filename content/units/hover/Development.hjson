@@ -14,7 +14,6 @@ healColor: f0a4d988
 armor: 14
 rotateSpeed: 2.95
 outlineColor: 251b21
-targetair: false
 faceTarget: true
 engineOffset: 10.2
 engineColor: f6afdd
@@ -450,10 +449,6 @@ abilities: [
 	sameTypeHealMult: 0
     healPercent: 0
 	healEffect: none
-	healColor: b0b0b000
-	effect: none
-	continuous: false
-	rotate: false
 	hitBuildings: true
 	hitUnits: true
 	sectorRad: 0
@@ -486,10 +481,6 @@ abilities: [
 	sameTypeHealMult: 0
     healPercent: 0
 	healEffect: none
-	healColor: b0b0b000
-	effect: none
-	continuous: false
-	rotate: false
 	hitBuildings: true
 	hitUnits: true
 	sectorRad: 0
