@@ -1,3 +1,4 @@
+type: LightBlock
 requirements: [
   cobalt/6
   platinum/4
