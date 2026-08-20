@@ -1,7 +1,7 @@
 {
   name: azimut
   displayName: "[[]#d2fffe]Azimuth[[]]"
-  subtitle: "[[]#c9c1eb]What kind of joy is that?..[[]]"
+  subtitle: "[[]#c9c1eb]Smashed.[[]]"
   description: '''
 [[]#d3f2f4]Hybrid[[]] mod primarily built around a gradually branching campaign that expands in multiple directions.
 
@@ -32,7 +32,7 @@ Maps: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
 Localization: [[]#c3961f]Deer[[]][[]#876409]Carbonate[[]]
 
 Special Thanks:
-Music: [[]purple]ACE[[]] — "the last fight", "in orbit", "create", "smth far away"; [[]#ffe1a4]garretski[[]] — "Azimuth", "Rhumb".
+Music: [[]purple]ACE[[]] — "the last fight", "in orbit", "create", "smth far away"; [[]#ffe1a4]garretski[[]] — The main Azimuth soundtrack.
 Maps: [[]#ce7e5c]Kivet/БОБ[[]] — "Cold Harbor"; [[]#fce4e0]Fate of Adrastus[[]] — "Tight Caverns"; [[]#84f491]Alpotat[[]] — assistance with the map "Arrival".
 Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
 '''
