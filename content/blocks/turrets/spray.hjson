@@ -94,7 +94,6 @@ ammoTypes: {
       damage: 2
       puddleSize: 18
       despawnHit: true
-      despawnSound: splash
       speed: 0
       lifetime: 0
       splashDamage: 4
