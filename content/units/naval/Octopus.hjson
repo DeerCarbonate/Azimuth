@@ -139,14 +139,24 @@ preset: fifth
           moveY: -0.1
           growY: -0.28
           heatColor: fcf0bd
-          progress: {
-            type: charge
-            op: curve
-          }
-          growProgress: {
-            type: recoil
-            op: curve
-          }
+progress: {
+  type: charge
+  ops: [
+    {
+      op: curve
+      interp: pow4In
+    }
+  ]
+}
+growProgress: {
+  type: recoil
+  ops: [
+    {
+      op: curve
+      interp: pow5In
+    }
+  ]
+}
 	}
 ]
             bullet: {

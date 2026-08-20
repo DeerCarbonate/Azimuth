@@ -195,10 +195,15 @@ weapons: [
         rotMove: 85
         y: 1.85
         followRotation: false
-		progress: {
-        type: charge
-        op: curve
-        }
+progress: {
+  type: charge
+  ops: [
+    {
+      op: curve
+      interp: pow2Out
+    }
+  ]
+}
       }
     ]
     bullet: {
