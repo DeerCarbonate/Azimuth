@@ -9,9 +9,3 @@ sizeMin: 14
 sizeMax: 22
 splashTimeScale: 11
 liquid: isobutane
-force: 0.02
-minAlpha: 0.03
-maxAlpha: 0.10
-useWindVector: true
-noiseColor: 8f6e6e20
-drawNoise: true

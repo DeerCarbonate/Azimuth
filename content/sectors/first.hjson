@@ -2,7 +2,6 @@ captureWave: 6
 alwaysUnlocked: true
 addStartingItems: false
 startWaveTimeMultiplier: 6
-useAI: false
 showSectorLandInfo: true
 outline: false
 planet: gelion

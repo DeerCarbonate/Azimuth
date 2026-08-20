@@ -9,7 +9,6 @@
 	range: 0
 	itemCapacity: 40
 	speed: 4.5
-	rotateShooting: false
 	accel: 0.04
 	drag: 0.02
 armor: 10
@@ -18,7 +17,6 @@ armor: 10
     allowedInPayloads: false
     logicControllable: false
     playerControllable: false
-	engineY: -4
 	engineColor: bf92f9
 	trailColor: bf92f9
 	trailLength: 10

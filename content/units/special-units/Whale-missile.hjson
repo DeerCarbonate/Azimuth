@@ -32,7 +32,6 @@ loopSoundVolume: 0.5
 
 trailColor: a4f0d7
 trailLength: 10
-trailWidth: 4.5
 engineColor: a4f0d7
 engineSize: 1.2
 engineOffset: 3
@@ -200,7 +199,6 @@ parts: [
     color: b5d0ba
     radius: 0
 	radiusTo: 17.6
-	strokeFrom: 2
     strokeTo: 2
 	            progress: {
             type: life
@@ -224,7 +222,6 @@ parts: [
     color: b5d0ba20
     radius: 0
 	radiusTo: 16.5
-	strokeFrom: 2
     strokeTo: 24
 	            progress: {
             type: life
@@ -248,7 +245,6 @@ parts: [
     color: b5d0ba20
     radius: 0
 	radiusTo: 18.5
-	strokeFrom: 2
     strokeTo: 8
 	            progress: {
             type: life
@@ -442,12 +438,9 @@ interp: pow3Out
       collidesAir: false
 	  sprite: azimut-hitsliceb
 	  drag: 0.004
-	  homing: true
 	  homingPower: 0.17
 	  homingDelay: 4
 	  homingRange: 60
-	  waveMag: 8
-	  waveScl: 12
       hitEffect: {
         type: ExplosionEffect
         lifetime: 15

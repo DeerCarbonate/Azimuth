@@ -122,7 +122,6 @@ weapons: [
         cone: 20
         lifetime: 55
         length: 13
-        int: pow3Out
         sizeFrom: 0.6
         sizeTo: 3.8
         }
@@ -171,7 +170,6 @@ weapons: [
     ignoreRotation: true
     inaccuracy: 6
 	baseRotation: -15
-	smokeEffect: none
     shoot: {
       type: ShootSpread
       shotDelay: 2.3

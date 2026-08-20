@@ -4,7 +4,6 @@ allowLaunchSchematics: false
 allowLaunchLoadout: false
 hasAtmosphere: false
 
-allowWaveSimulation: true
 prebuildBase: true
 parent: gelion
 solarSystem: alveon
@@ -27,7 +26,6 @@ allowLaunchToNumbered: false
 mesh: [
  {
     type: NoiseMesh
-	bloom: true
     seed: 538
     color1: "6e708000"
     color2: "b9c4d800"
@@ -35,9 +33,6 @@ mesh: [
     radius: 0.1
     octaves: 5
     persistence: 0.43
-	coct: 1.5
-    cper: 2.1
-    scl: 0.54
     mag: 1.2
  }
 ]

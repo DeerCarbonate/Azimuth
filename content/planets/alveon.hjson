@@ -1,6 +1,5 @@
 mesh: {
     type: SunMesh
-    planet: alveon
 	divisions: 5.5
 	octaves: 3
 	persistence: 0.8

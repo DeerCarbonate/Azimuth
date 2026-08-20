@@ -3,7 +3,6 @@ size: 5
 health: 1650
 category: power
 powerProduction: 5.5
-generateEffect: none
 customShadow: true
 research: {
   parent: "energy-converter"

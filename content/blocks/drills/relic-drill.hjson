@@ -38,7 +38,6 @@ drillEffect: [
             sizeFrom: 42
             sizeTo: 10
             colorTo: c3feff78
-            sizeinterp: length
   }
       {
         type: WaveEffect

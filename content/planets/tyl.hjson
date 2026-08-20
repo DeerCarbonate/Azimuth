@@ -32,38 +32,32 @@ mesh: [
 cloudMesh: [
   {
     type: HexSkyMesh
-    bloom: false
     speed: 0.65
     divisions: 3.2
     radius: 0.12
     color: b0b0b045
     octaves: 1
     persistence: 0.5
-    scl: 6
     thresh: 0.15
   }
    {
     type: HexSkyMesh
-    bloom: false
     speed: 0.65
     divisions: 3.2
     radius: 0.24
     color: b7864c45
     octaves: 1
     persistence: 0.5
-    scl: 6
     thresh: 0.45
   }
     {
     type: HexSkyMesh
-    bloom: false
     speed: 0.65
     divisions: 3.2
     radius: 0.31
     color: 	7e1c1c45
     octaves: 1
     persistence: 0.5
-    scl: 6
     thresh: 0.35
   }
 ]
@@ -86,7 +80,6 @@ lightColor: c9a96520
 visible: true
 iconColor: ff6956FF
 hasAtmosphere: false
-allowWaveSimulation: false
 clearSectorOnLose: true
 allowWaves: true
 prebuildBase: false

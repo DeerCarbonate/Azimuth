@@ -200,8 +200,6 @@ shoot: {
 		}
   {
     autoTarget: true
-    targetAir: true
-    targetGround: true
     reload: 90
     shootCone: 360
     mirror: false

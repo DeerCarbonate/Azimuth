@@ -4,11 +4,9 @@ clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchLoadout: false
 
-allowWaveSimulation: true
 prebuildBase: true
 parent: alveon
 hasAtmosphere: true
-hasSectors: false
 solarSystem: alveon
 orbitRadius: 60
 orbitTime: 6000
@@ -30,7 +28,6 @@ mesh: [
  {
  //gray
     type: NoiseMesh
-	bloom: false
     seed: 65544
     color1: "87899b"
     color2: "606169"
@@ -38,7 +35,6 @@ mesh: [
     radius: 0.88888888
     octaves: 6
     persistence: 0.6
-    scl: 1
     mag: 0.43
  }
 ]

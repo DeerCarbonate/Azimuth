@@ -36,7 +36,6 @@ healColor: FFE06688
 
 trailColor: fff4a3
 trailLength: 0
-trailWidth: 0
 engineColor: fff4a3
 engineSize: 0
 engineOffset: 3
@@ -56,9 +55,6 @@ abilities: [
 	sameTypeHealMult: 0.03
     healPercent: 0.001
 	healEffect: none
-	effect: none
-	continuous: false
-	rotate: false
 	hitBuildings: false
 	hitUnits: true
 	sectorRad: 0

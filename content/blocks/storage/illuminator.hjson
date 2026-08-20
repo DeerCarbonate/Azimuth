@@ -14,14 +14,6 @@ category: effect
 consumes: {
   power: 0.05
 }
-drawer: {
-  type: DrawMulti
-  drawers: [
-    {    
-      type: DrawDefault
-    }
-  ]
-}
 research: {
   parent: "core-forum"
   planet: gelion

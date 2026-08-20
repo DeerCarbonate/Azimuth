@@ -32,7 +32,6 @@ loopSoundVolume: 0.5
 
 trailColor: 8edfc1
 trailLength: 14
-trailWidth: 1.6
 engineColor: 8edfc1
 engineSize: 1.7
 engineOffset: 3

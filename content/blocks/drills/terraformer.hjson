@@ -15,13 +15,9 @@ sparkSpread: 0.3
 sparkRange: -25
 consumes: {
   power: 1
-  liquids: {
-    liquids: [
-      nitrogen/0.05
-    ]
-    optional: true
-    booster: true
-  }
+  liquids: [
+    nitrogen/0.05
+  ]
 }
 category: production
 researchCostMultiplier: 0.5

@@ -12,9 +12,8 @@
 	],
     "category": "distribution",
     "hasItems": true,
-    "hasLiquids": flase,
-    "outputsLiquid": flase,
-    "outputItems": true,
+    "hasLiquids": false
+    "outputsLiquid": false,
 research: {
   parent: "cargo-loader-load"
   planet: gelion

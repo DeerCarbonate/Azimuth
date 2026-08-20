@@ -4,11 +4,9 @@ clearSectorOnLose: true
 allowLaunchSchematics: false
 allowLaunchLoadout: false
 
-allowWaveSimulation: true
 prebuildBase: true
 parent: alveon
 hasAtmosphere: true
-hasSectors: false
 solarSystem: alveon
 orbitRadius: 100
 orbitTime: 10700
@@ -29,7 +27,6 @@ allowLaunchToNumbered: false
 mesh: [
  {
     type: NoiseMesh
-	bloom: false
     seed: 65544
     color1: "8f97a590"
     color2: "706b6112"
@@ -37,33 +34,28 @@ mesh: [
     radius: 0.6
     octaves: 6
     persistence: 0.39
-    scl: 1
     mag: 0.24
  }
 ]
 cloudMesh: [
   {
     type: HexSkyMesh
-    bloom: false
     speed: 0.45
     divisions: 4.1
     radius: 0.09
     color: aac5ef90
     octaves: 1
     persistence: 0.5
-    scl: 6
     thresh: 0.15
   }
   {
     type: HexSkyMesh
-    bloom: false
     speed: 0.48
     divisions: 4.1
     radius: 0.12
     color: aac5ef70
     octaves: 1
     persistence: 0.46
-    scl: 6
     thresh: 0.37
   }
 ]

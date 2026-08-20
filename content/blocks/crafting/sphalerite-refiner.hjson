@@ -144,7 +144,6 @@ craftEffect: [{
 	]
   }
 ]
-Sound: smelter
 drawer: {
   type: DrawMulti
   drawers: [

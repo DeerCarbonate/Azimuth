@@ -5,4 +5,3 @@
   temperature: 0.3
   flammability: 0.45
   explosiveness: 0.0
-  liquid: true

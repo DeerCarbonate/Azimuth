@@ -148,10 +148,7 @@ interp: pow3Out
 
 weapons: [
   {
-    range: 60
     autoTarget: true
-    targetAir: true
-    targetGround: true
     reload: 500
     mirror: false
     rotate: true
@@ -177,7 +174,6 @@ weapons: [
       homingPower: 0.7
       homingDelay: 0
 	  homingRange: 1000
-	  homing: true
       frontColor: ffffff
       backColor: efbbb4
       trailColor: efbbb4
@@ -247,7 +243,6 @@ weapons: [
 	  drag: -0.009
 	  pierce: true
       pierceCap: 4
-	  homing: true
 	  homingDelay: 14
 	  homingPower: 0.2
 	  homingRange: 80

@@ -32,7 +32,6 @@ loopSoundVolume: 0
 bounded: false
 drawCell: false
 trailLength: 0
-trailWidth: 0
 engineColor: fff4a3
 engineSize: 0
 engineOffset: 0
@@ -55,10 +54,6 @@ percentAmount: 200
 	sameTypeHealMult: 0
     healPercent: 0
 	healEffect: none
-	healColor: b0b0b000
-	effect: none
-	continuous: false
-	rotate: false
 	hitBuildings: true
 	hitUnits: true
 	sectorRad: 0
@@ -83,8 +78,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -185,8 +178,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -287,8 +278,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -388,8 +377,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -489,8 +476,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -590,8 +575,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -691,8 +674,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -792,8 +773,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -893,8 +872,6 @@ weapons: [
     y: 0.3
     reload: 103
     inaccuracy: 360
-	shootEffect: none
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {

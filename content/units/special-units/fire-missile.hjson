@@ -39,7 +39,6 @@ drawShields: false
 
 trailColor: fff4a3
 trailLength: 0
-trailWidth: 0
 engineColor: fff4a3
 engineSize: 0
 engineOffset: 3
@@ -59,10 +58,6 @@ abilities: [
 	sameTypeHealMult: 0
     healPercent: 0
 	healEffect: none
-	healColor: b0b0b000
-	effect: none
-	continuous: false
-	rotate: false
 	hitBuildings: true
 	hitUnits: true
 	sectorRad: 0
@@ -155,7 +150,6 @@ weapons: [
         absorbable: false
         reflectable: false
 		width: 0
-		length: 0
         
         collides: false
         collidesAir: false
@@ -209,7 +203,6 @@ weapons: [
         absorbable: false
         reflectable: false
 		width: 0
-		length: 0
         
         collides: false
         collidesAir: false
@@ -263,7 +256,6 @@ weapons: [
         absorbable: false
         reflectable: false
 		width: 0
-		length: 0
         
         collides: false
         collidesAir: false
@@ -326,7 +318,6 @@ weapons: [
         absorbable: false
         reflectable: false
 		width: 0
-		length: 0
         
         collides: false
         collidesAir: false
@@ -388,7 +379,6 @@ weapons: [
         absorbable: false
         reflectable: false
 		width: 0
-		length: 0
         
         collides: false
         collidesAir: false
@@ -458,7 +448,6 @@ weapons: [
         absorbable: false
         reflectable: false
 		width: 0
-		length: 0
         
         collides: false
         collidesAir: false
@@ -513,7 +502,6 @@ weapons: [
         absorbable: false
         reflectable: false
 		width: 0
-		length: 0
         
         collides: false
         collidesAir: false

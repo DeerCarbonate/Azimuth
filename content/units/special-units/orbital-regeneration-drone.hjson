@@ -8,7 +8,6 @@ range: 0
 itemCapacity: 0
 hidden: true
 speed: 1
-rotateShooting: false
 accel: 0.04
 drag: 0.02
 defaultController: CargoAI
@@ -112,7 +111,6 @@ weapons: [
     y: 0.3
     reload: 30
     inaccuracy: 360
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -261,7 +259,6 @@ weapons: [
     y: 0.3
     reload: 10
     inaccuracy: 360
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {

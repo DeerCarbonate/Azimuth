@@ -32,8 +32,6 @@ drawer: {
     }
 	{
       type: drawHeatOutput
-      suffix: -heat
-      color: ffb380
   }
   ]
 }
