@@ -65,7 +65,6 @@ weapons: [
             fragOnHit: true
             damage: 30
             lifetime: 90
-            despawnSound: explode
             frontColor: b3eed8
             backColor: e5f9f1
             speed:3

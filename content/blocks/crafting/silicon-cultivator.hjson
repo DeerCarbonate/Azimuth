@@ -8,7 +8,6 @@ itemCapacity: 20
 boostScale: 0.125
 maxBoost: 2.0
 category: crafting
-ambientSound: drill
 ambientSoundVolume: 0.08
 squareSprite: false
 ignoreLiquidFullness: true
