@@ -4,8 +4,6 @@ health: 30
 laserRange: 8.5
 laserColor1: ffffff10
 laserColor2: 7565c990
-laser: cobalt-node-laser
-laserEnd: cobalt-node-laser-end
 maxNodes: 4
   requirements: [
     cobalt/8
