@@ -80,7 +80,6 @@ abilities: [
   {
     effect: {
       type: ParticleEffect
-      y: -1
       colorFrom: f6afdd
       colorTo: 6a3fa490
       lifetime: 25
@@ -153,8 +152,6 @@ weapons: [
     shootStatus: core-acceleration
     shootStatusDuration: 450
     shootSound: none
-    shootEffect: none
-    smokeEffect: none
     bullet: {
       type: BasicBulletType
       height: 0
@@ -182,8 +179,6 @@ weapons: [
     shootStatus: core-instability
     shootStatusDuration: 450
     shootSound: none
-    shootEffect: none
-    smokeEffect: none
     bullet: {
       type: BasicBulletType
       height: 0
@@ -246,7 +241,6 @@ weapons: [
         followParent: true
         rotWithParent: true
         interp: exp5Out
-        sizeInterp: exp5In
       }
       collidesTiles: true
       keepVelocity: false

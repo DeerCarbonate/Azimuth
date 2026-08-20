@@ -33,21 +33,6 @@
     baseRotation: 0
     shootCone:30
     layerOffset: 0.001
-	shootEffect: [
-				{
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 20
-				sizeFrom: 2
-				sizeTo: 12
-				strokeFrom: 3
-				strokeTo: 0
-                colorFrom: e5f9f180
-                colorTo: b3eed800
-				interp:pow3Out
-				}
-		]
 	   bullet: {
         type: BulletType
         spawnUnit: Cthulhu-missile
@@ -84,8 +69,6 @@
 	  moveRot: 3,
 	  moveX: -1.5,
 	  moveY: -0.2,
-      heatColor: ff4500,
-      heatLayer: 1,
     }
 		{
         type: HaloPart
@@ -247,13 +230,11 @@
     x: 11.2
     y: -8
     shootY: 6
-    cooldowntime: 150
     mirror: true
     alternate: false
     rotate: true
     rotateSpeed: 2.6
     reload: 70
-    inacurracy: 7
     shootSound: shootAlpha
     baseRotation: -90
 	shootCone: 30

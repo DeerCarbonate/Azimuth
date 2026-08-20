@@ -2,7 +2,6 @@
   flying: false
   targetAir: false
   rotateSpeed: 2
-  omniMove: true
   outlineColor: 22251b
   outlineRadius: 3
   alwaysUnlocked: false

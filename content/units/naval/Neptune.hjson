@@ -11,11 +11,8 @@ health: 21200
 speed: 0.69
 shieldColor: a4f0d788
 healColor: a4f0d788
-size: 480
 hitSize: 55.0
-hitboxSize: 20.0
 trailLength: 128
-trailWidth: 1200
 immunities: [wet, volatile]
 description: Fires an extremely powerful artillery shell that splits over 6 minutes at the end of their lifespan they create a huge explosion. and fires slowing explosive projectiles.
 weapons: [
@@ -36,7 +33,6 @@ weapons: [
     {
         suffix: -r
         mirror: true
-        outlineColor: 22251b
         progress: recoil
         moveRot: 12
         moveY: -2.5
@@ -83,7 +79,7 @@ weapons: [
             fragVelocityMin: 0.5
             fragVelocityMax: 2
             status: blasted
-            collidesAir: True
+            collidesAir: true
             despawnEffect: [
             {
                 type: ParticleEffect
@@ -149,7 +145,6 @@ weapons: [
                 trailWidth:1.2
                 trailColor:e5f9f1
                 width:4
-                length:12
                 drag:0.02
                 frontColor:8edfc1
                 backColor: e5f9f1
@@ -185,7 +180,6 @@ weapons: [
                     type: ParticleEffect
                     colorFrom: e5f9f1
                     colorTo: b3eed8
-                    drag: 0.7
                     particles: 2
                     cone: 360
                     length: 6

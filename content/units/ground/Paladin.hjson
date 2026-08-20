@@ -129,8 +129,6 @@ weapons: [
     shootStatus: detached
     shootStatusDuration: 20
     shootSound: none
-    shootEffect: none
-    smokeEffect: none
     bullet: {
       type: BasicBulletType
       height: 0
@@ -185,7 +183,6 @@ weapons: [
         followRotation: false
         progress: {
           type: charge
-          interp: pow3Out
         }
       }
     ]

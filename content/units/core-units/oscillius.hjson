@@ -32,21 +32,15 @@
 	sameTypeHealMult: 0.07
     healPercent: 0.9
 	healEffect: none
-	effect: none
-	continuous: false
-	rotate: false
 	hitBuildings: false
 	hitUnits: true
 	sectorRad: 0
     healEffect: none
 	hitEffect: none
     shootSound: none
-    effect: none
-	continuous: false
 	sectors: 0
     effectRadius: 0
 	damageEffect: none
-	hitColor: b0b0b000
 }
 ]
 	weapons: [
@@ -60,7 +54,6 @@
     velocityRnd:0.15
 	shootSound: shootMerui
     controllable: true
-	layer: 116
 		bullet: {
 			  smokeEffect: [{
         type: ParticleEffect
@@ -129,7 +122,6 @@ cone: 15
     sparkRad: 14.5
     sparkLen: 2
     sparks: 2
-    int: pow3out
 		}
 		}
 	}

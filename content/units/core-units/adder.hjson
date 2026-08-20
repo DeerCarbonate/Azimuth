@@ -84,7 +84,6 @@
         shake: 0
         x: 0
         y: 0
-        targetBuildings:true
         inaccuracy:60
         reload: 50
         shoot: {
@@ -104,7 +103,6 @@
             healColor: bf92f988
             pierceArmor:true
             width:9
-            length:9
             trailWidth:1.7
             trailLength:6
             trailColor:bf92f9

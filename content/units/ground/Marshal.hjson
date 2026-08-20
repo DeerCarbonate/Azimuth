@@ -1,6 +1,5 @@
 type: mech
 rotateSpeed: 2
-omniMove: true
 outlineColor: 22251b
 outlineRadius: 3
 alwaysUnlocked: false
@@ -157,7 +156,6 @@ weapons: [
         followRotation: false
         progress: {
           type: charge
-          interp: pow3Out
         }
       }
     ]
@@ -221,7 +219,6 @@ weapons: [
         sparkRad: 14.5
         sparkLen: 2
         sparks: 2
-        interp: pow3Out
       }
     }
   }

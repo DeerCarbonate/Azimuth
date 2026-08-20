@@ -142,12 +142,10 @@ preset: fifth
           progress: {
             type: charge
             op: curve
-            interp: pow4In
           }
           growProgress: {
             type: recoil
             op: curve
-            interp: pow5In
           }
 	}
 ]

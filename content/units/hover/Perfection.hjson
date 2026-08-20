@@ -10,7 +10,6 @@ drag: 0.009
 armor: 19
 rotateSpeed: 2
 outlineColor: 251b21
-targetair: true
 healColor: f0a4d988
 shieldColor: f0a4d988
 faceTarget: true
@@ -96,8 +95,6 @@ parts: [
 		{
 			suffix: -ret
 			mirror: true
-			outlineColor: 22251b,
-			outlineRadius: 3,
 			progress: charge
 			moveRot: -25
 			moveY: 6.5
@@ -108,8 +105,6 @@ parts: [
 		{
 			suffix: -ret
 			mirror: true
-			outlineColor: 22251b,
-			outlineRadius: 3,
 			progress: charge
 			moveRot: -25
 			moveY: 5.5
@@ -125,7 +120,6 @@ shoot: {
             inaccuracy: 0
             recoil: 1.5
             shootSound: arta
-            shootEffect: none
         bullet: {
 			type: BasicBulletType
 			collidesTiles: true

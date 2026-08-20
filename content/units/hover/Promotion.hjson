@@ -133,7 +133,6 @@ abilities: [
     effect: {
       type: ParticleEffect
       colorFrom: f6afdd
-      y: -0.9
       colorTo: 6a3fa490
       lifetime: 50
       particles: 1
@@ -199,7 +198,6 @@ weapons: [
 		progress: {
         type: charge
         op: curve
-        interp: pow2Out
         }
       }
     ]
@@ -209,7 +207,7 @@ weapons: [
       lifetime: 62.1
       drag: -0.08
       shrinkY: 0
-      skrinkX: 0
+      shrinkX: 0
       recoil: 1.2
       splashDamage: 410
       splashDamageRadius: 30
@@ -237,7 +235,6 @@ weapons: [
           lifetime: 40
           colorFrom: f6afdd
           colorTo: f6afdd00
-          drag: 0.4
           particles: 2
           cone: 360
           length: 6
@@ -252,7 +249,6 @@ weapons: [
           lifetime: 60
           colorFrom: f6afdd
           colorTo: f6afdd00
-          drag: 0.7
           particles: 2
           cone: 360
           length: 6
@@ -267,7 +263,6 @@ weapons: [
           colorFrom: f6afdd
           offsetX: -7
           colorTo: f6afdd00
-          drag: 0.4
           particles: 2
           cone: 360
           length: 6
@@ -282,7 +277,6 @@ weapons: [
           lifetime: 60
           colorFrom: f6afdd
           colorTo: f6afdd00
-          drag: 0.7
           offsetX: -7
           particles: 2
           cone: 360
@@ -345,7 +339,6 @@ weapons: [
           followParent: true
           rotWithParent: true
           interp: exp5Out
-          sizeInterp: exp5In
         }
         {
           type: WaveEffect
@@ -360,7 +353,6 @@ weapons: [
           followParent: true
           rotWithParent: true
           interp: exp5Out
-          sizeInterp: exp5In
         }
       ]
       hitEffect: [

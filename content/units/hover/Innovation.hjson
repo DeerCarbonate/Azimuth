@@ -158,7 +158,6 @@ parts: [
 weapons: [
   {
     recoil: 1.6
-    under: false
     layerOffset: -0.02
     shootY: 0
     shake: 0
@@ -201,7 +200,6 @@ weapons: [
     particles: 1
     length: 29
     line: true
-	   strokefrom: 1
     strokeTo: 0
     lenFrom: 4.5
     lenTo: 0
@@ -218,7 +216,6 @@ weapons: [
     particles: 1
     length: 29
     line: true
-	strokefrom: 1
     strokeTo: 0
     lenFrom: 4.5
     lenTo: 0

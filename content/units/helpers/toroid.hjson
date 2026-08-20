@@ -88,9 +88,6 @@
 	sameTypeHealMult: 0.08
     healPercent: 0.9
 	healEffect: none
-	effect: none
-	continuous: false
-	rotate: false
 	hitBuildings: true
 	hitUnits: false
 	sectorRad: 0

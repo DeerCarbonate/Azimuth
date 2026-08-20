@@ -147,7 +147,6 @@ parts: [
     y: 0.3
     reload: 250
     inaccuracy: 360
-	smokeEffect: none
     shoot: {
       type: ShootMulti
 	  source: {
@@ -268,7 +267,6 @@ parts: [
 			healColor: bf92f988
             pierceArmor:true
             width:4
-            length:5
             trailWidth: 0.87
             trailLength: 4
             lifetime: 27
