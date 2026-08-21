@@ -22,7 +22,7 @@ items: [
 ambientSound: loopFlux
 ambientSoundVolume: 0.2
 powerProduction: 10
-itemDuration: 480
+itemDuration: 120
 heatOutput: 10
 drawer: {
   type: DrawMulti
