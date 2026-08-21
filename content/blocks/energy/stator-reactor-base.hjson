@@ -30,8 +30,8 @@ craftTime: 100
 craftEffect: none
 liquidOutputDirections: [2,0]
 outputLiquids: [
-  gas-swartzite/0.1
-  gas-swartzite/0.1
+  gas-swartzite/0.0500
+  gas-swartzite/0.0500
 ]
 drawer: {
   type: DrawMulti

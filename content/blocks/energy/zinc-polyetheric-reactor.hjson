@@ -21,9 +21,9 @@ items: [
 }
 ambientSound: loopFlux
 ambientSoundVolume: 0.2
-powerProduction: 9.5
-itemDuration: 240
-heatOutput: 12
+powerProduction: 10
+itemDuration: 480
+heatOutput: 10
 drawer: {
   type: DrawMulti
   drawers: [
@@ -39,10 +39,10 @@ drawer: {
     parent: "power-heater"
     planet: gelion
                 "requirements": [
-                "cobalt/20000"
-                "platinum/10000"
-                "geliarin/6000"
-                "zinc/2000"
+                "cobalt/2000"
+                "platinum/1000"
+                "geliarin/600"
+                "zinc/20"
                 ]
         objectives: [
     {
