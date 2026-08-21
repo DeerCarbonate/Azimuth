@@ -22,6 +22,7 @@
     healColor: c5c9db88
     itemCapacity: 0
     hidden: true
+    playerControllable: false
 	drawCell: false
 	deathExplosionEffect: {
   type: MultiEffect
