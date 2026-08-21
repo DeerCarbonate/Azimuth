@@ -1,0 +1,5 @@
+type: Prop
+solid: false
+breakable: false
+hasShadow: false
+variants: 1
