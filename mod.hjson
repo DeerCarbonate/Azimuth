@@ -142,18 +142,6 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     bargo-ledge
     bargo-corall
     bargo-boulder
-    icy-floor
-    icy-red-snow-floor
-    icy-ashium-floor
-    red-ice-ledge
-    snowy-ashium-floor
-    snowy-bargotwo-floor
-    red-snow-floor
-    snowdrift-floor
-    red-snow-wall
-    snowy-ledge
-    snowy-corall
-    red-snow-boulder
     ashium-floor
     ashiumtwo-floor
     ashium-wall
@@ -181,6 +169,18 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     snow-crumbs
     ashium-litter
     crybalt-litter
+    icy-floor
+    icy-red-snow-floor
+    icy-ashium-floor
+    red-ice-ledge
+    snowy-ashium-floor
+    snowy-bargotwo-floor
+    red-snow-floor
+    snowdrift-floor
+    red-snow-wall
+    snowy-ledge
+    snowy-corall
+    red-snow-boulder
     ore-cobalt
     ore-cobalt(wall)
     ore-venerium
