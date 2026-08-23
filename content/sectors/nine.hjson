@@ -1,10 +1,10 @@
 difficulty: 3
 planet: gelion
 name: nine
-sector: 4
+sector: 25
 outline: false
 research: {
-parent: seven
+parent: eight
 requiresUnlock: false
 objectives: [
 terraformer

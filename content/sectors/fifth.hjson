@@ -5,7 +5,7 @@ name: fifth
 sector: 18
 outline: false
 research: {
-parent: sixth
+parent: twos
 requiresUnlock: false
 objectives: [
 {

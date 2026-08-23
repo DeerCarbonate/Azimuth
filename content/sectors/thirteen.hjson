@@ -1,15 +1,15 @@
-difficulty: 5
+difficulty: 13
 planet: gelion
-name: elev
-sector: 28
+name: thirteen
+sector: 7
 outline: false
 research: {
-parent: threes
+parent: eight
 requiresUnlock: false
 objectives: [
 {
 type: SectorComplete
-preset: nine
+preset: twelw
   }
  ]
 }

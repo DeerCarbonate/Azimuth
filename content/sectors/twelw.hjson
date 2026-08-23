@@ -1,10 +1,10 @@
 difficulty: 4
 planet: gelion
 name: twelw
-sector: 25
+sector: 78
 outline: false
 research: {
-parent: nine
+parent: elev
 requiresUnlock: false
 objectives: [
 {

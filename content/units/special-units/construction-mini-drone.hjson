@@ -11,8 +11,8 @@
 	range: 80
 	accel: 0.037
 	hitSize: 3
-	targetGround: true
-	targetAir: true
+	targetGround: false
+	targetAir: false
 	rotateSpeed: 9.2
     engineColor: fff4a3
     engineSize: 0
@@ -22,7 +22,6 @@
     healColor: c5c9db88
     itemCapacity: 0
     hidden: true
-    playerControllable: false
 	drawCell: false
 	deathExplosionEffect: {
   type: MultiEffect

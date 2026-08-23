@@ -1,10 +1,10 @@
 difficulty: 0
 planet: gelion
 name: ten
-sector: 20
+sector: 27
 outline: false
 research: {
-parent: nine
+parent: sixth
 requiresUnlock: false
 objectives: [
 hover-adjuster

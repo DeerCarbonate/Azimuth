@@ -2,10 +2,10 @@ captureWave: 20
 difficulty: 5
 planet: gelion
 name: eight
-sector: 7
+sector: 68
 outline: false
 research: {
-parent: seven
+parent: four
 requiresUnlock: false
 objectives: [
 relic-drill,

@@ -5,7 +5,7 @@ name: threes
 sector: 46
 outline: false
 research: {
-parent: twos
+parent: first
 requiresUnlock: false
 objectives: [
 {

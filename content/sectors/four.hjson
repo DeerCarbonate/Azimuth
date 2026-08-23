@@ -2,10 +2,10 @@ captureWave: 30
 difficulty: 5
 planet: gelion
 name: four
-sector: 5
+sector: 26
 outline: false
 research: {
-parent: threes
+parent: twos
 requiresUnlock: true
 objectives: [
 {
