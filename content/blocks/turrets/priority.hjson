@@ -8,7 +8,7 @@ shootCone: 9
 squareSprite: false
 recoil: 3
 reload: 220
-range: 185
+range: 180
 targetAir: true
 moveWhileCharging: true
 shootY: 10
@@ -119,7 +119,7 @@ shootType: {
     pierceCap: 3
 	
     lifetime: 12
-    damage: 205
+    damage: 210
     armorMultiplier: 1.2
 	laserAbsorb:true
 }
