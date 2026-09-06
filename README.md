@@ -1,4 +1,4 @@
-# AZIMUTH 0.5: OUT NOW.. and without 2 map revamps..
+# AZIMUTH 0.5: OUT NOW.. and without 1 map revamp..
 
 
 
