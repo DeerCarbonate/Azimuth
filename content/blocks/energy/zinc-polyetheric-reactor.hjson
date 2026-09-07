@@ -47,7 +47,7 @@ drawer: {
         objectives: [
     {
 type: SectorComplete
-preset: nine 
+preset: eight 
     }
   ]
 }
