@@ -52,13 +52,13 @@ engines: [
     x: -11
     y: -10
     radius: 2.8
-    rotation: 135
+    rotation: 225
   }
   {
     x: -8
     y: -14.5
     radius: 2.8
-    rotation: 135
+    rotation: 225
   }
 ]
 	deathExplosionEffect: {
@@ -175,7 +175,7 @@ abilities: [
       sizeFrom: 2.3
       sizeTo: 0
       offset: 0
-      layer: 60
+      layer: 90
     }
     type: MoveEffectAbility
     minVelocity: 0
