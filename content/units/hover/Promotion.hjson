@@ -174,7 +174,7 @@ weapons: [
     reload: 380
     name: Promotion-weapoN
     top: true
-    y: -1.5
+    y: -1.7
     x: 0
     shootSound: hasno
     ignoreRotation: false
