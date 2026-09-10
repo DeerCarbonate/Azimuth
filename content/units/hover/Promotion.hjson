@@ -148,8 +148,20 @@ parts: [
   }
   {
     type: HoverPart
-    x: 10
-    y: -7.5
+    x: 11
+    y: -10
+    sides: 36
+    mirror: true
+    radius: 8
+    phase: 120
+    stroke: 2
+    layerOffset: -0.001
+    color: fbace310
+  }
+  {
+    type: HoverPart
+    x: 8
+    y: -14.5
     sides: 36
     mirror: true
     radius: 8
@@ -212,6 +224,7 @@ weapons: [
     shootStatusDuration: 115
     rotateSpeed: 1.25
     rotate: true
+    shootY: 6.5
     shoot: {
       firstShotDelay: 50
     }
@@ -245,7 +258,7 @@ progress: {
       drag: -0.03
       shrinkY: 0
       shrinkX: 0
-      splashDamage: 80
+      splashDamage: 100
       splashDamageRadius: 15
       pierceDamageFactor: 0.2
       height: 12
@@ -266,11 +279,11 @@ progress: {
         {
           type: WaveEffect
           startDelay: 0
-          lifetime: 45
+          lifetime: 26
           sizeFrom: 0
-          sizeTo: 20
+          sizeTo: 8
           strokeFrom: 0
-          strokeTo: 7
+          strokeTo: 3
           colorFrom: ffffff60D
           colorTo: f6afdd00
           followParent: true
@@ -280,11 +293,11 @@ progress: {
         {
           type: WaveEffect
           startDelay: 0
-          lifetime: 64
+          lifetime: 46
           sizeFrom: 0
-          sizeTo: 24
+          sizeTo: 12
           strokeFrom: 0
-          strokeTo: 12
+          strokeTo: 6
           colorFrom: ffffff40
           colorTo: f6afdd00
           followParent: true
