@@ -37,26 +37,26 @@ engines: [
     rotation: 157.5
   }
   {
-    x: 11
+    x: 12
     y: -3
     radius: 2.8
     rotation: 292.5
   }
   {
-    x: 7.5
-    y: -5
+    x: 11
+    y: -6
     radius: 2.8
     rotation: 292.5
   }
   {
-    x: -11
+    x: -12
     y: -3
     radius: 2.8
     rotation: 247.5
   }
   {
-    x: -7.5
-    y: -5
+    x: -11
+    y: -6
     radius: 2.8
     rotation: 247.5
   }
