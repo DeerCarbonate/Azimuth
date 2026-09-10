@@ -211,6 +211,7 @@ weapons: [
     shootStatus: charge
     shootStatusDuration: 115
     rotateSpeed: 1.25
+    rotate: true
     shoot: {
       firstShotDelay: 50
     }
@@ -224,7 +225,7 @@ weapons: [
         color2: ffffff
         rotation: 10
         rotMove: 85
-        y: 5
+        y: 6.5
         followRotation: false
 progress: {
   type: charge
@@ -240,12 +241,12 @@ progress: {
     bullet: {
       sprite: large-orb
       despawnSound: energy-blade-hit
-      lifetime: 62.1
+      lifetime: 75
       drag: -0.01
       shrinkY: 0
       shrinkX: 0
       recoil: 0.1
-      splashDamage: 100
+      splashDamage: 80
       splashDamageRadius: 15
       pierceDamageFactor: 0.2
       height: 12
