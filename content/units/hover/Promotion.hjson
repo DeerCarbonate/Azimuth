@@ -27,37 +27,37 @@ engines: [
   {
     x: 9
     y: 6.5
-    radius: 2
+    radius: 2.6
     rotation: 33.5
   }
   {
     x: -9
     y: 6.5
-    radius: 2
+    radius: 2.6
     rotation: 146.5
   }
   {
     x: 11
     y: -10
-    radius: 2.4
+    radius: 2.8
     rotation: 355
   }
   {
     x: 9
     y: -15
-    radius: 2.4
+    radius: 2.8
     rotation: 355
   }
   {
     x: -11
     y: -10
-    radius: 2.4
+    radius: 2.8
     rotation: 175
   }
   {
     x: -9
     y: -15
-    radius: 2.4
+    radius: 2.8
     rotation: 175
   }
 ]
@@ -164,7 +164,7 @@ abilities: [
       type: ParticleEffect
       colorFrom: f6afdd
       colorTo: 6a3fa490
-      lifetime: 50
+      lifetime: 30
       particles: 1
       cone: 360
       length: 0
@@ -175,7 +175,7 @@ abilities: [
       sizeFrom: 2.3
       sizeTo: 0
       offset: 0
-      layer: 10
+      layer: 60
     }
     type: MoveEffectAbility
     minVelocity: 0
