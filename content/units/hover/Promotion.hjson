@@ -226,7 +226,11 @@ weapons: [
     rotate: true
     shootY: 6.5
     shoot: {
+      type: ShootSpread
       firstShotDelay: 50
+      shotDelay: 8
+      spread: 1
+      shots: 5
     }
     parts: [
       {
@@ -255,14 +259,14 @@ progress: {
       sprite: large-orb
       despawnSound: energy-blade-hit
       lifetime: 70
-      drag: -0.03
+      drag: -0.01
       shrinkY: 0
       shrinkX: 0
       splashDamage: 100
       splashDamageRadius: 15
       pierceDamageFactor: 0.2
       height: 12
-      speed: 1.1
+      speed: 2.1
       width: 8
       type: BasicBulletType
       frontColor: ffffff
