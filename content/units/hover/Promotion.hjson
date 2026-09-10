@@ -23,20 +23,44 @@ strafePenalty: 0.17
 healColor: f0a4d988
 shieldColor: f0a4d988
 	engineColor: f0a4d9
-	engines: [
-   {
+engines: [
+  {
     x: 9
     y: 6.5
     radius: 2.6
     rotation: 22.5
-   }
-   {
+  }
+  {
     x: -9
     y: 6.5
     radius: 2.6
     rotation: 157.5
-   }
- ]
+  }
+  {
+    x: 11
+    y: -3
+    radius: 2.8
+    rotation: 292.5
+  }
+  {
+    x: 7.5
+    y: -5
+    radius: 2.8
+    rotation: 292.5
+  }
+  {
+    x: -11
+    y: -3
+    radius: 2.8
+    rotation: 247.5
+  }
+  {
+    x: -7.5
+    y: -5
+    radius: 2.8
+    rotation: 247.5
+  }
+]
 	deathExplosionEffect: {
   type: MultiEffect
   effects: [
@@ -59,7 +83,7 @@ shieldColor: f0a4d988
         interp: pow5Out
         colorFrom: f0a4d984
         colorTo: b0b0b000
-        layer: 90
+        layer: -1
       }
     }
     {
