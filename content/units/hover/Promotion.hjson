@@ -18,21 +18,21 @@ canDrown: false
 speed: 1.15
 hitSize: 20
 drag: 0.08
-rotateSpeed: 1.65
+rotateSpeed: 1.8
 healColor: f0a4d988
 shieldColor: f0a4d988
 	engineColor: f0a4d9
 	engines: [
    {
-    x: 9
-    y: 2
-    radius: 2.5
+    x: 8.5
+    y: 7
+    radius: 2
     rotation: 22.5
    }
    {
-    x: -9
-    y: 2
-    radius: 2.5
+    x: -8.5
+    y: 7
+    radius: 2
     rotation: 157.5
    }
  ]
