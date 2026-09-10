@@ -26,13 +26,13 @@ shieldColor: f0a4d988
    {
     x: 9
     y: 6.5
-    radius: 2.8
+    radius: 2.6
     rotation: 22.5
    }
    {
     x: -9
     y: 6.5
-    radius: 2.8
+    radius: 2.6
     rotation: 157.5
    }
  ]
@@ -58,7 +58,7 @@ shieldColor: f0a4d988
         interp: pow5Out
         colorFrom: f0a4d984
         colorTo: b0b0b000
-        layer: 100.3
+        layer: 90
       }
     }
     {
@@ -111,12 +111,12 @@ preset: nine
 parts: [
   {
     type: HoverPart
-    x: 6
-    y: 6.3
+    x: 9
+    y: 6.5
     sides: 36
     mirror: true
-    radius: 10
-    phase: 90
+    radius: 8
+    phase: 120
     stroke: 2
     layerOffset: -0.001
     color: fbace310
@@ -127,8 +127,8 @@ parts: [
     y: -7.5
     sides: 36
     mirror: true
-    radius: 10
-    phase: 90
+    radius: 8
+    phase: 120
     stroke: 2
     layerOffset: -0.001
     color: fbace310
@@ -138,7 +138,7 @@ parts: [
     sides: 4
     mirror: false
     radius: 28
-    phase: 90
+    phase: 120
     stroke: 2
     layerOffset: -0.001
     color: fbace305
