@@ -107,7 +107,7 @@ parts: [
   }
   {
     type: HoverPart
-    x: 8
+    x: 10.5
     y: -6
     sides: 4
     mirror: true
@@ -149,7 +149,7 @@ abilities: [
     type: MoveEffectAbility
     minVelocity: 0
     interval: 0.00000001
-    y: -0.4
+    y: -1.5
     x: 0
   }
     {
@@ -157,7 +157,7 @@ abilities: [
     regen: 1
     max: 1
     angle: 360
-    radius: 18
+    radius: 22
     cooldown: 320
     whenShooting: false
     angleOffset: 0
@@ -174,7 +174,7 @@ weapons: [
     reload: 380
     name: Promotion-weapoN
     top: true
-    y: -1.8
+    y: -2.8
     x: 0
     shootSound: hasno
     ignoreRotation: false
