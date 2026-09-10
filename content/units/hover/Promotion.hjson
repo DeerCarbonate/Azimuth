@@ -27,37 +27,37 @@ engines: [
   {
     x: 9
     y: 6.5
-    radius: 2.6
+    radius: 2
     rotation: 22.5
   }
   {
     x: -9
     y: 6.5
-    radius: 2.6
+    radius: 2
     rotation: 157.5
   }
   {
-    x: 13
-    y: -3
-    radius: 2.8
+    x: 12
+    y: -6
+    radius: 2.4
     rotation: 292.5
   }
   {
-    x: 11.5
+    x: 10.5
     y: -11
-    radius: 2.8
+    radius: 2.4
     rotation: 292.5
   }
   {
-    x: -13
-    y: -3
-    radius: 2.8
+    x: -12
+    y: -6
+    radius: 2.4
     rotation: 247.5
   }
   {
-    x: -11.5
+    x: -10.5
     y: -11
-    radius: 2.8
+    radius: 2.4
     rotation: 247.5
   }
 ]
