@@ -149,7 +149,7 @@ abilities: [
     type: MoveEffectAbility
     minVelocity: 0
     interval: 0.00000001
-    y: -0.1
+    y: -0.4
     x: 0
   }
     {
@@ -174,7 +174,7 @@ weapons: [
     reload: 380
     name: Promotion-weapoN
     top: true
-    y: -0.1
+    y: -1.5
     x: 0
     shootSound: hasno
     ignoreRotation: false
