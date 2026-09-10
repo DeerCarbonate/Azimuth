@@ -22,7 +22,8 @@ rotateSpeed: 2.25
 strafePenalty: 0.17
 healColor: f0a4d988
 shieldColor: f0a4d988
-	engineColor: f0a4d9
+engineColor: f0a4d9
+faceTarget: false
 engines: [
   {
     x: 9
@@ -241,7 +242,7 @@ progress: {
       sprite: large-orb
       despawnSound: energy-blade-hit
       lifetime: 75
-      drag: -0.01
+      drag: -0.05
       shrinkY: 0
       shrinkX: 0
       recoil: 0.1
