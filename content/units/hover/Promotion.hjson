@@ -134,16 +134,6 @@ parts: [
     layerOffset: -0.001
     color: fbace310
   }
-  {
-    type: HoverPart
-    sides: 4
-    mirror: false
-    radius: 28
-    phase: 120
-    stroke: 2
-    layerOffset: -0.001
-    color: fbace305
-  }
 ]
 abilities: [
   {
@@ -162,6 +152,7 @@ abilities: [
       sizeFrom: 2.3
       sizeTo: 0
       offset: 0
+      layer: 80
     }
     type: MoveEffectAbility
     minVelocity: 0
