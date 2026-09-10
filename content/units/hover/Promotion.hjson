@@ -207,8 +207,7 @@ weapons: [
     y: -2.85
     x: 0
     shootSound: hasno
-    ignoreRotation: true
-    shootStatus: charge
+    shootStatus: core-acceleration
     shootStatusDuration: 115
     rotateSpeed: 1.25
     rotate: true
