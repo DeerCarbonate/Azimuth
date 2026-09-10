@@ -175,7 +175,7 @@ abilities: [
       sizeFrom: 2.3
       sizeTo: 0
       offset: 0
-      layer: 70
+      layer: 60
     }
     type: MoveEffectAbility
     minVelocity: 0
@@ -200,31 +200,31 @@ abilities: [
 ]
 weapons: [
   {
-    baseRotation: 0
     mirror: false
-    reload: 380
-    name: Promotion-weapoN
+    reload: 120
+    name: Promotion-weapon-1
     top: true
     y: -2.85
     x: 0
     shootSound: hasno
-    ignoreRotation: false
+    ignoreRotation: true
     shootStatus: charge
     shootStatusDuration: 115
+    rotateSpeed: 1.25
     shoot: {
-      firstShotDelay: 100
+      firstShotDelay: 50
     }
     parts: [
       {
         type: FlarePart
         radius: 0
-        radiusTo: 25
+        radiusTo: 5
         stroke: 5
         color1: f6afdd
         color2: ffffff
         rotation: 10
         rotMove: 85
-        y: 1.85
+        y: 5
         followRotation: false
 progress: {
   type: charge
@@ -241,20 +241,20 @@ progress: {
       sprite: large-orb
       despawnSound: energy-blade-hit
       lifetime: 62.1
-      drag: -0.08
+      drag: -0.01
       shrinkY: 0
       shrinkX: 0
-      recoil: 1.2
-      splashDamage: 410
-      splashDamageRadius: 30
+      recoil: 0.1
+      splashDamage: 100
+      splashDamageRadius: 15
       pierceDamageFactor: 0.2
-      height: 32
-      speed: 0.12
-      width: 12
+      height: 12
+      speed: 0.9
+      width: 8
       type: BasicBulletType
       frontColor: ffffff
       backColor: f6afdd
-      trailColor: f6afdd
+      trailColor: f6afdd70
       trailWidth: 3.25
       trailLength: 10
       keepVelocity: false
@@ -262,105 +262,6 @@ progress: {
       collidesGround: true
       absorbable: true
       reflectable: false
-      trailChance: 1
-      trailInterval: 4
-      trailRotation: true
-      trailEffect: [
-        {
-          type: ParticleEffect
-          lifetime: 40
-          colorFrom: f6afdd
-          colorTo: f6afdd00
-          particles: 2
-          cone: 360
-          length: 6
-          spin: 1
-          sizeFrom: 0
-          sizeTo: 2
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-        {
-          type: ParticleEffect
-          lifetime: 60
-          colorFrom: f6afdd
-          colorTo: f6afdd00
-          particles: 2
-          cone: 360
-          length: 6
-          sizeFrom: 2
-          sizeTo: 0
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-        {
-          type: ParticleEffect
-          lifetime: 40
-          colorFrom: f6afdd
-          offsetX: -7
-          colorTo: f6afdd00
-          particles: 2
-          cone: 360
-          length: 6
-          spin: 1
-          sizeFrom: 0
-          sizeTo: 2
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-        {
-          type: ParticleEffect
-          lifetime: 60
-          colorFrom: f6afdd
-          colorTo: f6afdd00
-          offsetX: -7
-          particles: 2
-          cone: 360
-          length: 6
-          sizeFrom: 2
-          sizeTo: 0
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-        {
-          type: ParticleEffect
-          lifetime: 60
-          region: large-bomb
-          colorFrom: f6afdd
-          colorTo: f6afdd00
-          particles: 1
-          cone: 360
-          length: 14
-          spin: 1
-          sizeFrom: 1
-          sizeTo: 1
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-        {
-          type: RadialEffect
-          lengthOffset: 6
-          amount: 2
-          rotationSpacing: 90
-          rotationOffset: 120
-          effect: {
-            type: ParticleEffect
-            startDelay: 5
-            lifetime: 60
-            region: large-bomb
-            colorFrom: f6afdd00
-            colorTo: f6afdd30
-            particles: 2
-            cone: 6
-            length: 12
-            spin: 2
-            sizeFrom: 5
-            sizeTo: 0
-            interp: exp5Out
-            sizeInterp: exp5In
-          }
-        }
-      ]
       shootEffect: [
         {
           type: WaveEffect
