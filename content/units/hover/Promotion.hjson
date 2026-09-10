@@ -18,7 +18,7 @@ canDrown: false
 speed: 1.15
 hitSize: 20
 drag: 0.08
-rotateSpeed: 1.8
+rotateSpeed: 2.25
 strafePenalty: 0.17
 healColor: f0a4d988
 shieldColor: f0a4d988
@@ -44,7 +44,7 @@ engines: [
   }
   {
     x: 9
-    y: -14
+    y: -15
     radius: 2.4
     rotation: 355
   }
@@ -56,7 +56,7 @@ engines: [
   }
   {
     x: -9
-    y: -14
+    y: -15
     radius: 2.4
     rotation: 175
   }
@@ -83,7 +83,6 @@ engines: [
         interp: pow5Out
         colorFrom: f0a4d984
         colorTo: b0b0b000
-        layer: -1
       }
     }
     {
@@ -176,7 +175,7 @@ abilities: [
       sizeFrom: 2.3
       sizeTo: 0
       offset: 0
-      layer: 80
+      layer: 10
     }
     type: MoveEffectAbility
     minVelocity: 0
