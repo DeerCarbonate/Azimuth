@@ -9,7 +9,7 @@ engineSize: 0
 outlineColor: 251b21
 outlineRadius: 3
 alwaysUnlocked: false
-range: 100
+range: 200
 armor: 7
 accel: 0.08
 health: 2750
@@ -241,16 +241,15 @@ progress: {
     bullet: {
       sprite: large-orb
       despawnSound: energy-blade-hit
-      lifetime: 75
-      drag: -0.025
+      lifetime: 70
+      drag: -0.03
       shrinkY: 0
       shrinkX: 0
-      recoil: 0.1
       splashDamage: 80
       splashDamageRadius: 15
       pierceDamageFactor: 0.2
       height: 12
-      speed: 0.9
+      speed: 1.1
       width: 8
       type: BasicBulletType
       frontColor: ffffff
@@ -295,25 +294,13 @@ progress: {
       ]
       hitEffect: [
         {
-          type: WaveEffect
-          rotWithParent: true
-          followParent: true
-          lifetime: 45
-          sizeFrom: 0
-          sizeTo: 26
-          strokeFrom: 6
-          strokeTo: 2
-          colorFrom: f6afdd
-          colorTo: f6afdd00
-        }
-        {
           type: ParticleEffect
           startDelay: 5
-          lifetime: 40
+          lifetime: 25
           region: large-bomb
           colorFrom: f6afdd
           colorTo: f6afdd00
-          particles: 14
+          particles: 7
           cone: 15
           length: 59
           spin: 0
@@ -324,11 +311,11 @@ progress: {
         }
         {
           type: ParticleEffect
-          lifetime: 40
+          lifetime: 25
           region: large-bomb
           colorFrom: f6afdd
           colorTo: f6afdd00
-          particles: 6
+          particles: 3
           cone: 7
           length: 62
           spin: -1
