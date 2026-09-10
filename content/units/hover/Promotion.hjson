@@ -28,37 +28,37 @@ engines: [
     x: 9
     y: 6.5
     radius: 2
-    rotation: 22.5
+    rotation: 33.5
   }
   {
     x: -9
     y: 6.5
     radius: 2
-    rotation: 157.5
+    rotation: 146.5
   }
   {
-    x: 12
-    y: -6
+    x: 11
+    y: -10
     radius: 2.4
-    rotation: 292.5
+    rotation: 355
   }
   {
-    x: 10.5
-    y: -11
+    x: 9
+    y: -14
     radius: 2.4
-    rotation: 292.5
+    rotation: 355
   }
   {
-    x: -12
-    y: -6
+    x: -11
+    y: -10
     radius: 2.4
-    rotation: 247.5
+    rotation: 175
   }
   {
-    x: -10.5
-    y: -11
+    x: -9
+    y: -14
     radius: 2.4
-    rotation: 247.5
+    rotation: 175
   }
 ]
 	deathExplosionEffect: {
