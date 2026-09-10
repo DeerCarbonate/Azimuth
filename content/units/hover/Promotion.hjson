@@ -258,7 +258,7 @@ progress: {
       drag: -0.01
       shrinkY: 0
       shrinkX: 0
-      damage: 200
+      damage: 180
       height: 12
       speed: 2.1
       width: 8
