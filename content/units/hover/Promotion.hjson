@@ -18,7 +18,7 @@ canDrown: false
 speed: 1.15
 hitSize: 20
 drag: 0.08
-rotateSpeed: 0.75
+rotateSpeed: 1.35
 healColor: f0a4d988
 shieldColor: f0a4d988
 	deathExplosionEffect: {
@@ -109,7 +109,7 @@ parts: [
   {
     type: HoverPart
     x: 10.5
-    y: -6
+    y: -6.5
     sides: 4
     mirror: true
     radius: 10
