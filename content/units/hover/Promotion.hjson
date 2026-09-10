@@ -18,9 +18,24 @@ canDrown: false
 speed: 1.15
 hitSize: 20
 drag: 0.08
-rotateSpeed: 1.35
+rotateSpeed: 1.65
 healColor: f0a4d988
 shieldColor: f0a4d988
+	engineColor: f0a4d9
+	engines: [
+   {
+    x: 9
+    y: 2
+    radius: 2.5
+    rotation: 22.5
+   }
+   {
+    x: -9
+    y: 2
+    radius: 2.5
+    rotation: 157.5
+   }
+ ]
 	deathExplosionEffect: {
   type: MultiEffect
   effects: [
@@ -108,8 +123,8 @@ parts: [
   }
   {
     type: HoverPart
-    x: 10.5
-    y: -6.5
+    x: 10
+    y: -7.5
     sides: 4
     mirror: true
     radius: 10
@@ -150,7 +165,7 @@ abilities: [
     type: MoveEffectAbility
     minVelocity: 0
     interval: 0.00000001
-    y: -1.5
+    y: -1.55
     x: 0
   }
     {
@@ -175,7 +190,7 @@ weapons: [
     reload: 380
     name: Promotion-weapoN
     top: true
-    y: -2.8
+    y: -2.85
     x: 0
     shootSound: hasno
     ignoreRotation: false
