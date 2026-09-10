@@ -40,25 +40,25 @@ engines: [
     x: 11
     y: -10
     radius: 2.8
-    rotation: 355
+    rotation: 315
   }
   {
-    x: 9
-    y: -15
+    x: 8
+    y: -14.5
     radius: 2.8
-    rotation: 355
+    rotation: 315
   }
   {
     x: -11
     y: -10
     radius: 2.8
-    rotation: 175
+    rotation: 135
   }
   {
-    x: -9
-    y: -15
+    x: -8
+    y: -14.5
     radius: 2.8
-    rotation: 175
+    rotation: 135
   }
 ]
 	deathExplosionEffect: {
