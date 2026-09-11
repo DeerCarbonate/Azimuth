@@ -5,10 +5,9 @@ rotate: true
 squareSprite: false
 liquidCapacity: 20
 requirements: [
-  venerium/90
-  platinum/35
-  compound/20
-  zinc/35
+  venerium/95
+  platinum/40
+  zinc/15
 ]
 consumes: {
   liquids: [
