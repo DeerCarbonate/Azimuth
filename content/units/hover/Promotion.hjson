@@ -10,9 +10,9 @@ outlineColor: 251b21
 outlineRadius: 3
 alwaysUnlocked: false
 range: 200
-armor: 7
+armor: 8
 accel: 0.08
-health: 2750
+health: 2950
 hovering: true
 canDrown: false
 speed: 1.15
@@ -255,19 +255,18 @@ progress: {
       sprite: large-orb
       despawnSound: energy-blade-hit
       lifetime: 70
-      drag: -0.01
       shrinkY: 0
       shrinkX: 0
-      damage: 180
-      height: 12
-      speed: 2.1
-      width: 8
+      damage: 160
+      height: 10
+      speed: 3.5
+      width: 7
       type: BasicBulletType
       frontColor: ffffff
       backColor: f6afdd
-      trailColor: f6afdd70
-      trailWidth: 3.25
-      trailLength: 10
+      trailColor: f6afdd
+      trailWidth: 3
+      trailLength: 6
       keepVelocity: false
       collidesTiles: true
       collidesGround: true
