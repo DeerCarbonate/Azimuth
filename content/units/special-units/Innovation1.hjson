@@ -224,7 +224,7 @@ weapons: [
       shots: 6
       spread: 18
 	  firstShotDelay: 18
-	  shotDelay: 12
+	  shotDelay: 7
     }
     ejectEffect: none
     shootSound: shootSalvo
@@ -232,7 +232,7 @@ weapons: [
       recoil: 0.02
       lifetime: 63
       drag: -0.040
-      damage: 12
+      damage: 25
       height: 7
       speed: 0.7
       sprite: azimut-deathcatcher
