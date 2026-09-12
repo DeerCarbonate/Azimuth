@@ -9,7 +9,7 @@ engineSize: 0
 outlineColor: 251b21
 outlineRadius: 3
 alwaysUnlocked: false
-range: 200
+range: 175
 armor: 8
 accel: 0.08
 health: 2950
@@ -260,7 +260,7 @@ progress: {
       lifetime: 65
       shrinkY: 0
       shrinkX: 0
-      damage: 145
+      damage: 140
       height: 12
       speed: 3.5
       width: 9
@@ -331,6 +331,32 @@ progress: {
           rotWithParent: true
           interp: exp5Out
         }
+        {
+followParent: false
+length: 0
+lifetime: 50
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 48
+sizeTo: 0
+colorTo: d690d3
+baseRotation: 90
+interp:pow3Out
+}
+{
+followParent: false
+length: 0
+lifetime: 50
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 48
+sizeTo: 0
+colorTo: d690d3
+baseRotation: 180
+interp:pow3Out
+}
       ]
       smokeEffect: [{
         type: ParticleEffect
@@ -375,6 +401,32 @@ interp: pow3Out
   colorTo: b3a8de00
   line: true
   interp: pow3Out
+}
+        {
+followParent: false
+length: 0
+lifetime: 50
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 48
+sizeTo: 0
+colorTo: d690d3
+baseRotation: 90
+interp:pow3Out
+}
+{
+followParent: false
+length: 0
+lifetime: 50
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 48
+sizeTo: 0
+colorTo: d690d3
+baseRotation: 180
+interp:pow3Out
 }
 ]
 despawnEffect: [
