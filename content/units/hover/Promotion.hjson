@@ -257,7 +257,7 @@ progress: {
       sprite: azimut-hitsliceb
       despawnSound: none
       hitSound: none
-      lifetime: 70
+      lifetime: 65
       shrinkY: 0
       shrinkX: 0
       damage: 145
@@ -297,7 +297,7 @@ progress: {
         radiusTo: 16
         stroke: 3.5
         innerRadScl: 0.60
-        y: -3.5
+        y: -3
         layer: 101
         weaponIndex: 0
       }
@@ -355,6 +355,7 @@ cone: 0
 region: azimut-shockwave
 sizeFrom: 2
 sizeTo: 18
+colorFrom: d690d395
 colorTo: b3a8de00
 baseRotation: 180
 interp: pow3Out
@@ -370,7 +371,7 @@ interp: pow3Out
   sizeTo: 0
   strokeFrom: 2
   strokeTo: 2
-  colorFrom: d690d380
+  colorFrom: d690d395
   colorTo: b3a8de00
   line: true
   interp: pow3Out
@@ -386,6 +387,7 @@ cone: 0
 region: azimut-shockwave
 sizeFrom: 2
 sizeTo: 18
+colorFrom: d690d395
 colorTo: b3a8de00
 baseRotation: 180
 interp: pow3Out
@@ -401,7 +403,7 @@ interp: pow3Out
   sizeTo: 0
   strokeFrom: 2
   strokeTo: 2
-  colorFrom: d690d380
+  colorFrom: d690d395
   colorTo: b3a8de00
   line: true
   interp: pow3Out
