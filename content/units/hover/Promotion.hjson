@@ -254,7 +254,7 @@ progress: {
       }
     ]
     bullet: {
-      sprite: sliceb
+      sprite: azimut-hitsliceb
       despawnSound: none
       hitSound: none
       lifetime: 70
@@ -353,7 +353,7 @@ lifetime: 30
 particles: 1
 cone: 0
 region: azimut-shockwave
-sizeFrom: 4
+sizeFrom: 2
 sizeTo: 18
 colorTo: b3a8de00
 baseRotation: 180
@@ -384,7 +384,7 @@ lifetime: 30
 particles: 1
 cone: 0
 region: azimut-shockwave
-sizeFrom: 4
+sizeFrom: 2
 sizeTo: 18
 colorTo: b3a8de00
 baseRotation: 180
