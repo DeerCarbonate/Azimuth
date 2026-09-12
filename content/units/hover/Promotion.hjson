@@ -377,21 +377,21 @@ hitEffect: [
 {
 followParent: false
 length: 0
-lifetime: 30
+lifetime: 45
 particles: 1
 cone: 0
 region: azimut-shockwave
 sizeFrom: 2
 sizeTo: 18
 colorFrom: d690d395
-colorTo: b3a8de00
+colorTo: d690d300
 baseRotation: 180
 interp: pow3Out
 }
 {
   type: ParticleEffect
   particles: 8
-  lifetime: 40
+  lifetime: 55
   length: 55
   baseLength: 0
   cone: 360
@@ -400,7 +400,7 @@ interp: pow3Out
   strokeFrom: 2
   strokeTo: 2
   colorFrom: d690d395
-  colorTo: b3a8de00
+  colorTo: d690d300
   line: true
   interp: pow3Out
 }
@@ -409,21 +409,21 @@ despawnEffect: [
 {
 followParent: false
 length: 0
-lifetime: 30
+lifetime: 45
 particles: 1
 cone: 0
 region: azimut-shockwave
 sizeFrom: 2
 sizeTo: 18
 colorFrom: d690d395
-colorTo: b3a8de00
+colorTo: d690d300
 baseRotation: 180
 interp: pow3Out
 }
 {
   type: ParticleEffect
   particles: 8
-  lifetime: 40
+  lifetime: 55
   length: 55
   baseLength: 0
   cone: 360
@@ -432,7 +432,7 @@ interp: pow3Out
   strokeFrom: 2
   strokeTo: 2
   colorFrom: d690d395
-  colorTo: b3a8de00
+  colorTo: d690d300
   line: true
   interp: pow3Out
 }
