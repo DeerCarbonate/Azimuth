@@ -254,8 +254,9 @@ progress: {
       }
     ]
     bullet: {
-      sprite: large-orb
-      despawnSound: hitsliceb
+      sprite: sliceb
+      despawnSound: none
+      hitSound: none
       lifetime: 70
       shrinkY: 0
       shrinkX: 0
@@ -335,14 +336,14 @@ progress: {
         type: ParticleEffect
         colorFrom: b3a8de85
         colorTo: b0b0b000
-        particles: 8
-        cone: 28
-        lifetime: 65
-        length: 45
+        particles: 7
+        cone: 12
+        lifetime: 45
+        length: 25
         interp: pow4Out
 		    sizeInterp: pow2In
-        sizeFrom: 3.2
-        sizeTo: 0.3
+        sizeFrom: 3
+        sizeTo: 0.6
       }]
 hitEffect: [
 {
@@ -352,8 +353,39 @@ lifetime: 30
 particles: 1
 cone: 0
 region: azimut-shockwave
-sizeFrom: 0
-sizeTo: 14
+sizeFrom: 4
+sizeTo: 18
+colorTo: b3a8de00
+baseRotation: 180
+interp: pow3Out
+}
+{
+  type: ParticleEffect
+  particles: 8
+  lifetime: 40
+  length: 55
+  baseLength: 0
+  cone: 360
+  sizeFrom: 0
+  sizeTo: 0
+  strokeFrom: 2
+  strokeTo: 2
+  colorFrom: d690d380
+  colorTo: b3a8de00
+  line: true
+  interp: pow3Out
+}
+]
+despawnEffect: [
+{
+followParent: false
+length: 0
+lifetime: 30
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 4
+sizeTo: 18
 colorTo: b3a8de00
 baseRotation: 180
 interp: pow3Out
