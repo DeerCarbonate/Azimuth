@@ -144,7 +144,7 @@ shootType: {
           speed: 4.5
           lifetime: 70
           drag: 0.002
-          damage: 17
+          damage: 20
           pierce: true
           pierceBuilding: true
           pierceCap: 8
@@ -183,7 +183,7 @@ shootType: {
             speed: 2.6
             lifetime: 30
             drag: 0.005
-            damage: 10
+            damage: 12
             pierce: true
             pierceBuilding: true
             pierceCap: 6

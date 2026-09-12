@@ -227,6 +227,8 @@ weapons: [
     shootY: 6.5
     shoot: {
       firstShotDelay: 50
+      shots: 2
+      shotDelay: 20
     }
     parts: [
       {
@@ -253,25 +255,52 @@ progress: {
     ]
     bullet: {
       sprite: large-orb
-      despawnSound: energy-blade-hit
+      despawnSound: hitsliceb
       lifetime: 70
       shrinkY: 0
       shrinkX: 0
-      damage: 160
+      damage: 145
       height: 10
       speed: 3.5
       width: 7
       type: BasicBulletType
       frontColor: ffffff
-      backColor: f6afdd
-      trailColor: f6afdd
-      trailWidth: 3
-      trailLength: 6
+      backColor: d690d3
+      trailColor: d690d3
+      trailWidth: 2.5
+      trailLength: 6.5
       keepVelocity: false
       collidesTiles: true
       collidesGround: true
       absorbable: true
-      reflectable: false
+      reflectable: true
+        parts: [
+      {
+progress: {
+  type: life
+  ops: [
+    {
+      op: curve
+      interp: pow2Out
+    }
+    {
+      op: curve
+      interp: slope
+    }
+  ]
+}
+        type: FlarePart
+        sides: 2
+        color1: d690d3
+        radius: 0
+        radiusTo: 16
+        stroke: 3.5
+        innerRadScl: 0.60
+        y: -3.5
+        layer: 101
+        weaponIndex: 0
+      }
+    ]
       shootEffect: [
         {
           type: WaveEffect
@@ -302,39 +331,50 @@ progress: {
           interp: exp5Out
         }
       ]
-      hitEffect: [
-        {
-          type: ParticleEffect
-          startDelay: 5
-          lifetime: 25
-          region: large-bomb
-          colorFrom: f6afdd
-          colorTo: f6afdd00
-          particles: 7
-          cone: 15
-          length: 59
-          spin: 0
-          sizeFrom: 6
-          sizeTo: 7
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-        {
-          type: ParticleEffect
-          lifetime: 25
-          region: large-bomb
-          colorFrom: f6afdd
-          colorTo: f6afdd00
-          particles: 3
-          cone: 7
-          length: 62
-          spin: -1
-          sizeFrom: 5
-          sizeTo: 8
-          interp: exp5Out
-          sizeInterp: exp5In
-        }
-      ]
+      smokeEffect: [{
+        type: ParticleEffect
+        colorFrom: b3a8de85
+        colorTo: b0b0b000
+        particles: 8
+        cone: 28
+        lifetime: 65
+        length: 45
+        interp: pow4Out
+		    sizeInterp: pow2In
+        sizeFrom: 3.2
+        sizeTo: 0.3
+      }]
+hitEffect: [
+{
+followParent: false
+length: 0
+lifetime: 30
+particles: 1
+cone: 0
+region: azimut-shockwave
+sizeFrom: 0
+sizeTo: 14
+colorTo: b3a8de00
+baseRotation: 180
+interp: pow3Out
+}
+{
+  type: ParticleEffect
+  particles: 8
+  lifetime: 40
+  length: 55
+  baseLength: 0
+  cone: 360
+  sizeFrom: 0
+  sizeTo: 0
+  strokeFrom: 2
+  strokeTo: 2
+  colorFrom: d690d380
+  colorTo: b3a8de00
+  line: true
+  interp: pow3Out
+}
+]
     }
   }
 ]
