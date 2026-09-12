@@ -12,7 +12,7 @@ alwaysUnlocked: false
 range: 175
 armor: 8
 accel: 0.08
-health: 2950
+health: 2900
 hovering: true
 canDrown: false
 speed: 1.15
@@ -202,7 +202,7 @@ abilities: [
     max: 1
     angle: 360
     radius: 22
-    cooldown: 320
+    cooldown: 260
     whenShooting: false
     angleOffset: 0
     y: 0
