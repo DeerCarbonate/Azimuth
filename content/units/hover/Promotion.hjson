@@ -334,28 +334,30 @@ progress: {
         {
 followParent: false
 length: 0
-lifetime: 50
+lifetime: 35
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 48
+sizeFrom: 24
 sizeTo: 0
 colorTo: d690d3
 baseRotation: 90
 interp:pow3Out
+followParent: true
 }
 {
 followParent: false
 length: 0
-lifetime: 50
+lifetime: 35
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 48
+sizeFrom: 24
 sizeTo: 0
 colorTo: d690d3
 baseRotation: 180
 interp:pow3Out
+followParent: true
 }
       ]
       smokeEffect: [{
@@ -405,28 +407,32 @@ interp: pow3Out
         {
 followParent: false
 length: 0
-lifetime: 50
+lifetime: 35
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 48
+sizeFrom: 24
 sizeTo: 0
 colorTo: d690d3
 baseRotation: 90
 interp:pow3Out
+sizeChangeStart: 15
+spin:0.25
 }
 {
 followParent: false
 length: 0
-lifetime: 50
+lifetime: 35
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 48
+sizeFrom: 24
 sizeTo: 0
 colorTo: d690d3
 baseRotation: 180
 interp:pow3Out
+sizeChangeStart: 15
+spin:0.25
 }
 ]
 despawnEffect: [
@@ -459,6 +465,36 @@ interp: pow3Out
   colorTo: b3a8de00
   line: true
   interp: pow3Out
+}
+        {
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 24
+sizeTo: 0
+colorTo: d690d3
+baseRotation: 90
+interp:pow3Out
+sizeChangeStart: 15
+spin:0.25
+}
+{
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 24
+sizeTo: 0
+colorTo: d690d3
+baseRotation: 180
+interp:pow3Out
+sizeChangeStart: 15
+spin:0.25
 }
 ]
     }
