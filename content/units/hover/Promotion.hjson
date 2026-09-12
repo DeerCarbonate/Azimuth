@@ -407,32 +407,32 @@ interp: pow3Out
         {
 followParent: false
 length: 0
-lifetime: 35
+lifetime: 55
 particles: 1
 cone: 0
 region: azimut-despawn
 sizeFrom: 24
-sizeTo: 0
-colorTo: d690d3
+sizeTo: 18
+colorTo: d690d300
 baseRotation: 90
 interp:pow3Out
-sizeChangeStart: 15
-spin:0.25
+sizeChangeStart: 20
+spin:-2
 }
 {
 followParent: false
 length: 0
-lifetime: 35
+lifetime: 55
 particles: 1
 cone: 0
 region: azimut-despawn
 sizeFrom: 24
-sizeTo: 0
-colorTo: d690d3
+sizeTo: 18
+colorTo: d690d300
 baseRotation: 180
 interp:pow3Out
-sizeChangeStart: 15
-spin:0.25
+sizeChangeStart: 20
+spin:-2
 }
 ]
 despawnEffect: [
