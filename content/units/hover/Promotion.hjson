@@ -261,14 +261,14 @@ progress: {
       shrinkY: 0
       shrinkX: 0
       damage: 145
-      height: 10
+      height: 12
       speed: 3.5
-      width: 7
+      width: 9
       type: BasicBulletType
       frontColor: ffffff
       backColor: d690d3
       trailColor: d690d3
-      trailWidth: 2.5
+      trailWidth: 2.35
       trailLength: 6.5
       keepVelocity: false
       collidesTiles: true
