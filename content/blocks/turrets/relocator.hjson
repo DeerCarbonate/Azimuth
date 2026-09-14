@@ -92,6 +92,7 @@ collidesAir: true
 fragBullets: 2
 fragVelocityMin: 0.8
 fragVelocityMax: 1.6
+armorMultiplier: 1.1
 buildingDamageMultiplier: 0.1
                 trailChance:0.65
                 trailInterval:6

@@ -107,11 +107,11 @@
             trailLength:6
             trailColor:bf92f9
             lifetime: 32
-            damage: 6
+            damage: 8
             speed: 4
             drag:0.02
-            healAmount:26
-            lifesteal:0.2
+            healAmount:22
+            lifesteal:0.25
             homingRange:50
             homingPower:0.1
             homingDelay:4
