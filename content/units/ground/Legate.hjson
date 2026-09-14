@@ -122,7 +122,7 @@
         }
       ]
       bullet: {
-        shootEffect: {
+        shootEffect: [{
           type: ParticleEffect
           colorFrom: cc918b
           colorTo: ffbfad
@@ -135,6 +135,20 @@
           offset: 1
           lifetime: 8
         }
+        {
+        followParent: false
+        length: 0
+        layer: 105
+        lifetime: 7
+        particles: 1
+        cone: 0
+        region: azimut-long-triangle
+        sizeFrom: 12
+        sizeTo: 0
+        colorTo: fccabd75
+        baseRotation: 0
+        }
+        ]
         smokeEffect: {
           type: ParticleEffect
           colorFrom: d88686
