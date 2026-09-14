@@ -7,6 +7,7 @@ ammoPerShot: 4
 alwaysUnlocked: false
 squareSprite: false
 liquidCapacity: 250
+unitSort: farthest
 coolant: {
   type: ConsumeLiquid
   liquid: nitrogen

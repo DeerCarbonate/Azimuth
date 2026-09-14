@@ -18,6 +18,7 @@ rotateSpeed: 1
 shootSound: laser4
 chargeSound: chargeLancer
 ammoPerShot: 2
+unitSort: grouped
 heatRequirement: 12
 shoot: {
   shots: 1
