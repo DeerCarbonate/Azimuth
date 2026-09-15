@@ -437,8 +437,8 @@ abilities: [
   }
   {
     type:MoveEffectAbility
-    minVelocity:4.55
-    interval:3.75
+    minVelocity:4
+    interval:4
     rotateEffect:true
     rotation:-90
     effect:{
@@ -452,7 +452,7 @@ abilities: [
      region:azimut-development-trace
      colorFrom: d690d375
      colorTo: ffffff00
-     layer:79.3
+     layer:80
      }
 }
       {
