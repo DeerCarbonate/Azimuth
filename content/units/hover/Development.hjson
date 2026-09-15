@@ -421,8 +421,8 @@ progress: {
 abilities: [
   {
     type: ShieldArcAbility
-    regen: 3
-    max: 200
+    regen: 3.5
+    max: 250
     angle: 140
     radius: 17
     cooldown: 150
