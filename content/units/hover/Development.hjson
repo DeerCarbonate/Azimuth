@@ -437,7 +437,7 @@ abilities: [
   }
   {
     type:MoveEffectAbility
-    minVelocity:4
+    minVelocity:3.15
     interval:4
     rotateEffect:true
     rotation:-90
@@ -446,8 +446,8 @@ abilities: [
      particles: 1
      length: 1
      lifetime: 40
-     sizeFrom: 29
-     sizeTo: 23
+     sizeFrom: 23
+     sizeTo: 19
      cone: 0
      region:azimut-development-trace
      colorFrom: d690d375
@@ -481,10 +481,11 @@ abilities: [
       sizeFrom: 0
       sizeTo: 4
       sizeInterp: slope
-      colorFrom: b0b0b050
-      colorTo: b0b0b030
+      colorFrom: b0b0b040
+      colorTo: b0b0b020
 	  particles: 2
 	  lifetime: 35
+    layer: 75
     }
 }
       {
