@@ -56,7 +56,7 @@ weapons: [
     shootSound: explosionNavanax
     chargeSound: chargeEmp
 
-    shootStatus: slow
+    shootStatus: charge
     shootStatusDuration: 210
 
     shoot: {

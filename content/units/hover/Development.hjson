@@ -438,7 +438,7 @@ abilities: [
   {
     type:MoveEffectAbility
     minVelocity:4.55
-    interval:4.3
+    interval:4
     rotateEffect:true
     rotation:-90
     effect:{
@@ -450,7 +450,7 @@ abilities: [
      sizeTo: 23
      cone: 0
      region:azimut-development-trace
-     colorFrom: d690d380
+     colorFrom: d690d375
      colorTo: ffffff00
      layer:79.3
      }
