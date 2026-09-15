@@ -2,7 +2,7 @@ flying: true
 outlineColor: 21202a
 type: tether
 hitSize: 11
-health: 300
+health: 250
 armor: 1
 range: 0
 itemCapacity: 0
@@ -135,8 +135,8 @@ parts: [
 abilities: [
   {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -149,8 +149,8 @@ abilities: [
   }
     {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -163,8 +163,8 @@ abilities: [
   }
     {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -177,8 +177,8 @@ abilities: [
   }
     {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -191,8 +191,8 @@ abilities: [
   }
     {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -205,8 +205,8 @@ abilities: [
   }
     {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -219,8 +219,8 @@ abilities: [
   }
     {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -233,8 +233,8 @@ abilities: [
   }
       {
     type: ShieldArcAbility
-    regen: 8
-    max: 950
+    regen: 6
+    max: 650
     angle: 55
     radius: 130
     cooldown: 300
@@ -250,8 +250,8 @@ abilities: [
     radius: 126
     sides: 40
     cooldown: 300
-    regen: 2
-    max: 500
+    regen: 6
+    max: 250
 	display: false
   }
 ]
