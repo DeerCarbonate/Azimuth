@@ -437,7 +437,7 @@ abilities: [
   }
   {
     type:MoveEffectAbility
-    minVelocity:4.85
+    minVelocity:4.55
     interval:4.3
     rotateEffect:true
     rotation:-90
@@ -445,7 +445,7 @@ abilities: [
      type: ParticleEffect
      particles: 1
      length: 1
-     lifetime: 48
+     lifetime: 40
      sizeFrom: 29
      sizeTo: 23
      cone: 0
