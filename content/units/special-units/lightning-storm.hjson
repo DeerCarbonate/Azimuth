@@ -1,0 +1,46 @@
+type: missile
+template: MissileUnitType
+controller: MissileAI
+isEnemy:false
+playerControllable: false
+allowedInPayloads: false
+outlineRadius: 0
+createWreck: false
+lowAltitude: true
+useUnitCap: false
+drawCell: false
+physics: false
+hitSize: 1
+flying: true
+createScorch: false
+shadowElevation: -1
+
+envDisabled: 0
+envEnabled: -1
+hidden: false
+
+missileAccelTime: 10
+lifetime: 2400
+rotateSpeed: 0.002
+fogRadius: 0
+maxRange: 0
+health: 20000
+speed: 0
+armor: 1
+deathExplosionEffect: none
+loopSoundVolume: 0
+bounded: false
+drawCell: false
+trailLength: 0
+engineColor: fff4a3
+engineSize: 0
+engineOffset: 0
+engineLayer: 100
+healColor: ffffff00
+abilities: [
+{
+type:RegenAbility
+percentAmount: 200
+}
+]
+immunities: [ slow, spore-slowed, tarred]

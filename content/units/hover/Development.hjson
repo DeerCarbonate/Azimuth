@@ -435,6 +435,26 @@ abilities: [
 	drawArc: false
 	chanceDeflect: 1
   }
+  {
+    type:MoveEffectAbility
+    minVelocity:1.8
+    interval:4.3
+    rotateEffect:true
+    rotation:-90
+    effect:{
+     type: ParticleEffect
+     particles: 1
+     length: 1
+     lifetime: 48
+     sizeFrom: 29
+     sizeTo: 23
+     cone: 0
+     region:azimut-development-trace
+     colorFrom: d690d360
+     colorTo: ffffff00
+     layer:79.3
+     }
+}
       {
     type: EnergyFieldAbility
     maxTargets: 4
