@@ -438,7 +438,7 @@ abilities: [
   {
     type:MoveEffectAbility
     minVelocity:4.55
-    interval:4
+    interval:3.75
     rotateEffect:true
     rotation:-90
     effect:{
