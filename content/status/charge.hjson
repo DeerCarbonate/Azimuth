@@ -1,13 +1,4 @@
 healthMultiplier: 1.8
 speedMultiplier: 0.5
-effectChance: 0.03
-effect: {
-        type: ParticleEffect
-        colorFrom: f0a4d9
-        colorTo: ae628620
-        particles: 2
-        lifetime: 50
-        length: 30
-        sizeFrom: 4.2
-        sizeTo: 0
-}
+effectChance: 0
+effect: none
