@@ -1,26 +1,24 @@
-	type: flying
-	outlineColor: 21202a
-	flying: true
-	health: 550
+  type: flying
+  outlineColor: 21202a
+  flying: true
+  health: 550
   controller: FlyingFollowAI
   armor: 6
-	drag: 0.075
-	speed: 5.5
-	accel: 0.027
-	hitSize: 3
-	targetGround: false
-	targetAir: false
-	rotateSpeed: 9.2
-  engineColor: fff4a3
-  engineSize: 0
-  engineOffset: 3
-	trailColor: bf92f900
+  drag: 0.075
+  speed: 5.5
+  accel: 0.027
+  hitSize: 3
+  targetGround: false
+  targetAir: false
+  rotateSpeed: 9.2
+  trailColor: bf92f900
   shieldColor: ffa06688
   healColor: ffa06688
   itemCapacity: 0
   hidden: true
-	drawCell: false
-	deathExplosionEffect: {
+  drawCell: false
+  engineColor: ffffff00
+  deathExplosionEffect: {
   type: MultiEffect
   effects: [
     {
