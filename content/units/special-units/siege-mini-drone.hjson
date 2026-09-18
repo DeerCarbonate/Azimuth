@@ -10,6 +10,7 @@
   targetGround: false
   targetAir: false
   rotateSpeed: 9.2
+  faceTarget: false
   trailColor: bf92f900
   shieldColor: ffa06688
   healColor: ffa06688
@@ -17,6 +18,8 @@
   hidden: true
   drawCell: false
   engineSize: 0
+  logicControllable: false
+  playerControllable: false
   deathExplosionEffect: {
   type: MultiEffect
   effects: [
@@ -145,7 +148,7 @@
 			"alternate": false,
 			"rotate": true,
 			"rotateSpeed": 3.6,
-			"reload": 10,
+			"reload": 40,
 			"inaccuracy": 3,
 			"shootSound": shootLocus,
 			"controllable": true,
@@ -162,15 +165,15 @@ shoot: {
     bullet: {
     type: RailBulletType
     length: 125
-    damage: 32
+    damage: 70
     buildingDamageMultiplier: 0.1
 	lifetime: 1
-	hitColor: bff6b1
+	hitColor: ffa066
     pointEffectSpace: 2.7
 	despawnEffect: none
     smokeEffect: none
     status: pierced
-	statusDuration: 240
+	statusDuration: 120
 	  hitEffect: {
 	  followParent: false
 	  length: 0
@@ -180,7 +183,7 @@ shoot: {
       region: azimut-despawn
       sizeFrom: 32
       sizeTo: 0
-      colorTo: bff6b100
+      colorTo: ffa06600
       baseRotation: 90
 	  }
 	  	              pointEffect: {
@@ -195,8 +198,8 @@ shoot: {
                         line: true
                         lenFrom: 4
                         lenTo: 0
-                        colorFrom: bff6b121
-                        colorTo: bff6b100
+                        colorFrom: ffa06621
+                        colorTo: ffa06600
                     }
                     {
                         type: ParticleEffect
@@ -209,7 +212,7 @@ shoot: {
                         sizeTo: 0
                         interp: pow5Out
                         sizeInterp: pow10In
-                        colorTo: bff6b100
+                        colorTo: ffa06600
                     }
                     {
                         type: ParticleEffect
@@ -224,8 +227,8 @@ shoot: {
                         sizeFrom: 1.5
                         sizeTo: 0
                         length: 9
-                        colorFrom: bff6b100
-                        colorTo:bff6b100
+                        colorFrom: ffa06600
+                        colorTo: ffa06600
                         interp: pow3Out
                         sizeInterp: pow3In
                     }
