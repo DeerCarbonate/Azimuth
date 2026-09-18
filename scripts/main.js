@@ -43,8 +43,10 @@ const oscilliusSnake = librarySnake.head("oscillius", {
     speed: 4.6,
     health: 700
 }, {});
-const siegeMiniDrone = Vars.content.getByName(
-    ContentType.unit,
-    "azimut-siege-mini-drone"
-);
-siegeMiniDrone.aiController = FollowAllyAI;
+Events.on(ClientLoadEvent, () => {
+
+    const siegeMiniDrone = Vars.content.unit("azimut-siege-mini-drone");
+
+    siegeMiniDrone.aiController = FollowAllyAI;
+
+});
