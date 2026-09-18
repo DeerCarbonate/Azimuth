@@ -1,15 +1,16 @@
 const FollowAllyAI = () => extend(AIController, {
-    target: null,
+    following: null,
     updateMovement() {
+        this.unloadPayloads();
         const unit = this.unit;
-        if (unit == null) return;
+        if (unit == null || unit.dead) return;
         if (
-            this.target == null ||
-            this.target.dead ||
-            !this.target.isValid() ||
-            this.target.team != unit.team
+            this.following == null ||
+            this.following.dead ||
+            !this.following.isValid() ||
+            this.following.team != unit.team
         ) {
-            this.target = Units.closest(
+            this.following = Units.closest(
                 unit.team,
                 unit.x,
                 unit.y,
@@ -19,9 +20,30 @@ const FollowAllyAI = () => extend(AIController, {
                      !u.dead
             );
         }
-        if (this.target == null) return;
-        this.moveTo(this.target, 40);
-        this.faceTarget();
+        if (this.following == null) return;
+        const angle = Angles.angle(
+            unit.x,
+            unit.y,
+            this.following.x,
+            this.following.y
+        );
+
+        const distance = Mathf.dst(
+            unit.x,
+            unit.y,
+            this.following.x,
+            this.following.y
+        );
+        if (distance > 40) {
+
+            Tmp.v1.trns(
+                angle,
+                unit.speed
+            );
+
+            unit.moveAt(Tmp.v1);
+        }
+        unit.lookAt(this.following);
     }
 });
 module.exports = FollowAllyAI;

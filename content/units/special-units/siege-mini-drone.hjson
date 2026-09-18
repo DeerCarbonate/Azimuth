@@ -148,7 +148,7 @@
 			"mirror": false,
 			"alternate": false,
 			"rotate": true,
-			"rotateSpeed": 3.6,
+			"rotateSpeed": 30,
 			"reload": 40,
 			"inaccuracy": 3,
 			"shootSound": shootLocus,
