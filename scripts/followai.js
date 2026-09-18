@@ -2,6 +2,7 @@ const FollowAllyAI = () => extend(AIController, {
     target: null,
     updateMovement() {
         const unit = this.unit;
+        if (unit == null) return;
         if (
             this.target == null ||
             this.target.dead ||
@@ -12,6 +13,7 @@ const FollowAllyAI = () => extend(AIController, {
                 unit.team,
                 unit.x,
                 unit.y,
+                2000,
                 u => u != unit &&
                      u.isValid() &&
                      !u.dead
