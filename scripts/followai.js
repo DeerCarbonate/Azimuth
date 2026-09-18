@@ -22,3 +22,4 @@ const FollowAllyAI = () => extend(AIController, {
         this.faceTarget();
     }
 });
+module.exports = FollowAllyAI;
