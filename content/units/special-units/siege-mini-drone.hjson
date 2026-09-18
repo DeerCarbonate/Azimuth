@@ -2,7 +2,7 @@
   outlineColor: 21202a
   flying: true
   health: 550
-  controller: FlyingFollowAI
+  controller: FollowAllyAI
   armor: 6
   drag: 0.075
   speed: 5.5
@@ -17,7 +17,7 @@
   itemCapacity: 0
   hidden: true
   drawCell: false
-  engineColor: ffffff00
+  engineSize: 0
   deathExplosionEffect: {
   type: MultiEffect
   effects: [

@@ -18,6 +18,7 @@ require("multiblock8");
 require("multiblock9");
 require("multiblock10");
 require("construct");
+require("followai");
 
 const librarySnake = require("library-snake");
 
