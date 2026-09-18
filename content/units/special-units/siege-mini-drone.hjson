@@ -2,7 +2,6 @@
   outlineColor: 21202a
   flying: true
   health: 550
-  controller: FollowAllyAI
   armor: 6
   drag: 0.075
   speed: 5.5

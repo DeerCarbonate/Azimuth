@@ -42,3 +42,8 @@ const oscilliusSnake = librarySnake.head("oscillius", {
     speed: 4.6,
     health: 700
 }, {});
+const siegeMiniDrone = Vars.content.getByName(
+    ContentType.unit,
+    "siege-mini-drone"
+);
+siegeMiniDrone.aiController = FollowAllyAI;
