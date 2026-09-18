@@ -1,0 +1,239 @@
+	type: flying
+	outlineColor: 21202a
+	flying: true
+	health: 550
+  controller: FlyingFollowAI
+  armor: 6
+	drag: 0.075
+	speed: 5.5
+	accel: 0.027
+	hitSize: 3
+	targetGround: false
+	targetAir: false
+	rotateSpeed: 9.2
+  engineColor: fff4a3
+  engineSize: 0
+  engineOffset: 3
+	trailColor: bf92f900
+  shieldColor: ffa06688
+  healColor: ffa06688
+  itemCapacity: 0
+  hidden: true
+	drawCell: false
+	deathExplosionEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      followParent: false
+      length: 0
+      lifetime: 35
+      particles: 1
+      cone: 0
+      region: azimut-shockwave
+      sizeFrom: 4
+      sizeTo: 6
+      colorTo: ffa06600
+      baseRotation: 180
+      interp: pow3Out
+    }
+    {
+      type: ParticleEffect
+      lifetime: 55
+      baseLength: 2
+      length: 15
+      particles: 2
+      sizeFrom: 2
+      sizeTo: 0
+      interp: pow5Out
+      sizeInterp: pow5In
+      colorFrom: ffa06684
+      colorTo: ffa06600
+    }
+  ]
+}
+	abilities: [
+  {
+    effect: {
+      type: ParticleEffect
+      colorFrom: ffa066
+      colorTo: ffa06690
+      lifetime: 30
+      particles: 1
+      cone: 360
+      length: 0
+      baseLength: 0
+      lightScl: 2.5
+      lightOpacity: 2
+      spin: 0
+      sizeFrom: 3.5
+      sizeTo: 0
+      offset: 0
+    }
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 0.00000001
+    y: 0
+    x: 0
+  }
+	{
+	  type: "SuppressionFieldAbility"
+	  reload: 100
+	  range: 0
+	  orbRadius: 0
+	  orbMidScl: 0
+	  orbSinScl: 0
+	  orbSinMag: 0
+	  color: ffa06600
+	  layer: 110
+	  x: 0
+	  y: 0
+	  particleColor: ffa06600
+	  particles: 3
+	  particleSize: 0.8
+	  particleLen: 7.5
+	  particleLife: 200
+	  rotateScl: 1.5
+	  active: true
+	  effectColor: ffa06600
+	  applyParticleChance: 4
+	}
+  ]
+  weapons: [
+{
+    reload: 7200
+    x: 0
+    y: 0
+    rotate: false
+    mirror: false
+    shootCone: 360
+    shootSound: none
+    ejectEffect: none
+    recoil: 0
+    top: false
+    alwaysShooting: true
+    useAttackRange: false
+		  shoot: {
+    type: ShootSpread
+    firstShotDelay: 7200
+    }
+    bullet: {
+        type: BasicBulletType
+        damage: 0
+        speed: 0
+        lifetime: 1
+        
+        hittable: false
+        absorbable: false
+        reflectable: false
+        
+        collides: false
+        collidesAir: false
+        collidesGround: false
+        collidesTiles: false
+        
+        hitEffect: none
+        despawnEffect: none
+        shootEffect: none
+        smokeEffect: none
+        
+        keepVelocity: false
+        
+        killShooter: true
+    }
+}
+		{
+			"recoil": 0,
+            "shootY": 0,
+			"mirror": false,
+			"alternate": false,
+			"rotate": true,
+			"rotateSpeed": 3.6,
+			"reload": 10,
+			"inaccuracy": 3,
+			"shootSound": shootLocus,
+			"controllable": true,
+			"aiControllable": true,
+			"y": 0
+			"x": 0
+shoot: {
+    type: ShootSpread
+    firstShotDelay: 0
+    shotDelay: 0
+    spread: 0
+    shots: 1
+    }
+    bullet: {
+    type: RailBulletType
+    length: 125
+    damage: 32
+    buildingDamageMultiplier: 0.1
+	lifetime: 1
+	hitColor: bff6b1
+    pointEffectSpace: 2.7
+	despawnEffect: none
+    smokeEffect: none
+    status: pierced
+	statusDuration: 240
+	  hitEffect: {
+	  followParent: false
+	  length: 0
+      lifetime: 8
+      particles: 1
+      cone: 0
+      region: azimut-despawn
+      sizeFrom: 32
+      sizeTo: 0
+      colorTo: bff6b100
+      baseRotation: 90
+	  }
+	  	              pointEffect: {
+                type: MultiEffect
+                    effects: [
+                    {
+                        type: ParticleEffect
+                        lifetime: 15
+                        baseLength: 12
+                        particles: 1
+                        length: 25
+                        line: true
+                        lenFrom: 4
+                        lenTo: 0
+                        colorFrom: bff6b121
+                        colorTo: bff6b100
+                    }
+                    {
+                        type: ParticleEffect
+                        region: azimut-beam
+                        lifetime: 60
+                        particles: 1
+                        length: 0
+                        cone: 0
+                        sizeFrom: 1.3
+                        sizeTo: 0
+                        interp: pow5Out
+                        sizeInterp: pow10In
+                        colorTo: bff6b100
+                    }
+                    {
+                        type: ParticleEffect
+                        lifetime: 150
+                        layer: 100
+                        offset: 0
+                        cone: 90
+                        lifetime: 15
+                        particles: 2
+                        baseLength: -4
+                        length: 45
+                        sizeFrom: 1.5
+                        sizeTo: 0
+                        length: 9
+                        colorFrom: bff6b100
+                        colorTo:bff6b100
+                        interp: pow3Out
+                        sizeInterp: pow3In
+                    }
+                ]
+            }
+			}
+		}
+]

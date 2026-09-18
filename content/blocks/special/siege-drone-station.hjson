@@ -1,0 +1,38 @@
+type: UnitCargoLoader
+databaseTag: station
+squareSprite: false
+size: 3
+health: 840
+armor: 2
+unitType: siege-drone
+itemCapacity: 0
+separateItemCapacity: true
+hasItems: true
+hasPower: false
+hasLiquids: true
+category: effect
+requirements: [
+  zinc/60
+  octine/65
+  compound/100
+  venerium/175
+]
+consumes: {
+  power: 3
+  liquids: [
+  swartzite/0.0333333333333333333333333333333333333333333333333
+	cesium/0.01666666666666666666666666666666666666666666666666666
+  ]
+}
+polyStroke: 1.5
+polyRadius: 11
+polySides: 8
+polyRotateSpeed: -0.8
+polyColor: ffa06640
+research: {
+  parent: "byte"
+  planet: gelion
+    "requirements": [
+	  byte/1
+]
+}
