@@ -1,3 +1,4 @@
+const excludedTypes = [];
 const FollowAllyAI = () => extend(AIController, {
     following: null,
     updateMovement() {
@@ -15,18 +16,20 @@ const FollowAllyAI = () => extend(AIController, {
                 unit.x,
                 unit.y,
                 2000,
-                u => u != unit && !u.dead
+                u => u != unit &&
+                     !u.dead &&
+                     u.type != unit.type &&
+                     excludedTypes.indexOf(u.type) === -1
             );
-            Log.info("[followai] поиск союзникафывлыфвл " + this.following);
         }
 
-        if (this.following == null) {
-            Log.info("[followai] следовать не за кем, бб блять");
-            return;
-        }
-
+        if (this.following == null) return;
         this.moveTo(this.following, unit.hitSize / 2 + 15, 50);
         unit.lookAt(this.following);
     }
 });
-module.exports = FollowAllyAI;
+module.exports = {
+    ai: FollowAllyAI,
+    excludedTypes: excludedTypes
+};
+//я ебал JS - DeerC
