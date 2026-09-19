@@ -84,7 +84,7 @@ Events.on(ClientLoadEvent, () => {
 
     const siegeMiniDrone = Vars.content.unit("azimut-siege-mini-drone");
 
-    siegeMiniDrone.aiController = FollowAllyAI;
-    siegeMiniDrone.controller = (u) => FollowAllyAI();
+    siegeMiniDrone.aiController = FollowAllyAI.ai;
+    siegeMiniDrone.controller = (u) => FollowAllyAI.ai();
 
 });
