@@ -162,8 +162,8 @@ shoot: {
     shots: 3
     }
     bullet: {
-      recoil: 2.5
-      lifetime: 63
+      recoil: 1
+      lifetime: 70
       damage: 55
       height: 7
       speed: 2.5
