@@ -159,7 +159,7 @@ shoot: {
     type: ShootSpread
     firstShotDelay: 0
     shotDelay: 0
-    spread: 24
+    spread: 2
     shots: 7
     }
     bullet: {
