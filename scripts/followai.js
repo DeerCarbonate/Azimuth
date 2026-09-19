@@ -27,7 +27,6 @@ const FollowAllyAI = () => extend(AIController, {
             this.following.x,
             this.following.y
         );
-
         const distance = Mathf.dst(
             unit.x,
             unit.y,
