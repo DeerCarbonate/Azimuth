@@ -47,6 +47,7 @@ Events.on(ClientLoadEvent, () => {
         Vars.content.unit("azimut-heal-drone"),
         Vars.content.unit("azimut-Innovation1"),
         Vars.content.unit("azimut-lightning-storm"),
+        Vars.content.unit("azimut-orbital-regeneration-drone"),
         Vars.content.unit("azimut-retray-mine"),
         Vars.content.unit("azimut-retray-mine2"),
         Vars.content.unit("azimut-retray-mine3"),
