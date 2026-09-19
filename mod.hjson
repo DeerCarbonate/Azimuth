@@ -37,7 +37,7 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
 '''
   author: DeerCarbonate
   version: "0.51"
-  minGameVersion: "159.7"
+  minGameVersion: "160"
   mods: []
   contentOrder: [
     cobalt
