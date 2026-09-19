@@ -88,14 +88,14 @@
 	  layer: 110
 	  x: 0
 	  y: 0
-	  particleColor: ffa06600
+	  particleColor: ffa06650
 	  particles: 3
 	  particleSize: 0.8
 	  particleLen: 7.5
 	  particleLife: 200
 	  rotateScl: 1.5
 	  active: true
-	  effectColor: ffa06600
+	  effectColor: ffa06650
 	  applyParticleChance: 4
 	}
   ]
@@ -143,34 +143,33 @@
     }
 }
 		{
-			"recoil": 0,
-            "shootY": 0,
-			"mirror": false,
-			"alternate": false,
-			"rotate": true,
-			"rotateSpeed": 30,
-			"reload": 40,
-			"inaccuracy": 3,
-			"shootSound": shootLocus,
-			"controllable": true,
-			"aiControllable": true,
-			"y": 0
-			"x": 0
+			recoil: 3.5
+      shootY: 0
+			mirror: false
+			alternate: false
+			rotate: true
+			rotateSpeed: 30
+			reload: 120
+			shootSound: shootLocus
+			controllable: true
+			aiControllable: true
+			y: 0
+			x: 0
 shoot: {
     type: ShootSpread
     firstShotDelay: 0
     shotDelay: 0
-    spread: 0
-    shots: 1
+    spread: 24
+    shots: 7
     }
     bullet: {
     type: RailBulletType
     length: 125
-    damage: 70
+    damage: 120
     buildingDamageMultiplier: 0.1
 	lifetime: 1
 	hitColor: ffa066
-    pointEffectSpace: 2.7
+    pointEffectSpace: 2.6
 	despawnEffect: none
     smokeEffect: none
     status: pierced

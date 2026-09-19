@@ -240,6 +240,7 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
 	construction-drone-station
     force-drone-station
     fortification-drone-station
+    siege-drone-station
     energy-bridge
     octine-energy-bridge
     galvanized-power-bank

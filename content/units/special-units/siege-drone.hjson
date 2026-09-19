@@ -77,8 +77,8 @@ parts: [
     type: HaloPart
     progress: warmup
     tri: true
-    shapes: 1
-    color: ffa066
+    shapes: 3
+    color: ffa06650
     layer: 110
     haloRadius: 14
     haloRadiusTo: 6.0
@@ -93,8 +93,8 @@ parts: [
     type: HaloPart
     progress: warmup
     tri: true
-    shapes: 1
-    color: ffa066
+    shapes: 3
+    color: ffa06650
     layer: 110
     haloRadius: 14
     haloRadiusTo: 6.0
@@ -102,7 +102,7 @@ parts: [
     radiusTo: 6
     triLength: 6
     triLengthTo: 1
-    haloRotateSpeed: 0.45
+    haloRotateSpeed: -0.45
     shapeRotation: 180
   }
     {
@@ -118,8 +118,7 @@ parts: [
     radiusTo: 6
     triLength: 6
     triLengthTo: 1
-    haloRotateSpeed: -0.45
-    shapeRotation: 180
+    haloRotateSpeed: 1
   }
   {
     type: ShapePart
