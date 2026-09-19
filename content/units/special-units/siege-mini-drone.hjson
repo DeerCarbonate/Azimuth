@@ -162,7 +162,7 @@ shoot: {
     shots: 3
     }
     bullet: {
-      recoil: 1
+      recoil: 0.9
       lifetime: 70
       damage: 55
       height: 7
@@ -186,41 +186,41 @@ shoot: {
       collidesAir: false
       smokeEffect: {
     type: ParticleEffect
-    lifetime: 26
+    lifetime: 24
     particles: 1
-    length: 29
+    length: 22
     line: true
     strokeTo: 0
     lenFrom: 4.5
     lenTo: 0
     colorFrom: ffffff
     colorTo: ffffff
-    cone: 15
+    cone: 10
 	   interp: pow2
     sizeInterp: pow3In
     }
       shootEffect: [
 	  {
     type: ParticleEffect
-    lifetime: 26
+    lifetime: 24
     particles: 1
-    length: 29
+    length: 22
     line: true
     strokeTo: 0
     lenFrom: 4.5
     lenTo: 0
     colorFrom: ffa066
     colorTo: ffa066
-    cone: 15
+    cone: 10
 	   interp: pow2
     sizeInterp: pow3In
     }
     {
         type: WaveEffect
         startDelay: 0
-        lifetime: 25
+        lifetime: 24
         sizeFrom: 0
-        sizeTo: 18
+        sizeTo: 12
         strokeFrom: 3
         strokeTo: 0
         colorFrom: ffa06630
