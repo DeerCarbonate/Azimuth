@@ -17,30 +17,15 @@ const FollowAllyAI = () => extend(AIController, {
                 2000,
                 u => u != unit && !u.dead
             );
+            Log.info("[followai] поиск союзникафывлыфвл " + this.following);
         }
 
-        if (this.following == null) return;
-
-        const angle = Angles.angle(
-            unit.x,
-            unit.y,
-            this.following.x,
-            this.following.y
-        );
-        const distance = Mathf.dst(
-            unit.x,
-            unit.y,
-            this.following.x,
-            this.following.y
-        );
-
-        if (distance > 40) {
-            Tmp.v1.trns(
-                angle,
-                unit.speed()
-            );
-            unit.moveAt(Tmp.v1);
+        if (this.following == null) {
+            Log.info("[followai] следовать не за кем, бб блять");
+            return;
         }
+
+        this.moveTo(this.following, unit.hitSize / 2 + 15, 50);
         unit.lookAt(this.following);
     }
 });
