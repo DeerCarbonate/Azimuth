@@ -143,13 +143,12 @@
     }
 }
 		{
-			recoil: 3.5
       shootY: 0
 			mirror: false
 			alternate: false
 			rotate: true
 			rotateSpeed: 30
-			reload: 120
+			reload: 100
 			shootSound: shootLocus
 			controllable: true
 			aiControllable: true
@@ -159,81 +158,94 @@ shoot: {
     type: ShootSpread
     firstShotDelay: 0
     shotDelay: 0
-    spread: 2
-    shots: 7
+    spread: 24
+    shots: 3
     }
     bullet: {
-    type: RailBulletType
-    length: 125
-    damage: 120
-    buildingDamageMultiplier: 0.1
-	lifetime: 1
-	hitColor: ffa066
-    pointEffectSpace: 2.6
-	despawnEffect: none
-    smokeEffect: none
-    status: pierced
-	statusDuration: 120
-	  hitEffect: {
-	  followParent: false
-	  length: 0
-      lifetime: 8
-      particles: 1
-      cone: 0
-      region: azimut-despawn
-      sizeFrom: 32
-      sizeTo: 0
-      colorTo: ffa06600
-      baseRotation: 90
-	  }
-	  	              pointEffect: {
-                type: MultiEffect
-                    effects: [
-                    {
-                        type: ParticleEffect
-                        lifetime: 15
-                        baseLength: 12
-                        particles: 1
-                        length: 25
-                        line: true
-                        lenFrom: 4
-                        lenTo: 0
-                        colorFrom: ffa06621
-                        colorTo: ffa06600
-                    }
-                    {
-                        type: ParticleEffect
-                        region: azimut-beam
-                        lifetime: 60
-                        particles: 1
-                        length: 0
-                        cone: 0
-                        sizeFrom: 1.3
-                        sizeTo: 0
-                        interp: pow5Out
-                        sizeInterp: pow10In
-                        colorTo: ffa06600
-                    }
-                    {
-                        type: ParticleEffect
-                        lifetime: 150
-                        layer: 100
-                        offset: 0
-                        cone: 90
-                        lifetime: 15
-                        particles: 2
-                        baseLength: -4
-                        length: 45
-                        sizeFrom: 1.5
-                        sizeTo: 0
-                        length: 9
-                        colorFrom: ffa06600
-                        colorTo: ffa06600
-                        interp: pow3Out
-                        sizeInterp: pow3In
-                    }
-                ]
-            }
-			}
+      recoil: 2.5
+      lifetime: 63
+      damage: 55
+      height: 7
+      speed: 2.5
+      sprite: azimut-deathcatcher
+      width: 6
+      type: BasicBulletType
+      homingPower: 0.09
+      homingRange: 50
+      homingDelay: 16
+      frontColor: ffffff
+      backColor: ffa066
+      trailColor: ffa066
+      trailWidth: 1.15
+      trailLength: 8.5
+      weaveMag: 3
+      weaveRandom: true
+      weaveScale: 4
+	    collidesTiles: true
+      keepVelocity: false
+      collidesAir: false
+      smokeEffect: {
+    type: ParticleEffect
+    lifetime: 26
+    particles: 1
+    length: 29
+    line: true
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: ffffff
+    colorTo: ffffff
+    cone: 15
+	   interp: pow2
+    sizeInterp: pow3In
+    }
+      shootEffect: [
+	  {
+    type: ParticleEffect
+    lifetime: 26
+    particles: 1
+    length: 29
+    line: true
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: ffa066
+    colorTo: ffa066
+    cone: 15
+	   interp: pow2
+    sizeInterp: pow3In
+    }
+    {
+        type: WaveEffect
+        startDelay: 0
+        lifetime: 25
+        sizeFrom: 0
+        sizeTo: 18
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: ffa06630
+        colorTo: ffa06600
+        followParent: true
+        rotWithParent: true
+      }
+	]
+	  despawnEffect: none
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 12
+        waveColor: ffa066
+        waveStroke: 1.2
+        waveRad: 2
+        smokeColor: ffa066
+        smokeSizeBase: 0
+        smokeSize: 5
+        smokes: 0
+        sparkColor: ffa066
+        sparkStroke: 1.6
+        sparkRad: 16
+        sparkLen: 2
+        sparks: 2
+      }
+    }
 		}
 ]
