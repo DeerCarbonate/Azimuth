@@ -25,7 +25,7 @@ destroyBullet:{
 
     splashDamageRadius: 16
     splashDamage: 160
-    fragBullets: 8
+    fragBullets: 14
     lifetime: 0
     speed: 0
     fragVelocityMin:0.3
