@@ -150,38 +150,38 @@ pierceArmor: false
 buildingDamageMultiplier: 0.3
 	hitEffect: [
 	{
-    type: ExplosionEffect
-    lifetime: 35
-    waveColor: dda59d30
-    waveStroke: 3
-    waveRad: 8
-    smokeColor: dda59d60
-    smokeSizeBase: 0
-    smokeSize: 4
-    smokes: 3
-    sparkColor: dda59d30
-    sparkStroke: 1.9
-    sparkRad: 12.5
-    sparkLen: 3
-    sparks: 3
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: efbbb4
+        waveStroke: 2
+        waveRad: 3
+        smokeColor: efbbb4
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: efbbb4
+        sparkStroke: 1.8
+        sparkRad: 15
+        sparkLen: 2
+        sparks: 3
 	}
 	]
     despawnEffect: [
 	{
-    type: ExplosionEffect
-    lifetime: 35
-    waveColor: dda59d30
-    waveStroke: 3
-    waveRad: 8
-    smokeColor: dda59d60
-    smokeSizeBase: 0
-    smokeSize: 4
-    smokes: 3
-    sparkColor: dda59d30
-    sparkStroke: 1.9
-    sparkRad: 12.5
-    sparkLen: 3
-    sparks: 3
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: efbbb4
+        waveStroke: 2
+        waveRad: 3
+        smokeColor: efbbb4
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: efbbb4
+        sparkStroke: 1.8
+        sparkRad: 15
+        sparkLen: 2
+        sparks: 3
 	}
 	]
 }
