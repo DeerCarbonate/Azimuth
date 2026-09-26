@@ -1,0 +1,16 @@
+type: LiquidRouter
+squareSprite: false
+health: 3650
+armor: 14
+size: 2
+hasLiquids: true
+liquidCapacity: 30
+category: liquid
+requirements: [
+    "octine/22"
+]
+research: {
+  parent: yongsin
+}
+liquidPadding: 1
+researchCostMultiplier: 0.5
