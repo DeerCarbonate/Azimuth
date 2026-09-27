@@ -22,15 +22,15 @@
 	mineWalls: true
 	engines: [
 	{
-    x: 6
-    y: -2
-    radius: 2.5
+    x: 8
+    y: -4
+    radius: 2
     rotation: 315
     }
     {
-    x: -6
-    y: -2
-    radius: 2.5
+    x: -8
+    y: -4
+    radius: 2
     rotation: 225
     }
 	]
