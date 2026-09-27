@@ -73,7 +73,7 @@
   {
     type:MoveEffectAbility
     minVelocity:3
-    interval:4
+    interval:3
     rotateEffect:true
     rotation:-90
     effect:{
@@ -81,7 +81,7 @@
      particles: 1
      length: 1
      lifetime: 5
-     sizeFrom: 10
+     sizeFrom: 9
      sizeTo: 6
      cone: 0
      region:azimut-oscillius-trace
