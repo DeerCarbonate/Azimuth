@@ -18,6 +18,12 @@
     radius: 2.5
     rotation: 225
     }
+	{
+    x: 0
+    y: -7.3
+    radius: 2.5
+    rotation: 270
+    }
 	]
 		abilities: [
 	{
