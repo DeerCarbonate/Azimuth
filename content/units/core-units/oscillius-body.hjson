@@ -24,6 +24,26 @@
 type:RegenAbility
 percentAmount:-0.03
 }
+	  {
+    type:MoveEffectAbility
+    minVelocity:3
+    interval:4
+    rotateEffect:true
+    rotation:-90
+    effect:{
+     type: ParticleEffect
+     particles: 1
+     length: 1
+     lifetime: 40
+     sizeFrom: 23
+     sizeTo: 19
+     cone: 0
+     region:azimut-oscillius-body-trace
+     colorFrom: 6e707f75
+     colorTo: ffffff00
+     layer:80
+     }
+	  }
 ]
 weapons: [
   {

@@ -7,20 +7,20 @@
 	engineColor: bf92f9
 	engines: [
 	{
-    x: 7.3
+    x: 7.2
     y: -2
     radius: 2.5
     rotation: 315
     }
     {
-    x: -7.3
+    x: -7.2
     y: -2
     radius: 2.5
     rotation: 225
     }
 	{
     x: 0
-    y: -7.3
+    y: -7.6
     radius: 2.5
     rotation: 270
     }
@@ -30,4 +30,24 @@
 type:RegenAbility
 percentAmount:-0.03
 }
+	  {
+    type:MoveEffectAbility
+    minVelocity:3
+    interval:4
+    rotateEffect:true
+    rotation:-90
+    effect:{
+     type: ParticleEffect
+     particles: 1
+     length: 1
+     lifetime: 40
+     sizeFrom: 23
+     sizeTo: 19
+     cone: 0
+     region:azimut-oscillius-end-trace
+     colorFrom: 6e707f75
+     colorTo: ffffff00
+     layer:80
+     }
+	  }
 ]
