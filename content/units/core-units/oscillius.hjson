@@ -18,6 +18,17 @@
 	rotateMoveFirst: true
 	strafePenalty: 0.14
 	faceTarget: false
+			research: {
+	parent: akarius
+	planet: gelion
+	requiresUnlock: false
+		objectives: [
+	{
+	 type: research
+	 content: core-panopticon
+	 }
+	 ]
+}
 		abilities: [
     {
     type: EnergyFieldAbility

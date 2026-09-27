@@ -18,13 +18,10 @@ hasItems: true
 hasColor: true
 isFirstTier: false
 alwaysUnlocked: false
-hasLiquids: true
-liquidCapacity: 500
 outputsPower: true
 consumes: {
   powerBuffered: 345000
 }
-outputsLiquid: true
         research: {
     parent: "core-network"
     planet: gelion
