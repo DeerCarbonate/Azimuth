@@ -63,14 +63,14 @@ const librarySnake = require("library-snake");
 
 const oscilliusSnakeEnd = librarySnake.segment("oscillius-end", {
     hitSize:9,
-    offsetSegment: -2.7,
+    offsetSegment: -2.75,
     health: 800
 }, {});
 
 const oscilliusSnakeBody = librarySnake.segment("oscillius-body", {
     hitSize:9,
-    offsetSegment: -2.7,
-    health: 900
+    offsetSegment: -2.75,
+    health: 700
 }, {});
 
 const oscilliusSnake = librarySnake.head("oscillius", {
