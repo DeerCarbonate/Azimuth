@@ -2,7 +2,8 @@
 	healColor: bf92f988
 	shieldColor: bf92f988
 	hidden: true
-  	engineColor: bf92f9
+  engineColor: bf92f9
+  wobble: false
 	engines: [
 	{
     x: 7.5

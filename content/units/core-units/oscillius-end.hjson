@@ -3,7 +3,8 @@
 	shieldColor: bf92f988
 	hidden: true
     faceTarget: false
-		engineColor: bf92f9
+	wobble: false
+	engineColor: bf92f9
 	engines: [
 	{
     x: 7.3
