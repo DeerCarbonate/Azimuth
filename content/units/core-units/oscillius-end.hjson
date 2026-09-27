@@ -3,6 +3,21 @@
 	shieldColor: bf92f988
 	hidden: true
     faceTarget: false
+		engineColor: bf92f9
+	engines: [
+	{
+    x: 7.5
+    y: -4
+    radius: 2.5
+    rotation: 315
+    }
+    {
+    x: -7.5
+    y: -4
+    radius: 2.5
+    rotation: 225
+    }
+	]
 		abilities: [
 	{
 type:RegenAbility

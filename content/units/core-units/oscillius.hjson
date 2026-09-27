@@ -14,23 +14,23 @@
     engineSize: 0
 	healColor: bf92f988
 	shieldColor: bf92f988
-	engineColor: bf92f988
 	omniMovement: true
 	rotateMoveFirst: true
 	strafePenalty: 0.14
 	faceTarget: false
 	mineWalls: true
+	engineColor: bf92f9
 	engines: [
 	{
-    x: 8
+    x: 7.5
     y: -4
-    radius: 2
+    radius: 2.5
     rotation: 315
     }
     {
-    x: -8
+    x: -7.5
     y: -4
-    radius: 2
+    radius: 2.5
     rotation: 225
     }
 	]
