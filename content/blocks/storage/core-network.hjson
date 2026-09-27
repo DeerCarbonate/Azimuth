@@ -15,6 +15,9 @@ category: effect
 hasItems: true
 hasColor: true
 isFirstTier: false
+liquidCapacity: 150
+outputsPower: true
+outputsLiquid: true
 alwaysUnlocked: false
         research: {
     parent: "core-forum"

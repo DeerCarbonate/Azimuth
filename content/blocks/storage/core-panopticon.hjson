@@ -1,0 +1,44 @@
+type: CoreBlock
+size: 6
+squareSprite: false
+health: 13450
+armor: 10
+itemCapacity: 1000
+unitCapModifier: 20
+unitType: oscillius
+requirements: [
+cobalt/3450
+venerium/3000
+geliarin/2150
+caterium/1950
+octine/1000
+]
+category: effect
+hasItems: true
+hasColor: true
+isFirstTier: false
+alwaysUnlocked: false
+hasLiquids: true
+liquidCapacity: 500
+outputsPower: true
+consumes: {
+  powerBuffered: 345000
+}
+outputsLiquid: true
+        research: {
+    parent: "core-network"
+    planet: gelion
+                "requirements": [
+                "cobalt/20000"
+                "venerium/20000"
+				"geliarin/5000"
+                "caterium/500"
+                "octine/300"
+                ]
+        objectives: [
+    {
+type: SectorComplete
+preset: thirteen
+    }
+  ]
+}
