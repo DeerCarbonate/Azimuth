@@ -3,7 +3,7 @@ size: 6
 squareSprite: false
 health: 13450
 armor: 10
-itemCapacity: 1000
+itemCapacity: 12000
 unitCapModifier: 20
 unitType: oscillius
 requirements: [
