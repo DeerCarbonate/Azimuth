@@ -80,9 +80,9 @@
      type: ParticleEffect
      particles: 1
      length: 1
-     lifetime: 40
-     sizeFrom: 23
-     sizeTo: 19
+     lifetime: 5
+     sizeFrom: 10
+     sizeTo: 6
      cone: 0
      region:azimut-oscillius-trace
      colorFrom: 6e707f75
