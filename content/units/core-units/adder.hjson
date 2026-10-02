@@ -123,7 +123,7 @@
             pierceArmor:true
             width:9
             trailWidth:1.7
-            trailLength:6
+            trailLength:5
             trailColor:bf92f9
             lifetime: 32
             damage: 8
@@ -135,7 +135,6 @@
             homingPower:0.1
             homingDelay:4
             collidesTeam:true
-            despawnEffect: none
                         parts: [
       {
         type: FlarePart
@@ -146,8 +145,8 @@
         y: 0
         color1: bf92f9
         color2: ffffff
-        rotation: 15
-        rotMove: 100
+        rotation: 0
+        rotMove: 180
         followRotation: false
         progress: {
           type: life
@@ -170,7 +169,7 @@
 
                 }
 
-            hitEffect: {
+            hitEffect: [{
                 type: ExplosionEffect
                 lifetime: 15
 
@@ -187,6 +186,81 @@
                 sparkLen: 1.5
                 sparks: 2
                 }
+                        {
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 20
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 90
+interp:pow3Out
+followParent: true
+}
+{
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 20
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 180
+interp:pow3Out
+followParent: true
+}
+                ]
+                            despawnEffect: [{
+                type: ExplosionEffect
+                lifetime: 15
+
+                waveColor: bf92f9
+                waveStroke: 1.5
+                waveRad: 3
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 1.25
+                sparkRad: 4.5
+                sparkLen: 1.5
+                sparks: 2
+                }
+                        {
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 20
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 90
+interp:pow3Out
+followParent: true
+}
+{
+followParent: false
+length: 0
+lifetime: 35
+particles: 1
+cone: 0
+region: azimut-despawn
+sizeFrom: 20
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 180
+interp:pow3Out
+followParent: true
+}
+                ]
             }
         }
     ]
