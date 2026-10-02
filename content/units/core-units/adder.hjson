@@ -90,10 +90,11 @@
         display: false
         shoot: {
             firstShotDelay: 15
+            shotDelay: 3
             shots: 5
             }
         ejectEffect: none
-        shootSound: shootAlpha
+        shootSound: shootPlasmaFleeting
             parts: [
       {
         type: FlarePart
