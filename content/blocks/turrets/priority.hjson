@@ -84,7 +84,7 @@ objectives: [
           minPitch: 0.9
           maxPitch: 0.98
           effect: none
-          sound: mechsshoot
+          sound: shootPriority
           minVolume: 0.45
           maxVolume: 0.45
         }

@@ -54,7 +54,7 @@ weapons: [
     shake: 4
 
     shootSound: explosionNavanax
-    chargeSound: chargeEmp
+    chargeSound: chargeSphere
 
     shootStatus: charge
     shootStatusDuration: 210

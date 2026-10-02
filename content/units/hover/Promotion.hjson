@@ -219,7 +219,7 @@ weapons: [
     top: true
     y: -2.85
     x: 0
-    shootSound: hasno
+    shootSound: shootPlasmaProjectile
     shootStatus: core-acceleration
     shootStatusDuration: 115
     rotateSpeed: 1.25

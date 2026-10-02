@@ -15,7 +15,7 @@ targetAir: false
 moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1
-shootSound: laser4
+shootSound: shootJannabi
 chargeSound: chargeLancer
 ammoPerShot: 2
 unitSort: grouped

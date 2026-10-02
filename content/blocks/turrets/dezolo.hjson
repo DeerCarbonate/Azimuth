@@ -162,7 +162,7 @@ venerium: {
           minPitch: 0.9
           maxPitch: 1
           effect: none
-          sound: energy-blade-launch
+          sound: shootDezolo
           minVolume: 0.98
           maxVolume: 1
         }
@@ -295,7 +295,7 @@ compound: {
           minPitch: 0.9
           maxPitch: 1
           effect: none
-          sound: energy-blade-launch
+          sound: shootDezolo
           minVolume: 0.92
           maxVolume: 0.98
         }
@@ -458,7 +458,7 @@ titanite: {
           minPitch: 0.9
           maxPitch: 1
           effect: none
-          sound: energy-blade-launch
+          sound: shootDezolo
           minVolume: 0.92
           maxVolume: 0.98
         }

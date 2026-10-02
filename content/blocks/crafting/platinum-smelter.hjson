@@ -71,7 +71,7 @@ craftEffect: [{
       layer: 80
     }
 ]
-ambientSound: smelter
+ambientSound: loopSmelter
 drawer: {
   type: DrawMulti
   drawers: [

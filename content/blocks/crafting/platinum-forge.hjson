@@ -199,7 +199,7 @@ craftEffect: [
 }
 ]
 
-ambientSound: smelter
+ambientSound: loopSmelter
 drawer: {
   type: DrawMulti
   drawers: [

@@ -140,7 +140,7 @@ baseRotation: 90
   minPitch: 1
   maxPitch: 1.1
   effect: none
-  sound: mechshoot
+  sound: shootYongsin
   minVolume: 0.25
   maxVolume: 0.27
 }
@@ -310,7 +310,7 @@ baseRotation: 270
   minPitch: 1
   maxPitch: 1.1
   effect: none
-  sound: mechshoot
+  sound: shootYongsin
   minVolume: 0.3
   maxVolume: 0.35
 }
@@ -454,7 +454,7 @@ baseRotation: 270
   minPitch: 1
   maxPitch: 1.1
   effect: none
-  sound: mechshoot
+  sound: shootYongsin
   minVolume: 0.3
   maxVolume: 0.35
 }

@@ -31,7 +31,7 @@ outputLiquids: [
 	nitrogen/0.1666666666666666666666666666
 ]
 craftEffect: none
-ambientSound: smelter
+ambientSound: loopSmelter
 drawer: {
   type: DrawMulti
   drawers: [

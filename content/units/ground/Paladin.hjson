@@ -358,7 +358,7 @@ weapons: [
     reload: 40
     mirror: true
     alternate: false
-    shootSound: shotguns
+    shootSound: shootFragmented
     shootSoundVolume: 0.08
     layerOffset: -0.01
     shoot: {

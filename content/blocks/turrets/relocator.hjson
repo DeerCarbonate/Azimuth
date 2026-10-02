@@ -14,7 +14,7 @@ targetAir: true
 moveWhileCharging: true
 targetGround: true
 rotateSpeed: 2
-shootSound: machine-gun-shot
+shootSound: shootRelocator
 shootSoundVolume: 0.55
 ammoPerShot: 1
 shootY: -4.6

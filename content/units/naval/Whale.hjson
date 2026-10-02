@@ -101,7 +101,7 @@ weapons: [
     rotate: true
     rotateSpeed: 1.2
     reload: 300
-    shootSound: restart
+    shootSound: shootMini
     controllable: true
     aiControllable: true
     inaccuracy: 20
@@ -177,7 +177,7 @@ weapons: [
 	     spread: 2
     }
     ejectEffect: none
-    shootSound: restart
+    shootSound: shootMini
     bullet: {
       keepVelocity: false
       lifetime: 60
