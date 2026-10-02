@@ -140,28 +140,18 @@
       {
         type: FlarePart
         radius: 0
-        radiusTo: 4
-        stroke: 2.8
+        radiusTo: 6
+        stroke: 5
         x: 0
         y: 0
-        color1: 665c9f
-        color2: bf92f9
-        rotation: 45
-        rotMove: 210
+        color1: bf92f9
+        color2: ffffff
+        rotation: 15
+        rotMove: 100
         followRotation: false
-progress: {
-  type: life
-  ops: [
-    {
-      op: curve
-      interp: pow2In
-    }
-    {
-      op: curve
-      interp: slope
-    }
-  ]
-}
+        progress: {
+          type: life
+        }
       }
     ]
             shootEffect: {
