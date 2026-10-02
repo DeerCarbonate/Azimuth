@@ -153,11 +153,11 @@
         }
       }
     ]
-            shootEffect: {
+            shootEffect: [{
                 sizeInterp: pow3Out
                 interp: pow3Out
-                particles: 4
-                lifetime: 20
+                particles: 5
+                lifetime: 25
                 cone: 7
 
                 sizeTo: 0.25
@@ -168,6 +168,24 @@
                 colorTo: bf92f900
 
                 }
+                {
+                type: ExplosionEffect
+                lifetime: 30
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 2
+                sparkRad: 4
+                sparkLen: 3
+                sparks: 3
+                }
+                ]
 
             hitEffect: [{
                 type: ExplosionEffect
