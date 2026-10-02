@@ -146,7 +146,7 @@
         color1: bf92f9
         color2: ffffff
         rotation: 0
-        rotMove: 180
+        rotMove: 175
         followRotation: false
         progress: {
           type: life
@@ -207,7 +207,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 12
+sizeFrom: 11
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 90
@@ -221,7 +221,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 12
+sizeFrom: 11
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 180
@@ -253,7 +253,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 12
+sizeFrom: 11
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 90
@@ -267,7 +267,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 12
+sizeFrom: 11
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 180
