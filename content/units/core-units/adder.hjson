@@ -95,6 +95,7 @@
             }
         ejectEffect: none
         shootSound: shootPlasmaFleeting
+        shootSoundVolume: 0.85
             parts: [
       {
         type: FlarePart
