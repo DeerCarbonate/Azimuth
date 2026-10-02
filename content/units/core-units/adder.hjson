@@ -170,7 +170,7 @@
                 }
                 {
                 type: ExplosionEffect
-                lifetime: 30
+                lifetime: 25
 
                 waveColor: bf92f9
                 waveStroke: 2
@@ -181,9 +181,9 @@
 
                 sparkColor: bf92f9
                 sparkStroke: 2
-                sparkRad: 4
-                sparkLen: 3
-                sparks: 3
+                sparkRad: 5
+                sparkLen: 2
+                sparks: 1
                 }
                 ]
 
@@ -211,7 +211,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 16
+sizeFrom: 13
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 90
@@ -225,7 +225,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 16
+sizeFrom: 13
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 180
@@ -257,7 +257,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 16
+sizeFrom: 13
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 90
@@ -271,7 +271,7 @@ lifetime: 25
 particles: 1
 cone: 0
 region: azimut-thicc-despawn
-sizeFrom: 16
+sizeFrom: 13
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 180
