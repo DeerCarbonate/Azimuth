@@ -83,7 +83,7 @@
         mirror: false
         shake: 0
         x: 0
-        y: 4
+        y: 5
         inaccuracy:60
         reload: 80
         shootY: 0
@@ -136,6 +136,34 @@
             homingDelay:4
             collidesTeam:true
             despawnEffect: none
+                        parts: [
+      {
+        type: FlarePart
+        radius: 0
+        radiusTo: 4
+        stroke: 2.8
+        x: 0
+        y: 0
+        color1: 665c9f
+        color2: bf92f9
+        rotation: 45
+        rotMove: 210
+        followRotation: false
+progress: {
+  type: life
+  ops: [
+    {
+      op: curve
+      interp: pow2In
+    }
+    {
+      op: curve
+      interp: slope
+    }
+  ]
+}
+      }
+    ]
             shootEffect: {
                 sizeInterp: pow3Out
                 interp: pow3Out
