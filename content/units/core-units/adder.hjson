@@ -138,7 +138,7 @@
                         parts: [
       {
         type: FlarePart
-        radius: 0
+        radius: 2
         radiusTo: 6
         stroke: 5
         x: 0
