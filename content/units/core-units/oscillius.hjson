@@ -153,7 +153,7 @@ cone: 15
 		collidesAir: true
 		buildingDamageMultiplier: 0.01
 		pierceArmor:true
-		healAmount:26
+		healAmount:36
 		collidesTeam:true
 	hitEffect: {
     type: ExplosionEffect
