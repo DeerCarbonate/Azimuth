@@ -27,7 +27,7 @@ weapons: [
     rotate: true
     rotateSpeed: 0.9
     reload: 180
-    shootSound: spearshot
+    shootSound: shootWeightless2
     shake: 6
         parts: [
     {
@@ -59,7 +59,7 @@ weapons: [
         fragLifeMax: 0.5
         fragVelocityMin: 0.5
         fragVelocityMax: 1.5
-        hitSound: strawberrydeath
+        hitSound: explosionCluster
         fragBullet: {
             type: BombBulletType
             fragOnHit: true
@@ -150,7 +150,7 @@ weapons: [
                 homingDelay:10
                 homingPower:0.15
                 homingRange:200
-                despawnSound: strawberrypredeath
+                despawnSound: explosionSteamy
                 hitEffect: none
                 despawnEffect: {
                     type: ParticleEffect
