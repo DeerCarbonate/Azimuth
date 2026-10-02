@@ -4,10 +4,10 @@
 	health: 250
 	buildSpeed: 1.6
 	drag: 0.065
-    itemCapacity: 40
+  itemCapacity: 40
 	mineTier: 1
-    mineSpeed: 6.5
-    buildRange: 190
+  mineSpeed: 6.5
+  buildRange: 190
 	speed: 3.2
 	range: 90
 	accel: 0.6
@@ -79,20 +79,39 @@
         controllable: true
         layerOffset: -0.001
         shootCone: 360
-        rotate: true
+        rotate: false
         mirror: false
         shake: 0
         x: 0
-        y: 0
+        y: 4
         inaccuracy:60
-        reload: 50
+        reload: 80
+        shootY: 0
+        display: false
         shoot: {
-            firstShotDelay: 12
-            shotDelay: 2
+            firstShotDelay: 15
             shots: 5
             }
         ejectEffect: none
         shootSound: shootAlpha
+            parts: [
+      {
+        type: FlarePart
+        radius: 0
+        radiusTo: 6
+        stroke: 3.2
+        x: 0
+        y: 0
+        color1: 665c9f
+        color2: bf92f9
+        rotation: 45
+        rotMove: 320
+        followRotation: false
+        progress: {
+          type: charge
+        }
+      }
+    ]
         bullet: {
             type: BasicBulletType
             collidesAir: true
