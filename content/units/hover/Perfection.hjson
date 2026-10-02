@@ -119,7 +119,7 @@ shoot: {
     }
             inaccuracy: 0
             recoil: 1.5
-            shootSound: arta
+            shootSound: shootWeightless
         bullet: {
 			type: BasicBulletType
 			collidesTiles: true

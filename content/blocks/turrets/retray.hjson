@@ -39,7 +39,7 @@ targetAir: true
 moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1
-shootSound: Alt
+shootSound: shootCapsule
 shootSoundVolume: 0.3
 ammoTypes: {
   venerium: {

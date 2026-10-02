@@ -203,7 +203,7 @@ weapons: [
         reload: 50
         inaccuracy: 10
         shootCone:130
-        shootSound: auto-cannon-hit
+        shootSound: shootArtilleryMini
         baseRotation: -90
         rotationLimit: 45
         layerOffset: -0.001
