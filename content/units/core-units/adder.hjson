@@ -171,11 +171,11 @@
 
             hitEffect: [{
                 type: ExplosionEffect
-                lifetime: 15
+                lifetime: 30
 
                 waveColor: bf92f9
-                waveStroke: 1.5
-                waveRad: 3
+                waveStroke: 2
+                waveRad: 5
 
                 smokeColor: bf92f9
                 smokes: 0
@@ -189,11 +189,11 @@
                         {
 followParent: false
 length: 0
-lifetime: 35
+lifetime: 25
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 20
+sizeFrom: 16
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 90
@@ -203,11 +203,11 @@ followParent: true
 {
 followParent: false
 length: 0
-lifetime: 35
+lifetime: 25
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 20
+sizeFrom: 16
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 180
@@ -217,11 +217,11 @@ followParent: true
                 ]
                             despawnEffect: [{
                 type: ExplosionEffect
-                lifetime: 15
+                lifetime: 30
 
                 waveColor: bf92f9
-                waveStroke: 1.5
-                waveRad: 3
+                waveStroke: 2
+                waveRad: 5
 
                 smokeColor: bf92f9
                 smokes: 0
@@ -235,11 +235,11 @@ followParent: true
                         {
 followParent: false
 length: 0
-lifetime: 35
+lifetime: 25
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 20
+sizeFrom: 16
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 90
@@ -249,11 +249,11 @@ followParent: true
 {
 followParent: false
 length: 0
-lifetime: 35
+lifetime: 25
 particles: 1
 cone: 0
 region: azimut-despawn
-sizeFrom: 20
+sizeFrom: 16
 sizeTo: 0
 colorTo: bf92f9
 baseRotation: 180
