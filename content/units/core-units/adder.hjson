@@ -156,16 +156,16 @@
             shootEffect: [{
                 sizeInterp: pow3Out
                 interp: pow3Out
-                particles: 5
+                particles: 2
                 lifetime: 25
                 cone: 7
 
-                sizeTo: 0.25
-                sizeFrom: 1
+                sizeTo: 0
+                sizeFrom: 2.2
                 length: 24
 
                 colorFrom: bf92f9
-                colorTo: bf92f900
+                colorTo: bf92f925
 
                 }
                 {
