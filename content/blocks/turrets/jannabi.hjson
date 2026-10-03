@@ -426,8 +426,8 @@ shoot: {
  backColor: 957655
  hitColor: fff4a3
  damage: 230
- despawnSound: explosionEMP
- hitSound: explosionEMP
+ despawnSound: none
+ hitSound: none
  lifetime: 68
  speed: 10.2
  drag: 0.01
@@ -500,12 +500,12 @@ shoot: {
         }
         {
             type: SoundEffect
-            minPitch: 0.7
-            maxPitch: 0.8
+            minPitch: 0.9
+            maxPitch: 1
             effect: none
             sound: shootElectrified2
-            minVolume: 0.55
-            maxVolume: 0.65
+            minVolume: 0.45
+            maxVolume: 0.55
         }
 ]
  	fragOnHit: true
@@ -536,8 +536,17 @@ fragBullet: {
         colorTo: fff4a3
         followParent: true
         rotWithParent: true
-	    interp: pow3Out
+	      interp: pow3Out
 		}
+    {
+        type: SoundEffect
+        minPitch: 1
+        maxPitch: 0.95
+        effect: none
+        sound: explosionEMP
+        minVolume: 0.7
+        maxVolume: 0.9
+    }
 		{
         type: WaveEffect
         startDelay: 0
