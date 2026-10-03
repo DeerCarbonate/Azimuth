@@ -660,6 +660,15 @@ fragBullet: {
           colorTo: 6898c3
 		  baseRotation: 90
         }
+                {
+            type: SoundEffect
+            minPitch: 1
+            maxPitch: 0.9
+            effect: none
+            sound: shootJannabi
+            minVolume: 1
+            maxVolume: 0.95
+        }
 ]
    hitEffect: {
     type: MultiEffect,
