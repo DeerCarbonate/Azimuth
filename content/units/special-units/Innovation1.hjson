@@ -295,8 +295,8 @@ weapons: [
       }
       {
   type: SoundEffect
-  minPitch: 1.5
-  maxPitch: 1.8
+  minPitch: 1.8
+  maxPitch: 2
   effect: none
   sound: shootPlasmaFragmented
   minVolume: 0.15
