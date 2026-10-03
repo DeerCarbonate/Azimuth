@@ -295,12 +295,12 @@ weapons: [
       }
       {
   type: SoundEffect
-  minPitch: 1.4
-  maxPitch: 1.7
+  minPitch: 1.5
+  maxPitch: 1.8
   effect: none
   sound: shootPlasmaFragmented
-  minVolume: 0.25
-  maxVolume: 0.30
+  minVolume: 0.15
+  maxVolume: 0.25
 }
 	]
 	        despawnEffect: {

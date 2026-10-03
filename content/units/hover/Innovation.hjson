@@ -173,7 +173,7 @@ weapons: [
     }
     ejectEffect: none
     shootSound: shootPlasmaFragmented
-    shootSoundVolume: 0.65
+    shootSoundVolume: 0.35
     bullet: {
       recoil: 0.02
       lifetime: 63

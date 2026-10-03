@@ -188,8 +188,8 @@
                 maxPitch: 1.1
                 effect: none
                 sound: shootPlasmaFleeting
-                minVolume: 0.45
-                maxVolume: 0.55
+                minVolume: 0.35
+                maxVolume: 0.45
                 }
                 ]
 
