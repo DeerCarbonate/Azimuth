@@ -290,9 +290,18 @@ weapons: [
             minPitch: 1
             maxPitch: 1.1
             effect: none
-            sound: shootElectrified
-            minVolume: 0.6
-            maxVolume: 0.7
+            sound: shootElectrified1
+            minVolume: 0.7
+            maxVolume: 0.8
+          }
+          {
+            type: SoundEffect
+            minPitch: 0.95
+            maxPitch: 1.1
+            effect: none
+            sound: shootElectrified2
+            minVolume: 0.8
+            maxVolume: 0.9
           }
           {
             type: SoundEffect
