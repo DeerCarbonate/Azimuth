@@ -237,6 +237,22 @@ weapons: [
         sparkLen: 2
         sparks: 3
       }
+      despawnEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: a4f0d7
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: a4f0d7
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: a4f0d7
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
+      }
     }
   }
 ]

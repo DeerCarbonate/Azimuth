@@ -172,7 +172,7 @@ weapons: [
 	  firstShotDelay: 18
     }
     ejectEffect: none
-    shootSound: shootSalvo
+    shootSound: shootPlasmaFragmented
     bullet: {
       recoil: 0.02
       lifetime: 63
