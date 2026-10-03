@@ -209,6 +209,7 @@ abilities: [
     width: 6
     display: false
     chanceDeflect: 1
+    breakSound: shieldDeflect
   }
 ]
 weapons: [
