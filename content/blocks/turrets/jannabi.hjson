@@ -655,76 +655,6 @@ fragBullet: {
 	collidesAir: false
 	hittable: false
 	hitEffect: none
-  fragBullets: 1
-  fragRandomSpread: 5
-  fragSpread: 5
-  fragOnDespawn: true
-  fragOnHit: false
-  fragLifeMax: 0.8
-  fragLifeMin: 0.15
-  fragVelocityMax: 1
-  fragOffsetMin: 0.65
-  					fragBullet: {
-type: BasicBulletType
-homingRange: 70
-homingPower: 0.09
-homingDelay: 0.5
-sprite: azimut-slicer
-width: 6
-height: 10
-drag: 0.014
-speed: 1.6
-collidesGround: true
-lifetime: 65
-damage: 35
-backColor: dda59d
-frontColor: f7e2da
-trailColor: dda59d40
-trailLength: 8
-trailWidth: 1.2
-despawnEffect: none
-collidesTiles: true
-keepVelocity: false
-collidesAir: true   
-pierceArmor: false 
-buildingDamageMultiplier: 0.3
-	hitEffect: [
-	{
-        type: ExplosionEffect
-        lifetime: 15
-        waveColor: efbbb4
-        waveStroke: 2
-        waveRad: 3
-        smokeColor: efbbb4
-        smokeSizeBase: 0
-        smokeSize: 5.5
-        smokes: 0
-        sparkColor: efbbb4
-        sparkStroke: 1.8
-        sparkRad: 15
-        sparkLen: 2
-        sparks: 3
-	}
-	]
-    despawnEffect: [
-	{
-        type: ExplosionEffect
-        lifetime: 15
-        waveColor: efbbb4
-        waveStroke: 2
-        waveRad: 3
-        smokeColor: efbbb4
-        smokeSizeBase: 0
-        smokeSize: 5.5
-        smokes: 0
-        sparkColor: efbbb4
-        sparkStroke: 1.8
-        sparkRad: 15
-        sparkLen: 2
-        sparks: 3
-	}
-	]
-}
       }
  shootEffect: [
         {
@@ -739,7 +669,7 @@ buildingDamageMultiplier: 0.3
           colorTo: 6898c3
 		  baseRotation: 90
         }
-                {
+        {
             type: SoundEffect
             minPitch: 1
             maxPitch: 0.9
@@ -747,6 +677,15 @@ buildingDamageMultiplier: 0.3
             sound: shootJannabi
             minVolume: 1
             maxVolume: 0.95
+        }
+        {
+            type: SoundEffect
+            minPitch: 0.55
+            maxPitch: 0.65
+            effect: none
+            sound: shootDezolo
+            minVolume: 0.55
+            maxVolume: 0.45
         }
 ]
    hitEffect: {
