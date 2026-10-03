@@ -655,10 +655,15 @@ fragBullet: {
 	collidesAir: false
 	hittable: false
 	hitEffect: none
-    fragRandomSpread: 5
+  fragBullets: 1
+  fragRandomSpread: 5
   fragSpread: 5
   fragOnDespawn: true
   fragOnHit: false
+  fragLifeMax: 0.8
+  fragLifeMin: 0.15
+  fragVelocityMax: 1
+  fragOffsetMin: 0.65
   					fragBullet: {
 type: BasicBulletType
 homingRange: 70
