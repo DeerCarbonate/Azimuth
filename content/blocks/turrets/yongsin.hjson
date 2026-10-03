@@ -246,6 +246,15 @@ interp: pow3Out
   line: true
   interp: pow3Out
 }
+{
+  type: SoundEffect
+  minPitch: 0.9
+  maxPitch: 1
+  effect: none
+  sound: explosionElectrified
+  minVolume: 0.75
+  maxVolume: 0.85
+}
 ]
 fragBullet: {
 type: BasicBulletType
