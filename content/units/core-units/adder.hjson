@@ -94,8 +94,7 @@
             shots: 5
             }
         ejectEffect: none
-        shootSound: shootPlasmaFleeting
-        shootSoundVolume: 0.75
+        shootSound: none
             parts: [
       {
         type: FlarePart
@@ -182,6 +181,15 @@
                 smokes: 0
 
                 sparks: 0
+                }
+                {
+                type: SoundEffect
+                minPitch: 0.9
+                maxPitch: 1.1
+                effect: none
+                sound: shootPlasmaFleeting
+                minVolume: 0.55
+                maxVolume: 0.65
                 }
                 ]
 
