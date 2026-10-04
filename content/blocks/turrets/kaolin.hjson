@@ -16,7 +16,7 @@ rotateSpeed: 1
 shootSound: none
 ammoPerShot: 10
 heatRequirement: 48
-shootY: 12
+shootY: 14
 inaccuracy: 45
 shoot: {
 	type: ShootMulti
@@ -67,19 +67,20 @@ shoot: {
                         parts: [
             {
         type: FlarePart
-        radius: 7
-        radiusTo: 16
-        stroke: 8
+        radius: 6
+        radiusTo: 15
+        stroke: 7
         x: 0
         y: 0
         color1: bf92f9
         color2: ffffff
         rotation: 0
-        rotMove: 135
+        rotMove: 360
         followRotation: false
-        layer: 80
+        layer: 90
         under: true
-        sides: 6
+        sides: 5
+        innerRadScl: 0.8
         progress: {
           type: life
         }
@@ -264,9 +265,9 @@ parts: [
         radiusTo: 6
         stroke: 3.2
         x: 0
-        y: 12
-        color1: 665c9f
-        color2: bf92f9
+        y: 14
+        color1: bf92f9
+        color2: ffffff
         rotation: 45
         rotMove: 150
         followRotation: false
@@ -280,14 +281,14 @@ parts: [
         radiusTo: 8
         stroke: 3.6
         x: 0
-        y: 12
-        color1: 665c9f
-        color2: bf92f9
+        y: 14
+        color1: bf92f9
+        color2: ffffff
         rotation: 65
-        rotMove: 550
+        rotMove: 345
         followRotation: false
         progress: {
-          type: recoil
+          type: heat
         }
       }
     ]
