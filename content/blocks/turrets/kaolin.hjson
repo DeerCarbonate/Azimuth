@@ -17,13 +17,23 @@ shootSound: none
 ammoPerShot: 2
 heatRequirement: 48
 shootY: 10
+inaccuracy: 95
 shoot: {
-  type: ShootSpread
-  firstShotDelay: 15
-  shotDelay: 1.5
-  shots: 30
-  spread: 4
-}
+	type: ShootMulti
+	source: {
+    type: ShootSpread
+    firstShotDelay: 45
+    shots: 6
+    spread: 1.5
+    }
+	dest: [
+	{
+	type: ShootPattern
+		shots: 11
+		shotDelay: 35
+	}
+	]
+	}
   ammoTypes: {
     zinc: {
             type: BasicBulletType
@@ -38,10 +48,10 @@ shoot: {
             trailWidth:1.7
             trailLength:6
             trailColor:bf92f9
-            lifetime: 75
+            lifetime: 80
             damage: 40
-            speed: 4
-            drag:0.02
+            speed: 6
+            drag:0.015
             homingRange:50
             homingPower:0.1
             homingDelay:4
@@ -56,7 +66,7 @@ shoot: {
         color1: bf92f9
         color2: ffffff
         rotation: 0
-        rotMove: 175
+        rotMove: 745
         followRotation: false
         progress: {
           type: life
@@ -96,9 +106,18 @@ shoot: {
                 minPitch: 0.9
                 maxPitch: 1.1
                 effect: none
-                sound: shootPlasmaFleeting
+                sound: shootElectrified3
                 minVolume: 0.35
                 maxVolume: 0.45
+                }
+                {
+                type: SoundEffect
+                minPitch: 0.9
+                maxPitch: 1.1
+                effect: none
+                sound: shootWeightless
+                minVolume: 0.15
+                maxVolume: 0.25
                 }
                 ]
 
