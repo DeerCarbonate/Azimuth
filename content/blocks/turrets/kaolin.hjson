@@ -14,7 +14,7 @@ moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1
 shootSound: none
-ammoPerShot: 7
+ammoPerShot: 8
 heatRequirement: 48
 shootY: 14
 inaccuracy: 45
@@ -23,13 +23,13 @@ shoot: {
 	source: {
     type: ShootSpread
     firstShotDelay: 45
-    shots: 6
+    shots: 4
     spread: 2.5
     }
 	dest: [
 	{
 	type: ShootPattern
-		shots: 4
+		shots: 5
 		shotDelay: 35
 	}
 	]
@@ -104,8 +104,8 @@ shoot: {
             trailWidth:1.2
             trailLength:8
             trailColor:bf92f960
-            velocityScaleRandMax: 1
-            velocityScaleRandMin: 0.8
+            velocityScaleRandMax: 0.9
+            velocityScaleRandMin: 0.6
             scaleLife: false
             shrinkY: 0
             shrinkX: 0
