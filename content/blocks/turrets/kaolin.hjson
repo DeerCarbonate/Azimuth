@@ -75,12 +75,12 @@ shoot: {
         color1: bf92f9
         color2: ffffff
         rotation: 0
-        rotMove: 360
+        rotMove: 480
         followRotation: false
-        layer: 90
+        layer: 100
         under: true
         sides: 5
-        innerRadScl: 0.8
+        innerRadScl: 0.75
         progress: {
           type: life
         }
@@ -265,7 +265,7 @@ parts: [
         radiusTo: 6
         stroke: 3.2
         x: 0
-        y: 14
+        y: 16
         color1: bf92f9
         color2: ffffff
         rotation: 45
@@ -281,11 +281,43 @@ parts: [
         radiusTo: 8
         stroke: 3.6
         x: 0
-        y: 14
+        y: 16
         color1: bf92f9
         color2: ffffff
         rotation: 65
         rotMove: 345
+        followRotation: false
+        progress: {
+          type: heat
+        }
+      }
+            {
+        type: FlarePart
+        radius: 0
+        radiusTo: 10
+        stroke: 4
+        x: 0
+        y: 16
+        color1: bf92f980
+        color2: ffffff80
+        rotation: 75
+        rotMove: 315
+        followRotation: false
+        progress: {
+          type: heat
+        }
+      }
+                  {
+        type: FlarePart
+        radius: 0
+        radiusTo: 12
+        stroke: 4.5
+        x: 0
+        y: 16
+        color1: bf92f950
+        color2: ffffff50
+        rotation: 85
+        rotMove: 285
         followRotation: false
         progress: {
           type: heat
