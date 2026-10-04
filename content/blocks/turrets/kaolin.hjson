@@ -75,9 +75,9 @@ shoot: {
         color1: bf92f9
         color2: ffffff
         rotation: 0
-        rotMove: 55
+        rotMove: 135
         followRotation: false
-        layer: 55
+        layer: 80
         under: true
         sides: 6
         progress: {
