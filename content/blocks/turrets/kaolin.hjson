@@ -18,9 +18,11 @@ ammoPerShot: 2
 heatRequirement: 48
 shootY: 8
 shoot: {
+  type: ShootSpread
   firstShotDelay: 15
   shotDelay: 6
   shots: 20
+  spread: 12
 }
   ammoTypes: {
     zinc: {
@@ -215,17 +217,17 @@ parts: [
       suffix: -barrel
       under: false
       mirror: false
-      progress: recoil
+      progress: heat
 	  x: 0
 	  y: 0
-	  moveY: -4
+	  moveY: -1.5
     }
     {
       type: RegionPart
       suffix: -karo
       under: false
       mirror: false
-      progress: recoil
+      progress: heat
 	  x: 0
 	  y: 0
 	  moveY: -3.5
