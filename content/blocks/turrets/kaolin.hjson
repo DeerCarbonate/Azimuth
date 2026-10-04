@@ -46,24 +46,24 @@ shoot: {
             pierceArmor:true
             sprite: azimut-hitsliceb
             width:18
-            lifetime: 180
+            lifetime: 140
             damage: 40
             speed: 3
             drag:0.003
             homingRange:20
             homingPower:0.006
             homingDelay:16
-            shrinkX:0
-            shrinkY:0
             trailInterp:slope
-            trailSinScl: 2.5
-            trailSinMag: 2.5
+            trailSinScl: 1
+            trailSinMag: 1
             trailWidth:3
             trailLength:16
             trailColor:bf92f9
             velocityScaleRandMax: 1
             velocityScaleRandMin: 0.8
             scaleLife: false
+            shrinkY: 0
+            shrinkX: 0
                         parts: [
       {
         type: FlarePart
