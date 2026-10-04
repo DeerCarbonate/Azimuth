@@ -258,6 +258,39 @@ parts: [
 	  x: 0
 	  y: 0
 	  moveY: -1.5
+      children: [{
+        type: FlarePart
+        radius: 0
+        radiusTo: 6
+        stroke: 3.2
+        x: 0
+        y: 12
+        color1: 665c9f
+        color2: bf92f9
+        rotation: 45
+        rotMove: 150
+        followRotation: false
+        progress: {
+          type: charge
+        }
+      }
+      {
+        type: FlarePart
+        radius: 0
+        radiusTo: 8
+        stroke: 3.6
+        x: 0
+        y: 12
+        color1: 665c9f
+        color2: bf92f9
+        rotation: 65
+        rotMove: 550
+        followRotation: false
+        progress: {
+          type: recoil
+        }
+      }
+    ]
     }
     {
       type: RegionPart
