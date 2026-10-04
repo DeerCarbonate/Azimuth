@@ -62,8 +62,8 @@ shoot: {
             shrinkX: 0
             bulletInterval: 10
             intervalBullets: 1
-            intervalRandomSpread: 0.1
-            intervalDelay: 25
+            intervalRandomSpread: 15
+            intervalDelay: 5
             intervalBullet: {
             createChance: 0.25
             type: BasicBulletType
@@ -74,8 +74,8 @@ shoot: {
             frontColor: bf92f9
             pierceArmor:true
             sprite: azimut-hitsliceb
-            width:8
-            lifetime: 120
+            width:7.5
+            lifetime: 115
             damage: 15
             speed: 2.5
             drag:0.006
@@ -85,11 +85,62 @@ shoot: {
             trailWidth:1.2
             trailLength:8
             trailColor:bf92f960
+            trailRotation:true
+            trailEffect:[
+            {
+		    type: ParticleEffect
+		    region: azimut-triangle
+		    particles: 1
+		    length: 32
+		    lifetime: 35
+		    interp: circleOut
+		    sizeInterp: pow5Out
+		    cone: 360
+		    colorFrom: bf92f9
+		    colorTo: bf92f980
+		    sizeFrom: 5.2
+		    sizeTo:0
+            }
+            ]
             velocityScaleRandMax: 1
             velocityScaleRandMin: 0.8
             scaleLife: false
             shrinkY: 0
             shrinkX: 0
+                        hitEffect: {
+                type: ExplosionEffect
+                lifetime: 15
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 1.25
+                sparkRad: 4.5
+                sparkLen: 1.5
+                sparks: 2
+                }
+                            despawnEffect: {
+                type: ExplosionEffect
+                lifetime: 15
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 1.25
+                sparkRad: 4.5
+                sparkLen: 1.5
+                sparks: 2
+                }
             }
                         parts: [
             {
