@@ -3,7 +3,7 @@ size: 4
 outlineColor: 0c0c12
 squareSprite: false
 outlineColor: 0c0c12
-health: 2850
+health: 5500
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
@@ -29,7 +29,7 @@ shoot: {
 	dest: [
 	{
 	type: ShootPattern
-		shots: 14
+		shots: 9
 		shotDelay: 35
 	}
 	]
@@ -65,19 +65,21 @@ shoot: {
             shrinkY: 0
             shrinkX: 0
                         parts: [
-      {
+            {
         type: FlarePart
         radius: 3
         radiusTo: 7
         stroke: 5.5
         x: 0
         y: 0
-        color1: bf92f9
-        color2: ffffff
+        color1: bf92f960
+        color2: ffffff60
         rotation: 0
-        rotMove: 745
+        rotMove: 15
         followRotation: false
+        layer: 30
         under: true
+        sides: 6
         progress: {
           type: life
         }
