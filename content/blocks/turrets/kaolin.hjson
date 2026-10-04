@@ -14,7 +14,7 @@ moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1
 shootSound: none
-ammoPerShot: 10
+ammoPerShot: 7
 heatRequirement: 48
 shootY: 14
 inaccuracy: 45
@@ -56,8 +56,8 @@ shoot: {
             trailLength:12
             trailColor:bf92f990
             trailRotation:true
-            trailChance: 0.3
-            trailInterval: 6.2
+            trailChance: 0.08
+            trailInterval: 3.5
             trailEffect:[
             {
 		    type: ParticleEffect
@@ -223,98 +223,70 @@ shoot: {
                 }
                 ]
 
-            hitEffect: [{
-                type: ExplosionEffect
-                lifetime: 30
-
-                waveColor: bf92f9
-                waveStroke: 2
-                waveRad: 5
-
-                smokeColor: bf92f9
-                smokes: 0
-
-                sparkColor: bf92f9
-                sparkStroke: 1.25
-                sparkRad: 4.5
-                sparkLen: 1.5
-                sparks: 2
-                }
-                        {
-followParent: false
-length: 0
-lifetime: 25
-particles: 1
-cone: 0
-region: azimut-thicc-despawn
-sizeFrom: 11
-sizeTo: 0
-colorTo: bf92f9
-baseRotation: 90
-interp:pow3Out
-followParent: true
-}
+hitEffect: [
 {
 followParent: false
 length: 0
-lifetime: 25
+lifetime: 45
 particles: 1
 cone: 0
-region: azimut-thicc-despawn
-sizeFrom: 11
-sizeTo: 0
-colorTo: bf92f9
+region: azimut-shockwave
+sizeFrom: 2
+sizeTo: 18
+colorFrom: bf92f995
+colorTo: bf92f900
 baseRotation: 180
-interp:pow3Out
-followParent: true
+interp: pow3Out
 }
-                ]
-                            despawnEffect: [{
-                type: ExplosionEffect
-                lifetime: 30
-
-                waveColor: bf92f9
-                waveStroke: 2
-                waveRad: 5
-
-                smokeColor: bf92f9
-                smokes: 0
-
-                sparkColor: bf92f9
-                sparkStroke: 1.25
-                sparkRad: 4.5
-                sparkLen: 1.5
-                sparks: 2
-                }
-                        {
-followParent: false
-length: 0
-lifetime: 25
-particles: 1
-cone: 0
-region: azimut-thicc-despawn
-sizeFrom: 11
-sizeTo: 0
-colorTo: bf92f9
-baseRotation: 90
-interp:pow3Out
-followParent: true
+{
+  type: ParticleEffect
+  particles: 8
+  lifetime: 55
+  length: 55
+  baseLength: 0
+  cone: 360
+  sizeFrom: 0
+  sizeTo: 0
+  strokeFrom: 2
+  strokeTo: 2
+  colorFrom: bf92f995
+  colorTo: bf92f900
+  line: true
+  interp: pow3Out
 }
+]
+despawnEffect: [
 {
 followParent: false
 length: 0
-lifetime: 25
+lifetime: 45
 particles: 1
 cone: 0
-region: azimut-thicc-despawn
-sizeFrom: 11
-sizeTo: 0
-colorTo: bf92f9
+region: azimut-shockwave
+sizeFrom: 2
+sizeTo: 18
+colorFrom: bf92f995
+colorTo: bf92f900
 baseRotation: 180
-interp:pow3Out
-followParent: true
+interp: pow3Out
 }
-                ]
+{
+  type: ParticleEffect
+  particles: 8
+  lifetime: 55
+  length: 55
+  baseLength: 0
+  cone: 360
+  sizeFrom: 0
+  sizeTo: 0
+  strokeFrom: 2
+  strokeTo: 2
+  colorFrom: bf92f995
+  colorTo: bf92f900
+  line: true
+  interp: pow3Out
+}
+]
             }
     }
 requirements: [
@@ -350,6 +322,7 @@ parts: [
         color2: ffffff
         rotation: 45
         rotMove: 150
+        layer: 101
         followRotation: false
         progress: {
           type: charge
@@ -366,6 +339,7 @@ parts: [
         color2: ffffff
         rotation: 65
         rotMove: 345
+        layer: 101
         followRotation: false
         progress: {
           type: heat
@@ -382,6 +356,7 @@ parts: [
         color2: ffffff80
         rotation: 75
         rotMove: 315
+        layer: 101
         followRotation: false
         progress: {
           type: heat
@@ -398,11 +373,37 @@ parts: [
         color2: ffffff50
         rotation: 85
         rotMove: 285
+        layer: 101
         followRotation: false
         progress: {
           type: heat
         }
       }
+        {
+    type: FlarePart
+    sides: 2
+    color1: 00000000
+    radius: 20
+    radiusTo: 0
+    stroke: 23.4
+    y: -1
+    progress: heat
+    layer: 102
+    weaponIndex: 0
+  }
+  {
+    type: FlarePart
+    sides: 2
+    color1: bf92f9
+    radius: 50
+    radiusTo: 0
+    stroke: 6.4
+    innerRadScl: 0.70
+    y: -1
+    progress: heat
+    layer: 102
+    weaponIndex: 0
+  }
     ]
     }
     {
