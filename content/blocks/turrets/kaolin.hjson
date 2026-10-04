@@ -7,7 +7,7 @@ health: 2850
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
-reload: 650
+reload: 850
 range: 300
 targetAir: true
 moveWhileCharging: true
@@ -50,14 +50,16 @@ shoot: {
             damage: 40
             speed: 3
             drag:0.003
-            homingRange:40
-            homingPower:0.03
-            homingDelay:12
+            homingRange:20
+            homingPower:0.006
+            homingDelay:16
+            shrinkX:0
+            shrinkY:0
             trailInterp:slope
             trailSinScl: 3.5
             trailSinMag: 0.5
             trailWidth:3
-            trailLength:6
+            trailLength:16
             trailColor:bf92f9
                         parts: [
       {
@@ -72,6 +74,7 @@ shoot: {
         rotation: 0
         rotMove: 745
         followRotation: false
+        under: true
         progress: {
           type: life
         }
