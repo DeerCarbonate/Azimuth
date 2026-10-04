@@ -55,6 +55,25 @@ shoot: {
             trailWidth:3
             trailLength:12
             trailColor:bf92f990
+            trailRotation:true
+            trailChance: 0.3
+            trailInterval: 6.2
+            trailEffect:[
+            {
+		    type: ParticleEffect
+		    region: azimut-triangle
+		    particles: 1
+		    length: 32
+		    lifetime: 35
+		    interp: circleOut
+		    sizeInterp: pow5Out
+		    cone: 360
+		    colorFrom: bf92f9
+		    colorTo: bf92f980
+		    sizeFrom: 5.2
+		    sizeTo:0
+            }
+            ]
             velocityScaleRandMax: 1
             velocityScaleRandMin: 0.8
             scaleLife: false
@@ -85,25 +104,6 @@ shoot: {
             trailWidth:1.2
             trailLength:8
             trailColor:bf92f960
-            trailRotation:true
-            trailChance: 0.6
-            trailInterval: 5.2
-            trailEffect:[
-            {
-		    type: ParticleEffect
-		    region: azimut-triangle
-		    particles: 1
-		    length: 32
-		    lifetime: 35
-		    interp: circleOut
-		    sizeInterp: pow5Out
-		    cone: 360
-		    colorFrom: bf92f9
-		    colorTo: bf92f980
-		    sizeFrom: 5.2
-		    sizeTo:0
-            }
-            ]
             velocityScaleRandMax: 1
             velocityScaleRandMin: 0.8
             scaleLife: false
