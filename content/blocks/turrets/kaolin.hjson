@@ -7,7 +7,7 @@ health: 2850
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
-reload: 400
+reload: 650
 range: 300
 targetAir: true
 moveWhileCharging: true
@@ -17,7 +17,7 @@ shootSound: none
 ammoPerShot: 2
 heatRequirement: 48
 shootY: 10
-inaccuracy: 95
+inaccuracy: 85
 shoot: {
 	type: ShootMulti
 	source: {
@@ -29,7 +29,7 @@ shoot: {
 	dest: [
 	{
 	type: ShootPattern
-		shots: 11
+		shots: 14
 		shotDelay: 35
 	}
 	]
@@ -44,13 +44,14 @@ shoot: {
             frontColor: bf92f9
             healColor: bf92f988
             pierceArmor:true
-            width:9
-            trailWidth:1.7
+            sprite: azimut-hitsliceb
+            width:12
+            trailWidth:2
             trailLength:6
             trailColor:bf92f9
-            lifetime: 80
+            lifetime: 140
             damage: 40
-            speed: 6
+            speed: 2.5
             drag:0.015
             homingRange:50
             homingPower:0.1
@@ -109,6 +110,15 @@ shoot: {
                 sound: shootElectrified3
                 minVolume: 0.35
                 maxVolume: 0.45
+                }
+                {
+                type: SoundEffect
+                minPitch: 0.9
+                maxPitch: 1.1
+                effect: none
+                sound: shootElectrified4
+                minVolume: 0.25
+                maxVolume: 0.35
                 }
                 {
                 type: SoundEffect
