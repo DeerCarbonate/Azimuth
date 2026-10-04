@@ -264,8 +264,8 @@ shoot: {
                 particles: 1
                 cone: 0
                 region: azimut-shockwave
-                sizeFrom: 4
-                sizeTo: 20
+                sizeFrom: 0
+                sizeTo: 13
                 colorFrom: ffffff
                 colorTo: bf92f900
                 baseRotation: 180
@@ -278,13 +278,13 @@ shoot: {
                 particles: 1
                 cone: 0
                 region: azimut-shockwave
-                sizeFrom: 4
-                sizeTo: 20
+                sizeFrom: 0
+                sizeTo: 15
                 colorFrom: bf92f9
                 colorTo: bf92f900
                 baseRotation: 180
                 interp: pow3Out
-                startDelay:15
+                startDelay:5
                 }
                 {
                 followParent: false
@@ -293,14 +293,55 @@ shoot: {
                 particles: 1
                 cone: 0
                 region: azimut-shockwave
-                sizeFrom: 4
-                sizeTo: 20
+                sizeFrom: 0
+                sizeTo: 17
                 colorFrom: ffffff40
                 colorTo: bf92f900
                 baseRotation: 180
                 interp: pow3Out
-                startDelay:45
+                startDelay:15
                 }
+                {
+				type: WaveEffect
+				rotWithParent: true
+				followParent: true
+				lifetime: 35
+				sizeFrom: 4
+				sizeTo: 16
+				strokeFrom: 6
+				strokeTo: 2
+                colorFrom: ffffff80
+                colorTo: bf92f900
+				interp:pow3Out
+				}
+                {
+				type: WaveEffect
+				rotWithParent: true
+				followParent: true
+				lifetime: 35
+				sizeFrom: 4
+				sizeTo: 16
+				strokeFrom: 6
+				strokeTo: 2
+                colorFrom: ffffff80
+                colorTo: bf92f900
+				interp:pow3Out
+                startDelay:5
+				}
+                {
+				type: WaveEffect
+				rotWithParent: true
+				followParent: true
+				lifetime: 35
+				sizeFrom: 4
+				sizeTo: 16
+				strokeFrom: 6
+				strokeTo: 2
+                colorFrom: ffffff80
+                colorTo: bf92f900
+				interp:pow3Out
+                startDelay:15
+				}
                 {
                 type: ParticleEffect
                 particles: 4
