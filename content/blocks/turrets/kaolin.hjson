@@ -67,17 +67,17 @@ shoot: {
                         parts: [
             {
         type: FlarePart
-        radius: 3
-        radiusTo: 7
-        stroke: 5.5
+        radius: 7
+        radiusTo: 16
+        stroke: 8
         x: 0
         y: 0
-        color1: bf92f960
-        color2: ffffff60
+        color1: bf92f9
+        color2: ffffff
         rotation: 0
-        rotMove: 15
+        rotMove: 55
         followRotation: false
-        layer: 30
+        layer: 55
         under: true
         sides: 6
         progress: {
