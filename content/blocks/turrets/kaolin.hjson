@@ -39,9 +39,9 @@ shoot: {
             type: BasicBulletType
             collidesAir: true
             buildingDamageMultiplier: 0.01
-            backColor: 665c9f
+            backColor: bf92f9
             smokeEffect: none
-            frontColor: bf92f9
+            frontColor: ffffff
             pierceArmor:true
             sprite: azimut-hitsliceb
             width:18
@@ -86,6 +86,8 @@ shoot: {
             trailLength:8
             trailColor:bf92f960
             trailRotation:true
+            trailChance: 0.6
+            trailInterval: 5.2
             trailEffect:[
             {
 		    type: ParticleEffect
