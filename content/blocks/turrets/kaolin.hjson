@@ -46,8 +46,9 @@ shoot: {
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
-            splashDamage: 110
-            splashDamageRadius: 8
+            damage: 120
+            splashDamage: 240
+            splashDamageRadius: 12
             speed: 3
             drag:0.003
             homingRange:20
@@ -184,8 +185,8 @@ shoot: {
             trailRotation:true
             trailChance: 0.05
             trailInterval: 1.9
-            weaveMag: 6
-            weaveScale: 8
+            weaveMag: 8
+            weaveScale: 20
             trailEffect:[
             {
             type: ParticleEffect
