@@ -156,6 +156,84 @@ shoot: {
                 sparks: 2
                 }
             }
+            {
+            type: BasicBulletType
+            collidesAir: true
+            buildingDamageMultiplier: 0.01
+            backColor: 665c9f
+            smokeEffect: none
+            frontColor: bf92f9
+            pierceArmor:true
+            sprite: azimut-hitsliceb
+            width:7.5
+            lifetime: 95
+            damage: 35
+            speed: 5
+            drag:0.008
+            homingRange:15
+            homingPower:0.005
+            homingDelay:10
+            trailWidth:1.2
+            trailLength:8
+            trailColor:bf92f980
+            velocityScaleRandMax: 1
+            velocityScaleRandMin: 0.9
+            scaleLife: false
+            shrinkY: 0
+            shrinkX: 0
+            trailRotation:true
+            trailChance: 0.05
+            trailInterval: 1.9
+            weaveMag: 6
+            weaveScale: 8
+            trailEffect:[
+            {
+            type: ParticleEffect
+            particles: 1
+            length: 0
+            lifetime: 10
+            sizeFrom: 2
+            sizeTo: 0
+            colorFrom: bf92f9
+            colorTo: bf92f9
+            layer:100.3
+            }
+            ]
+                hitEffect: {
+                type: ExplosionEffect
+                lifetime: 15
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 1.25
+                sparkRad: 4.5
+                sparkLen: 1.5
+                sparks: 2
+                }
+                            despawnEffect: {
+                type: ExplosionEffect
+                lifetime: 15
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 1.25
+                sparkRad: 4.5
+                sparkLen: 1.5
+                sparks: 2
+                }
+            }
             ]
             bulletInterval: 10
             intervalBullets: 1
