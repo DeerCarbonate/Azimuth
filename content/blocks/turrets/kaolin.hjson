@@ -22,7 +22,6 @@ shoot: {
 	type: ShootMulti
 	source: {
     type: ShootSpread
-    firstShotDelay: 45
     shots: 4
     spread: 2.5
     }
@@ -444,23 +443,6 @@ parts: [
       children: [{
         type: FlarePart
         radius: 0
-        radiusTo: 6
-        stroke: 3.2
-        x: 0
-        y: 17
-        color1: bf92f9
-        color2: ffffff
-        rotation: 45
-        rotMove: 150
-        layer: 101
-        followRotation: false
-        progress: {
-          type: charge
-        }
-      }
-      {
-        type: FlarePart
-        radius: 0
         radiusTo: 8
         stroke: 3.6
         x: 0
@@ -515,7 +497,7 @@ parts: [
     effectRot: 0
     debugDraw: true
     mirror: false
-    effectChance: 1.5
+    effectChance: 0.09
     progress: {
       type: recoil
       ops: [
@@ -528,11 +510,11 @@ parts: [
     effect: [
       {
         type: ParticleEffect
-        lifetime: 40
+        lifetime: 145
         baseLength: 0
         particles: 1
         sizeFrom: 0
-        sizeTo: 3.6
+        sizeTo: 9
         colorFrom: "7e749980"
         colorTo: b0b0b000
         interp: pow5Out
@@ -541,11 +523,11 @@ parts: [
       }
       {
         type: ParticleEffect
-        lifetime: 35
+        lifetime: 135
         baseLength: 0
         particles: 1
         sizeFrom: 0
-        sizeTo: 4
+        sizeTo: 7
         colorFrom: "7e749970"
         colorTo: b0b0b000
         interp: pow5Out
