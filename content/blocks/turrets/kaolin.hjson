@@ -23,13 +23,13 @@ shoot: {
 	source: {
     type: ShootSpread
     firstShotDelay: 45
-    shots: 4
+    shots: 6
     spread: 2.5
     }
 	dest: [
 	{
 	type: ShootPattern
-		shots: 7
+		shots: 4
 		shotDelay: 35
 	}
 	]
@@ -46,7 +46,7 @@ shoot: {
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
-            damage: 45
+            damage: 65
             speed: 3
             drag:0.003
             homingRange:20
