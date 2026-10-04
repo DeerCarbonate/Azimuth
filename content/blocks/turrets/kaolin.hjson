@@ -47,17 +47,14 @@ shoot: {
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
-            damage: 40
+            damage: 50
             speed: 3
             drag:0.003
             homingRange:20
             homingPower:0.006
             homingDelay:16
-            trailInterp:slope
-            trailSinScl: 1
-            trailSinMag: 1
             trailWidth:3
-            trailLength:16
+            trailLength:12
             trailColor:bf92f9
             velocityScaleRandMax: 1
             velocityScaleRandMin: 0.8
@@ -265,7 +262,7 @@ parts: [
         radiusTo: 6
         stroke: 3.2
         x: 0
-        y: 16
+        y: 17
         color1: bf92f9
         color2: ffffff
         rotation: 45
@@ -281,7 +278,7 @@ parts: [
         radiusTo: 8
         stroke: 3.6
         x: 0
-        y: 16
+        y: 17
         color1: bf92f9
         color2: ffffff
         rotation: 65
@@ -297,7 +294,7 @@ parts: [
         radiusTo: 10
         stroke: 4
         x: 0
-        y: 16
+        y: 17
         color1: bf92f980
         color2: ffffff80
         rotation: 75
@@ -313,7 +310,7 @@ parts: [
         radiusTo: 12
         stroke: 4.5
         x: 0
-        y: 16
+        y: 17
         color1: bf92f950
         color2: ffffff50
         rotation: 85
