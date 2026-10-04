@@ -87,7 +87,6 @@ shoot: {
             backColor: 665c9f
             smokeEffect: none
             frontColor: bf92f9
-            pierceArmor:true
             sprite: azimut-hitsliceb
             width:7.5
             lifetime: 115
@@ -170,7 +169,6 @@ shoot: {
             backColor: 665c9f
             smokeEffect: none
             frontColor: bf92f9
-            pierceArmor:true
             sprite: azimut-hitsliceb
             width:7.5
             armorMultiplier: 1.5
