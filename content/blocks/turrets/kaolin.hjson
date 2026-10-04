@@ -29,7 +29,7 @@ shoot: {
 	dest: [
 	{
 	type: ShootPattern
-		shots: 9
+		shots: 7
 		shotDelay: 35
 	}
 	]
@@ -42,7 +42,6 @@ shoot: {
             backColor: 665c9f
             smokeEffect: none
             frontColor: bf92f9
-            healColor: bf92f988
             pierceArmor:true
             sprite: azimut-hitsliceb
             width:18
@@ -55,29 +54,60 @@ shoot: {
             homingDelay:16
             trailWidth:3
             trailLength:12
-            trailColor:bf92f9
+            trailColor:bf92f990
             velocityScaleRandMax: 1
             velocityScaleRandMin: 0.8
             scaleLife: false
             shrinkY: 0
             shrinkX: 0
+            bulletInterval: 10
+            intervalBullets: 1
+            intervalRandomSpread: 0.1
+            intervalDelay: 25
+            intervalBullet: {
+            createChance: 0.25
+            type: BasicBulletType
+            collidesAir: true
+            buildingDamageMultiplier: 0.01
+            backColor: 665c9f
+            smokeEffect: none
+            frontColor: bf92f9
+            pierceArmor:true
+            sprite: azimut-hitsliceb
+            width:8
+            lifetime: 120
+            damage: 15
+            speed: 2.5
+            drag:0.006
+            homingRange:15
+            homingPower:0.003
+            homingDelay:10
+            trailWidth:1.2
+            trailLength:8
+            trailColor:bf92f960
+            velocityScaleRandMax: 1
+            velocityScaleRandMin: 0.8
+            scaleLife: false
+            shrinkY: 0
+            shrinkX: 0
+            }
                         parts: [
             {
         type: FlarePart
-        radius: 6
-        radiusTo: 15
-        stroke: 7
+        radius: 3
+        radiusTo: 14
+        stroke: 6.5
         x: 0
         y: 0
-        color1: bf92f9
-        color2: ffffff
+        color1: bf92f980
+        color2: ffffff80
         rotation: 0
-        rotMove: 480
+        rotMove: 580
         followRotation: false
         layer: 100
         under: true
         sides: 5
-        innerRadScl: 0.75
+        innerRadScl: 0.7
         progress: {
           type: life
         }
