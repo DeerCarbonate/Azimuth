@@ -272,36 +272,6 @@ shoot: {
                 interp: pow3Out
                 }
                 {
-                followParent: false
-                length: 0
-                lifetime: 35
-                particles: 1
-                cone: 0
-                region: azimut-shockwave
-                sizeFrom: 0
-                sizeTo: 15
-                colorFrom: bf92f9
-                colorTo: bf92f900
-                baseRotation: 180
-                interp: pow3Out
-                startDelay:5
-                }
-                {
-                followParent: false
-                length: 0
-                lifetime: 35
-                particles: 1
-                cone: 0
-                region: azimut-shockwave
-                sizeFrom: 0
-                sizeTo: 17
-                colorFrom: ffffff40
-                colorTo: bf92f900
-                baseRotation: 180
-                interp: pow3Out
-                startDelay:15
-                }
-                {
 				type: WaveEffect
 				rotWithParent: true
 				followParent: true
@@ -313,34 +283,6 @@ shoot: {
                 colorFrom: ffffff80
                 colorTo: bf92f900
 				interp:pow3Out
-				}
-                {
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 35
-				sizeFrom: 4
-				sizeTo: 16
-				strokeFrom: 6
-				strokeTo: 2
-                colorFrom: ffffff80
-                colorTo: bf92f900
-				interp:pow3Out
-                startDelay:5
-				}
-                {
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 35
-				sizeFrom: 4
-				sizeTo: 16
-				strokeFrom: 6
-				strokeTo: 2
-                colorFrom: ffffff80
-                colorTo: bf92f900
-				interp:pow3Out
-                startDelay:15
 				}
                 {
                 type: ParticleEffect
