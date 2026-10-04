@@ -212,7 +212,7 @@ drawer: {
 parts: [
     {
       type: RegionPart
-      suffix: -middle
+      suffix: -barrel
       under: false
       mirror: false
       progress: recoil
@@ -235,36 +235,36 @@ parts: [
       suffix: -blade
       under: false
       mirror: true
-      progress: charge
+      progress: recoil
 	  x: 0
 	  y: 0
 	  moveY: -0.5
       moveX: 1
-      moveRot: 15
+      moveRot: -15
     }
     {
       type: RegionPart
       suffix: -middle
       under: false
       mirror: true
-      progress: charge
+      progress: recoil
 	  x: 0
 	  y: 0
 	  moveY: -0.5
       moveX: 0.5
-      moveRot: 10
+      moveRot: -10
     }
     {
       type: RegionPart
       suffix: -back
       under: false
       mirror: true
-      progress: charge
+      progress: recoil
 	  x: 0
 	  y: 0
 	  moveY: -0.3
       moveX: 0.3
-      moveRot: 5
+      moveRot: -5
     }
 ]
 }
