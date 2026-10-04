@@ -46,7 +46,8 @@ shoot: {
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
-            damage: 65
+            splashDamage: 110
+            splashDamageRadius: 8
             speed: 3
             drag:0.003
             homingRange:20
@@ -90,7 +91,7 @@ shoot: {
             sprite: azimut-hitsliceb
             width:7.5
             lifetime: 115
-            damage: 25
+            damage: 45
             speed: 4.5
             drag:0.008
             homingRange:15
@@ -172,7 +173,7 @@ shoot: {
             sprite: azimut-hitsliceb
             width:7.5
             lifetime: 115
-            damage: 25
+            damage: 35
             speed: 2.5
             drag:0.006
             homingRange:15
