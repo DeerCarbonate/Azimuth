@@ -272,6 +272,36 @@ shoot: {
                 interp: pow3Out
                 }
                 {
+                followParent: false
+                length: 0
+                lifetime: 35
+                particles: 1
+                cone: 0
+                region: azimut-shockwave
+                sizeFrom: 4
+                sizeTo: 20
+                colorFrom: bf92f9
+                colorTo: bf92f900
+                baseRotation: 180
+                interp: pow3Out
+                startDelay:15
+                }
+                {
+                followParent: false
+                length: 0
+                lifetime: 35
+                particles: 1
+                cone: 0
+                region: azimut-shockwave
+                sizeFrom: 4
+                sizeTo: 20
+                colorFrom: ffffff40
+                colorTo: bf92f900
+                baseRotation: 180
+                interp: pow3Out
+                startDelay:45
+                }
+                {
                 type: ParticleEffect
                 particles: 4
                 lifetime: 25
