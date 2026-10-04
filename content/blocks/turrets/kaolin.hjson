@@ -434,6 +434,8 @@ parts: [
       under: false
       mirror: false
       progress: heat
+      heatColor: bf92f9
+      heatProgress: reload
 	  x: 0
 	  y: 0
 	  moveY: -1.5
@@ -505,6 +507,51 @@ parts: [
           type: heat
         }
       }
+        {
+    type: EffectSpawnerPart
+    y: 15.5
+    effectRot: 0
+    debugDraw: true
+    mirror: false
+    effectChance: 1.5
+    progress: {
+      type: recoil
+      ops: [
+        {
+          op: curve
+          interp: pow2Out
+        }
+      ]
+    }
+    effect: [
+      {
+        type: ParticleEffect
+        lifetime: 40
+        baseLength: 0
+        particles: 1
+        sizeFrom: 0
+        sizeTo: 3.6
+        colorFrom: "7e749980"
+        colorTo: b0b0b000
+        interp: pow5Out
+        sizeInterp: pow2Out
+        followParent: false
+      }
+      {
+        type: ParticleEffect
+        lifetime: 35
+        baseLength: 0
+        particles: 1
+        sizeFrom: 0
+        sizeTo: 4
+        colorFrom: "7e749970"
+        colorTo: b0b0b000
+        interp: pow5Out
+        sizeInterp: pow2Out
+        followParent: false
+      }
+    ]
+  }
     ]
     }
     {
