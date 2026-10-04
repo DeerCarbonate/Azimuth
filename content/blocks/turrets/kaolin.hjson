@@ -1,0 +1,285 @@
+type: ItemTurret
+size: 4
+outlineColor: 0c0c12
+squareSprite: false
+outlineColor: 0c0c12
+health: 2850
+alwaysUnlocked: false
+shootCone: 9
+recoil: 2
+reload: 400
+range: 300
+targetAir: true
+moveWhileCharging: true
+targetGround: true
+rotateSpeed: 1
+shootSound: none
+ammoPerShot: 2
+heatRequirement: 48
+shootY: 8
+shoot: {
+  firstShotDelay: 15
+  shotDelay: 6
+  shots: 20
+}
+  ammoTypes: {
+    zinc: {
+            type: BasicBulletType
+            collidesAir: true
+            buildingDamageMultiplier: 0.01
+            backColor: 665c9f
+            smokeEffect: none
+            frontColor: bf92f9
+            healColor: bf92f988
+            pierceArmor:true
+            width:9
+            trailWidth:1.7
+            trailLength:5
+            trailColor:bf92f9
+            lifetime: 32
+            damage: 15
+            speed: 4
+            drag:0.02
+            healAmount:26
+            lifesteal:0.25
+            homingRange:50
+            homingPower:0.1
+            homingDelay:4
+            collidesTeam:true
+                        parts: [
+      {
+        type: FlarePart
+        radius: 2
+        radiusTo: 6
+        stroke: 5
+        x: 0
+        y: 0
+        color1: bf92f9
+        color2: ffffff
+        rotation: 0
+        rotMove: 175
+        followRotation: false
+        progress: {
+          type: life
+        }
+      }
+    ]
+            shootEffect: [{
+                sizeInterp: pow3Out
+                interp: pow3Out
+                particles: 2
+                lifetime: 25
+                cone: 7
+
+                sizeTo: 0
+                sizeFrom: 2.2
+                length: 24
+
+                colorFrom: bf92f9
+                colorTo: bf92f925
+
+                }
+                {
+                type: ExplosionEffect
+                lifetime: 25
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparks: 0
+                }
+                {
+                type: SoundEffect
+                minPitch: 0.9
+                maxPitch: 1.1
+                effect: none
+                sound: shootPlasmaFleeting
+                minVolume: 0.35
+                maxVolume: 0.45
+                }
+                ]
+
+            hitEffect: [{
+                type: ExplosionEffect
+                lifetime: 30
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 1.25
+                sparkRad: 4.5
+                sparkLen: 1.5
+                sparks: 2
+                }
+                        {
+followParent: false
+length: 0
+lifetime: 25
+particles: 1
+cone: 0
+region: azimut-thicc-despawn
+sizeFrom: 11
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 90
+interp:pow3Out
+followParent: true
+}
+{
+followParent: false
+length: 0
+lifetime: 25
+particles: 1
+cone: 0
+region: azimut-thicc-despawn
+sizeFrom: 11
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 180
+interp:pow3Out
+followParent: true
+}
+                ]
+                            despawnEffect: [{
+                type: ExplosionEffect
+                lifetime: 30
+
+                waveColor: bf92f9
+                waveStroke: 2
+                waveRad: 5
+
+                smokeColor: bf92f9
+                smokes: 0
+
+                sparkColor: bf92f9
+                sparkStroke: 1.25
+                sparkRad: 4.5
+                sparkLen: 1.5
+                sparks: 2
+                }
+                        {
+followParent: false
+length: 0
+lifetime: 25
+particles: 1
+cone: 0
+region: azimut-thicc-despawn
+sizeFrom: 11
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 90
+interp:pow3Out
+followParent: true
+}
+{
+followParent: false
+length: 0
+lifetime: 25
+particles: 1
+cone: 0
+region: azimut-thicc-despawn
+sizeFrom: 11
+sizeTo: 0
+colorTo: bf92f9
+baseRotation: 180
+interp:pow3Out
+followParent: true
+}
+                ]
+            }
+    }
+requirements: [
+  compound/95
+  zinc/300
+  titanite/150
+]
+category: turret
+drawer: {
+  type: DrawTurret
+  basePrefix: azimut-
+  iconOverride: [
+    -icon
+  ]
+parts: [
+    {
+      type: RegionPart
+      suffix: -middle
+      under: false
+      mirror: false
+      progress: recoil
+	  x: 0
+	  y: 0
+	  moveY: -4
+    }
+    {
+      type: RegionPart
+      suffix: -karo
+      under: false
+      mirror: false
+      progress: recoil
+	  x: 0
+	  y: 0
+	  moveY: -3.5
+    }
+    {
+      type: RegionPart
+      suffix: -blade
+      under: false
+      mirror: true
+      progress: charge
+	  x: 0
+	  y: 0
+	  moveY: -0.5
+      moveX: 1
+      moveRot: 15
+    }
+    {
+      type: RegionPart
+      suffix: -middle
+      under: false
+      mirror: true
+      progress: charge
+	  x: 0
+	  y: 0
+	  moveY: -0.5
+      moveX: 0.5
+      moveRot: 10
+    }
+    {
+      type: RegionPart
+      suffix: -back
+      under: false
+      mirror: true
+      progress: charge
+	  x: 0
+	  y: 0
+	  moveY: -0.3
+      moveX: 0.3
+      moveRot: 5
+    }
+]
+}
+research: {
+  parent: "retray"
+  planet: "gelion"
+    "requirements": [
+	  "compound/300"
+	  "zinc/600"
+	  "titanite/300"
+]
+objectives: [
+    {
+      type: SectorComplete
+      preset: "thirteen"
+    }
+  ]
+}
