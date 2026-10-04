@@ -1,7 +1,7 @@
 type: HeatProducer
 health: 840
 size: 4
-heatOutput: 10
+heatOutput: 18
 squareSprite: false
 research: {
   parent: "power-heater"
