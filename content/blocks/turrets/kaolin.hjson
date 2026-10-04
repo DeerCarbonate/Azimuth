@@ -42,7 +42,7 @@ shoot: {
             backColor: bf92f9
             smokeEffect: none
             frontColor: ffffff
-            pierceArmor:true
+            armorMultiplier: 1.9
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
@@ -98,6 +98,7 @@ shoot: {
             homingRange:15
             homingPower:0.005
             homingDelay:10
+            armorMultiplier: 2.5
             trailWidth:1.2
             trailLength:8
             trailColor:bf92f980
@@ -173,6 +174,7 @@ shoot: {
             pierceArmor:true
             sprite: azimut-hitsliceb
             width:7.5
+            armorMultiplier: 1.5
             lifetime: 115
             damage: 120
             speed: 2.5
