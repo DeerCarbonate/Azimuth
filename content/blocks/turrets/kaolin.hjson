@@ -243,21 +243,7 @@ shoot: {
         }
       }
     ]
-            shootEffect: [{
-                sizeInterp: pow3Out
-                interp: pow3Out
-                particles: 2
-                lifetime: 25
-                cone: 7
-
-                sizeTo: 0
-                sizeFrom: 2.2
-                length: 24
-
-                colorFrom: bf92f9
-                colorTo: bf92f925
-
-                }
+            shootEffect: [
                 {
                 type: ExplosionEffect
                 lifetime: 25
@@ -272,20 +258,57 @@ shoot: {
                 sparks: 0
                 }
                 {
-                type: SoundEffect
-                minPitch: 0.9
-                maxPitch: 1.1
-                effect: none
-                sound: shootElectrified3
-                minVolume: 0.35
-                maxVolume: 0.45
+                followParent: false
+                length: 0
+                lifetime: 35
+                particles: 1
+                cone: 0
+                region: azimut-shockwave
+                sizeFrom: 4
+                sizeTo: 20
+                colorFrom: ffffff
+                colorTo: bf92f900
+                baseRotation: 180
+                interp: pow3Out
+                }
+                {
+                type: ParticleEffect
+                particles: 4
+                lifetime: 25
+                length: 55
+                baseLength: 0
+                cone: 360
+                sizeFrom: 0
+                sizeTo: 0
+                strokeFrom: 1.5
+                strokeTo: 1.5
+                colorFrom: ffffff
+                colorTo: ffffff00
+                line: true
+                interp: pow3Out
+                }
+                {
+                type: ParticleEffect
+                particles: 3
+                lifetime: 24
+                length: 45
+                baseLength: 0
+                cone: 360
+                sizeFrom: 0
+                sizeTo: 0
+                strokeFrom: 1.7
+                strokeTo: 1.7
+                colorFrom: bf92f9
+                colorTo: bf92f900
+                line: true
+                interp: pow3Out
                 }
                 {
                 type: SoundEffect
                 minPitch: 0.9
                 maxPitch: 1.1
                 effect: none
-                sound: shootElectrified4
+                sound: shootElectrified3
                 minVolume: 0.45
                 maxVolume: 0.55
                 }
@@ -294,9 +317,18 @@ shoot: {
                 minPitch: 0.9
                 maxPitch: 1.1
                 effect: none
+                sound: shootElectrified4
+                minVolume: 0.55
+                maxVolume: 0.65
+                }
+                {
+                type: SoundEffect
+                minPitch: 0.9
+                maxPitch: 1.1
+                effect: none
                 sound: shootWeightless
-                minVolume: 0.15
-                maxVolume: 0.25
+                minVolume: 0.25
+                maxVolume: 0.35
                 }
                 ]
 
