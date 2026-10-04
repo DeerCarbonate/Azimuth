@@ -185,8 +185,8 @@ shoot: {
             trailRotation:true
             trailChance: 0.05
             trailInterval: 1.9
-            weaveMag: 8
-            weaveScale: 20
+            weaveMag: 20
+            weaveScale: 4
             trailEffect:[
             {
             type: ParticleEffect
