@@ -23,7 +23,7 @@ shoot: {
 	source: {
     type: ShootSpread
     firstShotDelay: 45
-    shots: 6
+    shots: 4
     spread: 2.5
     }
 	dest: [
@@ -46,7 +46,7 @@ shoot: {
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
-            damage: 50
+            damage: 45
             speed: 3
             drag:0.003
             homingRange:20
@@ -95,7 +95,7 @@ shoot: {
             sprite: azimut-hitsliceb
             width:7.5
             lifetime: 115
-            damage: 15
+            damage: 25
             speed: 2.5
             drag:0.006
             homingRange:15
@@ -379,31 +379,6 @@ parts: [
           type: heat
         }
       }
-        {
-    type: FlarePart
-    sides: 2
-    color1: 00000000
-    radius: 5
-    radiusTo: 0
-    stroke: 23.4
-    y: 17
-    progress: heat
-    layer: 102
-    weaponIndex: 0
-  }
-  {
-    type: FlarePart
-    sides: 2
-    color1: bf92f9
-    radius: 30
-    radiusTo: 0
-    stroke: 6.4
-    innerRadScl: 0.70
-    y: 17
-    progress: heat
-    layer: 102
-    weaponIndex: 0
-  }
     ]
     }
     {
