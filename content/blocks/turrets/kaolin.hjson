@@ -16,13 +16,13 @@ rotateSpeed: 1
 shootSound: none
 ammoPerShot: 2
 heatRequirement: 48
-shootY: 8
+shootY: 10
 shoot: {
   type: ShootSpread
   firstShotDelay: 15
-  shotDelay: 6
-  shots: 20
-  spread: 12
+  shotDelay: 1.5
+  shots: 30
+  spread: 4
 }
   ammoTypes: {
     zinc: {
@@ -36,18 +36,15 @@ shoot: {
             pierceArmor:true
             width:9
             trailWidth:1.7
-            trailLength:5
+            trailLength:6
             trailColor:bf92f9
-            lifetime: 32
-            damage: 15
+            lifetime: 75
+            damage: 40
             speed: 4
             drag:0.02
-            healAmount:26
-            lifesteal:0.25
             homingRange:50
             homingPower:0.1
             homingDelay:4
-            collidesTeam:true
                         parts: [
       {
         type: FlarePart
@@ -230,7 +227,7 @@ parts: [
       progress: heat
 	  x: 0
 	  y: 0
-	  moveY: -3.5
+	  moveY: -1.5
     }
     {
       type: RegionPart
