@@ -51,7 +51,7 @@ shoot: {
             speed: 3
             drag:0.003
             homingRange:20
-            homingPower:0.006
+            homingPower:0.01
             homingDelay:16
             trailWidth:3
             trailLength:12
@@ -94,7 +94,7 @@ shoot: {
             speed: 4.5
             drag:0.008
             homingRange:15
-            homingPower:0.005
+            homingPower:0.009
             homingDelay:10
             armorMultiplier: 2.5
             trailWidth:1.2
@@ -177,7 +177,7 @@ shoot: {
             speed: 2.5
             drag:0.006
             homingRange:15
-            homingPower:0.003
+            homingPower:0.006
             homingDelay:10
             trailWidth:1.2
             trailLength:8
