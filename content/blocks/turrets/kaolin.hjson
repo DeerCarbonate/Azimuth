@@ -434,7 +434,6 @@ parts: [
       mirror: false
       progress: heat
       heatColor: bf92f9
-      heatProgress: reload
 	  x: 0
 	  y: 0
 	  moveY: -1.5
@@ -553,7 +552,6 @@ parts: [
       mirror: true
       progress: recoil
       heatColor: bf92f9
-      heatProgress: reload
 	  x: 0
 	  y: 0
 	  moveY: -0.5
@@ -566,6 +564,7 @@ parts: [
       under: false
       mirror: true
       progress: recoil
+      heatColor: bf92f9
 	  x: 0
 	  y: 0
 	  moveY: -0.5
@@ -579,7 +578,6 @@ parts: [
       mirror: true
       progress: recoil
       heatColor: bf92f9
-      heatProgress: reload
 	  x: 0
 	  y: 0
 	  moveY: -0.3
