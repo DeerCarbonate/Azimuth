@@ -495,7 +495,7 @@ parts: [
     effectRot: 0
     debugDraw: true
     mirror: false
-    effectChance: 0.0002
+    effectChance: 0.003
     progress: {
       type: recoil
       ops: [
