@@ -542,6 +542,7 @@ parts: [
       under: false
       mirror: false
       progress: heat
+      layerOffset: 100
 	  x: 0
 	  y: 0
 	  moveY: -0.75
