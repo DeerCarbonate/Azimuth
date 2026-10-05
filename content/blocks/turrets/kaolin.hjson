@@ -45,9 +45,9 @@ shoot: {
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
-            damage: 340
-            splashDamage: 420
-            splashDamageRadius: 18
+            damage: 165
+            splashDamage: 240
+            splashDamageRadius: 12
             speed: 3
             drag:0.003
             homingRange:20
@@ -90,7 +90,7 @@ shoot: {
             sprite: azimut-hitsliceb
             width:7.5
             lifetime: 115
-            damage: 85
+            damage: 115
             speed: 4.5
             drag:0.008
             homingRange:15
@@ -173,7 +173,7 @@ shoot: {
             width:7.5
             armorMultiplier: 1.5
             lifetime: 115
-            damage: 120
+            damage: 135
             speed: 2.5
             drag:0.006
             homingRange:15
@@ -495,7 +495,7 @@ parts: [
     effectRot: 0
     debugDraw: true
     mirror: false
-    effectChance: 0.004
+    effectChance: 0.0002
     progress: {
       type: recoil
       ops: [
@@ -508,12 +508,12 @@ parts: [
     effect: [
       {
         type: ParticleEffect
-        lifetime: 145
+        lifetime: 175
         baseLength: 0
         particles: 1
         sizeFrom: 0
         sizeTo: 9
-        colorFrom: "7e749980"
+        colorFrom: "7e749990"
         colorTo: b0b0b000
         interp: pow5Out
         sizeInterp: pow2Out
@@ -521,12 +521,12 @@ parts: [
       }
       {
         type: ParticleEffect
-        lifetime: 135
+        lifetime: 165
         baseLength: 0
         particles: 1
         sizeFrom: 0
         sizeTo: 7
-        colorFrom: "7e749970"
+        colorFrom: "7e749980"
         colorTo: b0b0b000
         interp: pow5Out
         sizeInterp: pow2Out
@@ -544,7 +544,7 @@ parts: [
       progress: heat
 	  x: 0
 	  y: 0
-	  moveY: -1.5
+	  moveY: -0.75
     }
     {
       type: RegionPart
