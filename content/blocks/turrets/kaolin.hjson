@@ -7,8 +7,8 @@ health: 5500
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
-reload: 850
-range: 300
+reload: 675
+range: 325
 targetAir: true
 moveWhileCharging: true
 targetGround: true
@@ -495,7 +495,7 @@ parts: [
     effectRot: 0
     debugDraw: true
     mirror: false
-    effectChance: 0.003
+    effectChance: 0.008
     progress: {
       type: recoil
       ops: [
