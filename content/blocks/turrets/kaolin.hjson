@@ -433,7 +433,7 @@ parts: [
       under: false
       mirror: false
       progress: heat
-      heatColor: bf92f9
+      heatColor: bf92f900
 	  x: 0
 	  y: 0
 	  moveY: -1.5
@@ -488,6 +488,25 @@ parts: [
           type: heat
         }
       }
+              {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: 90a2fc
+          progress: {
+            type: warmup
+            op: slope
+          }
+        }
+        {
+          suffix: -heat
+          blending: additive
+          outline: false
+          color: 000000
+          colorTo: bf92f9
+          progress: warmup
+        }
         {
     type: EffectSpawnerPart
     y: 15.5
@@ -541,6 +560,7 @@ parts: [
       under: false
       mirror: false
       progress: heat
+      heatColor: bf92f9
 	  x: 0
 	  y: 0
 	  moveY: -0.75
