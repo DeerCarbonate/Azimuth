@@ -495,7 +495,7 @@ parts: [
     effectRot: 0
     debugDraw: true
     mirror: false
-    effectChance: 0.008
+    effectChance: 0.011
     progress: {
       type: recoil
       ops: [
@@ -552,6 +552,8 @@ parts: [
       under: false
       mirror: true
       progress: recoil
+      heatColor: bf92f9
+      heatProgress: reload
 	  x: 0
 	  y: 0
 	  moveY: -0.5
@@ -576,6 +578,8 @@ parts: [
       under: false
       mirror: true
       progress: recoil
+      heatColor: bf92f9
+      heatProgress: reload
 	  x: 0
 	  y: 0
 	  moveY: -0.3
