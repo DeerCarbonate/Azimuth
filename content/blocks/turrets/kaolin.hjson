@@ -3,12 +3,12 @@ size: 4
 outlineColor: 0c0c12
 squareSprite: false
 outlineColor: 0c0c12
-health: 5500
+health: 5350
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
-reload: 675
-range: 325
+reload: 650
+range: 315
 targetAir: true
 moveWhileCharging: true
 targetGround: true
