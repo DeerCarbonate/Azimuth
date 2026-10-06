@@ -309,7 +309,7 @@ compound: {
 }
 titanite: {
   shootPattern: {
-    type: ShootMulti
+    type: ShootSpread
     firstShotDelay: 15
     shotDelay: 3
     shots: 6
