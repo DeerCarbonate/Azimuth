@@ -7,8 +7,8 @@ ammoPerShot: 4
 alwaysUnlocked: false
 squareSprite: false
   shoot: {
-    firstShotDelay: 15
-    shotDelay: 5
+    firstShotDelay: 25
+    shotDelay: 6
     shots: 3
   }
 coolant: {
@@ -322,7 +322,7 @@ titanite: {
   type: RailBulletType
 
   length: 300
-  damage: 75
+  damage: 95
   lifetime: 1
   reloadMultiplier: 1.15
 
@@ -369,61 +369,6 @@ titanite: {
       }
     ]
   }
-
-  fragBullets: 2
-  fragRandomSpread: 65
-  fragBullet: {
-  type: RailBulletType
-
-  length: 80
-  damage: 35
-  lifetime: 1
-
-  hitColor: 74a481
-  buildingDamageMultiplier: 0.1
-  pointEffectSpace: 16
-
-  collidesGround: true
-  collidesAir: true
-  pierceBuilding: false
-  pierce: true
-  pierceCap: 4
-
-  despawnEffect: none
-  smokeEffect: none
-  hitEffect: none
-  armorMultiplier: 1.8
-  status: pierced
-  statusDuration: 90
-
-  pointEffect: {
-    type: MultiEffect
-    effects: [
-      {
-        particles: 1
-        length: 0
-        lifetime: 30
-        region: azimut-hitscan
-        sizeFrom: 16
-        sizeTo: 0
-        colorFrom: 74a48170
-        colorTo: 74a48140
-      }
-      {
-        particles: 1
-        length: 0
-        lifetime: 30
-        region: azimut-hitscan
-        sizeFrom: 10
-        sizeTo: 0
-        colorFrom: ffffff
-        colorTo: 74a481
-      }
-    ]
-  }
-
-  }
-
   shootEffect: [
     {
       followParent: false
