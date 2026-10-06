@@ -3,7 +3,7 @@ size: 4
 outlineColor: 0c0c12
 squareSprite: false
 outlineColor: 0c0c12
-health: 5350
+health: 5100
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
@@ -14,7 +14,7 @@ moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1
 shootSound: none
-ammoPerShot: 8
+ammoPerShot: 5
 heatRequirement: 48
 shootY: 14
 inaccuracy: 45
