@@ -30,7 +30,7 @@ preset: first
 shootCone: 9
 recoil: 2
 shootY: 4.6
-reload: 140
+reload: 155
 range: 300
 targetAir: true
 targetGround: true
@@ -309,9 +309,10 @@ compound: {
 }
 titanite: {
   shootPattern: {
-      firstShotDelay: 15
-      shotDelay: 3
-      shots: 6
+    type: ShootMulti
+    firstShotDelay: 15
+    shotDelay: 3
+    shots: 6
   }
   type: RailBulletType
 
