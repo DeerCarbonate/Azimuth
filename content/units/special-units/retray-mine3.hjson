@@ -14,6 +14,7 @@ hitSize: 12
 flying: true
 createScorch: true
 hidden: true
+targetAir: false
 
 envDisabled: 0
 envEnabled: -1

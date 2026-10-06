@@ -35,7 +35,7 @@ recoil: 2.45
 shootY: 1.4
 reload: 750
 range: 550
-targetAir: true
+targetAir: false
 moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1

@@ -269,7 +269,7 @@ trailWidth: 1.4
  trailRotation:true
        collidesTiles: true
       keepVelocity: false
-      collidesAir: false
+      collidesAir: true
        hitEffect: {
         type: ExplosionEffect
         lifetime: 16
@@ -350,7 +350,7 @@ trailWidth: 1.4
      armorMultiplier: 1.2
        collidesTiles: true
       keepVelocity: false
-      collidesAir: false
+      collidesAir: true
       hitEffect: {
         type: ExplosionEffect
         lifetime: 83
@@ -457,7 +457,7 @@ baseRotation: 0
     homingPower: 0.1
     	collidesTiles: true
     keepVelocity: false
-    collidesAir: false
+    collidesAir: true
     	weaveMag: 1
     weaveScale: 1
     armorMultiplier: 2
