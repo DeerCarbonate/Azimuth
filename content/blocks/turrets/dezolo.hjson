@@ -11,9 +11,6 @@ coolant: {
   liquid: power
   amount: 0.0500
 }
-shoot: {
-  firstShotDelay: 15
-}
 research: {
   parent: "priority"
   planet: "gelion"
@@ -311,12 +308,17 @@ compound: {
   ]
 }
 titanite: {
+  shootPattern: {
+      firstShotDelay: 15
+      shotDelay: 3
+      shots: 6
+  }
   type: RailBulletType
 
   length: 300
-  damage: 115
+  damage: 75
   lifetime: 1
-  reloadMultiplier: 1.85
+  reloadMultiplier: 1.15
 
   hitColor: 74a481
   buildingDamageMultiplier: 0.1
@@ -490,6 +492,21 @@ drawer: {
     -icon
   ]
   parts: [
+          {
+        type: FlarePart
+        radius: 0
+        radiusTo: 5
+        stroke: 2.8
+        y: 4.6
+        color1: 74a481
+        color2: ffffff
+        rotation: 45
+        rotMove: 370
+        followRotation: false
+        progress: {
+          type: charge
+        }
+      }
 	{
       type: RegionPart,
       suffix: -lade,

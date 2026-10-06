@@ -133,7 +133,7 @@ colorFrom: bf92f9
 cone: 15
         }
 		type: BasicBulletType
-		damage: 18
+		damage: 42
 		sprite: azimut-slicer
 		lifetime: 90
 		width: 6
@@ -145,7 +145,6 @@ cone: 15
 		healColor: bf92f980
 		trailWidth: 1.7
 		trailLength: 8
-		damage: 14
 		lifetime: 28
 		despawnEffect: none
 		collidesTiles: true
@@ -153,7 +152,7 @@ cone: 15
 		collidesAir: true
 		buildingDamageMultiplier: 0.01
 		pierceArmor:true
-		healAmount:36
+		healAmount:38
 		collidesTeam:true
 	hitEffect: {
     type: ExplosionEffect
