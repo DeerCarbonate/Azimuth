@@ -35,7 +35,7 @@ preset: first
 shootCone: 9
 recoil: 2
 shootY: 4.6
-reload: 140
+reload: 155
 range: 300
 targetAir: true
 targetGround: true
@@ -45,7 +45,6 @@ shootSound: none
 ammoTypes: {
 venerium: {
     shootPattern: {
-    firstShotDelay: 15
     shots: 1
   }
   type: RailBulletType
@@ -176,7 +175,6 @@ venerium: {
 }
 compound: {
     shootPattern: {
-    firstShotDelay: 15
     shots: 1
   }
   type: RailBulletType
@@ -505,7 +503,7 @@ drawer: {
         radius: 0
         radiusTo: 5
         stroke: 2.8
-        y: 4.6
+        y: 3.3
         color1: 74a481
         color2: ffffff
         rotation: 45
