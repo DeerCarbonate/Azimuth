@@ -17,7 +17,7 @@ shootSound: none
 ammoPerShot: 5
 heatRequirement: 48
 shootY: 14
-inaccuracy: 45
+inaccuracy: 40
 shoot: {
 	type: ShootMulti
 	source: {
@@ -51,7 +51,7 @@ shoot: {
             speed: 3
             drag:0.003
             homingRange:20
-            homingPower:0.014
+            homingPower:0.015
             homingDelay:16
             trailWidth:3
             trailLength:12
