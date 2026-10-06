@@ -591,9 +591,10 @@ research: {
   parent: "retray"
   planet: "gelion"
     "requirements": [
-	  "compound/300"
-	  "zinc/600"
-	  "titanite/300"
+	  "compound/170"
+	  "zinc/435"
+	  "titanite/225"
+    "caterium/50"
 ]
 objectives: [
     {

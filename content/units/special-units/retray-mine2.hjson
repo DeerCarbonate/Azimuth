@@ -127,7 +127,7 @@ shoot: {
     bullet: {
     type: RailBulletType
     length: 125
-    damage: 32
+    damage: 36
     buildingDamageMultiplier: 0.1
 	lifetime: 1
 	hitColor: bff6b1
@@ -213,7 +213,7 @@ shoot: {
       collidesGround: true
 
       splashDamageRadius: 30
-      splashDamage: 300
+      splashDamage: 320
       buildingDamageMultiplier: 0.15
 
       hitSound: explosion
