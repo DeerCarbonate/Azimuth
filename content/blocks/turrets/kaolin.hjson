@@ -23,7 +23,7 @@ shoot: {
 	source: {
     type: ShootSpread
     shots: 4
-    spread: 2.5
+    spread: 1.5
     }
 	dest: [
 	{
