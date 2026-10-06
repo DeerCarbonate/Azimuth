@@ -415,9 +415,10 @@ interp: pow3Out
             }
     }
 requirements: [
-  compound/95
-  zinc/300
-  titanite/150
+  compound/85
+  zinc/275
+  titanite/125
+  caterium/45
 ]
 category: turret
 drawer: {
