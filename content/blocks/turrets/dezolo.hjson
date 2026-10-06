@@ -332,7 +332,7 @@ titanite: {
 
   collidesGround: true
   collidesAir: true
-  ammoMultiplier: 4
+  ammoMultiplier: 8
   pierceBuilding: false
   pierce: true
   pierceCap: 2
