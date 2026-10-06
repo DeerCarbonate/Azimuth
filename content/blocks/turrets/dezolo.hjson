@@ -335,7 +335,7 @@ titanite: {
   ammoMultiplier: 4
   pierceBuilding: false
   pierce: true
-  pierceCap: 3
+  pierceCap: 2
   status: pierced
   statusDuration: 300
 
