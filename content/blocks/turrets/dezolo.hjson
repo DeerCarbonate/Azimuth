@@ -322,7 +322,7 @@ titanite: {
   type: RailBulletType
 
   length: 300
-  damage: 85
+  damage: 90
   lifetime: 1
   reloadMultiplier: 1.15
 
@@ -342,7 +342,7 @@ titanite: {
   despawnEffect: none
   smokeEffect: none
   hitEffect: none
-  armorMultiplier: 0.7
+  armorMultiplier: 1.25
 
   pointEffect: {
     type: MultiEffect
