@@ -37,3 +37,4 @@ tidalLock: true
 orbitSpacing: 23
 solarSystem: alveon
 icon: commandRally
+maxZoom: 10
