@@ -11,13 +11,13 @@ solarSystem: alveon
 orbitRadius: 60
 orbitTime: 6000
 alwaysUnlocked: false
-accessible: false 
+accessible: false
 visible: true
 radius: 0.9
 minZoom: 0.40
 sectorSize: 0
 atmosphereRadIn: 0
-atmosphereRadOut: 0
+atmosphereRadOut: 0.08
 atmosphereColor: 7e7e8630
 iconColor: b1a741       
 landCloudColor: ed6542
