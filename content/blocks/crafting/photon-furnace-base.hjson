@@ -27,7 +27,7 @@ requirements: [
 ]
 consumes: {
   liquids: [
-   gas-iterin/0.06677777777777777777777777777777777777777
+   gas-iterin/0.066666666666666666666666666666666666666
 	]
 }
 hasLiquids: true
@@ -58,14 +58,14 @@ drawer: {
       type: DrawRegion
       suffix: -fan
       rotateSpeed: 8
-      rotation: 65
+      rotation: 70
       spinSprite: true
     }
     {
       type: DrawRegion
       suffix: -fan
       rotateSpeed: 8
-      rotation: 25
+      rotation: 20
       spinSprite: true
     }
   ]

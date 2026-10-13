@@ -5,6 +5,7 @@ category: crafting
 rotate: true
 squareSprite: false
 liquidCapacity: 10
+liquidOutputDirections: [0, 2]
 requirements: [
   titanite/12
   octine/10
