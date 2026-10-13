@@ -31,7 +31,7 @@ consumes: {
 	]
 }
 hasLiquids: true
-craftTime: 60
+craftTime: 20
 craftEffect: none
 outputItem: geliarin/1
 drawer: {
