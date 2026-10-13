@@ -31,7 +31,7 @@ consumes: {
 	]
 }
 hasLiquids: true
-craftTime: 20
+craftTime: 10
 craftEffect: none
 outputItem: geliarin/1
 drawer: {
@@ -44,14 +44,28 @@ drawer: {
     {
       type: DrawRegion
       suffix: -fan
-      rotateSpeed: -8
+      rotateSpeed: 8
       spinSprite: true
     }
     {
       type: DrawRegion
       suffix: -fan
-      rotateSpeed: -8
+      rotateSpeed: 8
       rotation: 45
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: 8
+      rotation: 60
+      spinSprite: true
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: 8
+      rotation: 30
       spinSprite: true
     }
   ]
