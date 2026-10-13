@@ -52,28 +52,35 @@ drawer: {
   type: DrawRegion
   suffix: -fan
   rotateSpeed: 8
-  rotation: -27
+  rotation: -30
   spinSprite: true
 }
 {
   type: DrawRegion
   suffix: -fan
   rotateSpeed: 8
-  rotation: -9
+  rotation: -15
   spinSprite: true
 }
 {
   type: DrawRegion
   suffix: -fan
   rotateSpeed: 8
-  rotation: 9
+  rotation: 0
   spinSprite: true
 }
 {
   type: DrawRegion
   suffix: -fan
   rotateSpeed: 8
-  rotation: 27
+  rotation: 15
+  spinSprite: true
+}
+{
+  type: DrawRegion
+  suffix: -fan
+  rotateSpeed: 8
+  rotation: 30
   spinSprite: true
 }
 {
