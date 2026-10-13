@@ -27,7 +27,7 @@ requirements: [
 ]
 consumes: {
   liquids: [
-   gas-iterin/0.06
+   gas-iterin/0.06677777777777777777777777777777777777777
 	]
 }
 hasLiquids: true
