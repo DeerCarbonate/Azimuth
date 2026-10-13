@@ -1,0 +1,30 @@
+type: GenericCrafter
+health: 120
+size: 1
+category: crafting
+rotate: true
+squareSprite: false
+liquidCapacity: 10
+liquidOutputDirections: [1]
+requirements: [
+  titanite/12
+  octine/10
+]
+research: {
+  parent: "photon-furnace-base"
+  planet: gelion
+    "requirements": [
+    titanite/50
+    octine/5
+]
+}
+consumes: {
+  liquids: [
+  ammonia/0.033333333333333333333333333
+	]
+}
+hasLiquids: true
+outputLiquid: gas-geliarin/1
+drawer: {
+  type: DrawBlock
+}

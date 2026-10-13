@@ -230,6 +230,10 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     static-refiner
     platinum-forge
     octine-arc-foundry
+    photon-furnace
+    conversion-tube0
+    conversion-tube1
+    conversion-tube2
     decoder
     mechanical-quarry
     cold-conversion-solar-panel

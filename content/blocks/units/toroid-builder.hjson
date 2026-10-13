@@ -19,7 +19,13 @@ targetAir: false
 shootY: 0
 outlineIcon: false
 fullOverride: azimut-toroid-full
-drawer: [{
+drawer: [
+    {
+    type: DrawRegion
+    suffix: -construct
+    buildingRotate: true
+  }
+  {
     type: DrawTurret
     basePrefix: toro-
 	  iconOverride: [

@@ -1,0 +1,51 @@
+type: GenericCrafter
+health: 1200
+size: 4
+category: crafting
+rotate: true
+squareSprite: false
+liquidCapacity: 150
+research: {
+  parent: "mixing-chamber-part"
+  planet: gelion
+    "requirements": [
+  venerium/20000
+  caterium/500
+  octine/10
+]
+objectives: [
+    {
+      type: OnSector
+      preset: "thirteen"
+    }
+ ]
+}
+requirements: [
+  venerium/180
+  caterium/70
+  octine/65
+]
+consumes: {
+  liquids: [
+   gas-geliarin/0.955
+	]
+}
+hasLiquids: true
+craftTime: 60
+craftEffect: none
+outputItem: geliarin/1
+drawer: {
+  type: DrawMulti
+  drawers: [
+  	{
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawRegion
+      suffix: -fan
+      rotateSpeed: -2.5
+      spinSprite: true
+    }
+  ]
+}
