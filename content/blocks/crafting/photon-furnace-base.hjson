@@ -27,11 +27,11 @@ requirements: [
 ]
 consumes: {
   liquids: [
-   gas-geliarin/0.955
+   gas-iterin/0.6
 	]
 }
 hasLiquids: true
-craftTime: 10
+craftTime: 20
 craftEffect: none
 outputItem: geliarin/1
 drawer: {
@@ -58,14 +58,14 @@ drawer: {
       type: DrawRegion
       suffix: -fan
       rotateSpeed: 8
-      rotation: 60
+      rotation: 70
       spinSprite: true
     }
     {
       type: DrawRegion
       suffix: -fan
       rotateSpeed: 8
-      rotation: 30
+      rotation: 20
       spinSprite: true
     }
   ]

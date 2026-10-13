@@ -5,7 +5,7 @@ category: crafting
 rotate: true
 squareSprite: false
 liquidCapacity: 10
-liquidOutputDirections: [1]
+liquidOutputDirections: [3]
 requirements: [
   titanite/12
   octine/10
@@ -20,11 +20,11 @@ research: {
 }
 consumes: {
   liquids: [
-  ammonia/0.033333333333333333333333333
+  gas-cesium/0.033333333333333333333333333
 	]
 }
 hasLiquids: true
-outputLiquid: gas-geliarin/1
+outputLiquid: gas-iterin/0.033333333333333333333333333
 drawer: {
   type: DrawBlock
 }
