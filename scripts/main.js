@@ -17,6 +17,10 @@ require("multiblock7");
 require("multiblock8");
 require("multiblock9");
 require("multiblock10");
+require("multiblock11");
+require("multiblock12");
+require("multiblock13");
+require("multiblock14");
 require("construct");
 
 const FollowAllyAI = require("followai");

@@ -1,9 +1,9 @@
 Events.on(ClientLoadEvent, () => {
-    const block = Vars.content.block("azimut-photon-furnace");
+    const block = Vars.content.block("azimut-photon-furnace-base");
     const Layer = Packages.mindustry.graphics.Layer;
 
-    block.uiIcon  = Core.atlas.find("azimut-photon-furnace-full");
-    block.fullIcon = Core.atlas.find("azimut-photon-furnace-full");
+    block.uiIcon  = Core.atlas.find("azimut-photon-furnace-base-full");
+    block.fullIcon = Core.atlas.find("azimut-photon-furnace-base-full");
 
     const baseRegions = [
         Core.atlas.find("azimut-photon-furnace-base-0"),
