@@ -18,6 +18,7 @@ ammoPerShot: 5
 heatRequirement: 48
 shootY: 14
 inaccuracy: 40
+maxHeatEfficiency: 2
 shoot: {
 	type: ShootMulti
 	source: {
@@ -45,9 +46,11 @@ shoot: {
             sprite: azimut-hitsliceb
             width:18
             lifetime: 140
-            damage: 165
+            damage: 180
             splashDamage: 175
             splashDamageRadius: 12
+            pierce: true
+            pierceCap: 2
             speed: 3
             drag:0.003
             homingRange:20
