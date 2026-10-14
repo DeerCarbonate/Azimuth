@@ -7,20 +7,21 @@ health: 5100
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
-reload: 635
-range: 315
+reload: 600
+range: 385
 targetAir: true
 moveWhileCharging: true
 targetGround: true
-rotateSpeed: 0.85
+rotateSpeed: 0.8
 shootSound: none
 ammoPerShot: 5
 heatRequirement: 48
-shootY: 14
+shootY: 6
 inaccuracy: 40
 maxHeatEfficiency: 2
 shoot: {
 	type: ShootMulti
+  firstShotDelay: 75
 	source: {
     type: ShootSpread
     shots: 4
@@ -436,7 +437,36 @@ parts: [
       suffix: -barrel
       under: false
       mirror: false
-      progress: heat
+      growY: -0.95
+      progress: {
+  type: charge
+  ops: [
+    {
+      op: curve
+      interp: pow4In
+    }
+              {
+            op: add
+            other: {
+              type: heat
+            }
+          }
+                    {
+            op: compress
+            start: 0
+            end: 0.2
+          }
+  ]
+}
+growProgress: {
+  type: recoil
+  ops: [
+    {
+      op: curve
+      interp: pow5In
+    }
+  ]
+}
       heatColor: bf92f9
 	  x: 0
 	  y: 0
