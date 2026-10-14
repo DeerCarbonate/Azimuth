@@ -21,7 +21,6 @@ inaccuracy: 40
 maxHeatEfficiency: 2
 shoot: {
 	type: ShootMulti
-  firstShotDelay: 75
 	source: {
     type: ShootSpread
     shots: 4
@@ -30,6 +29,7 @@ shoot: {
 	dest: [
 	{
 	type: ShootPattern
+  firstShotDelay: 75
 		shots: 5
 		shotDelay: 35
 	}
@@ -437,7 +437,7 @@ parts: [
       suffix: -barrel
       under: false
       mirror: false
-      growY: -0.95
+      growY: -0.75
       progress: {
   type: charge
   ops: [
@@ -453,8 +453,8 @@ parts: [
           }
                     {
             op: compress
-            start: 0
-            end: 0.2
+            start: 0.2
+            end: 0
           }
   ]
 }
