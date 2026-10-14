@@ -443,7 +443,7 @@ parts: [
   ops: [
     {
       op: curve
-      interp: pow4In
+      interp: pow2In
     }
               {
             op: add
