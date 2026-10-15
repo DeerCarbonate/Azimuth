@@ -438,26 +438,33 @@ parts: [
       under: false
       mirror: false
       growY: -0.75
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0.95
+        end: 0.97
+      }
       progress: {
-  type: charge
-  ops: [
-    {
-      op: curve
-      interp: pow2In
-    }
-              {
-            op: add
-            other: {
-              type: heat
-            }
-          }
-                    {
+        type: reload
+        op: compress
+        start: 0.95
+        end: 0.96
+      }
+      moves: [
+        {
+          y: -9
+          progress: recoil
+        }
+        {
+          y: -5
+          progress: {
+            type: reload
             op: compress
-            start: 0.2
-            end: 0
+            start: 0.95
+            end: 0.97
           }
-  ]
-}
+        }
+      ]
 growProgress: {
   type: recoil
   ops: [
