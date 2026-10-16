@@ -435,44 +435,9 @@ parts: [
       suffix: -barrel
       under: false
       mirror: false
-      growY: -0.75
-      growProgress: {
-        type: PartProgress
-        op: compress
-      }
-      progress: {
-        ops: [
-        type: reload
-        op: compress
-        ]
-      }
-      moves: [
-        {
-          y: -4
-          progress: recoil
-        }
-        {
-          y: -2
-          progress: {
-            ops: [
-            type: reload
-            op: compress
-            ]
-          }
-        }
-      ]
-growProgress: {
-  ops: [
-    {
-      op: curve
-      interp: pow5In
-    }
-  ]
-}
       heatColor: bf92f9
-	  x: 0
-	  y: 0
-	  moveY: -1.5
+	    x: 0
+	    y: 0
       children: [{
         type: FlarePart
         radius: 0
@@ -616,6 +581,122 @@ growProgress: {
 	  moveY: -0.3
       moveX: 0.3
       moveRot: -5
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-switch
+      outline: false
+      y: 11
+      yScl: 0
+      growY: 1
+      color: ffffff00
+      colorTo: ffffff
+      growProgress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.95
+          end: 0.97
+        }]
+      }
+      progress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.95
+          end: 0.96
+        }]
+      }
+      moves: [
+        {
+          y: -9
+          progress: recoil
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -hole
+      outline: false
+      y: 11
+      yScl: 0
+      growY: 1
+      color: ffffff00
+      colorTo: ffffff
+      growProgress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.95
+          end: 0.97
+        }]
+      }
+      progress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.95
+          end: 0.96
+        }]
+      }
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-switch
+      outline: false
+      y: 11
+      yScl: 1
+      growY: -1
+      color: ffffff
+      colorTo: ffffff00
+      growProgress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.1
+          end: 0.15
+        }]
+      }
+      progress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.1
+          end: 0.15
+        }]
+      }
+      moves: [
+        {
+          y: -9
+          progress: recoil
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -hole
+      outline: false
+      y: 11
+      yScl: 1
+      growY: -1
+      color: ffffff
+      colorTo: ffffff00
+      growProgress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.1
+          end: 0.15
+        }]
+      }
+      progress: {
+        type: reload
+        ops: [{
+          op: compress
+          start: 0.1
+          end: 0.15
+        }]
+      }
     }
 ]
 }
