@@ -7,16 +7,16 @@ health: 5100
 alwaysUnlocked: false
 shootCone: 9
 recoil: 2
-reload: 600
-range: 385
+reload: 635
+range: 315
 targetAir: true
 moveWhileCharging: true
 targetGround: true
-rotateSpeed: 0.8
+rotateSpeed: 0.85
 shootSound: none
 ammoPerShot: 5
 heatRequirement: 48
-shootY: 6
+shootY: 14
 inaccuracy: 40
 maxHeatEfficiency: 2
 shoot: {
@@ -29,7 +29,6 @@ shoot: {
 	dest: [
 	{
 	type: ShootPattern
-  firstShotDelay: 75
 		shots: 5
 		shotDelay: 35
 	}
@@ -245,7 +244,9 @@ shoot: {
         under: true
         sides: 5
         innerRadScl: 0.7
-        progress: life
+        progress: {
+          type: life
+        }
       }
     ]
             shootEffect: [
@@ -435,9 +436,11 @@ parts: [
       suffix: -barrel
       under: false
       mirror: false
+      progress: heat
       heatColor: bf92f9
-	    x: 0
-	    y: 0
+	  x: 0
+	  y: 0
+	  moveY: -1.5
       children: [{
         type: FlarePart
         radius: 0
@@ -451,7 +454,9 @@ parts: [
         rotMove: 345
         layer: 101
         followRotation: false
-        progress: heat
+        progress: {
+          type: heat
+        }
       }
             {
         type: FlarePart
@@ -466,7 +471,9 @@ parts: [
         rotMove: 315
         layer: 101
         followRotation: false
-        progress: heat
+        progress: {
+          type: heat
+        }
       }
                   {
         type: FlarePart
@@ -481,7 +488,9 @@ parts: [
         rotMove: 285
         layer: 101
         followRotation: false
-        progress: heat
+        progress: {
+          type: heat
+        }
       }
         {
     type: EffectSpawnerPart
@@ -579,122 +588,6 @@ parts: [
 	  moveY: -0.3
       moveX: 0.3
       moveRot: -5
-    }
-    {
-      type: RegionPart
-      suffix: -barrel-switch
-      outline: false
-      y: 11
-      yScl: 0
-      growY: 1
-      color: ffffff00
-      colorTo: ffffff
-      growProgress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.95
-          end: 0.97
-        }]
-      }
-      progress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.95
-          end: 0.96
-        }]
-      }
-      moves: [
-        {
-          y: -9
-          progress: recoil
-        }
-      ]
-    }
-    {
-      type: RegionPart
-      suffix: -hole
-      outline: false
-      y: 11
-      yScl: 0
-      growY: 1
-      color: ffffff00
-      colorTo: ffffff
-      growProgress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.95
-          end: 0.97
-        }]
-      }
-      progress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.95
-          end: 0.96
-        }]
-      }
-    }
-    {
-      type: RegionPart
-      suffix: -barrel-switch
-      outline: false
-      y: 11
-      yScl: 1
-      growY: -1
-      color: ffffff
-      colorTo: ffffff00
-      growProgress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.1
-          end: 0.15
-        }]
-      }
-      progress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.1
-          end: 0.15
-        }]
-      }
-      moves: [
-        {
-          y: -9
-          progress: recoil
-        }
-      ]
-    }
-    {
-      type: RegionPart
-      suffix: -hole
-      outline: false
-      y: 11
-      yScl: 1
-      growY: -1
-      color: ffffff
-      colorTo: ffffff00
-      growProgress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.1
-          end: 0.15
-        }]
-      }
-      progress: {
-        type: reload
-        ops: [{
-          op: compress
-          start: 0.1
-          end: 0.15
-        }]
-      }
     }
 ]
 }
