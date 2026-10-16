@@ -430,38 +430,143 @@ drawer: {
     -icon
   ]
 parts: [
+  {
+  type: RegionPart
+  suffix: -barrel-switch
+  under: false
+  mirror: false
+  color: ffffff00
+  colorTo: ffffff
+  progress: {
+    type: reload
+    ops: [
+      {
+        op: compress
+        start: 0.45
+        end: 0.55
+      }
+      {
+        op: inv
+      }
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.85
+              end: 1
+            }
+            {
+              op: mul
+              other: {
+                type: warmup
+              }
+            }
+          ]
+        }
+      }
+      {
+        op: compress
+        start: 0.3
+        end: 0.6
+      }
+    ]
+  }
+}
+{
+  type: RegionPart
+  suffix: -hole
+  outline: false
+  under: false
+  mirror: false
+  color: ffffff00
+  colorTo: ffffff
+  progress: {
+    type: reload
+    ops: [
+      {
+        op: compress
+        start: 0.45
+        end: 0.55
+      }
+      {
+        op: inv
+      }
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.85
+              end: 1
+            }
+            {
+              op: mul
+              other: {
+                type: warmup
+              }
+            }
+          ]
+        }
+      }
+      {
+        op: compress
+        start: 0
+        end: 0.3
+      }
+    ]
+  }
+}
     {
       type: RegionPart
       suffix: -barrel
       under: false
       mirror: false
       heatColor: bf92f9
-	    x: 0
-	    y: 0
-	    moveY: 3.5
-      y: -3.5
+      color: ffffff
+      colorTo: ffffff00
       moves: [{
-        progress: {
+ progress: {
+    type: reload
+    ops: [
+      {
+        op: compress
+        start: 0.45
+        end: 0.55
+      }
+      {
+        op: inv
+      }
+      {
+        op: add
+        other: {
           type: reload
           ops: [
             {
-              op: add
-              other: {
-                type: recoil
-              }
-            }
-            {
               op: compress
-              start: 0
-              end: 0.2
+              start: 0.85
+              end: 1
             }
             {
-              op: curve
-              interp: pow3Out
+              op: mul
+              other: {
+                type: warmup
+              }
             }
           ]
         }
-        y: 0.5
+      }
+      {
+        op: compress
+        start: 0.3
+        end: 0.6
+      }
+    ]
+  }
       }
       {
         progress: {
