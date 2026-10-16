@@ -464,8 +464,6 @@ parts: [
                         {
               op: compress
               type: reload
-              start: 0.5
-              end: 0.5
             }
             ]
           }
