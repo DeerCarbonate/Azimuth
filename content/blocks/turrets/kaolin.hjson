@@ -18,7 +18,7 @@ heatRequirement: 48
 shootY: 14
 inaccuracy: 40
 maxHeatEfficiency: 2
-recoil: 3
+recoil: 1.8
 recoilTime: 35
 shoot: {
 	type: ShootMulti
@@ -440,7 +440,47 @@ parts: [
 	    y: 0
 	    moveY: 3.5
       y: -3.5
-      progress: warmup
+          moves: [
+      {
+        progress: {
+          type: reload
+          ops: [
+            {
+              op: add
+              other: {
+                type: recoil
+              }
+            }
+            {
+              op: compress
+              start: 0
+              end: 0.2
+            }
+            {
+              op: curve
+              interp: pow3Out
+            }
+          ]
+        }
+        x: 0.5
+      }
+      {
+        progress: {
+          type: recoil
+          ops: [
+            {
+              op: curve
+              interp: pow3In
+            }
+            {
+              op: curve
+              interp: pow3Out
+            }
+          ]
+        }
+        y: -1.5
+      }
+    ]
       children: [{
         type: FlarePart
         radius: 0
