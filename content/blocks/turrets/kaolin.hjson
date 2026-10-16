@@ -437,19 +437,13 @@ parts: [
       mirror: false
       growY: -0.75
       growProgress: {
-        ops: [
-        type: reload
+        type: PartProgress
         op: compress
-        start: 0.95
-        end: 0.97
-        ]
       }
       progress: {
         ops: [
         type: reload
         op: compress
-        start: 0.95
-        end: 0.96
         ]
       }
       moves: [
