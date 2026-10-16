@@ -21,10 +21,12 @@ recoil: 1.8
 recoilTime: 35
 shoot: {
   type: ShootMulti
+  firstShotDelay: 40
   source: {
     type: ShootSpread
     shots: 4
     spread: 1.5
+    firstShotDelay: 40
   }
   dest: [
     {
@@ -414,58 +416,55 @@ drawer: {
     -icon
   ]
   parts: [
-    {
-      type: RegionPart
-      suffix: -hole
-      outline: false
-      under: false
-      mirror: false
-      color: ffffff00
-      colorTo: ffffff
-      progress: {
-        type: reload
-        ops: [
-          {
-            op: inv
-          }
-          {
-            op: compress
-            start: 0.45
-            end: 0.55
-          }
-          {
-            op: inv
-          }
-          {
-            op: add
-            other: {
-              type: reload
-              ops: [
-                {
-                  op: inv
-                }
-                {
-                  op: compress
-                  start: 0.85
-                  end: 1
-                }
-                {
-                  op: mul
-                  other: {
-                    type: warmup
-                  }
-                }
-              ]
+{
+  type: RegionPart
+  suffix: -hole
+  outline: false
+  under: false
+  mirror: false
+  color: ffffff00
+  colorTo: ffffff
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.45
+              end: 0.55
             }
-          }
-          {
-            op: compress
-            start: 0
-            end: 0.3
-          }
-        ]
+          ]
+        }
       }
-    }
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.88
+              end: 0.92
+            }
+            {
+              op: mul
+              amount: -1
+            }
+          ]
+        }
+      }
+      {
+        op: compress
+        start: 0
+        end: 0.3
+      }
+    ]
+  }
+}
     {
       type: RegionPart
       suffix: -barrel
@@ -474,49 +473,46 @@ drawer: {
       heatColor: bf92f9
       color: ffffff
       colorTo: ffffff00
-      progress: {
+progress: {
+  type: charge
+  ops: [
+    {
+      op: add
+      other: {
         type: reload
         ops: [
-          {
-            op: inv
-          }
           {
             op: compress
             start: 0.45
             end: 0.55
           }
-          {
-            op: inv
-          }
-          {
-            op: add
-            other: {
-              type: reload
-              ops: [
-                {
-                  op: inv
-                }
-                {
-                  op: compress
-                  start: 0.85
-                  end: 1
-                }
-                {
-                  op: mul
-                  other: {
-                    type: warmup
-                  }
-                }
-              ]
-            }
-          }
+        ]
+      }
+    }
+    {
+      op: add
+      other: {
+        type: reload
+        ops: [
           {
             op: compress
-            start: 0.3
-            end: 0.6
+            start: 0.88
+            end: 0.92
+          }
+          {
+            op: mul
+            amount: -1
           }
         ]
       }
+    }
+    {
+      op: compress
+      start: 0.3
+      end: 0.6
+    }
+  ]
+}
       moves: [
         {
           progress: {
@@ -651,57 +647,54 @@ drawer: {
         }
       ]
     }
-    {
-      type: RegionPart
-      suffix: -barrel-switch
-      under: false
-      mirror: false
-      color: ffffff00
-      colorTo: ffffff
-      progress: {
-        type: reload
-        ops: [
-          {
-            op: inv
-          }
-          {
-            op: compress
-            start: 0.45
-            end: 0.55
-          }
-          {
-            op: inv
-          }
-          {
-            op: add
-            other: {
-              type: reload
-              ops: [
-                {
-                  op: inv
-                }
-                {
-                  op: compress
-                  start: 0.85
-                  end: 1
-                }
-                {
-                  op: mul
-                  other: {
-                    type: warmup
-                  }
-                }
-              ]
+{
+  type: RegionPart
+  suffix: -barrel-switch
+  under: false
+  mirror: false
+  color: ffffff00
+  colorTo: ffffff
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.45
+              end: 0.55
             }
-          }
-          {
-            op: compress
-            start: 0.3
-            end: 0.6
-          }
-        ]
+          ]
+        }
       }
-    }
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.88
+              end: 0.92
+            }
+            {
+              op: mul
+              amount: -1
+            }
+          ]
+        }
+      }
+      {
+        op: compress
+        start: 0.3
+        end: 0.6
+      }
+    ]
+  }
+}
     {
       type: RegionPart
       suffix: -karo
