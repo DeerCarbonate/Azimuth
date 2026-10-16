@@ -6,7 +6,6 @@ outlineColor: 0c0c12
 health: 5100
 alwaysUnlocked: false
 shootCone: 9
-recoil: 2
 reload: 635
 range: 315
 targetAir: true
@@ -19,6 +18,8 @@ heatRequirement: 48
 shootY: 14
 inaccuracy: 40
 maxHeatEfficiency: 2
+recoil: 3
+recoilTime: 35
 shoot: {
 	type: ShootMulti
 	source: {
@@ -436,11 +437,45 @@ parts: [
       suffix: -barrel
       under: false
       mirror: false
-      progress: heat
+      progress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.02
+      }
+      growProgress: {
+        type: reload
+        op: compress
+        start: 0
+        end: 0.02
+      }
+      moves: [
+        {
+          gx: -1
+          gy: -1
+          progress: {
+            ops: [
+                          {
+              op: add
+              other: {
+                type: recoil
+              }
+            }
+                        {
+              op: compress
+              type: reload
+              start: 0.5
+              end: 0.5
+            }
+            ]
+          }
+        }
+      ]
       heatColor: bf92f9
-	  x: 0
-	  y: 0
-	  moveY: -1.5
+	    x: 0
+	    y: 0
+	    moveY: 3.5
+      y: -3.5
       children: [{
         type: FlarePart
         radius: 0
