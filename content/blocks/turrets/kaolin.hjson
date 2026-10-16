@@ -2,7 +2,6 @@ type: ItemTurret
 size: 4
 outlineColor: 0c0c12
 squareSprite: false
-outlineColor: 0c0c12
 health: 5100
 alwaysUnlocked: false
 shootCone: 9
@@ -21,99 +20,100 @@ maxHeatEfficiency: 2
 recoil: 1.8
 recoilTime: 35
 shoot: {
-	type: ShootMulti
-	source: {
+  type: ShootMulti
+  source: {
     type: ShootSpread
     shots: 4
     spread: 1.5
+  }
+  dest: [
+    {
+      type: ShootPattern
+      shots: 5
+      shotDelay: 35
     }
-	dest: [
-	{
-	type: ShootPattern
-		shots: 5
-		shotDelay: 35
-	}
-	]
-	}
-  ammoTypes: {
-    zinc: {
-            type: BasicBulletType
-            collidesAir: true
-            buildingDamageMultiplier: 0.01
-            backColor: bf92f9
-            smokeEffect: none
-            frontColor: ffffff
-            armorMultiplier: 0.7
-            sprite: azimut-hitsliceb
-            width:18
-            lifetime: 140
-            damage: 180
-            splashDamage: 175
-            splashDamageRadius: 12
-            pierce: true
-            pierceCap: 2
-            speed: 3
-            drag:0.003
-            homingRange:20
-            homingPower:0.015
-            homingDelay:16
-            trailWidth:3
-            trailLength:12
-            trailColor:bf92f990
-            trailRotation:true
-            trailChance: 0.08
-            trailInterval: 3.5
-            trailEffect:[
-            {
-		    type: ParticleEffect
-		    region: azimut-triangle
-		    particles: 1
-		    length: 32
-		    lifetime: 35
-		    interp: circleOut
-		    sizeInterp: pow5Out
-		    cone: 360
-		    colorFrom: bf92f9
-		    colorTo: bf92f980
-		    sizeFrom: 5.2
-		    sizeTo:0
-            }
-            ]
-            velocityScaleRandMax: 1
-            velocityScaleRandMin: 0.8
-            scaleLife: false
-            shrinkY: 0
-            shrinkX: 0
-            spawnBullets: [{
-            type: BasicBulletType
-            collidesAir: true
-            buildingDamageMultiplier: 0.01
-            backColor: 665c9f
-            smokeEffect: none
-            frontColor: bf92f9
-            sprite: azimut-hitsliceb
-            width:7.5
-            lifetime: 115
-            damage: 115
-            speed: 4.5
-            drag:0.008
-            homingRange:15
-            homingPower:0.012
-            homingDelay:10
-            armorMultiplier: 0.5
-            trailWidth:1.2
-            trailLength:8
-            trailColor:bf92f980
-            velocityScaleRandMax: 1
-            velocityScaleRandMin: 0.9
-            scaleLife: false
-            shrinkY: 0
-            shrinkX: 0
-            trailRotation:true
-            trailChance: 0.05
-            trailInterval: 1.9
-            trailEffect:[
-            {
+  ]
+}
+ammoTypes: {
+  zinc: {
+    type: BasicBulletType
+    collidesAir: true
+    buildingDamageMultiplier: 0.01
+    backColor: bf92f9
+    smokeEffect: none
+    frontColor: ffffff
+    armorMultiplier: 0.7
+    sprite: azimut-hitsliceb
+    width: 18
+    lifetime: 140
+    damage: 180
+    splashDamage: 175
+    splashDamageRadius: 12
+    pierce: true
+    pierceCap: 2
+    speed: 3
+    drag: 0.003
+    homingRange: 20
+    homingPower: 0.015
+    homingDelay: 16
+    trailWidth: 3
+    trailLength: 12
+    trailColor: bf92f990
+    trailRotation: true
+    trailChance: 0.08
+    trailInterval: 3.5
+    trailEffect: [
+      {
+        type: ParticleEffect
+        region: azimut-triangle
+        particles: 1
+        length: 32
+        lifetime: 35
+        interp: circleOut
+        sizeInterp: pow5Out
+        cone: 360
+        colorFrom: bf92f9
+        colorTo: bf92f980
+        sizeFrom: 5.2
+        sizeTo: 0
+      }
+    ]
+    velocityScaleRandMax: 1
+    velocityScaleRandMin: 0.8
+    scaleLife: false
+    shrinkY: 0
+    shrinkX: 0
+    spawnBullets: [
+      {
+        type: BasicBulletType
+        collidesAir: true
+        buildingDamageMultiplier: 0.01
+        backColor: 665c9f
+        smokeEffect: none
+        frontColor: bf92f9
+        sprite: azimut-hitsliceb
+        width: 7.5
+        lifetime: 115
+        damage: 115
+        speed: 4.5
+        drag: 0.008
+        homingRange: 15
+        homingPower: 0.012
+        homingDelay: 10
+        armorMultiplier: 0.5
+        trailWidth: 1.2
+        trailLength: 8
+        trailColor: bf92f980
+        velocityScaleRandMax: 1
+        velocityScaleRandMin: 0.9
+        scaleLife: false
+        shrinkY: 0
+        shrinkX: 0
+        trailRotation: true
+        trailChance: 0.05
+        trailInterval: 1.9
+        trailEffect: [
+          {
             type: ParticleEffect
             particles: 1
             length: 0
@@ -122,114 +122,102 @@ shoot: {
             sizeTo: 0
             colorFrom: bf92f9
             colorTo: bf92f9
-            layer:100.3
-            }
-            ]
-                hitEffect: {
-                type: ExplosionEffect
-                lifetime: 15
-
-                waveColor: bf92f9
-                waveStroke: 2
-                waveRad: 5
-
-                smokeColor: bf92f9
-                smokes: 0
-
-                sparkColor: bf92f9
-                sparkStroke: 1.25
-                sparkRad: 4.5
-                sparkLen: 1.5
-                sparks: 2
-                }
-                            despawnEffect: {
-                type: ExplosionEffect
-                lifetime: 15
-
-                waveColor: bf92f9
-                waveStroke: 2
-                waveRad: 5
-
-                smokeColor: bf92f9
-                smokes: 0
-
-                sparkColor: bf92f9
-                sparkStroke: 1.25
-                sparkRad: 4.5
-                sparkLen: 1.5
-                sparks: 2
-                }
-            }
-            ]
-            bulletInterval: 10
-            intervalBullets: 1
-            intervalRandomSpread: 15
-            intervalDelay: 5
-            intervalBullet: {
-            createChance: 0.25
-            type: BasicBulletType
-            collidesAir: true
-            buildingDamageMultiplier: 0.01
-            backColor: 665c9f
-            smokeEffect: none
-            frontColor: bf92f9
-            sprite: azimut-hitsliceb
-            width:7.5
-            armorMultiplier: 0.7
-            lifetime: 115
-            damage: 135
-            speed: 2.5
-            drag:0.006
-            homingRange:15
-            homingPower:0.007
-            homingDelay:10
-            trailWidth:1.2
-            trailLength:8
-            trailColor:bf92f960
-            velocityScaleRandMax: 0.9
-            velocityScaleRandMin: 0.6
-            scaleLife: false
-            shrinkY: 0
-            shrinkX: 0
-            pierce: true
-            pierceCap: 3
-                        hitEffect: {
-                type: ExplosionEffect
-                lifetime: 15
-
-                waveColor: bf92f9
-                waveStroke: 2
-                waveRad: 5
-
-                smokeColor: bf92f9
-                smokes: 0
-
-                sparkColor: bf92f9
-                sparkStroke: 1.25
-                sparkRad: 4.5
-                sparkLen: 1.5
-                sparks: 2
-                }
-                            despawnEffect: {
-                type: ExplosionEffect
-                lifetime: 15
-
-                waveColor: bf92f9
-                waveStroke: 2
-                waveRad: 5
-
-                smokeColor: bf92f9
-                smokes: 0
-
-                sparkColor: bf92f9
-                sparkStroke: 1.25
-                sparkRad: 4.5
-                sparkLen: 1.5
-                sparks: 2
-                }
-            }
-                        parts: [
-            {
+            layer: 100.3
+          }
+        ]
+        hitEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveColor: bf92f9
+          waveStroke: 2
+          waveRad: 5
+          smokeColor: bf92f9
+          smokes: 0
+          sparkColor: bf92f9
+          sparkStroke: 1.25
+          sparkRad: 4.5
+          sparkLen: 1.5
+          sparks: 2
+        }
+        despawnEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveColor: bf92f9
+          waveStroke: 2
+          waveRad: 5
+          smokeColor: bf92f9
+          smokes: 0
+          sparkColor: bf92f9
+          sparkStroke: 1.25
+          sparkRad: 4.5
+          sparkLen: 1.5
+          sparks: 2
+        }
+      }
+    ]
+    bulletInterval: 10
+    intervalBullets: 1
+    intervalRandomSpread: 15
+    intervalDelay: 5
+    intervalBullet: {
+      createChance: 0.25
+      type: BasicBulletType
+      collidesAir: true
+      buildingDamageMultiplier: 0.01
+      backColor: 665c9f
+      smokeEffect: none
+      frontColor: bf92f9
+      sprite: azimut-hitsliceb
+      width: 7.5
+      armorMultiplier: 0.7
+      lifetime: 115
+      damage: 135
+      speed: 2.5
+      drag: 0.006
+      homingRange: 15
+      homingPower: 0.007
+      homingDelay: 10
+      trailWidth: 1.2
+      trailLength: 8
+      trailColor: bf92f960
+      velocityScaleRandMax: 0.9
+      velocityScaleRandMin: 0.6
+      scaleLife: false
+      shrinkY: 0
+      shrinkX: 0
+      pierce: true
+      pierceCap: 3
+      hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: bf92f9
+        waveStroke: 2
+        waveRad: 5
+        smokeColor: bf92f9
+        smokes: 0
+        sparkColor: bf92f9
+        sparkStroke: 1.25
+        sparkRad: 4.5
+        sparkLen: 1.5
+        sparks: 2
+      }
+      despawnEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: bf92f9
+        waveStroke: 2
+        waveRad: 5
+        smokeColor: bf92f9
+        smokes: 0
+        sparkColor: bf92f9
+        sparkStroke: 1.25
+        sparkRad: 4.5
+        sparkLen: 1.5
+        sparks: 2
+      }
+    }
+    parts: [
+      {
         type: FlarePart
         radius: 3
         radiusTo: 14
@@ -248,174 +236,170 @@ shoot: {
         progress: life
       }
     ]
-            shootEffect: [
-                {
-                type: ExplosionEffect
-                lifetime: 25
-
-                waveColor: bf92f9
-                waveStroke: 2
-                waveRad: 5
-
-                smokeColor: bf92f9
-                smokes: 0
-
-                sparks: 0
-                }
-                {
-                followParent: false
-                length: 0
-                lifetime: 35
-                particles: 1
-                cone: 0
-                region: azimut-shockwave
-                sizeFrom: 0
-                sizeTo: 13
-                colorFrom: ffffff
-                colorTo: bf92f900
-                baseRotation: 180
-                interp: pow3Out
-                }
-                {
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 35
-				sizeFrom: 4
-				sizeTo: 16
-				strokeFrom: 6
-				strokeTo: 2
-                colorFrom: ffffff80
-                colorTo: bf92f900
-				interp:pow3Out
-				}
-                {
-                type: ParticleEffect
-                particles: 4
-                lifetime: 25
-                length: 55
-                baseLength: 0
-                cone: 360
-                sizeFrom: 0
-                sizeTo: 0
-                strokeFrom: 1.5
-                strokeTo: 1.5
-                colorFrom: ffffff
-                colorTo: ffffff00
-                line: true
-                interp: pow3Out
-                }
-                {
-                type: ParticleEffect
-                particles: 3
-                lifetime: 24
-                length: 45
-                baseLength: 0
-                cone: 360
-                sizeFrom: 0
-                sizeTo: 0
-                strokeFrom: 1.7
-                strokeTo: 1.7
-                colorFrom: bf92f9
-                colorTo: bf92f900
-                line: true
-                interp: pow3Out
-                }
-                {
-                type: SoundEffect
-                minPitch: 0.9
-                maxPitch: 1.1
-                effect: none
-                sound: shootElectrified3
-                minVolume: 0.45
-                maxVolume: 0.55
-                }
-                {
-                type: SoundEffect
-                minPitch: 0.9
-                maxPitch: 1.1
-                effect: none
-                sound: shootElectrified4
-                minVolume: 0.55
-                maxVolume: 0.65
-                }
-                {
-                type: SoundEffect
-                minPitch: 0.9
-                maxPitch: 1.1
-                effect: none
-                sound: shootWeightless
-                minVolume: 0.25
-                maxVolume: 0.35
-                }
-                ]
-
-hitEffect: [
-{
-followParent: false
-length: 0
-lifetime: 45
-particles: 1
-cone: 0
-region: azimut-shockwave
-sizeFrom: 2
-sizeTo: 18
-colorFrom: bf92f995
-colorTo: bf92f900
-baseRotation: 180
-interp: pow3Out
+    shootEffect: [
+      {
+        type: ExplosionEffect
+        lifetime: 25
+        waveColor: bf92f9
+        waveStroke: 2
+        waveRad: 5
+        smokeColor: bf92f9
+        smokes: 0
+        sparks: 0
+      }
+      {
+        followParent: false
+        length: 0
+        lifetime: 35
+        particles: 1
+        cone: 0
+        region: azimut-shockwave
+        sizeFrom: 0
+        sizeTo: 13
+        colorFrom: ffffff
+        colorTo: bf92f900
+        baseRotation: 180
+        interp: pow3Out
+      }
+      {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 35
+        sizeFrom: 4
+        sizeTo: 16
+        strokeFrom: 6
+        strokeTo: 2
+        colorFrom: ffffff80
+        colorTo: bf92f900
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        particles: 4
+        lifetime: 25
+        length: 55
+        baseLength: 0
+        cone: 360
+        sizeFrom: 0
+        sizeTo: 0
+        strokeFrom: 1.5
+        strokeTo: 1.5
+        colorFrom: ffffff
+        colorTo: ffffff00
+        line: true
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        particles: 3
+        lifetime: 24
+        length: 45
+        baseLength: 0
+        cone: 360
+        sizeFrom: 0
+        sizeTo: 0
+        strokeFrom: 1.7
+        strokeTo: 1.7
+        colorFrom: bf92f9
+        colorTo: bf92f900
+        line: true
+        interp: pow3Out
+      }
+      {
+        type: SoundEffect
+        minPitch: 0.9
+        maxPitch: 1.1
+        effect: none
+        sound: shootElectrified3
+        minVolume: 0.45
+        maxVolume: 0.55
+      }
+      {
+        type: SoundEffect
+        minPitch: 0.9
+        maxPitch: 1.1
+        effect: none
+        sound: shootElectrified4
+        minVolume: 0.55
+        maxVolume: 0.65
+      }
+      {
+        type: SoundEffect
+        minPitch: 0.9
+        maxPitch: 1.1
+        effect: none
+        sound: shootWeightless
+        minVolume: 0.25
+        maxVolume: 0.35
+      }
+    ]
+    hitEffect: [
+      {
+        followParent: false
+        length: 0
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: azimut-shockwave
+        sizeFrom: 2
+        sizeTo: 18
+        colorFrom: bf92f995
+        colorTo: bf92f900
+        baseRotation: 180
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        particles: 8
+        lifetime: 55
+        length: 55
+        baseLength: 0
+        cone: 360
+        sizeFrom: 0
+        sizeTo: 0
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: bf92f995
+        colorTo: bf92f900
+        line: true
+        interp: pow3Out
+      }
+    ]
+    despawnEffect: [
+      {
+        followParent: false
+        length: 0
+        lifetime: 45
+        particles: 1
+        cone: 0
+        region: azimut-shockwave
+        sizeFrom: 2
+        sizeTo: 18
+        colorFrom: bf92f995
+        colorTo: bf92f900
+        baseRotation: 180
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        particles: 8
+        lifetime: 55
+        length: 55
+        baseLength: 0
+        cone: 360
+        sizeFrom: 0
+        sizeTo: 0
+        strokeFrom: 2
+        strokeTo: 2
+        colorFrom: bf92f995
+        colorTo: bf92f900
+        line: true
+        interp: pow3Out
+      }
+    ]
+  }
 }
-{
-  type: ParticleEffect
-  particles: 8
-  lifetime: 55
-  length: 55
-  baseLength: 0
-  cone: 360
-  sizeFrom: 0
-  sizeTo: 0
-  strokeFrom: 2
-  strokeTo: 2
-  colorFrom: bf92f995
-  colorTo: bf92f900
-  line: true
-  interp: pow3Out
-}
-]
-despawnEffect: [
-{
-followParent: false
-length: 0
-lifetime: 45
-particles: 1
-cone: 0
-region: azimut-shockwave
-sizeFrom: 2
-sizeTo: 18
-colorFrom: bf92f995
-colorTo: bf92f900
-baseRotation: 180
-interp: pow3Out
-}
-{
-  type: ParticleEffect
-  particles: 8
-  lifetime: 55
-  length: 55
-  baseLength: 0
-  cone: 360
-  sizeFrom: 0
-  sizeTo: 0
-  strokeFrom: 2
-  strokeTo: 2
-  colorFrom: bf92f995
-  colorTo: bf92f900
-  line: true
-  interp: pow3Out
-}
-]
-            }
-    }
 requirements: [
   compound/85
   zinc/275
@@ -429,98 +413,59 @@ drawer: {
   iconOverride: [
     -icon
   ]
-parts: [
-  {
-  type: RegionPart
-  suffix: -barrel-switch
-  under: false
-  mirror: false
-  color: ffffff00
-  colorTo: ffffff
-  progress: {
-    type: reload
-    ops: [
-      {
-        op: compress
-        start: 0.45
-        end: 0.55
-      }
-      {
-        op: inv
-      }
-      {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.85
-              end: 1
+  parts: [
+    {
+      type: RegionPart
+      suffix: -hole
+      outline: false
+      under: false
+      mirror: false
+      color: ffffff00
+      colorTo: ffffff
+      progress: {
+        type: reload
+        ops: [
+          {
+            op: inv
+          }
+          {
+            op: compress
+            start: 0.45
+            end: 0.55
+          }
+          {
+            op: inv
+          }
+          {
+            op: add
+            other: {
+              type: reload
+              ops: [
+                {
+                  op: inv
+                }
+                {
+                  op: compress
+                  start: 0.85
+                  end: 1
+                }
+                {
+                  op: mul
+                  other: {
+                    type: warmup
+                  }
+                }
+              ]
             }
-            {
-              op: mul
-              other: {
-                type: warmup
-              }
-            }
-          ]
-        }
+          }
+          {
+            op: compress
+            start: 0
+            end: 0.3
+          }
+        ]
       }
-      {
-        op: compress
-        start: 0.3
-        end: 0.6
-      }
-    ]
-  }
-}
-{
-  type: RegionPart
-  suffix: -hole
-  outline: false
-  under: false
-  mirror: false
-  color: ffffff00
-  colorTo: ffffff
-  progress: {
-    type: reload
-    ops: [
-      {
-        op: compress
-        start: 0.45
-        end: 0.55
-      }
-      {
-        op: inv
-      }
-      {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.85
-              end: 1
-            }
-            {
-              op: mul
-              other: {
-                type: warmup
-              }
-            }
-          ]
-        }
-      }
-      {
-        op: compress
-        start: 0
-        end: 0.3
-      }
-    ]
-  }
-}
+    }
     {
       type: RegionPart
       suffix: -barrel
@@ -529,153 +474,233 @@ parts: [
       heatColor: bf92f9
       color: ffffff
       colorTo: ffffff00
-      moves: [{
- progress: {
-    type: reload
-    ops: [
-      {
-        op: compress
-        start: 0.45
-        end: 0.55
-      }
-      {
-        op: inv
-      }
-      {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.85
-              end: 1
+      progress: {
+        type: reload
+        ops: [
+          {
+            op: inv
+          }
+          {
+            op: compress
+            start: 0.45
+            end: 0.55
+          }
+          {
+            op: inv
+          }
+          {
+            op: add
+            other: {
+              type: reload
+              ops: [
+                {
+                  op: inv
+                }
+                {
+                  op: compress
+                  start: 0.85
+                  end: 1
+                }
+                {
+                  op: mul
+                  other: {
+                    type: warmup
+                  }
+                }
+              ]
             }
-            {
-              op: mul
-              other: {
-                type: warmup
+          }
+          {
+            op: compress
+            start: 0.3
+            end: 0.6
+          }
+        ]
+      }
+      moves: [
+        {
+          progress: {
+            type: reload
+            ops: [
+              {
+                op: add
+                other: {
+                  type: recoil
+                }
               }
+              {
+                op: compress
+                start: 0
+                end: 0.2
+              }
+              {
+                op: curve
+                interp: pow3Out
+              }
+            ]
+          }
+          y: 0.5
+        }
+        {
+          progress: {
+            type: recoil
+            ops: [
+              {
+                op: curve
+                interp: pow3In
+              }
+              {
+                op: curve
+                interp: pow3Out
+              }
+            ]
+          }
+          y: -1.5
+        }
+      ]
+      children: [
+        {
+          type: FlarePart
+          radius: 0
+          radiusTo: 8
+          stroke: 3.6
+          x: 0
+          y: 17
+          color1: bf92f9
+          color2: ffffff
+          rotation: 65
+          rotMove: 345
+          layer: 101
+          followRotation: false
+          progress: heat
+        }
+        {
+          type: FlarePart
+          radius: 0
+          radiusTo: 10
+          stroke: 4
+          x: 0
+          y: 17
+          color1: bf92f980
+          color2: ffffff80
+          rotation: 75
+          rotMove: 315
+          layer: 101
+          followRotation: false
+          progress: heat
+        }
+        {
+          type: FlarePart
+          radius: 0
+          radiusTo: 12
+          stroke: 4.5
+          x: 0
+          y: 17
+          color1: bf92f950
+          color2: ffffff50
+          rotation: 85
+          rotMove: 285
+          layer: 101
+          followRotation: false
+          progress: heat
+        }
+        {
+          type: EffectSpawnerPart
+          y: 15.5
+          effectRot: 0
+          debugDraw: true
+          mirror: false
+          effectChance: 0.011
+          progress: {
+            type: recoil
+            ops: [
+              {
+                op: curve
+                interp: pow2Out
+              }
+            ]
+          }
+          effect: [
+            {
+              type: ParticleEffect
+              lifetime: 175
+              baseLength: 0
+              particles: 1
+              sizeFrom: 0
+              sizeTo: 9
+              colorFrom: "7e749990"
+              colorTo: b0b0b000
+              interp: pow5Out
+              sizeInterp: pow2Out
+              followParent: false
+            }
+            {
+              type: ParticleEffect
+              lifetime: 165
+              baseLength: 0
+              particles: 1
+              sizeFrom: 0
+              sizeTo: 7
+              colorFrom: "7e749980"
+              colorTo: b0b0b000
+              interp: pow5Out
+              sizeInterp: pow2Out
+              followParent: false
             }
           ]
-        }
-      }
-      {
-        op: compress
-        start: 0.3
-        end: 0.6
-      }
-    ]
-  }
-      }
-      {
-        progress: {
-          type: recoil
-          ops: [
-            {
-              op: curve
-              interp: pow3In
-            }
-            {
-              op: curve
-              interp: pow3Out
-            }
-          ]
-        }
-        y: -1.5
-      }
-    ]
-      children: [{
-        type: FlarePart
-        radius: 0
-        radiusTo: 8
-        stroke: 3.6
-        x: 0
-        y: 17
-        color1: bf92f9
-        color2: ffffff
-        rotation: 65
-        rotMove: 345
-        layer: 101
-        followRotation: false
-        progress: heat
-      }
-            {
-        type: FlarePart
-        radius: 0
-        radiusTo: 10
-        stroke: 4
-        x: 0
-        y: 17
-        color1: bf92f980
-        color2: ffffff80
-        rotation: 75
-        rotMove: 315
-        layer: 101
-        followRotation: false
-        progress: heat
-      }
-                  {
-        type: FlarePart
-        radius: 0
-        radiusTo: 12
-        stroke: 4.5
-        x: 0
-        y: 17
-        color1: bf92f950
-        color2: ffffff50
-        rotation: 85
-        rotMove: 285
-        layer: 101
-        followRotation: false
-        progress: heat
-      }
-        {
-    type: EffectSpawnerPart
-    y: 15.5
-    effectRot: 0
-    debugDraw: true
-    mirror: false
-    effectChance: 0.011
-    progress: {
-      type: recoil
-      ops: [
-        {
-          op: curve
-          interp: pow2Out
         }
       ]
     }
-    effect: [
-      {
-        type: ParticleEffect
-        lifetime: 175
-        baseLength: 0
-        particles: 1
-        sizeFrom: 0
-        sizeTo: 9
-        colorFrom: "7e749990"
-        colorTo: b0b0b000
-        interp: pow5Out
-        sizeInterp: pow2Out
-        followParent: false
+    {
+      type: RegionPart
+      suffix: -barrel-switch
+      under: false
+      mirror: false
+      color: ffffff00
+      colorTo: ffffff
+      progress: {
+        type: reload
+        ops: [
+          {
+            op: inv
+          }
+          {
+            op: compress
+            start: 0.45
+            end: 0.55
+          }
+          {
+            op: inv
+          }
+          {
+            op: add
+            other: {
+              type: reload
+              ops: [
+                {
+                  op: inv
+                }
+                {
+                  op: compress
+                  start: 0.85
+                  end: 1
+                }
+                {
+                  op: mul
+                  other: {
+                    type: warmup
+                  }
+                }
+              ]
+            }
+          }
+          {
+            op: compress
+            start: 0.3
+            end: 0.6
+          }
+        ]
       }
-      {
-        type: ParticleEffect
-        lifetime: 165
-        baseLength: 0
-        particles: 1
-        sizeFrom: 0
-        sizeTo: 7
-        colorFrom: "7e749980"
-        colorTo: b0b0b000
-        interp: pow5Out
-        sizeInterp: pow2Out
-        followParent: false
-      }
-    ]
-  }
-    ]
     }
     {
       type: RegionPart
@@ -684,9 +709,9 @@ parts: [
       mirror: false
       progress: heat
       heatColor: bf92f9
-	  x: 0
-	  y: 0
-	  moveY: -0.75
+      x: 0
+      y: 0
+      moveY: -0.75
     }
     {
       type: RegionPart
@@ -695,9 +720,9 @@ parts: [
       mirror: true
       progress: recoil
       heatColor: bf92f9
-	  x: 0
-	  y: 0
-	  moveY: -0.5
+      x: 0
+      y: 0
+      moveY: -0.5
       moveX: 1
       moveRot: -15
     }
@@ -708,9 +733,9 @@ parts: [
       mirror: true
       progress: recoil
       heatColor: bf92f9
-	  x: 0
-	  y: 0
-	  moveY: -0.5
+      x: 0
+      y: 0
+      moveY: -0.5
       moveX: 0.5
       moveRot: -10
     }
@@ -721,24 +746,24 @@ parts: [
       mirror: true
       progress: recoil
       heatColor: bf92f9
-	  x: 0
-	  y: 0
-	  moveY: -0.3
+      x: 0
+      y: 0
+      moveY: -0.3
       moveX: 0.3
       moveRot: -5
     }
-]
+  ]
 }
 research: {
   parent: "retray"
   planet: "gelion"
-    "requirements": [
-	  "compound/170"
-	  "zinc/435"
-	  "titanite/225"
+  "requirements": [
+    "compound/170"
+    "zinc/435"
+    "titanite/225"
     "caterium/50"
-]
-objectives: [
+  ]
+  objectives: [
     {
       type: SectorComplete
       preset: "thirteen"
