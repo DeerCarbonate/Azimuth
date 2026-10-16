@@ -245,9 +245,7 @@ shoot: {
         under: true
         sides: 5
         innerRadScl: 0.7
-        progress: {
-          type: life
-        }
+        progress: life
       }
     ]
             shootEffect: [
@@ -439,34 +437,37 @@ parts: [
       mirror: false
       growY: -0.75
       growProgress: {
+        ops: [
         type: reload
         op: compress
         start: 0.95
         end: 0.97
+        ]
       }
       progress: {
+        ops: [
         type: reload
         op: compress
         start: 0.95
         end: 0.96
+        ]
       }
       moves: [
         {
-          y: -9
+          y: -4
           progress: recoil
         }
         {
-          y: -5
+          y: -2
           progress: {
+            ops: [
             type: reload
             op: compress
-            start: 0.95
-            end: 0.97
+            ]
           }
         }
       ]
 growProgress: {
-  type: recoil
   ops: [
     {
       op: curve
@@ -491,9 +492,7 @@ growProgress: {
         rotMove: 345
         layer: 101
         followRotation: false
-        progress: {
-          type: heat
-        }
+        progress: heat
       }
             {
         type: FlarePart
@@ -508,9 +507,7 @@ growProgress: {
         rotMove: 315
         layer: 101
         followRotation: false
-        progress: {
-          type: heat
-        }
+        progress: heat
       }
                   {
         type: FlarePart
@@ -525,9 +522,7 @@ growProgress: {
         rotMove: 285
         layer: 101
         followRotation: false
-        progress: {
-          type: heat
-        }
+        progress: heat
       }
         {
     type: EffectSpawnerPart
@@ -537,8 +532,10 @@ growProgress: {
     mirror: false
     effectChance: 0.011
     progress: {
-      type: recoil
       ops: [
+          {
+          type: recoil
+        }
         {
           op: curve
           interp: pow2Out
