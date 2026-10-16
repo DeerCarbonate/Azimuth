@@ -442,15 +442,13 @@ parts: [
       y: -3.5
       moves: [{
         progress: {
+          type: reload
           ops: [
             {
               op: add
               other: {
                 type: recoil
               }
-            }
-            {
-              type: reload
             }
             {
               op: compress
@@ -467,10 +465,8 @@ parts: [
       }
       {
         progress: {
+          type: recoil
           ops: [
-            {
-               type: recoil
-            }
             {
               op: curve
               interp: pow3In
