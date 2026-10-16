@@ -494,13 +494,11 @@ parts: [
     mirror: false
     effectChance: 0.011
     progress: {
+      type: recoil
       ops: [
         {
           op: curve
           interp: pow2Out
-        }
-        {
-          type: recoil
         }
       ]
     }
