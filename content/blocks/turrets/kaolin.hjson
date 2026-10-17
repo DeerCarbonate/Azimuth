@@ -456,9 +456,9 @@ drawer: {
   heatColor: bf92f9
   x: 0
   y: 0
-  moveY: -12
   yScl: 1
-  growY: -1
+  growY: 0.2
+  moveY: 3
   progress: {
     type: charge
     ops: [
@@ -474,11 +474,6 @@ drawer: {
             }
           ]
         }
-      }
-      {
-        op: compress
-        start: 0
-        end: 0.5
       }
     ]
   }
@@ -497,68 +492,6 @@ drawer: {
             }
           ]
         }
-      }
-      {
-        op: compress
-        start: 0
-        end: 0.5
-      }
-    ]
-  }
-}
-{
-  type: RegionPart
-  suffix: -barrel-switch
-  under: false
-  mirror: false
-  x: 0
-  y: -12
-  moveY: 12
-  yScl: 0
-  growY: 1
-  progress: {
-    type: charge
-    ops: [
-      {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.45
-              end: 0.55
-            }
-          ]
-        }
-      }
-      {
-        op: compress
-        start: 0.3
-        end: 1
-      }
-    ]
-  }
-  growProgress: {
-    type: charge
-    ops: [
-      {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.45
-              end: 0.55
-            }
-          ]
-        }
-      }
-      {
-        op: compress
-        start: 0.3
-        end: 1
       }
     ]
   }
