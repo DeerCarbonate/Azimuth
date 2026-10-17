@@ -16,7 +16,7 @@ ammoPerShot: 5
 heatRequirement: 48
 shootY: 14
 inaccuracy: 40
-maxHeatEfficiency: 2
+maxHeatEfficiency: 1
 recoil: 1.8
 recoilTime: 35
 shoot: {
@@ -424,9 +424,15 @@ drawer: {
   mirror: false
   color: ffffff00
   colorTo: ffffff
+  y: -4
   progress: {
-    type: charge
+    type: reload
     ops: [
+      {
+        op: compress
+        start: 0.45
+        end: 0.55
+      }
       {
         op: add
         other: {
@@ -434,8 +440,12 @@ drawer: {
           ops: [
             {
               op: compress
-              start: 0.45
-              end: 0.55
+              start: 0.93
+              end: 1
+            }
+            {
+              op: mul
+              amount: -1
             }
           ]
         }
@@ -447,6 +457,47 @@ drawer: {
       }
     ]
   }
+  moves: [
+    {
+      progress: {
+        type: reload
+        ops: [
+          {
+            op: add
+            other: {
+              type: recoil
+            }
+          }
+          {
+            op: compress
+            start: 0
+            end: 0.2
+          }
+          {
+            op: curve
+            interp: pow3Out
+          }
+        ]
+      }
+      y: 0.5
+    }
+    {
+      progress: {
+        type: recoil
+        ops: [
+          {
+            op: curve
+            interp: pow3In
+          }
+          {
+            op: curve
+            interp: pow3Out
+          }
+        ]
+      }
+      y: -1.5
+    }
+  ]
 }
 {
   type: RegionPart
@@ -457,11 +508,16 @@ drawer: {
   x: 0
   y: 0
   yScl: 1
-  growY: 0.2
-  moveY: 3
-  progress: {
-    type: charge
+  growY: -0.4
+  moveY: -2
+    progress: {
+    type: reload
     ops: [
+      {
+        op: compress
+        start: 0.45
+        end: 0.55
+      }
       {
         op: add
         other: {
@@ -469,8 +525,12 @@ drawer: {
           ops: [
             {
               op: compress
-              start: 0.45
-              end: 0.55
+              start: 0.93
+              end: 1
+            }
+            {
+              op: mul
+              amount: -1
             }
           ]
         }
@@ -478,8 +538,13 @@ drawer: {
     ]
   }
   growProgress: {
-    type: charge
+    type: reload
     ops: [
+      {
+        op: compress
+        start: 0.45
+        end: 0.55
+      }
       {
         op: add
         other: {
@@ -487,14 +552,59 @@ drawer: {
           ops: [
             {
               op: compress
-              start: 0.45
-              end: 0.55
+              start: 0.93
+              end: 1
+            }
+            {
+              op: mul
+              amount: -1
             }
           ]
         }
       }
     ]
   }
+moves: [
+  {
+    progress: {
+      type: reload
+      ops: [
+        {
+          op: add
+          other: {
+            type: recoil
+          }
+        }
+        {
+          op: compress
+          start: 0
+          end: 0.2
+        }
+        {
+          op: curve
+          interp: pow3Out
+        }
+      ]
+    }
+    y: 0.5
+  }
+  {
+    progress: {
+      type: recoil
+      ops: [
+        {
+          op: curve
+          interp: pow3In
+        }
+        {
+          op: curve
+          interp: pow3Out
+        }
+      ]
+    }
+    y: -1.5
+  }
+]
   children: [
         {
           type: FlarePart
@@ -586,9 +696,7 @@ drawer: {
             }
           ]
         }
-      ]
-}
-    {
+            {
       type: RegionPart
       suffix: -karo
       under: false
@@ -597,8 +705,9 @@ drawer: {
       heatColor: bf92f9
       x: 0
       y: 0
-      moveY: -0.75
     }
+      ]
+}
     {
       type: RegionPart
       suffix: -blade
