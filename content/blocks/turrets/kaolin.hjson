@@ -14,7 +14,7 @@ rotateSpeed: 0.85
 shootSound: none
 ammoPerShot: 5
 heatRequirement: 48
-shootY: 14
+shootY: 12
 inaccuracy: 40
 maxHeatEfficiency: 1
 recoil: 1.8
@@ -612,7 +612,7 @@ moves: [
           radiusTo: 8
           stroke: 3.6
           x: 0
-          y: 17
+          y: 15
           color1: bf92f9
           color2: ffffff
           rotation: 65
@@ -627,7 +627,7 @@ moves: [
           radiusTo: 10
           stroke: 4
           x: 0
-          y: 17
+          y: 15
           color1: bf92f980
           color2: ffffff80
           rotation: 75
@@ -642,7 +642,7 @@ moves: [
           radiusTo: 12
           stroke: 4.5
           x: 0
-          y: 17
+          y: 15
           color1: bf92f950
           color2: ffffff50
           rotation: 85
@@ -653,7 +653,7 @@ moves: [
         }
         {
           type: EffectSpawnerPart
-          y: 15.5
+          y: 13.5
           effectRot: 0
           debugDraw: true
           mirror: false
