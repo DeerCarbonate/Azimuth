@@ -441,23 +441,6 @@ drawer: {
         }
       }
       {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.88
-              end: 0.92
-            }
-            {
-              op: mul
-              amount: -1
-            }
-          ]
-        }
-      }
-      {
         op: compress
         start: 0
         end: 0.3
@@ -465,96 +448,121 @@ drawer: {
     ]
   }
 }
-    {
-      type: RegionPart
-      suffix: -barrel
-      under: false
-      mirror: false
-      heatColor: bf92f9
-      color: ffffff
-      colorTo: ffffff00
-progress: {
-  type: charge
-  ops: [
-    {
-      op: add
-      other: {
-        type: reload
-        ops: [
-          {
-            op: compress
-            start: 0.45
-            end: 0.55
-          }
-        ]
+{
+  type: RegionPart
+  suffix: -barrel
+  under: false
+  mirror: false
+  heatColor: bf92f9
+  x: 0
+  y: 0
+  moveY: -12
+  yScl: 1
+  growY: -1
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.45
+              end: 0.55
+            }
+          ]
+        }
       }
-    }
-    {
-      op: add
-      other: {
-        type: reload
-        ops: [
-          {
-            op: compress
-            start: 0.88
-            end: 0.92
-          }
-          {
-            op: mul
-            amount: -1
-          }
-        ]
+      {
+        op: compress
+        start: 0
+        end: 0.5
       }
-    }
-    {
-      op: compress
-      start: 0.3
-      end: 0.6
-    }
-  ]
+    ]
+  }
+  growProgress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.45
+              end: 0.55
+            }
+          ]
+        }
+      }
+      {
+        op: compress
+        start: 0
+        end: 0.5
+      }
+    ]
+  }
 }
-      moves: [
-        {
-          progress: {
-            type: reload
-            ops: [
-              {
-                op: add
-                other: {
-                  type: recoil
-                }
-              }
-              {
-                op: compress
-                start: 0
-                end: 0.2
-              }
-              {
-                op: curve
-                interp: pow3Out
-              }
-            ]
-          }
-          y: 0.5
+{
+  type: RegionPart
+  suffix: -barrel-switch
+  under: false
+  mirror: false
+  x: 0
+  y: -12
+  moveY: 12
+  yScl: 0
+  growY: 1
+  progress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.45
+              end: 0.55
+            }
+          ]
         }
-        {
-          progress: {
-            type: recoil
-            ops: [
-              {
-                op: curve
-                interp: pow3In
-              }
-              {
-                op: curve
-                interp: pow3Out
-              }
-            ]
-          }
-          y: -1.5
+      }
+      {
+        op: compress
+        start: 0.3
+        end: 1
+      }
+    ]
+  }
+  growProgress: {
+    type: charge
+    ops: [
+      {
+        op: add
+        other: {
+          type: reload
+          ops: [
+            {
+              op: compress
+              start: 0.45
+              end: 0.55
+            }
+          ]
         }
-      ]
-      children: [
+      }
+      {
+        op: compress
+        start: 0.3
+        end: 1
+      }
+    ]
+  }
+  children: [
         {
           type: FlarePart
           radius: 0
@@ -646,54 +654,6 @@ progress: {
           ]
         }
       ]
-    }
-{
-  type: RegionPart
-  suffix: -barrel-switch
-  under: false
-  mirror: false
-  color: ffffff00
-  colorTo: ffffff
-  progress: {
-    type: charge
-    ops: [
-      {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.45
-              end: 0.55
-            }
-          ]
-        }
-      }
-      {
-        op: add
-        other: {
-          type: reload
-          ops: [
-            {
-              op: compress
-              start: 0.88
-              end: 0.92
-            }
-            {
-              op: mul
-              amount: -1
-            }
-          ]
-        }
-      }
-      {
-        op: compress
-        start: 0.3
-        end: 0.6
-      }
-    ]
-  }
 }
     {
       type: RegionPart
