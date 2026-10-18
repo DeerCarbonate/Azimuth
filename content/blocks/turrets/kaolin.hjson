@@ -191,6 +191,7 @@ ammoTypes: {
     hitEffect: {
       type: MultiEffect
       lifetime: 160
+       // adasdaskds;skdjkawjffawjfpwafoawfioam.fawkjfklawjfklajwklfjwakfjakjfklawflk
       effects: [
         {
           type: WaveEffect
