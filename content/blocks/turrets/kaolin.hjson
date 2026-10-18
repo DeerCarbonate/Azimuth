@@ -2,19 +2,19 @@ type: ItemTurret
 size: 4
 outlineColor: 0c0c12
 squareSprite: false
-health: 5100
+health: 5050
 alwaysUnlocked: false
 shootCone: 9
-reload: 635
-range: 315
+reload: 600
+range: 415
 targetAir: true
 moveWhileCharging: true
 targetGround: true
 rotateSpeed: 0.85
 shootSound: none
 ammoPerShot: 5
-heatRequirement: 48
-shootY: 12
+heatRequirement: 96
+shootY: 8
 inaccuracy: 40
 maxHeatEfficiency: 1
 recoil: 1.8
@@ -96,7 +96,7 @@ ammoTypes: {
         sprite: azimut-hitsliceb
         width: 7.5
         lifetime: 115
-        damage: 115
+        damage: 125
         speed: 4.5
         drag: 0.008
         homingRange: 15
@@ -173,7 +173,7 @@ ammoTypes: {
       width: 7.5
       armorMultiplier: 0.7
       lifetime: 115
-      damage: 135
+      damage: 145
       speed: 2.5
       drag: 0.006
       homingRange: 15
@@ -424,6 +424,7 @@ drawer: {
   mirror: false
   color: ffffff00
   colorTo: ffffff
+  heatColor: bf92f9
   y: -4
   progress: {
     type: reload
@@ -440,7 +441,7 @@ drawer: {
           ops: [
             {
               op: compress
-              start: 0.93
+              start: 0.9
               end: 1
             }
             {
@@ -612,7 +613,7 @@ moves: [
           radiusTo: 8
           stroke: 3.6
           x: 0
-          y: 15
+          y: 11
           color1: bf92f9
           color2: ffffff
           rotation: 65
@@ -627,7 +628,7 @@ moves: [
           radiusTo: 10
           stroke: 4
           x: 0
-          y: 15
+          y: 11
           color1: bf92f980
           color2: ffffff80
           rotation: 75
@@ -642,7 +643,7 @@ moves: [
           radiusTo: 12
           stroke: 4.5
           x: 0
-          y: 15
+          y: 11
           color1: bf92f950
           color2: ffffff50
           rotation: 85
@@ -653,7 +654,7 @@ moves: [
         }
         {
           type: EffectSpawnerPart
-          y: 13.5
+          y: 9.5
           effectRot: 0
           debugDraw: true
           mirror: false
