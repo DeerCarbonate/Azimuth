@@ -155,7 +155,7 @@ ammoTypes: {
         layer: 120
         useRotation: false
         baseRotation: 90
-        particles: 5
+        particles: 4
         cone: 12
         lifetime: 55
         baseLength: 0
@@ -167,6 +167,26 @@ ammoTypes: {
         lenTo: 85
         strokeFrom: 3
         strokeTo: 1
+        colorFrom: bf92f9
+        colorTo: bf92f900
+      }
+      {
+        clip: 1700
+        layer: 121
+        useRotation: false
+        baseRotation: 90
+        particles: 1
+        cone: 0
+        lifetime: 58
+        baseLength: 0
+        length: 1500
+        interp: pow3In
+        sizeInterp: linear
+        line: true
+        lenFrom: 16
+        lenTo: 90
+        strokeFrom: 4
+        strokeTo: 1.5
         colorFrom: d8c2fb
         colorTo: bf92f900
       }
@@ -175,17 +195,17 @@ ammoTypes: {
         layer: 119
         useRotation: false
         baseRotation: 90
-        particles: 4
-        cone: 20
-        lifetime: 80
+        particles: 8
+        cone: 25
+        lifetime: 75
         baseLength: 0
-        length: 420
+        length: 175
         interp: pow3Out
         sizeInterp: slope
-        sizeFrom: 6
-        sizeTo: 12
+        sizeFrom: 4
+        sizeTo: 7
         colorFrom: "7e7499aa"
-        colorTo: b0b0b000
+        colorTo: b0b0b025
       }
     ]
     hitEffect: {
