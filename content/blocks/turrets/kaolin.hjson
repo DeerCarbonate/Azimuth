@@ -152,7 +152,7 @@ ammoTypes: {
       }
       {
         clip: 1700
-        layer: 120
+        layer: 119
         useRotation: false
         baseRotation: 90
         particles: 4
@@ -172,7 +172,7 @@ ammoTypes: {
       }
       {
         clip: 1700
-        layer: 121
+        layer: 120
         useRotation: false
         baseRotation: 90
         particles: 1
@@ -187,24 +187,41 @@ ammoTypes: {
         lenTo: 95
         strokeFrom: 6
         strokeTo: 2
-        colorFrom: ebe0fd
+        colorFrom: "ebe0fd"
         colorTo: bf92f900
       }
       {
         clip: 1700
-        layer: 119
+        layer: 118
         useRotation: false
         baseRotation: 90
-        particles: 15
+        particles: 16
         cone: 10
-        lifetime: 75
+        lifetime: 85
         baseLength: 0
         length: 55
         interp: pow3Out
         sizeInterp: slope
-        sizeFrom: 2
-        sizeTo: 6
+        sizeFrom: 1.5
+        sizeTo: 4.5
         colorFrom: "7e7499aa"
+        colorTo: b0b0b000
+      }
+            {
+        clip: 1700
+        layer: 118
+        useRotation: false
+        baseRotation: 90
+        particles: 8
+        cone: 15
+        lifetime: 65
+        baseLength: 0
+        length: 65
+        interp: pow3Out
+        sizeInterp: slope
+        sizeFrom: 1
+        sizeTo: 2
+        colorFrom: "b0b0b050"
         colorTo: b0b0b000
       }
     ]
