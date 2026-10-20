@@ -207,7 +207,7 @@ ammoTypes: {
         colorFrom: "7e7499aa"
         colorTo: b0b0b000
       }
-            {
+      {
         clip: 1700
         layer: 118
         useRotation: false
@@ -228,7 +228,6 @@ ammoTypes: {
     hitEffect: {
       type: MultiEffect
       lifetime: 160
-       // adasdaskds;skdjkawjffawjfpwafoawfioam.fawkjfklawjfklajwklfjwakfjakjfklawflk
       effects: [
         {
           type: WaveEffect
@@ -240,51 +239,6 @@ ammoTypes: {
           colorFrom: bf92f900
           colorTo: bf92f9
           interp: pow2In
-        }
-        {
-          type: RadialEffect
-          amount: 4
-          rotationSpacing: 90
-          rotationOffset: 0
-          lengthOffset: 72
-          followParent: false
-          effect: {
-            type: SeqEffect
-            followParent: false
-            layer: 120
-            clip: 2000
-            effects: [
-              {
-                lifetime: 60
-                particles: 1
-                cone: 0
-                length: 0
-                sizeFrom: 0
-                sizeTo: 0
-                colorFrom: ffffff00
-                colorTo: ffffff00
-              }
-              {
-                lifetime: 40
-                particles: 1
-                cone: 0
-                useRotation: false
-                baseRotation: 90
-                baseLength: 760
-                length: -760
-                randLength: false
-                interp: pow2In
-                sizeInterp: linear
-                line: true
-                lenFrom: 90
-                lenTo: 90
-                strokeFrom: 5
-                strokeTo: 5
-                colorFrom: ffffff00
-                colorTo: bf92f9
-              }
-            ]
-          }
         }
         {
           type: RadialEffect
@@ -382,129 +336,450 @@ ammoTypes: {
             baseRotation: 180
             interp: pow3Out
           }
-                      {
-        type: ParticleEffect
-        particles: 4
-        lifetime: 40
-        length: 45
-        baseLength: 0
-        cone: 360
-        sizeFrom: 0
-        sizeTo: 0
-        strokeFrom: 1.9
-        strokeTo: 1.9
-        colorFrom: bf92f9
-        colorTo: bf92f900
-        line: true
-        interp: pow3Out
-            }
-                  {
-        type: ParticleEffect
-        particles: 5
-        lifetime: 35
-        length: 55
-        baseLength: 0
-        cone: 360
-        sizeFrom: 0
-        sizeTo: 0
-        strokeFrom: 1.7
-        strokeTo: 1.7
-        colorFrom: ffffff
-        colorTo: ffffff00
-        line: true
-        interp: pow3Out
-      }
+          {
+            type: ParticleEffect
+            particles: 4
+            lifetime: 40
+            length: 45
+            baseLength: 0
+            cone: 360
+            sizeFrom: 0
+            sizeTo: 0
+            strokeFrom: 1.9
+            strokeTo: 1.9
+            colorFrom: bf92f9
+            colorTo: bf92f900
+            line: true
+            interp: pow3Out
+          }
+          {
+            type: ParticleEffect
+            particles: 5
+            lifetime: 35
+            length: 55
+            baseLength: 0
+            cone: 360
+            sizeFrom: 0
+            sizeTo: 0
+            strokeFrom: 1.7
+            strokeTo: 1.7
+            colorFrom: ffffff
+            colorTo: ffffff00
+            line: true
+            interp: pow3Out
+          }
         ]
       }
-      // adasdaskds;skdjkawjffawjfpwafoawfio
-      fragBullets: 4
-      fragRandomSpread: 0
-      fragSpread: 90
-      fragOffsetMin: 72
-      fragOffsetMax: 72
-      fragBullet: {
-        type: BulletType
-        speed: 0
-        lifetime: 1
-        collides: false
-        hittable: false
-        absorbable: false
-        reflectable: false
-        keepVelocity: false
-        despawnHit: true
-        despawnEffect: none
-        hitSound: explosion
-        hitSoundVolume: 0.6
-        hitShake: 6
-        splashDamage: 675
-        splashDamageRadius: 68
-        hitEffect: {
-          type: MultiEffect
-          lifetime: 60
-          effects: [
-            {
-              type: ExplosionEffect
-              lifetime: 45
-              waveColor: bf92f9
-              waveStroke: 4
-              waveRad: 64
-              smokeColor: "7e749970"
-              smokes: 4
-              sparkColor: ffffff
-              sparkStroke: 0
-              sparkRad: 0
-              sparkLen: 0
-              sparks: 0
+      spawnBullets: [
+        {
+          type: BulletType
+          speed: 0
+          lifetime: 99
+          collides: false
+          hittable: false
+          absorbable: false
+          reflectable: false
+          keepVelocity: false
+          despawnHit: true
+          hitEffect: none
+          despawnEffect: none
+          fragBullets: 2
+          fragRandomSpread: 40
+          fragSpread: 180
+          fragAngle: 0
+          fragOffsetMin: 56
+          fragOffsetMax: 92
+          fragBullet: {
+            type: BulletType
+            speed: 0
+            lifetime: 40
+            collides: false
+            hittable: false
+            absorbable: false
+            reflectable: false
+            keepVelocity: false
+            despawnHit: true
+            despawnEffect: none
+            hitSound: explosion
+            hitSoundVolume: 0.6
+            hitShake: 6
+            splashDamage: 675
+            splashDamageRadius: 68
+            spawnBullets: [
+              {
+                type: BulletType
+                speed: 0
+                lifetime: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                reflectable: false
+                despawnHit: true
+                despawnEffect: none
+                hitEffect: {
+                  layer: 120
+                  clip: 2000
+                  lifetime: 40
+                  particles: 1
+                  cone: 0
+                  useRotation: false
+                  baseRotation: 90
+                  baseLength: 760
+                  length: -760
+                  randLength: false
+                  interp: pow2In
+                  sizeInterp: linear
+                  line: true
+                  lenFrom: 90
+                  lenTo: 90
+                  strokeFrom: 5
+                  strokeTo: 5
+                  colorFrom: ffffff00
+                  colorTo: bf92f9
+                }
+              }
+            ]
+            hitEffect: {
+              type: MultiEffect
+              lifetime: 60
+              effects: [
+                {
+                  type: ExplosionEffect
+                  lifetime: 45
+                  waveColor: bf92f9
+                  waveStroke: 4
+                  waveRad: 64
+                  smokeColor: "7e749970"
+                  smokes: 4
+                  sparkColor: ffffff
+                  sparkStroke: 0
+                  sparkRad: 0
+                  sparkLen: 0
+                  sparks: 0
+                }
+                {
+                  type: ParticleEffect
+                  particles: 3
+                  lifetime: 24
+                  length: 45
+                  baseLength: 0
+                  cone: 360
+                  sizeFrom: 0
+                  sizeTo: 0
+                  strokeFrom: 1.7
+                  strokeTo: 1.7
+                  colorFrom: bf92f9
+                  colorTo: bf92f900
+                  line: true
+                  interp: pow3Out
+                }
+                {
+                  type: ParticleEffect
+                  particles: 4
+                  lifetime: 25
+                  length: 55
+                  baseLength: 0
+                  cone: 360
+                  sizeFrom: 0
+                  sizeTo: 0
+                  strokeFrom: 1.5
+                  strokeTo: 1.5
+                  colorFrom: ffffff
+                  colorTo: ffffff00
+                  line: true
+                  interp: pow3Out
+                }
+                {
+                  followParent: false
+                  length: 0
+                  lifetime: 40
+                  particles: 1
+                  cone: 0
+                  region: azimut-shockwave
+                  sizeFrom: 2
+                  sizeTo: 20
+                  colorFrom: ffffff
+                  colorTo: bf92f900
+                  baseRotation: 180
+                  interp: pow3Out
+                }
+              ]
             }
-            {
-        type: ParticleEffect
-        particles: 3
-        lifetime: 24
-        length: 45
-        baseLength: 0
-        cone: 360
-        sizeFrom: 0
-        sizeTo: 0
-        strokeFrom: 1.7
-        strokeTo: 1.7
-        colorFrom: bf92f9
-        colorTo: bf92f900
-        line: true
-        interp: pow3Out
-            }
-                  {
-        type: ParticleEffect
-        particles: 4
-        lifetime: 25
-        length: 55
-        baseLength: 0
-        cone: 360
-        sizeFrom: 0
-        sizeTo: 0
-        strokeFrom: 1.5
-        strokeTo: 1.5
-        colorFrom: ffffff
-        colorTo: ffffff00
-        line: true
-        interp: pow3Out
-      }
-            {
-              followParent: false
-              length: 0
-              lifetime: 40
-              particles: 1
-              cone: 0
-              region: azimut-shockwave
-              sizeFrom: 2
-              sizeTo: 20
-              colorFrom: ffffff
-              colorTo: bf92f900
-              baseRotation: 180
-              interp: pow3Out
-            }
-          ]
+          }
         }
-      }
+        {
+          type: BulletType
+          speed: 0
+          lifetime: 144
+          collides: false
+          hittable: false
+          absorbable: false
+          reflectable: false
+          keepVelocity: false
+          despawnHit: true
+          hitEffect: none
+          despawnEffect: none
+          fragBullets: 1
+          fragRandomSpread: 40
+          fragSpread: 0
+          fragAngle: 90
+          fragOffsetMin: 56
+          fragOffsetMax: 92
+          fragBullet: {
+            type: BulletType
+            speed: 0
+            lifetime: 40
+            collides: false
+            hittable: false
+            absorbable: false
+            reflectable: false
+            keepVelocity: false
+            despawnHit: true
+            despawnEffect: none
+            hitSound: explosion
+            hitSoundVolume: 0.6
+            hitShake: 6
+            splashDamage: 675
+            splashDamageRadius: 68
+            spawnBullets: [
+              {
+                type: BulletType
+                speed: 0
+                lifetime: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                reflectable: false
+                despawnHit: true
+                despawnEffect: none
+                hitEffect: {
+                  layer: 120
+                  clip: 2000
+                  lifetime: 40
+                  particles: 1
+                  cone: 0
+                  useRotation: false
+                  baseRotation: 90
+                  baseLength: 760
+                  length: -760
+                  randLength: false
+                  interp: pow2In
+                  sizeInterp: linear
+                  line: true
+                  lenFrom: 90
+                  lenTo: 90
+                  strokeFrom: 5
+                  strokeTo: 5
+                  colorFrom: ffffff00
+                  colorTo: bf92f9
+                }
+              }
+            ]
+            hitEffect: {
+              type: MultiEffect
+              lifetime: 60
+              effects: [
+                {
+                  type: ExplosionEffect
+                  lifetime: 45
+                  waveColor: bf92f9
+                  waveStroke: 4
+                  waveRad: 64
+                  smokeColor: "7e749970"
+                  smokes: 4
+                  sparkColor: ffffff
+                  sparkStroke: 0
+                  sparkRad: 0
+                  sparkLen: 0
+                  sparks: 0
+                }
+                {
+                  type: ParticleEffect
+                  particles: 3
+                  lifetime: 24
+                  length: 45
+                  baseLength: 0
+                  cone: 360
+                  sizeFrom: 0
+                  sizeTo: 0
+                  strokeFrom: 1.7
+                  strokeTo: 1.7
+                  colorFrom: bf92f9
+                  colorTo: bf92f900
+                  line: true
+                  interp: pow3Out
+                }
+                {
+                  type: ParticleEffect
+                  particles: 4
+                  lifetime: 25
+                  length: 55
+                  baseLength: 0
+                  cone: 360
+                  sizeFrom: 0
+                  sizeTo: 0
+                  strokeFrom: 1.5
+                  strokeTo: 1.5
+                  colorFrom: ffffff
+                  colorTo: ffffff00
+                  line: true
+                  interp: pow3Out
+                }
+                {
+                  followParent: false
+                  length: 0
+                  lifetime: 40
+                  particles: 1
+                  cone: 0
+                  region: azimut-shockwave
+                  sizeFrom: 2
+                  sizeTo: 20
+                  colorFrom: ffffff
+                  colorTo: bf92f900
+                  baseRotation: 180
+                  interp: pow3Out
+                }
+              ]
+            }
+          }
+        }
+        {
+          type: BulletType
+          speed: 0
+          lifetime: 171
+          collides: false
+          hittable: false
+          absorbable: false
+          reflectable: false
+          keepVelocity: false
+          despawnHit: true
+          hitEffect: none
+          despawnEffect: none
+          fragBullets: 1
+          fragRandomSpread: 40
+          fragSpread: 0
+          fragAngle: 270
+          fragOffsetMin: 56
+          fragOffsetMax: 92
+          fragBullet: {
+            type: BulletType
+            speed: 0
+            lifetime: 40
+            collides: false
+            hittable: false
+            absorbable: false
+            reflectable: false
+            keepVelocity: false
+            despawnHit: true
+            despawnEffect: none
+            hitSound: explosion
+            hitSoundVolume: 0.6
+            hitShake: 6
+            splashDamage: 675
+            splashDamageRadius: 68
+            spawnBullets: [
+              {
+                type: BulletType
+                speed: 0
+                lifetime: 0
+                collides: false
+                hittable: false
+                absorbable: false
+                reflectable: false
+                despawnHit: true
+                despawnEffect: none
+                hitEffect: {
+                  layer: 120
+                  clip: 2000
+                  lifetime: 40
+                  particles: 1
+                  cone: 0
+                  useRotation: false
+                  baseRotation: 90
+                  baseLength: 760
+                  length: -760
+                  randLength: false
+                  interp: pow2In
+                  sizeInterp: linear
+                  line: true
+                  lenFrom: 90
+                  lenTo: 90
+                  strokeFrom: 5
+                  strokeTo: 5
+                  colorFrom: ffffff00
+                  colorTo: bf92f9
+                }
+              }
+            ]
+            hitEffect: {
+              type: MultiEffect
+              lifetime: 60
+              effects: [
+                {
+                  type: ExplosionEffect
+                  lifetime: 45
+                  waveColor: bf92f9
+                  waveStroke: 4
+                  waveRad: 64
+                  smokeColor: "7e749970"
+                  smokes: 4
+                  sparkColor: ffffff
+                  sparkStroke: 0
+                  sparkRad: 0
+                  sparkLen: 0
+                  sparks: 0
+                }
+                {
+                  type: ParticleEffect
+                  particles: 3
+                  lifetime: 24
+                  length: 45
+                  baseLength: 0
+                  cone: 360
+                  sizeFrom: 0
+                  sizeTo: 0
+                  strokeFrom: 1.7
+                  strokeTo: 1.7
+                  colorFrom: bf92f9
+                  colorTo: bf92f900
+                  line: true
+                  interp: pow3Out
+                }
+                {
+                  type: ParticleEffect
+                  particles: 4
+                  lifetime: 25
+                  length: 55
+                  baseLength: 0
+                  cone: 360
+                  sizeFrom: 0
+                  sizeTo: 0
+                  strokeFrom: 1.5
+                  strokeTo: 1.5
+                  colorFrom: ffffff
+                  colorTo: ffffff00
+                  line: true
+                  interp: pow3Out
+                }
+                {
+                  followParent: false
+                  length: 0
+                  lifetime: 40
+                  particles: 1
+                  cone: 0
+                  region: azimut-shockwave
+                  sizeFrom: 2
+                  sizeTo: 20
+                  colorFrom: ffffff
+                  colorTo: bf92f900
+                  baseRotation: 180
+                  interp: pow3Out
+                }
+              ]
+            }
+          }
+        }
+      ]
     }
   }
 }
