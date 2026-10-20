@@ -82,6 +82,19 @@ parts: [
                       yScl: 0.6
                       color: b5d0ba7f
                       colorTo: ffffff7f
+                      growProgress: {
+                        type: life
+                                    ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+								{
+                    op: delay
+                    amount: 0.25
+                }
+            ]
+                      }
 	            progress: {
             type: life
             ops: [
