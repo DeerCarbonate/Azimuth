@@ -166,7 +166,7 @@ ammoTypes: {
         lenFrom: 14
         lenTo: 85
         strokeFrom: 3
-        strokeTo: 1
+        strokeTo: 3
         colorFrom: bf92f9
         colorTo: bf92f900
       }
@@ -185,8 +185,8 @@ ammoTypes: {
         line: true
         lenFrom: 16
         lenTo: 95
-        strokeFrom: 6
-        strokeTo: 2
+        strokeFrom: 5
+        strokeTo: 5
         colorFrom: "ebe0fd"
         colorTo: bf92f900
       }
@@ -195,7 +195,7 @@ ammoTypes: {
         layer: 118
         useRotation: false
         baseRotation: 90
-        particles: 16
+        particles: 11
         cone: 10
         lifetime: 85
         baseLength: 0
@@ -212,15 +212,15 @@ ammoTypes: {
         layer: 118
         useRotation: false
         baseRotation: 90
-        particles: 8
-        cone: 15
-        lifetime: 65
+        particles: 7
+        cone: 25
+        lifetime: 45
         baseLength: 0
         length: 65
         interp: pow3Out
         sizeInterp: slope
-        sizeFrom: 1
-        sizeTo: 2
+        sizeFrom: 0.5
+        sizeTo: 2.5
         colorFrom: "b0b0b050"
         colorTo: b0b0b000
       }
