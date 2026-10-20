@@ -421,8 +421,8 @@ ammoTypes: {
                   line: true
                   lenFrom: 90
                   lenTo: 90
-                  strokeFrom: 5
-                  strokeTo: 5
+                  strokeFrom: 3
+                  strokeTo: 3
                   colorFrom: ffffff00
                   colorTo: bf92f9
                 }
@@ -557,8 +557,8 @@ ammoTypes: {
                   line: true
                   lenFrom: 90
                   lenTo: 90
-                  strokeFrom: 5
-                  strokeTo: 5
+                  strokeFrom: 3
+                  strokeTo: 3
                   colorFrom: ffffff00
                   colorTo: bf92f9
                 }
@@ -693,8 +693,8 @@ ammoTypes: {
                   line: true
                   lenFrom: 90
                   lenTo: 90
-                  strokeFrom: 5
-                  strokeTo: 5
+                  strokeFrom: 3
+                  strokeTo: 3
                   colorFrom: ffffff00
                   colorTo: bf92f9
                 }
