@@ -360,6 +360,7 @@ ammoTypes: {
         ]
       }
       spawnBullets: [
+        // Группа A
         {
           type: BulletType
           speed: 0
@@ -430,21 +431,69 @@ ammoTypes: {
             ]
             hitEffect: {
               type: MultiEffect
-              lifetime: 60
+              lifetime: 160
               effects: [
                 {
-                  type: ExplosionEffect
-                  lifetime: 45
-                  waveColor: bf92f9
-                  waveStroke: 4
-                  waveRad: 64
-                  smokeColor: "7e749970"
-                  smokes: 4
-                  sparkColor: ffffff
-                  sparkStroke: 0
-                  sparkRad: 0
-                  sparkLen: 0
-                  sparks: 0
+                  type: ParticleEffect
+                  lifetime: 150
+                  region: circle-shadow
+                  particles: 6
+                  baseLength: 30
+                  length: 0
+                  colorFrom: "4a4560"
+                  colorTo: "4a456000"
+                  sizeFrom: 16
+                  sizeTo: 32
+                  layer: 90.5
+                  interp: pow2In
+                  sizeInterp: pow2Out
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 110
+                  region: circle-shadow
+                  particles: 6
+                  baseLength: 30
+                  length: 0
+                  colorFrom: "4a4560"
+                  colorTo: "4a456000"
+                  sizeFrom: 12
+                  sizeTo: 24
+                  layer: 90.5
+                  interp: pow2In
+                  sizeInterp: pow2Out
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 110
+                  particles: 12
+                  baseLength: 20
+                  length: 20
+                  colorFrom: bf92f97f
+                  colorTo: "5b56757f"
+                  sizeFrom: 9
+                  sizeTo: 0
+                  layer: 91
+                  interp: pow5Out
+                  sizeInterp: pow2In
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 85
+                  particles: 12
+                  baseLength: 20
+                  length: 20
+                  colorFrom: bf92f97f
+                  colorTo: "5b56757f"
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 91
+                  interp: pow5Out
+                  sizeInterp: pow2In
+                  lightScl: 0
                 }
                 {
                   type: ParticleEffect
@@ -494,8 +543,171 @@ ammoTypes: {
                 }
               ]
             }
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragOffsetMin: 0
+            fragOffsetMax: 0
+            fragBullet: {
+              type: BulletType
+              speed: 0
+              lifetime: 0
+              collides: false
+              hittable: false
+              absorbable: false
+              reflectable: false
+              keepVelocity: false
+              despawnHit: true
+              hitEffect: none
+              despawnEffect: none
+              spawnBullets: [
+                {
+                  type: BulletType
+                  lifetime: 30
+                  speed: 0
+                  collides: false
+                  despawnEffect: none
+                  hitEffect: none
+                  keepVelocity: false
+                  absorbable: false
+                  reflectable: false
+                  hittable: false
+                  parts: [
+                    {
+                      type: RegionPart
+                      outline: false
+                      name: azimut-light
+                      layer: 91
+                      blending: additive
+                      xScl: 6
+                      yScl: 6
+                      color: bf92f97f
+                      colorTo: bf92f900
+                      progress: {
+                        type: life
+                        op: compress
+                        start: 0
+                        end: 0.35
+                      }
+                    }
+                    {
+                      type: RegionPart
+                      outline: false
+                      name: azimut-light
+                      layer: 91
+                      blending: additive
+                      xScl: 3
+                      yScl: 3
+                      color: ffffff7f
+                      colorTo: ffffff00
+                      progress: {
+                        type: life
+                        op: compress
+                        start: 0
+                        end: 0.35
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      hollow: true
+                      colorTo: bf92f9
+                      layer: 90.4
+                      stroke: 6
+                      strokeTo: 0
+                      radius: 34
+                      radiusTo: 68
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow5Out
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      hollow: true
+                      layer: 90.4
+                      stroke: 2
+                      strokeTo: 0
+                      radius: 68
+                      radiusTo: 120
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow10Out
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      color: bf92f9
+                      colorTo: bf92f900
+                      layer: 90.4
+                      radius: 34
+                      radiusTo: 68
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow5Out
+                      }
+                    }
+                  ]
+                }
+              ]
+              fragBullets: 8
+              fragVelocityMin: 1
+              fragOffsetMin: 0
+              fragOffsetMax: 0
+              fragBullet: {
+                type: BulletType
+                lifetime: 90
+                speed: 4.5
+                drag: 0.05
+                collides: false
+                despawnEffect: none
+                hitEffect: none
+                keepVelocity: false
+                absorbable: false
+                reflectable: false
+                hittable: false
+                velocityScaleRandMin: 0.6
+                randomAngleOffset: 180
+                lifeScaleRandMin: 0.8
+                weaveScale: 15
+                weaveMag: 2
+                parts: [
+                  {
+                    type: RegionPart
+                    outline: false
+                    layer: 91
+                    name: circle-shadow
+                    color: bf92f97f
+                    blending: additive
+                    progress: life
+                    xScl: 0.0625
+                    yScl: 0.0625
+                    growX: -0.0625
+                    growY: -0.0625
+                  }
+                  {
+                    type: RegionPart
+                    outline: false
+                    layer: 91
+                    name: circle
+                    color: ffffff7f
+                    blending: additive
+                    progress: life
+                    xScl: 0.0625
+                    yScl: 0.0625
+                    growX: -0.0625
+                    growY: -0.0625
+                  }
+                ]
+              }
+            }
           }
         }
+        // Группа Bебра
         {
           type: BulletType
           speed: 0
@@ -566,21 +778,69 @@ ammoTypes: {
             ]
             hitEffect: {
               type: MultiEffect
-              lifetime: 60
+              lifetime: 160
               effects: [
                 {
-                  type: ExplosionEffect
-                  lifetime: 45
-                  waveColor: bf92f9
-                  waveStroke: 4
-                  waveRad: 64
-                  smokeColor: "7e749970"
-                  smokes: 4
-                  sparkColor: ffffff
-                  sparkStroke: 0
-                  sparkRad: 0
-                  sparkLen: 0
-                  sparks: 0
+                  type: ParticleEffect
+                  lifetime: 150
+                  region: circle-shadow
+                  particles: 6
+                  baseLength: 30
+                  length: 0
+                  colorFrom: "4a4560"
+                  colorTo: "4a456000"
+                  sizeFrom: 16
+                  sizeTo: 32
+                  layer: 90.5
+                  interp: pow2In
+                  sizeInterp: pow2Out
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 110
+                  region: circle-shadow
+                  particles: 6
+                  baseLength: 30
+                  length: 0
+                  colorFrom: "4a4560"
+                  colorTo: "4a456000"
+                  sizeFrom: 12
+                  sizeTo: 24
+                  layer: 90.5
+                  interp: pow2In
+                  sizeInterp: pow2Out
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 110
+                  particles: 12
+                  baseLength: 20
+                  length: 20
+                  colorFrom: bf92f97f
+                  colorTo: "5b56757f"
+                  sizeFrom: 9
+                  sizeTo: 0
+                  layer: 91
+                  interp: pow5Out
+                  sizeInterp: pow2In
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 85
+                  particles: 12
+                  baseLength: 20
+                  length: 20
+                  colorFrom: bf92f97f
+                  colorTo: "5b56757f"
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 91
+                  interp: pow5Out
+                  sizeInterp: pow2In
+                  lightScl: 0
                 }
                 {
                   type: ParticleEffect
@@ -630,8 +890,171 @@ ammoTypes: {
                 }
               ]
             }
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragOffsetMin: 0
+            fragOffsetMax: 0
+            fragBullet: {
+              type: BulletType
+              speed: 0
+              lifetime: 0
+              collides: false
+              hittable: false
+              absorbable: false
+              reflectable: false
+              keepVelocity: false
+              despawnHit: true
+              hitEffect: none
+              despawnEffect: none
+              spawnBullets: [
+                {
+                  type: BulletType
+                  lifetime: 30
+                  speed: 0
+                  collides: false
+                  despawnEffect: none
+                  hitEffect: none
+                  keepVelocity: false
+                  absorbable: false
+                  reflectable: false
+                  hittable: false
+                  parts: [
+                    {
+                      type: RegionPart
+                      outline: false
+                      name: azimut-light
+                      layer: 91
+                      blending: additive
+                      xScl: 6
+                      yScl: 6
+                      color: bf92f97f
+                      colorTo: bf92f900
+                      progress: {
+                        type: life
+                        op: compress
+                        start: 0
+                        end: 0.35
+                      }
+                    }
+                    {
+                      type: RegionPart
+                      outline: false
+                      name: azimut-light
+                      layer: 91
+                      blending: additive
+                      xScl: 3
+                      yScl: 3
+                      color: ffffff7f
+                      colorTo: ffffff00
+                      progress: {
+                        type: life
+                        op: compress
+                        start: 0
+                        end: 0.35
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      hollow: true
+                      colorTo: bf92f9
+                      layer: 90.4
+                      stroke: 6
+                      strokeTo: 0
+                      radius: 34
+                      radiusTo: 68
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow5Out
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      hollow: true
+                      layer: 90.4
+                      stroke: 2
+                      strokeTo: 0
+                      radius: 68
+                      radiusTo: 120
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow10Out
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      color: bf92f9
+                      colorTo: bf92f900
+                      layer: 90.4
+                      radius: 34
+                      radiusTo: 68
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow5Out
+                      }
+                    }
+                  ]
+                }
+              ]
+              fragBullets: 8
+              fragVelocityMin: 1
+              fragOffsetMin: 0
+              fragOffsetMax: 0
+              fragBullet: {
+                type: BulletType
+                lifetime: 90
+                speed: 4.5
+                drag: 0.05
+                collides: false
+                despawnEffect: none
+                hitEffect: none
+                keepVelocity: false
+                absorbable: false
+                reflectable: false
+                hittable: false
+                velocityScaleRandMin: 0.6
+                randomAngleOffset: 180
+                lifeScaleRandMin: 0.8
+                weaveScale: 15
+                weaveMag: 2
+                parts: [
+                  {
+                    type: RegionPart
+                    outline: false
+                    layer: 91
+                    name: circle-shadow
+                    color: bf92f97f
+                    blending: additive
+                    progress: life
+                    xScl: 0.0625
+                    yScl: 0.0625
+                    growX: -0.0625
+                    growY: -0.0625
+                  }
+                  {
+                    type: RegionPart
+                    outline: false
+                    layer: 91
+                    name: circle
+                    color: ffffff7f
+                    blending: additive
+                    progress: life
+                    xScl: 0.0625
+                    yScl: 0.0625
+                    growX: -0.0625
+                    growY: -0.0625
+                  }
+                ]
+              }
+            }
           }
         }
+        // Группа C
         {
           type: BulletType
           speed: 0
@@ -702,21 +1125,69 @@ ammoTypes: {
             ]
             hitEffect: {
               type: MultiEffect
-              lifetime: 60
+              lifetime: 160
               effects: [
                 {
-                  type: ExplosionEffect
-                  lifetime: 45
-                  waveColor: bf92f9
-                  waveStroke: 4
-                  waveRad: 64
-                  smokeColor: "7e749970"
-                  smokes: 4
-                  sparkColor: ffffff
-                  sparkStroke: 0
-                  sparkRad: 0
-                  sparkLen: 0
-                  sparks: 0
+                  type: ParticleEffect
+                  lifetime: 150
+                  region: circle-shadow
+                  particles: 6
+                  baseLength: 30
+                  length: 0
+                  colorFrom: "4a4560"
+                  colorTo: "4a456000"
+                  sizeFrom: 16
+                  sizeTo: 32
+                  layer: 90.5
+                  interp: pow2In
+                  sizeInterp: pow2Out
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 110
+                  region: circle-shadow
+                  particles: 6
+                  baseLength: 30
+                  length: 0
+                  colorFrom: "4a4560"
+                  colorTo: "4a456000"
+                  sizeFrom: 12
+                  sizeTo: 24
+                  layer: 90.5
+                  interp: pow2In
+                  sizeInterp: pow2Out
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 110
+                  particles: 12
+                  baseLength: 20
+                  length: 20
+                  colorFrom: bf92f97f
+                  colorTo: "5b56757f"
+                  sizeFrom: 9
+                  sizeTo: 0
+                  layer: 91
+                  interp: pow5Out
+                  sizeInterp: pow2In
+                  lightScl: 0
+                }
+                {
+                  type: ParticleEffect
+                  lifetime: 85
+                  particles: 12
+                  baseLength: 20
+                  length: 20
+                  colorFrom: bf92f97f
+                  colorTo: "5b56757f"
+                  sizeFrom: 6
+                  sizeTo: 0
+                  layer: 91
+                  interp: pow5Out
+                  sizeInterp: pow2In
+                  lightScl: 0
                 }
                 {
                   type: ParticleEffect
@@ -765,6 +1236,168 @@ ammoTypes: {
                   interp: pow3Out
                 }
               ]
+            }
+            fragBullets: 1
+            fragRandomSpread: 0
+            fragOffsetMin: 0
+            fragOffsetMax: 0
+            fragBullet: {
+              type: BulletType
+              speed: 0
+              lifetime: 0
+              collides: false
+              hittable: false
+              absorbable: false
+              reflectable: false
+              keepVelocity: false
+              despawnHit: true
+              hitEffect: none
+              despawnEffect: none
+              spawnBullets: [
+                {
+                  type: BulletType
+                  lifetime: 30
+                  speed: 0
+                  collides: false
+                  despawnEffect: none
+                  hitEffect: none
+                  keepVelocity: false
+                  absorbable: false
+                  reflectable: false
+                  hittable: false
+                  parts: [
+                    {
+                      type: RegionPart
+                      outline: false
+                      name: azimut-light
+                      layer: 91
+                      blending: additive
+                      xScl: 6
+                      yScl: 6
+                      color: bf92f97f
+                      colorTo: bf92f900
+                      progress: {
+                        type: life
+                        op: compress
+                        start: 0
+                        end: 0.35
+                      }
+                    }
+                    {
+                      type: RegionPart
+                      outline: false
+                      name: azimut-light
+                      layer: 91
+                      blending: additive
+                      xScl: 3
+                      yScl: 3
+                      color: ffffff7f
+                      colorTo: ffffff00
+                      progress: {
+                        type: life
+                        op: compress
+                        start: 0
+                        end: 0.35
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      hollow: true
+                      colorTo: bf92f9
+                      layer: 90.4
+                      stroke: 6
+                      strokeTo: 0
+                      radius: 34
+                      radiusTo: 68
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow5Out
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      hollow: true
+                      layer: 90.4
+                      stroke: 2
+                      strokeTo: 0
+                      radius: 68
+                      radiusTo: 120
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow10Out
+                      }
+                    }
+                    {
+                      type: ShapePart
+                      circle: true
+                      color: bf92f9
+                      colorTo: bf92f900
+                      layer: 90.4
+                      radius: 34
+                      radiusTo: 68
+                      progress: {
+                        type: life
+                        op: curve
+                        interp: pow5Out
+                      }
+                    }
+                  ]
+                }
+              ]
+              fragBullets: 8
+              fragVelocityMin: 1
+              fragOffsetMin: 0
+              fragOffsetMax: 0
+              fragBullet: {
+                type: BulletType
+                lifetime: 90
+                speed: 4.5
+                drag: 0.05
+                collides: false
+                despawnEffect: none
+                hitEffect: none
+                keepVelocity: false
+                absorbable: false
+                reflectable: false
+                hittable: false
+                velocityScaleRandMin: 0.6
+                randomAngleOffset: 180
+                lifeScaleRandMin: 0.8
+                weaveScale: 15
+                weaveMag: 2
+                parts: [
+                  {
+                    type: RegionPart
+                    outline: false
+                    layer: 91
+                    name: circle-shadow
+                    color: bf92f97f
+                    blending: additive
+                    progress: life
+                    xScl: 0.0625
+                    yScl: 0.0625
+                    growX: -0.0625
+                    growY: -0.0625
+                  }
+                  {
+                    type: RegionPart
+                    outline: false
+                    layer: 91
+                    name: circle
+                    color: ffffff7f
+                    blending: additive
+                    progress: life
+                    xScl: 0.0625
+                    yScl: 0.0625
+                    growX: -0.0625
+                    growY: -0.0625
+                  }
+                ]
+              }
             }
           }
         }
