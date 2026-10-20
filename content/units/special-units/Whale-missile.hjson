@@ -78,8 +78,8 @@ parts: [
                       name: azimut-light
                       layer: 91
                       blending: additive
-                      xScl: 4.5
-                      yScl: 4.5
+                      xScl: 0.6
+                      yScl: 0.6
                       color: b5d0ba7f
                       colorTo: ffffff7f
 	            progress: {
