@@ -298,6 +298,24 @@ ammoTypes: {
         lifetime: 160
         effects: [
           {
+          type: SoundEffect
+          minPitch: 0.8
+          maxPitch: 0.9
+          effect: none
+          sound: explosionElectrified
+          minVolume: 0.85
+          maxVolume: 0.95
+          }
+          {
+          type: SoundEffect
+          minPitch: 0.63
+          maxPitch: 0.7
+          effect: none
+          sound: explosionTitan
+          minVolume: 0.45
+          maxVolume: 0.50
+          }
+          {
             type: ParticleEffect
             lifetime: 150
             region: circle-shadow
@@ -643,6 +661,24 @@ ammoTypes: {
               type: MultiEffect
               lifetime: 160
               effects: [
+              {
+              type: SoundEffect
+              minPitch: 0.8
+              maxPitch: 0.9
+              effect: none
+              sound: explosionElectrified
+              minVolume: 0.85
+              maxVolume: 0.95
+              }
+              {
+              type: SoundEffect
+              minPitch: 0.63
+              maxPitch: 0.7
+              effect: none
+              sound: explosionTitan
+              minVolume: 0.45
+              maxVolume: 0.50
+              }
                 {
                   type: ParticleEffect
                   lifetime: 150
@@ -991,6 +1027,24 @@ ammoTypes: {
               lifetime: 160
               effects: [
                 {
+                type: SoundEffect
+                minPitch: 0.8
+                maxPitch: 0.9
+                effect: none
+                sound: explosionElectrified
+                minVolume: 0.85
+                maxVolume: 0.95
+                }
+                {
+                type: SoundEffect
+                minPitch: 0.63
+                maxPitch: 0.7
+                effect: none
+                sound: explosionTitan
+                minVolume: 0.45
+                maxVolume: 0.50
+                }
+                {
                   type: ParticleEffect
                   lifetime: 150
                   region: circle-shadow
@@ -1337,6 +1391,24 @@ ammoTypes: {
               type: MultiEffect
               lifetime: 160
               effects: [
+                  {
+                  type: SoundEffect
+                  minPitch: 0.8
+                  maxPitch: 0.9
+                  effect: none
+                  sound: explosionElectrified
+                  minVolume: 0.85
+                  maxVolume: 0.95
+                  }
+                  {
+                  type: SoundEffect
+                  minPitch: 0.63
+                  maxPitch: 0.7
+                  effect: none
+                  sound: explosionTitan
+                  minVolume: 0.45
+                  maxVolume: 0.50
+                  }
                 {
                   type: ParticleEffect
                   lifetime: 150
