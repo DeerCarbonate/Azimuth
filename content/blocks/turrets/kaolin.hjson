@@ -230,17 +230,6 @@ ammoTypes: {
       lifetime: 160
       effects: [
         {
-          type: WaveEffect
-          lifetime: 100
-          sizeFrom: 155
-          sizeTo: 135
-          strokeFrom: 0
-          strokeTo: 3.5
-          colorFrom: bf92f900
-          colorTo: bf92f920
-          interp: pow2In
-        }
-        {
           type: RadialEffect
           amount: 1
           lengthOffset: 0
