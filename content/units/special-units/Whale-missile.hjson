@@ -72,6 +72,30 @@ abilities: [
 immunities: [ slow, spore-slowed, tarred]
 
 parts: [
+                        {
+                      type: RegionPart
+                      outline: false
+                      name: azimut-light
+                      layer: 91
+                      blending: additive
+                      xScl: 4.5
+                      yScl: 4.5
+                      color: b5d0ba7f
+                      colorTo: ffffff7f
+	            progress: {
+            type: life
+            ops: [
+                {
+                    op: curve
+                    interp: pow5In
+                }
+								{
+                    op: delay
+                    amount: 0.25
+                }
+            ]
+        }
+                    }
       {
      type: ShapePart
      hollow: true
