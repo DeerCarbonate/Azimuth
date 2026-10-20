@@ -275,9 +275,9 @@ ammoTypes: {
                 line: true
                 lenFrom: 150
                 lenTo: 150
-                strokeFrom: 9
-                strokeTo: 9
-                colorFrom: ffffff
+                strokeFrom: 5
+                strokeTo: 5
+                colorFrom: ffffff00
                 colorTo: bf92f9
               }
             ]
