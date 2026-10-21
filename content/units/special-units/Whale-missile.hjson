@@ -1,4 +1,5 @@
 //some effects was inspired & borrowed from todi's work. Soooooo... phshgpg[sg]
+//aand some effect testing..
 type: missile
 template: MissileUnitType
 controller: MissileAI
