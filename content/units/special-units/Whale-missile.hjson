@@ -51,7 +51,6 @@ abilities: [
 	sameTypeHealMult: 0.03
     statusDuration: 0
     healPercent: 0.1
-    shootSound: shootElectrified1
 	sectors: 0
 		hitEffect: {
 		type: ParticleEffect
