@@ -69,7 +69,7 @@ abilities: [
 }
 ]
 
-immunities: [ slow, spore-slowed, tarred]
+immunities: [ slow, spore-slowed, tarred, emp, pierced]
 
 parts: [
                         {
@@ -78,8 +78,8 @@ parts: [
                       name: azimut-light
                       layer: 91
                       blending: additive
-                      xScl: 0.55
-                      yScl: 0.55
+                      xScl: 0.44
+                      yScl: 0.4
                       color: b5d0ba7f
                       colorTo: ffffff7f
 	            progress: {
@@ -281,7 +281,7 @@ bullet: {
     splashDamageRadius: 30
     splashDamage: 75
 
-    hitSound: energy-blade-hit
+    hitSound: none
 shootEffect: [
 {
 followParent: false
@@ -295,6 +295,15 @@ sizeTo: 23
 colorTo: a4f0d700
 baseRotation: 180
 interp: pow3Out
+}
+{
+type: SoundEffect
+minPitch: 0.9
+maxPitch: 1.1
+effect: none
+sound: explosionSmall
+minVolume: 0.85
+maxVolume: 0.9
 }
 ]
 		            despawnEffect: [
@@ -411,6 +420,24 @@ interp: pow3Out
             colorTo: 5fac9e00
 			baseRotation: 305
 			interp:pow3Out
+          }
+          {
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1.1
+          effect: none
+          sound: explosionSmall
+          minVolume: 0.85
+          maxVolume: 0.9
+          }
+        {
+          type: SoundEffect
+          minPitch: 1.1
+          maxPitch: 1.15
+          effect: none
+          sound: shootPlasmaLaser
+          minVolume: 0.65
+          maxVolume: 0.75
           }
 		  ]
 		fragBullets: 6
