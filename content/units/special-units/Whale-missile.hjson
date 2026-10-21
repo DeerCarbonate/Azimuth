@@ -113,38 +113,11 @@ parts: [
     shapes: 2
     color: b5d0ba
     layer: 110
-    haloRadius: 6.5
+    haloRadius: 5
     haloRadiusTo: 0
     radius: 5
     radiusTo: 5
     triLength: 5
-    triLengthTo: 0
-    haloRotateSpeed: -1
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow5In
-                }
-								{
-                    op: delay
-                    amount: 0.25
-                }
-            ]
-        }
-      }
-	  	  {
-    type: HaloPart
-    tri: true
-    shapes: 2
-    color: b5d0ba20
-    layer: 110
-    haloRadius: 8.5
-    haloRadiusTo: 0
-    radius: 4.5
-    radiusTo: 4.5
-    triLength: 4.5
     triLengthTo: 0
     haloRotateSpeed: -1.5
 	            progress: {
@@ -161,19 +134,19 @@ parts: [
             ]
         }
       }
-	  {
+      	  {
     type: HaloPart
     tri: true
     shapes: 2
-    color: b5d0ba20
+    color: b5d0ba
     layer: 110
-    haloRadius: 10.5
+    haloRadius: 5
     haloRadiusTo: 0
-    radius: 4
-    radiusTo: 4
-    triLength: 4
+    radius: 5
+    radiusTo: 5
+    triLength: 5
     triLengthTo: 0
-    haloRotateSpeed: -2
+    haloRotateSpeed: 1.5
 	            progress: {
             type: life
             ops: [
@@ -181,7 +154,7 @@ parts: [
                     op: curve
                     interp: pow5In
                 }
-				{
+								{
                     op: delay
                     amount: 0.25
                 }
