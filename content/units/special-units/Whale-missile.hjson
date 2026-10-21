@@ -1,3 +1,4 @@
+//some effects was inspired & borrowed from todi's work. Soooooo... phshgpg[sg]
 type: missile
 template: MissileUnitType
 controller: MissileAI
@@ -38,76 +39,152 @@ engineOffset: 3
 engineLayer: 100
 shieldColor: a4f0d788
 healColor: a4f0d788
+
 abilities: [
-    {
+  {
     type: EnergyFieldAbility
     maxTargets: 7
     damage: 18
     reload: 10
     range: 83
-	color: a4f0d7
+    color: a4f0d7
     x: 0
     y: 0
-	sameTypeHealMult: 0.03
+    sameTypeHealMult: 0.03
     statusDuration: 0
     healPercent: 0.1
-	sectors: 0
-		hitEffect: {
-		type: ParticleEffect
-		region: azimut-triangle
-		particles: 1
-		length: 30
-		lifetime: 60
-		interp: circleOut
-		sizeInterp: pow5Out
-		cone: 360
-		colorFrom: a4f0d7
-		colorTo: 5fac9e90
-		sizeFrom: 4.5
-		sizeTo: 0
-	}
-}
+    sectors: 0
+    hitEffect: {
+      type: ParticleEffect
+      region: azimut-triangle
+      particles: 1
+      length: 30
+      lifetime: 60
+      interp: circleOut
+      sizeInterp: pow5Out
+      cone: 360
+      colorFrom: a4f0d7
+      colorTo: 5fac9e90
+      sizeFrom: 4.5
+      sizeTo: 0
+    }
+  }
+  {
+    type: MoveEffectAbility
+    y: -3
+    interval: 2
+    rotateEffect: true
+    effect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 180
+      rotationOffset: 90
+      lengthOffset: 0.8
+      followParent: false
+      effect: {
+        followParent: false
+        lifetime: 28
+        particles: 1
+        cone: 0
+        baseLength: 0
+        length: 6
+        randLength: false
+        interp: pow2Out
+        sizeInterp: pow2In
+        sizeFrom: 1.5
+        sizeTo: 0
+        colorFrom: a4f0d7
+        colorTo: 5fac9e00
+        lightScl: 0
+      }
+    }
+  }
+  {
+    type: MoveEffectAbility
+    y: -2
+    interval: 11
+    effect: {
+      type: WaveEffect
+      lifetime: 22
+      sizeFrom: 1
+      sizeTo: 7
+      strokeFrom: 1.2
+      strokeTo: 0
+      colorFrom: a4f0d7
+      colorTo: 5fac9e00
+      interp: pow3Out
+    }
+  }
+  {
+    type: MoveEffectAbility
+    y: -3
+    interval: 4
+    rotateEffect: true
+    effect: {
+      type: ParticleEffect
+      region: azimut-triangle
+      lifetime: 34
+      particles: 1
+      cone: 360
+      baseLength: 0
+      length: 9
+      interp: circleOut
+      sizeInterp: pow3In
+      sizeFrom: 3.2
+      sizeTo: 0
+      spin: 4
+      colorFrom: ffffff
+      colorTo: a4f0d700
+      lightScl: 0
+    }
+  }
 ]
 
-immunities: [ slow, spore-slowed, tarred, emp, pierced]
+immunities: [
+  slow
+  spore-slowed
+  tarred
+  emp
+  pierced
+]
 
 parts: [
-                        {
-                      type: RegionPart
-                      outline: false
-                      name: azimut-light
-                      layer: 91
-                      blending: additive
-                      xScl: 0.44
-                      yScl: 0.4
-                      color: b5d0ba7f
-                      colorTo: ffffff7f
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow5In
-                }
-								{
-                    op: delay
-                    amount: 0.25
-                }
-            ]
+  {
+    type: RegionPart
+    outline: false
+    name: azimut-light
+    layer: 91
+    blending: additive
+    xScl: 0.44
+    yScl: 0.4
+    color: b5d0ba7f
+    colorTo: ffffff7f
+    progress: {
+      type: life
+      ops: [
+        {
+          op: curve
+          interp: pow5In
         }
-                    }
-      {
-     type: ShapePart
-     hollow: true
-     circle: true
-     layer: 110
-     color: a4f0d7
-     stroke: 1.4
-     strokeTo: 2
-     radius: 4
-	 radiusTo: 4
-      }
-	  {
+        {
+          op: delay
+          amount: 0.25
+        }
+      ]
+    }
+  }
+  {
+    type: ShapePart
+    hollow: true
+    circle: true
+    layer: 110
+    color: a4f0d7
+    stroke: 1.4
+    strokeTo: 2
+    radius: 4
+    radiusTo: 4
+  }
+  {
     type: HaloPart
     tri: true
     shapes: 2
@@ -120,21 +197,21 @@ parts: [
     triLength: 5
     triLengthTo: 0
     haloRotateSpeed: -1.5
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow5In
-                }
-								{
-                    op: delay
-                    amount: 0.25
-                }
-            ]
+    progress: {
+      type: life
+      ops: [
+        {
+          op: curve
+          interp: pow5In
         }
-      }
-      	  {
+        {
+          op: delay
+          amount: 0.25
+        }
+      ]
+    }
+  }
+  {
     type: HaloPart
     tri: true
     shapes: 2
@@ -147,21 +224,21 @@ parts: [
     triLength: 5
     triLengthTo: 0
     haloRotateSpeed: 1.5
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow5In
-                }
-								{
-                    op: delay
-                    amount: 0.25
-                }
-            ]
+    progress: {
+      type: life
+      ops: [
+        {
+          op: curve
+          interp: pow5In
         }
-      }
-	  	  {
+        {
+          op: delay
+          amount: 0.25
+        }
+      ]
+    }
+  }
+  {
     type: HaloPart
     tri: true
     shapes: 6
@@ -174,171 +251,178 @@ parts: [
     triLength: 3
     triLengthTo: 5
     haloRotateSpeed: -1.5
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: curve
-                    interp: pow2In
-                }
-				{
-                    op: delay
-                    amount: 0.25
-                }
-            ]
+    progress: {
+      type: life
+      ops: [
+        {
+          op: curve
+          interp: pow2In
         }
-      }
-	      {
+        {
+          op: delay
+          amount: 0.25
+        }
+      ]
+    }
+  }
+  {
     type: ShapePart
     circle: true
     hollow: true
     layer: 110
     color: b5d0ba
     radius: 0
-	radiusTo: 17.6
+    radiusTo: 17.6
     strokeTo: 2
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: delay
-                    amount: 0.25
-                }
-                {
-                    op: curve
-                    interp: pow2In
-                }
-            ]
+    progress: {
+      type: life
+      ops: [
+        {
+          op: delay
+          amount: 0.25
         }
+        {
+          op: curve
+          interp: pow2In
+        }
+      ]
+    }
   }
-  	      {
+  {
     type: ShapePart
     circle: true
     hollow: true
     layer: 110
     color: b5d0ba20
     radius: 0
-	radiusTo: 16.5
+    radiusTo: 16.5
     strokeTo: 24
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: delay
-                    amount: 0.25
-                }
-                {
-                    op: curve
-                    interp: pow2In
-                }
-            ]
+    progress: {
+      type: life
+      ops: [
+        {
+          op: delay
+          amount: 0.25
         }
+        {
+          op: curve
+          interp: pow2In
+        }
+      ]
+    }
   }
-    	      {
+  {
     type: ShapePart
     circle: true
     hollow: true
     layer: 110
     color: b5d0ba20
     radius: 0
-	radiusTo: 18.5
+    radiusTo: 18.5
     strokeTo: 8
-	            progress: {
-            type: life
-            ops: [
-                {
-                    op: delay
-                    amount: 0.25
-                }
-                {
-                    op: curve
-                    interp: pow2In
-                }
-            ]
+    progress: {
+      type: life
+      ops: [
+        {
+          op: delay
+          amount: 0.25
         }
+        {
+          op: curve
+          interp: pow2In
+        }
+      ]
+    }
   }
-    ]
+]
 
 weapons: [
-{
+  // ОРУЖИЕ 121у12а
+  {
     shootOnDeath: true
     shootCone: 360
     mirror: false
     shake: 2.5
     x: 0
     y: 0
-
     reload: 1
-
-bullet: {
-    type: ExplosionBulletType
-    collidesAir: false
-    despawnShake: 1.2
-    maxRange: 6
-
-    buildingDamageMultiplier: 1.25
-
-    splashDamageRadius: 30
-    splashDamage: 75
-
-    hitSound: none
-shootEffect: [
-{
-followParent: false
-length: 0
-lifetime: 35
-particles: 1
-cone: 0
-region: azimut-shockwave
-sizeFrom: 20
-sizeTo: 23
-colorTo: a4f0d700
-baseRotation: 180
-interp: pow3Out
-}
-{
-type: SoundEffect
-minPitch: 0.9
-maxPitch: 1.1
-effect: none
-sound: explosionSmall
-minVolume: 0.85
-maxVolume: 0.9
-}
-]
-		            despawnEffect: [
-				{
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 35
-				sizeFrom: 26
-				sizeTo: 28
-				strokeFrom: 6
-				strokeTo: 2
-                colorFrom: a4f0d780
-                colorTo: 5fac9e00
-				interp:pow3Out
-				}
-			]
-		            hitEffect: [
-				{
-				type: WaveEffect
-				rotWithParent: true
-				followParent: true
-				lifetime: 35
-				sizeFrom: 26
-				sizeTo: 28
-				strokeFrom: 6
-				strokeTo: 2
-                colorFrom: a4f0d780
-                colorTo: 5fac9e00
-				interp:pow3Out
-				}
-			]
+    bullet: {
+      type: ExplosionBulletType
+      collidesAir: false
+      despawnShake: 1.2
+      maxRange: 6
+      buildingDamageMultiplier: 1.25
+      splashDamageRadius: 30
+      splashDamage: 75
+      hitSound: none
+      hitEffect: none
+      despawnEffect: none
+      smokeEffect: none
+      shootEffect: [
+        {
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1.1
+          effect: none
+          sound: explosionSmall
+          minVolume: 0.85
+          maxVolume: 0.9
+        }
+      ]
+      spawnBullets: [
+        {
+          type: BulletType
+          lifetime: 14
+          speed: 0
+          collides: false
+          despawnEffect: none
+          hitEffect: none
+          keepVelocity: false
+          absorbable: false
+          reflectable: false
+          hittable: false
+          parts: [
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 2.8
+              yScl: 2.8
+              color: a4f0d77f
+              colorTo: a4f0d700
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.5
+              }
+            }
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 1.4
+              yScl: 1.4
+              color: ffffff7f
+              colorTo: ffffff00
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.5
+              }
+            }
+          ]
+        }
+      ]
     }
-}
-{
+  }
+  // я насрал оружием 2
+  {
     reload: 5000
     x: 0
     y: 0
@@ -351,77 +435,120 @@ maxVolume: 0.9
     top: false
     alwaysShooting: true
     useAttackRange: false
-	shootOnDeath: false
-		  shoot: {
-    type: ShootSpread
-    firstShotDelay: 155
+    shootOnDeath: false
+    shoot: {
+      type: ShootSpread
+      firstShotDelay: 155
     }
     bullet: {
-    type: ExplosionBulletType
-    collidesAir: false
-    despawnShake: 1.2
-    maxRange: 6
-
-    buildingDamageMultiplier: 1.5
-
-    splashDamageRadius: 38
-    splashDamage: 115
-        
-        hittable: false
-        absorbable: false
-        reflectable: false
-        
-        collides: false
-        collidesAir: false
-        collidesGround: false
-        collidesTiles: false
-        
-        hitEffect: none
-        despawnEffect: none
-        smokeEffect: none
-        
-        keepVelocity: false
-        
-        killShooter: true
-		shootEffect:[{
-            particles: 1
-            spin:-1.5
-            length: 0
-            lifetime: 35
-            region: azimut-parallel
-            sizeFrom: 44
-            sizeTo: 44
-            colorFrom: a4f0d780
-            colorTo: 5fac9e00
-			interp:pow3Out
-          }
-		  {
-            particles: 1
-            spin:-1.5
-            length: 0
-            lifetime: 35
-            region: azimut-parallel
-            sizeFrom: 44
-            sizeTo: 44
-            colorFrom: a4f0d780
-            colorTo: 5fac9e00
-			baseRotation: 55
-			interp:pow3Out
-          }
-		  		  {
-            particles: 1
-            spin:-1.5
-            length: 0
-            lifetime: 35
-            region: azimut-parallel
-            sizeFrom: 44
-            sizeTo: 44
-            colorFrom: a4f0d780
-            colorTo: 5fac9e00
-			baseRotation: 305
-			interp:pow3Out
-          }
-          {
+      type: ExplosionBulletType
+      collidesAir: false
+      despawnShake: 1.2
+      maxRange: 6
+      buildingDamageMultiplier: 1.5
+      splashDamageRadius: 38
+      splashDamage: 115
+      hittable: false
+      absorbable: false
+      reflectable: false
+      collides: false
+      collidesGround: false
+      collidesTiles: false
+      hitEffect: none
+      despawnEffect: none
+      smokeEffect: none
+      keepVelocity: false
+      killShooter: true
+      shootEffect: [
+        {
+          particles: 1
+          spin: -1.5
+          length: 0
+          lifetime: 35
+          region: azimut-parallel
+          sizeFrom: 44
+          sizeTo: 44
+          colorFrom: a4f0d780
+          colorTo: 5fac9e00
+          interp: pow3Out
+        }
+        {
+          particles: 1
+          spin: -1.5
+          length: 0
+          lifetime: 35
+          region: azimut-parallel
+          sizeFrom: 44
+          sizeTo: 44
+          colorFrom: a4f0d780
+          colorTo: 5fac9e00
+          baseRotation: 55
+          interp: pow3Out
+        }
+        {
+          particles: 1
+          spin: -1.5
+          length: 0
+          lifetime: 35
+          region: azimut-parallel
+          sizeFrom: 44
+          sizeTo: 44
+          colorFrom: a4f0d780
+          colorTo: 5fac9e00
+          baseRotation: 305
+          interp: pow3Out
+        }
+        {
+          followParent: false
+          length: 0
+          lifetime: 36
+          particles: 1
+          cone: 0
+          region: azimut-shockwave
+          sizeFrom: 4
+          sizeTo: 22
+          colorFrom: ffffff
+          colorTo: a4f0d700
+          baseRotation: 180
+          interp: pow3Out
+        }
+        {
+          type: ParticleEffect
+          particles: 9
+          lifetime: 26
+          length: 46
+          baseLength: 4
+          cone: 360
+          sizeFrom: 0
+          sizeTo: 0
+          strokeFrom: 1.3
+          strokeTo: 0.6
+          lenFrom: 7
+          lenTo: 0
+          colorFrom: ffffff
+          colorTo: a4f0d700
+          line: true
+          interp: pow3Out
+          lightScl: 0
+        }
+        {
+          type: ParticleEffect
+          region: azimut-triangle
+          particles: 7
+          lifetime: 34
+          length: 34
+          baseLength: 2
+          cone: 360
+          interp: pow3Out
+          sizeInterp: pow2In
+          sizeFrom: 4.5
+          sizeTo: 0
+          spin: 3
+          colorFrom: a4f0d7
+          colorTo: 5fac9e00
+          lightScl: 0
+        }
+        {
           type: SoundEffect
           minPitch: 0.9
           maxPitch: 1.1
@@ -429,7 +556,7 @@ maxVolume: 0.9
           sound: explosionSmall
           minVolume: 0.85
           maxVolume: 0.9
-          }
+        }
         {
           type: SoundEffect
           minPitch: 1.1
@@ -438,50 +565,210 @@ maxVolume: 0.9
           sound: shootPlasmaLaser
           minVolume: 0.65
           maxVolume: 0.75
+        }
+      ]
+      spawnBullets: [
+        // вспышка и кольца
+        {
+          type: BulletType
+          lifetime: 26
+          speed: 0
+          collides: false
+          despawnEffect: none
+          hitEffect: none
+          keepVelocity: false
+          absorbable: false
+          reflectable: false
+          hittable: false
+          parts: [
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 4.2
+              yScl: 4.2
+              color: a4f0d77f
+              colorTo: a4f0d700
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.35
+              }
+            }
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 2.1
+              yScl: 2.1
+              color: ffffff7f
+              colorTo: ffffff00
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.35
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              hollow: true
+              colorTo: a4f0d7
+              layer: 110
+              stroke: 3.2
+              strokeTo: 0
+              radius: 20
+              radiusTo: 40
+              progress: {
+                type: life
+                op: curve
+                interp: pow5Out
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              hollow: true
+              layer: 110
+              stroke: 1.2
+              strokeTo: 0
+              radius: 40
+              radiusTo: 72
+              progress: {
+                type: life
+                op: curve
+                interp: pow10Out
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              color: a4f0d7
+              colorTo: a4f0d700
+              layer: 110
+              radius: 20
+              radiusTo: 40
+              progress: {
+                type: life
+                op: curve
+                interp: pow5Out
+              }
+            }
+          ]
+        }
+        // угольки
+        {
+          type: BulletType
+          lifetime: 0
+          speed: 0
+          collides: false
+          despawnHit: true
+          despawnEffect: none
+          hitEffect: none
+          keepVelocity: false
+          absorbable: false
+          reflectable: false
+          hittable: false
+          fragBullets: 7
+          fragVelocityMin: 1
+          fragOffsetMin: 0
+          fragOffsetMax: 0
+          fragBullet: {
+            type: BulletType
+            lifetime: 60
+            speed: 2.8
+            drag: 0.05
+            collides: false
+            despawnEffect: none
+            hitEffect: none
+            keepVelocity: false
+            absorbable: false
+            reflectable: false
+            hittable: false
+            velocityScaleRandMin: 0.6
+            randomAngleOffset: 180
+            lifeScaleRandMin: 0.8
+            weaveScale: 12
+            weaveMag: 1.2
+            parts: [
+              {
+                type: RegionPart
+                outline: false
+                layer: 110
+                name: circle-shadow
+                color: a4f0d77f
+                blending: additive
+                progress: life
+                xScl: 0.038
+                yScl: 0.038
+                growX: -0.038
+                growY: -0.038
+              }
+              {
+                type: RegionPart
+                outline: false
+                layer: 110
+                name: circle
+                color: ffffff7f
+                blending: additive
+                progress: life
+                xScl: 0.038
+                yScl: 0.038
+                growX: -0.038
+                growY: -0.038
+              }
+            ]
           }
-		  ]
-		fragBullets: 6
-		fragSpread: 60
-		fragRandomSpread: 0
-		fragAngle: 0
-		fragBullet: {
-		      type: BasicBulletType
-      backColor: a4f0d7
-      frontColor: ffffff
-      height: 8
-      width: 6
-      lifetime: 54
-      damage: 54
-      speed: 4
-      trailColor: 5fac9e
-      trailLength: 10
-      trailWidth: 1.3
-      keepVelocity: false
-      despawnEffect: none
-      collidesTiles: true
-      collidesAir: false
-	  sprite: azimut-hitsliceb
-	  drag: 0.004
-	  homingPower: 0.17
-	  homingDelay: 4
-	  homingRange: 60
-      hitEffect: {
-        type: ExplosionEffect
-        lifetime: 15
-        waveColor: a4f0d7
-        waveStroke: 1.2
-        waveRad: 2.5
-        smokeColor: a4f0d7
-        smokeSizeBase: 0
-        smokeSize: 5.5
-        smokes: 0
-        sparkColor: a4f0d7
-        sparkStroke: 1.6
-        sparkRad: 17.5
-        sparkLen: 2
-        sparks: 3
+        }
+      ]
+      fragBullets: 6
+      fragSpread: 60
+      fragRandomSpread: 0
+      fragAngle: 0
+      fragBullet: {
+        type: BasicBulletType
+        backColor: a4f0d7
+        frontColor: ffffff
+        height: 8
+        width: 6
+        lifetime: 54
+        damage: 54
+        speed: 4
+        trailColor: 5fac9e
+        trailLength: 10
+        trailWidth: 1.3
+        keepVelocity: false
+        despawnEffect: none
+        collidesTiles: true
+        collidesAir: false
+        sprite: azimut-hitsliceb
+        drag: 0.004
+        homingPower: 0.17
+        homingDelay: 4
+        homingRange: 60
+        hitEffect: {
+          type: ExplosionEffect
+          lifetime: 15
+          waveColor: a4f0d7
+          waveStroke: 1.2
+          waveRad: 2.5
+          smokeColor: a4f0d7
+          smokeSizeBase: 0
+          smokeSize: 5.5
+          smokes: 0
+          sparkColor: a4f0d7
+          sparkStroke: 1.6
+          sparkRad: 17.5
+          sparkLen: 2
+          sparks: 3
+        }
       }
     }
-		}
-    }
+  }
 ]
