@@ -28,7 +28,7 @@ speed: 2.5
 armor: 1
 homingDelay: 30
 deathExplosionEffect: none
-loopSoundVolume: 0.5
+loopSoundVolume: 0.25
 
 trailColor: a4f0d7
 trailLength: 10
@@ -51,6 +51,7 @@ abilities: [
 	sameTypeHealMult: 0.03
     statusDuration: 0
     healPercent: 0.1
+    shootSound: electricHit
 	sectors: 0
 		hitEffect: {
 		type: ParticleEffect
