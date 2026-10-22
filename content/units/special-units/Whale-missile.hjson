@@ -99,39 +99,6 @@ abilities: [
       sizeTo: 0
     }
   }
-  // НАХУЙ ВЕСЬ ЭТОт  ТРЙЕЙЛ ПОЛУЧИЛАСЬ ХУЙНЯ
-  {
-    type: MoveEffectAbility
-    y: -3
-    interval: 3
-    rotateEffect: true
-    effect: {
-      type: RadialEffect
-      amount: 2
-      rotationSpacing: 50
-      rotationOffset: 155
-      lengthOffset: 1
-      followParent: false
-      effect: {
-        followParent: false
-        lifetime: 22
-        particles: 1
-        cone: 0
-        baseLength: 0
-        length: 13
-        randLength: false
-        interp: pow2Out
-        line: true
-        lenFrom: 5
-        lenTo: 0
-        strokeFrom: 1.1
-        strokeTo: 0
-        colorFrom: a4f0d7
-        colorTo: 5fac9e00
-        lightScl: 0
-      }
-    }
-  }
 ]
 immunities: [
   slow
@@ -596,70 +563,6 @@ weapons: [
               }
             }
           ]
-        }
-        // угольки
-        {
-          type: BulletType
-          lifetime: 0
-          speed: 0
-          collides: false
-          despawnHit: true
-          despawnEffect: none
-          hitEffect: none
-          keepVelocity: false
-          absorbable: false
-          reflectable: false
-          hittable: false
-          fragBullets: 7
-          fragVelocityMin: 1
-          fragOffsetMin: 0
-          fragOffsetMax: 0
-          fragBullet: {
-            type: BulletType
-            lifetime: 60
-            speed: 2.8
-            drag: 0.05
-            collides: false
-            despawnEffect: none
-            hitEffect: none
-            keepVelocity: false
-            absorbable: false
-            reflectable: false
-            hittable: false
-            velocityScaleRandMin: 0.6
-            randomAngleOffset: 180
-            lifeScaleRandMin: 0.8
-            weaveScale: 12
-            weaveMag: 1.2
-            parts: [
-              {
-                type: RegionPart
-                outline: false
-                layer: 110
-                name: circle-shadow
-                color: a4f0d77f
-                blending: additive
-                progress: life
-                xScl: 0.038
-                yScl: 0.038
-                growX: -0.038
-                growY: -0.038
-              }
-              {
-                type: RegionPart
-                outline: false
-                layer: 110
-                name: circle
-                color: ffffff7f
-                blending: additive
-                progress: life
-                xScl: 0.038
-                yScl: 0.038
-                growX: -0.038
-                growY: -0.038
-              }
-            ]
-          }
         }
       ]
       fragBullets: 6
