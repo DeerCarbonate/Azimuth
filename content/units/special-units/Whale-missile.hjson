@@ -536,8 +536,8 @@ weapons: [
               name: azimut-light
               layer: 110.2
               blending: additive
-              xScl: 1.4
-              yScl: 1.4
+              xScl: 1.05
+              yScl: 1.05
               color: a4f0d77f
               colorTo: a4f0d700
               progress: {
@@ -553,8 +553,8 @@ weapons: [
               name: azimut-light
               layer: 110.2
               blending: additive
-              xScl: 0.7
-              yScl: 0.7
+              xScl: 0.525
+              yScl: 0.525
               color: ffffff7f
               colorTo: ffffff00
               progress: {
