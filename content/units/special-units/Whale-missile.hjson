@@ -1,5 +1,4 @@
-//some effects was inspired & borrowed from todi's work. Soooooo... phshgpg[sg]
-//aand some effect testing..
+//some effects was inspired & borrowed from todi's work.
 type: missile
 template: MissileUnitType
 controller: MissileAI
@@ -29,8 +28,41 @@ health: 65
 speed: 2.5
 armor: 1
 homingDelay: 30
-deathExplosionEffect: none
 loopSoundVolume: 0.25
+
+// Общая основа обоих взрывов: статичное кольцо и ударная волна
+deathExplosionEffect: {
+  type: MultiEffect
+  lifetime: 40
+  effects: [
+    {
+      followParent: false
+      length: 0
+      lifetime: 35
+      particles: 1
+      cone: 0
+      region: azimut-shockwave
+      sizeFrom: 20
+      sizeTo: 23
+      colorTo: a4f0d700
+      baseRotation: 180
+      interp: pow3Out
+    }
+    {
+      type: WaveEffect
+      rotWithParent: true
+      followParent: true
+      lifetime: 35
+      sizeFrom: 26
+      sizeTo: 28
+      strokeFrom: 6
+      strokeTo: 2
+      colorFrom: a4f0d780
+      colorTo: 5fac9e00
+      interp: pow3Out
+    }
+  ]
+}
 
 trailColor: a4f0d7
 trailLength: 10
@@ -70,6 +102,58 @@ abilities: [
       sizeTo: 0
     }
   }
+  // ТРЕЙЛ 1: яркое ядро
+  {
+    type: MoveEffectAbility
+    y: -2.5
+    interval: 1
+    effect: {
+      lifetime: 16
+      particles: 1
+      cone: 0
+      baseLength: 0
+      length: 0
+      sizeFrom: 1.6
+      sizeTo: 0
+      colorFrom: ffffff
+      colorTo: a4f0d700
+      lightScl: 0
+    }
+  }
+  // ТРЕЙЛ 2: V-кильватер (две линии назад под углом +-25 градусовв)
+  {
+    type: MoveEffectAbility
+    y: -3
+    interval: 3
+    rotateEffect: true
+    effect: {
+      type: RadialEffect
+      amount: 2
+      rotationSpacing: 50
+      rotationOffset: 155
+      lengthOffset: 1
+      followParent: false
+      effect: {
+        followParent: false
+        lifetime: 22
+        particles: 1
+        cone: 0
+        baseLength: 0
+        length: 13
+        randLength: false
+        interp: pow2Out
+        line: true
+        lenFrom: 5
+        lenTo: 0
+        strokeFrom: 1.1
+        strokeTo: 0
+        colorFrom: a4f0d7
+        colorTo: 5fac9e00
+        lightScl: 0
+      }
+    }
+  }
+  // ТРЕЙЛ 3: бусины (расходятся перпендикулярно курсу)
   {
     type: MoveEffectAbility
     y: -3
@@ -100,22 +184,66 @@ abilities: [
       }
     }
   }
+  // ТРЕЙЛ 4: малые кольца
   {
     type: MoveEffectAbility
     y: -2
-    interval: 11
+    interval: 8
     effect: {
       type: WaveEffect
-      lifetime: 22
+      lifetime: 18
       sizeFrom: 1
-      sizeTo: 7
-      strokeFrom: 1.2
+      sizeTo: 5.5
+      strokeFrom: 1
       strokeTo: 0
       colorFrom: a4f0d7
       colorTo: 5fac9e00
       interp: pow3Out
     }
   }
+  // ТРЕЙЛ 5: большие кольца
+  {
+    type: MoveEffectAbility
+    y: -2
+    interval: 26
+    effect: {
+      type: WaveEffect
+      lifetime: 30
+      sizeFrom: 2
+      sizeTo: 13
+      strokeFrom: 1.8
+      strokeTo: 0
+      colorFrom: b5d0ba
+      colorTo: 5fac9e00
+      interp: pow3Out
+    }
+  }
+  // ТРЕЙЛ 6: искры веером назад
+  {
+    type: MoveEffectAbility
+    y: -3
+    interval: 5
+    rotateEffect: true
+    effect: {
+      type: ParticleEffect
+      particles: 1
+      lifetime: 14
+      baseRotation: 180
+      cone: 140
+      baseLength: 0
+      length: 16
+      interp: pow3Out
+      line: true
+      lenFrom: 6
+      lenTo: 0
+      strokeFrom: 1
+      strokeTo: 0.4
+      colorFrom: ffffff
+      colorTo: a4f0d700
+      lightScl: 0
+    }
+  }
+  // ТРЕЙЛ 7: кристальные искры
   {
     type: MoveEffectAbility
     y: -3
@@ -135,6 +263,25 @@ abilities: [
       sizeTo: 0
       spin: 4
       colorFrom: ffffff
+      colorTo: a4f0d700
+      lightScl: 0
+    }
+  }
+  // ТРЕЙЛ 8: мягкое свечение
+  {
+    type: MoveEffectAbility
+    y: -2
+    interval: 2
+    effect: {
+      type: ParticleEffect
+      region: azimut-light
+      lifetime: 14
+      particles: 1
+      cone: 0
+      length: 0
+      sizeFrom: 6
+      sizeTo: 0
+      colorFrom: a4f0d73a
       colorTo: a4f0d700
       lightScl: 0
     }
@@ -338,7 +485,7 @@ parts: [
 ]
 
 weapons: [
-  // ОРУЖИЕ 121у12а
+  // ОРУЖИЕ 1: слабый взрыв (столкновение). Только вспышка света поверх общей основы
   {
     shootOnDeath: true
     shootCone: 360
@@ -389,8 +536,8 @@ weapons: [
               name: azimut-light
               layer: 110.2
               blending: additive
-              xScl: 2.8
-              yScl: 2.8
+              xScl: 1.4
+              yScl: 1.4
               color: a4f0d77f
               colorTo: a4f0d700
               progress: {
@@ -406,8 +553,8 @@ weapons: [
               name: azimut-light
               layer: 110.2
               blending: additive
-              xScl: 1.4
-              yScl: 1.4
+              xScl: 0.7
+              yScl: 0.7
               color: ffffff7f
               colorTo: ffffff00
               progress: {
@@ -422,7 +569,7 @@ weapons: [
       ]
     }
   }
-  // я насрал оружием 2
+  // ОРУЖИЕ 2: сильный взрыв (таймер). Доп. урон и полный набор эффектов
   {
     reload: 5000
     x: 0
@@ -500,20 +647,6 @@ weapons: [
           interp: pow3Out
         }
         {
-          followParent: false
-          length: 0
-          lifetime: 36
-          particles: 1
-          cone: 0
-          region: azimut-shockwave
-          sizeFrom: 4
-          sizeTo: 22
-          colorFrom: ffffff
-          colorTo: a4f0d700
-          baseRotation: 180
-          interp: pow3Out
-        }
-        {
           type: ParticleEffect
           particles: 9
           lifetime: 26
@@ -588,8 +721,8 @@ weapons: [
               name: azimut-light
               layer: 110.2
               blending: additive
-              xScl: 4.2
-              yScl: 4.2
+              xScl: 2.1
+              yScl: 2.1
               color: a4f0d77f
               colorTo: a4f0d700
               progress: {
@@ -605,8 +738,8 @@ weapons: [
               name: azimut-light
               layer: 110.2
               blending: additive
-              xScl: 2.1
-              yScl: 2.1
+              xScl: 1.05
+              yScl: 1.05
               color: ffffff7f
               colorTo: ffffff00
               progress: {
