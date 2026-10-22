@@ -105,49 +105,75 @@ interp: pow3Out
 
 weapons: [
 		{
-		    "name": retray-mine-weapon,
-			"recoil": 0,
-            "shootY": 0,
-			"mirror": false,
-			"alternate": false,
-			"rotate": true,
-			"rotateSpeed": 3.6,
-			"reload": 36,
-			"inaccuracy": 3,
-			"shootSound": shootCyclone,
-			"controllable": true,
-			"aiControllable": true,
-			"y": 0
-			"x": 0
-		    velocityRnd:0.2
-shoot: {
+		  name: retray-mine-weapon
+			recoil: 0
+      shootY: 0
+			mirror: false
+			alternate: false
+			rotate: true
+			rotateSpeed: 3.6
+			reload: 30
+			inaccuracy: 3
+			shootSound: none
+			controllable: true
+			aiControllable: true
+		  y: 0
+			x: 0
+		  velocityRnd:0.2
+    shoot: {
     type: ShootSpread
     firstShotDelay: 0
-    shotDelay: 25
+    shotDelay: 10
     spread: 2
     shots: 2
     }
     bullet: {
+      shootEffect: [
+        {
+          type: SoundEffect
+          minPitch: 0.9
+          maxPitch: 1.1
+          effect: none
+          sound: shootMetal1
+          minVolume: 0.75
+          maxVolume: 0.85
+        }
+        {
+    type: ParticleEffect
+    lifetime: 20
+    particles: 2
+    length: 15
+    line: true
+    strokeTo: 0
+    lenFrom: 4.5
+    lenTo: 0
+    colorFrom: ffffff
+    colorTo: fcf0bd
+    cone: 5
+	  interp: pow2
+    sizeInterp: pow3In
+    }
+      ]
     type: BasicBulletType
-	buildingDamageMultiplier: 0.15
+	  buildingDamageMultiplier: 0.15
     backColor: fcf0bd
     frontColor: ffffff
     height: 8
     width: 6
     lifetime: 35
-    damage: 42
+    damage: 38
     speed: 4.8
     pierce: true
     pierceCap: 2
     trailColor: fcf0bd
     trailLength: 4
     trailWidth: 1.3
-	smokeEffect: colorSpark
+	  smokeEffect: none
     hitEffect: none
     collidesTiles: true
     keepVelocity: false
     collidesAir: false
-	despawnEffect: {
+	  despawnEffect: {
     type: WaveEffect
     rotWithParent: true
     followParent: true
