@@ -305,10 +305,10 @@ parts: [
     shapes: 3
     color: fcf0bd
     layer: 110
-    haloRadius: 0
+    haloRadius: 2.5
     haloRadiusTo: 6
-    radius: 2
-    radiusTo: 8
+    radius: 8
+    radiusTo: 5
     triLength: 2
     triLengthTo: 8
     haloRotateSpeed: -1.35
