@@ -484,23 +484,6 @@ weapons: [
           lightScl: 0
         }
         {
-          type: ParticleEffect
-          region: azimut-triangle
-          particles: 7
-          lifetime: 34
-          length: 34
-          baseLength: 2
-          cone: 360
-          interp: pow3Out
-          sizeInterp: pow2In
-          sizeFrom: 4.5
-          sizeTo: 0
-          spin: 3
-          colorFrom: a4f0d7
-          colorTo: 5fac9e00
-          lightScl: 0
-        }
-        {
           type: SoundEffect
           minPitch: 0.9
           maxPitch: 1.1
