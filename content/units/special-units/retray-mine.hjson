@@ -24,7 +24,7 @@ rotateSpeed: 0
 
 lifetime: 700
 fogRadius: 0
-health: 400
+health: 375
 armor: 8
 loopSoundVolume: 0
 engineSize: 0
@@ -155,6 +155,7 @@ weapons: [
     }
       ]
     type: BasicBulletType
+    armorMultiplier: 1.15
 	  buildingDamageMultiplier: 0.15
     backColor: fcf0bd
     frontColor: ffffff
