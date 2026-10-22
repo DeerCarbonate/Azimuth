@@ -161,7 +161,7 @@ weapons: [
     height: 8
     width: 6
     lifetime: 35
-    damage: 38
+    damage: 36
     speed: 4.8
     pierce: true
     pierceCap: 2
@@ -174,17 +174,37 @@ weapons: [
     keepVelocity: false
     collidesAir: false
 	  despawnEffect: {
-    type: WaveEffect
-    rotWithParent: true
-    followParent: true
-    lifetime: 12
-
-    sizeFrom: 0
-    sizeTo: 8
-
-    colorFrom: ffffff
-    colorTo: fcf0bd00
-    }
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: fcf0bd
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: fcf0bd
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: fcf0bd
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
+      }
+      	  hitEffect: {
+        type: ExplosionEffect
+        lifetime: 15
+        waveColor: fcf0bd
+        waveStroke: 1.2
+        waveRad: 2.5
+        smokeColor: fcf0bd
+        smokeSizeBase: 0
+        smokeSize: 5.5
+        smokes: 0
+        sparkColor: fcf0bd
+        sparkStroke: 1.6
+        sparkRad: 17.5
+        sparkLen: 2
+        sparks: 3
+      }
 			}
 		}
   {
@@ -290,7 +310,7 @@ parts: [
     shapes: 3
     color: fcf0bd
     layer: 110
-    haloRadius: 6
+    haloRadius: 5.5
     haloRadiusTo: 2.5
     radius: 5
     radiusTo: 8
@@ -306,7 +326,7 @@ parts: [
     color: fcf0bd
     layer: 110
     haloRadius: 2.5
-    haloRadiusTo: 6
+    haloRadiusTo: 5.5
     radius: 8
     radiusTo: 5
     triLength: 2
