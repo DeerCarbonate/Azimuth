@@ -102,25 +102,7 @@ abilities: [
       sizeTo: 0
     }
   }
-  // ТРЕЙЛ 1: яркое ядро
-  {
-    type: MoveEffectAbility
-    y: -2.5
-    interval: 1
-    effect: {
-      lifetime: 16
-      particles: 1
-      cone: 0
-      baseLength: 0
-      length: 0
-      sizeFrom: 1.6
-      sizeTo: 0
-      colorFrom: ffffff
-      colorTo: a4f0d700
-      lightScl: 0
-    }
-  }
-  // ТРЕЙЛ 2: V-кильватер (две линии назад под углом +-25 градусовв)
+  // НАХУЙ ВЕСЬ ЭТОт  ТРЙЕЙЛ ПОЛУЧИЛАСЬ ХУЙНЯ
   {
     type: MoveEffectAbility
     y: -3
@@ -184,90 +166,6 @@ abilities: [
       }
     }
   }
-  // ТРЕЙЛ 4: малые кольца
-  {
-    type: MoveEffectAbility
-    y: -2
-    interval: 8
-    effect: {
-      type: WaveEffect
-      lifetime: 18
-      sizeFrom: 1
-      sizeTo: 5.5
-      strokeFrom: 1
-      strokeTo: 0
-      colorFrom: a4f0d7
-      colorTo: 5fac9e00
-      interp: pow3Out
-    }
-  }
-  // ТРЕЙЛ 5: большие кольца
-  {
-    type: MoveEffectAbility
-    y: -2
-    interval: 26
-    effect: {
-      type: WaveEffect
-      lifetime: 30
-      sizeFrom: 2
-      sizeTo: 13
-      strokeFrom: 1.8
-      strokeTo: 0
-      colorFrom: b5d0ba
-      colorTo: 5fac9e00
-      interp: pow3Out
-    }
-  }
-  // ТРЕЙЛ 6: искры веером назад
-  {
-    type: MoveEffectAbility
-    y: -3
-    interval: 5
-    rotateEffect: true
-    effect: {
-      type: ParticleEffect
-      particles: 1
-      lifetime: 14
-      baseRotation: 180
-      cone: 140
-      baseLength: 0
-      length: 16
-      interp: pow3Out
-      line: true
-      lenFrom: 6
-      lenTo: 0
-      strokeFrom: 1
-      strokeTo: 0.4
-      colorFrom: ffffff
-      colorTo: a4f0d700
-      lightScl: 0
-    }
-  }
-  // ТРЕЙЛ 7: кристальные искры
-  {
-    type: MoveEffectAbility
-    y: -3
-    interval: 4
-    rotateEffect: true
-    effect: {
-      type: ParticleEffect
-      region: azimut-triangle
-      lifetime: 34
-      particles: 1
-      cone: 360
-      baseLength: 0
-      length: 9
-      interp: circleOut
-      sizeInterp: pow3In
-      sizeFrom: 3.2
-      sizeTo: 0
-      spin: 4
-      colorFrom: ffffff
-      colorTo: a4f0d700
-      lightScl: 0
-    }
-  }
-  // ТРЕЙЛ 8: мягкое свечение
   {
     type: MoveEffectAbility
     y: -2
@@ -297,30 +195,6 @@ immunities: [
 ]
 
 parts: [
-  {
-    type: RegionPart
-    outline: false
-    name: azimut-light
-    layer: 91
-    blending: additive
-    xScl: 0.44
-    yScl: 0.4
-    color: b5d0ba7f
-    colorTo: ffffff7f
-    progress: {
-      type: life
-      ops: [
-        {
-          op: curve
-          interp: pow5In
-        }
-        {
-          op: delay
-          amount: 0.25
-        }
-      ]
-    }
-  }
   {
     type: ShapePart
     hollow: true
@@ -485,7 +359,6 @@ parts: [
 ]
 
 weapons: [
-  // ОРУЖИЕ 1: слабый взрыв (столкновение). Только вспышка света поверх общей основы
   {
     shootOnDeath: true
     shootCone: 360
