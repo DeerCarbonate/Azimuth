@@ -291,12 +291,12 @@ parts: [
     color: fcf0bd
     layer: 110
     haloRadius: 6
-    haloRadiusTo: 4.5
+    haloRadiusTo: 2.5
     radius: 5
     radiusTo: 8
-    triLength: 10
-    triLengthTo: 3
-    haloRotateSpeed: 2
+    triLength: 8
+    triLengthTo: 2
+    haloRotateSpeed: 1.35
   }
   {
     type: HaloPart
@@ -306,12 +306,12 @@ parts: [
     color: fcf0bd
     layer: 110
     haloRadius: 0
-    haloRadiusTo: 8
-    radius: 4
-    radiusTo: 6
-    triLength: 4
-    triLengthTo: 4
-    haloRotateSpeed: 1.2
+    haloRadiusTo: 6
+    radius: 2
+    radiusTo: 8
+    triLength: 2
+    triLengthTo: 8
+    haloRotateSpeed: -1.35
   }
   {
     type: ShapePart
