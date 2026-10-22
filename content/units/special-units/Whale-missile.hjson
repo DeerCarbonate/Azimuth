@@ -29,7 +29,6 @@ speed: 2.5
 armor: 1
 homingDelay: 30
 loopSoundVolume: 0.25
-
 // Общая основа обоих взрывов: статичное кольцо и ударная волна
 deathExplosionEffect: {
   type: MultiEffect
@@ -63,7 +62,6 @@ deathExplosionEffect: {
     }
   ]
 }
-
 trailColor: a4f0d7
 trailLength: 10
 engineColor: a4f0d7
@@ -72,7 +70,6 @@ engineOffset: 3
 engineLayer: 100
 shieldColor: a4f0d788
 healColor: a4f0d788
-
 abilities: [
   {
     type: EnergyFieldAbility
@@ -135,57 +132,7 @@ abilities: [
       }
     }
   }
-  // ТРЕЙЛ 3: бусины (расходятся перпендикулярно курсу)
-  {
-    type: MoveEffectAbility
-    y: -3
-    interval: 2
-    rotateEffect: true
-    effect: {
-      type: RadialEffect
-      amount: 2
-      rotationSpacing: 180
-      rotationOffset: 90
-      lengthOffset: 0.8
-      followParent: false
-      effect: {
-        followParent: false
-        lifetime: 28
-        particles: 1
-        cone: 0
-        baseLength: 0
-        length: 6
-        randLength: false
-        interp: pow2Out
-        sizeInterp: pow2In
-        sizeFrom: 1.5
-        sizeTo: 0
-        colorFrom: a4f0d7
-        colorTo: 5fac9e00
-        lightScl: 0
-      }
-    }
-  }
-  {
-    type: MoveEffectAbility
-    y: -2
-    interval: 2
-    effect: {
-      type: ParticleEffect
-      region: azimut-light
-      lifetime: 14
-      particles: 1
-      cone: 0
-      length: 0
-      sizeFrom: 6
-      sizeTo: 0
-      colorFrom: a4f0d73a
-      colorTo: a4f0d700
-      lightScl: 0
-    }
-  }
 ]
-
 immunities: [
   slow
   spore-slowed
@@ -193,7 +140,6 @@ immunities: [
   emp
   pierced
 ]
-
 parts: [
   {
     type: ShapePart
@@ -357,7 +303,6 @@ parts: [
     }
   }
 ]
-
 weapons: [
   {
     shootOnDeath: true
