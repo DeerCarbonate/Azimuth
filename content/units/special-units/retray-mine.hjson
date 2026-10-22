@@ -135,8 +135,8 @@ weapons: [
           maxPitch: 1.1
           effect: none
           sound: shootMetal1
-          minVolume: 0.75
-          maxVolume: 0.85
+          minVolume: 0.65
+          maxVolume: 0.75
         }
         {
     type: ParticleEffect
