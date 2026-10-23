@@ -506,7 +506,7 @@ ammoTypes: {
               progress: {
                 type: life
                 op: curve
-                interp: pow8Out
+                interp: pow10Out
               }
             }
             {
