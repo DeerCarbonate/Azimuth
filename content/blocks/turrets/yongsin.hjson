@@ -272,7 +272,7 @@ interp: pow3Out
         fragBullets: 11
         fragLifeMin: 1.2
         fragLifeMax: 2
-              spawnBullets: [
+        spawnBullets: [
         {
           type: BulletType
           lifetime: 26
