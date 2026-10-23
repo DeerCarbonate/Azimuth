@@ -286,7 +286,7 @@ weapons: [
       maxRange: 6
       buildingDamageMultiplier: 1.25
       splashDamageRadius: 30
-      splashDamage: 75
+      splashDamage: 80
       hitSound: none
       hitEffect: none
       despawnEffect: none
@@ -378,8 +378,8 @@ weapons: [
       collidesAir: false
       despawnShake: 1.2
       maxRange: 6
-      buildingDamageMultiplier: 1.5
-      splashDamageRadius: 38
+      buildingDamageMultiplier: 1.45
+      splashDamageRadius: 37
       splashDamage: 115
       hittable: false
       absorbable: false
