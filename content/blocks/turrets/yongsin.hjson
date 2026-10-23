@@ -284,6 +284,102 @@ pierceCap: 7
 buildingDamageMultiplier: 0.1
 hitEffect: none
 armorMultiplier: 4
+      spawnBullets: [
+        // вспышка и кольца
+        {
+          type: BulletType
+          lifetime: 26
+          speed: 0
+          collides: false
+          despawnEffect: none
+          hitEffect: none
+          keepVelocity: false
+          absorbable: false
+          reflectable: false
+          hittable: false
+          parts: [
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 2.1
+              yScl: 2.1
+              color: dacaaa7f
+              colorTo: a4f0d700
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.35
+              }
+            }
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 1.05
+              yScl: 1.05
+              color: ffffff7f
+              colorTo: ffffff00
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.35
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              hollow: true
+              colorTo: dacaaa
+              layer: 110
+              stroke: 3.2
+              strokeTo: 0
+              radius: 20
+              radiusTo: 40
+              progress: {
+                type: life
+                op: curve
+                interp: pow5Out
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              hollow: true
+              layer: 110
+              stroke: 1.2
+              strokeTo: 0
+              radius: 40
+              radiusTo: 72
+              progress: {
+                type: life
+                op: curve
+                interp: pow10Out
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              color: dacaaa
+              colorTo: 6a584300
+              layer: 110
+              radius: 20
+              radiusTo: 40
+              progress: {
+                type: life
+                op: curve
+                interp: pow5Out
+              }
+            }
+          ]
+        }
+      ]
 fragBullet: {
       type: LaserBulletType
       colors: [dacaaa, d9cdaf, a59c85, 957655, 6a5843]
