@@ -594,44 +594,7 @@ ammoTypes: {
                 ]
               }
             }
-            {
-              type: FlarePart
-              sides: 4
-              radius: 95
-              radiusTo: 0
-              stroke: 5
-              color1: c3feff
-              color2: ffffff
-              rotation: 0
-              rotMove: 40
-              followRotation: false
-              layer: 110.3
-              progress: {
-                type: life
-                op: compress
-                start: 0
-                end: 0.55
-              }
-            }
-            {
-              type: FlarePart
-              sides: 4
-              radius: 62
-              radiusTo: 0
-              stroke: 3.2
-              color1: 6898c3
-              color2: c3feff
-              rotation: 45
-              rotMove: -40
-              followRotation: false
-              layer: 110.3
-              progress: {
-                type: life
-                op: compress
-                start: 0
-                end: 0.5
-              }
-            }
+            // пшли нахафыоаофл флейр парты
             {
               type: ShapePart
               circle: true
