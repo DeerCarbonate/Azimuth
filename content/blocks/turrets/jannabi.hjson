@@ -475,7 +475,7 @@ ammoTypes: {
                 type: life
                 op: compress
                 start: 0
-                end: 0.35
+                end: 0.45
               }
             }
             {
@@ -491,7 +491,7 @@ ammoTypes: {
               progress: {
                 type: life
                 op: curve
-                interp: pow5Out
+                interp: pow3Out
               }
             }
             {
@@ -506,7 +506,7 @@ ammoTypes: {
               progress: {
                 type: life
                 op: curve
-                interp: pow10Out
+                interp: pow8Out
               }
             }
             {
@@ -520,7 +520,7 @@ ammoTypes: {
               progress: {
                 type: life
                 op: curve
-                interp: pow5Out
+                interp: pow4Out
               }
             }
           ]
