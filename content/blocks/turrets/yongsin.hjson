@@ -165,9 +165,6 @@ splashDamageRadius: 35
 rangeChange: -25
 backColor: 957655
 frontColor: dacaaa
-fragBullets: 11
-fragLifeMin: 1.2
-fragLifeMax: 2
 scaleLife: false
 buildingDamageMultiplier: 0.1
 trailChance: 0.25
@@ -256,7 +253,26 @@ interp: pow3Out
   maxVolume: 0.85
 }
 ]
-      spawnBullets: [
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        reflectable: false
+        keepVelocity: false
+        despawnHit: true
+        hitEffect: none
+        despawnEffect: none
+        fragBullets: 11
+        fragLifeMin: 1.2
+        fragLifeMax: 2
+              spawnBullets: [
         {
           type: BulletType
           lifetime: 26
@@ -278,7 +294,7 @@ interp: pow3Out
               xScl: 2.1
               yScl: 2.1
               color: dacaaa7f
-              colorTo: a4f0d700
+              colorTo: dacaaa00
               progress: {
                 type: life
                 op: compress
@@ -338,7 +354,7 @@ interp: pow3Out
               type: ShapePart
               circle: true
               color: dacaaa
-              colorTo: 6a584300
+              colorTo: dacaaa00
               layer: 110
               radius: 20
               radiusTo: 40
@@ -396,6 +412,7 @@ fragBullet: {
 	  armorMultiplier: 4
 		}
 	}
+      }
 	shootEffect: [
 {
 followParent: false
