@@ -414,6 +414,119 @@ ammoTypes: {
         offset: 135
       }
     ]
+      fragBullets: 1
+      fragRandomSpread: 0
+      fragOffsetMin: 0
+      fragOffsetMax: 0
+      //some effects was inspired & borrowed from todi's work.
+      fragBullet: {
+        type: BulletType
+        speed: 0
+        lifetime: 0
+        collides: false
+        hittable: false
+        absorbable: false
+        reflectable: false
+        keepVelocity: false
+        despawnHit: true
+        hitEffect: none
+        despawnEffect: none
+        spawnBullets: [
+        {
+          type: BulletType
+          lifetime: 26
+          speed: 0
+          collides: false
+          despawnEffect: none
+          hitEffect: none
+          keepVelocity: false
+          absorbable: false
+          reflectable: false
+          hittable: false
+          parts: [
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 3.1
+              yScl: 3.1
+              color: c3feff7f
+              colorTo: c3feff00
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.35
+              }
+            }
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 2.05
+              yScl: 2.05
+              color: ffffff7f
+              colorTo: ffffff00
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.35
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              hollow: true
+              colorTo: c3feff
+              layer: 110
+              stroke: 6.2
+              strokeTo: 0
+              radius: 30
+              radiusTo: 50
+              progress: {
+                type: life
+                op: curve
+                interp: pow5Out
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              hollow: true
+              layer: 110
+              stroke: 1.8
+              strokeTo: 0
+              radius: 50
+              radiusTo: 82
+              progress: {
+                type: life
+                op: curve
+                interp: pow10Out
+              }
+            }
+            {
+              type: ShapePart
+              circle: true
+              color: c3feff
+              colorTo: c3feff00
+              layer: 110
+              radius: 30
+              radiusTo: 50
+              progress: {
+                type: life
+                op: curve
+                interp: pow5Out
+              }
+            }
+          ]
+        }
+      ]
+    }
   }
   caterium: {
     // thx Undaria (Calamity mod) for units (which forms EMP field)
