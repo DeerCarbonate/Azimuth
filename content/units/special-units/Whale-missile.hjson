@@ -470,7 +470,6 @@ weapons: [
         }
       ]
       spawnBullets: [
-        // вспышка и кольца
         {
           type: BulletType
           lifetime: 26

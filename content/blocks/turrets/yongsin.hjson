@@ -256,36 +256,7 @@ interp: pow3Out
   maxVolume: 0.85
 }
 ]
-fragBullet: {
-type: BasicBulletType
-trailLength: 16
-trailWidth: 1.8
-trailColor: dacaaa
-weaveMag: 4
-weaveScale: 55
-width: 9
-height: 12
-speed: 3.2
-collidesTiles: true
-collidesGround: true
-lifetime: 35
-damage: 24
-backColor: 957655
-frontColor: dacaaa
-despawnEffect: none
-fragBullets: 1
-fragVelocityMin: 1
-fragVelocityMax: 1
-fragRandomSpread: 0
-fragSpread: 1
-pierceBuilding: false
-pierce: true
-pierceCap: 7
-buildingDamageMultiplier: 0.1
-hitEffect: none
-armorMultiplier: 4
       spawnBullets: [
-        // вспышка и кольца
         {
           type: BulletType
           lifetime: 26
@@ -380,6 +351,34 @@ armorMultiplier: 4
           ]
         }
       ]
+fragBullet: {
+type: BasicBulletType
+trailLength: 16
+trailWidth: 1.8
+trailColor: dacaaa
+weaveMag: 4
+weaveScale: 55
+width: 9
+height: 12
+speed: 3.2
+collidesTiles: true
+collidesGround: true
+lifetime: 35
+damage: 24
+backColor: 957655
+frontColor: dacaaa
+despawnEffect: none
+fragBullets: 1
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragRandomSpread: 0
+fragSpread: 1
+pierceBuilding: false
+pierce: true
+pierceCap: 7
+buildingDamageMultiplier: 0.1
+hitEffect: none
+armorMultiplier: 4
 fragBullet: {
       type: LaserBulletType
       colors: [dacaaa, d9cdaf, a59c85, 957655, 6a5843]
