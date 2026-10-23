@@ -432,7 +432,7 @@ ammoTypes: {
       despawnEffect: none
       hitEffect: {
         type: MultiEffect
-        lifetime: 120
+        lifetime: 140
         effects: [
           {
             type: ParticleEffect
@@ -459,6 +459,38 @@ ammoTypes: {
             colorFrom: b4c0ca66
             colorTo: b4c0ca00
             sizeFrom: 6
+            sizeTo: 0
+            layer: 91
+            interp: pow5Out
+            sizeInterp: pow2In
+            lightScl: 0
+          }
+          {
+            type: ParticleEffect
+            lifetime: 130
+            region: circle-shadow
+            particles: 10
+            baseLength: 64
+            length: 16
+            colorFrom: 9aa8b44a
+            colorTo: 9aa8b400
+            sizeFrom: 12
+            sizeTo: 28
+            layer: 90.5
+            interp: pow3Out
+            sizeInterp: pow2Out
+            lightScl: 0
+          }
+
+          {
+            type: ParticleEffect
+            lifetime: 90
+            particles: 12
+            baseLength: 74
+            length: 18
+            colorFrom: b4c0ca55
+            colorTo: b4c0ca00
+            sizeFrom: 5
             sizeTo: 0
             layer: 91
             interp: pow5Out
@@ -665,7 +697,7 @@ ammoTypes: {
           fragOffsetMax: 0
           fragBullet: {
             type: BulletType
-            lifetime: 80
+            lifetime: 95
             speed: 5.2
             drag: 0.05
             collides: false
@@ -687,7 +719,7 @@ ammoTypes: {
               particles: 1
               length: 0
               baseLength: 1.5
-              colorFrom: b4bcc4c0
+              colorFrom: b4bcc4a0
               colorTo: b4bcc400
               sizeFrom: 0.8
               sizeTo: 2.6
@@ -704,10 +736,10 @@ ammoTypes: {
                 color: c3feff9f
                 blending: additive
                 progress: life
-                xScl: 0.06
-                yScl: 0.06
-                growX: -0.06
-                growY: -0.06
+                xScl: 0.08
+                yScl: 0.08
+                growX: -0.08
+                growY: -0.08
               }
               {
                 type: RegionPart
@@ -717,10 +749,10 @@ ammoTypes: {
                 color: ffffff9f
                 blending: additive
                 progress: life
-                xScl: 0.06
-                yScl: 0.06
-                growX: -0.06
-                growY: -0.06
+                xScl: 0.08
+                yScl: 0.08
+                growX: -0.08
+                growY: -0.08
               }
             ]
           }
