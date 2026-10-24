@@ -22,6 +22,7 @@ require("multiblock12");
 require("multiblock13");
 require("multiblock14");
 require("construct");
+require("icon");
 
 const FollowAllyAI = require("followai");
 

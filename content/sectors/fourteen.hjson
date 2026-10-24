@@ -1,0 +1,19 @@
+difficulty: 10
+planet: gelion
+name: thirteen
+sector: 89
+outline: false
+research: {
+parent: ten
+requiresUnlock: false
+objectives: [
+{
+type: SectorComplete
+preset: ten
+  }
+  {
+type: SectorComplete
+preset: elev
+  }
+ ]
+}
