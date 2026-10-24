@@ -30,7 +30,7 @@ consumes: {
    gas-ammonia/0.955
 	]
 items: [
-venerium/2
+venerium/1
 ]
 }
 hasLiquids: true
