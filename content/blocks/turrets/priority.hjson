@@ -139,7 +139,8 @@ shootType: {
 	pierceArmor: false
     pierce: true
     pierceCap: 3
-	
+	  status: charred
+    statusDuration: 360
     lifetime: 12
     damage: 210
     armorMultiplier: 1.2
