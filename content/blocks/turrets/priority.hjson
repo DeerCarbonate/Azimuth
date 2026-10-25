@@ -85,8 +85,8 @@ objectives: [
           maxPitch: 0.98
           effect: none
           sound: shootPriority
-          minVolume: 0.35
-          maxVolume: 0.45
+          minVolume: 0.3
+          maxVolume: 0.5
         }
         		{
           type: SoundEffect
@@ -94,8 +94,8 @@ objectives: [
           maxPitch: 1.4
           effect: none
           sound: explosionSparkling
-          minVolume: 0.25
-          maxVolume: 0.35
+          minVolume: 0.35
+          maxVolume: 0.45
         }
 		]
   			      smokeEffect: [{
