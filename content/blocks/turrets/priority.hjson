@@ -102,14 +102,14 @@ objectives: [
         type: ParticleEffect
         colorFrom: d8868680
         colorTo: 99999900
-        particles: 9
-        cone: 28
-        lifetime: 75
-        length: 65
+        particles: 8
+        cone: 13
+        lifetime: 65
+        length: 55
         interp: pow4Out
 		sizeInterp: pow2In
-        sizeFrom: 3.2
-        sizeTo: 0.3
+        sizeFrom: 3.5
+        sizeTo: 0.5
         }
 	    ]
 shootType: {
