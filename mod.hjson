@@ -58,6 +58,13 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     mestaline-steel
     polyether-resin
     polonium
+    packed-isobutane
+    packed-ammonia
+    packed-power
+    packed-iterin
+    packed-cesium
+    packed-nitrogen
+    packed-swartzite
     isobutane
     ammonia
     power
@@ -243,6 +250,8 @@ Code: [[]white]KO[[]][[]#A4A4A4]STO[[]][[]#6D6D6D]LOM[[]]
     conversion-tube1
     conversion-tube2
     decoder
+    liquid-packager
+    liquid-unpacker
     mechanical-quarry
     cold-conversion-solar-panel
     relic-drill

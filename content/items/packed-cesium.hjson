@@ -1,0 +1,10 @@
+    color: ffffff
+    hardness: 1
+    charge: 0
+    explosiveness: 1.1
+    flammability: 1.1
+    radioactivity: 0
+    cost: 0
+    shownPlanets: [gelion]
+    hideDatabase: true
+    alwaysUnlocked: true

@@ -1,0 +1,37 @@
+type: GenericCrafter
+category: crafting
+size: 2
+health: 140
+squareSprite: false
+hasLiquids: true
+hasItems: true
+liquidCapacity: 30
+itemCapacity: 10
+craftTime: 60
+craftEffect: none
+requirements: [
+    cobalt/55
+    caterium/15
+]
+consumes: {
+    power: 0.18
+    items: [
+        cobalt/1
+    ]
+}
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawDefault
+        }
+    ]
+}
+research: {
+  parent: "energy-converter"
+  planet: gelion
+    "requirements": [
+    cobalt/20
+    caterium/10
+]
+}

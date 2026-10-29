@@ -23,6 +23,8 @@ require("multiblock13");
 require("multiblock14");
 require("construct");
 require("icon");
+require("liquid-packager");
+require("liquid-unpacker");
 
 const FollowAllyAI = require("followai");
 

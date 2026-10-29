@@ -1,0 +1,32 @@
+type: GenericCrafter
+category: crafting
+size: 2
+health: 115
+squareSprite: false
+hasLiquids: true
+hasItems: true
+outputsLiquid: true
+liquidCapacity: 30
+itemCapacity: 10
+craftTime: 60
+craftEffect: none
+requirements: [
+    venerium/35
+    platinum/50
+]
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawDefault
+        }
+    ]
+}
+research: {
+  parent: "liquid-packager"
+  planet: gelion
+    "requirements": [
+    venerium/15
+    platinum/30
+]
+}
