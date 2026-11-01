@@ -1,17 +1,17 @@
     flying: true
 	outlineColor: 21202a
 	type: tether
-	hitSize: 16.5
- healColor: bf92f988
- shieldColor: bf92f988
- hidden: true
-	health: 800
+	hitSize: 9.5
+ 	healColor: bf92f988
+ 	shieldColor: bf92f988
+ 	hidden: true
+	health: 735
 	range: 0
 	itemCapacity: 40
 	speed: 4.5
-	accel: 0.04
-	drag: 0.02
-armor: 10
+	accel: 0.1
+	drag: 0.1
+	armor: 8
 	defaultController: CargoAI
     isEnemy: false
     allowedInPayloads: false
@@ -23,6 +23,6 @@ armor: 10
 		abilities: [
     {
     type: RegenAbility
-    amount: 0.07
+    amount: 0.08
 	}
     ]

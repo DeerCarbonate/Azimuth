@@ -2,6 +2,7 @@ type: legs
 flying: false
 hovering: true
 rotateSpeed: 1.1
+drawCell: false
 
 outlineColor: 22251b
 outlineRadius: 3
@@ -16,14 +17,14 @@ shieldColor: f0aba488
 healColor: f0aba488
 hitSize: 28
 
-legCount: 4
-legMoveSpace: 1.5
-legLength: 14
-legBaseOffset: 11.5
-legSpeed: 0.28
-legForwardScl: 0.58
+legCount: 6
+legMoveSpace: 1.6
+legLength: 13
+legBaseOffset: 7.3
+legSpeed: 0.2
+legForwardScl: 0.52
 rippleScale: 0.2
-lockLegBase: true
+lockLegBase: false
 legContinuousMove: true
 legSplashDamage: 7
 legSplashRange: 7
@@ -32,9 +33,6 @@ shadowElevation: 0.2
 allowLegStep: true
 faceTarget: true
 canBoost: false
-
-description: "Fires a massive energy sphere that expands over time. If the sphere does not pass through 4 enemy blocks or units, it accumulates energy and triggers a massive explosion. Can step over most terrain."
-
 weapons: [
   {
     name: Archon-weapon1
@@ -53,7 +51,7 @@ weapons: [
     reload: 650
     shake: 4
 
-    shootSound: explosionNavanax
+    shootSound: none
     chargeSound: chargeSphere
 
     shootStatus: charge
@@ -72,7 +70,7 @@ weapons: [
         radius: 0
         radiusTo: 30
         stroke: 24
-        y: -0.1
+        y: -1
         progress: charge
         layer: 101
         weaponIndex: 0
@@ -85,7 +83,7 @@ weapons: [
         radiusTo: 60
         stroke: 7
         innerRadScl: 0.70
-        y: -0.1
+        y: -1
         progress: charge
         layer: 101
         weaponIndex: 0
@@ -103,7 +101,7 @@ weapons: [
         yScl: 0.19
         growX: -0.12
         growY: -0.12
-        y: -0.1
+        y: -1
         weaponIndex: 0
       }
       {
@@ -119,65 +117,22 @@ weapons: [
         yScl: 0.1
         growX: -0.07
         growY: -0.07
-        y: -0.1
+        y: -1
         weaponIndex: 0
       }
       {
         suffix: -s
         mirror: true
-        under: true
-        progress: {
-          type: warmup
-          ops: [
-            {
-              op: delay
-              amount: 0.23
-            }
-            {
-              op: curve
-              interp: pow3In
-            }
-            {
-              op: curve
-              interp: pow3Out
-            }
-          ]
-        }
-        moveY: -1
-        moveX: -3.7
-        moveRot: 0
-        x: 0
-        y: 0
-
-        children: [
-          {
-            suffix: -r
-            mirror: true
-            moveRot: 1.5
-            moveY: 2.5
-            moveX: -1.3
-            x: 0
-            y: 0
-          }
-          {
-            suffix: -f
-            mirror: true
-            moveRot: 2.5
-            moveY: 4.5
-            moveX: -0.9
-            x: 0
-            y: 0
-          }
-          {
-            suffix: -g
-            mirror: true
-            moveRot: 3.5
-            moveY: 6.5
-            moveX: -0.7
-            x: 0
-            y: 0
-          }
-        ]
+        progress: warmup
+        moveY: 2
+        moveX: 2
+      }
+      {
+        suffix: -r
+        mirror: true
+        progress: warmup
+        moveY: 2
+        moveX: 4
       }
     ]
 
@@ -185,7 +140,7 @@ weapons: [
       type: BasicBulletType
       sprite: circle-bullet
 
-      shootEffect: {
+      shootEffect: [{
         type: WaveEffect
         rotWithParent: true
         followParent: true
@@ -197,6 +152,25 @@ weapons: [
         colorTo: f0aba400
         interp: pow3Out
       }
+      {
+        type: SoundEffect
+        minPitch: 0.5
+        maxPitch: 0.6
+        effect: none
+        sound: explosionNavanax
+        minVolume: 0.6
+        maxVolume: 0.7
+      }
+      {
+        type: SoundEffect
+        minPitch: 0.9
+        maxPitch: 1
+        effect: none
+        sound: explosionSparkling
+        minVolume: 0.5
+        maxVolume: 0.6
+      }
+      ]
       damage: 200
       shootSound: explosionNavanax
       hitSound: explosionArtillery
