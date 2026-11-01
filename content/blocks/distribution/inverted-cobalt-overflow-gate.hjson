@@ -6,12 +6,11 @@ requirements: [
   cobalt/4
   venerium/2
 ]
-research: cobalt-duct-bridge
 research: {
   parent: "cobalt-duct-bridge"
-    "requirements": [
-	  "cobalt/50"
-	  "venerium/50"
+    requirements: [
+	  cobalt/50
+	  venerium/50
 ]
 objectives: [
     {

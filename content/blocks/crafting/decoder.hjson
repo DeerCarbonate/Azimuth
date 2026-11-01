@@ -32,7 +32,7 @@ consumes: {
 }
 craftTime: 400
 outputItem: byte/1
-ambientSound: smelter
+ambientSound: none
 drawer: {
   type: DrawMulti
   drawers: [

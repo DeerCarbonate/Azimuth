@@ -92,7 +92,7 @@ bullet: {
     splashDamageRadius: 32
     splashDamage: 80
 
-    hitSound: strawberrydeath
+    hitSound: explosionSteamy
 shootEffect: [
 {
 followParent: false
