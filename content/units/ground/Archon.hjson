@@ -244,6 +244,7 @@ weapons: [
       damage: 200
       hitSound: explosionArtillery
       recoil: 0.8
+      pierce: true
       pierceBuilding: true
       pierceCap: -1
       absorbable: true
