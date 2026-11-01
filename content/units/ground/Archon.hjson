@@ -1,3 +1,4 @@
+//some effects was inspired & borrowed from todi's work.
 type: legs
 flying: false
 hovering: true
@@ -20,7 +21,7 @@ hitSize: 28
 legCount: 6
 legMoveSpace: 1.6
 legLength: 13
-legBaseOffset: 7.3
+legBaseOffset: 7
 legSpeed: 0.2
 legForwardScl: 0.52
 rippleScale: 0.2
@@ -79,7 +80,7 @@ weapons: [
         type: FlarePart
         sides: 2
         color1: cc918bbb
-        radius: 4
+        radius: 3.6
         radiusTo: 60
         stroke: 7
         innerRadScl: 0.70
@@ -140,45 +141,111 @@ weapons: [
       type: BasicBulletType
       sprite: circle-bullet
 
-      shootEffect: [{
-        type: WaveEffect
-        rotWithParent: true
-        followParent: true
-        lifetime: 45
-        sizeFrom: 7
-        sizeTo: 80
-        strokeFrom: 8
-        strokeTo: 5
-        colorTo: f0aba400
-        interp: pow3Out
-      }
-      {
-        type: SoundEffect
-        minPitch: 0.5
-        maxPitch: 0.6
-        effect: none
-        sound: explosionNavanax
-        minVolume: 0.6
-        maxVolume: 0.7
-      }
-      {
-        type: SoundEffect
-        minPitch: 0.9
-        maxPitch: 1
-        effect: none
-        sound: explosionSparkling
-        minVolume: 0.5
-        maxVolume: 0.6
-      }
+      shootEffect: [
+        {
+          type: WaveEffect
+          rotWithParent: true
+          followParent: true
+          lifetime: 45
+          sizeFrom: 7
+          sizeTo: 80
+          strokeFrom: 8
+          strokeTo: 5
+          colorTo: f0aba400
+          interp: pow3Out
+        }
+        {
+          type: SoundEffect
+          minPitch: 0.5
+          maxPitch: 0.6
+          effect: none
+          sound: explosionNavanax
+          minVolume: 0.6
+          maxVolume: 0.7
+        }
+        {
+          type: SoundEffect
+          minPitch: 0.8
+          maxPitch: 0.9
+          effect: none
+          sound: explosionSparkling
+          minVolume: 0.6
+          maxVolume: 0.7
+        }
       ]
+
+      spawnBullets: [
+        {
+          type: BulletType
+          lifetime: 24
+          speed: 0
+          collides: false
+          despawnEffect: none
+          hitEffect: none
+          keepVelocity: false
+          absorbable: false
+          reflectable: false
+          hittable: false
+          parts: [
+            {
+              type: FlarePart
+              sides: 2
+              radius: 60
+              radiusTo: 0
+              stroke: 7
+              innerRadScl: 0.70
+              color1: cc918bbb
+              y: -2.2
+              layer: 101
+              progress: {
+                type: life
+                op: curve
+                interp: pow2Out
+              }
+            }
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 3.4
+              yScl: 3.4
+              color: f0aba46f
+              colorTo: f0aba400
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.5
+              }
+            }
+            {
+              type: RegionPart
+              outline: false
+              name: azimut-light
+              layer: 110.2
+              blending: additive
+              xScl: 1.7
+              yScl: 1.7
+              color: ffffff6f
+              colorTo: ffffff00
+              progress: {
+                type: life
+                op: compress
+                start: 0
+                end: 0.5
+              }
+            }
+          ]
+        }
+      ]
+
       damage: 200
-      shootSound: explosionNavanax
       hitSound: explosionArtillery
       recoil: 0.8
-
-      pierce: true
       pierceBuilding: true
-      pierceCap: 15
+      pierceCap: -1
       absorbable: true
       hittable: true
 
@@ -202,7 +269,6 @@ weapons: [
       intervalBullets: 1
       intervalDelay: 140
       bulletInterval: 20
-
       intervalBullet: {
         width: 0
         speed: 0
@@ -213,83 +279,75 @@ weapons: [
           effects: [
             {
               type: RadialEffect
-              lengthOffset: 52
-              amount: 6
-              rotationSpacing: 60
+              lengthOffset: 46
+              amount: 4
+              rotationSpacing: 90
               effect: {
                 type: ParticleEffect
-                lifetime: 50
-                colorFrom: f6afdd00
-                colorTo: f6afdd
+                lifetime: 36
+                layer: 99.9
+                colorFrom: ffbfad00
+                colorTo: ffbfad99
                 particles: 1
-                cone: 3
-                length: -54
-                sizeFrom: 2.6
-                sizeTo: 1
-                interp: pow3Out
-              }
-            }
-            {
-              type: RadialEffect
-              lengthOffset: 52
-              amount: 6
-              rotationSpacing: 60
-              rotationOffset: 15
-              effect: {
-                type: ParticleEffect
-                startDelay: 15
-                lifetime: 50
+                cone: 0
+                length: -40
                 randLength: false
-                colorFrom: f6afdd00
-                colorTo: f6afdd
-                particles: 1
-                cone: 3
-                length: -54
-                sizeFrom: 2.6
-                sizeTo: 1
-                interp: pow3Out
+                interp: pow2In
+                line: true
+                lenFrom: 0
+                lenTo: 7
+                strokeFrom: 2.5
+                strokeTo: 2
               }
             }
             {
               type: RadialEffect
               lengthOffset: 52
-              amount: 6
-              rotationSpacing: 60
-              rotationOffset: 30
-              effect: {
-                type: ParticleEffect
-                startDelay: 30
-                lifetime: 50
-                randLength: false
-                colorFrom: f6afdd00
-                colorTo: f6afdd
-                particles: 1
-                cone: 3
-                length: -54
-                sizeFrom: 3
-                sizeTo: 1
-                interp: pow3Out
-              }
-            }
-            {
-              type: RadialEffect
-              lengthOffset: 52
-              amount: 6
-              rotationSpacing: 60
+              amount: 4
+              rotationSpacing: 90
               rotationOffset: 45
               effect: {
                 type: ParticleEffect
-                startDelay: 15
-                lifetime: 30
-                randLength: false
-                colorFrom: f6afdd00
-                colorTo: f6afdd
+                startDelay: 12
+                lifetime: 34
+                layer: 99.9
+                colorFrom: ffbfad00
+                colorTo: ffbfad99
                 particles: 1
-                cone: 3
-                length: -54
-                sizeFrom: 3
-                sizeTo: 1
-                interp: pow3Out
+                cone: 0
+                length: -46
+                randLength: false
+                interp: pow2In
+                line: true
+                lenFrom: 0
+                lenTo: 7
+                strokeFrom: 2.4
+                strokeTo: 1.9
+              }
+            }
+            {
+              type: RadialEffect
+              lengthOffset: 58
+              amount: 8
+              rotationSpacing: 45
+              rotationOffset: 22
+              effect: {
+                type: ParticleEffect
+                startDelay: 6
+                lifetime: 40
+                layer: 99.9
+                colorFrom: cfcfcf00
+                colorTo: cfcfcf33
+                particles: 1
+                cone: 0
+                length: -52
+                randLength: false
+                interp: pow2In
+                line: true
+                lenFrom: 0
+                lenTo: 5
+                strokeFrom: 1.6
+                strokeTo: 1.4
               }
             }
           ]
@@ -375,24 +433,17 @@ weapons: [
             type: ParticleEffect
             particles: 16
             lifetime: 70
-
             length: 75
             baseLength: 0
-
             cone: 360
-
             sizeFrom: 0
             sizeTo: 0
-
             strokeFrom: 4
             strokeTo: 4
-
             colorFrom: f0aba4
             colorTo: f0aba400
-
             line: true
             interp: pow3Out
-
             startDelay: 79
           }
         ]
@@ -441,8 +492,41 @@ weapons: [
             interp: exp5Out
             sizeInterp: exp5In
           }
+          {
+            type: ParticleEffect
+            lifetime: 90
+            particles: 1
+            cone: 360
+            baseLength: 3
+            length: 16
+            sizeFrom: 3
+            sizeTo: 0
+            colorFrom: 4a3a38aa
+            colorTo: 4a3a3800
+            layer: 90.8
+            interp: pow3Out
+            sizeInterp: pow2In
+            lightScl: 0
+          }
         ]
       }
+      parts: [
+        {
+          type: RegionPart
+          outline: false
+          name: azimut-light
+          layer: 100.4
+          blending: additive
+          xScl: 1.1
+          yScl: 1.1
+          growX: 1.3
+          growY: 1.3
+          growProgress: life
+          color: ffbfad1c
+          colorTo: ffbfad3c
+          progress: life
+        }
+      ]
 
       fragBullets: 1
       fragOnHit: false
@@ -478,59 +562,325 @@ weapons: [
         shrinkX: 0.35
         shrinkY: 0.35
 
-        hitEffect: none
+        // гарь и дымок
+        hitEffect: {
+          type: MultiEffect
+          lifetime: 190
+          effects: [
+            {
+              type: ParticleEffect
+              lifetime: 180
+              region: circle-shadow
+              particles: 6
+              baseLength: 40
+              length: 12
+              colorFrom: 3a2d2b66
+              colorTo: 3a2d2b00
+              sizeFrom: 22
+              sizeTo: 46
+              layer: 90.5
+              interp: pow3Out
+              sizeInterp: pow2Out
+              lightScl: 0
+            }
+            {
+              type: ParticleEffect
+              lifetime: 160
+              region: circle-shadow
+              particles: 4
+              baseLength: 6
+              length: 14
+              colorFrom: 2a202066
+              colorTo: 2a202000
+              sizeFrom: 16
+              sizeTo: 34
+              layer: 90.5
+              interp: pow3Out
+              sizeInterp: pow2Out
+              lightScl: 0
+            }
+            {
+              type: ParticleEffect
+              lifetime: 95
+              particles: 22
+              baseLength: 10
+              length: 120
+              cone: 360
+              colorFrom: 4a3a38cc
+              colorTo: 4a3a3800
+              sizeFrom: 2.4
+              sizeTo: 0
+              layer: 91
+              interp: pow5Out
+              sizeInterp: pow2In
+              lightScl: 0
+            }
+            {
+              type: ParticleEffect
+              lifetime: 130
+              region: circle-shadow
+              particles: 5
+              baseLength: 20
+              length: 20
+              colorFrom: bfaaa655
+              colorTo: bfaaa600
+              sizeFrom: 16
+              sizeTo: 34
+              layer: 90.8
+              interp: pow3Out
+              sizeInterp: pow2Out
+              lightScl: 0
+            }
+            {
+              type: ParticleEffect
+              lifetime: 90
+              particles: 9
+              baseLength: 22
+              length: 36
+              colorFrom: cdb9b570
+              colorTo: cdb9b500
+              sizeFrom: 8
+              sizeTo: 0
+              layer: 91
+              interp: pow5Out
+              sizeInterp: pow2In
+              lightScl: 0
+            }
+            {
+              type: ParticleEffect
+              lifetime: 150
+              region: circle-shadow
+              particles: 12
+              baseLength: 68
+              length: 20
+              colorFrom: bfaaa650
+              colorTo: bfaaa600
+              sizeFrom: 14
+              sizeTo: 32
+              layer: 90.8
+              interp: pow3Out
+              sizeInterp: pow2Out
+              lightScl: 0
+            }
+            {
+              type: ParticleEffect
+              lifetime: 100
+              particles: 12
+              baseLength: 80
+              length: 20
+              colorFrom: cdb9b560
+              colorTo: cdb9b500
+              sizeFrom: 6
+              sizeTo: 0
+              layer: 91
+              interp: pow5Out
+              sizeInterp: pow2In
+              lightScl: 0
+            }
+          ]
+        }
         despawnEffect: none
-
-        collidesTiles: true
-        collidesGround: true
-
+        spawnBullets: [
+          {
+            type: BulletType
+            lifetime: 80
+            speed: 0
+            collides: false
+            despawnEffect: none
+            hitEffect: none
+            keepVelocity: false
+            absorbable: false
+            reflectable: false
+            hittable: false
+            parts: [
+              {
+                type: RegionPart
+                outline: false
+                name: azimut-light
+                layer: 100.4
+                blending: additive
+                xScl: 2.4
+                yScl: 2.4
+                color: ffbfad3c
+                colorTo: ffbfad52
+                progress: {
+                  type: life
+                  op: curve
+                  interp: pow2In
+                }
+              }
+              {
+                type: RegionPart
+                outline: false
+                name: azimut-light
+                layer: 100.4
+                blending: additive
+                xScl: 1
+                yScl: 1
+                growX: 2.8
+                growY: 2.8
+                growProgress: {
+                  type: life
+                  op: curve
+                  interp: pow3In
+                }
+                color: ffbfad26
+                colorTo: f0aba46a
+                progress: {
+                  type: life
+                  op: curve
+                  interp: pow3In
+                }
+              }
+            ]
+          }
+        ]
         homingPower: 0
         homingDelay: 0
         homingRange: 0
-
-        pierce: true
-        pierceBuilding: true
-        pierceCap: 25
-
-        fragBullets: 19
-        fragLifeMin: 1
-        fragLifeMax: 2
+        collides: false
+        collidesTiles: false
+        collidesGround: true
+        hittable: false
+        absorbable: false
+        reflectable: false
+        keepVelocity: false
+        fragBullets: 1
+        fragRandomSpread: 0
+        fragOffsetMin: 0
+        fragOffsetMax: 0
         fragOnDespawn: true
         fragBullet: {
-          type: BasicBulletType
-          sprite: circle-bullet
-          buildingDamageMultiplier: 0.6
-
-          damage: 95
-          lifetime: 120
-          speed: 1.63
-
-          trailWidth: 1.8
-          trailLength: 34
-
-          weaveMag: 3
-          weaveScale: 7
-
-          backColor: ffbfad
-          frontColor: ffbfad
-          trailColor: ffbfad
-
-          width: 8
-          height: 8
-
-          shrinkInterp: linear
-          shrinkX: 0.35
-          shrinkY: 0.35
-
+          type: BulletType
+          speed: 0
+          lifetime: 0
+          collides: false
+          hittable: false
+          absorbable: false
+          reflectable: false
+          keepVelocity: false
+          despawnHit: true
           hitEffect: none
           despawnEffect: none
-
-          collidesTiles: true
-          collidesGround: true
-
-          homingPower: 0.08
-          homingDelay: 0.08
-          homingRange: 70
+          spawnBullets: [
+            {
+              type: BulletType
+              lifetime: 70
+              speed: 0
+              collides: false
+              despawnEffect: none
+              hitEffect: none
+              keepVelocity: false
+              absorbable: false
+              reflectable: false
+              hittable: false
+              parts: [
+                {
+                  type: RegionPart
+                  outline: false
+                  name: azimut-light
+                  layer: 110.2
+                  blending: additive
+                  xScl: 15
+                  yScl: 15
+                  growX: 3
+                  growY: 3
+                  growProgress: {
+                    type: life
+                    op: curve
+                    interp: pow3Out
+                  }
+                  color: f0aba46a
+                  colorTo: f0aba400
+                  progress: {
+                    type: life
+                    op: curve
+                    interp: pow2Out
+                  }
+                }
+                {
+                  type: RegionPart
+                  outline: false
+                  name: azimut-light
+                  layer: 110.2
+                  blending: additive
+                  xScl: 9.4
+                  yScl: 9.4
+                  color: ffbfad9a
+                  colorTo: ffbfad00
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0
+                        end: 0.6
+                      }
+                      {
+                        op: curve
+                        interp: pow3Out
+                      }
+                    ]
+                  }
+                }
+                {
+                  type: RegionPart
+                  outline: false
+                  name: azimut-light
+                  layer: 110.2
+                  blending: additive
+                  xScl: 4.6
+                  yScl: 4.6
+                  color: ffffffd0
+                  colorTo: ffffff00
+                  progress: {
+                    type: life
+                    ops: [
+                      {
+                        op: compress
+                        start: 0
+                        end: 0.35
+                      }
+                      {
+                        op: curve
+                        interp: pow5Out
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+          fragBullets: 19
+          fragLifeMin: 1
+          fragLifeMax: 2
+          fragBullet: {
+            type: BasicBulletType
+            sprite: circle-bullet
+            buildingDamageMultiplier: 0.6
+            damage: 95
+            lifetime: 120
+            speed: 1.63
+            trailWidth: 1.8
+            trailLength: 34
+            weaveMag: 3
+            weaveScale: 7
+            backColor: ffbfad
+            frontColor: ffbfad
+            trailColor: ffbfad
+            width: 8
+            height: 8
+            shrinkInterp: linear
+            shrinkX: 0.35
+            shrinkY: 0.35
+            hitEffect: none
+            despawnEffect: none
+            collidesTiles: true
+            collidesGround: true
+            homingPower: 0.08
+            homingDelay: 0.08
+            homingRange: 70
+          }
         }
       }
     }
