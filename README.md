@@ -42,7 +42,7 @@ The planet is called Gelion.</h3>
 <hr>
 <h3 align="center">Languages</h3>
 <ul>
-  <li>Russian (84% translated)</li>
+  <li>Russian (95% translated)</li>
   <li>English (100% translated)</li>
   <li>Want to add your language? Feel free to submit a Pull Request!</li>
 </ul>
