@@ -18,7 +18,7 @@ The planet is called Gelion.</h3>
 <ul>
   <li>Crush enemy forces and turn the planet into a resource hub for your faction.</li>
   <li>Gradually branching gameplay and campaign progression.</li>
-  <li>Discover 12 items, 7 liquids, 12 units, and 85 blocks!</li>
+  <li>Discover 12 items, 7 liquids, 12 units, and 105 blocks!</li>
   <li>12 playable sectors to conquer.</li>
 </ul>
 <hr>
@@ -42,7 +42,7 @@ The planet is called Gelion.</h3>
 <hr>
 <h3 align="center">Languages</h3>
 <ul>
-  <li>Russian (84% translated)</li>
+  <li>Russian (95% translated)</li>
   <li>English (100% translated)</li>
   <li>Want to add your language? Feel free to submit a Pull Request!</li>
 </ul>
