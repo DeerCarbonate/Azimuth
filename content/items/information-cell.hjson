@@ -6,3 +6,4 @@
 	flammability: 0
 	radioactivity: 0
 	cost: 1
+	hideDatabase: true

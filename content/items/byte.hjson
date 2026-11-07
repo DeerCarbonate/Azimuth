@@ -7,3 +7,4 @@
 	radioactivity: 0
 	cost: 1
 	shownPlanets: [gelion]
+	hideDatabase: true
