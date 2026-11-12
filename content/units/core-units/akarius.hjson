@@ -2,38 +2,38 @@
 	outlineColor: 21202a
 	coreUnitDock: true
 	flying: true
-	health: 750
+	health: 725
 	buildSpeed: 1.8
-	drag: 0.05
+	drag: 0.07
 	mineTier: 1
-    mineSpeed: 8.5
-    buildRange: 225
-    itemCapacity: 90
-	speed: 4.6
+  mineSpeed: 8.5
+  buildRange: 215
+  itemCapacity: 75
+	speed: 4.5
 	range: 90
 	accel: 0.10
 	targetGround: true
 	targetAir: true
 	rotateSpeed: 4.7
 	engineColor: bf92f9
-    trailLength: 9.5
-    engineSize: 3.5
-    engineOffset: 11.7
-    trailColor: bf92f9
-	waveTrailY: -11.7
+  trailLength: 9.5
+  engineSize: 3.5
+  engineOffset: 8
+  trailColor: bf92f9
+	waveTrailY: -8
 	healColor: bf92f988
 	shieldColor: bf92f988
 	strafePenalty: 0.17
 	engines: [
    {
-    x: 9
-    y: 0
+    x: 7.5
+    y: 3
     radius: 2.5
     rotation: 22.5
    }
    {
-    x: -9
-    y: 0
+    x: -7.5
+    y: 3
     radius: 2.5
     rotation: 157.5
    }
@@ -357,9 +357,3 @@ parts: [
 	 }
 	 ]
 }
-abilities: [
-{
-type:RegenAbility
-percentAmount: 0.05
-}
-]
