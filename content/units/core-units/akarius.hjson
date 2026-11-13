@@ -240,7 +240,7 @@ parts: [
 	  circleShooter: true
     circleShooterRadius: 20
     circleShooterRadiusSmooth: 10
-    circleShooterRotateSpeed: 1.6
+    circleShooterRotateSpeed: 7.5
 	  healAmount: 95
 	  pierceArmor:true
 	  lifesteal:0.2
