@@ -156,13 +156,13 @@ parts: [
 	  dest: [
 	  {
 	  type: ShootPattern
-		shots: 1
+		shots: 2
 		shotDelay: 0
 	}
 	]
 	}
     ejectEffect: none
-    shootSound: shootAtrax
+    shootSound: none
     bullet: {
       keepVelocity: false
       lifetime: 16.5
@@ -180,7 +180,7 @@ parts: [
       fragRandomSpread: 0
       fragSpread: 0
 	  healColor: bf92f988
-	  healAmount: 75
+	  healAmount: 95
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
@@ -234,84 +234,24 @@ parts: [
       backColor: bf92f950
       trailColor: bf92f930
 	  healColor: bf92f988
-      trailWidth: 0.97
-      trailLength: 10
+    trailWidth: 0.97
+    trailLength: 10
 	  smokeEffect: none
 	  circleShooter: true
-      circleShooterRadius: 20
-      circleShooterRadiusSmooth: 10
-      circleShooterRotateSpeed: 1.6
-	  healAmount: 75
+    circleShooterRadius: 20
+    circleShooterRadiusSmooth: 10
+    circleShooterRotateSpeed: 1.6
+	  healAmount: 95
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
 	  pierce: true
-      pierceBuilding: false
-      pierceCap: 100
-      pierceDamageFactor: 0.01
+    pierceBuilding: false
+    pierceCap: 100
+    pierceDamageFactor: 0.01
 	  hitEffect: none
 	  despawnEffect: none
 	  bulletInterval: 21.5
-      intervalRandomSpread: 20
-      intervalBullets: 2
-      intervalAngle: 180
-      intervalSpread: 300
-	        intervalBullet: {
-            type: BasicBulletType
-            collidesAir: true
-            buildingDamageMultiplier: 0.01
-            smokeEffect: none
-            frontColor: ffffff20
-			backColor: bf92f920
-			trailColor: bf92f908
-			healColor: bf92f988
-            pierceArmor:true
-            width:4
-            trailWidth: 0.87
-            trailLength: 4
-            lifetime: 27
-            damage: 6
-            speed: 4
-            drag:0.02
-            healAmount:6
-            lifesteal:0.2
-            homingRange:60
-            homingPower:0.1
-            homingDelay:1.2
-            collidesTeam:true
-            despawnEffect: none
-			hitEffect: none
-				                  trailEffect:[
-                {
-                    type: ParticleEffect
-                    colorFrom: bf92f910
-                    colorTo: bf92f900
-                    particles: 1
-                    cone: 360
-                    lifetime:13
-                    length: 3
-                    sizeFrom: 1.2
-                    sizeTo: 1.2
-                    layer:100.2
-                }
-                {
-                    type: ParticleEffect
-                    region:large-bomb
-                    colorFrom: bf92f910
-                    colorTo: bf92f900
-                    particles: 1
-                    lifetime:17
-                    cone: 360
-                    length: 11
-                    spin: 1.2
-                    sizeFrom: 2.1
-                    sizeTo: 0
-                    layer:100.2
-                }
-                ]
-                trailChance:0.65
-                trailInterval:6
-			}
 	                  trailEffect:[
                 {
                     type: ParticleEffect
