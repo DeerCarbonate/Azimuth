@@ -240,7 +240,7 @@ parts: [
 	  circleShooter: true
     circleShooterRadius: 20
     circleShooterRadiusSmooth: 10
-    circleShooterRotateSpeed: 7.5
+    circleShooterRotateSpeed: 0.5
 	  healAmount: 95
 	  pierceArmor:true
 	  lifesteal:0.2
@@ -251,7 +251,6 @@ parts: [
     pierceDamageFactor: 0.01
 	  hitEffect: none
 	  despawnEffect: none
-	  bulletInterval: 21.5
 	                  trailEffect:[
                 {
                     type: ParticleEffect
