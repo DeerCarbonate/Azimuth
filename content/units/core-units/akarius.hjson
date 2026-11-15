@@ -204,7 +204,7 @@ parts: [
       fragRandomSpread: 0
       fragSpread: 0
 	  healColor: bf92f988
-	  healAmount: 95
+	  healAmount: 65
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
@@ -265,7 +265,7 @@ parts: [
     circleShooterRadius: 20
     circleShooterRadiusSmooth: 10
     circleShooterRotateSpeed: 0.5
-	  healAmount: 95
+	  healAmount: 65
 	  pierceArmor:true
 	  lifesteal:0.2
 	  collidesTeam:true
