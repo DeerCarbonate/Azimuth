@@ -130,8 +130,6 @@
   stroke: 0
 	strokeTo: 1.5
   rotateSpeed: -1.2
-	x: 0
-	y: 11.5
   }
 ]
   }
@@ -172,8 +170,6 @@
   stroke: 0
 	strokeTo: 1.5
   rotateSpeed: 1.5
-	x: 0
-	y: 11.5
   }
 ]
   }
