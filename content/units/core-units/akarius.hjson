@@ -120,20 +120,44 @@ parts: [
     shootY: 0
     shootSound: none
     targetBuildings: true
-	targetUnits: false
-    controllable: true
-    autoTarget: false
+	  targetUnits: false
+    controllable: false
+    autoTarget: true
     continuous: true
     rotate: false
     reload: 30
     beamWidth: 0.8
     widthSinMag: 0.10
-    repairSpeed: 4
-    fractionRepairSpeed: 0.04
+    repairSpeed: 2
+    fractionRepairSpeed: 0.035
     healColor: bf92f9
     laserColor: bf92f9
     bullet: {
-      maxRange: 70
+      maxRange: 60
+    }
+  }
+    {
+    type: RepairBeamWeapon
+    mirror: false
+    x: 0
+    y: 11.5
+    shootY: 0
+    shootSound: none
+    targetBuildings: true
+	  targetUnits: false
+    controllable: false
+    autoTarget: true
+    continuous: true
+    rotate: false
+    reload: 30
+    beamWidth: 0.8
+    widthSinMag: 0.10
+    repairSpeed: 2
+    fractionRepairSpeed: 0.035
+    healColor: bf92f9
+    laserColor: bf92f9
+    bullet: {
+      maxRange: 60
     }
   }
       {
