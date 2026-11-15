@@ -145,8 +145,8 @@ parts: [
     shootSound: none
     targetBuildings: true
 	  targetUnits: false
-    controllable: false
-    autoTarget: true
+    controllable: true
+    autoTarget: false
     continuous: true
     rotate: false
     reload: 30
