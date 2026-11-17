@@ -162,14 +162,23 @@ venerium: {
           colorTo: fcf0bd
 		  baseRotation: 90
         }
-		      {
+		    {
           type: SoundEffect
-          minPitch: 0.9
-          maxPitch: 1
+          minPitch: 1.3
+          maxPitch: 1.5
           effect: none
-          sound: shootDezolo
-          minVolume: 0.98
+          sound: shootRailgun
+          minVolume: 0.95
           maxVolume: 1
+        }
+        {
+          type: SoundEffect
+          minPitch: 0.6
+          maxPitch: 0.7
+          effect: none
+          sound: shootMetal2
+          minVolume: 0.55
+          maxVolume: 0.65
         }
   ]
 }
