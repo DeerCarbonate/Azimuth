@@ -983,15 +983,6 @@ ammoTypes: {
         minVolume: 1
         maxVolume: 0.95
       }
-      {
-        type: SoundEffect
-        minPitch: 0.55
-        maxPitch: 0.65
-        effect: none
-        sound: shootDezolo
-        minVolume: 0.55
-        maxVolume: 0.45
-      }
     ]
     hitEffect: {
       type: MultiEffect,
