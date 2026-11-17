@@ -309,8 +309,8 @@ compound: {
     }
 		    {
           type: SoundEffect
-          minPitch: 1.2
-          maxPitch: 1.4
+          minPitch: 1.3
+          maxPitch: 1.5
           effect: none
           sound: shootRailgun
           minVolume: 1
@@ -322,8 +322,8 @@ compound: {
           maxPitch: 0.95
           effect: none
           sound: shootArtilleryMini
-          minVolume: 0.5
-          maxVolume: 0.6
+          minVolume: 0.6
+          maxVolume: 0.7
         }
   ]
 }
