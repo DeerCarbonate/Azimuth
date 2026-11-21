@@ -22,7 +22,7 @@
     name: Cthulhu-weapon
     recoil: 2.0
     x: 0
-    y: 7
+    y: -4
     shootY: 3.5
     mirror: false
     alternate: false
