@@ -1,13 +1,13 @@
- type: naval
-	rotateSpeed: 1
+    type: naval
+	rotateSpeed: 0.95
 	flying: false
 	alwaysUnlocked: false
 	outlineColor: 1b1c25
 	outlineRadius: 3
 	accel: 0.75
-	armor: 12
-	health: 9800
-	speed: 0.7
+	armor: 13
+	health: 9750
+	speed: 0.72
 	healColor: a4f0d788
 	shieldColor: a4f0d788
 	hitSize: 29
@@ -227,8 +227,8 @@
 {
     name: Cthulhu-weapontwo
     recoil: 2.0
-    x: 11.2
-    y: -8
+    x: 15
+    y: -15
     shootY: 6
     mirror: true
     alternate: false
