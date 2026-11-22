@@ -922,7 +922,7 @@ ammoTypes: {
     trailColor: dda59d
     trailWidth: 2
     trailLength: 10
-    sprite: slicer
+    sprite: azimut-slicer
     trailChance: 0.3
     trailInterval: 5.2
     trailRotation:true
