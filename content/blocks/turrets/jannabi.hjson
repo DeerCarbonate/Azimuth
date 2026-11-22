@@ -1032,7 +1032,7 @@ ammoTypes: {
         }
       ]
     }
-    fragRandomSpread: 25
+    fragRandomSpread: 35
     fragBullets: 6
     fragOnDespawn: true
     fragOnHit: false
@@ -1041,13 +1041,13 @@ ammoTypes: {
       colors: [f7e2da, efbbb4, bb8178, 895355, 60313b]
       length: 6
       width: 2.7
-      sideWidth: 0
+      sideWidth: 2
+      sideAngle: 4
       damage: 12
       pierceBuilding: false
       pierce: true
       pierceCap: 2
       hitEffect: none
-      lifetime: 15
       despawnEffect: none
 	  buildingDamageMultiplier: 0.1
 	  armorMultiplier: 4
