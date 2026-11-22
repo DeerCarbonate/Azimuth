@@ -908,12 +908,12 @@ ammoTypes: {
     hitColor: efbbb4
     damage: 480
     pierceArmor: true
-    pierceCap: 7
+    pierceCap: 5
     pierceDamageFactor: 0.015
     despawnSound: explosionAfflict
     hitSound: explosionAfflict
-    lifetime: 31.5
-    speed: 18
+    lifetime: 36
+    speed: 16
     scaleLife: false
     width: 7
     height: 45
@@ -923,9 +923,6 @@ ammoTypes: {
     trailWidth: 2
     trailLength: 10
     sprite: azimut-slicer
-    trailChance: 0.3
-    trailInterval: 5.2
-    trailRotation:true
     knockback:8.5
     shootEffect: [
       {
