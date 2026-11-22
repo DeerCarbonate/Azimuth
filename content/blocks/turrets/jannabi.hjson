@@ -903,7 +903,7 @@ ammoTypes: {
     collidesTiles: true
     keepVelocity: false
     collidesAir: false
-    frontColor: f7e2da
+    frontColor: ffffff
     backColor: dda59d
     hitColor: efbbb4
     damage: 480
@@ -914,53 +914,19 @@ ammoTypes: {
     hitSound: explosionAfflict
     lifetime: 31.5
     speed: 18
-    width: 7.5
     scaleLife: false
-    height: 22
+    width: 7
+    height: 45
     ammoMultiplier: 6
     buildingDamageMultiplier: 0.1
     trailColor: dda59d
-    trailWidth: 1.6
-    trailLength: 24
-    sprite: mine-bullet
+    trailWidth: 2
+    trailLength: 10
+    sprite: slicer
     trailChance: 0.3
     trailInterval: 5.2
     trailRotation:true
     knockback:8.5
-    trailEffect:[
-      {
-        type: ParticleEffect
-        region: azimut-despawn
-        particles: 2
-        length: 48
-        lifetime: 90
-        interp: circleOut
-        sizeInterp: pow5Out
-        cone: 360
-        colorFrom: f7e2da94
-        colorTo: dda59d60
-        sizeFrom: 5
-        sizeTo:0
-        sizeChangeStart: 45
-        spin: 60
-      }
-    ]
-    bulletInterval: 1.6
-    intervalBullets: 1
-    intervalAngle: 180
-    intervalSpread: 0
-    intervalRandomSpread: 0
-    intervalBullet: {
-      type: LightningBulletType
-      lightningLength: 4
-      lightningLengthRand: 2
-      lightningColor: dda59d
-      buildingDamageMultiplier: 0.1
-      lifetime: 5
-      collidesAir: false
-      hittable: false
-      hitEffect: none
-    }
     shootEffect: [
       {
         followParent: false
