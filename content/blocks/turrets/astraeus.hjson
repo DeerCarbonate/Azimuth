@@ -14,6 +14,8 @@ moveWhileCharging: true
 rotateSpeed: 2.7
 shootSound: none
 shootSoundVolume: 0.9
+ammoPerShot: 2
+maxAmmo: 46
   ammoTypes: {
 cobalt: {
  type: BasicBulletType

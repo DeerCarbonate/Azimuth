@@ -16,7 +16,8 @@ targetGround: true
 rotateSpeed: 1
 shootSound: none
 chargeSound: chargeLancer
-ammoPerShot: 2
+ammoPerShot: 6
+maxAmmo: 36
 unitSort: grouped
 heatRequirement: 12
 shoot: {

@@ -3,7 +3,8 @@ researchCostMultiplier: 0.5
 size: 3
 outlineColor: 0c0c12
 health: 1400
-ammoPerShot: 4
+ammoPerShot: 5
+maxAmmo: 30
 alwaysUnlocked: false
 squareSprite: false
   shoot: {

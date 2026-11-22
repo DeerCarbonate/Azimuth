@@ -16,7 +16,7 @@ moveWhileCharging: true
 targetGround: true
 rotateSpeed: 1.25
 shootSound: none
-ammoPerShot: 2
+ammoPerShot: 3
 shootY: 7.8
 coolant: {
   type: ConsumeLiquid

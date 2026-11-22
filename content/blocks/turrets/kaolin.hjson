@@ -13,7 +13,8 @@ moveWhileCharging: true
 targetGround: true
 rotateSpeed: 0.85
 shootSound: none
-ammoPerShot: 5
+ammoPerShot: 25
+maxAmmo: 50
 heatRequirement: 96
 shootY: 7
 inaccuracy: 15
