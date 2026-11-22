@@ -953,11 +953,11 @@ ammoTypes: {
         {
           type: ParticleEffect
           line: true
-          particles: 16
+          particles: 8
           lifetime: 54
           interp: circleOut
           length: 120
-          cone: -30
+          cone: -10
           strokeTo: 0
           lightColor:efbbb4
           lenFrom: 9
@@ -969,11 +969,11 @@ ammoTypes: {
         {
           type: ParticleEffect
           line: true
-          particles: 7
+          particles: 5
           lifetime: 45
           interp: circleOut
           length: 120
-          cone: -45
+          cone: -25
           strokeTo: 0
           lightColor:efbbb4
           lenFrom: 6
