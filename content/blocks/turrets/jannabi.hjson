@@ -966,6 +966,22 @@ ammoTypes: {
           colorTo: dda59d00
           colorFrom: efbbb495
         }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 7
+          lifetime: 45
+          interp: circleOut
+          length: 120
+          cone: -45
+          strokeTo: 0
+          lightColor:efbbb4
+          lenFrom: 6
+          lenTo: 0
+          strokeFrom: 2
+          colorTo: 60313b00
+          colorFrom: f7e2da
+        }
       ]
     }
     despawnEffect: {
@@ -985,11 +1001,11 @@ ammoTypes: {
         {
           type: ParticleEffect
           line: true
-          particles: 16
+          particles: 13
           lifetime: 54
           interp: circleOut
           length: 120
-          cone: -30
+          cone: -45
           strokeTo: 0
           lightColor:efbbb4
           lenFrom: 9
@@ -1001,16 +1017,16 @@ ammoTypes: {
         {
           type: ParticleEffect
           line: true
-          particles: 16
-          lifetime: 54
+          particles: 11
+          lifetime: 64
           interp: circleOut
           length: 120
-          cone: -30
+          cone: -65
           strokeTo: 0
           lightColor:efbbb4
           lenFrom: 8
           lenTo: 0
-          strokeFrom: 4
+          strokeFrom: 3
           colorTo: 60313b00
           colorFrom: f7e2da
         }
