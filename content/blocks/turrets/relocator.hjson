@@ -16,7 +16,7 @@ targetGround: true
 rotateSpeed: 2
 shootSound: shootRelocator
 shootSoundVolume: 0.55
-ammoPerShot: 1
+ammoPerShot: 3
 shootY: -4.6
 inaccuracy: 6
 research: {
