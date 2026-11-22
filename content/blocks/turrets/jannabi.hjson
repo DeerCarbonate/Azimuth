@@ -951,17 +951,6 @@ ammoTypes: {
       type: MultiEffect,
       effects: [
         {
-          particles: 1
-          length: 0
-          lifetime: 35
-          region: azimut-long-triangle
-          sizeFrom: 30
-          sizeChangeStart: 28
-          sizeTo: 0
-          colorFrom: efbbb4
-          colorTo: dda59d00
-        }
-        {
           type: ParticleEffect
           line: true
           particles: 16
@@ -1007,7 +996,23 @@ ammoTypes: {
           lenTo: 0
           strokeFrom: 6
           colorTo: dda59d00
-          colorFrom: efbbb495
+          colorFrom: efbbb4
+        }
+        {
+          type: ParticleEffect
+          line: true
+          particles: 16
+          lifetime: 54
+          interp: circleOut
+          length: 120
+          cone: -30
+          strokeTo: 0
+          lightColor:efbbb4
+          lenFrom: 8
+          lenTo: 0
+          strokeFrom: 4
+          colorTo: 60313b00
+          colorFrom: f7e2da
         }
       ]
     }
