@@ -990,7 +990,7 @@ ammoTypes: {
         {
           particles: 1
           length: 0
-          lifetime: 35
+          lifetime: 25
           region: azimut-long-triangle
           sizeFrom: 30
           sizeChangeStart: 28
@@ -1032,6 +1032,26 @@ ammoTypes: {
         }
       ]
     }
+    fragAngle: 30
+    fragBullets: 6
+    fragOnDespawn: true
+    fragOnHit: false
+    fragBullet: {
+      type: LaserBulletType
+      colors: [f7e2da, efbbb4, bb8178, 895355, 60313b]
+      length: 80
+      width: 2.7
+      sideAngle: 4
+      sideWidth: 3.2
+      damage: 12
+      pierceBuilding: false
+      pierce: true
+      pierceCap: 2
+      hitEffect: none
+      despawnEffect: none
+	  buildingDamageMultiplier: 0.1
+	  armorMultiplier: 4
+		}
   }
 }
 requirements: [
