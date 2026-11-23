@@ -1040,7 +1040,7 @@ ammoTypes: {
     fragBullet: {
       type: LaserBulletType
       colors: [f7e2da, efbbb4, bb8178, 895355, 60313b]
-      length: 15
+      length: 25
       width: 2.7
       sideWidth: 0
       sideAngle: 4
