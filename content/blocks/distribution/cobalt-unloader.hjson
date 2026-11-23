@@ -12,7 +12,7 @@ speed: 3
 solid: false
 underBullets: true
 regionRotated1: 1
-allowCoreUnload: true
+allowCoreUnload: false
         research: {
     parent: "galvanized-container"
     planet: gelion
