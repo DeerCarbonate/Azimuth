@@ -1040,15 +1040,14 @@ ammoTypes: {
     fragBullet: {
       type: LaserBulletType
       colors: [f7e2da, efbbb4, bb8178, 895355, 60313b]
-      length: 35
+      length: 15
       width: 2.7
-      sideWidth: 2
+      sideWidth: 0
       sideAngle: 4
       damage: 12
       hitEffect: none
       hittable: false
       despawnEffect: none
-      laserEffect: none
 	  buildingDamageMultiplier: 0.1
 	  armorMultiplier: 0.5
 		}
