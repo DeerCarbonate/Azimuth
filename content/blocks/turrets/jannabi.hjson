@@ -7,7 +7,7 @@ health: 3600
 alwaysUnlocked: false
 shootCone: 9
 recoil: 3.2
-shootY: -5.9
+shootY: -5.91
 reload: 290
 range: 450
 targetAir: false
