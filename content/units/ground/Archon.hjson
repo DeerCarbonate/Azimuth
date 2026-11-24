@@ -858,8 +858,8 @@ weapons: [
           fragBullet: {
             type: BasicBulletType
             sprite: circle-bullet
-            buildingDamageMultiplier: 0.6
-            damage: 95
+            buildingDamageMultiplier: 0.8
+            damage: 90
             lifetime: 120
             speed: 1.63
             trailWidth: 1.8

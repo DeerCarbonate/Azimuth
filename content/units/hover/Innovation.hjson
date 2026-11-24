@@ -12,7 +12,7 @@ alwaysUnlocked: false
 deathSound: explosion
 armor: 3
 accel: 0.09
-health: 1200
+health: 1220
 hovering: true
 speed: 1.25
 canDrown: false

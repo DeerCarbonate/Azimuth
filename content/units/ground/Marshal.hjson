@@ -198,7 +198,7 @@ weapons: [
       trailColor: cc918b
       trailWidth: 1.2
       trailLength: 4.5
-      damage: 24
+      damage: 27
       despawnEffect: none
       collidesTiles: true
       keepVelocity: false

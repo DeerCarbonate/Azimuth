@@ -10,7 +10,7 @@ outlineColor: 251b21
 outlineRadius: 3
 alwaysUnlocked: false
 range: 175
-armor: 8
+armor: 9
 accel: 0.08
 health: 2900
 hovering: true
@@ -261,7 +261,7 @@ progress: {
       lifetime: 65
       shrinkY: 0
       shrinkX: 0
-      damage: 140
+      damage: 150
       height: 12
       speed: 3.5
       width: 9

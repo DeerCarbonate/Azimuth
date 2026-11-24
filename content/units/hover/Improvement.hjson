@@ -12,7 +12,7 @@ outlineRadius: 3
 alwaysUnlocked: false
 armor: 2
 accel: 0.1
-health: 620
+health: 645
 hovering: true
 speed: 1.5
 hitSize: 11
@@ -215,7 +215,7 @@ weapons: [
     bullet: {
       lifetime: 100
       drag: -0.015
-      damage: 12
+      damage: 15
       height: 4.5
       speed: 1.1
       width: 4.5

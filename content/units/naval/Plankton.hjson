@@ -5,7 +5,7 @@ outlineRadius: 3
 rotateSpeed: 3.6
 alwaysUnlocked: false
 range: 100
-armor: 2
+armor: 3
 health: 810
 speed: 1.35
 hitSize: 11.2
@@ -195,7 +195,7 @@ weapons: [
       height: 8
       width: 6
       lifetime: 53
-      damage: 38
+      damage: 42
       speed: 4.8
       trailColor: 5fac9e
       trailLength: 4

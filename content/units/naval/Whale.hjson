@@ -6,7 +6,7 @@ alwaysUnlocked: false
 outlineColor: 1b1c25
 outlineRadius: 3
 armor: 9
-health: 3400
+health: 3500
 accel: 0.75
 speed: 0.9
 hitSize: 18
@@ -182,7 +182,7 @@ weapons: [
       keepVelocity: false
       lifetime: 60
       drag: 0.022
-      damage: 10
+      damage: 15
       height: 9
       speed: 4
       width: 5

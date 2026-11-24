@@ -189,7 +189,7 @@ weapons: [
     bullet: {
       type: RailBulletType
       length: 160
-      damage: 320
+      damage: 330
       lifetime: 1
       hitColor: cc918b
       pointEffectSpace: 3.9
@@ -427,7 +427,7 @@ weapons: [
       speed: 1.9
       collidesGround: true
       lifetime: 120
-      damage: 16
+      damage: 12
       backColor: ffbfad
       frontColor: cc918b
       trailColor: ffbfad40
@@ -437,7 +437,7 @@ weapons: [
       keepVelocity: false
       collidesAir: true
       pierceArmor: false
-      buildingDamageMultiplier: 0.3
+      buildingDamageMultiplier: 0.8
       hitEffect: {
         type: ExplosionEffect
         lifetime: 35
