@@ -7,7 +7,7 @@ health: 3600
 alwaysUnlocked: false
 shootCone: 9
 recoil: 3.2
-shootY: -5.4
+shootY: -5.6
 reload: 290
 range: 450
 targetAir: false
@@ -26,10 +26,10 @@ shoot: {
 }
 ammoTypes: {
   geliarin: {
-        spawnBullets: [
+      spawnBullets: [
       {
         type: BulletType
-        lifetime: 24
+        lifetime: 20
         speed: 0
         collides: false
         despawnEffect: none
@@ -47,6 +47,22 @@ ammoTypes: {
             stroke: 6.4
             innerRadScl: 0.70
             color1: 6898c3
+            y: 4.4
+            layer: 101
+            progress: {
+              type: life
+              op: curve
+              interp: pow2Out
+            }
+          }
+          {
+            type: FlarePart
+            sides: 2
+            radius: 30
+            radiusTo: 0
+            stroke: 23.4
+            innerRadScl: 0.70
+            color1: 00000000
             y: 4.4
             layer: 101
             progress: {
@@ -744,10 +760,10 @@ ammoTypes: {
   }
   caterium: {
     // thx Undaria (Calamity mod) for units (which forms EMP field)
-        spawnBullets: [
+      spawnBullets: [
       {
         type: BulletType
-        lifetime: 24
+        lifetime: 20
         speed: 0
         collides: false
         despawnEffect: none
@@ -765,6 +781,22 @@ ammoTypes: {
             stroke: 6.4
             innerRadScl: 0.70
             color1: fff4a3
+            y: 4.4
+            layer: 101
+            progress: {
+              type: life
+              op: curve
+              interp: pow2Out
+            }
+          }
+          {
+            type: FlarePart
+            sides: 2
+            radius: 30
+            radiusTo: 0
+            stroke: 23.4
+            innerRadScl: 0.70
+            color1: 00000000
             y: 4.4
             layer: 101
             progress: {
@@ -936,10 +968,10 @@ ammoTypes: {
     }
   }
   octine: {
-        spawnBullets: [
+      spawnBullets: [
       {
         type: BulletType
-        lifetime: 24
+        lifetime: 20
         speed: 0
         collides: false
         despawnEffect: none
@@ -957,6 +989,22 @@ ammoTypes: {
             stroke: 6.4
             innerRadScl: 0.70
             color1: efbbb4
+            y: 4.4
+            layer: 101
+            progress: {
+              type: life
+              op: curve
+              interp: pow2Out
+            }
+          }
+          {
+            type: FlarePart
+            sides: 2
+            radius: 30
+            radiusTo: 0
+            stroke: 23.4
+            innerRadScl: 0.70
+            color1: 00000000
             y: 4.4
             layer: 101
             progress: {
