@@ -7,7 +7,7 @@ health: 3600
 alwaysUnlocked: false
 shootCone: 9
 recoil: 3.2
-shootY: -5.75
+shootY: -5.83
 reload: 290
 range: 450
 targetAir: false
@@ -1043,7 +1043,7 @@ ammoTypes: {
     trailLength: 10
     sprite: azimut-slicer
     knockback:8.5
-    shootEffect: {
+    shootEffect: [{
         type: SoundEffect
         minPitch: 1
         maxPitch: 0.9
@@ -1051,7 +1051,17 @@ ammoTypes: {
         sound: shootJannabi
         minVolume: 1
         maxVolume: 0.95
-    }
+      }
+      {
+        type: SoundEffect
+        minPitch: 0.7
+        maxPitch: 0.55
+        effect: none
+        sound: shootRailgun
+        minVolume: 1.1
+        maxVolume: 1.2
+      }
+    ]
     hitEffect: {
       type: MultiEffect,
       effects: [
