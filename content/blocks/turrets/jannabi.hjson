@@ -815,7 +815,7 @@ ammoTypes: {
     frontColor: fff4a3
     backColor: 957655
     hitColor: fff4a3
-    damage: 230
+    damage: 210
     despawnSound: none
     hitSound: none
     lifetime: 68
@@ -1025,8 +1025,8 @@ ammoTypes: {
     frontColor: ffffff
     backColor: dda59d
     hitColor: efbbb4
-    damage: 480
-    pierceArmor: true
+    damage: 435
+    armorMultiplier: 0.35
     pierceCap: 5
     pierceDamageFactor: 0.015
     despawnSound: explosionAfflict
