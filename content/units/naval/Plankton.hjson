@@ -17,46 +17,7 @@ trailLength: 12
 trailScl: 1.4
 waveTrailX: 4
 waveTrailY: -3
-deathExplosionEffect: {
-  type: MultiEffect
-  effects: [
-    {
-      type: RadialEffect
-      rotationSpacing: 90
-      rotationOffset: 0
-      lengthOffset: 2
-      amount: 2
-      effect: {
-        type: ParticleEffect
-        particles: 2
-        length: 120
-        lifetime: 290
-        sizeFrom: 1.7
-        sizeTo: 7.2
-        cone: 2
-        baseRotation: 73
-        useRotation: false
-        interp: pow5Out
-        colorFrom: a4f0d784
-        colorTo: b0b0b000
-        layer: 100.3
-      }
-    }
-    {
-      type: ParticleEffect
-      lifetime: 55
-      baseLength: 2
-      length: 25
-      particles: 5
-      sizeFrom: 5
-      sizeTo: 0
-      interp: pow5Out
-      sizeInterp: pow5In
-      colorFrom: a4f0d784
-      colorTo: b0b0b000
-    }
-  ]
-}
+deathExplosionEffect: none
 research: {
   parent: naval-editor
   planet: gelion
@@ -75,78 +36,154 @@ research: {
 }
 
 weapons: [
-  {
-    controllable: false
-    shootOnDeath: true
-    alternate: false
-    shootCone: 360
-    mirror: false
-    shake: 2.5
-    x: 0
-    y: 0
-    reload: 1
+{
+  controllable: false
+  shootOnDeath: true
+  alternate: false
+  shootCone: 360
+  mirror: false
+  shake: 2.5
+  x: 0
+  y: 0
+  reload: 1
 
-    bullet: {
-      type: ExplosionBulletType
-      collidesAir: false
-      despawnShake: 1.2
-      maxRange: 6
-      buildingDamageMultiplier: 1.15
-      splashDamageRadius: 30
-      splashDamage: 190
-      hitSound: explosionSmall
+  bullet: {
+    type: ExplosionBulletType
+    collidesAir: false
+    despawnShake: 1.2
+    maxRange: 6
+    buildingDamageMultiplier: 1.15
+    splashDamageRadius: 30
+    splashDamage: 190
+    hitSound: explosionSmall
 
-      shootEffect: [
-        {
+    shootEffect: [
+      {
+        type: ParticleEffect
+        followParent: false
+        length: 0
+        lifetime: 35
+        particles: 1
+        cone: 0
+        region: azimut-shockwave
+        sizeFrom: 16
+        sizeTo: 19
+        colorTo: a4f0d700
+        baseRotation: 180
+        interp: pow3Out
+      }
+      {
+        type: RadialEffect
+        rotationSpacing: 90
+        rotationOffset: 0
+        lengthOffset: 2
+        amount: 2
+        effect: {
           type: ParticleEffect
-          followParent: false
-          length: 0
-          lifetime: 35
-          particles: 1
-          cone: 0
-          region: azimut-shockwave
-          sizeFrom: 16
-          sizeTo: 19
-          colorTo: a4f0d700
-          baseRotation: 180
-          interp: pow3Out
+          particles: 2
+          length: 110
+          lifetime: 240
+          sizeFrom: 1.7
+          sizeTo: 6
+          cone: 2
+          baseRotation: 73
+          useRotation: false
+          interp: pow5Out
+          colorFrom: a4f0d784
+          colorTo: b0b0b000
+          layer: 100.3
         }
-      ]
+      }
+      {
+        type: ParticleEffect
+        lifetime: 55
+        baseLength: 2
+        length: 25
+        particles: 5
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: pow5In
+        colorFrom: 91a5a288
+        colorTo: 91a5a200
+      }
+      {
+        type: ParticleEffect
+        lifetime: 38
+        particles: 8
+        baseLength: 4
+        length: 40
+        cone: 360
+        sizeFrom: 2.2
+        sizeTo: 0
+        interp: pow5Out
+        colorFrom: 91a5a2aa
+        colorTo: 91a5a200
+      }
+      {
+        type: ParticleEffect
+        lifetime: 46
+        particles: 4
+        baseLength: 3
+        length: 24
+        cone: 360
+        sizeFrom: 2
+        sizeTo: 0
+        interp: pow3Out
+        colorFrom: 5fac9ebb
+        colorTo: 5fac9e00
+      }
+      {
+        type: ParticleEffect
+        line: true
+        lifetime: 20
+        particles: 6
+        baseLength: 2
+        length: 34
+        cone: 360
+        lenFrom: 5
+        lenTo: 0
+        strokeFrom: 1.1
+        strokeTo: 0.4
+        colorFrom: ffa95c
+        colorTo: ffa95c00
+        interp: pow3Out
+      }
+    ]
 
-      despawnEffect: [
-        {
-          type: WaveEffect
-          rotWithParent: true
-          followParent: true
-          lifetime: 35
-          sizeFrom: 22
-          sizeTo: 25
-          strokeFrom: 6
-          strokeTo: 2
-          colorFrom: a4f0d780
-          colorTo: 5fac9e00
-          interp: pow3Out
-        }
-      ]
+    despawnEffect: [
+      {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 35
+        sizeFrom: 22
+        sizeTo: 25
+        strokeFrom: 6
+        strokeTo: 2
+        colorFrom: a4f0d780
+        colorTo: 5fac9e00
+        interp: pow3Out
+      }
+    ]
 
-      hitEffect: [
-        {
-          type: WaveEffect
-          rotWithParent: true
-          followParent: true
-          lifetime: 35
-          sizeFrom: 22
-          sizeTo: 29
-          strokeFrom: 6
-          strokeTo: 2
-          colorFrom: a4f0d710
-          colorTo: 5fac9e00
-          interp: pow3Out
-        }
-      ]
-    }
+    hitEffect: [
+      {
+        type: WaveEffect
+        rotWithParent: true
+        followParent: true
+        lifetime: 35
+        sizeFrom: 22
+        sizeTo: 29
+        strokeFrom: 6
+        strokeTo: 2
+        colorFrom: a4f0d710
+        colorTo: 5fac9e00
+        interp: pow3Out
+      }
+    ]
   }
-
+}
   {
     name: Plankton-weapon
     recoil: 1.3

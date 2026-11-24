@@ -62,60 +62,7 @@ engines: [
     rotation: 225
   }
 ]
-	deathExplosionEffect: {
-  type: MultiEffect
-  effects: [
-    {
-      type: RadialEffect
-      rotationSpacing: 90
-      rotationOffset: 0
-      lengthOffset: 2
-      amount: 3
-      effect: {
-        type: ParticleEffect
-        particles: 2
-        length: 120
-        lifetime: 320
-        sizeFrom: 1.7
-        sizeTo: 7.2
-        cone: 2
-        baseRotation: 73
-        useRotation: false
-        interp: pow5Out
-        colorFrom: f0a4d984
-        colorTo: b0b0b000
-      }
-    }
-    {
-      type: ParticleEffect
-      lifetime: 50
-      baseLength: 2
-      length: 35
-      particles: 10
-      sizeFrom: 5
-      sizeTo: 0
-      interp: pow5Out
-      sizeInterp: pow5In
-      colorFrom: f0a4d984
-      colorTo: b0b0b000
-    }
-	    {
-          type: ParticleEffect
-          followParent: false
-          length: 0
-          lifetime: 60
-          particles: 1
-          cone: 0
-          region: azimut-shockwave
-          sizeFrom: 21
-          sizeTo: 26
-		  colorFrom: f0a4d9
-          colorTo: b0b0b000
-          baseRotation: 180
-          interp: pow3Out
-        }
-  ]
-}
+	deathExplosionEffect: none
 		research: {
   parent: Innovation
   planet: gelion
@@ -213,6 +160,328 @@ abilities: [
   }
 ]
 weapons: [
+  {
+  controllable: false
+  shootOnDeath: true
+  alternate: false
+  shootCone: 360
+  mirror: false
+  display: false
+  reload: 1
+  shootSound: none
+  bullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    reflectable: false
+    keepVelocity: false
+    despawnHit: true
+    hitShake: 2.5
+    hitEffect: none
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: [
+      {
+        type: RadialEffect
+        rotationSpacing: 90
+        rotationOffset: 0
+        lengthOffset: 2
+        amount: 3
+        effect: {
+          type: ParticleEffect
+          particles: 2
+          length: 120
+          lifetime: 320
+          sizeFrom: 1.7
+          sizeTo: 7.2
+          cone: 2
+          baseRotation: 73
+          useRotation: false
+          interp: pow5Out
+          colorFrom: f6afdd84
+          colorTo: b0b0b000
+          layer: 100.3
+        }
+      }
+      {
+        type: ParticleEffect
+        followParent: false
+        length: 0
+        lifetime: 60
+        particles: 1
+        cone: 0
+        region: azimut-shockwave
+        sizeFrom: 21
+        sizeTo: 26
+        colorFrom: f6afdd
+        colorTo: b0b0b000
+        baseRotation: 180
+        interp: pow3Out
+      }
+      {
+        type: WaveEffect
+        lifetime: 34
+        sizeFrom: 8
+        sizeTo: 48
+        strokeFrom: 3.4
+        strokeTo: 0
+        colorFrom: f6afddaa
+        colorTo: f6afdd00
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        lifetime: 50
+        baseLength: 2
+        length: 35
+        particles: 10
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: pow5In
+        colorFrom: 9a90a699
+        colorTo: 9a90a600
+      }
+      {
+        type: ParticleEffect
+        lifetime: 120
+        region: circle-shadow
+        particles: 6
+        baseLength: 18
+        length: 14
+        colorFrom: 9a90a644
+        colorTo: 9a90a600
+        sizeFrom: 14
+        sizeTo: 30
+        layer: 90.8
+        interp: pow3Out
+        sizeInterp: pow2Out
+        lightScl: 0
+      }
+      {
+        type: ParticleEffect
+        lifetime: 140
+        region: circle-shadow
+        particles: 9
+        baseLength: 46
+        length: 16
+        colorFrom: 9a90a63a
+        colorTo: 9a90a600
+        sizeFrom: 12
+        sizeTo: 28
+        layer: 90.8
+        interp: pow3Out
+        sizeInterp: pow2Out
+        lightScl: 0
+      }
+      {
+        type: ParticleEffect
+        lifetime: 44
+        particles: 16
+        baseLength: 4
+        length: 60
+        cone: 360
+        sizeFrom: 2.8
+        sizeTo: 0
+        interp: pow5Out
+        colorFrom: 9a90a6aa
+        colorTo: 9a90a600
+      }
+      {
+        type: ParticleEffect
+        lifetime: 52
+        particles: 8
+        baseLength: 3
+        length: 36
+        cone: 360
+        sizeFrom: 2.4
+        sizeTo: 0
+        interp: pow3Out
+        colorFrom: 6a3fa4bb
+        colorTo: 6a3fa400
+      }
+      {
+        type: ParticleEffect
+        line: true
+        lifetime: 24
+        particles: 12
+        baseLength: 2
+        length: 52
+        cone: 360
+        lenFrom: 7
+        lenTo: 0
+        strokeFrom: 1.4
+        strokeTo: 0.4
+        colorFrom: ffa95c
+        colorTo: ffa95c00
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        lifetime: 170
+        region: circle-shadow
+        particles: 4
+        baseLength: 14
+        length: 8
+        colorFrom: 2f253866
+        colorTo: 2f253800
+        sizeFrom: 16
+        sizeTo: 32
+        layer: 90.5
+        interp: pow3Out
+        sizeInterp: pow2Out
+        lightScl: 0
+      }
+      {
+        type: ParticleEffect
+        lifetime: 90
+        particles: 8
+        baseLength: 52
+        length: 16
+        cone: 360
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: pow2In
+        colorFrom: 9a90a666
+        colorTo: 9a90a600
+        layer: 91
+        lightScl: 0
+      }
+    ]
+    spawnBullets: [
+      {
+        type: BulletType
+        lifetime: 24
+        speed: 0
+        collides: false
+        despawnEffect: none
+        hitEffect: none
+        keepVelocity: false
+        absorbable: false
+        reflectable: false
+        hittable: false
+        parts: [
+          {
+            type: RegionPart
+            outline: false
+            name: azimut-light
+            layer: 110.2
+            blending: additive
+            xScl: 3.2
+            yScl: 3.2
+            color: f6afdd5f
+            colorTo: f6afdd00
+            progress: {
+              type: life
+              op: compress
+              start: 0
+              end: 0.5
+            }
+          }
+          {
+            type: RegionPart
+            outline: false
+            name: azimut-light
+            layer: 110.2
+            blending: additive
+            xScl: 1.6
+            yScl: 1.6
+            color: ffffff5f
+            colorTo: ffffff00
+            progress: {
+              type: life
+              op: compress
+              start: 0
+              end: 0.5
+            }
+          }
+        ]
+      }
+      {
+        type: BulletType
+        lifetime: 0
+        speed: 0
+        collides: false
+        despawnHit: true
+        despawnEffect: none
+        hitEffect: none
+        keepVelocity: false
+        absorbable: false
+        reflectable: false
+        hittable: false
+        fragBullets: 8
+        fragVelocityMin: 1
+        fragOffsetMin: 0
+        fragOffsetMax: 0
+        fragBullet: {
+          type: BulletType
+          lifetime: 90
+          speed: 4.4
+          drag: 0.05
+          collides: false
+          despawnEffect: none
+          hitEffect: none
+          keepVelocity: false
+          absorbable: false
+          reflectable: false
+          hittable: false
+          velocityScaleRandMin: 0.6
+          randomAngleOffset: 180
+          lifeScaleRandMin: 0.8
+          weaveScale: 15
+          weaveMag: 1.6
+          trailInterval: 3
+          trailEffect: {
+            type: ParticleEffect
+            lifetime: 36
+            particles: 1
+            length: 0
+            baseLength: 1.5
+            colorFrom: 9a90a6a0
+            colorTo: 9a90a600
+            sizeFrom: 0.8
+            sizeTo: 2.4
+            layer: 89
+            clip: 64
+            lightScl: 0
+          }
+          parts: [
+            {
+              type: RegionPart
+              outline: false
+              layer: 110
+              name: circle-shadow
+              color: f6afdd9f
+              blending: additive
+              progress: life
+              xScl: 0.05
+              yScl: 0.05
+              growX: -0.05
+              growY: -0.05
+            }
+            {
+              type: RegionPart
+              outline: false
+              layer: 110
+              name: circle
+              color: ffffff9f
+              blending: additive
+              progress: life
+              xScl: 0.05
+              yScl: 0.05
+              growX: -0.05
+              growY: -0.05
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
   {
     mirror: false
     reload: 120

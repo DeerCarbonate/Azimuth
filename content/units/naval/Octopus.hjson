@@ -17,61 +17,7 @@
 	waveTrailY: -7
     healColor: a4f0d788
 	shieldColor: a4f0d788
-		deathExplosionEffect: {
-  type: MultiEffect
-  effects: [
-    {
-      type: RadialEffect
-      rotationSpacing: 90
-      rotationOffset: 0
-      lengthOffset: 2
-      amount: 2
-      effect: {
-        type: ParticleEffect
-        particles: 1
-        length: 120
-        lifetime: 300
-        sizeFrom: 1.7
-        sizeTo: 7.2
-        cone: 2
-        baseRotation: 73
-        useRotation: false
-        interp: pow5Out
-        colorFrom: 5fac9e84
-        colorTo: b0b0b000
-        layer: 100.3
-      }
-    }
-    {
-      type: ParticleEffect
-      lifetime: 55
-      baseLength: 2
-      length: 30
-      particles: 8
-      sizeFrom: 5
-      sizeTo: 0
-      interp: pow5Out
-      sizeInterp: pow5In
-      colorFrom: 5fac9e84
-      colorTo: b0b0b000
-    }
-	    {
-          type: ParticleEffect
-          followParent: false
-          length: 0
-          lifetime: 45
-          particles: 1
-          cone: 0
-          region: azimut-shockwave
-          sizeFrom: 18
-          sizeTo: 22
-		  colorFrom: 5fac9e
-          colorTo: b0b0b000
-          baseRotation: 180
-          interp: pow3Out
-        }
-  ]
-}
+		deathExplosionEffect: none
 	abilities: [
 {
     type: StatusFieldAbility
@@ -113,6 +59,152 @@ preset: fifth
   ]
 }
 	weapons: [
+    {
+  controllable: false
+  shootOnDeath: true
+  alternate: false
+  shootCone: 360
+  mirror: false
+  display: false
+  reload: 1
+  shootSound: none
+  bullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    reflectable: false
+    keepVelocity: false
+    despawnHit: true
+    hitShake: 1.2
+    hitEffect: none
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: [
+      {
+        type: RadialEffect
+        rotationSpacing: 90
+        rotationOffset: 0
+        lengthOffset: 2
+        amount: 2
+        effect: {
+          type: ParticleEffect
+          particles: 3
+          length: 120
+          lifetime: 290
+          sizeFrom: 1.7
+          sizeTo: 7.2
+          cone: 2
+          baseRotation: 73
+          useRotation: false
+          interp: pow5Out
+          colorFrom: 91a5a284
+          colorTo: b0b0b000
+          layer: 100.3
+        }
+      }
+      {
+        type: ParticleEffect
+        followParent: false
+        length: 0
+        lifetime: 35
+        particles: 1
+        cone: 0
+        region: azimut-shockwave
+        sizeFrom: 20
+        sizeTo: 23
+        colorFrom: a4f0d7
+        colorTo: a4f0d700
+        baseRotation: 180
+        interp: pow3Out
+      }
+      {
+        type: WaveEffect
+        lifetime: 30
+        sizeFrom: 6
+        sizeTo: 34
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: a4f0d7aa
+        colorTo: a4f0d700
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        lifetime: 60
+        baseLength: 2
+        length: 32
+        particles: 7
+        sizeFrom: 6
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: pow5In
+        colorFrom: 91a5a299
+        colorTo: 91a5a200
+      }
+      {
+        type: ParticleEffect
+        lifetime: 42
+        particles: 12
+        baseLength: 4
+        length: 54
+        cone: 360
+        sizeFrom: 2.6
+        sizeTo: 0
+        interp: pow5Out
+        colorFrom: 91a5a2aa
+        colorTo: 91a5a200
+      }
+      {
+        type: ParticleEffect
+        lifetime: 50
+        particles: 6
+        baseLength: 3
+        length: 32
+        cone: 360
+        sizeFrom: 2.2
+        sizeTo: 0
+        interp: pow3Out
+        colorFrom: 5fac9ebb
+        colorTo: 5fac9e00
+      }
+      {
+        type: ParticleEffect
+        line: true
+        lifetime: 22
+        particles: 9
+        baseLength: 2
+        length: 46
+        cone: 360
+        lenFrom: 6
+        lenTo: 0
+        strokeFrom: 1.3
+        strokeTo: 0.4
+        colorFrom: ffa95c
+        colorTo: ffa95c00
+        interp: pow3Out
+      }
+      {
+        type: ParticleEffect
+        lifetime: 140
+        region: circle-shadow
+        particles: 3
+        baseLength: 8
+        length: 6
+        colorFrom: 1f3a3855
+        colorTo: 1f3a3800
+        sizeFrom: 12
+        sizeTo: 24
+        layer: 90.5
+        interp: pow3Out
+        sizeInterp: pow2Out
+        lightScl: 0
+      }
+    ]
+  }
+}
 		{
 			name: Octopus-weapon
 			x: 4.7

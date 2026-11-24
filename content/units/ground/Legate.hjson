@@ -34,9 +34,31 @@
       }
     ]
   }
-  deathExplosionEffect: {
-    type: MultiEffect
-    effects: [
+  deathExplosionEffect: none
+  weapons: [
+    {
+  controllable: false
+  shootOnDeath: true
+  alternate: false
+  shootCone: 360
+  mirror: false
+  display: false
+  reload: 1
+  shootSound: none
+  bullet: {
+    type: BulletType
+    speed: 0
+    lifetime: 0
+    collides: false
+    hittable: false
+    absorbable: false
+    reflectable: false
+    keepVelocity: false
+    despawnHit: true
+    hitEffect: none
+    despawnEffect: none
+    smokeEffect: none
+    shootEffect: [
       {
         type: RadialEffect
         rotationSpacing: 90
@@ -46,31 +68,18 @@
         effect: {
           type: ParticleEffect
           particles: 2
-          length: 120
-          lifetime: 290
+          length: 110
+          lifetime: 240
           sizeFrom: 1.7
-          sizeTo: 7.2
+          sizeTo: 6
           cone: 2
           baseRotation: 73
           useRotation: false
           interp: pow5Out
-          colorFrom: cc918b84
+          colorFrom: d8868684
           colorTo: b0b0b000
           layer: 100.3
         }
-      }
-      {
-        type: ParticleEffect
-        lifetime: 55
-        baseLength: 2
-        length: 25
-        particles: 5
-        sizeFrom: 5
-        sizeTo: 0
-        interp: pow5Out
-        sizeInterp: pow5In
-        colorFrom: cc918b84
-        colorTo: b0b0b000
       }
       {
         type: ParticleEffect
@@ -82,14 +91,69 @@
         region: azimut-shockwave
         sizeFrom: 16
         sizeTo: 19
-        colorFrom: cc918b
+        colorFrom: d88686
         colorTo: b0b0b000
         baseRotation: 180
         interp: pow3Out
       }
+      {
+        type: ParticleEffect
+        lifetime: 55
+        baseLength: 2
+        length: 25
+        particles: 5
+        sizeFrom: 5
+        sizeTo: 0
+        interp: pow5Out
+        sizeInterp: pow5In
+        colorFrom: a39a9588
+        colorTo: a39a9500
+      }
+      {
+        type: ParticleEffect
+        lifetime: 38
+        particles: 8
+        baseLength: 4
+        length: 40
+        cone: 360
+        sizeFrom: 2.2
+        sizeTo: 0
+        interp: pow5Out
+        colorFrom: a39a95aa
+        colorTo: a39a9500
+      }
+      {
+        type: ParticleEffect
+        lifetime: 46
+        particles: 4
+        baseLength: 3
+        length: 24
+        cone: 360
+        sizeFrom: 2
+        sizeTo: 0
+        interp: pow3Out
+        colorFrom: af7765bb
+        colorTo: af776500
+      }
+      {
+        type: ParticleEffect
+        line: true
+        lifetime: 20
+        particles: 6
+        baseLength: 2
+        length: 34
+        cone: 360
+        lenFrom: 5
+        lenTo: 0
+        strokeFrom: 1.1
+        strokeTo: 0.4
+        colorFrom: ffa95c
+        colorTo: ffa95c00
+        interp: pow3Out
+      }
     ]
   }
-  weapons: [
+}
     {
       name: Legate-weapon
       x: 2.5
