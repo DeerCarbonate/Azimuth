@@ -26,6 +26,38 @@ shoot: {
 }
 ammoTypes: {
   geliarin: {
+        spawnBullets: [
+      {
+        type: BulletType
+        lifetime: 24
+        speed: 0
+        collides: false
+        despawnEffect: none
+        hitEffect: none
+        keepVelocity: false
+        absorbable: false
+        reflectable: false
+        hittable: false
+        parts: [
+          {
+            type: FlarePart
+            sides: 2
+            radius: 60
+            radiusTo: 0
+            stroke: 6.4
+            innerRadScl: 0.70
+            color1: 6898c3
+            y: 4.4
+            layer: 101
+            progress: {
+              type: life
+              op: curve
+              interp: pow2Out
+            }
+          }
+        ]
+      }
+    ]
     type: BasicBulletType
     collidesGround: true
     frontColor: c3feff
@@ -128,20 +160,7 @@ ammoTypes: {
         baseRotation: 180
       }
     ]
-    shootEffect: [
-      {
-        followParent: false
-        length: 0
-        lifetime: 16
-        particles: 1
-        cone: 0
-        region: azimut-despawn
-        sizeFrom: 60
-        sizeTo: 0
-        colorTo: 6898c3
-        baseRotation: 90
-      }
-      {
+    shootEffect: {
         type: SoundEffect
         minPitch: 1
         maxPitch: 0.9
@@ -149,8 +168,7 @@ ammoTypes: {
         sound: shootJannabi
         minVolume: 1
         maxVolume: 0.95
-      }
-    ]
+    }
     despawnEffect: [
       {
         particles: 1
@@ -726,6 +744,38 @@ ammoTypes: {
   }
   caterium: {
     // thx Undaria (Calamity mod) for units (which forms EMP field)
+        spawnBullets: [
+      {
+        type: BulletType
+        lifetime: 24
+        speed: 0
+        collides: false
+        despawnEffect: none
+        hitEffect: none
+        keepVelocity: false
+        absorbable: false
+        reflectable: false
+        hittable: false
+        parts: [
+          {
+            type: FlarePart
+            sides: 2
+            radius: 60
+            radiusTo: 0
+            stroke: 6.4
+            innerRadScl: 0.70
+            color1: fff4a3
+            y: 4.4
+            layer: 101
+            progress: {
+              type: life
+              op: curve
+              interp: pow2Out
+            }
+          }
+        ]
+      }
+    ]
     type: BasicBulletType
     reloadMultiplier:0.47
     collidesTiles: true
@@ -784,18 +834,6 @@ ammoTypes: {
       hitEffect: none
     }
     shootEffect: [
-      {
-        followParent: false
-        length: 0
-        lifetime: 16
-        particles: 1
-        cone: 0
-        region: azimut-despawn
-        sizeFrom: 60
-        sizeTo: 0
-        colorTo: 6898c3
-        baseRotation: 90
-      }
       {
         type: SoundEffect
         minPitch: 1
@@ -898,6 +936,38 @@ ammoTypes: {
     }
   }
   octine: {
+        spawnBullets: [
+      {
+        type: BulletType
+        lifetime: 24
+        speed: 0
+        collides: false
+        despawnEffect: none
+        hitEffect: none
+        keepVelocity: false
+        absorbable: false
+        reflectable: false
+        hittable: false
+        parts: [
+          {
+            type: FlarePart
+            sides: 2
+            radius: 60
+            radiusTo: 0
+            stroke: 6.4
+            innerRadScl: 0.70
+            color1: efbbb4
+            y: 4.4
+            layer: 101
+            progress: {
+              type: life
+              op: curve
+              interp: pow2Out
+            }
+          }
+        ]
+      }
+    ]
     type: BasicBulletType
     rangeChange: 94
     reloadMultiplier:1.15
@@ -925,20 +995,7 @@ ammoTypes: {
     trailLength: 10
     sprite: azimut-slicer
     knockback:8.5
-    shootEffect: [
-      {
-        followParent: false
-        length: 0
-        lifetime: 16
-        particles: 1
-        cone: 0
-        region: azimut-despawn
-        sizeFrom: 60
-        sizeTo: 0
-        colorTo: 6898c3
-        baseRotation: 90
-      }
-      {
+    shootEffect: {
         type: SoundEffect
         minPitch: 1
         maxPitch: 0.9
@@ -946,8 +1003,7 @@ ammoTypes: {
         sound: shootJannabi
         minVolume: 1
         maxVolume: 0.95
-      }
-    ]
+    }
     hitEffect: {
       type: MultiEffect,
       effects: [
