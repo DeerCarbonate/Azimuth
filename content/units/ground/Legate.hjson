@@ -60,28 +60,6 @@
     smokeEffect: none
     shootEffect: [
       {
-        type: RadialEffect
-        rotationSpacing: 90
-        rotationOffset: 0
-        lengthOffset: 2
-        amount: 2
-        effect: {
-          type: ParticleEffect
-          particles: 2
-          length: 110
-          lifetime: 240
-          sizeFrom: 1.7
-          sizeTo: 6
-          cone: 2
-          baseRotation: 73
-          useRotation: false
-          interp: pow5Out
-          colorFrom: d8868684
-          colorTo: b0b0b000
-          layer: 100.3
-        }
-      }
-      {
         type: ParticleEffect
         followParent: false
         length: 0

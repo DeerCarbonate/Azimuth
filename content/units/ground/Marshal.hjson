@@ -102,13 +102,13 @@ weapons: [
           particles: 3
           length: 120
           lifetime: 290
-          sizeFrom: 1.7
-          sizeTo: 7.2
+          sizeFrom: 3
+          sizeTo: 8
           cone: 2
           baseRotation: 73
           useRotation: false
           interp: pow5Out
-          colorFrom: a39a9584
+          colorFrom: a39a9534
           colorTo: b0b0b000
           layer: 100.3
         }

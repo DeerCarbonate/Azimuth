@@ -291,7 +291,7 @@ weapons: [
         absorbable: false
         reflectable: false
         hittable: false
-        fragBullets: 8
+        fragBullets: 6
         fragVelocityMin: 1
         fragOffsetMin: 0
         fragOffsetMax: 0
@@ -336,10 +336,10 @@ weapons: [
               color: a4f0d79f
               blending: additive
               progress: life
-              xScl: 0.05
-              yScl: 0.05
-              growX: -0.05
-              growY: -0.05
+              xScl: 0.035
+              yScl: 0.035
+              growX: -0.035
+              growY: -0.035
             }
             {
               type: RegionPart
@@ -349,10 +349,10 @@ weapons: [
               color: ffffff9f
               blending: additive
               progress: life
-              xScl: 0.05
-              yScl: 0.05
-              growX: -0.05
-              growY: -0.05
+              xScl: 0.035
+              yScl: 0.035
+              growX: -0.035
+              growY: -0.035
             }
           ]
         }
