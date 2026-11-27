@@ -695,7 +695,7 @@ weapons: [
       speed: 1.9
       collidesGround: true
       lifetime: 120
-      damage: 12
+      damage: 10
       backColor: ffbfad
       frontColor: cc918b
       trailColor: ffbfad40
@@ -705,7 +705,7 @@ weapons: [
       keepVelocity: false
       collidesAir: true
       pierceArmor: false
-      buildingDamageMultiplier: 0.8
+      buildingDamageMultiplier: 0.75
       hitEffect: {
         type: ExplosionEffect
         lifetime: 35

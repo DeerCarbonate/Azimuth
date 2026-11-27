@@ -25,6 +25,7 @@ require("construct");
 require("icon");
 require("liquid-packager");
 require("liquid-unpacker");
+require("mechanical-quarry");
 
 const FollowAllyAI = require("followai");
 
